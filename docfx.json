@@ -1,0 +1,123 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src//TcoCore//src//TcoCoreConnector//TcoCoreConnector.csproj",
+            "src//TcoCore//src//TcoCore.Wpf//TcoCore.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoCore",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    },
+
+    {
+      "src": [
+        {
+          "files": [
+            "src//TcoIoBeckhoff//src//TcoIoBeckhoffConnector//TcoIoBeckhoffConnector.csproj",
+            "src//TcoIoBeckhoff//src//TcoIoBeckhoff.Wpf//TcoIoBeckhoff.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoIoBeckhoff",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    },
+
+    {
+      "src": [
+        {
+          "files": [
+            "src//TcoPneumatics//src//TcoPneumaticsConnector//TcoPneumaticsConnector.csproj",
+            "src//TcoPneumatics//src//TcoPneumatics.Wpf//src//TcoPneumatics.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoPneumatics",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    }
+    
+
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"          
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",          
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",         
+          "articles/**/*.png",
+          "articles/**/*.gif",
+          "articles/**/*.jpg",
+          "articles/**/*.jpeg"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "docs"
+        ]
+      }
+    ],
+    "dest": "docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "_tcopen.doc.template"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}

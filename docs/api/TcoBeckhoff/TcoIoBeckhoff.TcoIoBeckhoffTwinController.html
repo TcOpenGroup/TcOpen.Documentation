@@ -1,0 +1,1448 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TcoIoBeckhoffTwinController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TcoIoBeckhoffTwinController
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc">
+    <meta property="docfx:tocrel" content="../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <svg id="logo" class="svg" width="132px" height="26px" viewbox="0 0 132 26"><path d="M10.8.1L27.3 14V.5h5.9v25.6h-.7L16 11.7v13.9h-5.9v-10L12 13l-1.8-2.5V.1h.6zM50.5 13l8.7 12.9h-6.8l-5.3-8.2 3.4-4.7zM91.7.2c7.5 0 13.5 5.3 13.5 12.9s-6.1 12.8-13.5 12.8c-5.1 0-9.5-2.6-11.8-6.7l4.3-6.2-4.3-6.3c2.3-4 6.7-6.5 11.8-6.5zm17.2-.1L125.4 14V.5h5.9v25.6h-.7l-16.4-14.3v13.9h-5.9v-8.2l3.1-4.4-3.1-4.5V.1h.6zm-31 .6v3.1l-.1-.1V6h-6.2v19.5h-5.9V6h-6.3V.7h18.5zM5.5.1v25H0V.1h5.5zm37.2 0l1.7 2.7v18.9L42.2 25h-6.1l8.3-12.5-8-12.4h6.3zm49 5.6c-4.1 0-7.4 2.9-7.4 7.4s3.3 7.4 7.4 7.4c4 0 7.4-2.9 7.4-7.4-.1-4.4-3.4-7.4-7.4-7.4zM58.3.1l-8 12-3.1-4.6L52 0h6.3v.1z"></path></svg>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../../api/index.html" title="API reference">API reference</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">TcoCore</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../TcoCore/TcoCore.html" title="TcoCore" class="">TcoCore</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.eMessageCategory.html" title="eMessageCategory" class="">eMessageCategory</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.eTaskState.html" title="eTaskState" class="">eTaskState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IMAIN.html" title="IMAIN" class="">IMAIN</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowMAIN.html" title="IShadowMAIN" class="">IShadowMAIN</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoComponent.html" title="IShadowTcoComponent" class="">IShadowTcoComponent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoContext.html" title="IShadowTcoContext" class="">IShadowTcoContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoCoreTwinController.html" title="IShadowTcoCoreTwinController" class="">IShadowTcoCoreTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoMessage.html" title="IShadowTcoMessage" class="">IShadowTcoMessage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoMessenger.html" title="IShadowTcoMessenger" class="">IShadowTcoMessenger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoObject.html" title="IShadowTcoObject" class="">IShadowTcoObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoState.html" title="IShadowTcoState" class="">IShadowTcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IShadowTcoTask.html" title="IShadowTcoTask" class="">IShadowTcoTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoComponent.html" title="ITcoComponent" class="">ITcoComponent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoContext.html" title="ITcoContext" class="">ITcoContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoCoreTwinController.html" title="ITcoCoreTwinController" class="">ITcoCoreTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoMessage.html" title="ITcoMessage" class="">ITcoMessage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoMessenger.html" title="ITcoMessenger" class="">ITcoMessenger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoObject.html" title="ITcoObject" class="">ITcoObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoState.html" title="ITcoState" class="">ITcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.ITcoTask.html" title="ITcoTask" class="">ITcoTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.IVortexObjectExtensions.html" title="IVortexObjectExtensions" class="">IVortexObjectExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.MAIN.html" title="MAIN" class="">MAIN</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.MAIN.PlcMAIN.html" title="MAIN.PlcMAIN" class="">MAIN.PlcMAIN</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.NameOrSymbolConverter.html" title="NameOrSymbolConverter" class="">NameOrSymbolConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainMAIN.html" title="PlainMAIN" class="">PlainMAIN</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoComponent.html" title="PlainTcoComponent" class="">PlainTcoComponent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoContext.html" title="PlainTcoContext" class="">PlainTcoContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoCoreTwinController.html" title="PlainTcoCoreTwinController" class="">PlainTcoCoreTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoMessage.html" title="PlainTcoMessage" class="">PlainTcoMessage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoMessenger.html" title="PlainTcoMessenger" class="">PlainTcoMessenger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoObject.html" title="PlainTcoObject" class="">PlainTcoObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoState.html" title="PlainTcoState" class="">PlainTcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.PlainTcoTask.html" title="PlainTcoTask" class="">PlainTcoTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoComponent.html" title="TcoComponent" class="">TcoComponent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html" title="TcoComponent.PlcTcoComponent" class="">TcoComponent.PlcTcoComponent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoContext.html" title="TcoContext" class="">TcoContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoContext.PlcTcoContext.html" title="TcoContext.PlcTcoContext" class="">TcoContext.PlcTcoContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoCoreTwinController.html" title="TcoCoreTwinController" class="">TcoCoreTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoMessage.html" title="TcoMessage" class="">TcoMessage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoMessage.PlcTcoMessage.html" title="TcoMessage.PlcTcoMessage" class="">TcoMessage.PlcTcoMessage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoMessenger.html" title="TcoMessenger" class="">TcoMessenger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html" title="TcoMessenger.PlcTcoMessenger" class="">TcoMessenger.PlcTcoMessenger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoObject.html" title="TcoObject" class="">TcoObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoObject.PlcTcoObject.html" title="TcoObject.PlcTcoObject" class="">TcoObject.PlcTcoObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoObjectView.html" title="TcoObjectView" class="">TcoObjectView</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoObjectViewModel.html" title="TcoObjectViewModel" class="">TcoObjectViewModel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoState.html" title="TcoState" class="">TcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoState.PlcTcoState.html" title="TcoState.PlcTcoState" class="">TcoState.PlcTcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoTask.html" title="TcoTask" class="">TcoTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoTask.PlcTcoTask.html" title="TcoTask.PlcTcoTask" class="">TcoTask.PlcTcoTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoTaskView.html" title="TcoTaskView" class="">TcoTaskView</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoCore/TcoCore.TcoTaskViewModel.html" title="TcoTaskViewModel" class="">TcoTaskViewModel</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../TcoCore/TcoCoreConnector.html" title="TcoCoreConnector" class="">TcoCoreConnector</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../TcoCore/TcoCoreConnector.Program.html" title="Program" class="">Program</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">TcoBeckhoff</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../TcoBeckhoff/TcoIoBeckhoff.html" title="TcoIoBeckhoff" class="">TcoIoBeckhoff</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_1_Module.html" title="AI_1_Module" class="">AI_1_Module</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_1_Module.PlcAI_1_Module.html" title="AI_1_Module.PlcAI_1_Module" class="">AI_1_Module.PlcAI_1_Module</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_Channel.html" title="AI_Channel" class="">AI_Channel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_Channel.PlcAI_Channel.html" title="AI_Channel.PlcAI_Channel" class="">AI_Channel.PlcAI_Channel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.html" title="AI_ChannelStatus" class="">AI_ChannelStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.PlcAI_ChannelStatus.html" title="AI_ChannelStatus.PlcAI_ChannelStatus" class="">AI_ChannelStatus.PlcAI_ChannelStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.html" title="EL922x_ChannelBasic" class="">EL922x_ChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.PlcEL922x_ChannelBasic.html" title="EL922x_ChannelBasic.PlcEL922x_ChannelBasic" class="">EL922x_ChannelBasic.PlcEL922x_ChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.html" title="EL922x_ChannelExtended" class="">EL922x_ChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.PlcEL922x_ChannelExtended.html" title="EL922x_ChannelExtended.PlcEL922x_ChannelExtended" class="">EL922x_ChannelExtended.PlcEL922x_ChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.Entry.html" title="Entry" class="">Entry</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.html" title="FuseChannelBasic" class="">FuseChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.PlcFuseChannelBasic.html" title="FuseChannelBasic.PlcFuseChannelBasic" class="">FuseChannelBasic.PlcFuseChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.html" title="FuseChannelExtended" class="">FuseChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.PlcFuseChannelExtended.html" title="FuseChannelExtended.PlcFuseChannelExtended" class="">FuseChannelExtended.PlcFuseChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.html" title="FuseModuleEL922x" class="">FuseModuleEL922x</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.PlcFuseModuleEL922x.html" title="FuseModuleEL922x.PlcFuseModuleEL922x" class="">FuseModuleEL922x.PlcFuseModuleEL922x</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.Global_Version.html" title="Global_Version" class="">Global_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.Global_Version.PlcGlobal_Version.html" title="Global_Version.PlcGlobal_Version" class="">Global_Version.PlcGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IAI_1_Module.html" title="IAI_1_Module" class="">IAI_1_Module</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IAI_Channel.html" title="IAI_Channel" class="">IAI_Channel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IAI_ChannelStatus.html" title="IAI_ChannelStatus" class="">IAI_ChannelStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelBasic.html" title="IEL922x_ChannelBasic" class="">IEL922x_ChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelExtended.html" title="IEL922x_ChannelExtended" class="">IEL922x_ChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IFuseChannelBasic.html" title="IFuseChannelBasic" class="">IFuseChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IFuseChannelExtended.html" title="IFuseChannelExtended" class="">IFuseChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IFuseModuleEL922x.html" title="IFuseModuleEL922x" class="">IFuseModuleEL922x</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IGlobal_Version.html" title="IGlobal_Version" class="">IGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IInfoData.html" title="IInfoData" class="">IInfoData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IIO.html" title="IIO" class="">IIO</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.InfoData.html" title="InfoData" class="">InfoData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.InfoData.PlcInfoData.html" title="InfoData.PlcInfoData" class="">InfoData.PlcInfoData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IO.html" title="IO" class="">IO</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IO.PlcIO.html" title="IO.PlcIO" class="">IO.PlcIO</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IOutputStruct.html" title="IOutputStruct" class="">IOutputStruct</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowAI_1_Module.html" title="IShadowAI_1_Module" class="">IShadowAI_1_Module</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowAI_Channel.html" title="IShadowAI_Channel" class="">IShadowAI_Channel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowAI_ChannelStatus.html" title="IShadowAI_ChannelStatus" class="">IShadowAI_ChannelStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelBasic.html" title="IShadowEL922x_ChannelBasic" class="">IShadowEL922x_ChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelExtended.html" title="IShadowEL922x_ChannelExtended" class="">IShadowEL922x_ChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelBasic.html" title="IShadowFuseChannelBasic" class="">IShadowFuseChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelExtended.html" title="IShadowFuseChannelExtended" class="">IShadowFuseChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowFuseModuleEL922x.html" title="IShadowFuseModuleEL922x" class="">IShadowFuseModuleEL922x</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowGlobal_Version.html" title="IShadowGlobal_Version" class="">IShadowGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowInfoData.html" title="IShadowInfoData" class="">IShadowInfoData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowIO.html" title="IShadowIO" class="">IShadowIO</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowOutputStruct.html" title="IShadowOutputStruct" class="">IShadowOutputStruct</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowStatusStructBasic.html" title="IShadowStatusStructBasic" class="">IShadowStatusStructBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowStatusStructExtended.html" title="IShadowStatusStructExtended" class="">IShadowStatusStructExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html" title="IShadowTcoIoBeckhoffTwinController" class="">IShadowTcoIoBeckhoffTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IShadowWcState.html" title="IShadowWcState" class="">IShadowWcState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IStatusStructBasic.html" title="IStatusStructBasic" class="">IStatusStructBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IStatusStructExtended.html" title="IStatusStructExtended" class="">IStatusStructExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html" title="ITcoIoBeckhoffTwinController" class="">ITcoIoBeckhoffTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.IWcState.html" title="IWcState" class="">IWcState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.OutputStruct.html" title="OutputStruct" class="">OutputStruct</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.OutputStruct.PlcOutputStruct.html" title="OutputStruct.PlcOutputStruct" class="">OutputStruct.PlcOutputStruct</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainAI_1_Module.html" title="PlainAI_1_Module" class="">PlainAI_1_Module</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainAI_Channel.html" title="PlainAI_Channel" class="">PlainAI_Channel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainAI_ChannelStatus.html" title="PlainAI_ChannelStatus" class="">PlainAI_ChannelStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelBasic.html" title="PlainEL922x_ChannelBasic" class="">PlainEL922x_ChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelExtended.html" title="PlainEL922x_ChannelExtended" class="">PlainEL922x_ChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainFuseChannelBasic.html" title="PlainFuseChannelBasic" class="">PlainFuseChannelBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainFuseChannelExtended.html" title="PlainFuseChannelExtended" class="">PlainFuseChannelExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainFuseModuleEL922x.html" title="PlainFuseModuleEL922x" class="">PlainFuseModuleEL922x</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainGlobal_Version.html" title="PlainGlobal_Version" class="">PlainGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainInfoData.html" title="PlainInfoData" class="">PlainInfoData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainIO.html" title="PlainIO" class="">PlainIO</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainOutputStruct.html" title="PlainOutputStruct" class="">PlainOutputStruct</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainStatusStructBasic.html" title="PlainStatusStructBasic" class="">PlainStatusStructBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainStatusStructExtended.html" title="PlainStatusStructExtended" class="">PlainStatusStructExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html" title="PlainTcoIoBeckhoffTwinController" class="">PlainTcoIoBeckhoffTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.PlainWcState.html" title="PlainWcState" class="">PlainWcState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.StatusStructBasic.html" title="StatusStructBasic" class="">StatusStructBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.StatusStructBasic.PlcStatusStructBasic.html" title="StatusStructBasic.PlcStatusStructBasic" class="">StatusStructBasic.PlcStatusStructBasic</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.StatusStructExtended.html" title="StatusStructExtended" class="">StatusStructExtended</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.StatusStructExtended.PlcStatusStructExtended.html" title="StatusStructExtended.PlcStatusStructExtended" class="">StatusStructExtended.PlcStatusStructExtended</a>
+                                </li>
+                                <li class="active">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.TcoIoBeckhoffTwinController.html" title="TcoIoBeckhoffTwinController" class="active">TcoIoBeckhoffTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.WcState.html" title="WcState" class="">WcState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoBeckhoff/TcoIoBeckhoff.WcState.PlcWcState.html" title="WcState.PlcWcState" class="">WcState.PlcWcState</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">TcoPneumatics</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../TcoPneumatics/TcoPneumatics.html" title="TcoPneumatics" class="">TcoPneumatics</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.fbCylinder.html" title="fbCylinder" class="">fbCylinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.fbCylinder.PlcfbCylinder.html" title="fbCylinder.PlcfbCylinder" class="">fbCylinder.PlcfbCylinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.Global_Version.html" title="Global_Version" class="">Global_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.Global_Version.PlcGlobal_Version.html" title="Global_Version.PlcGlobal_Version" class="">Global_Version.PlcGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.IfbCylinder.html" title="IfbCylinder" class="">IfbCylinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.IGlobal_Version.html" title="IGlobal_Version" class="">IGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.IShadowfbCylinder.html" title="IShadowfbCylinder" class="">IShadowfbCylinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.IShadowGlobal_Version.html" title="IShadowGlobal_Version" class="">IShadowGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.IShadowTcoPneumaticsTwinController.html" title="IShadowTcoPneumaticsTwinController" class="">IShadowTcoPneumaticsTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.ITcoPneumaticsTwinController.html" title="ITcoPneumaticsTwinController" class="">ITcoPneumaticsTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.PlainfbCylinder.html" title="PlainfbCylinder" class="">PlainfbCylinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.PlainGlobal_Version.html" title="PlainGlobal_Version" class="">PlainGlobal_Version</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.PlainTcoPneumaticsTwinController.html" title="PlainTcoPneumaticsTwinController" class="">PlainTcoPneumaticsTwinController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcoPneumatics/TcoPneumatics.TcoPneumaticsTwinController.html" title="TcoPneumaticsTwinController" class="">TcoPneumaticsTwinController</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController">
+  
+  
+  <h1 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController" class="text-break">Class TcoIoBeckhoffTwinController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TcoIoBeckhoffTwinController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Vortex.Connector.ITwinController</span></div>
+    <div><a class="xref" href="TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html">ITcoIoBeckhoffTwinController</a></div>
+    <div><a class="xref" href="TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html">IShadowTcoIoBeckhoffTwinController</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TcoIoBeckhoff.html">TcoIoBeckhoff</a></h6>
+  <h6><strong>Assembly</strong>: TcoIoBeckhoffConnector.dll</h6>
+  <h5 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TcoIoBeckhoffTwinController : ITwinController, ITcoIoBeckhoffTwinController, IShadowTcoIoBeckhoffTwinController</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L152">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor">TcoIoBeckhoffTwinController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TcoIoBeckhoffTwinController()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_Vortex_Connector_ConnectorAdapter_.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.%23ctor(Vortex.Connector.ConnectorAdapter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L167">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_Vortex_Connector_ConnectorAdapter_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor(Vortex.Connector.ConnectorAdapter)">TcoIoBeckhoffTwinController(ConnectorAdapter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TcoIoBeckhoffTwinController(ConnectorAdapter adapter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortex.Connector.ConnectorAdapter</span></td>
+        <td><span class="parametername">adapter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_Vortex_Connector_ConnectorAdapter_System_Object___.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.%23ctor(Vortex.Connector.ConnectorAdapter%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L160">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__ctor_Vortex_Connector_ConnectorAdapter_System_Object___" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.#ctor(Vortex.Connector.ConnectorAdapter,System.Object[])">TcoIoBeckhoffTwinController(ConnectorAdapter, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TcoIoBeckhoffTwinController(ConnectorAdapter adapter, object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortex.Connector.ConnectorAdapter</span></td>
+        <td><span class="parametername">adapter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__Global_Version.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController._Global_Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L59">View Source</a>
+  </span>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__Global_Version" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._Global_Version">_Global_Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Global_Version _Global_Version</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.Global_Version.html">Global_Version</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__humanReadable.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController._humanReadable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L33">View Source</a>
+  </span>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__humanReadable" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._humanReadable">_humanReadable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _humanReadable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__IO.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController._IO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L34">View Source</a>
+  </span>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__IO" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._IO">_IO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IO _IO</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IO.html">IO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__AttributeName.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController._AttributeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L124">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__AttributeName_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._AttributeName*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__AttributeName" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._AttributeName">_AttributeName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string _AttributeName
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController__translator.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController._translator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L180">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__translator_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._translator*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController__translator" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController._translator">_translator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static ITranslator _translator
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortex.Localizations.Abstractions.ITranslator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_AttributeName.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.AttributeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L111">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_AttributeName_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.AttributeName*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_AttributeName" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.AttributeName">AttributeName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AttributeName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Connector.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Connector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L146">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Connector_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Connector*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Connector" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Connector">Connector</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConnector Connector { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortex.Connector.IConnector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Global_Version.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Global_Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L60">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Global_Version_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Global_Version*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Global_Version" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Global_Version">Global_Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Global_Version Global_Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.Global_Version.html">Global_Version</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_HumanReadable.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.HumanReadable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L20">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_HumanReadable_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.HumanReadable*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_HumanReadable" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.HumanReadable">HumanReadable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HumanReadable { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_IO.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.IO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L35">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_IO_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.IO*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_IO" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.IO">IO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IO IO { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IO.html">IO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_LocalizationDirectory.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.LocalizationDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L174">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LocalizationDirectory_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LocalizationDirectory*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LocalizationDirectory" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LocalizationDirectory">LocalizationDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LocalizationDirectory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Online.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Online%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L130">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Online_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Online*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Online" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Online">Online</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITcoIoBeckhoffTwinController Online { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html">ITcoIoBeckhoffTwinController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Shadow.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Shadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L138">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Shadow_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Shadow*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Shadow" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Shadow">Shadow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IShadowTcoIoBeckhoffTwinController Shadow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html">IShadowTcoIoBeckhoffTwinController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Symbol.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Symbol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L14">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Symbol_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Symbol*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Symbol" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Symbol">Symbol</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Symbol { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_Translator.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.Translator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L186">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Translator_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Translator*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_Translator" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.Translator">Translator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static ITranslator Translator
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortex.Localizations.Abstractions.ITranslator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L96">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType">CreatePlainerType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlainTcoIoBeckhoffTwinController CreatePlainerType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html">PlainTcoIoBeckhoffTwinController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType_TcoIoBeckhoff_PlainTcoIoBeckhoffTwinController_.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType(TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L104">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_CreatePlainerType_TcoIoBeckhoff_PlainTcoIoBeckhoffTwinController_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.CreatePlainerType(TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController)">CreatePlainerType(PlainTcoIoBeckhoffTwinController)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlainTcoIoBeckhoffTwinController CreatePlainerType(PlainTcoIoBeckhoffTwinController cloned)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html">PlainTcoIoBeckhoffTwinController</a></td>
+        <td><span class="parametername">cloned</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html">PlainTcoIoBeckhoffTwinController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyOnlineToShadow.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyOnlineToShadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L84">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyOnlineToShadow_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyOnlineToShadow*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyOnlineToShadow" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyOnlineToShadow">LazyOnlineToShadow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LazyOnlineToShadow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyShadowToOnline.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyShadowToOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L90">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyShadowToOnline_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyShadowToOnline*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_LazyShadowToOnline" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.LazyShadowToOnline">LazyShadowToOnline()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LazyShadowToOnline()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_Global_Version.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff%23IShadowTcoIoBeckhoffTwinController%23Global_Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L76">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_Global_Version_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#IShadowTcoIoBeckhoffTwinController#Global_Version*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_Global_Version" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#IShadowTcoIoBeckhoffTwinController#Global_Version">IShadowTcoIoBeckhoffTwinController.Global_Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IShadowGlobal_Version IShadowTcoIoBeckhoffTwinController.Global_Version { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IShadowGlobal_Version.html">IShadowGlobal_Version</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_IO.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff%23IShadowTcoIoBeckhoffTwinController%23IO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L51">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_IO_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#IShadowTcoIoBeckhoffTwinController#IO*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_IShadowTcoIoBeckhoffTwinController_IO" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#IShadowTcoIoBeckhoffTwinController#IO">IShadowTcoIoBeckhoffTwinController.IO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IShadowIO IShadowTcoIoBeckhoffTwinController.IO { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IShadowIO.html">IShadowIO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_Global_Version.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff%23ITcoIoBeckhoffTwinController%23Global_Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L68">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_Global_Version_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#ITcoIoBeckhoffTwinController#Global_Version*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_Global_Version" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#ITcoIoBeckhoffTwinController#Global_Version">ITcoIoBeckhoffTwinController.Global_Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGlobal_Version ITcoIoBeckhoffTwinController.Global_Version { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IGlobal_Version.html">IGlobal_Version</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_IO.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff%23ITcoIoBeckhoffTwinController%23IO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L43">View Source</a>
+  </span>
+  <a id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_IO_" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#ITcoIoBeckhoffTwinController#IO*"></a>
+  <h4 id="TcoIoBeckhoff_TcoIoBeckhoffTwinController_TcoIoBeckhoff_ITcoIoBeckhoffTwinController_IO" data-uid="TcoIoBeckhoff.TcoIoBeckhoffTwinController.TcoIoBeckhoff#ITcoIoBeckhoffTwinController#IO">ITcoIoBeckhoffTwinController.IO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIO ITcoIoBeckhoffTwinController.IO { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TcoIoBeckhoff.IIO.html">IIO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Vortex.Connector.ITwinController</span>
+  </div>
+  <div>
+      <a class="xref" href="TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html">ITcoIoBeckhoffTwinController</a>
+  </div>
+  <div>
+      <a class="xref" href="TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html">IShadowTcoIoBeckhoffTwinController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Inxton/TcOpen/new/dev/apiSpec/new?filename=TcoIoBeckhoff_TcoIoBeckhoffTwinController.md&amp;value=---%0Auid%3A%20TcoIoBeckhoff.TcoIoBeckhoffTwinController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Inxton/TcOpen/blob/dev/src/TcoIoBeckhoff/src/TcoIoBeckhoffConnector/_generated/TcoIoBeckhoff.g.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <p>Generated by <strong>DocFX</strong> | Developed with <span style="color:red">❤</span> at <a href="https://www.mts.sk/en">MTS</a> - putting the heart into manufacturing.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

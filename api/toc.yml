@@ -1,0 +1,6 @@
+- name: TcoCore
+  href: TcoCore/toc.yml
+- name: TcoIoBeckhoff
+  href: TcoIoBeckhoff/toc.yml
+- name: TcoPneumatics
+  href: TcoPneumatics/toc.yml
