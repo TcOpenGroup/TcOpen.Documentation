@@ -1,8 +1,9 @@
 # TcOpen Conventions
 
-| REVISION | NOTES           |
-|----------|-----------------|
-| 0.0      | Initial release |
+| REVISION | DATE       | NOTES                 |
+|----------|------------|-----------------------|
+| 0.0      | April 2021 | Initial release       |
+| 0.1      | April 2021 | STRUCT members naming |
 
 
 
@@ -25,7 +26,7 @@ This document defines the minimum coding standards and will be updated as the pr
 
 For this document are terms 
 - ```Function block``` and ```class``` **interchangeable**. 
-- ```Type``` is the common name for any ```FB```, ```STRUCT```, ```UNION```.
+- ``` Type``` is the common name for any ```FB```, ```STRUCT```, ```UNION```.
 
 ### A General note on naming
 
@@ -62,7 +63,7 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 
 
 
-> **Member naming**
+> **FB/class member naming**
 
 | Variable section | Notation   | Prefix    | Example                                                                   |
 |------------------|------------|-----------|---------------------------------------------------------------------------|
@@ -73,9 +74,19 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 | VAR_STAT         | camelCase  | ```_```   | ```_actualPosition  : LREAL```, ```_advancedCyclinder : fbCyclinder```    |
 | VAR_INST         | camelCase  | ```_```   | ```_actualPosition  : LREAL``` , ```_advancedCyclinder : fbCyclinder```   |
 | VAR CONSTANT     | UpperCase  | NoPrefix  | ```MAX_747_CRUISING_ALTITUDE```                                           |
-| REFERENCE        | camelCase  | ```ref``` | ```refDrive```                                                            |
-| POINTER          | camelCase  | ```p```   | ```pCyclinder```                                                          |
+| REFERENCE        | PascalCase | ```ref``` | ```refDrive```                                                            |
+| POINTER          | PascalCase | ```p```   | ```pCyclinder```                                                          |
 | INTERFACE name   | PascalCase | NoPrefix  | ```Cyclinder```                                                           |
+
+
+> **STRUCT member naming**
+
+| Group          | Notation   | Prefix    | Example              |
+|----------------|------------|-----------|----------------------|
+| VARIABLE       | PascalCase | NoPrefix  | ```ActualPosition``` |
+| REFERENCE      | PascalCase | ```ref``` | ```refDrive```       |
+| POINTER        | PascalCase | ```p```   | ```pCyclinder```     |
+| INTERFACE name | PascalCase | NoPrefix  | ```Cyclinder```      |
 
 > **Features to avoid**
 
@@ -85,7 +96,7 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 | TRANSITION | TcoOpen Framework coordination primitives |
 
 
-**Features to prefer**
+> **Features to prefer**
 
 | IF YOU REALLY MUST | EVERYWHERE ELSE         |
 |--------------------|-------------------------|
@@ -103,15 +114,15 @@ All variables should be declared closest to the scope where they are used. Avoid
 ### GVLs, PRGs
 
 Generally, the global scope should be avoided where possible.
-GVLs, PRGs and Parameter lists must specify ```{attribute 'qualified_only'}``` to ensure access is fully scoped in the code. [Beckhoff Infosys Doc here](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007201784510091.html&id=8098035924341237087).
+GVLs, PRGs, and Parameter lists must specify ```{attribute 'qualified_only'}``` to ensure access is fully scoped in the code. [Beckhoff Infosys Doc here](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007201784510091.html&id=8098035924341237087).
 
-GVLs, PRGs should not be accessible from outside the library and should use ```INTERNAL``` access modifier.
+GVLs, PRGs should not be accessible from outside the library and should use the ```INTERNAL``` access modifier.
 
 ## Member Variables
 
 Class (FB) member variables should begin with underscore ```_``` followed the variable name.
 
-~~~Pascal
+~~~ iecst
     VAR
         _Trigger : BOOL;
         _Counter : INT;
@@ -123,7 +134,7 @@ Class (FB) member variables should begin with underscore ```_``` followed the va
 
 Use constants instead of magic numbers. Constants should be all caps. 
 
-Where magic numbers are required for low-level domain-specific operation, these should be managed in the highest level block that makes sense without breaking an abstraction layer. I.e. Do not add ```SiemensTempSensorModBusStatusWordRegister : WORD:= 3;``` to a GVL of constants. Add this to the appropriate class that handles that device.
+Where magic numbers are required for low-level domain-specific operations, these should be managed in the highest level block that makes sense without breaking an abstraction layer. I.e. Do not add ```SiemensTempSensorModBusStatusWordRegister : WORD:= 3;``` to a GVL of constants. Add this to the appropriate class that handles that device.
 
 ## Arrays
 
@@ -163,7 +174,7 @@ Property name should clearly describe intent. Properties should not start with a
 
 ## Function Block parameter transfer
 
-Whenever a parameter transfer is required during the construction of a class, use ```FB_Init``` method, the data passed at the object construction should be immutable and must not be changed at runtime.
+Whenever a parameter transfer is required during the construction of a class, use the ```FB_Init``` method, the data passed at the object construction should be immutable and must not be changed at runtime.
 For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task. 
 
 ## Static classes
