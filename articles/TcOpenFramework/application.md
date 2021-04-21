@@ -259,7 +259,7 @@ We already mentioned restoring mechanisms in the section about ```ITcoTask```. T
     1. ```ITcoState``` is configured auto-restorable, 
     1. ```IRestorable``` object is a direct member of the ```ITcoState```. 
     
-In this case, the state of the child objects is restored state ```ITcoState``` changes.
+In this case, the state of the child objects is restored when state of the parent ```ITcoState``` changes.
 
 ~~~iecst
 //---------------------------------------------------------
