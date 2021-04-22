@@ -6,8 +6,8 @@
 
 ### Contex (TcoContext : ITcoContext)
 
-```TcOpen```application requires to have at least one ``` TcoContex```that provides contextual and support information and services for the application components.
-```TcoContext```is an abstract class that requires the ```Main```method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject```(more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes when upon ```Run```method call from the PLC program. The ```Run```method will take care of running ```Main```method and other routines that are required for the context and its services.
+```TcOpen```application requires to have at least one ```TcoContex``` that provides contextual and support information and services for the application components.
+```TcoContext``` is an abstract class that requires the ```Main```method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject```(more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with ```Run``` method call from the PLC program. The ```Run```method will take care of running ```Main```method and other routines that are required for the context and its services.
 
 Context usage scenarios:
 
