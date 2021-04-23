@@ -13,7 +13,7 @@ Context usage scenarios:
 
 ![Context usage](Context003.png)
 
-** Example of context implementation**
+** example of context implementation**
 
 Implementation of abstract ```TcoCore.TcoContext``` class
 
@@ -139,6 +139,8 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 The component in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component. 
 Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance.
 
+![](TcoComponent.png)
+
 **Simple pneumatic cylinder implementation**
 
 ~~~iecst
@@ -206,7 +208,15 @@ Each component implements the logic required to run cyclically in the *body* of 
 
 The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus```(typically ```TcoCore.TcoTask```). This rule applies even to the logic that requires a single-cycle execution.
 
-### State (TcoState : ITcoState)
+### Serviceablity
+
+```TcoComponent``` implements ```ITcoServiceable``` interface. Serviceablity means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks of the declared in the component will became ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically. The ```Service``` method is final and cannot be overriden; you can however place custom logic in the override of ```ServiceMode``` method its call is ensured by ```Service``` method.
+
+Serviceable mode would be typicaly used in manual mode of a unit.
+
+![TcoComponent Serviceable](TcoComponent-serviceable.png)
+
+## State (TcoState : ITcoState)
 
 The state controller ```TcoState``` is the primary class for managing control over states of the system. It has a simple implementation for changing and observing the state. It allows handling the state coordination with any statements (IF-END_IF, IF-ELSIF-END_IF, CASE). ```TcoState``` holds the control variable and manages the change via ```TcoState.ChangeState(newState)```. The override of the ```TcoState.OnStateChange(lastState, newState)``` method allows to perform operation on transition between the states.
 
@@ -287,11 +297,15 @@ END_IF;
 
 2. The classes that implement the auto-restorable mechanism (```TcoTask```) will restore its state upon the call of the method executing an action, provided that there were at least two consecutive cycles of the context where that executing method was not called.
 
+
 ### Sequencer (TcoSequencer : ITcoSequencer)
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
 
 ```TcoSequncer``` is an abstract class, and it must have a concrete implementation of ```Main``` method. ```Main``` is the entry point for the sequence logic.
+
+
+
 
 In addition to simple sequential coordination, this class permits manual step-by-step execution, moving the pointer backward and forward in the sequence. ```TcoSequencer``` also implements the auto-restorable mechanism analogous to ```TcoState```.
 
@@ -405,9 +419,16 @@ IF Step(800,
 END_IF;
 ~~~
 
+![](TcoSequecer-simple-transitions.png)
+
+#### Requesting step
+
+```TcoSequener.RequestStep(INT)``` it is similar to ```goto``` or ```JMP``` except that the jump occurs at sequencer's level. If the requeste step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.
+
 #### Cyclic mode
 
-The ```cyclic mode``` runs the steps until it reaches the step in the sequence that invokes ```CompleteSequence()``` method; this method moves the sequencer's pointer to the first step in the sequence, it also registers the time of the sequence and prepares the sequence for the next run.
+The ```cyclic mode``` runs the steps until it reaches the step in the sequence that invokes ```CompleteSequence()``` method; this method moves the sequencer's pointer to the first step in the sequence, it also registers the time of the sequence and prepares the sequencer for the next run.
+
 
 #### Step mode
 
