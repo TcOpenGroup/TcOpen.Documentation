@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>!!!WORK IN PROGRESS!!! </title>
+    <title>TcOpen Conventions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="!!!WORK IN PROGRESS!!! ">
+    <meta name="title" content="TcOpen Conventions ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.png">
@@ -91,6 +91,15 @@
                             <a href="../Conventions/Conventions.html" title="General" class="active">General</a>
                           </li>
                         </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">TcOpen Framework</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../TcOpenFramework/application.html" title="TcOpen.Framework" class="">TcOpen.Framework</a>
+                          </li>
+                        </ul>  </li>
                   </ul>        </div>
               </div>
             </div>
@@ -99,183 +108,247 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="work-in-progress">!!!WORK IN PROGRESS!!!</h1>
+<h1 id="tcopen-conventions">TcOpen Conventions</h1>
 
-<h1 id="tcopen-naming-conventions">TcOpen Naming Conventions</h1>
-<p>This documents modifies recommendations from <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/54043198675164555.html&amp;id=">Beckhoff TwinCAT conventions</a> for the purpose of TcOpen project(s).</p>
+<table>
+<thead>
+<tr>
+<th>REVISION</th>
+<th>DATE</th>
+<th>NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0</td>
+<td>April 2021</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>April 2021</td>
+<td>STRUCT members naming</td>
+</tr>
+</tbody>
+</table>
 <h2 id="introduction">Introduction</h2>
-<p>Thanks for taking time to read this document. Here we aim to outline a set of rules that will help us all to write consistent libraries that will serve us and its other consumers.</p>
-<h3 id="why-do-we-need-agree-on-conventions">Why do we need agree on conventions</h3>
+<p>Thanks for taking the time to read this document. Here we aim to outline a set of rules that will help us write consistent libraries that will serve their other consumers and us.</p>
+<p>This document modifies recommendations from <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/54043198675164555.html&amp;id=">Beckhoff TwinCAT conventions</a> for TcOpen project(s).</p>
+<p>This document defines the minimum coding standards and will be updated as the project develops in time.</p>
+<h3 id="why-do-we-need-to-agree-on-conventions">Why do we need to agree on conventions</h3>
 <ul>
-<li>They create a consistent look to the code, so that readers can focus on content, not layout.</li>
+<li>They create a consistent look to the code so that readers can focus on content, not layout.</li>
 <li>They enable readers to understand the code more quickly by making assumptions based on previous experience.</li>
 <li>They facilitate copying, changing, and maintaining the code.</li>
 <li>They demonstrate Structured Text best practices.</li>
 </ul>
 <h3 id="terminology">Terminology</h3>
-<p>For the purpose of this document are terms <code>Function block</code> and <code>class</code> <strong>interchangeable</strong>.</p>
+<p>For this document are terms</p>
+<ul>
+<li><code>Function block</code> and <code>class</code> <strong>interchangeable</strong>.</li>
+<li><code> Type</code> is the common name for any <code>FB</code>, <code>STRUCT</code>, <code>UNION</code>.</li>
+</ul>
 <h3 id="a-general-note-on-naming">A General note on naming</h3>
-<p>Names should be self-describing, readable considered in calling context.</p>
-<h3 id="general-note-on-use-of-plc-language">General note on use of PLC-Language</h3>
-<p>These library projects use exclusively Structured Test (ST) language and OOP extensions.</p>
-<h2 id="naming-overview">Naming overview</h2>
+<p>Names should be self-describing, readable considered in calling context. In general, no use of prefixes is encouraged except for those outlined in this document (to inform/warn about some property like a pointer, reference, IN_OUT reference),
+or to aid to CoDeSys IntelliSense to narrow the scope of search.</p>
+<h3 id="general-note-on-the-use-of-plc-language">General note on the use of PLC-Language</h3>
+<p>TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to the OOP paradigm.</p>
+<h2 id="naming">Naming</h2>
 <blockquote>
 <p><strong>Type Naming</strong></p>
 </blockquote>
-<hr>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Block type</th>
-<th style="text-align: left;">Notation</th>
-<th style="text-align: left;">Prefix</th>
-<th style="text-align: left;">Example</th>
+<th>Block type</th>
+<th>Notation</th>
+<th>Prefix</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">FB/CLASS name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>Cyclinder</code></td>
+<td>FB/CLASS name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Cyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">ENUM type name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>MachineState.Start</code></td>
+<td>ENUM type name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>MachineState.Start</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">INTERFACE name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;"><code>I</code></td>
-<td style="text-align: left;"><code>ICyclinder</code></td>
+<td>INTERFACE name</td>
+<td>PascalCase</td>
+<td><code>I</code></td>
+<td><code>ICyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">FUNCTION name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>Add()</code></td>
+<td>FUNCTION name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Add()</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">STRUCT name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>Data</code></td>
+<td>STRUCT name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Data</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">UNION name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>Control</code></td>
+<td>UNION name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Control</code></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Member naming</strong></p>
+<p><strong>Class member naming</strong></p>
 </blockquote>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Variable section</th>
-<th style="text-align: left;">Notation</th>
-<th style="text-align: left;">Prefix</th>
-<th style="text-align: left;">Example</th>
+<th>Variable section</th>
+<th>Notation</th>
+<th>Prefix</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">METHOD name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>MoveToWork()</code></td>
+<td>METHOD name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>MoveToWork()</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">METHOD arguments</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>targetPosition  : LREAL</code></td>
+<td>METHOD arguments</td>
+<td>camelCase</td>
+<td>NoPrefix</td>
+<td><code>targetPosition  : LREAL</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">PROPERTY name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>IsEnabled</code></td>
-</tr>
-<tr>
-<td style="text-align: left;">INTERFACE name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: left;"><code>ip</code></td>
-<td style="text-align: left;"><code>ipCyclinder</code></td>
-</tr>
-<tr>
-<td style="text-align: left;">REFERENCE name Declaration</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>ref</code></td>
-<td style="text-align: left;"><code>refDrive</code></td>
-</tr>
-<tr>
-<td style="text-align: left;">POINTER Declaration</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>p</code></td>
-<td style="text-align: left;"><code>pCyclinder</code></td>
+<td>PROPERTY name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>IsEnabled</code></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Variable naming</strong></p>
+<p><strong>FB/class member naming</strong></p>
 </blockquote>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Variable section</th>
-<th style="text-align: left;">Notation</th>
-<th style="text-align: left;">Prefix</th>
-<th style="text-align: left;">Example</th>
+<th>Variable section</th>
+<th>Notation</th>
+<th>Prefix</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">VAR_INPUT</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>in</code></td>
-<td style="text-align: left;"><code>inActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR_INPUT</td>
+<td>camelCase</td>
+<td><code>in</code></td>
+<td><code>inActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR_OUTPUT</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>out</code></td>
-<td style="text-align: left;"><code>outActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR_OUTPUT</td>
+<td>camelCase</td>
+<td><code>out</code></td>
+<td><code>outActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR_IN_OUT</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>ino</code></td>
-<td style="text-align: left;"><code>inoActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR_IN_OUT</td>
+<td>camelCase</td>
+<td><code>io</code></td>
+<td><code>ioActualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>_</code></td>
-<td style="text-align: left;"><code>_actualPosition  : LREAL</code>, <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR</td>
+<td>camelCase</td>
+<td><code>_</code></td>
+<td><code>_actualPosition  : LREAL</code>, <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR_STAT</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>_</code></td>
-<td style="text-align: left;"><code>_actualPosition  : LREAL</code>, <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR_STAT</td>
+<td>camelCase</td>
+<td><code>_</code></td>
+<td><code>_actualPosition  : LREAL</code>, <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR_INST</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: left;"><code>_</code></td>
-<td style="text-align: left;"><code>_actualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
+<td>VAR_INST</td>
+<td>camelCase</td>
+<td><code>_</code></td>
+<td><code>_actualPosition  : LREAL</code> , <code>_advancedCyclinder : fbCyclinder</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">VAR CONSTANT</td>
-<td style="text-align: left;">UpperCase</td>
-<td style="text-align: left;">NoPrefix</td>
-<td style="text-align: left;"><code>MAX_747_CRUISING_ALTITUDE</code></td>
+<td>VAR CONSTANT</td>
+<td>UpperCase</td>
+<td>NoPrefix</td>
+<td><code>MAX_747_CRUISING_ALTITUDE</code></td>
+</tr>
+<tr>
+<td>REFERENCE</td>
+<td>PascalCase</td>
+<td><code>ref</code></td>
+<td><code>refDrive</code></td>
+</tr>
+<tr>
+<td>POINTER</td>
+<td>PascalCase</td>
+<td><code>p</code></td>
+<td><code>pCyclinder</code></td>
+</tr>
+<tr>
+<td>INTERFACE name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Cyclinder</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>STRUCT member naming</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Notation</th>
+<th>Prefix</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VARIABLE</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>ActualPosition</code></td>
+</tr>
+<tr>
+<td>REFERENCE</td>
+<td>PascalCase</td>
+<td><code>ref</code></td>
+<td><code>refDrive</code></td>
+</tr>
+<tr>
+<td>POINTER</td>
+<td>PascalCase</td>
+<td><code>p</code></td>
+<td><code>pCyclinder</code></td>
+</tr>
+<tr>
+<td>INTERFACE name</td>
+<td>PascalCase</td>
+<td>NoPrefix</td>
+<td><code>Cyclinder</code></td>
 </tr>
 </tbody>
 </table>
@@ -285,110 +358,84 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Avoid</th>
-<th style="text-align: left;">Use instead</th>
+<th>Avoid</th>
+<th>Use instead</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ACTION</td>
-<td style="text-align: left;">METHOD</td>
+<td>ACTION</td>
+<td>METHOD</td>
+</tr>
+<tr>
+<td>TRANSITION</td>
+<td>TcoOpen Framework coordination primitives</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Features to prefer</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>IF YOU REALLY MUST</th>
+<th>EVERYWHERE ELSE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FUNCTION</td>
+<td>PRG.METHOD OR FB.METHOD</td>
 </tr>
 </tbody>
 </table>
 <h2 id="identifiers">Identifiers</h2>
-<p>Any identifier (variable, methods, properties...) should have an identifier that clearly express intent. Identifiers with less then 4 characters should be avoided (unless they express well known acronyms or expressions); there is no formal constraint on maximum number of characters, however about 25 characters should suffice.</p>
-<h3 id="constants">Constants</h3>
-<p>Constants should be ALLCAPS...</p>
+<p>Any identifier (variable, methods, properties) should have an identifier that clearly expresses intent. Identifiers with less than <code>4</code> characters should be avoided (unless they represent well-known acronyms or expressions). There is no formal constraint on a maximum number of characters; however, about 25 characters should suffice to name the variable appropriately.</p>
 <h2 id="scope">Scope</h2>
-<h3 id="gvls-prgs-and-parameters-lists">GVLs, PRGs and Parameters lists</h3>
-<p>Generally, global scope should be avoided where possible.
-GVLs, PRGs and Parameter lists must specify <code>{attribute 'qualified_only'}</code> to ensure access is fully scoped in the code. <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007201784510091.html&amp;id=8098035924341237087">Beckhoff Infosys Doc here</a>.</p>
-<p>GVLs, PRGs must not be accessible from outside the library and must use access modifier <code>INTERNAL</code>.
-Setting / modifying GVL variables should be done through static helpers or functions.</p>
-<h3 id="constants-1">Constants</h3>
-<p>Where magic numbers are required for low level domain specific operation, these should be managed in the highest level block that makes sense without breaking an abstraction layer. I.e. Do not add <code>SiemensTempSensorModBusStatusWordRegister : WORD:= 3;</code> to a GVL of constants. Add this to the appropriate class that handles that device.</p>
-<p>Where sizing of types may change depending on the use of the library, a <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/18014401980319499.html&amp;id=6895410617442004539">Parameter List</a> is preferred. This allows the library to be design-time condfigured without modification of the library. Keep the parameterlist as tightly scoped as possible, and as close (in the solution hierarchy) as possible.</p>
-<p>i.e.</p>
-<pre><code class="lang-Pascal">// DrivesParams is a Parameter List, as array size needs to be flexible
-drives : ARRAY[1..DrivesParams.NumberOfDrives] OF FB_Drive;
+<p>All variables should be declared closest to the scope where they are used. Avoid using global declarations unless it is necessary or the global scope is required for the application.</p>
+<h3 id="gvls-prgs">GVLs, PRGs</h3>
+<p>Generally, the global scope should be avoided where possible.
+GVLs, PRGs, and Parameter lists must specify <code>{attribute 'qualified_only'}</code> to ensure access is fully scoped in the code. <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007201784510091.html&amp;id=8098035924341237087">Beckhoff Infosys Doc here</a>.</p>
+<p>GVLs, PRGs should not be accessible from outside the library and should use the <code>INTERNAL</code> access modifier.</p>
+<h2 id="member-variables">Member Variables</h2>
+<p>Class (FB) member variables should begin with underscore <code>_</code> followed the variable name.</p>
+<pre><code class="lang-iecst">    VAR
+        _Trigger : BOOL;
+        _Counter : INT;
+        _AnalogStatus : AnalogStatus;
+    END_VAR
+</code></pre>
+<h3 id="constants">Constants</h3>
+<p>Use constants instead of magic numbers. Constants should be all caps.</p>
+<p>Where magic numbers are required for low-level domain-specific operations, these should be managed in the highest level block that makes sense without breaking an abstraction layer. I.e. Do not add <code>SiemensTempSensorModBusStatusWordRegister : WORD:= 3;</code> to a GVL of constants. Add this to the appropriate class that handles that device.</p>
+<h2 id="arrays">Arrays</h2>
+<p>Arrays should be 0 based index due to consistency when used on HMI platforms (based on JavaScript, TypeScript, C#).</p>
+<pre><code class="lang-PASCAL">VAR
+    myArray     : ARRAY[0..9] OF BOOL; // Prefered
+    myArray1    : ARRAY[1..10] OF BOOL; // AVOID
+END_VAR
 </code></pre>
 <h2 id="namespaces">Namespaces</h2>
-<p>Variables defined in referenced libraries must be declared using fully qualified name with namespace.</p>
+<p>Variables defined in referenced libraries must be declared using a fully qualified name with the namespace.</p>
 <pre><code class="lang-Pascal">VAR
     _mixer : fbMixer; // AVOID!
     _mixer : Mixers.fbMixer; // Like this
 END_VAR
 </code></pre>
 <h2 id="methods">Methods</h2>
-<p>Methods names should clearly state the intent. Method name should not have any prefix (with exception for testing methods). Methods in components should be used to perform an action (Movement, Measurement, Trigger etc.)</p>
+<p>Methods names should clearly state the intent. Method name should not have any prefix. The methods should be used to perform some action (Movement, Measurement, Trigger etc.). For obtaining or setting values, prefer properties.</p>
 <pre><code class="lang-Pascal">    piston.MoveToWork();
     laser.Measure();
     dmcReader.Trigger();
 </code></pre>
 <h3 id="properties">Properties</h3>
-<p>Property name should clearly describe intent. In general the name</p>
-<p>Properties should <strong>NOT</strong> begin with prop like Beckhoff sample code demonstrates.  We already know that these objects are properties in the way they are exposed.<br>
-// TODO talk with the group about property naming
-ex. bBooleanProperty, BooleanProperty p_BooleanProperty</p>
-<h2 id="fluent-interfaces">Fluent Interfaces</h2>
-<p>It is possible in TwinCAT to create classes with fluent interfaces by returning an instance of the class (THIS^ in TwinCAT) in each method.  This allows chaining method calls together.  An example of this can be seen in Gerhard Barteling's blog post <a href="https://www.plccoder.com/fluent-code/">https://www.plccoder.com/fluent-code/</a>.  This offers a very clean interface and usage pattern, especially in utility classes.</p>
+<p>Property name should clearly describe intent. Properties should not start with any prefix.</p>
 <h2 id="function-block-parameter-transfer">Function Block parameter transfer</h2>
-<p>Whenever a parameter transfer is required during construction of a class use <code>FB_Init</code> method
-For cyclical update of parameters VAR_INPUT/OUTPUT/IN_OUT that are called.</p>
+<p>Whenever a parameter transfer is required during the construction of a class, use the <code>FB_Init</code> method, the data passed at the object construction should be immutable and must not be changed at runtime.
+For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task.</p>
 <h2 id="static-classes">Static classes</h2>
-<p>For entry point of static classes and function use PROGRAMs or GVLs.</p>
-<h2 id="pointers">Pointers</h2>
-<p>In general avoid use of pointers, use REFERENCE TO whenever possible. However, pointers are allowed in specific instances. The use of pointers must be approved and reviewed by the owners of the repository.</p>
-<h2 id="allocated-variables-at-i-q">Allocated variables (<code>AT %I* %Q*</code>)</h2>
-<p>All allocated variables should be defined in GVL (typically named <code>IO</code>). GVL containing allocated variable should be used exclusively for the variables that are intended to map physical hardware. Such GVL should be structured in a way that resembles distribution and topology of actual hardware.</p>
-<h2 id="member-variables">Member Variables</h2>
-<p>Class (FB) member variables should begin with underscore <code>_</code> followed the variable name.</p>
-<pre><code class="lang-Pascal">    VAR
-        _Trigger : BOOL;
-        _Counter : INT;
-        _AnalogStatus : AnalogStatus;
-    END_VAR
-</code></pre>
-<h2 id="components">Components</h2>
-<p>Component is any class of which the purpose is to control and describe a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.</p>
-<p>Component must not contain application specific code to be reusable by other consumers. Components must also allow to be extended by the consumers.</p>
-<ul>
-<li>Component must inherit from <code>TcoCore.fbComponent</code></li>
-<li>Component must not be marked FINAL (sealed)</li>
-<li>Component should implement appropriate <code>INTERFACE</code> for public contract</li>
-<li>Component members must explicitly state access modifier for methods and properties (<code>PUBLIC</code>, <code>INTERNAL</code>, <code>PROTECTED</code>, or <code>PRIVATE</code>)</li>
-<li>Component should properly hide implementation details by marking methods preferably <code>PROTECTED</code>.</li>
-<li>Consider use of <code>PRIVATE</code> access modifier to prevent any access to that member if you deem it necessary, be aware though that private members cannot be overridden by the class that inherits your component and consumers will not be able to change</li>
-<li>Component's testing methods must be marked <code>INTERNAL</code>. Testing classes/members that are in a separate testing project can be <code>PUBLIC</code>.</li>
-</ul>
-<h3 id="cyclic-call">Cyclic call</h3>
-<p>Each component implements logic that is required to run cyclically in the <em>body</em> of the function block.</p>
-<h3 id="components-methods">Components methods</h3>
-<p>The methods that perform actions <strong>MUST</strong> return TcoCore.ITcoTask. Particular implementation of <code>TcoCore.ITcoTask.Execute()</code> must be called in the body of the function block.</p>
-<pre><code class="lang-Pascal"> // Simple example of state driven by return values from components. Piston return true when _work or _home position sensor are reached respectively.
- CASE state OF
- 0:
-    IF(verticalPiston.MoveToHome().Done
-    AND_THEN horizontalPiston.MoveToHome().Done
-    AND_THEN gripper.MoveToHome().Done)
-    )
-    THEN
-        state := state + 1;
-    END_IF;
- 1:
-    IF(horizontalPiston.MoveToWork().Done) THEN
-        state := state + 1;
-    END_IF;
- 1:
-    IF(verticalPiston.MoveToWork().Done) THEN
-        state := state + 1;
-    END_IF;
- 2:
-    IF(gripper.MoveToWork().Done) THEN
-        state := state + 1;
-    END_IF;
-</code></pre>
+<p>For static-like behavior, use <code>PROGRAM</code>.</p>
 </article>
           </div>
           
@@ -397,7 +444,7 @@ For cyclical update of parameters VAR_INPUT/OUTPUT/IN_OUT that are called.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/blob/dev/articles/Conventions/Conventions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Inxton/TcOpen.Documentation/blob/feature/updates_to_articles/articles/Conventions/Conventions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
