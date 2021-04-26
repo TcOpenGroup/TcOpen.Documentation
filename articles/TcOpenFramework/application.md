@@ -1,50 +1,52 @@
 # TcOpen Framework application
 
+The aim of the TcOpen Framework is to provide building blocks for building components for real world applications (Pistons, Driver, Robots, Vision systems, etc.) The framework also contains a series of classes that aim to help to write applications using more advanced techniques known from information technologies. TcOpen is crafted in OOP paradigm, taking full advantage of object oriented design.
+
+Main focus is to aid writing well crafted PLC applications with particular focus on coordination of control programs,  observability (improved the visibility into what is happening) and testability.
+
+//TODO: add reference to example application
+
 ## TcoCore
 
-```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default namespace for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces. 
+```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default namespace for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
 
 ### Contex (TcoContext : ITcoContext)
 
-```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual and support information and services for the application components.
+```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual support information and services for the application's components.
 ```TcoContext``` is an abstract class that requires the ```Main``` method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject``` (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with ```Run``` method call from the PLC program. The ```Run``` method will take care of running ```Main``` method and other routines that are required for the context and its services.
 
 Context usage scenarios:
 
 ![Context usage](Context003.png)
 
-** example of context implementation**
+**example of context implementation**
 
 Implementation of abstract ```TcoCore.TcoContext``` class
 
 ~~~iecst
 FUNCTION_BLOCK ExampleContext EXTENDS TcoCore.TcoContext
 VAR    
-    // Primitive state controller
-	_automat : TcoCore.TcoState(THIS^, TRUE);     
-    _someComponent : SomeComponent(THIS^);
+    // State control variable
+	_state : INT;    
+    // Piston component
+    _piston : Piston(THIS^); // About the construction via FB_init later.  
 END_VAR
 ~~~
 
 Implementation of abstract method ```Main```
 
 ~~~iecst
-METHOD PROTECTED  Main
+METHOD PROTECTED Main
 //-------------------------------------------------------------
-IF(_automat.State = 0) THEN
-    _someComponent.DoSomething()
-    _automat.ChangeState(10);
+IF(_state = 0) THEN
+    IF(_piston.MoveWork().Done) THEN
+      _state := 10;
+    END_IF;  
 END_IF;
 
-IF(_automat.State = 10) THEN
-    IF(_someComponent.Done) THEN
-        _automat.ChangeState(20);
-    END_IF;    
-END_IF;
-
-IF(_automat.State = 20) THEN
-    IF(_someComponent.DoSomethingElse().Done) THEN
-        _automat.ChangeState(0);
+IF(_state = 10) THEN
+    IF(_piston.MoveHome().Done) THEN
+      _state := 20;
     END_IF;    
 END_IF;
 .
@@ -52,6 +54,9 @@ END_IF;
 .
 .
 .
+IF(_state = 20) THEN
+    _state := 0;
+END_IF;
 ~~~
 
 Execution of the context. Here we call ```Run```. It will implicitly call the ```Main```method implemented have above.
@@ -64,6 +69,10 @@ END_VAR
 //-------------------------------------
 _context.Run();
 ~~~
+
+### Object (TcoObject : ITcoTask)
+
+Each class in TcOpen framework should derive from ```TcoObject```. TcoObject provides access to ```Context``` and encapsulation of some elementary function.
 
 ### Tasks (TcoTask : ITcoTask)
 
