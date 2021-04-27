@@ -2,13 +2,23 @@
 
 The aim of the TcOpen Framework is to provide building blocks for building components for real world applications (Pistons, Driver, Robots, Vision systems, etc.) The framework also contains a series of classes that aim to help to write applications using more advanced techniques known from information technologies. TcOpen is crafted in OOP paradigm, taking full advantage of object oriented design.
 
-Main focus is to aid writing well crafted PLC applications with particular focus on coordination of control programs,  observability (improved the visibility into what is happening) and testability.
+Main focus is to aid writing well crafted PLC applications with particular focus on coordination of control programs,  observability (improved the visibility into what is happening), messaging/logging and testability.
 
 //TODO: add reference to example application
 
 ## TcoCore
 
 ```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default namespace for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
+
+### Object (TcoObject : ITcoTask)
+
+Each class in TcOpen framework should derive from ```TcoObject```. TcoObject provides access to ```Context``` and encapsulation of messaging system and other useful functions. Any TcoObject can post messages of different severity that can be captured and displayed in higher level applications (HMI/SCADA).
+
+
+~~~ iecst
+//  TODO: add TcoObject implementation example
+~~~ 
+
 
 ### Contex (TcoContext : ITcoContext)
 
@@ -70,9 +80,6 @@ END_VAR
 _context.Run();
 ~~~
 
-### Object (TcoObject : ITcoTask)
-
-Each class in TcOpen framework should derive from ```TcoObject```. TcoObject provides access to ```Context``` and encapsulation of some elementary function.
 
 ### Tasks (TcoTask : ITcoTask)
 
