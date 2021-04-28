@@ -1,10 +1,23 @@
 # TcOpen Framework application
 
-The aim of the TcOpen Framework is to provide building blocks for building components for real world applications (Pistons, Driver, Robots, Vision systems, etc.) The framework also contains a series of classes that aim to help to write applications using more advanced techniques known from information technologies. TcOpen is crafted in OOP paradigm, taking full advantage of object oriented design.
+TcOpen framework provides building blocks for creating components for real-world applications (Pistons, Driver, Robots, Vision systems, etc.). It also contains a series of classes for writing applications using more advanced techniques known from software engineering. TcOpen is crafted in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.
 
-Main focus is to aid writing well crafted PLC applications with particular focus on coordination of control programs,  observability (improved the visibility into what is happening), messaging/logging and testability.
+The ultimate goal of this initiative is to provide automation engineers with **well-designed**, **testable**, **scalable**, and **reusable** blocks to facilitate the development, commissioning, and maintainability of the industrial application software.
 
-//TODO: add reference to example application
+
+## TcOpen application dissection
+
+The following diagram shows schematics of a simple TcOpen application. The station contains a manipulator with a single drive for a horizontal axis movement, a pneumatic piston for vertical axis movement, and a pneumatic gripper.
+
+![TcOpenApplicationOverview.png](TcOpenApplicationOverview.png)
+
+The [components](#Components) are encapsulated into a single structure, ```Station001_Components```.
+
+The blocks of an TcOpen application requires to be nested into a root block called [Context]((#Context)) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```Station001``` block.
+
+Besides components, the station contains two [Sequencers](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities.
+
+The components (Drive, Piston) have a set of tasks that can perform (MoveHome, MoveAbsolute, etc.). All tasks derive from [TcoTask](#Task) within which the actions are running.
 
 ## TcoCore
 
@@ -12,15 +25,45 @@ Main focus is to aid writing well crafted PLC applications with particular focus
 
 ### Object (TcoObject : ITcoTask)
 
-Each class in TcOpen framework should derive from ```TcoObject```. TcoObject provides access to ```Context``` and encapsulation of messaging system and other useful functions. Any TcoObject can post messages of different severity that can be captured and displayed in higher level applications (HMI/SCADA).
+Each block in ```TcOpen``` framework should derive from ```TcoObject```. ```TcoObject``` provides access to [Context](#Context), reference to the parent object, identity (unique identifier across application), access to a messaging system, and other useful functions. Any ```TcoObject``` can post messages of different severity that can be captured and displayed in higher-level applications (HMI/SCADA). If we stretch our imagination, we can think of ```TcoObject``` as ```object``` in C# (all objects derive from ```System.Object```);
 
+**TcoObject construction (FB_init)**
+
+```TcoObject``` must be constructed via ```FB_init``` method passing in a parameter of parent ```ITcoObject```; that is usualy another ```TcoObject``` or a ```TcoContext``` eventualy other type that implements ```ITcoObject``` interface.
+
+> As a rule, all objects should be constructed as follows:
+
+~~~
+VAR
+    _drive : Drive(THIS^);
+END_VAR    
+~~~
+
+where ```THIS^``` is of ```ITcoObject```.
+
+---------------------------
+
+> An example implementation of station object
 
 ~~~ iecst
-//  TODO: add TcoObject implementation example
+FUNCTION_BLOCK Station001 EXTENDS TcoCore.TcoObject
+~~~
+
+~~~ iecst
+METHOD CheckStationsSensors()
+//------------------------------
+Messenger.Debug(CONCAT('Checking stations sesnors, context cycle ', ULINT_TO_STRING(Context.StartCycleCount));
+Messenger.Debug(DT_TO_STRING(Context.Rtc.NowLocal()));
+
+IF(failed) THEN
+   Messenger.Error('Some sensor just failed'); 
+END_IF;    
 ~~~ 
 
 
-### Contex (TcoContext : ITcoContext)
+### Context
+
+**(TcoContext : ITcoContext)**
 
 ```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual support information and services for the application's components.
 ```TcoContext``` is an abstract class that requires the ```Main``` method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject``` (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with ```Run``` method call from the PLC program. The ```Run``` method will take care of running ```Main``` method and other routines that are required for the context and its services.
@@ -81,15 +124,27 @@ _context.Run();
 ~~~
 
 
-### Tasks (TcoTask : ITcoTask)
+### Task
 
-```TcoTask``` is a class for managing chunks of logic in asynchronous execution.
+**(TcoTask : ITcoTask)**
 
-```TcoTask```implements ```Execute``` method that must be accessed cyclically (typically in the body of a Function Block).
+```TcoTask``` is a block for managing chunks of logic in asynchronous execution. The task is often implemented in a component to control a function (servo movement, piston movement).
+
+There are two key methods for managing the task:
+
+- ```Invoke``` call to fire the execution of the task (can be called fire&forget or cyclically)
+
+- ```Execute``` method must be called cyclically (typically in the body of a FB). The method returns ```TRUE``` when required the execution from a call of  ```Invoke``` method until the task enters ```Done``` state.
 
 ![TcoTask diagram](TaskDiagram003_simple.png)
 
-~~~
+~~~ iecst
+FUNCTION_BLOCK BlocWithATask EXTENDS TcoCore.TcoObject
+VAR
+    _counter : INT;
+    _myTask  : TcoCore.TcoTask(THIS^);
+END_IF
+
 // Body of a FB
 IF(_myTask.Exectute()) THEN
     _counter := _counter + 1;
@@ -97,7 +152,7 @@ IF(_myTask.Exectute()) THEN
 END_IF;
 ~~~
 
-The task executes upon the ```Invoke``` method call. ```Invoke``` fires the execution of ```Execute``` logic upon the first call, and it does not need cyclical calling. 
+The task executes upon the ```Invoke``` method call. ```Invoke``` fires the execution of ```Execute``` logic upon the first call, and it does not need cyclical calling.
 
 ~~~
 _myTask.Invoke();
@@ -137,10 +192,11 @@ IF(_myTask.Invoke().Error) THEN
 END_IF;    
 ~~~
 
+**Restore** is a function of ```IRestoreable``` (implemented by TcoTask, TcoComponent...) It provides initialization routine for the object it will recover the object from any state into ```Ready```.
 
 After task completion, the state of the task will remain in ```Done```, unless:
 
-1. Task's ```Restore``` method is called (task moves to ```Ready```state).
+1. Task's ```Restore``` method is called (task moves to ```Ready``` state).
 1. ``` Invoke``` method is **not called** for two or more cycles of its context (that usually means the same as PLC cycle); successive call of ```Invoke``` will switch the task into ```Ready``` and immediately to ```Requested``` state.
 1. If the task is part of complex coordination primitive, the transition between states will bring the task into a ```Ready``` state if that primitive (StateController and derivatives) has this option enabled.
 1. Alternatively, a ```Restore``` of a task can be called in transition methods of complex coordination primitives(```OnStateChange```).
@@ -150,7 +206,9 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 1. Task's ```Restore``` method is called (task goes to ```Ready```state).
 1. ``` Restore``` from **on transition** methods. 
 
-### Components (TcoComponent : ITcoComponent)
+### Components 
+
+**(TcoComponent : ITcoComponent)**
 
 The component in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component. 
 Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance.
@@ -314,7 +372,9 @@ END_IF;
 2. The classes that implement the auto-restorable mechanism (```TcoTask```) will restore its state upon the call of the method executing an action, provided that there were at least two consecutive cycles of the context where that executing method was not called.
 
 
-### Sequencer (TcoSequencer : ITcoSequencer)
+### Sequencer
+
+**(TcoSequencer : ITcoSequencer)**
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
 
