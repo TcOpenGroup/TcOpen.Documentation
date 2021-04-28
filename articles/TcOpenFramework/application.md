@@ -1,9 +1,10 @@
 # TcOpen Framework application
 
-TcOpen framework provides building blocks for creating components for real-world applications (Pistons, Driver, Robots, Vision systems, etc.). It also contains a series of classes for writing applications using more advanced techniques known from software engineering. TcOpen is crafted in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.
+TcOpen framework provides blocks for building industrial applications and for creating reusable software components for various devices like Pistons, Drives, Robots, Vision systems, etc.
+
+Part of the framework is a series of classes/blocks for crafting applications using advanced techniques known from software engineering. TcOpen is created in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.
 
 The ultimate goal of this initiative is to provide automation engineers with **well-designed**, **testable**, **scalable**, and **reusable** blocks to facilitate the development, commissioning, and maintainability of the industrial application software.
-
 
 ## TcOpen application dissection
 
@@ -11,23 +12,27 @@ The following diagram shows schematics of a simple TcOpen application. The stati
 
 ![TcOpenApplicationOverview.png](TcOpenApplicationOverview.png)
 
-The [components](#Components) are encapsulated into a single structure, ```Station001_Components```.
+The blocks of an TcOpen application require to be nested into a root block called [Context]((#Context)) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```AppContext``` block.
 
-The blocks of an TcOpen application requires to be nested into a root block called [Context]((#Context)) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```Station001``` block.
+The next level is ```Station001``` that derives form [TcoObject](#Object) (about TcoObject later).
 
-Besides components, the station contains two [Sequencers](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities.
+The [components](#Components) are encapsulated into a single structure, ```Station001_Components``` (HorizontalDrive, VerticalPiston, Gripper).
 
-The components (Drive, Piston) have a set of tasks that can perform (MoveHome, MoveAbsolute, etc.). All tasks derive from [TcoTask](#Task) within which the actions are running.
+Besides components, the station contains two [Sequencers](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities in automatic mode.
 
-## TcoCore
+The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from [TcoTask](#Task) within which the actions are running.
+
+# TcoCore  library
 
 ```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default namespace for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
 
-### Object (TcoObject : ITcoTask)
+## Object
+
+**(TcoObject : ITcoTask)**
 
 Each block in ```TcOpen``` framework should derive from ```TcoObject```. ```TcoObject``` provides access to [Context](#Context), reference to the parent object, identity (unique identifier across application), access to a messaging system, and other useful functions. Any ```TcoObject``` can post messages of different severity that can be captured and displayed in higher-level applications (HMI/SCADA). If we stretch our imagination, we can think of ```TcoObject``` as ```object``` in C# (all objects derive from ```System.Object```);
 
-**TcoObject construction (FB_init)**
+### TcoObject construction (FB_init)
 
 ```TcoObject``` must be constructed via ```FB_init``` method passing in a parameter of parent ```ITcoObject```; that is usualy another ```TcoObject``` or a ```TcoContext``` eventualy other type that implements ```ITcoObject``` interface.
 
@@ -43,6 +48,10 @@ where ```THIS^``` is of ```ITcoObject```.
 
 ---------------------------
 
+### Messenger
+
+```TcoObject``` implements system for posting messages. Each ```TcoObject``` contains single message holder ```Mime``` or Most Important Message. The message will be replaced by other message only when incomming message is of higher seveverity. The messages can be posted directly from the user program (see example bellow).
+
 > An example implementation of station object
 
 ~~~ iecst
@@ -56,12 +65,12 @@ Messenger.Debug(CONCAT('Checking stations sesnors, context cycle ', ULINT_TO_STR
 Messenger.Debug(DT_TO_STRING(Context.Rtc.NowLocal()));
 
 IF(failed) THEN
+    // This message will appear as MIME (Most important message on the object Station001)
    Messenger.Error('Some sensor just failed'); 
 END_IF;    
 ~~~ 
 
-
-### Context
+## Context
 
 **(TcoContext : ITcoContext)**
 
@@ -124,7 +133,7 @@ _context.Run();
 ~~~
 
 
-### Task
+## Task
 
 **(TcoTask : ITcoTask)**
 
@@ -206,7 +215,7 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 1. Task's ```Restore``` method is called (task goes to ```Ready```state).
 1. ``` Restore``` from **on transition** methods. 
 
-### Components 
+## Components 
 
 **(TcoComponent : ITcoComponent)**
 
@@ -263,16 +272,14 @@ MoveWork := _MoveWorkTask.Invoke();
 ~~~
 
 
-Component must not contain any application-specific code to be reusable by other consumers.
-
 * Component must inherit from ```TcoCore.TcoComponent```
 * Components methods and properties should not be marked FINAL (sealed)
-* Component should implement appropriate ```INTERFACE``` for a public contract. The interface must not change during the lifetime of the particular major version of the library/framework.
+* Component should implement appropriate ```INTERFACE``` for a public contract. This is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See [semantic versioning](https://semver.org/).
 * Component members must explicitly state access modifier for methods and properties (```PUBLIC```, ```INTERNAL```, ```PROTECTED```, or ```PRIVATE```)
 * Component should properly hide implementation details by marking methods preferably ```PROTECTED```.
-* Consider using the ```PRIVATE``` access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by inheriting class. 
+* Consider using the ```PRIVATE``` access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.
 * If there are any testing methods in the same library with the component, these must be marked ```INTERNAL```.
-* Each action of the component should be implemented using the ```TcoTask``` class. The exception to this rule is the actions that require a single cycle to complete. Task's ```Invoke``` should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).
+* Each action of the component should be implemented using the ```TcoTask``` class. There is no exception to this rule, even for the actions that require a single cycle to complete. Task's ```Invoke``` should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).
 
 ### Cyclic call
 
@@ -284,7 +291,7 @@ The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus```(ty
 
 ### Serviceablity
 
-```TcoComponent``` implements ```ITcoServiceable``` interface. Serviceablity means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks of the declared in the component will became ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically. The ```Service``` method is final and cannot be overriden; you can however place custom logic in the override of ```ServiceMode``` method its call is ensured by ```Service``` method.
+```TcoComponent``` implements ```ITcoServiceable``` interface. Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks of the declared in the component will became ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically. The ```Service``` method is final and cannot be overridden; you can, however place custom logic in the override of ```ServiceMode``` method; its call is ensured by ```Service``` method.
 
 Serviceable mode would be typicaly used in manual mode of a unit.
 
