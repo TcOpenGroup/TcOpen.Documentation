@@ -1,8 +1,8 @@
 # TcOpen Framework application
 
-TcOpen framework provides blocks for building industrial applications and for creating reusable software components for various devices like Pistons, Drives, Robots, Vision systems, etc.
+TcOpen framework provides blocks for building industrial applications and creating reusable software components for various devices like Pistons, Drives, Robots, Vision systems, etc.
 
-Part of the framework is a series of classes/blocks for crafting applications using advanced techniques known from software engineering. TcOpen is created in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.
+Part of the framework is a series of classes/blocks for crafting applications using techniques known from software engineering. TcOpen is created in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.
 
 The ultimate goal of this initiative is to provide automation engineers with **well-designed**, **testable**, **scalable**, and **reusable** blocks to facilitate the development, commissioning, and maintainability of the industrial application software.
 
@@ -137,7 +137,7 @@ _context.Run();
 
 **(TcoTask : ITcoTask)**
 
-```TcoTask``` is a block for managing chunks of logic in asynchronous execution. The task is often implemented in a component to control a function (servo movement, piston movement).
+```TcoTask``` is a block for managing chunks of logic in asynchronous execution. Task controls the run of a component's function (servo movement, piston movement, barcode reader trigger, etc.).
 
 There are two key methods for managing the task:
 
@@ -201,7 +201,7 @@ IF(_myTask.Invoke().Error) THEN
 END_IF;    
 ~~~
 
-**Restore** is a function of ```IRestoreable``` (implemented by TcoTask, TcoComponent...) It provides initialization routine for the object it will recover the object from any state into ```Ready```.
+**Restore** is a function of ```IRestoreable``` (implemented by TcoTask, TcoComponent...) It provides an **initialization routine** for the object; it recovers the object from any state into ```Ready```.
 
 After task completion, the state of the task will remain in ```Done```, unless:
 
@@ -213,18 +213,19 @@ After task completion, the state of the task will remain in ```Done```, unless:
 
 The task may finish in an ``` Error``` state. In that case, two recovery scenarios are possible:
 1. Task's ```Restore``` method is called (task goes to ```Ready```state).
-1. ``` Restore``` from **on transition** methods. 
+1. ``` Restore``` from **on transition** methods of a coordination block. 
 
 ## Components 
 
 **(TcoComponent : ITcoComponent)**
 
-The component in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component. 
+The ```component``` in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component. 
 Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance.
 
-![](TcoComponent.png)
+![ComponentSchematics](TcoComponent.png)
 
-**Simple pneumatic cylinder implementation**
+
+**Simple pneumatic cylinder component**
 
 ~~~iecst
 FUNCTION_BLOCK PneumaticCyclinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCyclinder
@@ -274,7 +275,7 @@ MoveWork := _MoveWorkTask.Invoke();
 
 * Component must inherit from ```TcoCore.TcoComponent```
 * Components methods and properties should not be marked FINAL (sealed)
-* Component should implement appropriate ```INTERFACE``` for a public contract. This is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See [semantic versioning](https://semver.org/).
+* Component should implement appropriate ```INTERFACE``` for a public contract; this is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See [semantic versioning](https://semver.org/).
 * Component members must explicitly state access modifier for methods and properties (```PUBLIC```, ```INTERNAL```, ```PROTECTED```, or ```PRIVATE```)
 * Component should properly hide implementation details by marking methods preferably ```PROTECTED```.
 * Consider using the ```PRIVATE``` access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.
@@ -291,7 +292,7 @@ The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus```(ty
 
 ### Serviceablity
 
-```TcoComponent``` implements ```ITcoServiceable``` interface. Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks of the declared in the component will became ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically. The ```Service``` method is final and cannot be overridden; you can, however place custom logic in the override of ```ServiceMode``` method; its call is ensured by ```Service``` method.
+```TcoComponent``` implements ```ITcoServiceable``` interface. Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks declared in the component will become ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically. The ```Service``` method is final and cannot be overridden; you can, however place custom logic in the override of ```ServiceMode``` method; its call is ensured by ```Service``` method.
 
 Serviceable mode would be typicaly used in manual mode of a unit.
 
@@ -349,7 +350,7 @@ We already mentioned restoring mechanisms in the section about ITcoTask```. The 
     1. ```ITcoState``` is configured auto-restorable,
     1. ```IRestorable``` object is a direct member of the ```ITcoState```.
 
-In this case, the state of the child objects is restored when the state of the parent ```ITcoState``` changes.
+In this case, the state of the child objects (```ITcoObject``` declared directly in the state block) is restored when the state of the parent ```ITcoState``` changes.
 
 ~~~iecst
 //---------------------------------------------------------
