@@ -8,7 +8,7 @@ Open Source TwinCAR 3.1 code by Automation Professionals for Automation Professi
 
 This is intended to be a continuous development project aimed to provide standard classes to start building deployable applications.
 
-Developed on GitHub delivered as NuGet packages or downloadable PLC libraries.
+Developed on [GitHub](https://github.com/TcOpenGroup/TcOpen) delivered as [NuGet packages](https://www.nuget.org/packages?q=TcOpenGroup) or downloadable PLC libraries.
 
 ## What TcOpen offers?
 
@@ -18,3 +18,4 @@ Developed on GitHub delivered as NuGet packages or downloadable PLC libraries.
 ## Where are we?
 
 About the current state of the development, read more [here](https://github.com/TcOpenGroup/TcOpen/blob/initial-dev/README.md).
+
