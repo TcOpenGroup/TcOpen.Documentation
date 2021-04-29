@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Inxton/github/TcOpenGroup/TcOpen.Documentation",
+  "source_base_path": "J:/MTS/Develop/GitHub/TcOpenGroup/TcOpen.Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,1819 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "TO0dcYTDuAmlJIkVWr9NKw=="
+          "hash": "IUsaMLTvSfijvDdbgspX7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IMAIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IMAIN.html",
+          "hash": "5vaIV5lD1azEvR/UTLy9+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowMAIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowMAIN.html",
+          "hash": "3KA+J+Fj9veIk8mGEKBFPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoComponent.html",
+          "hash": "E+dsss5cFl1cHvjaB6Ya5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoContext.html",
+          "hash": "SFeltfFDmqbMOg+3F4Tx7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoCoreTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoCoreTwinController.html",
+          "hash": "nculy8/L2hHAV68eCp7YMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoMessage.html",
+          "hash": "/+EA1GZNZ+xUXj9zs7YdUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoMessenger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoMessenger.html",
+          "hash": "DH2gzNj5ctEifwCrUdqbEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoObject.html",
+          "hash": "M9r4kkeSWFXrCR1EH6ZAYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoState.html",
+          "hash": "VQ8xJfxD9F/i+7JR89yZSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IShadowTcoTask.html",
+          "hash": "qxcTk+10nlK6edOKKVEIcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoComponent.html",
+          "hash": "ufOvjsfzePV0YHL3Bpr9FA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoContext.html",
+          "hash": "yh7/WgWlTShn9Y6m59vJFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoCoreTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoCoreTwinController.html",
+          "hash": "ilWU1iVcYriLMD35ggJdXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoMessage.html",
+          "hash": "SmjGCw0JUbcNNGDaq+snqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoMessenger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoMessenger.html",
+          "hash": "5AUzBgDa69gOJADJbT/d1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoObject.html",
+          "hash": "ZZ9myo3BzdpFrEzWWSAXSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoState.html",
+          "hash": "fJeKurv2TDf9BN7/AjTaRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ITcoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ITcoTask.html",
+          "hash": "lhUf5gT7TIiayGNwI4AMUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.IVortexObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.IVortexObjectExtensions.html",
+          "hash": "5RAZuWQ7VjeDdXJ1N4CGXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.MAIN.PlcMAIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.MAIN.PlcMAIN.html",
+          "hash": "Iy/PM5MF5GN2cRuREE5BrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.MAIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.MAIN.html",
+          "hash": "2NMlvn/IXoylSgbvycdw+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.NameOrSymbolConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.NameOrSymbolConverter.html",
+          "hash": "NAJUSwYarUdT9ydLV/QXUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainMAIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainMAIN.html",
+          "hash": "2t7XK0tLSLCMCO2iOaFVpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoComponent.html",
+          "hash": "+OH+g36lIG8N5OgeiSjTlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoContext.html",
+          "hash": "RLR0XTZgiZAOz/kerekiDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoCoreTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoCoreTwinController.html",
+          "hash": "FvNynM9Wa16+Eejocaxk9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoMessage.html",
+          "hash": "fLdbn4oxofgK+QdaW6M+Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoMessenger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoMessenger.html",
+          "hash": "nl88kuxGszruRO3l354VTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoObject.html",
+          "hash": "rSv0m/6B0ZlBg9/d5Fp4SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoState.html",
+          "hash": "clj5VzWPCiwBe0JXwdb9pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.PlainTcoTask.html",
+          "hash": "hNtB02gUCmz9N4Qq6hLtMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html",
+          "hash": "eMGzYXnownSCmABOxC6TtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoComponent.html",
+          "hash": "bk4UI8ZaJWDUh/PNdd4X1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContext.PlcTcoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoContext.PlcTcoContext.html",
+          "hash": "TnUXoEafsPhHMP27BEWOgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoContext.html",
+          "hash": "WuR1rwlC8OyfK/jlcnoP3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoCoreTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoCoreTwinController.html",
+          "hash": "O59mVZJtTv0Pi3rMhvgAwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoMessage.PlcTcoMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoMessage.PlcTcoMessage.html",
+          "hash": "QQ6Kep+ono+oZ8Elm5hZ5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoMessage.html",
+          "hash": "VZLqZizg8DBle86IS7usrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html",
+          "hash": "PXQTDcpx/XygVqOar0++sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoMessenger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoMessenger.html",
+          "hash": "dnKnmXy5S3q+874O3FS9+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObject.PlcTcoObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html",
+          "hash": "gM9vys9tC0vwSqdkEKCjGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObject.html",
+          "hash": "7GXqoreUCZiBtfvgzJrJIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObjectView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObjectView.html",
+          "hash": "vDh+Wn2JeNcG848ASaP+pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObjectViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObjectViewModel.html",
+          "hash": "Nmitt8rNVMEjNCuaGK4jmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoState.PlcTcoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoState.PlcTcoState.html",
+          "hash": "OWcwDRkuUaVE0NYHHVVeIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoState.html",
+          "hash": "MherStpSx9pTwSQnUepddg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoTask.PlcTcoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoTask.PlcTcoTask.html",
+          "hash": "+bSGfWr+KfbN2vX/16lTnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoTask.html",
+          "hash": "A3dUHY3ZHKa9YNnDIY6ejg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoTaskView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoTaskView.html",
+          "hash": "GK9AHY/fZdDydjLK6LRoUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoTaskViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoTaskViewModel.html",
+          "hash": "LGV64iLvv3c+qpDJk+H8DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.eMessageCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.eMessageCategory.html",
+          "hash": "8fjRGSSTdWjTjQZB5r16Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.eTaskState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.eTaskState.html",
+          "hash": "/ShOrbxvB3iwpmXBkLorBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.html",
+          "hash": "43coKCFWviM5r6mGSUEwKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCoreConnector.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCoreConnector.Program.html",
+          "hash": "8dbLXAng4V9HVYQjEhkJpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCoreConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCoreConnector.html",
+          "hash": "c9kWUxoZ3EBhxgT2lrwoLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.PlcAI_1_Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.PlcAI_1_Module.html",
+          "hash": "01PcE5IEeA759U9MVnvdwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.html",
+          "hash": "HzOJChX5fNXVUz12JjH6Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.PlcAI_Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.PlcAI_Channel.html",
+          "hash": "4WVT27oi4RRSq7ZkPVb5LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.html",
+          "hash": "XVcSh8PWJ+4SUJxb0UTorQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.PlcAI_ChannelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.PlcAI_ChannelStatus.html",
+          "hash": "hWK62DuNHP6qLd2iBK8iAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.html",
+          "hash": "m08xBy6vrmwNeeGhij6w7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.PlcEL922x_ChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.PlcEL922x_ChannelBasic.html",
+          "hash": "zNJViuCycwGoODK+9BI1pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.html",
+          "hash": "0pRpaj+VZiT1HegHUs73ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.PlcEL922x_ChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.PlcEL922x_ChannelExtended.html",
+          "hash": "9NHER4CVtGRWpXzT4gQWRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.html",
+          "hash": "EeeAjhkVYZhNNHoL1tvi8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Entry.html",
+          "hash": "zksUDMbOcccv2m4Yk65nPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.PlcFuseChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.PlcFuseChannelBasic.html",
+          "hash": "pZV1D4e8H2FK6toqYGQ5vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.html",
+          "hash": "0Fhbtf75P2ZojlBu++vpGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.PlcFuseChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.PlcFuseChannelExtended.html",
+          "hash": "0KmldhDXwxjVzenMDsplag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.html",
+          "hash": "h7yWfE7VymaoTtaz9Zn/hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.PlcFuseModuleEL922x.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.PlcFuseModuleEL922x.html",
+          "hash": "xwckIdq+kcMdqnQQoskdxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.html",
+          "hash": "5q6/McRWu1Ql4itc3IGOnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.PlcGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.PlcGlobal_Version.html",
+          "hash": "MUr+5Qrt+lNm3ucvk74Qsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.html",
+          "hash": "N0Tn2KakRIcgP2PyCimwrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_1_Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_1_Module.html",
+          "hash": "XD5uDsKZHm0vgOBgugThSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_Channel.html",
+          "hash": "o98GbweXax0rNsjQLHZ1bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_ChannelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_ChannelStatus.html",
+          "hash": "KvxRCd38TavAJeoON4Z9WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelBasic.html",
+          "hash": "LPGPAfBCWfIlhuxTx0Kxwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelExtended.html",
+          "hash": "4jxNjrC18F6vgcV/FNaCFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelBasic.html",
+          "hash": "QFfpr7TAxyMcXzeYnGTDwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelExtended.html",
+          "hash": "RtQoQBy5V4U0hVynp0ZZWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseModuleEL922x.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseModuleEL922x.html",
+          "hash": "xGzTtcrgSh4N4IKI50bEqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IGlobal_Version.html",
+          "hash": "4pekK991C6dVyfiK4kfJ5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IIO.html",
+          "hash": "u4st3zeDizHv68f3fU+B9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IInfoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IInfoData.html",
+          "hash": "byqRmSj4EtQCayIwKAd4sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.PlcIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.PlcIO.html",
+          "hash": "z6nUR9D73FKFfNhGtM4EPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.html",
+          "hash": "fPeJAAVRPCA77Fdn29Nqxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IOutputStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IOutputStruct.html",
+          "hash": "g57la1pivT5g3Un03sqzFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_1_Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_1_Module.html",
+          "hash": "1TNJCcD9JEPFLXtENBxDUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_Channel.html",
+          "hash": "sGkPRlP6Bcv+pTQl2HJNUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_ChannelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_ChannelStatus.html",
+          "hash": "CQPdS7VK+aGR5VrqOewfNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelBasic.html",
+          "hash": "dveeJU43YC0DgfQXJsLYCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelExtended.html",
+          "hash": "+FsOuvJKOHR/4+ZZwXi7Uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelBasic.html",
+          "hash": "j13GnV567uQ9mLnYwbIF6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelExtended.html",
+          "hash": "qZIePyTOEt3CvyasXL5Lng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseModuleEL922x.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseModuleEL922x.html",
+          "hash": "A9vSHhVIN6oYwiGTl6CzEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowGlobal_Version.html",
+          "hash": "ju2cX9KOsGnHl/qRmvh4XQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowIO.html",
+          "hash": "K4dW3JuKB3oq02tTi8urwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowInfoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowInfoData.html",
+          "hash": "NKIH3KtIO7WgFE953v9ISw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowOutputStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowOutputStruct.html",
+          "hash": "gDBqfhaL4xQvY3vAFaS7fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructBasic.html",
+          "hash": "iJOBDj/U8EEf2GS/5fOy9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructExtended.html",
+          "hash": "XxueG5nLdZ7vQJDW8pm7eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html",
+          "hash": "rvCqhAZd/e6TgzZYE4HzOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowWcState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowWcState.html",
+          "hash": "3+hx9UY3XDjL3Whsj2KtVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructBasic.html",
+          "hash": "VNBfH7UfbAlQI6U8aDsQHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructExtended.html",
+          "hash": "26ktIiJZA8Jpj1MKWHKpOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.ITcoIoBeckhoffTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html",
+          "hash": "s2P/QRJgbq22nugO8S72Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IWcState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IWcState.html",
+          "hash": "nv5ZGZMAeXNvNlyauuETbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.PlcInfoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.PlcInfoData.html",
+          "hash": "mwxDPOPSyldC0Yrw8yNBrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.html",
+          "hash": "b5xde4Rxqr9IkGktfMn4fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.PlcOutputStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.PlcOutputStruct.html",
+          "hash": "ijq2Lexp7a3gW5o3EMSQcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.html",
+          "hash": "e1aimDdZWpbplYdOndCcgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_1_Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_1_Module.html",
+          "hash": "s+AlDceIq3kMc3rq8TNLsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_Channel.html",
+          "hash": "Bcv7j9uajZxXUaX6jnurLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_ChannelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_ChannelStatus.html",
+          "hash": "6FsCcFReADoVmCaztr4U6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelBasic.html",
+          "hash": "0c6cYEMuDGqkEIPyeoHpoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelExtended.html",
+          "hash": "shnZhI8bPROMIlH+RwPZYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelBasic.html",
+          "hash": "AEv1zwVIwgQ074C6uyM6aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelExtended.html",
+          "hash": "ZVDWahbz9eSWf8y8NNnvlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseModuleEL922x.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseModuleEL922x.html",
+          "hash": "6S9FARpKZ20SRjBwGQlIuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainGlobal_Version.html",
+          "hash": "oY4cP8RJdSanleUmRyPrVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainIO.html",
+          "hash": "9Y6Gyqy7/9j1SLLyRAmnkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainInfoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainInfoData.html",
+          "hash": "IJEdS82HjaMorWi80xzidg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainOutputStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainOutputStruct.html",
+          "hash": "6S/3ZguEUhJA73Ff294BhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructBasic.html",
+          "hash": "RhCMkZZghCZXlgo7Bsa0JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructExtended.html",
+          "hash": "KBfeFcmetLwP0uPqg3t6tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html",
+          "hash": "Hfzf50evHSN6hMAyEf6nKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainWcState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainWcState.html",
+          "hash": "QXDJfe2pXlsknUggVxQO9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.PlcStatusStructBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.PlcStatusStructBasic.html",
+          "hash": "hhFMA2KGYPhfGSeRa5ixhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.html",
+          "hash": "QuH0fKAE6K+fjFkRvfb2oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.PlcStatusStructExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.PlcStatusStructExtended.html",
+          "hash": "FT1IPbLdac1b49t6hfi0YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.html",
+          "hash": "yws1H94MCMnnqtqrVzyMOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.TcoIoBeckhoffTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.TcoIoBeckhoffTwinController.html",
+          "hash": "szqu7DY4KZAdpTPeoqFhnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.PlcWcState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.PlcWcState.html",
+          "hash": "VkAazGqi2xRsQPfTB62D5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.html",
+          "hash": "eDEJnGHDhZIIlGQBL/JX0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.html",
+          "hash": "gcGEfZXjUKJpWto+1jYSzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.PlcGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.PlcGlobal_Version.html",
+          "hash": "vVRcc8iRahZ2ewgm+XkTFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.html",
+          "hash": "+i8dHWzpApR7qib6lnfx9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.IGlobal_Version.html",
+          "hash": "XeurhArmUwbytMYS96vQHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowGlobal_Version.html",
+          "hash": "9PMyPNvLCexS5zTogXReyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowTcoPneumaticsTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowTcoPneumaticsTwinController.html",
+          "hash": "HxYdyrY9jnLCxE1X3nYFLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowfbCylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowfbCylinder.html",
+          "hash": "XOrG76SmAs2ag9wBqDUK4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.ITcoPneumaticsTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.ITcoPneumaticsTwinController.html",
+          "hash": "IsUjvYfz47HqPdLxPHl4UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IfbCylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.IfbCylinder.html",
+          "hash": "XCFjD7Ev4Ssm2q3VPPDfpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainGlobal_Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainGlobal_Version.html",
+          "hash": "POUqrNVL28citCuX4bZ4iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainTcoPneumaticsTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainTcoPneumaticsTwinController.html",
+          "hash": "7Z2vT0XhHD88rmJY1yRt5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainfbCylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainfbCylinder.html",
+          "hash": "06ArwkqIBEyEsDRT6iraOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.TcoPneumaticsTwinController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.TcoPneumaticsTwinController.html",
+          "hash": "BtwnvUT5vr78jun2fkfItw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.PlcfbCylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.PlcfbCylinder.html",
+          "hash": "gyG4UGZcvgZ8t/Z+Lqn1vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.html",
+          "hash": "I/Ivbm2j3Tu0oKIGBZ8VkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoPneumatics/TcoPneumatics.html",
+          "hash": "9tsZ2m16mDBUjuCIqrIirg=="
         }
       },
       "is_incremental": false,
@@ -21,7 +1833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "BJ+qBGFYrv9pMuQ+NjMMrA=="
+          "hash": "q4yDqJ+YtAxQuv2iiewaIw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +1845,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Conventions.html",
-          "hash": "hFCp7kh44Hg5qaiK9UgQ9Q=="
+          "hash": "SF0VAyzjZ3K+vw3OJ+MYmg=="
         }
       },
       "is_incremental": false,
@@ -96,6 +1908,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcOpenApplicationOverview.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcOpenApplicationOverview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "articles/TcOpenFramework/TcoComponent-serviceable.png",
       "output": {
         "resource": {
@@ -128,12 +1951,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/TcOpenFramework/application.md",
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/application.html",
-          "hash": "B0uzBs4hl9ynhQqeLreHjQ=="
+          "hash": "I9UF+TuLq9Kp+iYIc+QBPw=="
         }
       },
       "is_incremental": false,
@@ -145,7 +1971,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "+r8Xl0xKbpVyp1zkclQpYg=="
+          "hash": "7+BK7Fh6xtDw0MVaY15Ltw=="
         }
       },
       "is_incremental": false,
@@ -168,7 +1994,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "56W9NhZigH3lAyCuNQVI2Q=="
+          "hash": "k7+CLkSPru4sGxJrENmYdQ=="
         }
       },
       "is_incremental": false,
@@ -190,6 +2016,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 151,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
