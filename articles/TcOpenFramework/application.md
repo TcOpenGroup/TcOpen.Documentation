@@ -30,6 +30,8 @@ The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.
 
 **(TcoContext : ITcoContext)**
 
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoContext.PlcTcoContext.html)
+
 ```TcoContext``` is an abstract block that requires the ```Main``` method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application).
 
 ```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual support information and services for the application's components.
@@ -95,7 +97,7 @@ _context.Run();
 
 **(TcoObject : ITcoTask)**
 
-[API](../../docs/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html)
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html)
 
 Each block in ```TcOpen``` framework should derive from ```TcoObject```. ```TcoObject``` provides access to [Context](#Context), *reference to the parent object*, *identity* (unique identifier across application), access to a *messaging system*, and other useful functions.If we stretch our imagination, we can think of ```TcoObject``` as ```object``` in C# (all objects derive from ```System.Object```);
 
@@ -117,7 +119,7 @@ where ```THIS^``` is of ```ITcoObject```.
 
 ### Messenger
 
-[API](../../docs/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html)
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html)
 
 Any ```TcoObject``` can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).
 
@@ -153,6 +155,8 @@ END_IF;
 ## Task
 
 **(TcoTask : ITcoTask)**
+
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoTask.PlcTcoTask.html)
 
 ```TcoTask``` is a block for managing chunks of logic in asynchronous execution. Task controls the run of a component's function (servo movement, piston movement, barcode reader trigger, etc.).
 
@@ -236,6 +240,8 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 
 **(TcoComponent : ITcoComponent)**
 
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html)
+
 The ```component``` in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component. 
 Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance.
 
@@ -318,6 +324,8 @@ Serviceable mode would be typicaly used in manual mode of a unit.
 ## State 
 
 **(TcoState : ITcoState)**
+
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoState.PlcTcoState.html)
 
 The state controller ```TcoState``` is the primary class for managing control over states of the system. It has a simple implementation for changing and observing the state. It allows handling the state coordination with any statements (IF-END_IF, IF-ELSIF-END_IF, CASE). ```TcoState``` holds the control variable and manages the change via ```TcoState.ChangeState(newState)```. The override of the ```TcoState.OnStateChange(lastState, newState)``` method allows to perform operation on transition between the states.
 
@@ -403,6 +411,8 @@ END_IF;
 ### Sequencer
 
 **(TcoSequencer : ITcoSequencer)**
+
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoSequencer.PlcTcoSequencer.html)
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
 

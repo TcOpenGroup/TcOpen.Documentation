@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IMAIN.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.CustomTree.DataTemplates.TreeItemTemplate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IMAIN.html",
-          "hash": "5vaIV5lD1azEvR/UTLy9+A=="
+          "relative_path": "api/TcoCore/Tco.Wpf.CustomTree.DataTemplates.TreeItemTemplate.html",
+          "hash": "4RGlfXJdnHr9xNsjCsBo5w=="
         }
       },
       "is_incremental": false,
@@ -29,11 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowMAIN.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.CustomTree.DataTemplates.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowMAIN.html",
-          "hash": "3KA+J+Fj9veIk8mGEKBFPg=="
+          "relative_path": "api/TcoCore/Tco.Wpf.CustomTree.DataTemplates.html",
+          "hash": "GzS1lxpapHGd9hPclBl1Qg=="
         }
       },
       "is_incremental": false,
@@ -41,11 +41,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoComponent.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.SymbolOrHumanReadableConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoComponent.html",
-          "hash": "E+dsss5cFl1cHvjaB6Ya5w=="
+          "relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.SymbolOrHumanReadableConverter.html",
+          "hash": "rORPfnzDN2RifoGqbJ6RNg=="
         }
       },
       "is_incremental": false,
@@ -53,11 +53,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoContext.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.ValueTag.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoContext.html",
-          "hash": "SFeltfFDmqbMOg+3F4Tx7w=="
+          "relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.ValueTag.html",
+          "hash": "W33GchPM17hGG55Kfu9Qkg=="
         }
       },
       "is_incremental": false,
@@ -65,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoCoreTwinController.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.VortexObjectDataTemplate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoCoreTwinController.html",
-          "hash": "nculy8/L2hHAV68eCp7YMw=="
+          "relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.VortexObjectDataTemplate.html",
+          "hash": "1wmDTHBLLCWoAQaV4bQc3w=="
         }
       },
       "is_incremental": false,
@@ -77,11 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoMessage.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoMessage.html",
-          "hash": "/+EA1GZNZ+xUXj9zs7YdUA=="
+          "relative_path": "api/TcoCore/Tco.Wpf.DynamicTree.DataTemplates.html",
+          "hash": "UgG5MuoaiyORN42OPaZRRw=="
         }
       },
       "is_incremental": false,
@@ -89,11 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoMessenger.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.DynamicTreeView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoMessenger.html",
-          "hash": "DH2gzNj5ctEifwCrUdqbEg=="
+          "relative_path": "api/TcoCore/Tco.Wpf.DynamicTreeView.html",
+          "hash": "mgXoTaXMhgHyhS3opRsdAg=="
         }
       },
       "is_incremental": false,
@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoObject.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoObject.html",
-          "hash": "M9r4kkeSWFXrCR1EH6ZAYw=="
+          "relative_path": "api/TcoCore/Tco.Wpf.Extensions.html",
+          "hash": "obB4QG8X8OCyj04j7NObVQ=="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoState.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.ObservableContentControl.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoState.html",
-          "hash": "VQ8xJfxD9F/i+7JR89yZSg=="
+          "relative_path": "api/TcoCore/Tco.Wpf.ObservableContentControl.html",
+          "hash": "jBR/EMdUGYtjaQAKnXEY+Q=="
         }
       },
       "is_incremental": false,
@@ -125,11 +125,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.IShadowTcoTask.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.TreeItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.IShadowTcoTask.html",
-          "hash": "qxcTk+10nlK6edOKKVEIcg=="
+          "relative_path": "api/TcoCore/Tco.Wpf.TreeItem.html",
+          "hash": "w9iF2WiPpeUztT1LKUg+wA=="
         }
       },
       "is_incremental": false,
@@ -137,11 +137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoComponent.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.TreeItemExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoComponent.html",
-          "hash": "ufOvjsfzePV0YHL3Bpr9FA=="
+          "relative_path": "api/TcoCore/Tco.Wpf.TreeItemExtension.html",
+          "hash": "snXRJMro/0ki/2R/GiUX9A=="
         }
       },
       "is_incremental": false,
@@ -149,11 +149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoContext.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.TreeObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoContext.html",
-          "hash": "yh7/WgWlTShn9Y6m59vJFw=="
+          "relative_path": "api/TcoCore/Tco.Wpf.TreeObject.html",
+          "hash": "yVnRklklDw9f7bfq+I2I1g=="
         }
       },
       "is_incremental": false,
@@ -161,11 +161,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoCoreTwinController.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.TreeWrapperObject.NullVortexObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoCoreTwinController.html",
-          "hash": "ilWU1iVcYriLMD35ggJdXA=="
+          "relative_path": "api/TcoCore/Tco.Wpf.TreeWrapperObject.NullVortexObject.html",
+          "hash": "apIsZGcyRQX2vOZYIxU+fQ=="
         }
       },
       "is_incremental": false,
@@ -173,11 +173,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoMessage.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.TreeWrapperObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoMessage.html",
-          "hash": "SmjGCw0JUbcNNGDaq+snqw=="
+          "relative_path": "api/TcoCore/Tco.Wpf.TreeWrapperObject.html",
+          "hash": "RI3FCRUlA4+aBIGuIQHKKA=="
         }
       },
       "is_incremental": false,
@@ -185,11 +185,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoMessenger.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.VisualTreeExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoMessenger.html",
-          "hash": "5AUzBgDa69gOJADJbT/d1A=="
+          "relative_path": "api/TcoCore/Tco.Wpf.VisualTreeExtension.html",
+          "hash": "aVB8KUPn3bzA1HW1pebnug=="
         }
       },
       "is_incremental": false,
@@ -197,11 +197,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoObject.yml",
+      "source_relative_path": "api/TcoCore/Tco.Wpf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoObject.html",
-          "hash": "ZZ9myo3BzdpFrEzWWSAXSA=="
+          "relative_path": "api/TcoCore/Tco.Wpf.html",
+          "hash": "dQ0Yx7OmkofwnnvFdhA+FA=="
         }
       },
       "is_incremental": false,
@@ -209,11 +209,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoState.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.BoolToVisibilityConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoState.html",
-          "hash": "fJeKurv2TDf9BN7/AjTaRQ=="
+          "relative_path": "api/TcoCore/TcoCore.BoolToVisibilityConverter.html",
+          "hash": "y+MvfqW0PUjcsZsZag7CVQ=="
         }
       },
       "is_incremental": false,
@@ -221,11 +221,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.ITcoTask.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.BooleanToVisibilityConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.ITcoTask.html",
-          "hash": "lhUf5gT7TIiayGNwI4AMUA=="
+          "relative_path": "api/TcoCore/TcoCore.BooleanToVisibilityConverter.html",
+          "hash": "CqHtZNoIbm/q4W2pa4ASmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.CountToVisibilityConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.CountToVisibilityConverter.html",
+          "hash": "LtLKPPqAsbWqMTGT00Y9MA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.EmptyStringToVisibilityConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.EmptyStringToVisibilityConverter.html",
+          "hash": "B6YpEeCUbnQel13TrfwcwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.EnumToItemsSourceConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.EnumToItemsSourceConverter.html",
+          "hash": "SnoYpc/IaYIXCZhSp0AAkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ExcludeFromApiDocumentationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ExcludeFromApiDocumentationAttribute.html",
+          "hash": "GELv+TCRfetuvumsBAehgQ=="
         }
       },
       "is_incremental": false,
@@ -237,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.IVortexObjectExtensions.html",
-          "hash": "5RAZuWQ7VjeDdXJ1N4CGXA=="
+          "hash": "lmogeUOKsEruuoUqRbt2yw=="
         }
       },
       "is_incremental": false,
@@ -245,11 +293,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.MAIN.PlcMAIN.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.IsTcoContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.MAIN.PlcMAIN.html",
-          "hash": "Iy/PM5MF5GN2cRuREE5BrQ=="
+          "relative_path": "api/TcoCore/TcoCore.IsTcoContext.html",
+          "hash": "U4oopDFw8X2LrwVhVRry0Q=="
         }
       },
       "is_incremental": false,
@@ -257,11 +305,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.MAIN.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.IsTcoObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.MAIN.html",
-          "hash": "2NMlvn/IXoylSgbvycdw+Q=="
+          "relative_path": "api/TcoCore/TcoCore.IsTcoObject.html",
+          "hash": "N/ZEefn9UVNV0y5B1FeCLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.MessageCategoryToBrushConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.MessageCategoryToBrushConverter.html",
+          "hash": "2YJZnqy40zUf9emUAcLPIg=="
         }
       },
       "is_incremental": false,
@@ -273,55 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.NameOrSymbolConverter.html",
-          "hash": "NAJUSwYarUdT9ydLV/QXUg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainMAIN.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainMAIN.html",
-          "hash": "2t7XK0tLSLCMCO2iOaFVpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoComponent.html",
-          "hash": "+OH+g36lIG8N5OgeiSjTlw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoContext.html",
-          "hash": "RLR0XTZgiZAOz/kerekiDw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoCoreTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoCoreTwinController.html",
-          "hash": "FvNynM9Wa16+Eejocaxk9A=="
+          "hash": "L1TNUvD1x+aEMl2avn1tLg=="
         }
       },
       "is_incremental": false,
@@ -333,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.PlainTcoMessage.html",
-          "hash": "fLdbn4oxofgK+QdaW6M+Zw=="
+          "hash": "moLaL1KtvnHJ/YCshvnE6g=="
         }
       },
       "is_incremental": false,
@@ -341,83 +353,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoMessenger.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.SequenceModeVisibleInConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoMessenger.html",
-          "hash": "nl88kuxGszruRO3l354VTg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoObject.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoObject.html",
-          "hash": "rSv0m/6B0ZlBg9/d5Fp4SQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoState.html",
-          "hash": "clj5VzWPCiwBe0JXwdb9pA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.PlainTcoTask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.PlainTcoTask.html",
-          "hash": "hNtB02gUCmz9N4Qq6hLtMw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html",
-          "hash": "eMGzYXnownSCmABOxC6TtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoComponent.html",
-          "hash": "bk4UI8ZaJWDUh/PNdd4X1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoContext.PlcTcoContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoContext.PlcTcoContext.html",
-          "hash": "TnUXoEafsPhHMP27BEWOgg=="
+          "relative_path": "api/TcoCore/TcoCore.SequenceModeVisibleInConverter.html",
+          "hash": "KTRJVEf1hT+WCs3EhSr3MQ=="
         }
       },
       "is_incremental": false,
@@ -429,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoContext.html",
-          "hash": "WuR1rwlC8OyfK/jlcnoP3Q=="
+          "hash": "iOEbFRYqQdjU32IBHk4jBw=="
         }
       },
       "is_incremental": false,
@@ -437,11 +377,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoCoreTwinController.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContextDiagnosticsView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoCoreTwinController.html",
-          "hash": "O59mVZJtTv0Pi3rMhvgAwA=="
+          "relative_path": "api/TcoCore/TcoCore.TcoContextDiagnosticsView.html",
+          "hash": "npdU7Y3uErKogfKpYN2Hng=="
         }
       },
       "is_incremental": false,
@@ -449,11 +389,71 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoMessage.PlcTcoMessage.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContextDiagnosticsViewModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoMessage.PlcTcoMessage.html",
-          "hash": "QQ6Kep+ono+oZ8Elm5hZ5w=="
+          "relative_path": "api/TcoCore/TcoCore.TcoContextDiagnosticsViewModel.html",
+          "hash": "tIJ7TGBJFGAO00Vr4zE3JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContextView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoContextView.html",
+          "hash": "3Zjxc9YZo6RDCnFC0nEZ6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoContextViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoContextViewModel.html",
+          "hash": "fkAe68qwaMToPqnkHh0oWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoDiagnostics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoDiagnostics.html",
+          "hash": "g8npTROpUVu5nFgulda95A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoDiagnosticsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoDiagnosticsView.html",
+          "hash": "fhtpeTXFWb7D6/GT8+oyNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoDiagnosticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoDiagnosticsViewModel.html",
+          "hash": "9LNisSpaMtgUDRkIxiyVGw=="
         }
       },
       "is_incremental": false,
@@ -465,19 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoMessage.html",
-          "hash": "VZLqZizg8DBle86IS7usrg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html",
-          "hash": "PXQTDcpx/XygVqOar0++sQ=="
+          "hash": "v5+suNgzuFTlj2hPXVrPgg=="
         }
       },
       "is_incremental": false,
@@ -489,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoMessenger.html",
-          "hash": "dnKnmXy5S3q+874O3FS9+A=="
+          "hash": "I/STNgwA1yNaGB3ZqPklKw=="
         }
       },
       "is_incremental": false,
@@ -497,11 +485,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoObject.PlcTcoObject.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoMessengerView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html",
-          "hash": "gM9vys9tC0vwSqdkEKCjGA=="
+          "relative_path": "api/TcoCore/TcoCore.TcoMessengerView.html",
+          "hash": "rEMUnShNVi+gaxrQAWkP+w=="
         }
       },
       "is_incremental": false,
@@ -513,7 +501,31 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoObject.html",
-          "hash": "7GXqoreUCZiBtfvgzJrJIQ=="
+          "hash": "mSpUJB4AXALYJAZk58v5xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObjectDiagnosticsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObjectDiagnosticsView.html",
+          "hash": "OqQpdsgwAIkFMc3ZNai10g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoObjectDiagnosticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoObjectDiagnosticsViewModel.html",
+          "hash": "RHxRWarOw2Qz2QHRx3l0ug=="
         }
       },
       "is_incremental": false,
@@ -525,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoObjectView.html",
-          "hash": "vDh+Wn2JeNcG848ASaP+pw=="
+          "hash": "v02Yj0Yup+pT2qngqitorg=="
         }
       },
       "is_incremental": false,
@@ -537,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoObjectViewModel.html",
-          "hash": "Nmitt8rNVMEjNCuaGK4jmA=="
+          "hash": "wUD8xiZF0F4UwV2qAZQztA=="
         }
       },
       "is_incremental": false,
@@ -545,11 +557,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoState.PlcTcoState.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoSequencerModeControllerView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoState.PlcTcoState.html",
-          "hash": "OWcwDRkuUaVE0NYHHVVeIQ=="
+          "relative_path": "api/TcoCore/TcoCore.TcoSequencerModeControllerView.html",
+          "hash": "JMoofrF2yQg1C15LI7UMjQ=="
         }
       },
       "is_incremental": false,
@@ -557,11 +569,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoState.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoSequencerModeControllerViewModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoState.html",
-          "hash": "MherStpSx9pTwSQnUepddg=="
+          "relative_path": "api/TcoCore/TcoCore.TcoSequencerModeControllerViewModel.html",
+          "hash": "ODtrWcc1O8x30dff/tK2ZQ=="
         }
       },
       "is_incremental": false,
@@ -569,11 +581,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.TcoTask.PlcTcoTask.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoSequencerView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.TcoTask.PlcTcoTask.html",
-          "hash": "+bSGfWr+KfbN2vX/16lTnQ=="
+          "relative_path": "api/TcoCore/TcoCore.TcoSequencerView.html",
+          "hash": "Cn2E0A8OcxTQ7Ales2nh6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.TcoSequencerViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.TcoSequencerViewModel.html",
+          "hash": "8oc52Cz3B/TBy6gjPLhecQ=="
         }
       },
       "is_incremental": false,
@@ -585,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoTask.html",
-          "hash": "A3dUHY3ZHKa9YNnDIY6ejg=="
+          "hash": "G7XQyU03ZHRqLpxs6LudSg=="
         }
       },
       "is_incremental": false,
@@ -597,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoTaskView.html",
-          "hash": "GK9AHY/fZdDydjLK6LRoUQ=="
+          "hash": "B+eLlaCpX964iROJ2TpF8w=="
         }
       },
       "is_incremental": false,
@@ -609,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.TcoTaskViewModel.html",
-          "hash": "LGV64iLvv3c+qpDJk+H8DQ=="
+          "hash": "OXqf2GNB4JHvpVg02mkSFg=="
         }
       },
       "is_incremental": false,
@@ -617,11 +641,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.eMessageCategory.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.Threading.Dispatcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.eMessageCategory.html",
-          "hash": "8fjRGSSTdWjTjQZB5r16Aw=="
+          "relative_path": "api/TcoCore/TcoCore.Threading.Dispatcher.html",
+          "hash": "PLDkJwqzvsc62+fRiPKHnQ=="
         }
       },
       "is_incremental": false,
@@ -629,11 +653,71 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCore.eTaskState.yml",
+      "source_relative_path": "api/TcoCore/TcoCore.Threading.IDispatcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCore.eTaskState.html",
-          "hash": "/ShOrbxvB3iwpmXBkLorBQ=="
+          "relative_path": "api/TcoCore/TcoCore.Threading.IDispatcher.html",
+          "hash": "v6dBiwa8ZIcfMwXFke890Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.Threading.html",
+          "hash": "qrSMV77dd5kqy1Dv1gkALw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.ValueConverterExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.ValueConverterExtension.html",
+          "hash": "HX49fEOF9rXVQ61KfniZ4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.VisibilityToBoolConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.VisibilityToBoolConverter.html",
+          "hash": "LE23vQvE0+2xq+gNseLVEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.Wpf.Threading.Dispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.Wpf.Threading.Dispatcher.html",
+          "hash": "VMZRobwvE5A1B9cgDEbELg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TcoCore/TcoCore.Wpf.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcoCore/TcoCore.Wpf.Threading.html",
+          "hash": "3DT1sIJrmt3qTbgIHUeUkw=="
         }
       },
       "is_incremental": false,
@@ -645,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoCore/TcoCore.html",
-          "hash": "43coKCFWviM5r6mGSUEwKw=="
+          "hash": "osXR6ipILDp/kF9/aFxBlg=="
         }
       },
       "is_incremental": false,
@@ -653,11 +737,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCoreConnector.Program.yml",
+      "source_relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ArraySymbolToHeaderConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCoreConnector.Program.html",
-          "hash": "8dbLXAng4V9HVYQjEhkJpw=="
+          "relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ArraySymbolToHeaderConverter.html",
+          "hash": "L85xlOhVlphCDfF6K5K7Iw=="
         }
       },
       "is_incremental": false,
@@ -665,11 +749,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoCore/TcoCoreConnector.yml",
+      "source_relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ArrayToStringConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoCore/TcoCoreConnector.html",
-          "hash": "c9kWUxoZ3EBhxgT2lrwoLw=="
+          "relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ArrayToStringConverter.html",
+          "hash": "vnNZW9cWuGXQx99to0oLXg=="
         }
       },
       "is_incremental": false,
@@ -677,11 +761,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.PlcAI_1_Module.yml",
+      "source_relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ChildDataTemplateSelector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.PlcAI_1_Module.html",
-          "hash": "01PcE5IEeA759U9MVnvdwQ=="
+          "relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.ChildDataTemplateSelector.html",
+          "hash": "9LnJ2HRXAvLYAHSDzDhlmQ=="
         }
       },
       "is_incremental": false,
@@ -689,107 +773,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.yml",
+      "source_relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_1_Module.html",
-          "hash": "HzOJChX5fNXVUz12JjH6Vw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.PlcAI_Channel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.PlcAI_Channel.html",
-          "hash": "4WVT27oi4RRSq7ZkPVb5LQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_Channel.html",
-          "hash": "XVcSh8PWJ+4SUJxb0UTorQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.PlcAI_ChannelStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.PlcAI_ChannelStatus.html",
-          "hash": "hWK62DuNHP6qLd2iBK8iAg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.AI_ChannelStatus.html",
-          "hash": "m08xBy6vrmwNeeGhij6w7A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.PlcEL922x_ChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.PlcEL922x_ChannelBasic.html",
-          "hash": "zNJViuCycwGoODK+9BI1pA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelBasic.html",
-          "hash": "0pRpaj+VZiT1HegHUs73ew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.PlcEL922x_ChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.PlcEL922x_ChannelExtended.html",
-          "hash": "9NHER4CVtGRWpXzT4gQWRQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.EL922x_ChannelExtended.html",
-          "hash": "EeeAjhkVYZhNNHoL1tvi8g=="
+          "relative_path": "api/TcoCore/inxton.vortex.framework.dynamictreeview.wpf.sandbox.html",
+          "hash": "pgtrZ43fv3xYbc0s5CKw7A=="
         }
       },
       "is_incremental": false,
@@ -801,835 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Entry.html",
-          "hash": "zksUDMbOcccv2m4Yk65nPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.PlcFuseChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.PlcFuseChannelBasic.html",
-          "hash": "pZV1D4e8H2FK6toqYGQ5vg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelBasic.html",
-          "hash": "0Fhbtf75P2ZojlBu++vpGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.PlcFuseChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.PlcFuseChannelExtended.html",
-          "hash": "0KmldhDXwxjVzenMDsplag=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseChannelExtended.html",
-          "hash": "h7yWfE7VymaoTtaz9Zn/hw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.PlcFuseModuleEL922x.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.PlcFuseModuleEL922x.html",
-          "hash": "xwckIdq+kcMdqnQQoskdxQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.FuseModuleEL922x.html",
-          "hash": "5q6/McRWu1Ql4itc3IGOnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.PlcGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.PlcGlobal_Version.html",
-          "hash": "MUr+5Qrt+lNm3ucvk74Qsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.Global_Version.html",
-          "hash": "N0Tn2KakRIcgP2PyCimwrQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_1_Module.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_1_Module.html",
-          "hash": "XD5uDsKZHm0vgOBgugThSA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_Channel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_Channel.html",
-          "hash": "o98GbweXax0rNsjQLHZ1bg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_ChannelStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IAI_ChannelStatus.html",
-          "hash": "KvxRCd38TavAJeoON4Z9WA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelBasic.html",
-          "hash": "LPGPAfBCWfIlhuxTx0Kxwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IEL922x_ChannelExtended.html",
-          "hash": "4jxNjrC18F6vgcV/FNaCFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelBasic.html",
-          "hash": "QFfpr7TAxyMcXzeYnGTDwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseChannelExtended.html",
-          "hash": "RtQoQBy5V4U0hVynp0ZZWA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseModuleEL922x.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IFuseModuleEL922x.html",
-          "hash": "xGzTtcrgSh4N4IKI50bEqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IGlobal_Version.html",
-          "hash": "4pekK991C6dVyfiK4kfJ5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IIO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IIO.html",
-          "hash": "u4st3zeDizHv68f3fU+B9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IInfoData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IInfoData.html",
-          "hash": "byqRmSj4EtQCayIwKAd4sQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.PlcIO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.PlcIO.html",
-          "hash": "z6nUR9D73FKFfNhGtM4EPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IO.html",
-          "hash": "fPeJAAVRPCA77Fdn29Nqxw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IOutputStruct.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IOutputStruct.html",
-          "hash": "g57la1pivT5g3Un03sqzFA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_1_Module.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_1_Module.html",
-          "hash": "1TNJCcD9JEPFLXtENBxDUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_Channel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_Channel.html",
-          "hash": "sGkPRlP6Bcv+pTQl2HJNUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_ChannelStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowAI_ChannelStatus.html",
-          "hash": "CQPdS7VK+aGR5VrqOewfNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelBasic.html",
-          "hash": "dveeJU43YC0DgfQXJsLYCA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowEL922x_ChannelExtended.html",
-          "hash": "+FsOuvJKOHR/4+ZZwXi7Uw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelBasic.html",
-          "hash": "j13GnV567uQ9mLnYwbIF6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseChannelExtended.html",
-          "hash": "qZIePyTOEt3CvyasXL5Lng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseModuleEL922x.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowFuseModuleEL922x.html",
-          "hash": "A9vSHhVIN6oYwiGTl6CzEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowGlobal_Version.html",
-          "hash": "ju2cX9KOsGnHl/qRmvh4XQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowIO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowIO.html",
-          "hash": "K4dW3JuKB3oq02tTi8urwQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowInfoData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowInfoData.html",
-          "hash": "NKIH3KtIO7WgFE953v9ISw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowOutputStruct.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowOutputStruct.html",
-          "hash": "gDBqfhaL4xQvY3vAFaS7fA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructBasic.html",
-          "hash": "iJOBDj/U8EEf2GS/5fOy9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowStatusStructExtended.html",
-          "hash": "XxueG5nLdZ7vQJDW8pm7eA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowTcoIoBeckhoffTwinController.html",
-          "hash": "rvCqhAZd/e6TgzZYE4HzOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowWcState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IShadowWcState.html",
-          "hash": "3+hx9UY3XDjL3Whsj2KtVA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructBasic.html",
-          "hash": "VNBfH7UfbAlQI6U8aDsQHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IStatusStructExtended.html",
-          "hash": "26ktIiJZA8Jpj1MKWHKpOA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.ITcoIoBeckhoffTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.ITcoIoBeckhoffTwinController.html",
-          "hash": "s2P/QRJgbq22nugO8S72Hg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IWcState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.IWcState.html",
-          "hash": "nv5ZGZMAeXNvNlyauuETbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.PlcInfoData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.PlcInfoData.html",
-          "hash": "mwxDPOPSyldC0Yrw8yNBrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.InfoData.html",
-          "hash": "b5xde4Rxqr9IkGktfMn4fA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.PlcOutputStruct.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.PlcOutputStruct.html",
-          "hash": "ijq2Lexp7a3gW5o3EMSQcA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.OutputStruct.html",
-          "hash": "e1aimDdZWpbplYdOndCcgg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_1_Module.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_1_Module.html",
-          "hash": "s+AlDceIq3kMc3rq8TNLsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_Channel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_Channel.html",
-          "hash": "Bcv7j9uajZxXUaX6jnurLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_ChannelStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainAI_ChannelStatus.html",
-          "hash": "6FsCcFReADoVmCaztr4U6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelBasic.html",
-          "hash": "0c6cYEMuDGqkEIPyeoHpoA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainEL922x_ChannelExtended.html",
-          "hash": "shnZhI8bPROMIlH+RwPZYQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelBasic.html",
-          "hash": "AEv1zwVIwgQ074C6uyM6aw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseChannelExtended.html",
-          "hash": "ZVDWahbz9eSWf8y8NNnvlw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseModuleEL922x.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainFuseModuleEL922x.html",
-          "hash": "6S9FARpKZ20SRjBwGQlIuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainGlobal_Version.html",
-          "hash": "oY4cP8RJdSanleUmRyPrVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainIO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainIO.html",
-          "hash": "9Y6Gyqy7/9j1SLLyRAmnkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainInfoData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainInfoData.html",
-          "hash": "IJEdS82HjaMorWi80xzidg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainOutputStruct.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainOutputStruct.html",
-          "hash": "6S/3ZguEUhJA73Ff294BhA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructBasic.html",
-          "hash": "RhCMkZZghCZXlgo7Bsa0JA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainStatusStructExtended.html",
-          "hash": "KBfeFcmetLwP0uPqg3t6tQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainTcoIoBeckhoffTwinController.html",
-          "hash": "Hfzf50evHSN6hMAyEf6nKw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainWcState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.PlainWcState.html",
-          "hash": "QXDJfe2pXlsknUggVxQO9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.PlcStatusStructBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.PlcStatusStructBasic.html",
-          "hash": "hhFMA2KGYPhfGSeRa5ixhA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructBasic.html",
-          "hash": "QuH0fKAE6K+fjFkRvfb2oA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.PlcStatusStructExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.PlcStatusStructExtended.html",
-          "hash": "FT1IPbLdac1b49t6hfi0YA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.StatusStructExtended.html",
-          "hash": "yws1H94MCMnnqtqrVzyMOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.TcoIoBeckhoffTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.TcoIoBeckhoffTwinController.html",
-          "hash": "szqu7DY4KZAdpTPeoqFhnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.PlcWcState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.PlcWcState.html",
-          "hash": "VkAazGqi2xRsQPfTB62D5w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.WcState.html",
-          "hash": "eDEJnGHDhZIIlGQBL/JX0w=="
+          "hash": "cMEtK0k7Z2+tLWNiQtQzkA=="
         }
       },
       "is_incremental": false,
@@ -1641,163 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoIoBeckhoff/TcoIoBeckhoff.html",
-          "hash": "gcGEfZXjUKJpWto+1jYSzQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.PlcGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.PlcGlobal_Version.html",
-          "hash": "vVRcc8iRahZ2ewgm+XkTFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.Global_Version.html",
-          "hash": "+i8dHWzpApR7qib6lnfx9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.IGlobal_Version.html",
-          "hash": "XeurhArmUwbytMYS96vQHA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowGlobal_Version.html",
-          "hash": "9PMyPNvLCexS5zTogXReyg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowTcoPneumaticsTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowTcoPneumaticsTwinController.html",
-          "hash": "HxYdyrY9jnLCxE1X3nYFLw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowfbCylinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.IShadowfbCylinder.html",
-          "hash": "XOrG76SmAs2ag9wBqDUK4w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.ITcoPneumaticsTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.ITcoPneumaticsTwinController.html",
-          "hash": "IsUjvYfz47HqPdLxPHl4UA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.IfbCylinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.IfbCylinder.html",
-          "hash": "XCFjD7Ev4Ssm2q3VPPDfpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainGlobal_Version.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainGlobal_Version.html",
-          "hash": "POUqrNVL28citCuX4bZ4iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainTcoPneumaticsTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainTcoPneumaticsTwinController.html",
-          "hash": "7Z2vT0XhHD88rmJY1yRt5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.PlainfbCylinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.PlainfbCylinder.html",
-          "hash": "06ArwkqIBEyEsDRT6iraOA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.TcoPneumaticsTwinController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.TcoPneumaticsTwinController.html",
-          "hash": "BtwnvUT5vr78jun2fkfItw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.PlcfbCylinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.PlcfbCylinder.html",
-          "hash": "gyG4UGZcvgZ8t/Z+Lqn1vA=="
+          "hash": "Sb/AsQXdvC6RFt4hslZbzw=="
         }
       },
       "is_incremental": false,
@@ -1809,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoPneumatics/TcoPneumatics.fbCylinder.html",
-          "hash": "I/Ivbm2j3Tu0oKIGBZ8VkA=="
+          "hash": "cyb/Z+/1TDKgNvK5ny6cYw=="
         }
       },
       "is_incremental": false,
@@ -1821,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoPneumatics/TcoPneumatics.html",
-          "hash": "9tsZ2m16mDBUjuCIqrIirg=="
+          "hash": "iwVvrvwYfxWkTWfUpXB3TA=="
         }
       },
       "is_incremental": false,
@@ -1833,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "q4yDqJ+YtAxQuv2iiewaIw=="
+          "hash": "dNjwRO7GnVEZm5ORCuMHpQ=="
         }
       },
       "is_incremental": false,
@@ -1959,7 +963,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/application.html",
-          "hash": "I9UF+TuLq9Kp+iYIc+QBPw=="
+          "hash": "G4poB7cg8Djty2/GP6iuAw=="
         }
       },
       "is_incremental": false,
@@ -2021,7 +1025,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 151,
+          "total_file_count": 68,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

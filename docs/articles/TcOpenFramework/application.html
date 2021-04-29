@@ -123,50 +123,16 @@
 <p>The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from <a href="#Task">TcoTask</a> within which the actions are running. The <a href="#Task">TcoTask</a>  work with two methods in tandem: <code>Invoke</code> fires the execution (in our case, this occurs in the sequences) and <code>Execute</code> with an implementation in the components block, that run the required action.</p>
 <h1 id="tcocore-library">TcoCore library</h1>
 <p><code>TcoCore</code> library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default <strong>namespace</strong> for this library is <code>TcoCore</code>. All types in this library have <code>Tco</code> prefix for classes and <code>ITco</code> and for interfaces.</p>
-<h2 id="object">Object</h2>
-<p><strong>(TcoObject : ITcoTask)</strong></p>
-<p><a href="../../docs/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html">API</a></p>
-<p>Each block in <code>TcOpen</code> framework should derive from <code>TcoObject</code>. <code>TcoObject</code> provides access to <a href="#Context">Context</a>, <em>reference to the parent object</em>, <em>identity</em> (unique identifier across application), access to a <em>messaging system</em>, and other useful functions.If we stretch our imagination, we can think of <code>TcoObject</code> as <code>object</code> in C# (all objects derive from <code>System.Object</code>);</p>
-<h3 id="tcoobject-construction-fb_init">TcoObject construction (FB_init)</h3>
-<p><code>TcoObject</code> must be constructed via <code>FB_init</code> method passing in a parameter of parent <code>ITcoObject</code>; that is usualy another <code>TcoObject</code> or a <code>TcoContext</code> eventualy other type that implements <code>ITcoObject</code> interface.</p>
-<blockquote>
-<p>As a rule, all objects should be constructed as follows:</p>
-</blockquote>
-<pre><code>VAR
-    _drive : Drive(THIS^);
-END_VAR    
-</code></pre>
-<p>where <code>THIS^</code> is of <code>ITcoObject</code>.</p>
-<hr>
-<h3 id="messenger">Messenger</h3>
-<p><a href="../../docs/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html">API</a></p>
-<p>Any <code>TcoObject</code> can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).</p>
-<p>Each <code>TcoObject</code> contains a single message holder <code>Mime</code> or Most Important Message.</p>
-<p>The message will be <strong>replaced</strong> by another message only when the incoming <strong>message is of higher severity</strong>. The use of messaging system aims for simplicity; a simple call of messaging method will create the message from the user program.</p>
-<p>The <strong>persistence</strong> of the message is the cycle in which it was created.
-(Persistence over multiple cycles is in the making)</p>
-<blockquote>
-<p>An example implementation of station object with messaging</p>
-</blockquote>
-<pre><code class="lang-iecst">FUNCTION_BLOCK Station001 EXTENDS TcoCore.TcoObject
-</code></pre>
-<pre><code class="lang-iecst">METHOD CheckStationsSensors()
-//------------------------------
-Messenger.Debug(CONCAT('Checking stations sesnors, context cycle ', ULINT_TO_STRING(Context.StartCycleCount));
-Messenger.Debug(DT_TO_STRING(Context.Rtc.NowLocal()));
-
-IF(failed) THEN
-    // This message will appear as MIME (Most important message on the object Station001)
-   Messenger.Error('Some sensor just failed'); 
-END_IF;    
-</code></pre>
 <h2 id="context">Context</h2>
 <p><strong>(TcoContext : ITcoContext)</strong></p>
-<p><code>TcOpen</code> application requires to have at least one <code>TcoContex</code> that provides contextual support information and services for the application's components.
-<code>TcoContext</code> is an abstract class that requires the <code>Main</code> method implementation that is the <strong>root of the call tree</strong> for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each <code>TcoObject</code> (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with <code>Run</code> method call from the PLC program. The <code>Run</code> method will take care of running <code>Main</code> method and other routines that are required for the context and its services.</p>
-<p>Context usage scenarios:</p>
-<p><img src="Context003.png" alt="Context usage"></p>
-<p><strong>example of context implementation</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoContext.PlcTcoContext.html">API</a></p>
+<p><code>TcoContext</code> is an abstract block that requires the <code>Main</code> method implementation that is the <strong>root of the call tree</strong> for that context (station, functional unit, or whole application).</p>
+<p><code>TcOpen</code> application requires to have at least one <code>TcoContex</code> that provides contextual support information and services for the application's components.</p>
+<p>Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each <code>TcoObject</code> (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with <code>Run</code> method call from the PLC program. The <code>Run</code> method will take care of running <code>Main</code> method and other routines that are required for the context and its services.</p>
+<!-- Context usage scenarios:
+
+![Context usage](Context003.png) -->
+<p><strong>Example of context implementation</strong></p>
 <p>Implementation of abstract <code>TcoCore.TcoContext</code> class</p>
 <pre><code class="lang-iecst">FUNCTION_BLOCK ExampleContext EXTENDS TcoCore.TcoContext
 VAR    
@@ -207,8 +173,46 @@ END_VAR
 //-------------------------------------
 _context.Run();
 </code></pre>
+<h2 id="object">Object</h2>
+<p><strong>(TcoObject : ITcoTask)</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html">API</a></p>
+<p>Each block in <code>TcOpen</code> framework should derive from <code>TcoObject</code>. <code>TcoObject</code> provides access to <a href="#Context">Context</a>, <em>reference to the parent object</em>, <em>identity</em> (unique identifier across application), access to a <em>messaging system</em>, and other useful functions.If we stretch our imagination, we can think of <code>TcoObject</code> as <code>object</code> in C# (all objects derive from <code>System.Object</code>);</p>
+<h3 id="tcoobject-construction-fb_init">TcoObject construction (FB_init)</h3>
+<p><code>TcoObject</code> must be constructed via <code>FB_init</code> method passing in a parameter of parent <code>ITcoObject</code>; that is usualy another <code>TcoObject</code> or a <code>TcoContext</code> eventualy other type that implements <code>ITcoObject</code> interface.</p>
+<blockquote>
+<p>As a rule, all objects should be constructed as follows:</p>
+</blockquote>
+<pre><code>VAR
+    _drive : Drive(THIS^);
+END_VAR    
+</code></pre>
+<p>where <code>THIS^</code> is of <code>ITcoObject</code>.</p>
+<hr>
+<h3 id="messenger">Messenger</h3>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html">API</a></p>
+<p>Any <code>TcoObject</code> can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).</p>
+<p>Each <code>TcoObject</code> contains a single message holder <code>Mime</code> or Most Important Message.</p>
+<p>The message will be <strong>replaced</strong> by another message only when the incoming <strong>message is of higher severity</strong>. The use of messaging system aims for simplicity; a simple call of messaging method will create the message from the user program.</p>
+<p>The <strong>persistence</strong> of the message is the cycle in which it was created.
+(Persistence over multiple cycles is in the making)</p>
+<blockquote>
+<p>An example implementation of station object with messaging</p>
+</blockquote>
+<pre><code class="lang-iecst">FUNCTION_BLOCK Station001 EXTENDS TcoCore.TcoObject
+</code></pre>
+<pre><code class="lang-iecst">METHOD CheckStationsSensors()
+//------------------------------
+Messenger.Debug(CONCAT('Checking stations sesnors, context cycle ', ULINT_TO_STRING(Context.StartCycleCount));
+Messenger.Debug(DT_TO_STRING(Context.Rtc.NowLocal()));
+
+IF(failed) THEN
+    // This message will appear as MIME (Most important message on the object Station001)
+   Messenger.Error('Some sensor just failed'); 
+END_IF;    
+</code></pre>
 <h2 id="task">Task</h2>
 <p><strong>(TcoTask : ITcoTask)</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoTask.PlcTcoTask.html">API</a></p>
 <p><code>TcoTask</code> is a block for managing chunks of logic in asynchronous execution. Task controls the run of a component's function (servo movement, piston movement, barcode reader trigger, etc.).</p>
 <p>There are two key methods for managing the task:</p>
 <ul>
@@ -278,6 +282,7 @@ END_IF;
 </ol>
 <h2 id="components">Components</h2>
 <p><strong>(TcoComponent : ITcoComponent)</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html">API</a></p>
 <p>The <code>component</code> in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.
 Another way of thinking about this concept is an <code>API/Driver</code> that allows the consumer to execute and manage a physical or virtual appliance.</p>
 <p><img src="TcoComponent.png" alt="ComponentSchematics"></p>
@@ -343,7 +348,9 @@ MoveWork := _MoveWorkTask.Invoke();
 <p><code>TcoComponent</code> implements <code>ITcoServiceable</code> interface. Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks declared in the component will become <code>serviceable</code> when <code>TcoComponent.Service()</code> method is called cyclically. The <code>Service</code> method is final and cannot be overridden; you can, however place custom logic in the override of <code>ServiceMode</code> method; its call is ensured by <code>Service</code> method.</p>
 <p>Serviceable mode would be typicaly used in manual mode of a unit.</p>
 <p><img src="TcoComponent-serviceable.png" alt="TcoComponent Serviceable"></p>
-<h2 id="state-tcostate--itcostate">State (TcoState : ITcoState)</h2>
+<h2 id="state">State</h2>
+<p><strong>(TcoState : ITcoState)</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoState.PlcTcoState.html">API</a></p>
 <p>The state controller <code>TcoState</code> is the primary class for managing control over states of the system. It has a simple implementation for changing and observing the state. It allows handling the state coordination with any statements (IF-END_IF, IF-ELSIF-END_IF, CASE). <code>TcoState</code> holds the control variable and manages the change via <code>TcoState.ChangeState(newState)</code>. The override of the <code>TcoState.OnStateChange(lastState, newState)</code> method allows to perform operation on transition between the states.</p>
 <pre><code class="lang-iecst">IF(State = 10) THEN
     IF(a.DoSomething().Done) THEN
@@ -394,7 +401,8 @@ END_IF;
 <pre><code class="lang-iecst">//---------------------------------------------------------
 FUNCTION_BLOCK MyContext EXTENDS TcoCore.TcoContext
 VAR
-    _myState : MyStateController(THIS^, eRestoreMode.AutoRestoreMembers); // TRUE INDICATES THE STATES MEMBERS ARE AUTO-RESTORABLE
+    // AutoRestoreMembers INDICATES THE STATES MEMBERS ARE AUTO-RESTORABLE
+    _myState : MyStateController(THIS^, eRestoreMode.AutoRestoreMembers); 
 END_VAR   
 //---------------------------------------------------------
 FUNCTION_BLOCK MyStateController : EXTENDS TcoCore.TcoState
@@ -419,6 +427,7 @@ END_IF;
 </ol>
 <h3 id="sequencer">Sequencer</h3>
 <p><strong>(TcoSequencer : ITcoSequencer)</strong></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoSequencer.PlcTcoSequencer.html">API</a></p>
 <p>The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.</p>
 <p><code>TcoSequncer</code> is an abstract class, and it must have a concrete implementation of <code>Main</code> method. <code>Main</code> is the entry point for the sequence logic.</p>
 <p>In addition to simple sequential coordination, this class permits manual step-by-step execution, moving the pointer backward and forward in the sequence. <code>TcoSequencer</code> also implements the auto-restorable mechanism analogous to <code>TcoState</code>.</p>
@@ -532,7 +541,7 @@ END_IF;
 </code></pre>
 <p><img src="TcoSequecer-simple-transitions.png" alt=""></p>
 <h4 id="requesting-step">Requesting step</h4>
-<p><code>TcoSequener.RequestStep(INT)</code> it is similar to <code>goto</code> or <code>JMP</code> except that the jump occurs at sequencer's level. If the requeste step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.</p>
+<p><code>TcoSequener.RequestStep(INT)</code> it is similar to <code>goto</code> or <code>JMP</code> except that the jump occurs at sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.</p>
 <h4 id="cyclic-mode">Cyclic mode</h4>
 <p>The <code>cyclic mode</code> runs the steps until it reaches the step in the sequence that invokes <code>CompleteSequence()</code> method; this method moves the sequencer's pointer to the first step in the sequence, it also registers the time of the sequence and prepares the sequencer for the next run.</p>
 <h4 id="step-mode">Step mode</h4>
