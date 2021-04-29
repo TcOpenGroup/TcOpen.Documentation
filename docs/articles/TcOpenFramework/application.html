@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TcOpen Framework application </title>
+    <title>TcOpen Framework </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TcOpen Framework application ">
+    <meta name="title" content="TcOpen Framework ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.png">
@@ -108,7 +108,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tcopen-framework-application">TcOpen Framework application</h1>
+<h1 id="tcopen-framework">TcOpen Framework</h1>
 
 <p>TcOpen framework provides blocks for building industrial applications and creating reusable software components for various devices like Pistons, Drives, Robots, Vision systems, etc.</p>
 <p>Part of the framework is a series of classes/blocks for crafting applications using techniques known from software engineering. TcOpen is created in the OOP paradigm and takes full advantage of object-oriented design allowed by CoDeSys/TwinCAT 3 implementation of IEC-61131-3.</p>
@@ -126,8 +126,8 @@
 <h2 id="context">Context</h2>
 <p><strong>(TcoContext : ITcoContext)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoContext.PlcTcoContext.html">API</a></p>
-<p><code>TcoContext</code> is an abstract block that requires the <code>Main</code> method implementation that is the <strong>root of the call tree</strong> for that context (station, functional unit, or whole application).</p>
-<p><code>TcOpen</code> application requires to have at least one <code>TcoContex</code> that provides contextual support information and services for the application's components.</p>
+<p><code>TcoContext</code> is an entry point for an application. It represents a station, functional unit, or a whole application. The <code>Main</code> method of the context is the <strong>root of the call tree</strong>.</p>
+<p><code>TcOpen</code> application requires to have at least one <code>TcoContex</code>.</p>
 <p>Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each <code>TcoObject</code> (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with <code>Run</code> method call from the PLC program. The <code>Run</code> method will take care of running <code>Main</code> method and other routines that are required for the context and its services.</p>
 <!-- Context usage scenarios:
 
@@ -165,7 +165,7 @@ IF(_state = 20) THEN
     _state := 0;
 END_IF;
 </code></pre>
-<p>Execution of the context. Here we call <code>Run</code>. It will implicitly call the <code>Main</code>method implemented have above.</p>
+<p>Execution of the context. Here we call <code>Run</code>. It will implicitly call the <code>Main</code> method implemented have above.</p>
 <pre><code class="lang-iecst">PROGRAM MAIN
 VAR
 	_context : ExampleContext;
@@ -176,7 +176,16 @@ _context.Run();
 <h2 id="object">Object</h2>
 <p><strong>(TcoObject : ITcoTask)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html">API</a></p>
-<p>Each block in <code>TcOpen</code> framework should derive from <code>TcoObject</code>. <code>TcoObject</code> provides access to <a href="#Context">Context</a>, <em>reference to the parent object</em>, <em>identity</em> (unique identifier across application), access to a <em>messaging system</em>, and other useful functions.If we stretch our imagination, we can think of <code>TcoObject</code> as <code>object</code> in C# (all objects derive from <code>System.Object</code>);</p>
+<p><code>TcoObject</code> provides access to :</p>
+<ul>
+<li><a href="#Context">Context</a></li>
+<li>Reference to the parent object</li>
+<li><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html#TcoCore_TcoObject_PlcTcoObject_Identity">Identity</a> (unique identifier across application)</li>
+<li>Access to a <a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html#TcoCore_TcoObject_PlcTcoObject_Messenger"><em>messaging system</em></a></li>
+<li>and other useful functions. (e.g. RTC)</li>
+</ul>
+<p>Each block in <code>TcOpen</code> framework should derive from <code>TcoObject</code>.</p>
+<p>If we stretch our imagination, we can think of <code>TcoObject</code> as <code>object</code> in C# (all objects derive from <code>System.Object</code>);</p>
 <h3 id="tcoobject-construction-fb_init">TcoObject construction (FB_init)</h3>
 <p><code>TcoObject</code> must be constructed via <code>FB_init</code> method passing in a parameter of parent <code>ITcoObject</code>; that is usualy another <code>TcoObject</code> or a <code>TcoContext</code> eventualy other type that implements <code>ITcoObject</code> interface.</p>
 <blockquote>
@@ -192,9 +201,8 @@ END_VAR
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html">API</a></p>
 <p>Any <code>TcoObject</code> can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).</p>
 <p>Each <code>TcoObject</code> contains a single message holder <code>Mime</code> or Most Important Message.</p>
-<p>The message will be <strong>replaced</strong> by another message only when the incoming <strong>message is of higher severity</strong>. The use of messaging system aims for simplicity; a simple call of messaging method will create the message from the user program.</p>
-<p>The <strong>persistence</strong> of the message is the cycle in which it was created.
-(Persistence over multiple cycles is in the making)</p>
+<p>The message will be <strong>replaced</strong> by another message only when the incoming <strong>message is of higher severity</strong>.</p>
+<p>The <strong>persistence</strong> of the message is within the cycle in which it was created.</p>
 <blockquote>
 <p>An example implementation of station object with messaging</p>
 </blockquote>
@@ -238,11 +246,11 @@ END_IF;
 <pre><code>_myTask.Invoke();
 </code></pre>
 <p><code>Invoke</code> method returns <code>ITcoTaskStatus</code> with the following members:</p>
-<ol>
+<ul>
 <li><code> Busy</code> indicates the execution started and is running.</li>
 <li><code> Done</code> indicates the execution completed with success.</li>
 <li><code> Error</code> indicates the execution terminated with a failure.</li>
-</ol>
+</ul>
 <pre><code class="lang-iecst">// Wait for the task to complete
 IF(_myTask.Invoke().Done) THEN
     ; // Do something
@@ -270,10 +278,12 @@ END_IF;
 <p><strong>Restore</strong> is a function of <code>IRestoreable</code> (implemented by TcoTask, TcoComponent...) It provides an <strong>initialization routine</strong> for the object; it recovers the object from any state into <code>Ready</code>.</p>
 <p>After task completion, the state of the task will remain in <code>Done</code>, unless:</p>
 <ol>
-<li>Task's <code>Restore</code> method is called (task moves to <code>Ready</code> state).</li>
-<li><code> Invoke</code> method is <strong>not called</strong> for two or more cycles of its context (that usually means the same as PLC cycle); successive call of <code>Invoke</code> will switch the task into <code>Ready</code> and immediately to <code>Requested</code> state.</li>
-<li>If the task is part of complex coordination primitive, the transition between states will bring the task into a <code>Ready</code> state if that primitive (StateController and derivatives) has this option enabled.</li>
-<li>Alternatively, a <code>Restore</code> of a task can be called in transition methods of complex coordination primitives(<code>OnStateChange</code>).</li>
+<li><p>Task's <code>Restore</code> method is called (task moves to <code>Ready</code> state).</p>
+</li>
+<li><p><code> Invoke</code> method is <strong>not called</strong> for two or more cycles of its context (that usually means the same as PLC cycle); successive call of <code>Invoke</code> will switch the task into <code>Ready</code> and immediately to <code>Requested</code> state.</p>
+</li>
+<li><p>If the task is part of complex coordination primitive, the transition between states will bring the task into a <code>Ready</code> state if that primitive (StateController and derivatives) has this option enabled.</p>
+</li>
 </ol>
 <p>The task may finish in an <code> Error</code> state. In that case, two recovery scenarios are possible:</p>
 <ol>
@@ -283,10 +293,12 @@ END_IF;
 <h2 id="components">Components</h2>
 <p><strong>(TcoComponent : ITcoComponent)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html">API</a></p>
-<p>The <code>component</code> in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.
-Another way of thinking about this concept is an <code>API/Driver</code> that allows the consumer to execute and manage a physical or virtual appliance.</p>
+<p>The <code>component</code> in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.</p>
+<p>Another way of thinking about this concept is an <code>API/Driver</code> that allows the consumer to execute and manage a physical or virtual appliance.</p>
 <p><img src="TcoComponent.png" alt="ComponentSchematics"></p>
 <p><strong>Simple pneumatic cylinder component</strong></p>
+<p>Tasks specify what actions the cylinder performs. Implementation of tasks is clearly separated.</p>
+<p>Methods enable users to invoke these actions via public API.</p>
 <pre><code class="lang-iecst">FUNCTION_BLOCK PneumaticCyclinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCyclinder
 VAR_INPUT
     inHomeSensor : BOOL;
@@ -345,21 +357,26 @@ MoveWork := _MoveWorkTask.Invoke();
 <h3 id="components-methods">Components methods</h3>
 <p>The methods that perform actions <strong>MUST</strong> return <code>TcoCore.ITcoTaskStatus</code>(typically <code>TcoCore.TcoTask</code>). This rule applies even to the logic that requires a single-cycle execution.</p>
 <h3 id="serviceablity">Serviceablity</h3>
-<p><code>TcoComponent</code> implements <code>ITcoServiceable</code> interface. Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA). All tasks declared in the component will become <code>serviceable</code> when <code>TcoComponent.Service()</code> method is called cyclically. The <code>Service</code> method is final and cannot be overridden; you can, however place custom logic in the override of <code>ServiceMode</code> method; its call is ensured by <code>Service</code> method.</p>
+<p>Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA).</p>
+<p>All tasks declared in the component will become <code>serviceable</code> when <code>TcoComponent.Service()</code> method is called cyclically.</p>
+<p>The <code>Service</code> method is final and cannot be overridden; you can, however place custom logic in the override of <code>ServiceMode</code> method; its call is ensured by <code>Service</code> method.</p>
 <p>Serviceable mode would be typicaly used in manual mode of a unit.</p>
+<p><code>TcoComponent</code> implements <code>ITcoServiceable</code> interface.</p>
 <p><img src="TcoComponent-serviceable.png" alt="TcoComponent Serviceable"></p>
 <h2 id="state">State</h2>
 <p><strong>(TcoState : ITcoState)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoState.PlcTcoState.html">API</a></p>
-<p>The state controller <code>TcoState</code> is the primary class for managing control over states of the system. It has a simple implementation for changing and observing the state. It allows handling the state coordination with any statements (IF-END_IF, IF-ELSIF-END_IF, CASE). <code>TcoState</code> holds the control variable and manages the change via <code>TcoState.ChangeState(newState)</code>. The override of the <code>TcoState.OnStateChange(lastState, newState)</code> method allows to perform operation on transition between the states.</p>
+<p>The state controller <code>TcoState</code> manages states of the system.</p>
+<p><code>TcoState</code> holds the control variable and manages the change via <code>TcoState.ChangeState(newState)</code>.</p>
+<p>The override of the <code>TcoState.OnStateChange(lastState, newState)</code> method allows to perform operation on transition between the states.</p>
 <pre><code class="lang-iecst">IF(State = 10) THEN
     IF(a.DoSomething().Done) THEN
-        ChangeState(20).Restore(a).Restore(b);  // Change state and restore objects 'a'  and 'b'
+        ChangeState(20).Restore(VerticalCylinder).Restore(HorizontalCylinder);  // Change state and restore objects
     END_IF;    
 END_IF;    
 
 IF(s.State = 20) THEN
-    IF(a.DoSomething().Done) THEN
+    IF(VerticalCylinder.DoSomething().Done) THEN
         ChangeState(10);    
     END_IF;    
 END_IF;    
@@ -376,16 +393,21 @@ END_VAR
 // On transition to state 10
 IF(NewState = 10) THEN
     logger.Log('Transitioning to state no 10');
-    a.Restore();
+    VerticalCylinder.Restore();
 END_IF;    
 </code></pre>
 <h4 id="restoring-state-of-objects">Restoring state of objects</h4>
 <p>The restorable objects alleviate the burden of finding the right place and time for restoring objects in the PLC program.</p>
 <p>Any object that implements correctly <code>ITcoRestorable</code> is eligible for implicit auto-restore. <code>ITcoRestorable.Restore()</code> method must implement the logic that brings the object to the initial state <code>Ready</code> and thus make it ready for the new execution.</p>
-<p>We already mentioned restoring mechanisms in the section about ITcoTask```. The example above demonstrates two ways of performing <strong>explicit</strong> the auto restore:</p>
+<p>We already mentioned restoring mechanisms in the section about <code>ITcoTask</code>. The example above demonstrates two ways of performing <strong>explicit</strong> the auto restore:</p>
 <ol>
-<li>In the state <code>10</code> call <code>s.ChangeState(20).Restore(a).Restore(b)</code> restores state of the object <code>a</code> and <code>b</code>;</li>
-<li>In the override <code>OnStateChange</code>, we restore only object ```a'  &quot;.</li>
+<li>In the state <code>10</code> call</li>
+</ol>
+<pre><code>s.ChangeState(20).Restore(VerticalCylinder).Restore(HorizontalCylinder)
+</code></pre>
+<p>restores state of the object <code>VerticalCylinder</code> and <code>HorizontalCylinder</code>;</p>
+<ol start="2">
+<li>In the override <code>OnStateChange</code>, we restore only object <code>VerticalCylinder</code>.</li>
 </ol>
 <p><strong>Implicit</strong> restoring mechanism restores object without explicit coding. There are two ways the object can be restored:</p>
 <ol>
@@ -407,17 +429,17 @@ END_VAR
 //---------------------------------------------------------
 FUNCTION_BLOCK MyStateController : EXTENDS TcoCore.TcoState
 VAR
-    a : MyComponentThasDoesSomething(THIS^);
+    VerticalCylinder : MyComponentThasDoesSomething(THIS^);
 END_VAR;    
 
 IF(State = 10) THEN
-    IF(a.DoSomething().Done) THEN
+    IF(VerticalCylinder.DoSomething().Done) THEN
         ChangeState(20); 
     END_IF;    
 END_IF;    
 
 IF(s.State = 20) THEN
-    IF(a.DoSomething().Done) THEN
+    IF(VerticalCylinder.DoSomething().Done) THEN
         ChangeState(10);    
     END_IF;    
 END_IF;    
