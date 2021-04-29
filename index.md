@@ -13,7 +13,7 @@ Developed on [GitHub](https://github.com/TcOpenGroup/TcOpen) delivered as [NuGet
 ## What TcOpen offers?
 
 1. [Application framework](articles/TcOpenFramework/application.md)
-1. [OOP oriented component libraries](api/toc.yml) (Pneumatics, Drives, Robotics, etc.)
+1. [OOP oriented component libraries](https://docs.tcopengroup.org/api/index.html) (Pneumatics, Drives, Robotics, etc.)
 
 ## Where are we?
 
