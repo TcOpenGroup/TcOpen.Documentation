@@ -26,6 +26,71 @@ The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.
 
 ```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default **namespace** for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
 
+## Context
+
+**(TcoContext : ITcoContext)**
+
+```TcoContext``` is an abstract block that requires the ```Main``` method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application).
+
+```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual support information and services for the application's components.
+
+Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject``` (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with ```Run``` method call from the PLC program. The ```Run``` method will take care of running ```Main``` method and other routines that are required for the context and its services.
+
+<!-- Context usage scenarios:
+
+![Context usage](Context003.png) -->
+
+**Example of context implementation**
+
+Implementation of abstract ```TcoCore.TcoContext``` class
+
+~~~iecst
+FUNCTION_BLOCK ExampleContext EXTENDS TcoCore.TcoContext
+VAR    
+    // State control variable
+	_state : INT;    
+    // Piston component
+    _piston : Piston(THIS^); // About the construction via FB_init later.  
+END_VAR
+~~~
+
+Implementation of abstract method ```Main```
+
+~~~iecst
+METHOD PROTECTED Main
+//-------------------------------------------------------------
+IF(_state = 0) THEN
+    IF(_piston.MoveWork().Done) THEN
+      _state := 10;
+    END_IF;  
+END_IF;
+
+IF(_state = 10) THEN
+    IF(_piston.MoveHome().Done) THEN
+      _state := 20;
+    END_IF;    
+END_IF;
+.
+.
+.
+.
+.
+IF(_state = 20) THEN
+    _state := 0;
+END_IF;
+~~~
+
+Execution of the context. Here we call ```Run```. It will implicitly call the ```Main```method implemented have above.
+
+~~~iecst
+PROGRAM MAIN
+VAR
+	_context : ExampleContext;
+END_VAR
+//-------------------------------------
+_context.Run();
+~~~
+
 ## Object
 
 **(TcoObject : ITcoTask)**
@@ -82,67 +147,7 @@ IF(failed) THEN
 END_IF;    
 ~~~ 
 
-## Context
 
-**(TcoContext : ITcoContext)**
-
-```TcOpen``` application requires to have at least one ```TcoContex``` that provides contextual support information and services for the application's components.
-```TcoContext``` is an abstract class that requires the ```Main``` method implementation that is the **root of the call tree** for that context (station, functional unit, or whole application). Context can encapsulate units of different scope and size. Each context is an isolated island that manages only the objects declared within its declaration tree. Each ```TcoObject``` (more later) can have only one context. Inter-contextual access between the objects is not permitted. The context executes with ```Run``` method call from the PLC program. The ```Run``` method will take care of running ```Main``` method and other routines that are required for the context and its services.
-
-Context usage scenarios:
-
-![Context usage](Context003.png)
-
-**example of context implementation**
-
-Implementation of abstract ```TcoCore.TcoContext``` class
-
-~~~iecst
-FUNCTION_BLOCK ExampleContext EXTENDS TcoCore.TcoContext
-VAR    
-    // State control variable
-	_state : INT;    
-    // Piston component
-    _piston : Piston(THIS^); // About the construction via FB_init later.  
-END_VAR
-~~~
-
-Implementation of abstract method ```Main```
-
-~~~iecst
-METHOD PROTECTED Main
-//-------------------------------------------------------------
-IF(_state = 0) THEN
-    IF(_piston.MoveWork().Done) THEN
-      _state := 10;
-    END_IF;  
-END_IF;
-
-IF(_state = 10) THEN
-    IF(_piston.MoveHome().Done) THEN
-      _state := 20;
-    END_IF;    
-END_IF;
-.
-.
-.
-.
-.
-IF(_state = 20) THEN
-    _state := 0;
-END_IF;
-~~~
-
-Execution of the context. Here we call ```Run```. It will implicitly call the ```Main```method implemented have above.
-
-~~~iecst
-PROGRAM MAIN
-VAR
-	_context : ExampleContext;
-END_VAR
-//-------------------------------------
-_context.Run();
-~~~
 
 
 ## Task
@@ -310,7 +315,9 @@ Serviceable mode would be typicaly used in manual mode of a unit.
 
 ![TcoComponent Serviceable](TcoComponent-serviceable.png)
 
-## State (TcoState : ITcoState)
+## State 
+
+**(TcoState : ITcoState)**
 
 The state controller ```TcoState``` is the primary class for managing control over states of the system. It has a simple implementation for changing and observing the state. It allows handling the state coordination with any statements (IF-END_IF, IF-ELSIF-END_IF, CASE). ```TcoState``` holds the control variable and manages the change via ```TcoState.ChangeState(newState)```. The override of the ```TcoState.OnStateChange(lastState, newState)``` method allows to perform operation on transition between the states.
 
@@ -368,7 +375,8 @@ In this case, the state of the child objects (```ITcoObject``` declared directly
 //---------------------------------------------------------
 FUNCTION_BLOCK MyContext EXTENDS TcoCore.TcoContext
 VAR
-    _myState : MyStateController(THIS^, eRestoreMode.AutoRestoreMembers); // TRUE INDICATES THE STATES MEMBERS ARE AUTO-RESTORABLE
+    // AutoRestoreMembers INDICATES THE STATES MEMBERS ARE AUTO-RESTORABLE
+    _myState : MyStateController(THIS^, eRestoreMode.AutoRestoreMembers); 
 END_VAR   
 //---------------------------------------------------------
 FUNCTION_BLOCK MyStateController : EXTENDS TcoCore.TcoState
@@ -519,12 +527,11 @@ END_IF;
 
 #### Requesting step
 
-```TcoSequener.RequestStep(INT)``` it is similar to ```goto``` or ```JMP``` except that the jump occurs at sequencer's level. If the requeste step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.
+```TcoSequener.RequestStep(INT)``` it is similar to ```goto``` or ```JMP``` except that the jump occurs at sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.
 
 #### Cyclic mode
 
 The ```cyclic mode``` runs the steps until it reaches the step in the sequence that invokes ```CompleteSequence()``` method; this method moves the sequencer's pointer to the first step in the sequence, it also registers the time of the sequence and prepares the sequencer for the next run.
-
 
 #### Step mode
 
