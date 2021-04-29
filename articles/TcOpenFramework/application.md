@@ -14,23 +14,25 @@ The following diagram shows schematics of a simple TcOpen application. The stati
 
 The blocks of an TcOpen application require to be nested into a root block called [Context]((#Context)) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```AppContext``` block.
 
-The next level is ```Station001``` that derives form [TcoObject](#Object) (about TcoObject later).
+The next level is ```Station001``` that derives from [TcoObject](#Object) (about TcoObject later). It suffices to say the ```TcoObject``` is the base block of each other block in the TcOpen framework.
 
-The [components](#Components) are encapsulated into a single structure, ```Station001_Components``` (HorizontalDrive, VerticalPiston, Gripper).
+The [components](#Components) (drive, pistons) are encapsulated into a single structure, ```Station001_Components``` (HorizontalDrive, VerticalPiston, Gripper) and it that also derives from ```TcoObject```.
 
-Besides components, the station contains two [Sequencers](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities in automatic mode.
+Besides components, the station contains two [Sequences](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities in automatic mode.
 
-The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from [TcoTask](#Task) within which the actions are running.
+The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from [TcoTask](#Task) within which the actions are running. The [TcoTask](#Task)  work with two methods in tandem: ```Invoke``` fires the execution (in our case, this occurs in the sequences) and ```Execute``` with an implementation in the components block, that run the required action.
 
-# TcoCore  library
+# TcoCore library
 
-```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default namespace for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
+```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default **namespace** for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
 
 ## Object
 
 **(TcoObject : ITcoTask)**
 
-Each block in ```TcOpen``` framework should derive from ```TcoObject```. ```TcoObject``` provides access to [Context](#Context), reference to the parent object, identity (unique identifier across application), access to a messaging system, and other useful functions. Any ```TcoObject``` can post messages of different severity that can be captured and displayed in higher-level applications (HMI/SCADA). If we stretch our imagination, we can think of ```TcoObject``` as ```object``` in C# (all objects derive from ```System.Object```);
+[API](../../docs/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html)
+
+Each block in ```TcOpen``` framework should derive from ```TcoObject```. ```TcoObject``` provides access to [Context](#Context), *reference to the parent object*, *identity* (unique identifier across application), access to a *messaging system*, and other useful functions.If we stretch our imagination, we can think of ```TcoObject``` as ```object``` in C# (all objects derive from ```System.Object```);
 
 ### TcoObject construction (FB_init)
 
@@ -50,9 +52,19 @@ where ```THIS^``` is of ```ITcoObject```.
 
 ### Messenger
 
-```TcoObject``` implements system for posting messages. Each ```TcoObject``` contains single message holder ```Mime``` or Most Important Message. The message will be replaced by other message only when incomming message is of higher seveverity. The messages can be posted directly from the user program (see example bellow).
+[API](../../docs/api/TcoCore/TcoCore.TcoMessenger.PlcTcoMessenger.html)
 
-> An example implementation of station object
+Any ```TcoObject``` can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).
+
+ Each ```TcoObject``` contains a single message holder ```Mime``` or Most Important Message.
+ 
+ The message will be **replaced** by another message only when the incoming **message is of higher severity**. The use of messaging system aims for simplicity; a simple call of messaging method will create the message from the user program.
+
+
+The **persistence** of the message is the cycle in which it was created.
+(Persistence over multiple cycles is in the making)
+ 
+> An example implementation of station object with messaging
 
 ~~~ iecst
 FUNCTION_BLOCK Station001 EXTENDS TcoCore.TcoObject
