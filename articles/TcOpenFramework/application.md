@@ -252,7 +252,11 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 
 The ```component``` in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.
 
-Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance.
+Another way of thinking about this concept is an ```API/Driver``` that allows the consumer to execute and manage a physical or virtual appliance. All components inherit from ```TcoComponent``` and all functions are implemented as ```TcoTask```.
+
+Each component implements the logic required to run cyclically in the *body* of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.
+
+The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus``` (typically ```TcoCore.TcoTask```). This rule applies even to the logic that requires a single-cycle execution.
 
 ![ComponentSchematics](TcoComponent.png)
 
@@ -264,7 +268,7 @@ Tasks specify what actions the cylinder performs. Implementation of tasks is cle
 Methods enable users to invoke these actions via public API.
 
 ~~~iecst
-FUNCTION_BLOCK PneumaticCyclinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCyclinder
+FUNCTION_BLOCK PneumaticCylinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCylinder
 VAR_INPUT
     inHomeSensor : BOOL;
     inWorkSensor : BOOL;    
@@ -308,43 +312,25 @@ METHOD PUBLIC MoveWork : ITcoTaskStatus
 MoveWork := _MoveWorkTask.Invoke();
 ~~~
 
-
-* Component must inherit from ```TcoCore.TcoComponent```
-* Components methods and properties should not be marked FINAL (sealed)
-* Component should implement appropriate ```INTERFACE``` for a public contract; this is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See [semantic versioning](https://semver.org/).
-* Component members must explicitly state access modifier for methods and properties (```PUBLIC```, ```INTERNAL```, ```PROTECTED```, or ```PRIVATE```)
-* Component should properly hide implementation details by marking methods preferably ```PROTECTED```.
-* Consider using the ```PRIVATE``` access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.
-* If there are any testing methods in the same library with the component, these must be marked ```INTERNAL```.
-* Each action of the component should be implemented using the ```TcoTask``` class. There is no exception to this rule, even for the actions that require a single cycle to complete. Task's ```Invoke``` should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).
-
-### Cyclic call
-
-Each component implements the logic required to run cyclically in the *body* of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.
-
-### Components methods
-
-The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus```(typically ```TcoCore.TcoTask```). This rule applies even to the logic that requires a single-cycle execution.
-
 ### Serviceablity
 
-Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA).
+Serviceability means that the task's execution can be triggered from outside the PLC environment (HMI/SCADA).
 
 All tasks declared in the component will become ```serviceable``` when ```TcoComponent.Service()``` method is called cyclically.
 
-The ```Service``` method is final and cannot be overridden; you can, however place custom logic in the override of ```ServiceMode``` method; its call is ensured by ```Service``` method.
+The ```Service``` method is final and cannot be overridden; you can, however, place custom logic in the override of ```ServiceMode``` method; its call is ensured by ```Service``` method.
 
-Serviceable mode would be typicaly used in manual mode of a unit.
+The serviceable mode would be typically used in the manual mode of a unit.
 
 ```TcoComponent``` implements ```ITcoServiceable``` interface.
 
 ![TcoComponent Serviceable](TcoComponent-serviceable.png)
 
-## State 
+## State
 
 **(TcoState : ITcoState)**
 
-[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoState.PlcTcoState.html)
+[API](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoStateBase.PlcTcoStateBase.html)
 
 The state controller ```TcoState``` manages states of the system.
 
@@ -393,7 +379,7 @@ We already mentioned restoring mechanisms in the section about ```ITcoTask```. T
 ```
 s.ChangeState(20).Restore(VerticalCylinder).Restore(HorizontalCylinder)
 ``` 
-restores state of the object ```VerticalCylinder``` and ```HorizontalCylinder```;
+restores the state of the object ```VerticalCylinder``` and ```HorizontalCylinder```;
 
 2. In the override ```OnStateChange```, we restore only object ```VerticalCylinder```.
 
@@ -444,10 +430,9 @@ END_IF;
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
 
+The sequencer finds its use in any scenario where sequential control is appropriate (application or component).
+
 ```TcoSequncer``` is an abstract class, and it must have a concrete implementation of ```Main``` method. ```Main``` is the entry point for the sequence logic.
-
-
-
 
 In addition to simple sequential coordination, this class permits manual step-by-step execution, moving the pointer backward and forward in the sequence. ```TcoSequencer``` also implements the auto-restorable mechanism analogous to ```TcoState```.
 
@@ -565,7 +550,7 @@ END_IF;
 
 #### Requesting step
 
-```TcoSequener.RequestStep(INT)``` it is similar to ```goto``` or ```JMP``` except that the jump occurs at sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.
+```TcoSequener.RequestStep(INT)``` it is similar to ```goto``` or ```JMP``` instructions, except that the jump occurs at the sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.
 
 #### Cyclic mode
 

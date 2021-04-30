@@ -294,12 +294,14 @@ END_IF;
 <p><strong>(TcoComponent : ITcoComponent)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoComponent.PlcTcoComponent.html">API</a></p>
 <p>The <code>component</code> in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.</p>
-<p>Another way of thinking about this concept is an <code>API/Driver</code> that allows the consumer to execute and manage a physical or virtual appliance.</p>
+<p>Another way of thinking about this concept is an <code>API/Driver</code> that allows the consumer to execute and manage a physical or virtual appliance. All components inherit from <code>TcoComponent</code> and all functions are implemented as <code>TcoTask</code>.</p>
+<p>Each component implements the logic required to run cyclically in the <em>body</em> of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.</p>
+<p>The methods that perform actions <strong>MUST</strong> return <code>TcoCore.ITcoTaskStatus</code> (typically <code>TcoCore.TcoTask</code>). This rule applies even to the logic that requires a single-cycle execution.</p>
 <p><img src="TcoComponent.png" alt="ComponentSchematics"></p>
 <p><strong>Simple pneumatic cylinder component</strong></p>
 <p>Tasks specify what actions the cylinder performs. Implementation of tasks is clearly separated.</p>
 <p>Methods enable users to invoke these actions via public API.</p>
-<pre><code class="lang-iecst">FUNCTION_BLOCK PneumaticCyclinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCyclinder
+<pre><code class="lang-iecst">FUNCTION_BLOCK PneumaticCylinder EXTENDS TcoCore.TcoComponent, IMPLEMENTS IPneumaticCylinder
 VAR_INPUT
     inHomeSensor : BOOL;
     inWorkSensor : BOOL;    
@@ -342,30 +344,16 @@ METHOD PUBLIC MoveWork : ITcoTaskStatus
 //----
 MoveWork := _MoveWorkTask.Invoke();
 </code></pre>
-<ul>
-<li>Component must inherit from <code>TcoCore.TcoComponent</code></li>
-<li>Components methods and properties should not be marked FINAL (sealed)</li>
-<li>Component should implement appropriate <code>INTERFACE</code> for a public contract; this is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See <a href="https://semver.org/">semantic versioning</a>.</li>
-<li>Component members must explicitly state access modifier for methods and properties (<code>PUBLIC</code>, <code>INTERNAL</code>, <code>PROTECTED</code>, or <code>PRIVATE</code>)</li>
-<li>Component should properly hide implementation details by marking methods preferably <code>PROTECTED</code>.</li>
-<li>Consider using the <code>PRIVATE</code> access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.</li>
-<li>If there are any testing methods in the same library with the component, these must be marked <code>INTERNAL</code>.</li>
-<li>Each action of the component should be implemented using the <code>TcoTask</code> class. There is no exception to this rule, even for the actions that require a single cycle to complete. Task's <code>Invoke</code> should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).</li>
-</ul>
-<h3 id="cyclic-call">Cyclic call</h3>
-<p>Each component implements the logic required to run cyclically in the <em>body</em> of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.</p>
-<h3 id="components-methods">Components methods</h3>
-<p>The methods that perform actions <strong>MUST</strong> return <code>TcoCore.ITcoTaskStatus</code>(typically <code>TcoCore.TcoTask</code>). This rule applies even to the logic that requires a single-cycle execution.</p>
 <h3 id="serviceablity">Serviceablity</h3>
-<p>Serviceability means that the task's execution can be triggered from outside PLC environment (HMI/SCADA).</p>
+<p>Serviceability means that the task's execution can be triggered from outside the PLC environment (HMI/SCADA).</p>
 <p>All tasks declared in the component will become <code>serviceable</code> when <code>TcoComponent.Service()</code> method is called cyclically.</p>
-<p>The <code>Service</code> method is final and cannot be overridden; you can, however place custom logic in the override of <code>ServiceMode</code> method; its call is ensured by <code>Service</code> method.</p>
-<p>Serviceable mode would be typicaly used in manual mode of a unit.</p>
+<p>The <code>Service</code> method is final and cannot be overridden; you can, however, place custom logic in the override of <code>ServiceMode</code> method; its call is ensured by <code>Service</code> method.</p>
+<p>The serviceable mode would be typically used in the manual mode of a unit.</p>
 <p><code>TcoComponent</code> implements <code>ITcoServiceable</code> interface.</p>
 <p><img src="TcoComponent-serviceable.png" alt="TcoComponent Serviceable"></p>
 <h2 id="state">State</h2>
 <p><strong>(TcoState : ITcoState)</strong></p>
-<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoState.PlcTcoState.html">API</a></p>
+<p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoStateBase.PlcTcoStateBase.html">API</a></p>
 <p>The state controller <code>TcoState</code> manages states of the system.</p>
 <p><code>TcoState</code> holds the control variable and manages the change via <code>TcoState.ChangeState(newState)</code>.</p>
 <p>The override of the <code>TcoState.OnStateChange(lastState, newState)</code> method allows to perform operation on transition between the states.</p>
@@ -405,7 +393,7 @@ END_IF;
 </ol>
 <pre><code>s.ChangeState(20).Restore(VerticalCylinder).Restore(HorizontalCylinder)
 </code></pre>
-<p>restores state of the object <code>VerticalCylinder</code> and <code>HorizontalCylinder</code>;</p>
+<p>restores the state of the object <code>VerticalCylinder</code> and <code>HorizontalCylinder</code>;</p>
 <ol start="2">
 <li>In the override <code>OnStateChange</code>, we restore only object <code>VerticalCylinder</code>.</li>
 </ol>
@@ -451,6 +439,7 @@ END_IF;
 <p><strong>(TcoSequencer : ITcoSequencer)</strong></p>
 <p><a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoSequencer.PlcTcoSequencer.html">API</a></p>
 <p>The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.</p>
+<p>The sequencer finds its use in any scenario where sequential control is appropriate (application or component).</p>
 <p><code>TcoSequncer</code> is an abstract class, and it must have a concrete implementation of <code>Main</code> method. <code>Main</code> is the entry point for the sequence logic.</p>
 <p>In addition to simple sequential coordination, this class permits manual step-by-step execution, moving the pointer backward and forward in the sequence. <code>TcoSequencer</code> also implements the auto-restorable mechanism analogous to <code>TcoState</code>.</p>
 <pre><code class="lang-iecst">
@@ -563,7 +552,7 @@ END_IF;
 </code></pre>
 <p><img src="TcoSequecer-simple-transitions.png" alt=""></p>
 <h4 id="requesting-step">Requesting step</h4>
-<p><code>TcoSequener.RequestStep(INT)</code> it is similar to <code>goto</code> or <code>JMP</code> except that the jump occurs at sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.</p>
+<p><code>TcoSequener.RequestStep(INT)</code> it is similar to <code>goto</code> or <code>JMP</code> instructions, except that the jump occurs at the sequencer's level. If the requested step is past the step that made the request, the requested step will execute in the same PLC cycle. If the requested step is prior to the step where the request was issued, the step will execute in the next contexts cycle.</p>
 <h4 id="cyclic-mode">Cyclic mode</h4>
 <p>The <code>cyclic mode</code> runs the steps until it reaches the step in the sequence that invokes <code>CompleteSequence()</code> method; this method moves the sequencer's pointer to the first step in the sequence, it also registers the time of the sequence and prepares the sequencer for the next run.</p>
 <h4 id="step-mode">Step mode</h4>

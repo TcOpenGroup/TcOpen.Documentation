@@ -3543,6 +3543,19 @@ references:
   isSpec: "True"
   fullName: TcoCore.IShadowTcoSequencer._currentStep
   nameWithType: IShadowTcoSequencer._currentStep
+- uid: TcoCore.IShadowTcoSequencer._lastActiveCycle
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.IShadowTcoSequencer.html#TcoCore_IShadowTcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.IShadowTcoSequencer._lastActiveCycle
+  fullName: TcoCore.IShadowTcoSequencer._lastActiveCycle
+  nameWithType: IShadowTcoSequencer._lastActiveCycle
+- uid: TcoCore.IShadowTcoSequencer._lastActiveCycle*
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.IShadowTcoSequencer.html#TcoCore_IShadowTcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.IShadowTcoSequencer._lastActiveCycle
+  isSpec: "True"
+  fullName: TcoCore.IShadowTcoSequencer._lastActiveCycle
+  nameWithType: IShadowTcoSequencer._lastActiveCycle
 - uid: TcoCore.IShadowTcoSequencer._LastCycleTime
   name: _LastCycleTime
   href: api/TcoCore/TcoCore.IShadowTcoSequencer.html#TcoCore_IShadowTcoSequencer__LastCycleTime
@@ -5204,6 +5217,19 @@ references:
   isSpec: "True"
   fullName: TcoCore.ITcoSequencer._currentStep
   nameWithType: ITcoSequencer._currentStep
+- uid: TcoCore.ITcoSequencer._lastActiveCycle
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.ITcoSequencer.html#TcoCore_ITcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.ITcoSequencer._lastActiveCycle
+  fullName: TcoCore.ITcoSequencer._lastActiveCycle
+  nameWithType: ITcoSequencer._lastActiveCycle
+- uid: TcoCore.ITcoSequencer._lastActiveCycle*
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.ITcoSequencer.html#TcoCore_ITcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.ITcoSequencer._lastActiveCycle
+  isSpec: "True"
+  fullName: TcoCore.ITcoSequencer._lastActiveCycle
+  nameWithType: ITcoSequencer._lastActiveCycle
 - uid: TcoCore.ITcoSequencer._LastCycleTime
   name: _LastCycleTime
   href: api/TcoCore/TcoCore.ITcoSequencer.html#TcoCore_ITcoSequencer__LastCycleTime
@@ -8782,6 +8808,12 @@ references:
   commentId: F:TcoCore.PlainTcoSequencer.__currentStep
   fullName: TcoCore.PlainTcoSequencer.__currentStep
   nameWithType: PlainTcoSequencer.__currentStep
+- uid: TcoCore.PlainTcoSequencer.__lastActiveCycle
+  name: __lastActiveCycle
+  href: api/TcoCore/TcoCore.PlainTcoSequencer.html#TcoCore_PlainTcoSequencer___lastActiveCycle
+  commentId: F:TcoCore.PlainTcoSequencer.__lastActiveCycle
+  fullName: TcoCore.PlainTcoSequencer.__lastActiveCycle
+  nameWithType: PlainTcoSequencer.__lastActiveCycle
 - uid: TcoCore.PlainTcoSequencer.__LastCycleTime
   name: __LastCycleTime
   href: api/TcoCore/TcoCore.PlainTcoSequencer.html#TcoCore_PlainTcoSequencer___LastCycleTime
@@ -8831,6 +8863,19 @@ references:
   isSpec: "True"
   fullName: TcoCore.PlainTcoSequencer._currentStep
   nameWithType: PlainTcoSequencer._currentStep
+- uid: TcoCore.PlainTcoSequencer._lastActiveCycle
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.PlainTcoSequencer.html#TcoCore_PlainTcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.PlainTcoSequencer._lastActiveCycle
+  fullName: TcoCore.PlainTcoSequencer._lastActiveCycle
+  nameWithType: PlainTcoSequencer._lastActiveCycle
+- uid: TcoCore.PlainTcoSequencer._lastActiveCycle*
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.PlainTcoSequencer.html#TcoCore_PlainTcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.PlainTcoSequencer._lastActiveCycle
+  isSpec: "True"
+  fullName: TcoCore.PlainTcoSequencer._lastActiveCycle
+  nameWithType: PlainTcoSequencer._lastActiveCycle
 - uid: TcoCore.PlainTcoSequencer._LastCycleTime
   name: _LastCycleTime
   href: api/TcoCore/TcoCore.PlainTcoSequencer.html#TcoCore_PlainTcoSequencer__LastCycleTime
@@ -18224,6 +18269,12 @@ references:
   commentId: F:TcoCore.TcoSequencer.__currentStep
   fullName: TcoCore.TcoSequencer.__currentStep
   nameWithType: TcoSequencer.__currentStep
+- uid: TcoCore.TcoSequencer.__lastActiveCycle
+  name: __lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer___lastActiveCycle
+  commentId: F:TcoCore.TcoSequencer.__lastActiveCycle
+  fullName: TcoCore.TcoSequencer.__lastActiveCycle
+  nameWithType: TcoSequencer.__lastActiveCycle
 - uid: TcoCore.TcoSequencer.__LastCycleTime
   name: __LastCycleTime
   href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer___LastCycleTime
@@ -18273,6 +18324,19 @@ references:
   isSpec: "True"
   fullName: TcoCore.TcoSequencer._currentStep
   nameWithType: TcoSequencer._currentStep
+- uid: TcoCore.TcoSequencer._lastActiveCycle
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.TcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer._lastActiveCycle
+- uid: TcoCore.TcoSequencer._lastActiveCycle*
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.TcoSequencer._lastActiveCycle
+  isSpec: "True"
+  fullName: TcoCore.TcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer._lastActiveCycle
 - uid: TcoCore.TcoSequencer._LastCycleTime
   name: _LastCycleTime
   href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer__LastCycleTime
@@ -18576,6 +18640,12 @@ references:
   commentId: F:TcoCore.TcoSequencer.PlcTcoSequencer._currentStep
   fullName: TcoCore.TcoSequencer.PlcTcoSequencer._currentStep
   nameWithType: TcoSequencer.PlcTcoSequencer._currentStep
+- uid: TcoCore.TcoSequencer.PlcTcoSequencer._lastActiveCycle
+  name: _lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.PlcTcoSequencer.html#TcoCore_TcoSequencer_PlcTcoSequencer__lastActiveCycle
+  commentId: F:TcoCore.TcoSequencer.PlcTcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer.PlcTcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer.PlcTcoSequencer._lastActiveCycle
 - uid: TcoCore.TcoSequencer.PlcTcoSequencer._LastCycleTime
   name: _LastCycleTime
   href: api/TcoCore/TcoCore.TcoSequencer.PlcTcoSequencer.html#TcoCore_TcoSequencer_PlcTcoSequencer__LastCycleTime
@@ -18901,6 +18971,23 @@ references:
   fullName: TcoCore.TcoSequencer.TcoCore.IShadowTcoSequencer._currentStep
   nameWithType: TcoSequencer.IShadowTcoSequencer._currentStep
   nameWithType.vb: TcoSequencer.TcoCore.IShadowTcoSequencer._currentStep
+- uid: TcoCore.TcoSequencer.TcoCore#IShadowTcoSequencer#_lastActiveCycle
+  name: IShadowTcoSequencer._lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_IShadowTcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.TcoSequencer.TcoCore#IShadowTcoSequencer#_lastActiveCycle
+  name.vb: TcoCore.IShadowTcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer.TcoCore.IShadowTcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer.IShadowTcoSequencer._lastActiveCycle
+  nameWithType.vb: TcoSequencer.TcoCore.IShadowTcoSequencer._lastActiveCycle
+- uid: TcoCore.TcoSequencer.TcoCore#IShadowTcoSequencer#_lastActiveCycle*
+  name: IShadowTcoSequencer._lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_IShadowTcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.TcoSequencer.TcoCore#IShadowTcoSequencer#_lastActiveCycle
+  isSpec: "True"
+  name.vb: TcoCore.IShadowTcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer.TcoCore.IShadowTcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer.IShadowTcoSequencer._lastActiveCycle
+  nameWithType.vb: TcoSequencer.TcoCore.IShadowTcoSequencer._lastActiveCycle
 - uid: TcoCore.TcoSequencer.TcoCore#IShadowTcoSequencer#_LastCycleTime
   name: IShadowTcoSequencer._LastCycleTime
   href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_IShadowTcoSequencer__LastCycleTime
@@ -19020,6 +19107,23 @@ references:
   fullName: TcoCore.TcoSequencer.TcoCore.ITcoSequencer._currentStep
   nameWithType: TcoSequencer.ITcoSequencer._currentStep
   nameWithType.vb: TcoSequencer.TcoCore.ITcoSequencer._currentStep
+- uid: TcoCore.TcoSequencer.TcoCore#ITcoSequencer#_lastActiveCycle
+  name: ITcoSequencer._lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_ITcoSequencer__lastActiveCycle
+  commentId: P:TcoCore.TcoSequencer.TcoCore#ITcoSequencer#_lastActiveCycle
+  name.vb: TcoCore.ITcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer.TcoCore.ITcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer.ITcoSequencer._lastActiveCycle
+  nameWithType.vb: TcoSequencer.TcoCore.ITcoSequencer._lastActiveCycle
+- uid: TcoCore.TcoSequencer.TcoCore#ITcoSequencer#_lastActiveCycle*
+  name: ITcoSequencer._lastActiveCycle
+  href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_ITcoSequencer__lastActiveCycle_
+  commentId: Overload:TcoCore.TcoSequencer.TcoCore#ITcoSequencer#_lastActiveCycle
+  isSpec: "True"
+  name.vb: TcoCore.ITcoSequencer._lastActiveCycle
+  fullName: TcoCore.TcoSequencer.TcoCore.ITcoSequencer._lastActiveCycle
+  nameWithType: TcoSequencer.ITcoSequencer._lastActiveCycle
+  nameWithType.vb: TcoSequencer.TcoCore.ITcoSequencer._lastActiveCycle
 - uid: TcoCore.TcoSequencer.TcoCore#ITcoSequencer#_LastCycleTime
   name: ITcoSequencer._LastCycleTime
   href: api/TcoCore/TcoCore.TcoSequencer.html#TcoCore_TcoSequencer_TcoCore_ITcoSequencer__LastCycleTime
