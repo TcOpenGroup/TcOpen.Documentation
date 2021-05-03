@@ -107,7 +107,14 @@
         ]
       }
     ],
+
     "dest": "docs",
+    "globalMetadata": {
+      "_appTitle": "TcOpen",
+      "_gitContribute": {
+        "repo": "https://github.com/TcOpenGroup/TcOpen.Documentation",
+        "branch": "dev"
+      }},
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
