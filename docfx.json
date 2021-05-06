@@ -48,6 +48,28 @@
       "src": [
         {
           "files": [
+            "src//TcoElements//src//TcoElementsConnector//TcoElementsConnector.csproj",
+            "src//TcoElements//src//Wpf//TcoElements.Wpf//TcoElements.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoElements",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    },
+
+    {
+      "src": [
+        {
+          "files": [
             "src//TcoPneumatics//src//TcoPneumaticsConnector//TcoPneumaticsConnector.csproj",
             "src//TcoPneumatics//src//TcoPneumatics.Wpf//src//TcoPneumatics.Wpf.csproj"
           ],
@@ -64,8 +86,29 @@
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
-    }
+    },
     
+    {
+      "src": [
+        {
+          "files": [
+            "src//TcoIoBeckhoff//src//TcoIoBeckhoffConnector//Inxton.TcoIoBeckhoffConnector.csproj",
+            "src//TcoIoBeckhoff//src//TcoIoBeckhoff.Wpf//Inxton.TcoIoBeckhoff.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoDrivesBeckhoff",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    }
 
   ],
   "build": {
