@@ -5,28 +5,26 @@
 | 0.0      | May 2021 | Initial release |
 |
 
+This document provides guidelines for the creation of components and extensions in Inxton.Vortex.Framework (IVF).
 
-This document provides guidelines for the creation of components and extension in Inxton.Vortex.Framework (IVF). 
-
-*The aim of this document is not to explain IVF in detail, but rather provide guidelines to those already familiar with IVF. If you want to know more about IVF visit [here](https://docs.inxton.com/).*
-
+*The aim of this document is not to explain IVF in detail but rather provide guidelines to those already familiar with IVF. If you want to know more about IVF, visit [here](https://docs.inxton.com/).*
 
 ## Partial extensions (pex)
 
-Partial extension allows extend a [twin class](https://docs.inxton.com/docu/articles/units/Inxton.vortex.compiler.console/Conceptual/Twins.html) in separate file which is not affected by the IVF compiler's output. More about partial classes [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+The partial extension allows extending a [twin class](https://docs.inxton.com/docu/articles/units/Inxton.vortex.compiler.console/Conceptual/Twins.html) in a separate file which is not affected by the IVF compiler's output. More about partial classes [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
-Partial extensions of any must be place in twin project under ```pex``` folder and subfolder that corresponds to project tree of the respective PLC project. For example the PLC block in `..PLC/POU/Components/Counter` will have its partial extension in `pex/POU/Components/Counter.cs` 
+Partial extensions of any block must be placed in twin projects under ```pex``` folder and subfolder that corresponds to the project's tree of the respective PLC project. For example the PLC block in `..PLC/POU/Components/Counter` will have its partial extension in `pex/POU/Components/Counter.cs`
 
-Extending contructor in partial class PexPreContructor and PexConstructor:
+Extending contructor in partial class `PexPreContructor` and `PexConstructor`:
 
 ~~~CSharp
-// Called prior to constrution of other members.
+// Called prior to construction of other members.
 partial void PexPreConstructor(IVortexObject parent, string readableTail, string symbolTail)
 {
     // Additional logic
 }
 
-// Called after the member were instantiated.
+// Called after the members were instantiated.
 partial void PexConstructor(IVortexObject parent, string readableTail, string symbolTail)
 {
     // Additional logic
@@ -37,12 +35,13 @@ These partial methods have their parameterless version for paramterless object c
 
 ## WPF UI components
 
-Wpf control must be located in a project named `{PlcProjectName}.Wpf`. The project must contain assembly attribute [RenderableAssemblyAttribute](https://docs.inxton.com/docu/api/presentation_wpf/Vortex.Presentation.Wpf.RenderableAssemblyAttribute.html). 
-Individial UI control must be places into a folder that matches the location of the respective PLC block in the PLC project. For instance `PLC/POU/Pneumatics/Cyclinder` will have it's user controls placed in the .net project in folder `POU/Pneumatic/Cyclinder/'. Each presentation type should have appropriate subfolder named after presentation type (Control, ShadowControl, Service, Diagnostics, etc.)
+Wpf control must be located in a project named `{PlcProjectName}.Wpf`. The project must contain assembly attribute [RenderableAssemblyAttribute](https://docs.inxton.com/docu/api/presentation_wpf/Vortex.Presentation.Wpf.RenderableAssemblyAttribute.html).
+
+Individual UI control must be placed into a folder that matches the location of the respective PLC block in the PLC project. For instance, `PLC/POU/Pneumatics/Cyclinder` will have its user controls placed in the .net project in folder `POU/Pneumatic/Cyclinder/'. Each presentation type should have an appropriate subfolder named after presentation type (Control, ShadowControl, Service, Diagnostics, etc.).
 
 ### Naming conventions
 
-Following table shows how to name UI controls for standardized presentation types to make them usable for automated UI rednering with `RenderableContentControl`.
+The following table shows how to name UI controls for standardized presentation types to make them usable for automated UI rendering with `RenderableContentControl`.
 
 
 | Purpose                  | View naming                      | ViewModel naming                  | Example                                                     |
