@@ -15,7 +15,7 @@ The partial extension allows extending a [twin class](https://docs.inxton.com/do
 
 Partial extensions of any block must be placed in twin projects under ```pex``` folder and subfolder that corresponds to the project's tree of the respective PLC project. For example the PLC block in `..PLC/POU/Components/Counter` will have its partial extension in `pex/POU/Components/Counter.cs`
 
-Extending contructor in partial class `PexPreContructor` and `PexConstructor`:
+Extending constructor in partial class `PexPreContructor` and `PexConstructor`:
 
 ~~~CSharp
 // Called prior to construction of other members.
@@ -31,7 +31,7 @@ partial void PexConstructor(IVortexObject parent, string readableTail, string sy
 }
 ~~~
 
-These partial methods have their parameterless version for paramterless object contruction.
+These partial methods have their parameterless version for parameterless object construction.
 
 ## WPF UI components
 
@@ -47,12 +47,12 @@ The following table shows how to name UI controls for standardized presentation 
 | Purpose                  | View naming                      | ViewModel naming                  | Example                                                     |
 |--------------------------|----------------------------------|-----------------------------------|-------------------------------------------------------------|
 | Basic UI control         | {BlockName}View                  | {BlockName}Model                  | SettingsDisplayView, DriveDisplayViewModel                  |
-| Diagnostics control      | {BlockName}**Diagnostics**View   | {BlockName}**Diagnostics**Model   | DriveServiceView, DriveServiceViewModel                     |
+| Diagnostics control      | {BlockName}**Diagnostics**View   | {BlockName}**Diagnostics**Model   | DriveDiganosticsView, DriveDiagnosticsViewModel             |
 | Service,Manual control   | {BlockName}**Service**View       | {BlockName}**Service**ViewModel   | DriveServiceView, DriveServiceViewModel                     |
 | Edit online data         | {BlockName}**Control**View       | {BlockName}**Control**Model       | SettingsControlView, SettingsControlViewModel               |
 | Display online data      | {BlockName}**Display**View       | {BlockName}**Display**Model       | SettingsDisplayView, DriveDisplayViewModel                  |
-| Edit shadow data         | {BlockName}**ShadowControl**View | {BlockName}**ShadowControl**Model | SettingsControlShadowView, SettingsControlShadowViewModel   |
-| Display shadow data      | {BlockName}**ShadowDisplay**View | {BlockName}**ShadowDisplay**Model | SettingsDisplayShadowView, DriveDisplayShadowViewModel      |
+| Edit shadow data         | {BlockName}**ShadowControl**View | {BlockName}**ShadowControl**Model | SettingsShadowControlView, SettingsShadowControlViewModel   |
+| Display shadow data      | {BlockName}**ShadowDisplay**View | {BlockName}**ShadowDisplay**Model | SettingsShadowDisplayView, DriveShadowDisplayViewModel      |
 | Custom presentation type | {BlockName}**{Custom}**View      | {BlockName}**{Custom}**Model      | Settings*MyCustomized*View, Settings*MyCustomized*ViewModel |
 
 
@@ -138,5 +138,3 @@ Example of View for block ```TcoCore.TcoSequencer``` of presentation type `Servi
     d:DesignWidth="800"
     mc:Ignorable="d">
 ~~~
- 
-
