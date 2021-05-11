@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TcOpen Conventions </title>
+    <title>TcOpen Conventions | TcOpen </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TcOpen Conventions ">
+    <meta name="title" content="TcOpen Conventions | TcOpen ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.png">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <p>TcOpen</p>  
+                <p class="text-logo">TcOpen</p>
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -128,6 +128,11 @@
 <td>0.1</td>
 <td>April 2021</td>
 <td>STRUCT members naming</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>April 2021</td>
+<td>Component rules</td>
 </tr>
 </tbody>
 </table>
@@ -436,6 +441,21 @@ END_VAR
 For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task.</p>
 <h2 id="static-classes">Static classes</h2>
 <p>For static-like behavior, use <code>PROGRAM</code>.</p>
+<h2 id="component">Component</h2>
+<ul>
+<li>Component must inherit from <code>TcoCore.TcoComponent</code></li>
+<li>Components methods and properties should not be marked FINAL (sealed)</li>
+<li>Component should implement appropriate <code>INTERFACE</code> for a public contract; this is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See <a href="https://semver.org/">semantic versioning</a>.</li>
+<li>Component members must explicitly state access modifier for methods and properties (<code>PUBLIC</code>, <code>INTERNAL</code>, <code>PROTECTED</code>, or <code>PRIVATE</code>)</li>
+<li>Component should properly hide implementation details by marking methods preferably <code>PROTECTED</code>.</li>
+<li>Consider using the <code>PRIVATE</code> access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.</li>
+<li>If there are any testing methods in the same library with the component, these must be marked <code>INTERNAL</code>.</li>
+<li>Each action of the component should be implemented using the <code>TcoTask</code> class. There is no exception to this rule, even for the actions that require a single cycle to complete. Task's <code>Invoke</code> should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).</li>
+</ul>
+<h3 id="cyclic-call">Cyclic call</h3>
+<p>Each component implements the logic required to run cyclically in the <em>body</em> of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.</p>
+<h3 id="components-methods">Components methods</h3>
+<p>The methods that perform actions <strong>MUST</strong> return <code>TcoCore.ITcoTaskStatus</code> (typically <code>TcoCore.TcoTask</code>). This rule applies even to the logic that requires a single-cycle execution.</p>
 </article>
           </div>
           

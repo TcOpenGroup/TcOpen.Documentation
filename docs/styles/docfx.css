@@ -181,10 +181,24 @@ header .navbar {
   border-width: 0 0 1px;
   border-radius: 0;
 }
+
+.text-logo{
+  font-weight: bold;
+  font-size: large;
+  margin:0;
+  color: whitesmoke;
+}
+
+.text-logo:hover{
+  background: -webkit-linear-gradient(#e50000 , #a30000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navbar-brand {
   font-size: inherit;
   padding: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

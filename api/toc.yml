@@ -2,5 +2,9 @@
   href: TcoCore/toc.yml
 - name: TcoIoBeckhoff
   href: TcoIoBeckhoff/toc.yml
+- name: TcoElements
+  href: TcoElements/toc.yml  
 - name: TcoPneumatics
   href: TcoPneumatics/toc.yml
+- name: TcoDrivesBeckhoff
+  href: TcoDrivesBeckhoff/toc.yml

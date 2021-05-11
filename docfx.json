@@ -48,6 +48,28 @@
       "src": [
         {
           "files": [
+            "src//TcoElements//src//TcoElementsConnector//TcoElementsConnector.csproj",
+            "src//TcoElements//src//Wpf//TcoElements.Wpf//TcoElements.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoElements",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    },
+
+    {
+      "src": [
+        {
+          "files": [
             "src//TcoPneumatics//src//TcoPneumaticsConnector//TcoPneumaticsConnector.csproj",
             "src//TcoPneumatics//src//TcoPneumatics.Wpf//src//TcoPneumatics.Wpf.csproj"
           ],
@@ -64,8 +86,29 @@
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
-    }
+    },
     
+    {
+      "src": [
+        {
+          "files": [
+            "src//TcoDrivesBeckhoff//src//TcoDrivesBeckhoffConnector//TcoDrivesBeckhoffConnector.csproj",
+            "src//TcoDrivesBeckhoff//src//TcoDrivesBeckhoff.Wpf//TcoDrivesBeckhoff.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoDrivesBeckhoff",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    }
 
   ],
   "build": {
@@ -107,7 +150,14 @@
         ]
       }
     ],
+
     "dest": "docs",
+    "globalMetadata": {
+      "_appTitle": "TcOpen",
+      "_gitContribute": {
+        "repo": "https://github.com/TcOpenGroup/TcOpen.Documentation",
+        "branch": "dev"
+      }},
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [

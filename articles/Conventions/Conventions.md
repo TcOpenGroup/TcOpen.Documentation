@@ -4,7 +4,7 @@
 |----------|------------|-----------------------|
 | 0.0      | April 2021 | Initial release       |
 | 0.1      | April 2021 | STRUCT members naming |
-
+| 0.2      | April 2021 | Component rules       |
 
 
 ## Introduction
@@ -180,3 +180,22 @@ For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic
 ## Static classes
 
 For static-like behavior, use ```PROGRAM```.
+
+## Component
+
+* Component must inherit from ```TcoCore.TcoComponent```
+* Components methods and properties should not be marked FINAL (sealed)
+* Component should implement appropriate ```INTERFACE``` for a public contract; this is the interface that the consumers of the library will use to interact with the component. It represents the public contract that must not change during the lifetime of the particular major version of the library/framework. See [semantic versioning](https://semver.org/).
+* Component members must explicitly state access modifier for methods and properties (```PUBLIC```, ```INTERNAL```, ```PROTECTED```, or ```PRIVATE```)
+* Component should properly hide implementation details by marking methods preferably ```PROTECTED```.
+* Consider using the ```PRIVATE``` access modifier to prevent any access to that member if you deem it necessary. Be aware, though, that private members cannot be overridden by a derived class.
+* If there are any testing methods in the same library with the component, these must be marked ```INTERNAL```.
+* Each action of the component should be implemented using the ```TcoTask``` class. There is no exception to this rule, even for the actions that require a single cycle to complete. Task's ```Invoke``` should be placed into a method with an appropriate name (MoveAbsolute, MoveHome, Measure).
+
+### Cyclic call
+
+Each component implements the logic required to run cyclically in the *body* of the Function Block. The body of the Function Block must be called from an appropriate place in the PLC program.
+
+### Components methods
+
+The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus``` (typically ```TcoCore.TcoTask```). This rule applies even to the logic that requires a single-cycle execution.
