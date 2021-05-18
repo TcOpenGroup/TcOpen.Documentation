@@ -17,5 +17,5 @@ Developed on [GitHub](https://github.com/TcOpenGroup/TcOpen) delivered as [NuGet
 
 ## Where are we?
 
-About the current state of the development, read more [here](https://github.com/TcOpenGroup/TcOpen/blob/initial-dev/README.md).
+About the current state of the development, read more [here](https://github.com/TcOpenGroup/TcOpen/blob/dev/README.md).
 
