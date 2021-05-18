@@ -1812,6 +1812,12 @@ references:
   commentId: T:TcoCore.eMessageCategory
   fullName: TcoCore.eMessageCategory
   nameWithType: eMessageCategory
+- uid: TcoCore.eMessageCategory.All
+  name: All
+  href: api/TcoCore/TcoCore.eMessageCategory.html#TcoCore_eMessageCategory_All
+  commentId: F:TcoCore.eMessageCategory.All
+  fullName: TcoCore.eMessageCategory.All
+  nameWithType: eMessageCategory.All
 - uid: TcoCore.eMessageCategory.Catastrophic
   name: Catastrophic
   href: api/TcoCore/TcoCore.eMessageCategory.html#TcoCore_eMessageCategory_Catastrophic
