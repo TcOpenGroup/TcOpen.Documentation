@@ -54,9 +54,11 @@ Use when you need to track detailed information about the internal states of the
 
 ### Info
 
+Use this category when you want to report a notification that may be of interest to the user, but does not adveresly affect a process.
+
 ### Notification
 
-Use when you want to deliver information to the user that has only informative character and does not adversely affect a process.
+Use when you want to deliver information to the user that user needs to be notified, some non essential activity is required.
 
 ### Warning
 
