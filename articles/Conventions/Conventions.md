@@ -65,18 +65,18 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 
 > **FB/class member naming**
 
-| Variable section | Notation   | Prefix    | Example                                                                   |
-|------------------|------------|-----------|---------------------------------------------------------------------------|
-| VAR_INPUT        | camelCase  | ```in```  | ```inActualPosition  : LREAL``` , ```_advancedCyclinder : fbCyclinder```  |
-| VAR_OUTPUT       | camelCase  | ```out``` | ```outActualPosition  : LREAL``` , ```_advancedCyclinder : fbCyclinder``` |
-| VAR_IN_OUT       | camelCase  | ```io```  | ```ioActualPosition  : LREAL``` , ```_advancedCyclinder : fbCyclinder```  |
-| VAR              | camelCase  | ```_```   | ```_actualPosition  : LREAL```, ```_advancedCyclinder : fbCyclinder```    |
-| VAR_STAT         | camelCase  | ```_```   | ```_actualPosition  : LREAL```, ```_advancedCyclinder : fbCyclinder```    |
-| VAR_INST         | camelCase  | ```_```   | ```_actualPosition  : LREAL``` , ```_advancedCyclinder : fbCyclinder```   |
-| VAR CONSTANT     | UpperCase  | NoPrefix  | ```MAX_747_CRUISING_ALTITUDE```                                           |
-| REFERENCE        | PascalCase | ```ref``` | ```refDrive```                                                            |
-| POINTER          | PascalCase | ```p```   | ```pCyclinder```                                                          |
-| INTERFACE name   | PascalCase | NoPrefix  | ```Cyclinder```                                                           |
+| Variable section | Notation   | Prefix    | Example                          |
+|------------------|------------|-----------|----------------------------------|
+| VAR_INPUT        | camelCase  | ```in```  | ```inActualPosition  : LREAL```  |
+| VAR_OUTPUT       | camelCase  | ```out``` | ```outActualPosition  : LREAL``` |
+| VAR_IN_OUT       | camelCase  | ```ino``` | ```ioActualPosition  : LREAL```  |
+| VAR              | camelCase  | ```_```   | ```_actualPosition  : LREAL```,  |
+| VAR_STAT         | camelCase  | ```_```   | ```_actualPosition  : LREAL```,  |
+| VAR_INST         | camelCase  | ```_```   | ```_actualPosition  : LREAL``` , |
+| VAR CONSTANT     | UpperCase  | NoPrefix  | ```MAX_747_CRUISING_ALTITUDE```  |
+| REFERENCE        | PascalCase | ```ref``` | ```refDrive```                   |
+| POINTER          | PascalCase | ```p```   | ```pCyclinder```                 |
+| INTERFACE name   | PascalCase | NoPrefix  | ```Cyclinder```                  |
 
 
 > **STRUCT member naming**
