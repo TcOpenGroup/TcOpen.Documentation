@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.ITcoDataTask
+  commentId: T:TcoData.ITcoDataTask
+  id: ITcoDataTask
+  parent: TcoData
+  children:
+  - TcoData.ITcoDataTask._identifier
+  - TcoData.ITcoDataTask.CreatePlainerType
+  - TcoData.ITcoDataTask.FlushOnlineToPlain(TcoData.PlainTcoDataTask)
+  - TcoData.ITcoDataTask.FlushOnlineToShadow
+  - TcoData.ITcoDataTask.FlushPlainToOnline(TcoData.PlainTcoDataTask)
+  langs:
+  - csharp
+  - vb
+  name: ITcoDataTask
+  nameWithType: ITcoDataTask
+  fullName: TcoData.ITcoDataTask
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: ITcoDataTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 147
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is onliner interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'public interface ITcoDataTask : ITcoRemoteTask, ITcoTask, ITcoObject, IVortexOnlineObject'
+    content.vb: >-
+      Public Interface ITcoDataTask
+          Inherits IVortexOnlineObject, ITcoRemoteTask
+  inheritedMembers:
+  - TcoCore.ITcoRemoteTask._isInitialized
+  - TcoCore.ITcoRemoteTask._hasException
+  - TcoCore.ITcoRemoteTask._startSignature
+  - TcoCore.ITcoRemoteTask._doneSignarure
+  - TcoCore.ITcoRemoteTask._exceptionMessage
+  - TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+  - TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+  - TcoCore.ITcoTask._taskState
+  - TcoCore.ITcoTask._restoreRequest
+  - TcoCore.ITcoTask._invokeRequest
+  - TcoCore.ITcoTask._abortRequest
+  - TcoCore.ITcoTask._enabled
+  - TcoCore.ITcoTask._isServiceable
+  - TcoCore.ITcoTask._elapsedTime
+  - TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+  - TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+  - TcoCore.ITcoObject._Identity
+  - TcoCore.ITcoObject._messenger
+  - TcoCore.ITcoObject.AttributeToolTip
+  - TcoCore.ITcoObject.AttributeName
+  - TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+  - TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.ITcoDataTask._identifier
+  commentId: P:TcoData.ITcoDataTask._identifier
+  id: _identifier
+  parent: TcoData.ITcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: _identifier
+  nameWithType: ITcoDataTask._identifier
+  fullName: TcoData.ITcoDataTask._identifier
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _identifier
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 149
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IOnlineString _identifier { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Online.IOnlineString
+    content.vb: ReadOnly Property _identifier As IOnlineString
+  overload: TcoData.ITcoDataTask._identifier*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.ITcoDataTask.CreatePlainerType
+  commentId: M:TcoData.ITcoDataTask.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.ITcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: ITcoDataTask.CreatePlainerType()
+  fullName: TcoData.ITcoDataTask.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 154
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainTcoDataTask CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataTask
+    content.vb: Function CreatePlainerType As PlainTcoDataTask
+  overload: TcoData.ITcoDataTask.CreatePlainerType*
+- uid: TcoData.ITcoDataTask.FlushOnlineToShadow
+  commentId: M:TcoData.ITcoDataTask.FlushOnlineToShadow
+  id: FlushOnlineToShadow
+  parent: TcoData.ITcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToShadow()
+  nameWithType: ITcoDataTask.FlushOnlineToShadow()
+  fullName: TcoData.ITcoDataTask.FlushOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 155
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToShadow()
+    content.vb: Sub FlushOnlineToShadow
+  overload: TcoData.ITcoDataTask.FlushOnlineToShadow*
+- uid: TcoData.ITcoDataTask.FlushPlainToOnline(TcoData.PlainTcoDataTask)
+  commentId: M:TcoData.ITcoDataTask.FlushPlainToOnline(TcoData.PlainTcoDataTask)
+  id: FlushPlainToOnline(TcoData.PlainTcoDataTask)
+  parent: TcoData.ITcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: FlushPlainToOnline(PlainTcoDataTask)
+  nameWithType: ITcoDataTask.FlushPlainToOnline(PlainTcoDataTask)
+  fullName: TcoData.ITcoDataTask.FlushPlainToOnline(TcoData.PlainTcoDataTask)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushPlainToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 156
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushPlainToOnline(PlainTcoDataTask source)
+    parameters:
+    - id: source
+      type: TcoData.PlainTcoDataTask
+    content.vb: Sub FlushPlainToOnline(source As PlainTcoDataTask)
+  overload: TcoData.ITcoDataTask.FlushPlainToOnline*
+- uid: TcoData.ITcoDataTask.FlushOnlineToPlain(TcoData.PlainTcoDataTask)
+  commentId: M:TcoData.ITcoDataTask.FlushOnlineToPlain(TcoData.PlainTcoDataTask)
+  id: FlushOnlineToPlain(TcoData.PlainTcoDataTask)
+  parent: TcoData.ITcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToPlain(PlainTcoDataTask)
+  nameWithType: ITcoDataTask.FlushOnlineToPlain(PlainTcoDataTask)
+  fullName: TcoData.ITcoDataTask.FlushOnlineToPlain(TcoData.PlainTcoDataTask)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 157
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToPlain(PlainTcoDataTask source)
+    parameters:
+    - id: source
+      type: TcoData.PlainTcoDataTask
+    content.vb: Sub FlushOnlineToPlain(source As PlainTcoDataTask)
+  overload: TcoData.ITcoDataTask.FlushOnlineToPlain*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoCore.ITcoRemoteTask._isInitialized
+  commentId: P:TcoCore.ITcoRemoteTask._isInitialized
+  parent: TcoCore.ITcoRemoteTask
+  name: _isInitialized
+  nameWithType: ITcoRemoteTask._isInitialized
+  fullName: TcoCore.ITcoRemoteTask._isInitialized
+- uid: TcoCore.ITcoRemoteTask._hasException
+  commentId: P:TcoCore.ITcoRemoteTask._hasException
+  parent: TcoCore.ITcoRemoteTask
+  name: _hasException
+  nameWithType: ITcoRemoteTask._hasException
+  fullName: TcoCore.ITcoRemoteTask._hasException
+- uid: TcoCore.ITcoRemoteTask._startSignature
+  commentId: P:TcoCore.ITcoRemoteTask._startSignature
+  parent: TcoCore.ITcoRemoteTask
+  name: _startSignature
+  nameWithType: ITcoRemoteTask._startSignature
+  fullName: TcoCore.ITcoRemoteTask._startSignature
+- uid: TcoCore.ITcoRemoteTask._doneSignarure
+  commentId: P:TcoCore.ITcoRemoteTask._doneSignarure
+  parent: TcoCore.ITcoRemoteTask
+  name: _doneSignarure
+  nameWithType: ITcoRemoteTask._doneSignarure
+  fullName: TcoCore.ITcoRemoteTask._doneSignarure
+- uid: TcoCore.ITcoRemoteTask._exceptionMessage
+  commentId: P:TcoCore.ITcoRemoteTask._exceptionMessage
+  parent: TcoCore.ITcoRemoteTask
+  name: _exceptionMessage
+  nameWithType: ITcoRemoteTask._exceptionMessage
+  fullName: TcoCore.ITcoRemoteTask._exceptionMessage
+- uid: TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+  commentId: M:TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+  parent: TcoCore.ITcoRemoteTask
+  name: FlushPlainToOnline(PlainTcoRemoteTask)
+  nameWithType: ITcoRemoteTask.FlushPlainToOnline(PlainTcoRemoteTask)
+  fullName: TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+  spec.csharp:
+  - uid: TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+    name: FlushPlainToOnline
+    nameWithType: ITcoRemoteTask.FlushPlainToOnline
+    fullName: TcoCore.ITcoRemoteTask.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
+    name: FlushPlainToOnline
+    nameWithType: ITcoRemoteTask.FlushPlainToOnline
+    fullName: TcoCore.ITcoRemoteTask.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+  commentId: M:TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+  parent: TcoCore.ITcoRemoteTask
+  name: FlushOnlineToPlain(PlainTcoRemoteTask)
+  nameWithType: ITcoRemoteTask.FlushOnlineToPlain(PlainTcoRemoteTask)
+  fullName: TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+  spec.csharp:
+  - uid: TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoRemoteTask.FlushOnlineToPlain
+    fullName: TcoCore.ITcoRemoteTask.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoRemoteTask.FlushOnlineToPlain
+    fullName: TcoCore.ITcoRemoteTask.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoTask._taskState
+  commentId: P:TcoCore.ITcoTask._taskState
+  parent: TcoCore.ITcoTask
+  name: _taskState
+  nameWithType: ITcoTask._taskState
+  fullName: TcoCore.ITcoTask._taskState
+- uid: TcoCore.ITcoTask._restoreRequest
+  commentId: P:TcoCore.ITcoTask._restoreRequest
+  parent: TcoCore.ITcoTask
+  name: _restoreRequest
+  nameWithType: ITcoTask._restoreRequest
+  fullName: TcoCore.ITcoTask._restoreRequest
+- uid: TcoCore.ITcoTask._invokeRequest
+  commentId: P:TcoCore.ITcoTask._invokeRequest
+  parent: TcoCore.ITcoTask
+  name: _invokeRequest
+  nameWithType: ITcoTask._invokeRequest
+  fullName: TcoCore.ITcoTask._invokeRequest
+- uid: TcoCore.ITcoTask._abortRequest
+  commentId: P:TcoCore.ITcoTask._abortRequest
+  parent: TcoCore.ITcoTask
+  name: _abortRequest
+  nameWithType: ITcoTask._abortRequest
+  fullName: TcoCore.ITcoTask._abortRequest
+- uid: TcoCore.ITcoTask._enabled
+  commentId: P:TcoCore.ITcoTask._enabled
+  parent: TcoCore.ITcoTask
+  name: _enabled
+  nameWithType: ITcoTask._enabled
+  fullName: TcoCore.ITcoTask._enabled
+- uid: TcoCore.ITcoTask._isServiceable
+  commentId: P:TcoCore.ITcoTask._isServiceable
+  parent: TcoCore.ITcoTask
+  name: _isServiceable
+  nameWithType: ITcoTask._isServiceable
+  fullName: TcoCore.ITcoTask._isServiceable
+- uid: TcoCore.ITcoTask._elapsedTime
+  commentId: P:TcoCore.ITcoTask._elapsedTime
+  parent: TcoCore.ITcoTask
+  name: _elapsedTime
+  nameWithType: ITcoTask._elapsedTime
+  fullName: TcoCore.ITcoTask._elapsedTime
+- uid: TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+  commentId: M:TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+  parent: TcoCore.ITcoTask
+  name: FlushPlainToOnline(PlainTcoTask)
+  nameWithType: ITcoTask.FlushPlainToOnline(PlainTcoTask)
+  fullName: TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+  spec.csharp:
+  - uid: TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+    name: FlushPlainToOnline
+    nameWithType: ITcoTask.FlushPlainToOnline
+    fullName: TcoCore.ITcoTask.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoTask.FlushPlainToOnline(TcoCore.PlainTcoTask)
+    name: FlushPlainToOnline
+    nameWithType: ITcoTask.FlushPlainToOnline
+    fullName: TcoCore.ITcoTask.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+  commentId: M:TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+  parent: TcoCore.ITcoTask
+  name: FlushOnlineToPlain(PlainTcoTask)
+  nameWithType: ITcoTask.FlushOnlineToPlain(PlainTcoTask)
+  fullName: TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+  spec.csharp:
+  - uid: TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoTask.FlushOnlineToPlain
+    fullName: TcoCore.ITcoTask.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoTask.FlushOnlineToPlain
+    fullName: TcoCore.ITcoTask.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoObject._Identity
+  commentId: P:TcoCore.ITcoObject._Identity
+  parent: TcoCore.ITcoObject
+  name: _Identity
+  nameWithType: ITcoObject._Identity
+  fullName: TcoCore.ITcoObject._Identity
+- uid: TcoCore.ITcoObject._messenger
+  commentId: P:TcoCore.ITcoObject._messenger
+  parent: TcoCore.ITcoObject
+  name: _messenger
+  nameWithType: ITcoObject._messenger
+  fullName: TcoCore.ITcoObject._messenger
+- uid: TcoCore.ITcoObject.AttributeToolTip
+  commentId: P:TcoCore.ITcoObject.AttributeToolTip
+  parent: TcoCore.ITcoObject
+  name: AttributeToolTip
+  nameWithType: ITcoObject.AttributeToolTip
+  fullName: TcoCore.ITcoObject.AttributeToolTip
+- uid: TcoCore.ITcoObject.AttributeName
+  commentId: P:TcoCore.ITcoObject.AttributeName
+  parent: TcoCore.ITcoObject
+  name: AttributeName
+  nameWithType: ITcoObject.AttributeName
+  fullName: TcoCore.ITcoObject.AttributeName
+- uid: TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+  commentId: M:TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+  parent: TcoCore.ITcoObject
+  name: FlushPlainToOnline(PlainTcoObject)
+  nameWithType: ITcoObject.FlushPlainToOnline(PlainTcoObject)
+  fullName: TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+  spec.csharp:
+  - uid: TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+    name: FlushPlainToOnline
+    nameWithType: ITcoObject.FlushPlainToOnline
+    fullName: TcoCore.ITcoObject.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoObject.FlushPlainToOnline(TcoCore.PlainTcoObject)
+    name: FlushPlainToOnline
+    nameWithType: ITcoObject.FlushPlainToOnline
+    fullName: TcoCore.ITcoObject.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+  commentId: M:TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+  parent: TcoCore.ITcoObject
+  name: FlushOnlineToPlain(PlainTcoObject)
+  nameWithType: ITcoObject.FlushOnlineToPlain(PlainTcoObject)
+  fullName: TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+  spec.csharp:
+  - uid: TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoObject.FlushOnlineToPlain
+    fullName: TcoCore.ITcoObject.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.ITcoObject.FlushOnlineToPlain(TcoCore.PlainTcoObject)
+    name: FlushOnlineToPlain
+    nameWithType: ITcoObject.FlushOnlineToPlain
+    fullName: TcoCore.ITcoObject.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.ITcoRemoteTask
+  commentId: T:TcoCore.ITcoRemoteTask
+  parent: TcoCore
+  name: ITcoRemoteTask
+  nameWithType: ITcoRemoteTask
+  fullName: TcoCore.ITcoRemoteTask
+- uid: TcoCore.ITcoTask
+  commentId: T:TcoCore.ITcoTask
+  parent: TcoCore
+  name: ITcoTask
+  nameWithType: ITcoTask
+  fullName: TcoCore.ITcoTask
+- uid: TcoCore.ITcoObject
+  commentId: T:TcoCore.ITcoObject
+  parent: TcoCore
+  name: ITcoObject
+  nameWithType: ITcoObject
+  fullName: TcoCore.ITcoObject
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.ITcoDataTask._identifier*
+  commentId: Overload:TcoData.ITcoDataTask._identifier
+  name: _identifier
+  nameWithType: ITcoDataTask._identifier
+  fullName: TcoData.ITcoDataTask._identifier
+- uid: Vortex.Connector.ValueTypes.Online.IOnlineString
+  commentId: T:Vortex.Connector.ValueTypes.Online.IOnlineString
+  parent: Vortex.Connector.ValueTypes.Online
+  isExternal: true
+  name: IOnlineString
+  nameWithType: IOnlineString
+  fullName: Vortex.Connector.ValueTypes.Online.IOnlineString
+- uid: Vortex.Connector.ValueTypes.Online
+  commentId: N:Vortex.Connector.ValueTypes.Online
+  isExternal: true
+  name: Vortex.Connector.ValueTypes.Online
+  nameWithType: Vortex.Connector.ValueTypes.Online
+  fullName: Vortex.Connector.ValueTypes.Online
+- uid: TcoData.ITcoDataTask.CreatePlainerType*
+  commentId: Overload:TcoData.ITcoDataTask.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: ITcoDataTask.CreatePlainerType
+  fullName: TcoData.ITcoDataTask.CreatePlainerType
+- uid: TcoData.PlainTcoDataTask
+  commentId: T:TcoData.PlainTcoDataTask
+  parent: TcoData
+  name: PlainTcoDataTask
+  nameWithType: PlainTcoDataTask
+  fullName: TcoData.PlainTcoDataTask
+- uid: TcoData.ITcoDataTask.FlushOnlineToShadow*
+  commentId: Overload:TcoData.ITcoDataTask.FlushOnlineToShadow
+  name: FlushOnlineToShadow
+  nameWithType: ITcoDataTask.FlushOnlineToShadow
+  fullName: TcoData.ITcoDataTask.FlushOnlineToShadow
+- uid: TcoData.ITcoDataTask.FlushPlainToOnline*
+  commentId: Overload:TcoData.ITcoDataTask.FlushPlainToOnline
+  name: FlushPlainToOnline
+  nameWithType: ITcoDataTask.FlushPlainToOnline
+  fullName: TcoData.ITcoDataTask.FlushPlainToOnline
+- uid: TcoData.ITcoDataTask.FlushOnlineToPlain*
+  commentId: Overload:TcoData.ITcoDataTask.FlushOnlineToPlain
+  name: FlushOnlineToPlain
+  nameWithType: ITcoDataTask.FlushOnlineToPlain
+  fullName: TcoData.ITcoDataTask.FlushOnlineToPlain

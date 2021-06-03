@@ -1,0 +1,2816 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.MAIN
+  commentId: T:TcoData.MAIN
+  id: MAIN
+  parent: TcoData
+  children:
+  - TcoData.MAIN.#ctor
+  - TcoData.MAIN.#ctor(Vortex.Connector.IVortexObject,System.String,System.String)
+  - TcoData.MAIN._AttributeName
+  - TcoData.MAIN._Context
+  - TcoData.MAIN._humanReadable
+  - TcoData.MAIN.AddChild(Vortex.Connector.IVortexObject)
+  - TcoData.MAIN.AddKid(Vortex.Connector.IVortexElement)
+  - TcoData.MAIN.AddValueTag(Vortex.Connector.IValueTag)
+  - TcoData.MAIN.AttributeName
+  - TcoData.MAIN.Children
+  - TcoData.MAIN.Connector
+  - TcoData.MAIN.Context
+  - TcoData.MAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  - TcoData.MAIN.CreatePlainerType
+  - TcoData.MAIN.CreatePlainerType(TcoData.PlainMAIN)
+  - TcoData.MAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  - TcoData.MAIN.FlushOnlineToShadow
+  - TcoData.MAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  - TcoData.MAIN.FlushShadowToOnline
+  - TcoData.MAIN.GetChildren
+  - TcoData.MAIN.GetConnector
+  - TcoData.MAIN.GetKids
+  - TcoData.MAIN.GetParent
+  - TcoData.MAIN.GetSymbolTail
+  - TcoData.MAIN.GetValueTags
+  - TcoData.MAIN.HumanReadable
+  - TcoData.MAIN.Kids
+  - TcoData.MAIN.LazyOnlineToShadow
+  - TcoData.MAIN.LazyShadowToOnline
+  - TcoData.MAIN.Parent
+  - TcoData.MAIN.PexConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  - TcoData.MAIN.PexConstructorParameterless
+  - TcoData.MAIN.PexPreConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  - TcoData.MAIN.PexPreConstructorParameterless
+  - TcoData.MAIN.Symbol
+  - TcoData.MAIN.SymbolTail
+  - TcoData.MAIN.ValueTags
+  langs:
+  - csharp
+  - vb
+  name: MAIN
+  nameWithType: MAIN
+  fullName: TcoData.MAIN
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: MAIN
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 10
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [TypeMetaDescriptor("{attribute addProperty Name \"\" }", "MAIN", "TcoData", TypeComplexityEnum.Complex)]
+
+      class MAIN : IVortexObject, ITwinObject, IVortexElement, IMAIN, IShadowMAIN, IVortexOnlineObject, IVortexShadowObject
+    content.vb: >-
+      <TypeMetaDescriptor("{attribute addProperty Name """" }", "MAIN", "TcoData", TypeComplexityEnum.Complex)>
+
+      Class MAIN
+          Implements IVortexObject, ITwinObject, IVortexElement, IMAIN, IShadowMAIN, IVortexOnlineObject, IVortexShadowObject
+  inheritance:
+  - System.Object
+  implements:
+  - Vortex.Connector.IVortexObject
+  - Vortex.Connector.ITwinObject
+  - Vortex.Connector.IVortexElement
+  - TcoData.IMAIN
+  - TcoData.IShadowMAIN
+  - Vortex.Connector.IVortexOnlineObject
+  - Vortex.Connector.IVortexShadowObject
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: Vortex.Connector.Attributes.TypeMetaDescriptorAttribute
+    ctor: Vortex.Connector.Attributes.TypeMetaDescriptorAttribute.#ctor(System.String,System.String,System.String,Vortex.Connector.TypeComplexityEnum)
+    arguments:
+    - type: System.String
+      value: '{attribute addProperty Name "" }'
+    - type: System.String
+      value: MAIN
+    - type: System.String
+      value: TcoData
+    - type: Vortex.Connector.TypeComplexityEnum
+      value: 1
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: TcoData.MAIN.Symbol
+  commentId: P:TcoData.MAIN.Symbol
+  id: Symbol
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: MAIN.Symbol
+  fullName: TcoData.MAIN.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Symbol
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 13
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string Symbol { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Symbol As String
+  overload: TcoData.MAIN.Symbol*
+  implements:
+  - Vortex.Connector.IVortexElement.Symbol
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: TcoData.MAIN.HumanReadable
+  commentId: P:TcoData.MAIN.HumanReadable
+  id: HumanReadable
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: HumanReadable
+  nameWithType: MAIN.HumanReadable
+  fullName: TcoData.MAIN.HumanReadable
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: HumanReadable
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 19
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string HumanReadable { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HumanReadable As String
+  overload: TcoData.MAIN.HumanReadable*
+  implements:
+  - Vortex.Connector.IVortexElement.HumanReadable
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: TcoData.MAIN._humanReadable
+  commentId: F:TcoData.MAIN._humanReadable
+  id: _humanReadable
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: _humanReadable
+  nameWithType: MAIN._humanReadable
+  fullName: TcoData.MAIN._humanReadable
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _humanReadable
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 32
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected string _humanReadable
+    return:
+      type: System.String
+    content.vb: Protected _humanReadable As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TcoData.MAIN._Context
+  commentId: F:TcoData.MAIN._Context
+  id: _Context
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: _Context
+  nameWithType: MAIN._Context
+  fullName: TcoData.MAIN._Context
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Context
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 33
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: MainContext _Context
+    return:
+      type: TcoData.MainContext
+    content.vb: _Context As MainContext
+- uid: TcoData.MAIN.Context
+  commentId: P:TcoData.MAIN.Context
+  id: Context
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: MAIN.Context
+  fullName: TcoData.MAIN.Context
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Context
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 34
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      MainContext Context
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: TcoData.MainContext
+    content.vb: ReadOnly WriteOnly Property Context As MainContext
+  overload: TcoData.MAIN.Context*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.MAIN.LazyOnlineToShadow
+  commentId: M:TcoData.MAIN.LazyOnlineToShadow
+  id: LazyOnlineToShadow
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: LazyOnlineToShadow()
+  nameWithType: MAIN.LazyOnlineToShadow()
+  fullName: TcoData.MAIN.LazyOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LazyOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 42
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void LazyOnlineToShadow()
+    content.vb: Public Sub LazyOnlineToShadow
+  overload: TcoData.MAIN.LazyOnlineToShadow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.LazyShadowToOnline
+  commentId: M:TcoData.MAIN.LazyShadowToOnline
+  id: LazyShadowToOnline
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: LazyShadowToOnline()
+  nameWithType: MAIN.LazyShadowToOnline()
+  fullName: TcoData.MAIN.LazyShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LazyShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 46
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void LazyShadowToOnline()
+    content.vb: Public Sub LazyShadowToOnline
+  overload: TcoData.MAIN.LazyShadowToOnline*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.CreatePlainerType
+  commentId: M:TcoData.MAIN.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: MAIN.CreatePlainerType()
+  fullName: TcoData.MAIN.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 50
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public PlainMAIN CreatePlainerType()
+    return:
+      type: TcoData.PlainMAIN
+    content.vb: Public Function CreatePlainerType As PlainMAIN
+  overload: TcoData.MAIN.CreatePlainerType*
+  implements:
+  - TcoData.IMAIN.CreatePlainerType
+  - TcoData.IShadowMAIN.CreatePlainerType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.CreatePlainerType(TcoData.PlainMAIN)
+  commentId: M:TcoData.MAIN.CreatePlainerType(TcoData.PlainMAIN)
+  id: CreatePlainerType(TcoData.PlainMAIN)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType(PlainMAIN)
+  nameWithType: MAIN.CreatePlainerType(PlainMAIN)
+  fullName: TcoData.MAIN.CreatePlainerType(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 57
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected PlainMAIN CreatePlainerType(PlainMAIN cloned)
+    parameters:
+    - id: cloned
+      type: TcoData.PlainMAIN
+    return:
+      type: TcoData.PlainMAIN
+    content.vb: Protected Function CreatePlainerType(cloned As PlainMAIN) As PlainMAIN
+  overload: TcoData.MAIN.CreatePlainerType*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TcoData.MAIN.PexPreConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  commentId: M:TcoData.MAIN.PexPreConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  id: PexPreConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: PexPreConstructor(IVortexObject, String, String)
+  nameWithType: MAIN.PexPreConstructor(IVortexObject, String, String)
+  fullName: TcoData.MAIN.PexPreConstructor(Vortex.Connector.IVortexObject, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PexPreConstructor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 63
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void PexPreConstructor(IVortexObject parent, string readableTail, string symbolTail)
+    parameters:
+    - id: parent
+      type: Vortex.Connector.IVortexObject
+    - id: readableTail
+      type: System.String
+    - id: symbolTail
+      type: System.String
+    content.vb: Sub PexPreConstructor(parent As IVortexObject, readableTail As String, symbolTail As String)
+  overload: TcoData.MAIN.PexPreConstructor*
+- uid: TcoData.MAIN.PexPreConstructorParameterless
+  commentId: M:TcoData.MAIN.PexPreConstructorParameterless
+  id: PexPreConstructorParameterless
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: PexPreConstructorParameterless()
+  nameWithType: MAIN.PexPreConstructorParameterless()
+  fullName: TcoData.MAIN.PexPreConstructorParameterless()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PexPreConstructorParameterless
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 64
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void PexPreConstructorParameterless()
+    content.vb: Sub PexPreConstructorParameterless
+  overload: TcoData.MAIN.PexPreConstructorParameterless*
+- uid: TcoData.MAIN.Children
+  commentId: P:TcoData.MAIN.Children
+  id: Children
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: MAIN.Children
+  fullName: TcoData.MAIN.Children
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Children
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 65
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      List<IVortexObject> Children
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Vortex.Connector.IVortexObject}
+    content.vb: ReadOnly WriteOnly Property Children As List(Of IVortexObject)
+  overload: TcoData.MAIN.Children*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcoData.MAIN.GetChildren
+  commentId: M:TcoData.MAIN.GetChildren
+  id: GetChildren
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetChildren()
+  nameWithType: MAIN.GetChildren()
+  fullName: TcoData.MAIN.GetChildren()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetChildren
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 71
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IEnumerable<IVortexObject> GetChildren()
+    return:
+      type: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
+    content.vb: Public Function GetChildren As IEnumerable(Of IVortexObject)
+  overload: TcoData.MAIN.GetChildren*
+  implements:
+  - Vortex.Connector.IVortexObject.GetChildren
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.AddChild(Vortex.Connector.IVortexObject)
+  commentId: M:TcoData.MAIN.AddChild(Vortex.Connector.IVortexObject)
+  id: AddChild(Vortex.Connector.IVortexObject)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: AddChild(IVortexObject)
+  nameWithType: MAIN.AddChild(IVortexObject)
+  fullName: TcoData.MAIN.AddChild(Vortex.Connector.IVortexObject)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AddChild
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 76
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void AddChild(IVortexObject vortexObject)
+    parameters:
+    - id: vortexObject
+      type: Vortex.Connector.IVortexObject
+    content.vb: Public Sub AddChild(vortexObject As IVortexObject)
+  overload: TcoData.MAIN.AddChild*
+  implements:
+  - Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.Kids
+  commentId: P:TcoData.MAIN.Kids
+  id: Kids
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Kids
+  nameWithType: MAIN.Kids
+  fullName: TcoData.MAIN.Kids
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Kids
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 81
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      List<IVortexElement> Kids
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Vortex.Connector.IVortexElement}
+    content.vb: ReadOnly WriteOnly Property Kids As List(Of IVortexElement)
+  overload: TcoData.MAIN.Kids*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcoData.MAIN.GetKids
+  commentId: M:TcoData.MAIN.GetKids
+  id: GetKids
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetKids()
+  nameWithType: MAIN.GetKids()
+  fullName: TcoData.MAIN.GetKids()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetKids
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 87
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IEnumerable<IVortexElement> GetKids()
+    return:
+      type: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexElement}
+    content.vb: Public Function GetKids As IEnumerable(Of IVortexElement)
+  overload: TcoData.MAIN.GetKids*
+  implements:
+  - Vortex.Connector.IVortexObject.GetKids
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.AddKid(Vortex.Connector.IVortexElement)
+  commentId: M:TcoData.MAIN.AddKid(Vortex.Connector.IVortexElement)
+  id: AddKid(Vortex.Connector.IVortexElement)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: AddKid(IVortexElement)
+  nameWithType: MAIN.AddKid(IVortexElement)
+  fullName: TcoData.MAIN.AddKid(Vortex.Connector.IVortexElement)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AddKid
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 92
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void AddKid(IVortexElement vortexElement)
+    parameters:
+    - id: vortexElement
+      type: Vortex.Connector.IVortexElement
+    content.vb: Public Sub AddKid(vortexElement As IVortexElement)
+  overload: TcoData.MAIN.AddKid*
+  implements:
+  - Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.PexConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  commentId: M:TcoData.MAIN.PexConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  id: PexConstructor(Vortex.Connector.IVortexObject,System.String,System.String)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: PexConstructor(IVortexObject, String, String)
+  nameWithType: MAIN.PexConstructor(IVortexObject, String, String)
+  fullName: TcoData.MAIN.PexConstructor(Vortex.Connector.IVortexObject, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PexConstructor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 97
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void PexConstructor(IVortexObject parent, string readableTail, string symbolTail)
+    parameters:
+    - id: parent
+      type: Vortex.Connector.IVortexObject
+    - id: readableTail
+      type: System.String
+    - id: symbolTail
+      type: System.String
+    content.vb: Sub PexConstructor(parent As IVortexObject, readableTail As String, symbolTail As String)
+  overload: TcoData.MAIN.PexConstructor*
+- uid: TcoData.MAIN.PexConstructorParameterless
+  commentId: M:TcoData.MAIN.PexConstructorParameterless
+  id: PexConstructorParameterless
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: PexConstructorParameterless()
+  nameWithType: MAIN.PexConstructorParameterless()
+  fullName: TcoData.MAIN.PexConstructorParameterless()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PexConstructorParameterless
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 98
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void PexConstructorParameterless()
+    content.vb: Sub PexConstructorParameterless
+  overload: TcoData.MAIN.PexConstructorParameterless*
+- uid: TcoData.MAIN.Parent
+  commentId: P:TcoData.MAIN.Parent
+  id: Parent
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: MAIN.Parent
+  fullName: TcoData.MAIN.Parent
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Parent
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 99
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected IVortexObject Parent { get; set; }
+    parameters: []
+    return:
+      type: Vortex.Connector.IVortexObject
+    content.vb: Protected Property Parent As IVortexObject
+  overload: TcoData.MAIN.Parent*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TcoData.MAIN.GetParent
+  commentId: M:TcoData.MAIN.GetParent
+  id: GetParent
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetParent()
+  nameWithType: MAIN.GetParent()
+  fullName: TcoData.MAIN.GetParent()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetParent
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 105
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IVortexObject GetParent()
+    return:
+      type: Vortex.Connector.IVortexObject
+    content.vb: Public Function GetParent As IVortexObject
+  overload: TcoData.MAIN.GetParent*
+  implements:
+  - Vortex.Connector.IVortexElement.GetParent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.ValueTags
+  commentId: P:TcoData.MAIN.ValueTags
+  id: ValueTags
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: ValueTags
+  nameWithType: MAIN.ValueTags
+  fullName: TcoData.MAIN.ValueTags
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: ValueTags
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 110
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      List<IValueTag> ValueTags
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Vortex.Connector.IValueTag}
+    content.vb: ReadOnly WriteOnly Property ValueTags As List(Of IValueTag)
+  overload: TcoData.MAIN.ValueTags*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcoData.MAIN.GetValueTags
+  commentId: M:TcoData.MAIN.GetValueTags
+  id: GetValueTags
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetValueTags()
+  nameWithType: MAIN.GetValueTags()
+  fullName: TcoData.MAIN.GetValueTags()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetValueTags
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 116
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IEnumerable<IValueTag> GetValueTags()
+    return:
+      type: System.Collections.Generic.IEnumerable{Vortex.Connector.IValueTag}
+    content.vb: Public Function GetValueTags As IEnumerable(Of IValueTag)
+  overload: TcoData.MAIN.GetValueTags*
+  implements:
+  - Vortex.Connector.IVortexObject.GetValueTags
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.AddValueTag(Vortex.Connector.IValueTag)
+  commentId: M:TcoData.MAIN.AddValueTag(Vortex.Connector.IValueTag)
+  id: AddValueTag(Vortex.Connector.IValueTag)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: AddValueTag(IValueTag)
+  nameWithType: MAIN.AddValueTag(IValueTag)
+  fullName: TcoData.MAIN.AddValueTag(Vortex.Connector.IValueTag)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AddValueTag
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 121
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void AddValueTag(IValueTag valueTag)
+    parameters:
+    - id: valueTag
+      type: Vortex.Connector.IValueTag
+    content.vb: Public Sub AddValueTag(valueTag As IValueTag)
+  overload: TcoData.MAIN.AddValueTag*
+  implements:
+  - Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.Connector
+  commentId: P:TcoData.MAIN.Connector
+  id: Connector
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: Connector
+  nameWithType: MAIN.Connector
+  fullName: TcoData.MAIN.Connector
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Connector
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 126
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected IConnector Connector { get; set; }
+    parameters: []
+    return:
+      type: Vortex.Connector.IConnector
+    content.vb: Protected Property Connector As IConnector
+  overload: TcoData.MAIN.Connector*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TcoData.MAIN.GetConnector
+  commentId: M:TcoData.MAIN.GetConnector
+  id: GetConnector
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetConnector()
+  nameWithType: MAIN.GetConnector()
+  fullName: TcoData.MAIN.GetConnector()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetConnector
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 132
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IConnector GetConnector()
+    return:
+      type: Vortex.Connector.IConnector
+    content.vb: Public Function GetConnector As IConnector
+  overload: TcoData.MAIN.GetConnector*
+  implements:
+  - Vortex.Connector.IVortexObject.GetConnector
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  commentId: M:TcoData.MAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  id: FlushPlainToOnline(TcoData.PlainMAIN)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushPlainToOnline(PlainMAIN)
+  nameWithType: MAIN.FlushPlainToOnline(PlainMAIN)
+  fullName: TcoData.MAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushPlainToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 137
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void FlushPlainToOnline(PlainMAIN source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMAIN
+    content.vb: Public Sub FlushPlainToOnline(source As PlainMAIN)
+  overload: TcoData.MAIN.FlushPlainToOnline*
+  implements:
+  - TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  commentId: M:TcoData.MAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  id: CopyPlainToShadow(TcoData.PlainMAIN)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(PlainMAIN)
+  nameWithType: MAIN.CopyPlainToShadow(PlainMAIN)
+  fullName: TcoData.MAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 143
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyPlainToShadow(PlainMAIN source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMAIN
+    content.vb: Public Sub CopyPlainToShadow(source As PlainMAIN)
+  overload: TcoData.MAIN.CopyPlainToShadow*
+  implements:
+  - TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.FlushShadowToOnline
+  commentId: M:TcoData.MAIN.FlushShadowToOnline
+  id: FlushShadowToOnline
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushShadowToOnline()
+  nameWithType: MAIN.FlushShadowToOnline()
+  fullName: TcoData.MAIN.FlushShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 148
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void FlushShadowToOnline()
+    content.vb: Public Sub FlushShadowToOnline
+  overload: TcoData.MAIN.FlushShadowToOnline*
+  implements:
+  - TcoData.IShadowMAIN.FlushShadowToOnline
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.FlushOnlineToShadow
+  commentId: M:TcoData.MAIN.FlushOnlineToShadow
+  id: FlushOnlineToShadow
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToShadow()
+  nameWithType: MAIN.FlushOnlineToShadow()
+  fullName: TcoData.MAIN.FlushOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 154
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void FlushOnlineToShadow()
+    content.vb: Public Sub FlushOnlineToShadow
+  overload: TcoData.MAIN.FlushOnlineToShadow*
+  implements:
+  - TcoData.IMAIN.FlushOnlineToShadow
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  commentId: M:TcoData.MAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  id: FlushOnlineToPlain(TcoData.PlainMAIN)
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToPlain(PlainMAIN)
+  nameWithType: MAIN.FlushOnlineToPlain(PlainMAIN)
+  fullName: TcoData.MAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 160
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void FlushOnlineToPlain(PlainMAIN source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMAIN
+    content.vb: Public Sub FlushOnlineToPlain(source As PlainMAIN)
+  overload: TcoData.MAIN.FlushOnlineToPlain*
+  implements:
+  - TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.SymbolTail
+  commentId: P:TcoData.MAIN.SymbolTail
+  id: SymbolTail
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: SymbolTail
+  nameWithType: MAIN.SymbolTail
+  fullName: TcoData.MAIN.SymbolTail
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: SymbolTail
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 166
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected string SymbolTail { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Property SymbolTail As String
+  overload: TcoData.MAIN.SymbolTail*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TcoData.MAIN.GetSymbolTail
+  commentId: M:TcoData.MAIN.GetSymbolTail
+  id: GetSymbolTail
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: GetSymbolTail()
+  nameWithType: MAIN.GetSymbolTail()
+  fullName: TcoData.MAIN.GetSymbolTail()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetSymbolTail
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 172
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string GetSymbolTail()
+    return:
+      type: System.String
+    content.vb: Public Function GetSymbolTail As String
+  overload: TcoData.MAIN.GetSymbolTail*
+  implements:
+  - Vortex.Connector.IVortexElement.GetSymbolTail
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN.AttributeName
+  commentId: P:TcoData.MAIN.AttributeName
+  id: AttributeName
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: MAIN.AttributeName
+  fullName: TcoData.MAIN.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 177
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string AttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AttributeName As String
+  overload: TcoData.MAIN.AttributeName*
+  implements:
+  - Vortex.Connector.IVortexElement.AttributeName
+  - TcoData.IMAIN.AttributeName
+  - TcoData.IShadowMAIN.AttributeName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.MAIN._AttributeName
+  commentId: P:TcoData.MAIN._AttributeName
+  id: _AttributeName
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: _AttributeName
+  nameWithType: MAIN._AttributeName
+  fullName: TcoData.MAIN._AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 190
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      string _AttributeName
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly WriteOnly Property _AttributeName As String
+  overload: TcoData.MAIN._AttributeName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcoData.MAIN.#ctor(Vortex.Connector.IVortexObject,System.String,System.String)
+  commentId: M:TcoData.MAIN.#ctor(Vortex.Connector.IVortexObject,System.String,System.String)
+  id: '#ctor(Vortex.Connector.IVortexObject,System.String,System.String)'
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: MAIN(IVortexObject, String, String)
+  nameWithType: MAIN.MAIN(IVortexObject, String, String)
+  fullName: TcoData.MAIN.MAIN(Vortex.Connector.IVortexObject, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 196
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: MAIN(IVortexObject parent, string readableTail, string symbolTail)
+    parameters:
+    - id: parent
+      type: Vortex.Connector.IVortexObject
+    - id: readableTail
+      type: System.String
+    - id: symbolTail
+      type: System.String
+    content.vb: Sub New(parent As IVortexObject, readableTail As String, symbolTail As String)
+  overload: TcoData.MAIN.#ctor*
+- uid: TcoData.MAIN.#ctor
+  commentId: M:TcoData.MAIN.#ctor
+  id: '#ctor'
+  parent: TcoData.MAIN
+  langs:
+  - csharp
+  - vb
+  name: MAIN()
+  nameWithType: MAIN.MAIN()
+  fullName: TcoData.MAIN.MAIN()
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 214
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: MAIN()
+    content.vb: Sub New
+  overload: TcoData.MAIN.#ctor*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Vortex.Connector.IVortexObject
+  commentId: T:Vortex.Connector.IVortexObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexObject
+  nameWithType: IVortexObject
+  fullName: Vortex.Connector.IVortexObject
+- uid: Vortex.Connector.ITwinObject
+  commentId: T:Vortex.Connector.ITwinObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: ITwinObject
+  nameWithType: ITwinObject
+  fullName: Vortex.Connector.ITwinObject
+- uid: Vortex.Connector.IVortexElement
+  commentId: T:Vortex.Connector.IVortexElement
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexElement
+  nameWithType: IVortexElement
+  fullName: Vortex.Connector.IVortexElement
+- uid: TcoData.IMAIN
+  commentId: T:TcoData.IMAIN
+  parent: TcoData
+  name: IMAIN
+  nameWithType: IMAIN
+  fullName: TcoData.IMAIN
+- uid: TcoData.IShadowMAIN
+  commentId: T:TcoData.IShadowMAIN
+  parent: TcoData
+  name: IShadowMAIN
+  nameWithType: IShadowMAIN
+  fullName: TcoData.IShadowMAIN
+- uid: Vortex.Connector.IVortexOnlineObject
+  commentId: T:Vortex.Connector.IVortexOnlineObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexOnlineObject
+  nameWithType: IVortexOnlineObject
+  fullName: Vortex.Connector.IVortexOnlineObject
+- uid: Vortex.Connector.IVortexShadowObject
+  commentId: T:Vortex.Connector.IVortexShadowObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexShadowObject
+  nameWithType: IVortexShadowObject
+  fullName: Vortex.Connector.IVortexShadowObject
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector
+- uid: TcoData.MAIN.Symbol*
+  commentId: Overload:TcoData.MAIN.Symbol
+  name: Symbol
+  nameWithType: MAIN.Symbol
+  fullName: TcoData.MAIN.Symbol
+- uid: Vortex.Connector.IVortexElement.Symbol
+  commentId: P:Vortex.Connector.IVortexElement.Symbol
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: Symbol
+  nameWithType: IVortexElement.Symbol
+  fullName: Vortex.Connector.IVortexElement.Symbol
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcoData.MAIN.HumanReadable*
+  commentId: Overload:TcoData.MAIN.HumanReadable
+  name: HumanReadable
+  nameWithType: MAIN.HumanReadable
+  fullName: TcoData.MAIN.HumanReadable
+- uid: Vortex.Connector.IVortexElement.HumanReadable
+  commentId: P:Vortex.Connector.IVortexElement.HumanReadable
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: HumanReadable
+  nameWithType: IVortexElement.HumanReadable
+  fullName: Vortex.Connector.IVortexElement.HumanReadable
+- uid: TcoData.MainContext
+  commentId: T:TcoData.MainContext
+  parent: TcoData
+  name: MainContext
+  nameWithType: MainContext
+  fullName: TcoData.MainContext
+- uid: TcoData.MAIN.Context*
+  commentId: Overload:TcoData.MAIN.Context
+  name: Context
+  nameWithType: MAIN.Context
+  fullName: TcoData.MAIN.Context
+- uid: TcoData.MAIN.LazyOnlineToShadow*
+  commentId: Overload:TcoData.MAIN.LazyOnlineToShadow
+  name: LazyOnlineToShadow
+  nameWithType: MAIN.LazyOnlineToShadow
+  fullName: TcoData.MAIN.LazyOnlineToShadow
+- uid: TcoData.MAIN.LazyShadowToOnline*
+  commentId: Overload:TcoData.MAIN.LazyShadowToOnline
+  name: LazyShadowToOnline
+  nameWithType: MAIN.LazyShadowToOnline
+  fullName: TcoData.MAIN.LazyShadowToOnline
+- uid: TcoData.MAIN.CreatePlainerType*
+  commentId: Overload:TcoData.MAIN.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: MAIN.CreatePlainerType
+  fullName: TcoData.MAIN.CreatePlainerType
+- uid: TcoData.IMAIN.CreatePlainerType
+  commentId: M:TcoData.IMAIN.CreatePlainerType
+  parent: TcoData.IMAIN
+  name: CreatePlainerType()
+  nameWithType: IMAIN.CreatePlainerType()
+  fullName: TcoData.IMAIN.CreatePlainerType()
+  spec.csharp:
+  - uid: TcoData.IMAIN.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IMAIN.CreatePlainerType
+    fullName: TcoData.IMAIN.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IMAIN.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IMAIN.CreatePlainerType
+    fullName: TcoData.IMAIN.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.IShadowMAIN.CreatePlainerType
+  commentId: M:TcoData.IShadowMAIN.CreatePlainerType
+  parent: TcoData.IShadowMAIN
+  name: CreatePlainerType()
+  nameWithType: IShadowMAIN.CreatePlainerType()
+  fullName: TcoData.IShadowMAIN.CreatePlainerType()
+  spec.csharp:
+  - uid: TcoData.IShadowMAIN.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IShadowMAIN.CreatePlainerType
+    fullName: TcoData.IShadowMAIN.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IShadowMAIN.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IShadowMAIN.CreatePlainerType
+    fullName: TcoData.IShadowMAIN.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.PlainMAIN
+  commentId: T:TcoData.PlainMAIN
+  parent: TcoData
+  name: PlainMAIN
+  nameWithType: PlainMAIN
+  fullName: TcoData.PlainMAIN
+- uid: TcoData.MAIN.PexPreConstructor*
+  commentId: Overload:TcoData.MAIN.PexPreConstructor
+  name: PexPreConstructor
+  nameWithType: MAIN.PexPreConstructor
+  fullName: TcoData.MAIN.PexPreConstructor
+- uid: TcoData.MAIN.PexPreConstructorParameterless*
+  commentId: Overload:TcoData.MAIN.PexPreConstructorParameterless
+  name: PexPreConstructorParameterless
+  nameWithType: MAIN.PexPreConstructorParameterless
+  fullName: TcoData.MAIN.PexPreConstructorParameterless
+- uid: TcoData.MAIN.Children*
+  commentId: Overload:TcoData.MAIN.Children
+  name: Children
+  nameWithType: MAIN.Children
+  fullName: TcoData.MAIN.Children
+- uid: System.Collections.Generic.List{Vortex.Connector.IVortexObject}
+  commentId: T:System.Collections.Generic.List{Vortex.Connector.IVortexObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IVortexObject>
+  nameWithType: List<IVortexObject>
+  fullName: System.Collections.Generic.List<Vortex.Connector.IVortexObject>
+  nameWithType.vb: List(Of IVortexObject)
+  fullName.vb: System.Collections.Generic.List(Of Vortex.Connector.IVortexObject)
+  name.vb: List(Of IVortexObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TcoData.MAIN.GetChildren*
+  commentId: Overload:TcoData.MAIN.GetChildren
+  name: GetChildren
+  nameWithType: MAIN.GetChildren
+  fullName: TcoData.MAIN.GetChildren
+- uid: Vortex.Connector.IVortexObject.GetChildren
+  commentId: M:Vortex.Connector.IVortexObject.GetChildren
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetChildren()
+  nameWithType: IVortexObject.GetChildren()
+  fullName: Vortex.Connector.IVortexObject.GetChildren()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetChildren
+    name: GetChildren
+    nameWithType: IVortexObject.GetChildren
+    fullName: Vortex.Connector.IVortexObject.GetChildren
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetChildren
+    name: GetChildren
+    nameWithType: IVortexObject.GetChildren
+    fullName: Vortex.Connector.IVortexObject.GetChildren
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
+  commentId: T:System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IVortexObject>
+  nameWithType: IEnumerable<IVortexObject>
+  fullName: System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexObject>
+  nameWithType.vb: IEnumerable(Of IVortexObject)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexObject)
+  name.vb: IEnumerable(Of IVortexObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.AddChild*
+  commentId: Overload:TcoData.MAIN.AddChild
+  name: AddChild
+  nameWithType: MAIN.AddChild
+  fullName: TcoData.MAIN.AddChild
+- uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  commentId: M:Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddChild(IVortexObject)
+  nameWithType: IVortexObject.AddChild(IVortexObject)
+  fullName: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+    name: AddChild
+    nameWithType: IVortexObject.AddChild
+    fullName: Vortex.Connector.IVortexObject.AddChild
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+    name: AddChild
+    nameWithType: IVortexObject.AddChild
+    fullName: Vortex.Connector.IVortexObject.AddChild
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.Kids*
+  commentId: Overload:TcoData.MAIN.Kids
+  name: Kids
+  nameWithType: MAIN.Kids
+  fullName: TcoData.MAIN.Kids
+- uid: System.Collections.Generic.List{Vortex.Connector.IVortexElement}
+  commentId: T:System.Collections.Generic.List{Vortex.Connector.IVortexElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IVortexElement>
+  nameWithType: List<IVortexElement>
+  fullName: System.Collections.Generic.List<Vortex.Connector.IVortexElement>
+  nameWithType.vb: List(Of IVortexElement)
+  fullName.vb: System.Collections.Generic.List(Of Vortex.Connector.IVortexElement)
+  name.vb: List(Of IVortexElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.GetKids*
+  commentId: Overload:TcoData.MAIN.GetKids
+  name: GetKids
+  nameWithType: MAIN.GetKids
+  fullName: TcoData.MAIN.GetKids
+- uid: Vortex.Connector.IVortexObject.GetKids
+  commentId: M:Vortex.Connector.IVortexObject.GetKids
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetKids()
+  nameWithType: IVortexObject.GetKids()
+  fullName: Vortex.Connector.IVortexObject.GetKids()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetKids
+    name: GetKids
+    nameWithType: IVortexObject.GetKids
+    fullName: Vortex.Connector.IVortexObject.GetKids
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetKids
+    name: GetKids
+    nameWithType: IVortexObject.GetKids
+    fullName: Vortex.Connector.IVortexObject.GetKids
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexElement}
+  commentId: T:System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IVortexElement>
+  nameWithType: IEnumerable<IVortexElement>
+  fullName: System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexElement>
+  nameWithType.vb: IEnumerable(Of IVortexElement)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexElement)
+  name.vb: IEnumerable(Of IVortexElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.AddKid*
+  commentId: Overload:TcoData.MAIN.AddKid
+  name: AddKid
+  nameWithType: MAIN.AddKid
+  fullName: TcoData.MAIN.AddKid
+- uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  commentId: M:Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddKid(IVortexElement)
+  nameWithType: IVortexObject.AddKid(IVortexElement)
+  fullName: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+    name: AddKid
+    nameWithType: IVortexObject.AddKid
+    fullName: Vortex.Connector.IVortexObject.AddKid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+    name: AddKid
+    nameWithType: IVortexObject.AddKid
+    fullName: Vortex.Connector.IVortexObject.AddKid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.PexConstructor*
+  commentId: Overload:TcoData.MAIN.PexConstructor
+  name: PexConstructor
+  nameWithType: MAIN.PexConstructor
+  fullName: TcoData.MAIN.PexConstructor
+- uid: TcoData.MAIN.PexConstructorParameterless*
+  commentId: Overload:TcoData.MAIN.PexConstructorParameterless
+  name: PexConstructorParameterless
+  nameWithType: MAIN.PexConstructorParameterless
+  fullName: TcoData.MAIN.PexConstructorParameterless
+- uid: TcoData.MAIN.Parent*
+  commentId: Overload:TcoData.MAIN.Parent
+  name: Parent
+  nameWithType: MAIN.Parent
+  fullName: TcoData.MAIN.Parent
+- uid: TcoData.MAIN.GetParent*
+  commentId: Overload:TcoData.MAIN.GetParent
+  name: GetParent
+  nameWithType: MAIN.GetParent
+  fullName: TcoData.MAIN.GetParent
+- uid: Vortex.Connector.IVortexElement.GetParent
+  commentId: M:Vortex.Connector.IVortexElement.GetParent
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: GetParent()
+  nameWithType: IVortexElement.GetParent()
+  fullName: Vortex.Connector.IVortexElement.GetParent()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexElement.GetParent
+    name: GetParent
+    nameWithType: IVortexElement.GetParent
+    fullName: Vortex.Connector.IVortexElement.GetParent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexElement.GetParent
+    name: GetParent
+    nameWithType: IVortexElement.GetParent
+    fullName: Vortex.Connector.IVortexElement.GetParent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.ValueTags*
+  commentId: Overload:TcoData.MAIN.ValueTags
+  name: ValueTags
+  nameWithType: MAIN.ValueTags
+  fullName: TcoData.MAIN.ValueTags
+- uid: System.Collections.Generic.List{Vortex.Connector.IValueTag}
+  commentId: T:System.Collections.Generic.List{Vortex.Connector.IValueTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IValueTag>
+  nameWithType: List<IValueTag>
+  fullName: System.Collections.Generic.List<Vortex.Connector.IValueTag>
+  nameWithType.vb: List(Of IValueTag)
+  fullName.vb: System.Collections.Generic.List(Of Vortex.Connector.IValueTag)
+  name.vb: List(Of IValueTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.GetValueTags*
+  commentId: Overload:TcoData.MAIN.GetValueTags
+  name: GetValueTags
+  nameWithType: MAIN.GetValueTags
+  fullName: TcoData.MAIN.GetValueTags
+- uid: Vortex.Connector.IVortexObject.GetValueTags
+  commentId: M:Vortex.Connector.IVortexObject.GetValueTags
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetValueTags()
+  nameWithType: IVortexObject.GetValueTags()
+  fullName: Vortex.Connector.IVortexObject.GetValueTags()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetValueTags
+    name: GetValueTags
+    nameWithType: IVortexObject.GetValueTags
+    fullName: Vortex.Connector.IVortexObject.GetValueTags
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetValueTags
+    name: GetValueTags
+    nameWithType: IVortexObject.GetValueTags
+    fullName: Vortex.Connector.IVortexObject.GetValueTags
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Vortex.Connector.IValueTag}
+  commentId: T:System.Collections.Generic.IEnumerable{Vortex.Connector.IValueTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IValueTag>
+  nameWithType: IEnumerable<IValueTag>
+  fullName: System.Collections.Generic.IEnumerable<Vortex.Connector.IValueTag>
+  nameWithType.vb: IEnumerable(Of IValueTag)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Vortex.Connector.IValueTag)
+  name.vb: IEnumerable(Of IValueTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.AddValueTag*
+  commentId: Overload:TcoData.MAIN.AddValueTag
+  name: AddValueTag
+  nameWithType: MAIN.AddValueTag
+  fullName: TcoData.MAIN.AddValueTag
+- uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  commentId: M:Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddValueTag(IValueTag)
+  nameWithType: IVortexObject.AddValueTag(IValueTag)
+  fullName: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+    name: AddValueTag
+    nameWithType: IVortexObject.AddValueTag
+    fullName: Vortex.Connector.IVortexObject.AddValueTag
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+    name: AddValueTag
+    nameWithType: IVortexObject.AddValueTag
+    fullName: Vortex.Connector.IVortexObject.AddValueTag
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IValueTag
+  commentId: T:Vortex.Connector.IValueTag
+  parent: Vortex.Connector
+  isExternal: true
+  name: IValueTag
+  nameWithType: IValueTag
+  fullName: Vortex.Connector.IValueTag
+- uid: TcoData.MAIN.Connector*
+  commentId: Overload:TcoData.MAIN.Connector
+  name: Connector
+  nameWithType: MAIN.Connector
+  fullName: TcoData.MAIN.Connector
+- uid: Vortex.Connector.IConnector
+  commentId: T:Vortex.Connector.IConnector
+  parent: Vortex.Connector
+  isExternal: true
+  name: IConnector
+  nameWithType: IConnector
+  fullName: Vortex.Connector.IConnector
+- uid: TcoData.MAIN.GetConnector*
+  commentId: Overload:TcoData.MAIN.GetConnector
+  name: GetConnector
+  nameWithType: MAIN.GetConnector
+  fullName: TcoData.MAIN.GetConnector
+- uid: Vortex.Connector.IVortexObject.GetConnector
+  commentId: M:Vortex.Connector.IVortexObject.GetConnector
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetConnector()
+  nameWithType: IVortexObject.GetConnector()
+  fullName: Vortex.Connector.IVortexObject.GetConnector()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetConnector
+    name: GetConnector
+    nameWithType: IVortexObject.GetConnector
+    fullName: Vortex.Connector.IVortexObject.GetConnector
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetConnector
+    name: GetConnector
+    nameWithType: IVortexObject.GetConnector
+    fullName: Vortex.Connector.IVortexObject.GetConnector
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.FlushPlainToOnline*
+  commentId: Overload:TcoData.MAIN.FlushPlainToOnline
+  name: FlushPlainToOnline
+  nameWithType: MAIN.FlushPlainToOnline
+  fullName: TcoData.MAIN.FlushPlainToOnline
+- uid: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  commentId: M:TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  parent: TcoData.IMAIN
+  name: FlushPlainToOnline(PlainMAIN)
+  nameWithType: IMAIN.FlushPlainToOnline(PlainMAIN)
+  fullName: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  spec.csharp:
+  - uid: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+    name: FlushPlainToOnline
+    nameWithType: IMAIN.FlushPlainToOnline
+    fullName: TcoData.IMAIN.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+    name: FlushPlainToOnline
+    nameWithType: IMAIN.FlushPlainToOnline
+    fullName: TcoData.IMAIN.FlushPlainToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.CopyPlainToShadow*
+  commentId: Overload:TcoData.MAIN.CopyPlainToShadow
+  name: CopyPlainToShadow
+  nameWithType: MAIN.CopyPlainToShadow
+  fullName: TcoData.MAIN.CopyPlainToShadow
+- uid: TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  commentId: M:TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  parent: TcoData.IShadowMAIN
+  name: CopyPlainToShadow(PlainMAIN)
+  nameWithType: IShadowMAIN.CopyPlainToShadow(PlainMAIN)
+  fullName: TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+  spec.csharp:
+  - uid: TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+    name: CopyPlainToShadow
+    nameWithType: IShadowMAIN.CopyPlainToShadow
+    fullName: TcoData.IShadowMAIN.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IShadowMAIN.CopyPlainToShadow(TcoData.PlainMAIN)
+    name: CopyPlainToShadow
+    nameWithType: IShadowMAIN.CopyPlainToShadow
+    fullName: TcoData.IShadowMAIN.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.FlushShadowToOnline*
+  commentId: Overload:TcoData.MAIN.FlushShadowToOnline
+  name: FlushShadowToOnline
+  nameWithType: MAIN.FlushShadowToOnline
+  fullName: TcoData.MAIN.FlushShadowToOnline
+- uid: TcoData.IShadowMAIN.FlushShadowToOnline
+  commentId: M:TcoData.IShadowMAIN.FlushShadowToOnline
+  parent: TcoData.IShadowMAIN
+  name: FlushShadowToOnline()
+  nameWithType: IShadowMAIN.FlushShadowToOnline()
+  fullName: TcoData.IShadowMAIN.FlushShadowToOnline()
+  spec.csharp:
+  - uid: TcoData.IShadowMAIN.FlushShadowToOnline
+    name: FlushShadowToOnline
+    nameWithType: IShadowMAIN.FlushShadowToOnline
+    fullName: TcoData.IShadowMAIN.FlushShadowToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IShadowMAIN.FlushShadowToOnline
+    name: FlushShadowToOnline
+    nameWithType: IShadowMAIN.FlushShadowToOnline
+    fullName: TcoData.IShadowMAIN.FlushShadowToOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.FlushOnlineToShadow*
+  commentId: Overload:TcoData.MAIN.FlushOnlineToShadow
+  name: FlushOnlineToShadow
+  nameWithType: MAIN.FlushOnlineToShadow
+  fullName: TcoData.MAIN.FlushOnlineToShadow
+- uid: TcoData.IMAIN.FlushOnlineToShadow
+  commentId: M:TcoData.IMAIN.FlushOnlineToShadow
+  parent: TcoData.IMAIN
+  name: FlushOnlineToShadow()
+  nameWithType: IMAIN.FlushOnlineToShadow()
+  fullName: TcoData.IMAIN.FlushOnlineToShadow()
+  spec.csharp:
+  - uid: TcoData.IMAIN.FlushOnlineToShadow
+    name: FlushOnlineToShadow
+    nameWithType: IMAIN.FlushOnlineToShadow
+    fullName: TcoData.IMAIN.FlushOnlineToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IMAIN.FlushOnlineToShadow
+    name: FlushOnlineToShadow
+    nameWithType: IMAIN.FlushOnlineToShadow
+    fullName: TcoData.IMAIN.FlushOnlineToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.FlushOnlineToPlain*
+  commentId: Overload:TcoData.MAIN.FlushOnlineToPlain
+  name: FlushOnlineToPlain
+  nameWithType: MAIN.FlushOnlineToPlain
+  fullName: TcoData.MAIN.FlushOnlineToPlain
+- uid: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  commentId: M:TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  parent: TcoData.IMAIN
+  name: FlushOnlineToPlain(PlainMAIN)
+  nameWithType: IMAIN.FlushOnlineToPlain(PlainMAIN)
+  fullName: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  spec.csharp:
+  - uid: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+    name: FlushOnlineToPlain
+    nameWithType: IMAIN.FlushOnlineToPlain
+    fullName: TcoData.IMAIN.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+    name: FlushOnlineToPlain
+    nameWithType: IMAIN.FlushOnlineToPlain
+    fullName: TcoData.IMAIN.FlushOnlineToPlain
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoData.PlainMAIN
+    name: PlainMAIN
+    nameWithType: PlainMAIN
+    fullName: TcoData.PlainMAIN
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.SymbolTail*
+  commentId: Overload:TcoData.MAIN.SymbolTail
+  name: SymbolTail
+  nameWithType: MAIN.SymbolTail
+  fullName: TcoData.MAIN.SymbolTail
+- uid: TcoData.MAIN.GetSymbolTail*
+  commentId: Overload:TcoData.MAIN.GetSymbolTail
+  name: GetSymbolTail
+  nameWithType: MAIN.GetSymbolTail
+  fullName: TcoData.MAIN.GetSymbolTail
+- uid: Vortex.Connector.IVortexElement.GetSymbolTail
+  commentId: M:Vortex.Connector.IVortexElement.GetSymbolTail
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: GetSymbolTail()
+  nameWithType: IVortexElement.GetSymbolTail()
+  fullName: Vortex.Connector.IVortexElement.GetSymbolTail()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexElement.GetSymbolTail
+    name: GetSymbolTail
+    nameWithType: IVortexElement.GetSymbolTail
+    fullName: Vortex.Connector.IVortexElement.GetSymbolTail
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexElement.GetSymbolTail
+    name: GetSymbolTail
+    nameWithType: IVortexElement.GetSymbolTail
+    fullName: Vortex.Connector.IVortexElement.GetSymbolTail
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.MAIN.AttributeName*
+  commentId: Overload:TcoData.MAIN.AttributeName
+  name: AttributeName
+  nameWithType: MAIN.AttributeName
+  fullName: TcoData.MAIN.AttributeName
+- uid: Vortex.Connector.IVortexElement.AttributeName
+  commentId: P:Vortex.Connector.IVortexElement.AttributeName
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: AttributeName
+  nameWithType: IVortexElement.AttributeName
+  fullName: Vortex.Connector.IVortexElement.AttributeName
+- uid: TcoData.IMAIN.AttributeName
+  commentId: P:TcoData.IMAIN.AttributeName
+  parent: TcoData.IMAIN
+  name: AttributeName
+  nameWithType: IMAIN.AttributeName
+  fullName: TcoData.IMAIN.AttributeName
+- uid: TcoData.IShadowMAIN.AttributeName
+  commentId: P:TcoData.IShadowMAIN.AttributeName
+  parent: TcoData.IShadowMAIN
+  name: AttributeName
+  nameWithType: IShadowMAIN.AttributeName
+  fullName: TcoData.IShadowMAIN.AttributeName
+- uid: TcoData.MAIN._AttributeName*
+  commentId: Overload:TcoData.MAIN._AttributeName
+  name: _AttributeName
+  nameWithType: MAIN._AttributeName
+  fullName: TcoData.MAIN._AttributeName
+- uid: TcoData.MAIN.#ctor*
+  commentId: Overload:TcoData.MAIN.#ctor
+  name: MAIN
+  nameWithType: MAIN.MAIN
+  fullName: TcoData.MAIN.MAIN

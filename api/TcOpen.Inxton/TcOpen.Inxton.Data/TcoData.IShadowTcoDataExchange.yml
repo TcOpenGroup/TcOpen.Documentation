@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IShadowTcoDataExchange
+  commentId: T:TcoData.IShadowTcoDataExchange
+  id: IShadowTcoDataExchange
+  parent: TcoData
+  children:
+  - TcoData.IShadowTcoDataExchange._createTask
+  - TcoData.IShadowTcoDataExchange._deleteTask
+  - TcoData.IShadowTcoDataExchange._readTask
+  - TcoData.IShadowTcoDataExchange._updateTask
+  - TcoData.IShadowTcoDataExchange.CopyPlainToShadow(TcoData.PlainTcoDataExchange)
+  - TcoData.IShadowTcoDataExchange.CreatePlainerType
+  - TcoData.IShadowTcoDataExchange.FlushShadowToOnline
+  langs:
+  - csharp
+  - vb
+  name: IShadowTcoDataExchange
+  nameWithType: IShadowTcoDataExchange
+  fullName: TcoData.IShadowTcoDataExchange
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IShadowTcoDataExchange
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 264
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is shadow interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'public interface IShadowTcoDataExchange : IShadowTcoObject, IVortexShadowObject'
+    content.vb: >-
+      Public Interface IShadowTcoDataExchange
+          Inherits IVortexShadowObject, IShadowTcoObject
+  inheritedMembers:
+  - TcoCore.IShadowTcoObject._Identity
+  - TcoCore.IShadowTcoObject._messenger
+  - TcoCore.IShadowTcoObject.AttributeToolTip
+  - TcoCore.IShadowTcoObject.AttributeName
+  - TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.IShadowTcoDataExchange._createTask
+  commentId: P:TcoData.IShadowTcoDataExchange._createTask
+  id: _createTask
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: _createTask
+  nameWithType: IShadowTcoDataExchange._createTask
+  fullName: TcoData.IShadowTcoDataExchange._createTask
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _createTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 266
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowTcoDataTask _createTask { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataTask
+    content.vb: ReadOnly Property _createTask As IShadowTcoDataTask
+  overload: TcoData.IShadowTcoDataExchange._createTask*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataExchange._readTask
+  commentId: P:TcoData.IShadowTcoDataExchange._readTask
+  id: _readTask
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: _readTask
+  nameWithType: IShadowTcoDataExchange._readTask
+  fullName: TcoData.IShadowTcoDataExchange._readTask
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _readTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 271
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowTcoDataTask _readTask { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataTask
+    content.vb: ReadOnly Property _readTask As IShadowTcoDataTask
+  overload: TcoData.IShadowTcoDataExchange._readTask*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataExchange._updateTask
+  commentId: P:TcoData.IShadowTcoDataExchange._updateTask
+  id: _updateTask
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: _updateTask
+  nameWithType: IShadowTcoDataExchange._updateTask
+  fullName: TcoData.IShadowTcoDataExchange._updateTask
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _updateTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 276
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowTcoDataTask _updateTask { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataTask
+    content.vb: ReadOnly Property _updateTask As IShadowTcoDataTask
+  overload: TcoData.IShadowTcoDataExchange._updateTask*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataExchange._deleteTask
+  commentId: P:TcoData.IShadowTcoDataExchange._deleteTask
+  id: _deleteTask
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: _deleteTask
+  nameWithType: IShadowTcoDataExchange._deleteTask
+  fullName: TcoData.IShadowTcoDataExchange._deleteTask
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _deleteTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 281
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowTcoDataTask _deleteTask { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataTask
+    content.vb: ReadOnly Property _deleteTask As IShadowTcoDataTask
+  overload: TcoData.IShadowTcoDataExchange._deleteTask*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataExchange.CreatePlainerType
+  commentId: M:TcoData.IShadowTcoDataExchange.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IShadowTcoDataExchange.CreatePlainerType()
+  fullName: TcoData.IShadowTcoDataExchange.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 286
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainTcoDataExchange CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataExchange
+    content.vb: Function CreatePlainerType As PlainTcoDataExchange
+  overload: TcoData.IShadowTcoDataExchange.CreatePlainerType*
+- uid: TcoData.IShadowTcoDataExchange.FlushShadowToOnline
+  commentId: M:TcoData.IShadowTcoDataExchange.FlushShadowToOnline
+  id: FlushShadowToOnline
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: FlushShadowToOnline()
+  nameWithType: IShadowTcoDataExchange.FlushShadowToOnline()
+  fullName: TcoData.IShadowTcoDataExchange.FlushShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 287
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushShadowToOnline()
+    content.vb: Sub FlushShadowToOnline
+  overload: TcoData.IShadowTcoDataExchange.FlushShadowToOnline*
+- uid: TcoData.IShadowTcoDataExchange.CopyPlainToShadow(TcoData.PlainTcoDataExchange)
+  commentId: M:TcoData.IShadowTcoDataExchange.CopyPlainToShadow(TcoData.PlainTcoDataExchange)
+  id: CopyPlainToShadow(TcoData.PlainTcoDataExchange)
+  parent: TcoData.IShadowTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(PlainTcoDataExchange)
+  nameWithType: IShadowTcoDataExchange.CopyPlainToShadow(PlainTcoDataExchange)
+  fullName: TcoData.IShadowTcoDataExchange.CopyPlainToShadow(TcoData.PlainTcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    startLine: 288
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void CopyPlainToShadow(PlainTcoDataExchange source)
+    parameters:
+    - id: source
+      type: TcoData.PlainTcoDataExchange
+    content.vb: Sub CopyPlainToShadow(source As PlainTcoDataExchange)
+  overload: TcoData.IShadowTcoDataExchange.CopyPlainToShadow*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoCore.IShadowTcoObject._Identity
+  commentId: P:TcoCore.IShadowTcoObject._Identity
+  parent: TcoCore.IShadowTcoObject
+  name: _Identity
+  nameWithType: IShadowTcoObject._Identity
+  fullName: TcoCore.IShadowTcoObject._Identity
+- uid: TcoCore.IShadowTcoObject._messenger
+  commentId: P:TcoCore.IShadowTcoObject._messenger
+  parent: TcoCore.IShadowTcoObject
+  name: _messenger
+  nameWithType: IShadowTcoObject._messenger
+  fullName: TcoCore.IShadowTcoObject._messenger
+- uid: TcoCore.IShadowTcoObject.AttributeToolTip
+  commentId: P:TcoCore.IShadowTcoObject.AttributeToolTip
+  parent: TcoCore.IShadowTcoObject
+  name: AttributeToolTip
+  nameWithType: IShadowTcoObject.AttributeToolTip
+  fullName: TcoCore.IShadowTcoObject.AttributeToolTip
+- uid: TcoCore.IShadowTcoObject.AttributeName
+  commentId: P:TcoCore.IShadowTcoObject.AttributeName
+  parent: TcoCore.IShadowTcoObject
+  name: AttributeName
+  nameWithType: IShadowTcoObject.AttributeName
+  fullName: TcoCore.IShadowTcoObject.AttributeName
+- uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  commentId: M:TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  parent: TcoCore.IShadowTcoObject
+  name: CopyPlainToShadow(PlainTcoObject)
+  nameWithType: IShadowTcoObject.CopyPlainToShadow(PlainTcoObject)
+  fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  spec.csharp:
+  - uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoObject.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoObject.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IShadowTcoObject
+  commentId: T:TcoCore.IShadowTcoObject
+  parent: TcoCore
+  name: IShadowTcoObject
+  nameWithType: IShadowTcoObject
+  fullName: TcoCore.IShadowTcoObject
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.IShadowTcoDataExchange._createTask*
+  commentId: Overload:TcoData.IShadowTcoDataExchange._createTask
+  name: _createTask
+  nameWithType: IShadowTcoDataExchange._createTask
+  fullName: TcoData.IShadowTcoDataExchange._createTask
+- uid: TcoData.IShadowTcoDataTask
+  commentId: T:TcoData.IShadowTcoDataTask
+  parent: TcoData
+  name: IShadowTcoDataTask
+  nameWithType: IShadowTcoDataTask
+  fullName: TcoData.IShadowTcoDataTask
+- uid: TcoData.IShadowTcoDataExchange._readTask*
+  commentId: Overload:TcoData.IShadowTcoDataExchange._readTask
+  name: _readTask
+  nameWithType: IShadowTcoDataExchange._readTask
+  fullName: TcoData.IShadowTcoDataExchange._readTask
+- uid: TcoData.IShadowTcoDataExchange._updateTask*
+  commentId: Overload:TcoData.IShadowTcoDataExchange._updateTask
+  name: _updateTask
+  nameWithType: IShadowTcoDataExchange._updateTask
+  fullName: TcoData.IShadowTcoDataExchange._updateTask
+- uid: TcoData.IShadowTcoDataExchange._deleteTask*
+  commentId: Overload:TcoData.IShadowTcoDataExchange._deleteTask
+  name: _deleteTask
+  nameWithType: IShadowTcoDataExchange._deleteTask
+  fullName: TcoData.IShadowTcoDataExchange._deleteTask
+- uid: TcoData.IShadowTcoDataExchange.CreatePlainerType*
+  commentId: Overload:TcoData.IShadowTcoDataExchange.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IShadowTcoDataExchange.CreatePlainerType
+  fullName: TcoData.IShadowTcoDataExchange.CreatePlainerType
+- uid: TcoData.PlainTcoDataExchange
+  commentId: T:TcoData.PlainTcoDataExchange
+  parent: TcoData
+  name: PlainTcoDataExchange
+  nameWithType: PlainTcoDataExchange
+  fullName: TcoData.PlainTcoDataExchange
+- uid: TcoData.IShadowTcoDataExchange.FlushShadowToOnline*
+  commentId: Overload:TcoData.IShadowTcoDataExchange.FlushShadowToOnline
+  name: FlushShadowToOnline
+  nameWithType: IShadowTcoDataExchange.FlushShadowToOnline
+  fullName: TcoData.IShadowTcoDataExchange.FlushShadowToOnline
+- uid: TcoData.IShadowTcoDataExchange.CopyPlainToShadow*
+  commentId: Overload:TcoData.IShadowTcoDataExchange.CopyPlainToShadow
+  name: CopyPlainToShadow
+  nameWithType: IShadowTcoDataExchange.CopyPlainToShadow
+  fullName: TcoData.IShadowTcoDataExchange.CopyPlainToShadow

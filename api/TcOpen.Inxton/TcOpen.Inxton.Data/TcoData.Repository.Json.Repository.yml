@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.Repository.Json.Repository
+  commentId: T:TcoData.Repository.Json.Repository
+  id: Repository
+  parent: TcoData.Repository.Json
+  children:
+  - TcoData.Repository.Json.Repository.Factory``1(TcOpen.Inxton.Data.Json.JsonRepositorySettings{``0})
+  langs:
+  - csharp
+  - vb
+  name: Repository
+  nameWithType: Repository
+  fullName: TcoData.Repository.Json.Repository
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/Repository/Json/RepositoryExtensions.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Repository
+    path: ../TcOpen/src/TcoData/src/Repository/Json/RepositoryExtensions.cs
+    startLine: 6
+  assemblies:
+  - TcOpen.Inxton.Data.Json
+  namespace: TcoData.Repository.Json
+  syntax:
+    content: public static class Repository
+    content.vb: Public Module Repository
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: TcoData.Repository.Json.Repository.Factory``1(TcOpen.Inxton.Data.Json.JsonRepositorySettings{``0})
+  commentId: M:TcoData.Repository.Json.Repository.Factory``1(TcOpen.Inxton.Data.Json.JsonRepositorySettings{``0})
+  id: Factory``1(TcOpen.Inxton.Data.Json.JsonRepositorySettings{``0})
+  parent: TcoData.Repository.Json.Repository
+  langs:
+  - csharp
+  - vb
+  name: Factory<T>(JsonRepositorySettings<T>)
+  nameWithType: Repository.Factory<T>(JsonRepositorySettings<T>)
+  fullName: TcoData.Repository.Json.Repository.Factory<T>(TcOpen.Inxton.Data.Json.JsonRepositorySettings<T>)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Repository/Json/RepositoryExtensions.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Factory
+    path: ../TcOpen/src/TcoData/src/Repository/Json/RepositoryExtensions.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Data.Json
+  namespace: TcoData.Repository.Json
+  syntax:
+    content: >-
+      public static IRepository<T> Factory<T>(JsonRepositorySettings<T> parameters)
+          where T : IBrowsableDataObject
+    parameters:
+    - id: parameters
+      type: TcOpen.Inxton.Data.Json.JsonRepositorySettings{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: TcOpen.Inxton.Abstractions.Data.IRepository{{T}}
+    content.vb: Public Shared Function Factory(Of T As IBrowsableDataObject)(parameters As JsonRepositorySettings(Of T)) As IRepository(Of T)
+  overload: TcoData.Repository.Json.Repository.Factory*
+  nameWithType.vb: Repository.Factory(Of T)(JsonRepositorySettings(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: TcoData.Repository.Json.Repository.Factory(Of T)(TcOpen.Inxton.Data.Json.JsonRepositorySettings(Of T))
+  name.vb: Factory(Of T)(JsonRepositorySettings(Of T))
+references:
+- uid: TcoData.Repository.Json
+  commentId: N:TcoData.Repository.Json
+  name: TcoData.Repository.Json
+  nameWithType: TcoData.Repository.Json
+  fullName: TcoData.Repository.Json
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.Repository.Json.Repository.Factory*
+  commentId: Overload:TcoData.Repository.Json.Repository.Factory
+  name: Factory
+  nameWithType: Repository.Factory
+  fullName: TcoData.Repository.Json.Repository.Factory
+- uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings{{T}}
+  commentId: T:TcOpen.Inxton.Data.Json.JsonRepositorySettings{`0}
+  parent: TcOpen.Inxton.Data.Json
+  definition: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+  name: JsonRepositorySettings<T>
+  nameWithType: JsonRepositorySettings<T>
+  fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings<T>
+  nameWithType.vb: JsonRepositorySettings(Of T)
+  fullName.vb: TcOpen.Inxton.Data.Json.JsonRepositorySettings(Of T)
+  name.vb: JsonRepositorySettings(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+    name: JsonRepositorySettings
+    nameWithType: JsonRepositorySettings
+    fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+    name: JsonRepositorySettings
+    nameWithType: JsonRepositorySettings
+    fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository{{T}}
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository{`0}
+  parent: TcOpen.Inxton.Abstractions.Data
+  definition: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Abstractions.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+  commentId: T:TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+  name: JsonRepositorySettings<T>
+  nameWithType: JsonRepositorySettings<T>
+  fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings<T>
+  nameWithType.vb: JsonRepositorySettings(Of T)
+  fullName.vb: TcOpen.Inxton.Data.Json.JsonRepositorySettings(Of T)
+  name.vb: JsonRepositorySettings(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+    name: JsonRepositorySettings
+    nameWithType: JsonRepositorySettings
+    fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
+    name: JsonRepositorySettings
+    nameWithType: JsonRepositorySettings
+    fullName: TcOpen.Inxton.Data.Json.JsonRepositorySettings
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.Json
+  commentId: N:TcOpen.Inxton.Data.Json
+  name: TcOpen.Inxton.Data.Json
+  nameWithType: TcOpen.Inxton.Data.Json
+  fullName: TcOpen.Inxton.Data.Json
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Abstractions.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Abstractions.Data
+  commentId: N:TcOpen.Inxton.Abstractions.Data
+  name: TcOpen.Inxton.Abstractions.Data
+  nameWithType: TcOpen.Inxton.Abstractions.Data
+  fullName: TcOpen.Inxton.Abstractions.Data

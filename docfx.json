@@ -125,7 +125,7 @@
           "src": "..//TcOpen//"
         }
       ],
-      "dest": "api/TcOpen.Inxton.Abstractions",
+      "dest": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions",
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
@@ -146,7 +146,7 @@
           "src": "..//TcOpen//"
         }
       ],
-      "dest": "api/TcOpen.Inxton.App",
+      "dest": "api/TcOpen.Inxton/TcOpen.Inxton.App",
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
@@ -167,7 +167,32 @@
           "src": "..//TcOpen//"
         }
       ],
-      "dest": "api/TcOpen.Inxton.Logging",
+      "dest": "api/TcOpen.Inxton/TcOpen.Inxton.Logging",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
+    },
+    {
+      "src": [
+        {
+          "files": [            
+            "src//TcoData//src//Data//TcOpen.Inxton.Data.csproj",
+            "src//TcoData//src//Repository//InMemory//TcOpen.Inxton.Data.InMemory.csproj",
+            "src//TcoData//src//Repository//Json//TcOpen.Inxton.Data.Json.csproj",
+            "src//TcoData//src//Repository//MongoDb//TcOpen.Inxton.MongoDb.csproj",
+            "src//TcoData//src//TcoDataConnector//TcoDataConnector.csproj",
+            "src//TcoData//src//Wpf//TcoData.Wpf//TcOpen.Inxton.Data.Wpf.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcOpen.Inxton/TcOpen.Inxton.Data",
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true

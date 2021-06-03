@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.TcoAppBuilder
+  commentId: T:TcOpen.Inxton.TcoAppBuilder
+  id: TcoAppBuilder
+  parent: TcOpen.Inxton
+  children:
+  - TcOpen.Inxton.TcoAppBuilder.#ctor(TcOpen.Inxton.TcoAppDomain)
+  - TcOpen.Inxton.TcoAppBuilder.Domain
+  - TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  - TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  langs:
+  - csharp
+  - vb
+  name: TcoAppBuilder
+  nameWithType: TcoAppBuilder
+  fullName: TcOpen.Inxton.TcoAppBuilder
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: TcoAppBuilder
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nTcOpen application configuration builder.\n"
+  example: []
+  syntax:
+    content: public class TcoAppBuilder
+    content.vb: Public Class TcoAppBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.TcoAppBuilder.#ctor(TcOpen.Inxton.TcoAppDomain)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.#ctor(TcOpen.Inxton.TcoAppDomain)
+  id: '#ctor(TcOpen.Inxton.TcoAppDomain)'
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: TcoAppBuilder(TcoAppDomain)
+  nameWithType: TcoAppBuilder.TcoAppBuilder(TcoAppDomain)
+  fullName: TcOpen.Inxton.TcoAppBuilder.TcoAppBuilder(TcOpen.Inxton.TcoAppDomain)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 13
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nCreates new instance of <see cref=\"!:TcoApplication\"></see>\n"
+  example: []
+  syntax:
+    content: TcoAppBuilder(TcoAppDomain domain)
+    parameters:
+    - id: domain
+      type: TcOpen.Inxton.TcoAppDomain
+    content.vb: Sub New(domain As TcoAppDomain)
+  overload: TcOpen.Inxton.TcoAppBuilder.#ctor*
+- uid: TcOpen.Inxton.TcoAppBuilder.Domain
+  commentId: P:TcOpen.Inxton.TcoAppBuilder.Domain
+  id: Domain
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: TcoAppBuilder.Domain
+  fullName: TcOpen.Inxton.TcoAppBuilder.Domain
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Domain
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 18
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  syntax:
+    content: >-
+      TcoAppDomain Domain
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.TcoAppDomain
+    content.vb: ReadOnly WriteOnly Property Domain As TcoAppDomain
+  overload: TcOpen.Inxton.TcoAppBuilder.Domain*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  id: SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetUpLogger(ITcoLogger)
+  nameWithType: TcoAppBuilder.SetUpLogger(ITcoLogger)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: SetUpLogger
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 25
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nSets the logger for this application.\n"
+  example: []
+  syntax:
+    content: public TcoAppBuilder SetUpLogger(ITcoLogger logger)
+    parameters:
+    - id: logger
+      type: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+      description: Instance of a logger.
+    return:
+      type: TcOpen.Inxton.TcoAppBuilder
+      description: Application builder.
+    content.vb: Public Function SetUpLogger(logger As ITcoLogger) As TcoAppBuilder
+  overload: TcOpen.Inxton.TcoAppBuilder.SetUpLogger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  id: SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetDispatcher(IDispatcher)
+  nameWithType: TcoAppBuilder.SetDispatcher(IDispatcher)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: SetDispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 36
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nSets the dispatcher for this application.\n"
+  example: []
+  syntax:
+    content: public TcoAppBuilder SetDispatcher(IDispatcher dispatcher)
+    parameters:
+    - id: dispatcher
+      type: TcOpen.Inxton.Threading.IDispatcher
+    return:
+      type: TcOpen.Inxton.TcoAppBuilder
+      description: Application builder.
+    content.vb: Public Function SetDispatcher(dispatcher As IDispatcher) As TcoAppBuilder
+  overload: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TcOpen.Inxton
+  commentId: N:TcOpen.Inxton
+  name: TcOpen.Inxton
+  nameWithType: TcOpen.Inxton
+  fullName: TcOpen.Inxton
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.TcoAppBuilder.#ctor*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.#ctor
+  name: TcoAppBuilder
+  nameWithType: TcoAppBuilder.TcoAppBuilder
+  fullName: TcOpen.Inxton.TcoAppBuilder.TcoAppBuilder
+- uid: TcOpen.Inxton.TcoAppDomain
+  commentId: T:TcOpen.Inxton.TcoAppDomain
+  parent: TcOpen.Inxton
+  name: TcoAppDomain
+  nameWithType: TcoAppDomain
+  fullName: TcOpen.Inxton.TcoAppDomain
+- uid: TcOpen.Inxton.TcoAppBuilder.Domain*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.Domain
+  name: Domain
+  nameWithType: TcoAppBuilder.Domain
+  fullName: TcOpen.Inxton.TcoAppBuilder.Domain
+- uid: TcOpen.Inxton.TcoAppBuilder.SetUpLogger*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetUpLogger
+  name: SetUpLogger
+  nameWithType: TcoAppBuilder.SetUpLogger
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetUpLogger
+- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  commentId: T:TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Abstractions.Logging
+  name: ITcoLogger
+  nameWithType: ITcoLogger
+  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+- uid: TcOpen.Inxton.TcoAppBuilder
+  commentId: T:TcOpen.Inxton.TcoAppBuilder
+  parent: TcOpen.Inxton
+  name: TcoAppBuilder
+  nameWithType: TcoAppBuilder
+  fullName: TcOpen.Inxton.TcoAppBuilder
+- uid: TcOpen.Inxton.Abstractions.Logging
+  commentId: N:TcOpen.Inxton.Abstractions.Logging
+  name: TcOpen.Inxton.Abstractions.Logging
+  nameWithType: TcOpen.Inxton.Abstractions.Logging
+  fullName: TcOpen.Inxton.Abstractions.Logging
+- uid: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetDispatcher
+  name: SetDispatcher
+  nameWithType: TcoAppBuilder.SetDispatcher
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetDispatcher
+- uid: TcOpen.Inxton.Threading.IDispatcher
+  commentId: T:TcOpen.Inxton.Threading.IDispatcher
+  parent: TcOpen.Inxton.Threading
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: TcOpen.Inxton.Threading.IDispatcher
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading

@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Abstractions.Data
+  commentId: N:TcOpen.Inxton.Abstractions.Data
+  id: TcOpen.Inxton.Abstractions.Data
+  children:
+  - TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+  - TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+  - TcOpen.Inxton.Abstractions.Data.IRepository
+  - TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Abstractions.Data
+  nameWithType: TcOpen.Inxton.Abstractions.Data
+  fullName: TcOpen.Inxton.Abstractions.Data
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+  commentId: T:TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+  name: DateTimeProviders
+  nameWithType: DateTimeProviders
+  fullName: TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+- uid: TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+  commentId: T:TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+  name: StandardDateTimeProvider
+  nameWithType: StandardDateTimeProvider
+  fullName: TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+- uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+  commentId: T:TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+  parent: TcOpen.Inxton.Abstractions.Data
+  name: DateTimeProviderBase
+  nameWithType: DateTimeProviderBase
+  fullName: TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+  name: IBrowsableDataObject
+  nameWithType: IBrowsableDataObject
+  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository
+  name: IRepository
+  nameWithType: IRepository
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Abstractions.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Abstractions.Data
+  commentId: N:TcOpen.Inxton.Abstractions.Data
+  name: TcOpen.Inxton.Abstractions.Data
+  nameWithType: TcOpen.Inxton.Abstractions.Data
+  fullName: TcOpen.Inxton.Abstractions.Data

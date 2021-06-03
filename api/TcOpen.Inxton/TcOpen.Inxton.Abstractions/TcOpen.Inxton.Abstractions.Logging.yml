@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Abstractions.Logging
+  commentId: N:TcOpen.Inxton.Abstractions.Logging
+  id: TcOpen.Inxton.Abstractions.Logging
+  children:
+  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Abstractions.Logging
+  nameWithType: TcOpen.Inxton.Abstractions.Logging
+  fullName: TcOpen.Inxton.Abstractions.Logging
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  commentId: T:TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  name: ITcoLogger
+  nameWithType: ITcoLogger
+  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger

@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.ITcoDataTwinController
+  commentId: T:TcoData.ITcoDataTwinController
+  id: ITcoDataTwinController
+  parent: TcoData
+  children:
+  - TcoData.ITcoDataTwinController.AttributeName
+  - TcoData.ITcoDataTwinController.CreatePlainerType
+  langs:
+  - csharp
+  - vb
+  name: ITcoDataTwinController
+  nameWithType: ITcoDataTwinController
+  fullName: TcoData.ITcoDataTwinController
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: ITcoDataTwinController
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 149
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public interface ITcoDataTwinController
+    content.vb: Public Interface ITcoDataTwinController
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.ITcoDataTwinController.AttributeName
+  commentId: P:TcoData.ITcoDataTwinController.AttributeName
+  id: AttributeName
+  parent: TcoData.ITcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: ITcoDataTwinController.AttributeName
+  fullName: TcoData.ITcoDataTwinController.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 151
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string AttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AttributeName As String
+  overload: TcoData.ITcoDataTwinController.AttributeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.ITcoDataTwinController.CreatePlainerType
+  commentId: M:TcoData.ITcoDataTwinController.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.ITcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: ITcoDataTwinController.CreatePlainerType()
+  fullName: TcoData.ITcoDataTwinController.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 156
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainTcoDataTwinController CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataTwinController
+    content.vb: Function CreatePlainerType As PlainTcoDataTwinController
+  overload: TcoData.ITcoDataTwinController.CreatePlainerType*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.ITcoDataTwinController.AttributeName*
+  commentId: Overload:TcoData.ITcoDataTwinController.AttributeName
+  name: AttributeName
+  nameWithType: ITcoDataTwinController.AttributeName
+  fullName: TcoData.ITcoDataTwinController.AttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.ITcoDataTwinController.CreatePlainerType*
+  commentId: Overload:TcoData.ITcoDataTwinController.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: ITcoDataTwinController.CreatePlainerType
+  fullName: TcoData.ITcoDataTwinController.CreatePlainerType
+- uid: TcoData.PlainTcoDataTwinController
+  commentId: T:TcoData.PlainTcoDataTwinController
+  parent: TcoData
+  name: PlainTcoDataTwinController
+  nameWithType: PlainTcoDataTwinController
+  fullName: TcoData.PlainTcoDataTwinController

@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Threading.IDispatcher
+  commentId: T:TcOpen.Inxton.Threading.IDispatcher
+  id: IDispatcher
+  parent: TcOpen.Inxton.Threading
+  children:
+  - TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: TcOpen.Inxton.Threading.IDispatcher
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Threading/IDispatcher.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IDispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Threading/IDispatcher.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nProvides access to the UI dispatcher of running application.\n"
+  example: []
+  syntax:
+    content: public interface IDispatcher
+    content.vb: Public Interface IDispatcher
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  id: Invoke(System.Action)
+  parent: TcOpen.Inxton.Threading.IDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Action)
+  nameWithType: IDispatcher.Invoke(Action)
+  fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Threading/IDispatcher.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Invoke
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Threading/IDispatcher.cs
+    startLine: 17
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nInvokes an action on the dispatcher of the currently running application.\n"
+  example: []
+  syntax:
+    content: void Invoke(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: Action to run
+    content.vb: Sub Invoke(action As Action)
+  overload: TcOpen.Inxton.Threading.IDispatcher.Invoke*
+references:
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading
+- uid: TcOpen.Inxton.Threading.IDispatcher.Invoke*
+  commentId: Overload:TcOpen.Inxton.Threading.IDispatcher.Invoke
+  name: Invoke
+  nameWithType: IDispatcher.Invoke
+  fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
