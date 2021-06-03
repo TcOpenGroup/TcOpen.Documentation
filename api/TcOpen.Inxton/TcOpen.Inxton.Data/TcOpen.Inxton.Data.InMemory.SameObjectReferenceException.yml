@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SameObjectReferenceException
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 5
@@ -79,8 +79,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 7
@@ -109,8 +109,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 11
@@ -142,8 +142,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 15
@@ -177,8 +177,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 19

@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/RepositoryExtensions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Repository
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/RepositoryExtensions.cs
     startLine: 4
@@ -59,8 +59,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/RepositoryExtensions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Factory
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/RepositoryExtensions.cs
     startLine: 6

@@ -7,7 +7,6 @@ items:
   children:
   - TcOpen.Inxton.TcoAppBuilder.#ctor(TcOpen.Inxton.TcoAppDomain)
   - TcOpen.Inxton.TcoAppBuilder.Domain
-  - TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
   - TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
   langs:
   - csharp
@@ -19,11 +18,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoAppBuilder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -62,11 +61,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -93,11 +92,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Domain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -131,11 +130,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetUpLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -152,44 +151,6 @@ items:
       description: Application builder.
     content.vb: Public Function SetUpLogger(logger As ITcoLogger) As TcoAppBuilder
   overload: TcOpen.Inxton.TcoAppBuilder.SetUpLogger*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
-  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
-  id: SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
-  parent: TcOpen.Inxton.TcoAppBuilder
-  langs:
-  - csharp
-  - vb
-  name: SetDispatcher(IDispatcher)
-  nameWithType: TcoAppBuilder.SetDispatcher(IDispatcher)
-  fullName: TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
-  type: Method
-  source:
-    remote:
-      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: SetDispatcher
-    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 36
-  assemblies:
-  - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton
-  summary: "\nSets the dispatcher for this application.\n"
-  example: []
-  syntax:
-    content: public TcoAppBuilder SetDispatcher(IDispatcher dispatcher)
-    parameters:
-    - id: dispatcher
-      type: TcOpen.Inxton.Threading.IDispatcher
-    return:
-      type: TcOpen.Inxton.TcoAppBuilder
-      description: Application builder.
-    content.vb: Public Function SetDispatcher(dispatcher As IDispatcher) As TcoAppBuilder
-  overload: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -530,19 +491,3 @@ references:
   name: TcOpen.Inxton.Abstractions.Logging
   nameWithType: TcOpen.Inxton.Abstractions.Logging
   fullName: TcOpen.Inxton.Abstractions.Logging
-- uid: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
-  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetDispatcher
-  name: SetDispatcher
-  nameWithType: TcoAppBuilder.SetDispatcher
-  fullName: TcOpen.Inxton.TcoAppBuilder.SetDispatcher
-- uid: TcOpen.Inxton.Threading.IDispatcher
-  commentId: T:TcOpen.Inxton.Threading.IDispatcher
-  parent: TcOpen.Inxton.Threading
-  name: IDispatcher
-  nameWithType: IDispatcher
-  fullName: TcOpen.Inxton.Threading.IDispatcher
-- uid: TcOpen.Inxton.Threading
-  commentId: N:TcOpen.Inxton.Threading
-  name: TcOpen.Inxton.Threading
-  nameWithType: TcOpen.Inxton.Threading
-  fullName: TcOpen.Inxton.Threading

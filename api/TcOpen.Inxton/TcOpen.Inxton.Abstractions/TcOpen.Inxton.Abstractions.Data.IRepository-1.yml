@@ -23,8 +23,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 15
@@ -34,7 +34,6 @@ items:
   syntax:
     content: >-
       public interface IRepository<T>
-
           where T : IBrowsableDataObject
     typeParameters:
     - id: T
@@ -62,8 +61,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 17
@@ -97,8 +96,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queryable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 18
@@ -132,8 +131,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 20
@@ -165,8 +164,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 21
@@ -196,8 +195,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 22
@@ -229,8 +228,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecords
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 23
@@ -266,8 +265,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 24
@@ -299,8 +298,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 25

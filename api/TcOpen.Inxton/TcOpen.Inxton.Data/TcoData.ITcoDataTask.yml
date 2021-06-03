@@ -20,8 +20,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ITcoDataTask
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 147
@@ -78,8 +78,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 149
@@ -111,8 +111,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 154
@@ -139,8 +139,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 155
@@ -165,8 +165,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 156
@@ -194,8 +194,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 157

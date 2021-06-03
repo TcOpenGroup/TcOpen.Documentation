@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IShadowMAIN
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 256
@@ -52,8 +52,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AttributeName
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 258
@@ -85,8 +85,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 263
@@ -113,8 +113,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 264
@@ -139,8 +139,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 265

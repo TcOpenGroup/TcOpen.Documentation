@@ -32,8 +32,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MongoDbRepositorySettings
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 14
@@ -81,8 +81,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _databaseName
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 16
@@ -110,8 +110,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _collectionName
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 17
@@ -139,8 +139,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 18
@@ -178,8 +178,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetClient
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 26
@@ -211,8 +211,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetDatabase
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 40
@@ -244,8 +244,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetCollection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 55
@@ -277,8 +277,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Clients
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 71
@@ -310,8 +310,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Databases
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 72
@@ -343,8 +343,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Collections
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 73
@@ -376,8 +376,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetContainingTypes
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 75
@@ -416,8 +416,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetupSerialisationAndMapping
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 97
@@ -448,8 +448,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Client
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 137
@@ -485,8 +485,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Database
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 138
@@ -522,8 +522,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Collection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 139
@@ -559,8 +559,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetConnectionInfo
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 141
@@ -593,8 +593,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: WaitForMongoServerAvailability
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 146
@@ -625,8 +625,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IsPortOpen
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 161

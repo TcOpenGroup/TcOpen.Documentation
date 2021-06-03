@@ -27,8 +27,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainTcoDataTask
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 182
@@ -131,8 +131,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 184
@@ -158,8 +158,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 185
@@ -193,8 +193,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 202
@@ -226,8 +226,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 208
@@ -259,8 +259,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 213
@@ -292,8 +292,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 219
@@ -325,8 +325,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 224
@@ -358,8 +358,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 230
@@ -391,8 +391,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 235
@@ -424,8 +424,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 241
@@ -457,8 +457,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 246
@@ -488,8 +488,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 247

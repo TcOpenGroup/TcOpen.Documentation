@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlcEntity
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 311
@@ -62,8 +62,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _EntityId
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 314
@@ -93,8 +93,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Created
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 315
@@ -124,8 +124,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Modified
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 316
@@ -155,8 +155,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 318

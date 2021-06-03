@@ -29,8 +29,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: JsonRepository
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 9
@@ -95,8 +95,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 11
@@ -131,8 +131,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Location
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 30
@@ -168,8 +168,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 31
@@ -208,8 +208,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 48
@@ -248,8 +248,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 66
@@ -288,8 +288,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 84
@@ -326,8 +326,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 91
@@ -366,8 +366,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 96
@@ -410,8 +410,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 121
@@ -450,8 +450,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RecordExists
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 133
@@ -483,8 +483,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MakeValidFileName
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 138
@@ -516,8 +516,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Save
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 149
@@ -549,8 +549,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Load
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 160
@@ -584,8 +584,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 171

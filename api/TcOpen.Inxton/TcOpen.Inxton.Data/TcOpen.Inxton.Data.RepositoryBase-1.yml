@@ -36,8 +36,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RepositoryBase
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 14
@@ -96,8 +96,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 21
@@ -139,8 +139,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 28
@@ -182,8 +182,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 35
@@ -225,8 +225,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 41
@@ -265,8 +265,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 46
@@ -306,8 +306,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 55
@@ -355,8 +355,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 62
@@ -398,8 +398,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Count
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 67
@@ -439,8 +439,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCount
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 74
@@ -483,8 +483,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: mutex
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 77
@@ -514,8 +514,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Create
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 84
@@ -557,8 +557,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Read
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 110
@@ -600,8 +600,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Update
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 123
@@ -643,8 +643,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Delete
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 147
@@ -684,8 +684,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcOpen.Inxton.Abstractions.Data.IRepository.Create
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 155
@@ -721,8 +721,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcOpen.Inxton.Abstractions.Data.IRepository.Read
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 157
@@ -758,8 +758,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcOpen.Inxton.Abstractions.Data.IRepository.Update
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 159
@@ -795,8 +795,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcOpen.Inxton.Abstractions.Data.IRepository.Delete
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 161
@@ -830,8 +830,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcOpen.Inxton.Abstractions.Data.IRepository.Count
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 163
@@ -868,8 +868,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecords
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 165
@@ -911,8 +911,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 180

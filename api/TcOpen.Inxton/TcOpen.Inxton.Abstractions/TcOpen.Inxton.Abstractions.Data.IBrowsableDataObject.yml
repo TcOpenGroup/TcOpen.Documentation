@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IBrowsableDataObject
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 4
@@ -50,8 +50,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _recordId
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 6
@@ -82,8 +82,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Created
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 7
@@ -114,8 +114,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _EntityId
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 8
@@ -146,8 +146,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Modified
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 9

@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/DataHelpers.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DataHelpers
     path: ../TcOpen/src/TcoData/src/Data/src/DataHelpers.cs
     startLine: 4
@@ -57,8 +57,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/DataHelpers.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: count
     path: ../TcOpen/src/TcoData/src/Data/src/DataHelpers.cs
     startLine: 6
@@ -88,8 +88,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/DataHelpers.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreateUid
     path: ../TcOpen/src/TcoData/src/Data/src/DataHelpers.cs
     startLine: 7

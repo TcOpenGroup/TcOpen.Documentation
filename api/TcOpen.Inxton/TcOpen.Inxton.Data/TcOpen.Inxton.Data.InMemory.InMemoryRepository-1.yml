@@ -27,8 +27,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: InMemoryRepository
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 7
@@ -93,8 +93,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 10
@@ -129,8 +129,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 15
@@ -161,8 +161,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _repository
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 20
@@ -194,8 +194,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Records
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 21
@@ -234,8 +234,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 26
@@ -274,8 +274,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 43
@@ -314,8 +314,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 57
@@ -354,8 +354,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 76
@@ -392,8 +392,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 81
@@ -432,8 +432,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 86
@@ -476,8 +476,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 96
@@ -516,8 +516,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 106

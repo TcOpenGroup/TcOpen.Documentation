@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IdentifierValueMismatchedException
     path: ../TcOpen/src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
     startLine: 9
@@ -81,8 +81,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
     startLine: 11
@@ -111,8 +111,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
     startLine: 17
@@ -147,8 +147,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
     startLine: 25
@@ -186,8 +186,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/IdentifierValueMismactchedException.cs
     startLine: 35

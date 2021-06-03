@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/Entry.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Entry
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/Entry.cs
     startLine: 9
@@ -59,8 +59,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/Entry.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AmdId
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/Entry.cs
     startLine: 11
@@ -90,8 +90,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/Entry.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoDataPlc
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/Entry.cs
     startLine: 13

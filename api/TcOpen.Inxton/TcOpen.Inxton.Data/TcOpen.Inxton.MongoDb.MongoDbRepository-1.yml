@@ -28,8 +28,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MongoDbRepository
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 10
@@ -94,8 +94,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: collection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 13
@@ -123,8 +123,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: location
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 14
@@ -156,8 +156,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 16
@@ -192,8 +192,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RecordExists
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 22
@@ -225,8 +225,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 25
@@ -265,8 +265,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 48
@@ -303,8 +303,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 50
@@ -343,8 +343,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 62
@@ -387,8 +387,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 80
@@ -427,8 +427,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 99
@@ -467,8 +467,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 117
@@ -507,8 +507,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Collection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 119
@@ -544,8 +544,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepository.cs
     startLine: 121

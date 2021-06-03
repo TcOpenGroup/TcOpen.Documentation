@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: JsonRepositorySettings
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
     startLine: 4
@@ -66,8 +66,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
     startLine: 7
@@ -101,8 +101,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Location
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepositoryParameters.cs
     startLine: 12

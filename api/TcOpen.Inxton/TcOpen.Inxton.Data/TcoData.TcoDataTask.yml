@@ -34,8 +34,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoDataTask
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 17
@@ -126,7 +126,6 @@ items:
   - TcoCore.TcoTask.Restore
   - TcoCore.TcoTask._logPayloadDecoration
   - TcoCore.TcoTask.LogPayloadDecoration
-  - TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   - TcoCore.TcoTask.TcoTask_CanExecuteChanged(System.Object,System.EventArgs)
   - TcoCore.TcoTask.ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   - TcoCore.TcoTask.CanExecute(System.Object)
@@ -245,8 +244,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 20
@@ -272,8 +271,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 21
@@ -308,8 +307,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataTask._identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 29
@@ -346,8 +345,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataTask._identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 37
@@ -383,8 +382,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyOnlineToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 45
@@ -413,8 +412,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyShadowToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 51
@@ -443,8 +442,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 57
@@ -478,8 +477,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 64
@@ -513,8 +512,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 70
@@ -546,8 +545,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructorParameterless
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 71
@@ -572,8 +571,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 72
@@ -605,8 +604,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructorParameterless
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 73
@@ -631,8 +630,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 74
@@ -666,8 +665,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 80
@@ -701,8 +700,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 85
@@ -736,8 +735,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 91
@@ -771,8 +770,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 97
@@ -806,8 +805,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 103
@@ -843,8 +842,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
     startLine: 116
@@ -1678,61 +1677,6 @@ references:
   name: LogPayloadDecoration
   nameWithType: TcoTask.LogPayloadDecoration
   fullName: TcoCore.TcoTask.LogPayloadDecoration
-- uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  commentId: M:TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  parent: TcoCore.TcoTask
-  isExternal: true
-  name: ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
-  nameWithType: TcoTask.ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
-  fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag, Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  spec.csharp:
-  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-    name: ValidateCanExecuteAbortRestore
-    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
-    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Vortex.Connector.IValueTag
-    name: IValueTag
-    nameWithType: IValueTag
-    fullName: Vortex.Connector.IValueTag
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    name: ValueChangedEventArgs
-    nameWithType: ValueChangedEventArgs
-    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-    name: ValidateCanExecuteAbortRestore
-    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
-    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Vortex.Connector.IValueTag
-    name: IValueTag
-    nameWithType: IValueTag
-    fullName: Vortex.Connector.IValueTag
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    name: ValueChangedEventArgs
-    nameWithType: ValueChangedEventArgs
-    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: TcoCore.TcoTask.TcoTask_CanExecuteChanged(System.Object,System.EventArgs)
   commentId: M:TcoCore.TcoTask.TcoTask_CanExecuteChanged(System.Object,System.EventArgs)
   parent: TcoCore.TcoTask

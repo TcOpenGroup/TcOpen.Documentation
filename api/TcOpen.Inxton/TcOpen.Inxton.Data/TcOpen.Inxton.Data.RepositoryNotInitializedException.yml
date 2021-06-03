@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RepositoryNotInitializedException
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 183
@@ -79,8 +79,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 186
@@ -111,8 +111,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 193
@@ -147,8 +147,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 201
@@ -186,8 +186,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 211

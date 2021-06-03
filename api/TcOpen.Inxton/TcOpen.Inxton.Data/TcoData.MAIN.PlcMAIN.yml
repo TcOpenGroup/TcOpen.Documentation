@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlcMAIN
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 222
@@ -60,8 +60,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Context
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 225
@@ -87,8 +87,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
     startLine: 227

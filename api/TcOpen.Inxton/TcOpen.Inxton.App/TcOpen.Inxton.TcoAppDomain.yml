@@ -9,7 +9,6 @@ items:
   - TcOpen.Inxton.TcoAppDomain._current
   - TcOpen.Inxton.TcoAppDomain.Builder
   - TcOpen.Inxton.TcoAppDomain.Current
-  - TcOpen.Inxton.TcoAppDomain.Dispatcher
   - TcOpen.Inxton.TcoAppDomain.Logger
   - TcOpen.Inxton.TcoAppDomain.mutex
   langs:
@@ -22,11 +21,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoAppDomain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -65,11 +64,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -93,11 +92,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -125,11 +124,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -156,11 +155,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -195,15 +194,15 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Logger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 53
+    startLine: 52
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
-  summary: "\nGets logger for this application.\n"
+  summary: "\nGet logger for this application.\n"
   example: []
   syntax:
     content: public ITcoLogger Logger { get; }
@@ -212,43 +211,6 @@ items:
       type: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
     content.vb: Public ReadOnly Property Logger As ITcoLogger
   overload: TcOpen.Inxton.TcoAppDomain.Logger*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: TcOpen.Inxton.TcoAppDomain.Dispatcher
-  commentId: P:TcOpen.Inxton.TcoAppDomain.Dispatcher
-  id: Dispatcher
-  parent: TcOpen.Inxton.TcoAppDomain
-  langs:
-  - csharp
-  - vb
-  name: Dispatcher
-  nameWithType: TcoAppDomain.Dispatcher
-  fullName: TcOpen.Inxton.TcoAppDomain.Dispatcher
-  type: Property
-  source:
-    remote:
-      path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: Dispatcher
-    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 58
-  assemblies:
-  - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton
-  summary: "\nGets dispatcher for this application.\n"
-  example: []
-  syntax:
-    content: public IDispatcher Dispatcher { get; }
-    parameters: []
-    return:
-      type: TcOpen.Inxton.Threading.IDispatcher
-    content.vb: Public ReadOnly Property Dispatcher As IDispatcher
-  overload: TcOpen.Inxton.TcoAppDomain.Dispatcher*
   modifiers.csharp:
   - public
   - get
@@ -269,11 +231,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Builder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-    startLine: 64
+    startLine: 57
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -622,22 +584,6 @@ references:
   name: TcOpen.Inxton.Abstractions.Logging
   nameWithType: TcOpen.Inxton.Abstractions.Logging
   fullName: TcOpen.Inxton.Abstractions.Logging
-- uid: TcOpen.Inxton.TcoAppDomain.Dispatcher*
-  commentId: Overload:TcOpen.Inxton.TcoAppDomain.Dispatcher
-  name: Dispatcher
-  nameWithType: TcoAppDomain.Dispatcher
-  fullName: TcOpen.Inxton.TcoAppDomain.Dispatcher
-- uid: TcOpen.Inxton.Threading.IDispatcher
-  commentId: T:TcOpen.Inxton.Threading.IDispatcher
-  parent: TcOpen.Inxton.Threading
-  name: IDispatcher
-  nameWithType: IDispatcher
-  fullName: TcOpen.Inxton.Threading.IDispatcher
-- uid: TcOpen.Inxton.Threading
-  commentId: N:TcOpen.Inxton.Threading
-  name: TcOpen.Inxton.Threading
-  nameWithType: TcOpen.Inxton.Threading
-  fullName: TcOpen.Inxton.Threading
 - uid: TcOpen.Inxton.TcoAppDomain.Builder*
   commentId: Overload:TcOpen.Inxton.TcoAppDomain.Builder
   name: Builder

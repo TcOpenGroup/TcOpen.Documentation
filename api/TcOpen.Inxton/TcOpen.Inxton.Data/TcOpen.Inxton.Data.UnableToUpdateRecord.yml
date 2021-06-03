@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/Exceptions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UnableToUpdateRecord
     path: ../TcOpen/src/TcoData/src/Data/src/Exceptions.cs
     startLine: 9
@@ -76,8 +76,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Data/src/Exceptions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/Exceptions.cs
     startLine: 11

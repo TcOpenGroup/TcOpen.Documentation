@@ -15,8 +15,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepositorySettings.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: InMemoryRepositorySettings
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepositorySettings.cs
     startLine: 4

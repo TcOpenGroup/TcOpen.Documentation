@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlcMainContext
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
     startLine: 150
@@ -81,8 +81,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Main
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
     startLine: 162
@@ -123,8 +123,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: fbProcessDataManger
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
     startLine: 168
@@ -154,8 +154,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: test
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
     startLine: 169
@@ -185,8 +185,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
     startLine: 171

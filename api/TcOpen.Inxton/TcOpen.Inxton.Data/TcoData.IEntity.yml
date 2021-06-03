@@ -23,8 +23,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IEntity
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 329
@@ -58,8 +58,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _EntityId
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 331
@@ -116,8 +116,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Created
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 337
@@ -155,8 +155,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Modified
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 343
@@ -194,8 +194,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AttributeName
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 349
@@ -227,8 +227,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 354
@@ -255,8 +255,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 355
@@ -281,8 +281,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 356
@@ -310,8 +310,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
     startLine: 357

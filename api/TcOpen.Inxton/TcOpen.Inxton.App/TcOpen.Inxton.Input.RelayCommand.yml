@@ -12,7 +12,6 @@ items:
   - TcOpen.Inxton.Input.RelayCommand.CanExecute(System.Object)
   - TcOpen.Inxton.Input.RelayCommand.CanExecuteChanged
   - TcOpen.Inxton.Input.RelayCommand.Execute(System.Object)
-  - TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   langs:
   - csharp
   - vb
@@ -23,11 +22,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RelayCommand
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 12
+    startLine: 9
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -37,7 +36,6 @@ items:
     content: 'public class RelayCommand : ICommand'
     content.vb: >-
       Public Class RelayCommand
-
           Implements ICommand
   inheritance:
   - System.Object
@@ -71,11 +69,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 14
+    startLine: 11
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -102,11 +100,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _canExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 16
+    startLine: 13
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -133,11 +131,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _logAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 18
+    startLine: 15
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -164,11 +162,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 20
+    startLine: 17
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -190,41 +188,6 @@ items:
   - Public
   fullName.vb: TcOpen.Inxton.Input.RelayCommand.RelayCommand(System.Action(Of System.Object), System.Func(Of System.Boolean), System.Action)
   name.vb: RelayCommand(Action(Of Object), Func(Of Boolean), Action)
-- uid: TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  commentId: M:TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  id: ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  parent: TcOpen.Inxton.Input.RelayCommand
-  langs:
-  - csharp
-  - vb
-  name: ValidateCanExecute(IValueTag, ValueChangedEventArgs)
-  nameWithType: RelayCommand.ValidateCanExecute(IValueTag, ValueChangedEventArgs)
-  fullName: TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute(Vortex.Connector.IValueTag, Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  type: Method
-  source:
-    remote:
-      path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: ValidateCanExecute
-    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 27
-  assemblies:
-  - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton.Input
-  syntax:
-    content: public void ValidateCanExecute(IValueTag sender, ValueChangedEventArgs args)
-    parameters:
-    - id: sender
-      type: Vortex.Connector.IValueTag
-    - id: args
-      type: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    content.vb: Public Sub ValidateCanExecute(sender As IValueTag, args As ValueChangedEventArgs)
-  overload: TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: TcOpen.Inxton.Input.RelayCommand.CanExecute(System.Object)
   commentId: M:TcOpen.Inxton.Input.RelayCommand.CanExecute(System.Object)
   id: CanExecute(System.Object)
@@ -239,11 +202,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 35
+    startLine: 24
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -276,11 +239,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 40
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -311,11 +274,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Input/RelayCommand.cs
-    startLine: 49
+    startLine: 38
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton.Input
@@ -819,37 +782,6 @@ references:
   name: RelayCommand
   nameWithType: RelayCommand.RelayCommand
   fullName: TcOpen.Inxton.Input.RelayCommand.RelayCommand
-- uid: TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute*
-  commentId: Overload:TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute
-  name: ValidateCanExecute
-  nameWithType: RelayCommand.ValidateCanExecute
-  fullName: TcOpen.Inxton.Input.RelayCommand.ValidateCanExecute
-- uid: Vortex.Connector.IValueTag
-  commentId: T:Vortex.Connector.IValueTag
-  parent: Vortex.Connector
-  isExternal: true
-  name: IValueTag
-  nameWithType: IValueTag
-  fullName: Vortex.Connector.IValueTag
-- uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-  commentId: T:Vortex.Connector.ValueTypes.ValueChangedEventArgs
-  parent: Vortex.Connector.ValueTypes
-  isExternal: true
-  name: ValueChangedEventArgs
-  nameWithType: ValueChangedEventArgs
-  fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-- uid: Vortex.Connector
-  commentId: N:Vortex.Connector
-  isExternal: true
-  name: Vortex.Connector
-  nameWithType: Vortex.Connector
-  fullName: Vortex.Connector
-- uid: Vortex.Connector.ValueTypes
-  commentId: N:Vortex.Connector.ValueTypes
-  isExternal: true
-  name: Vortex.Connector.ValueTypes
-  nameWithType: Vortex.Connector.ValueTypes
-  fullName: Vortex.Connector.ValueTypes
 - uid: TcOpen.Inxton.Input.RelayCommand.CanExecute*
   commentId: Overload:TcOpen.Inxton.Input.RelayCommand.CanExecute
   name: CanExecute

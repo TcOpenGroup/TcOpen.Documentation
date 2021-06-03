@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/RepositoryExtensions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Repository
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/RepositoryExtensions.cs
     startLine: 5
@@ -58,8 +58,8 @@ items:
   source:
     remote:
       path: src/TcoData/src/Repository/MongoDb/RepositoryExtensions.cs
-      branch: 162-Create_integration_testing_project
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Factory
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/RepositoryExtensions.cs
     startLine: 7
