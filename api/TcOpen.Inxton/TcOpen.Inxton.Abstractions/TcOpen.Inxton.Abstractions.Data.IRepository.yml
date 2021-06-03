@@ -1,0 +1,289 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository
+  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository
+  id: IRepository
+  parent: TcOpen.Inxton.Abstractions.Data
+  children:
+  - TcOpen.Inxton.Abstractions.Data.IRepository.Count
+  - TcOpen.Inxton.Abstractions.Data.IRepository.Create(System.String,System.Object)
+  - TcOpen.Inxton.Abstractions.Data.IRepository.Delete(System.String)
+  - TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount(System.String)
+  - TcOpen.Inxton.Abstractions.Data.IRepository.Read(System.String)
+  - TcOpen.Inxton.Abstractions.Data.IRepository.Update(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IRepository
+  nameWithType: IRepository
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IRepository
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: public interface IRepository
+    content.vb: Public Interface IRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Count
+  commentId: P:TcOpen.Inxton.Abstractions.Data.IRepository.Count
+  id: Count
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IRepository.Count
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Count
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Count
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 7
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property Count As Long
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.Count*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Create(System.String,System.Object)
+  commentId: M:TcOpen.Inxton.Abstractions.Data.IRepository.Create(System.String,System.Object)
+  id: Create(System.String,System.Object)
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Create(String, Object)
+  nameWithType: IRepository.Create(String, Object)
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Create(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Create
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: void Create(string identifier, object data)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Sub Create(identifier As String, data As Object)
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.Create*
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Delete(System.String)
+  commentId: M:TcOpen.Inxton.Abstractions.Data.IRepository.Delete(System.String)
+  id: Delete(System.String)
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Delete(String)
+  nameWithType: IRepository.Delete(String)
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Delete(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Delete
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: void Delete(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    content.vb: Sub Delete(identifier As String)
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.Delete*
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount(System.String)
+  commentId: M:TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount(System.String)
+  id: FilteredCount(System.String)
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: FilteredCount(String)
+  nameWithType: IRepository.FilteredCount(String)
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FilteredCount
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 10
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: long FilteredCount(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function FilteredCount(id As String) As Long
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount*
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Read(System.String)
+  commentId: M:TcOpen.Inxton.Abstractions.Data.IRepository.Read(System.String)
+  id: Read(System.String)
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Read(String)
+  nameWithType: IRepository.Read(String)
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Read(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Read
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: dynamic Read(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function Read(identifier As String) As Object
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.Read*
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Update(System.String,System.Object)
+  commentId: M:TcOpen.Inxton.Abstractions.Data.IRepository.Update(System.String,System.Object)
+  id: Update(System.String,System.Object)
+  parent: TcOpen.Inxton.Abstractions.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Update(String, Object)
+  nameWithType: IRepository.Update(String, Object)
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Update(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Update
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 12
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Abstractions.Data
+  syntax:
+    content: void Update(string identifier, object data)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Sub Update(identifier As String, data As Object)
+  overload: TcOpen.Inxton.Abstractions.Data.IRepository.Update*
+references:
+- uid: TcOpen.Inxton.Abstractions.Data
+  commentId: N:TcOpen.Inxton.Abstractions.Data
+  name: TcOpen.Inxton.Abstractions.Data
+  nameWithType: TcOpen.Inxton.Abstractions.Data
+  fullName: TcOpen.Inxton.Abstractions.Data
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Count*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.Count
+  name: Count
+  nameWithType: IRepository.Count
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Create*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.Create
+  name: Create
+  nameWithType: IRepository.Create
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Delete*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.Delete
+  name: Delete
+  nameWithType: IRepository.Delete
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Delete
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount
+  name: FilteredCount
+  nameWithType: IRepository.FilteredCount
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.FilteredCount
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Read*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.Read
+  name: Read
+  nameWithType: IRepository.Read
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Read
+- uid: TcOpen.Inxton.Abstractions.Data.IRepository.Update*
+  commentId: Overload:TcOpen.Inxton.Abstractions.Data.IRepository.Update
+  name: Update
+  nameWithType: IRepository.Update
+  fullName: TcOpen.Inxton.Abstractions.Data.IRepository.Update

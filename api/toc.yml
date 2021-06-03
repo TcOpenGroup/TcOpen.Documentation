@@ -8,3 +8,5 @@
   href: TcoPneumatics/toc.yml
 - name: TcoDrivesBeckhoff
   href: TcoDrivesBeckhoff/toc.yml
+- name: TcOpen.Inxton
+  href: TcOpen.Inxton/toc.yml  

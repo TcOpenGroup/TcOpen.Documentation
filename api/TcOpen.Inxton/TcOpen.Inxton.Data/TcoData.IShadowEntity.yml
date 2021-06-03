@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IShadowEntity
+  commentId: T:TcoData.IShadowEntity
+  id: IShadowEntity
+  parent: TcoData
+  children:
+  - TcoData.IShadowEntity._Created
+  - TcoData.IShadowEntity._EntityId
+  - TcoData.IShadowEntity._Modified
+  - TcoData.IShadowEntity.AttributeName
+  - TcoData.IShadowEntity.CopyPlainToShadow(TcoData.PlainEntity)
+  - TcoData.IShadowEntity.CreatePlainerType
+  - TcoData.IShadowEntity.FlushShadowToOnline
+  langs:
+  - csharp
+  - vb
+  name: IShadowEntity
+  nameWithType: IShadowEntity
+  fullName: TcoData.IShadowEntity
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IShadowEntity
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 365
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is shadow interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'public interface IShadowEntity : IVortexShadowObject'
+    content.vb: >-
+      Public Interface IShadowEntity
+          Inherits IVortexShadowObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.IShadowEntity._EntityId
+  commentId: P:TcoData.IShadowEntity._EntityId
+  id: _EntityId
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: _EntityId
+  nameWithType: IShadowEntity._EntityId
+  fullName: TcoData.IShadowEntity._EntityId
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _EntityId
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 367
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [Container(Layout.Stack)]
+
+      [Group(Layout.GroupBox)]
+
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IShadowString _EntityId { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Shadows.IShadowString
+    content.vb: >-
+      <Container(Layout.Stack)>
+
+      <Group(Layout.GroupBox)>
+
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _EntityId As IShadowString
+  overload: TcoData.IShadowEntity._EntityId*
+  attributes:
+  - type: ContainerAttribute
+    ctor: ContainerAttribute.#ctor(Layout)
+    arguments:
+    - type: Layout
+      value: 0
+  - type: GroupAttribute
+    ctor: GroupAttribute.#ctor(Layout)
+    arguments:
+    - type: Layout
+      value: 5
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowEntity._Created
+  commentId: P:TcoData.IShadowEntity._Created
+  id: _Created
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: _Created
+  nameWithType: IShadowEntity._Created
+  fullName: TcoData.IShadowEntity._Created
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Created
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 373
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IShadowDateTime _Created { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Shadows.IShadowDateTime
+    content.vb: >-
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _Created As IShadowDateTime
+  overload: TcoData.IShadowEntity._Created*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowEntity._Modified
+  commentId: P:TcoData.IShadowEntity._Modified
+  id: _Modified
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: _Modified
+  nameWithType: IShadowEntity._Modified
+  fullName: TcoData.IShadowEntity._Modified
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Modified
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 379
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IShadowDateTime _Modified { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Shadows.IShadowDateTime
+    content.vb: >-
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _Modified As IShadowDateTime
+  overload: TcoData.IShadowEntity._Modified*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowEntity.AttributeName
+  commentId: P:TcoData.IShadowEntity.AttributeName
+  id: AttributeName
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: IShadowEntity.AttributeName
+  fullName: TcoData.IShadowEntity.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 385
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string AttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AttributeName As String
+  overload: TcoData.IShadowEntity.AttributeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowEntity.CreatePlainerType
+  commentId: M:TcoData.IShadowEntity.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IShadowEntity.CreatePlainerType()
+  fullName: TcoData.IShadowEntity.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 390
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainEntity CreatePlainerType()
+    return:
+      type: TcoData.PlainEntity
+    content.vb: Function CreatePlainerType As PlainEntity
+  overload: TcoData.IShadowEntity.CreatePlainerType*
+- uid: TcoData.IShadowEntity.FlushShadowToOnline
+  commentId: M:TcoData.IShadowEntity.FlushShadowToOnline
+  id: FlushShadowToOnline
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: FlushShadowToOnline()
+  nameWithType: IShadowEntity.FlushShadowToOnline()
+  fullName: TcoData.IShadowEntity.FlushShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 391
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushShadowToOnline()
+    content.vb: Sub FlushShadowToOnline
+  overload: TcoData.IShadowEntity.FlushShadowToOnline*
+- uid: TcoData.IShadowEntity.CopyPlainToShadow(TcoData.PlainEntity)
+  commentId: M:TcoData.IShadowEntity.CopyPlainToShadow(TcoData.PlainEntity)
+  id: CopyPlainToShadow(TcoData.PlainEntity)
+  parent: TcoData.IShadowEntity
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(PlainEntity)
+  nameWithType: IShadowEntity.CopyPlainToShadow(PlainEntity)
+  fullName: TcoData.IShadowEntity.CopyPlainToShadow(TcoData.PlainEntity)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: 162-Create_integration_testing_project
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 392
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void CopyPlainToShadow(PlainEntity source)
+    parameters:
+    - id: source
+      type: TcoData.PlainEntity
+    content.vb: Sub CopyPlainToShadow(source As PlainEntity)
+  overload: TcoData.IShadowEntity.CopyPlainToShadow*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.IShadowEntity._EntityId*
+  commentId: Overload:TcoData.IShadowEntity._EntityId
+  name: _EntityId
+  nameWithType: IShadowEntity._EntityId
+  fullName: TcoData.IShadowEntity._EntityId
+- uid: Vortex.Connector.ValueTypes.Shadows.IShadowString
+  commentId: T:Vortex.Connector.ValueTypes.Shadows.IShadowString
+  parent: Vortex.Connector.ValueTypes.Shadows
+  isExternal: true
+  name: IShadowString
+  nameWithType: IShadowString
+  fullName: Vortex.Connector.ValueTypes.Shadows.IShadowString
+- uid: Vortex.Connector.ValueTypes.Shadows
+  commentId: N:Vortex.Connector.ValueTypes.Shadows
+  isExternal: true
+  name: Vortex.Connector.ValueTypes.Shadows
+  nameWithType: Vortex.Connector.ValueTypes.Shadows
+  fullName: Vortex.Connector.ValueTypes.Shadows
+- uid: TcoData.IShadowEntity._Created*
+  commentId: Overload:TcoData.IShadowEntity._Created
+  name: _Created
+  nameWithType: IShadowEntity._Created
+  fullName: TcoData.IShadowEntity._Created
+- uid: Vortex.Connector.ValueTypes.Shadows.IShadowDateTime
+  commentId: T:Vortex.Connector.ValueTypes.Shadows.IShadowDateTime
+  parent: Vortex.Connector.ValueTypes.Shadows
+  isExternal: true
+  name: IShadowDateTime
+  nameWithType: IShadowDateTime
+  fullName: Vortex.Connector.ValueTypes.Shadows.IShadowDateTime
+- uid: TcoData.IShadowEntity._Modified*
+  commentId: Overload:TcoData.IShadowEntity._Modified
+  name: _Modified
+  nameWithType: IShadowEntity._Modified
+  fullName: TcoData.IShadowEntity._Modified
+- uid: TcoData.IShadowEntity.AttributeName*
+  commentId: Overload:TcoData.IShadowEntity.AttributeName
+  name: AttributeName
+  nameWithType: IShadowEntity.AttributeName
+  fullName: TcoData.IShadowEntity.AttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.IShadowEntity.CreatePlainerType*
+  commentId: Overload:TcoData.IShadowEntity.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IShadowEntity.CreatePlainerType
+  fullName: TcoData.IShadowEntity.CreatePlainerType
+- uid: TcoData.PlainEntity
+  commentId: T:TcoData.PlainEntity
+  parent: TcoData
+  name: PlainEntity
+  nameWithType: PlainEntity
+  fullName: TcoData.PlainEntity
+- uid: TcoData.IShadowEntity.FlushShadowToOnline*
+  commentId: Overload:TcoData.IShadowEntity.FlushShadowToOnline
+  name: FlushShadowToOnline
+  nameWithType: IShadowEntity.FlushShadowToOnline
+  fullName: TcoData.IShadowEntity.FlushShadowToOnline
+- uid: TcoData.IShadowEntity.CopyPlainToShadow*
+  commentId: Overload:TcoData.IShadowEntity.CopyPlainToShadow
+  name: CopyPlainToShadow
+  nameWithType: IShadowEntity.CopyPlainToShadow
+  fullName: TcoData.IShadowEntity.CopyPlainToShadow
