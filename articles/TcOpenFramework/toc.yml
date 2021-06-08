@@ -1,4 +1,4 @@
-- name: TcOpen.Framework application
+- name: Application
   href: application.md
-- name: TcOpen.Framework messaging
+- name: Messaging
   href: messaging.md

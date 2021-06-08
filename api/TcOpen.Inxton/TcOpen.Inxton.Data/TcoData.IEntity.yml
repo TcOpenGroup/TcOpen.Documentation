@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IEntity
+  commentId: T:TcoData.IEntity
+  id: IEntity
+  parent: TcoData
+  children:
+  - TcoData.IEntity._Created
+  - TcoData.IEntity._EntityId
+  - TcoData.IEntity._Modified
+  - TcoData.IEntity.AttributeName
+  - TcoData.IEntity.CreatePlainerType
+  - TcoData.IEntity.FlushOnlineToPlain(TcoData.PlainEntity)
+  - TcoData.IEntity.FlushOnlineToShadow
+  - TcoData.IEntity.FlushPlainToOnline(TcoData.PlainEntity)
+  langs:
+  - csharp
+  - vb
+  name: IEntity
+  nameWithType: IEntity
+  fullName: TcoData.IEntity
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IEntity
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 329
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is onliner interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'public interface IEntity : IVortexOnlineObject'
+    content.vb: >-
+      Public Interface IEntity
+
+          Inherits IVortexOnlineObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.IEntity._EntityId
+  commentId: P:TcoData.IEntity._EntityId
+  id: _EntityId
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: _EntityId
+  nameWithType: IEntity._EntityId
+  fullName: TcoData.IEntity._EntityId
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _EntityId
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 331
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [Container(Layout.Stack)]
+
+      [Group(Layout.GroupBox)]
+
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IOnlineString _EntityId { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Online.IOnlineString
+    content.vb: >-
+      <Container(Layout.Stack)>
+
+      <Group(Layout.GroupBox)>
+
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _EntityId As IOnlineString
+  overload: TcoData.IEntity._EntityId*
+  attributes:
+  - type: ContainerAttribute
+    ctor: ContainerAttribute.#ctor(Layout)
+    arguments:
+    - type: Layout
+      value: 0
+  - type: GroupAttribute
+    ctor: GroupAttribute.#ctor(Layout)
+    arguments:
+    - type: Layout
+      value: 5
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IEntity._Created
+  commentId: P:TcoData.IEntity._Created
+  id: _Created
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: _Created
+  nameWithType: IEntity._Created
+  fullName: TcoData.IEntity._Created
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Created
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 337
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IOnlineDateTime _Created { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Online.IOnlineDateTime
+    content.vb: >-
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _Created As IOnlineDateTime
+  overload: TcoData.IEntity._Created*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IEntity._Modified
+  commentId: P:TcoData.IEntity._Modified
+  id: _Modified
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: _Modified
+  nameWithType: IEntity._Modified
+  fullName: TcoData.IEntity._Modified
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Modified
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 343
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      [RenderIgnore(new string[]{"Control", "ShadowControl"})]
+
+      IOnlineDateTime _Modified { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Online.IOnlineDateTime
+    content.vb: >-
+      <RenderIgnore(New String() {"Control", "ShadowControl"})>
+
+      ReadOnly Property _Modified As IOnlineDateTime
+  overload: TcoData.IEntity._Modified*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IEntity.AttributeName
+  commentId: P:TcoData.IEntity.AttributeName
+  id: AttributeName
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: IEntity.AttributeName
+  fullName: TcoData.IEntity.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 349
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string AttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AttributeName As String
+  overload: TcoData.IEntity.AttributeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IEntity.CreatePlainerType
+  commentId: M:TcoData.IEntity.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IEntity.CreatePlainerType()
+  fullName: TcoData.IEntity.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 354
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainEntity CreatePlainerType()
+    return:
+      type: TcoData.PlainEntity
+    content.vb: Function CreatePlainerType As PlainEntity
+  overload: TcoData.IEntity.CreatePlainerType*
+- uid: TcoData.IEntity.FlushOnlineToShadow
+  commentId: M:TcoData.IEntity.FlushOnlineToShadow
+  id: FlushOnlineToShadow
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToShadow()
+  nameWithType: IEntity.FlushOnlineToShadow()
+  fullName: TcoData.IEntity.FlushOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 355
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToShadow()
+    content.vb: Sub FlushOnlineToShadow
+  overload: TcoData.IEntity.FlushOnlineToShadow*
+- uid: TcoData.IEntity.FlushPlainToOnline(TcoData.PlainEntity)
+  commentId: M:TcoData.IEntity.FlushPlainToOnline(TcoData.PlainEntity)
+  id: FlushPlainToOnline(TcoData.PlainEntity)
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: FlushPlainToOnline(PlainEntity)
+  nameWithType: IEntity.FlushPlainToOnline(PlainEntity)
+  fullName: TcoData.IEntity.FlushPlainToOnline(TcoData.PlainEntity)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushPlainToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 356
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushPlainToOnline(PlainEntity source)
+    parameters:
+    - id: source
+      type: TcoData.PlainEntity
+    content.vb: Sub FlushPlainToOnline(source As PlainEntity)
+  overload: TcoData.IEntity.FlushPlainToOnline*
+- uid: TcoData.IEntity.FlushOnlineToPlain(TcoData.PlainEntity)
+  commentId: M:TcoData.IEntity.FlushOnlineToPlain(TcoData.PlainEntity)
+  id: FlushOnlineToPlain(TcoData.PlainEntity)
+  parent: TcoData.IEntity
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToPlain(PlainEntity)
+  nameWithType: IEntity.FlushOnlineToPlain(PlainEntity)
+  fullName: TcoData.IEntity.FlushOnlineToPlain(TcoData.PlainEntity)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    startLine: 357
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToPlain(PlainEntity source)
+    parameters:
+    - id: source
+      type: TcoData.PlainEntity
+    content.vb: Sub FlushOnlineToPlain(source As PlainEntity)
+  overload: TcoData.IEntity.FlushOnlineToPlain*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.IEntity._EntityId*
+  commentId: Overload:TcoData.IEntity._EntityId
+  name: _EntityId
+  nameWithType: IEntity._EntityId
+  fullName: TcoData.IEntity._EntityId
+- uid: Vortex.Connector.ValueTypes.Online.IOnlineString
+  commentId: T:Vortex.Connector.ValueTypes.Online.IOnlineString
+  parent: Vortex.Connector.ValueTypes.Online
+  isExternal: true
+  name: IOnlineString
+  nameWithType: IOnlineString
+  fullName: Vortex.Connector.ValueTypes.Online.IOnlineString
+- uid: Vortex.Connector.ValueTypes.Online
+  commentId: N:Vortex.Connector.ValueTypes.Online
+  isExternal: true
+  name: Vortex.Connector.ValueTypes.Online
+  nameWithType: Vortex.Connector.ValueTypes.Online
+  fullName: Vortex.Connector.ValueTypes.Online
+- uid: TcoData.IEntity._Created*
+  commentId: Overload:TcoData.IEntity._Created
+  name: _Created
+  nameWithType: IEntity._Created
+  fullName: TcoData.IEntity._Created
+- uid: Vortex.Connector.ValueTypes.Online.IOnlineDateTime
+  commentId: T:Vortex.Connector.ValueTypes.Online.IOnlineDateTime
+  parent: Vortex.Connector.ValueTypes.Online
+  isExternal: true
+  name: IOnlineDateTime
+  nameWithType: IOnlineDateTime
+  fullName: Vortex.Connector.ValueTypes.Online.IOnlineDateTime
+- uid: TcoData.IEntity._Modified*
+  commentId: Overload:TcoData.IEntity._Modified
+  name: _Modified
+  nameWithType: IEntity._Modified
+  fullName: TcoData.IEntity._Modified
+- uid: TcoData.IEntity.AttributeName*
+  commentId: Overload:TcoData.IEntity.AttributeName
+  name: AttributeName
+  nameWithType: IEntity.AttributeName
+  fullName: TcoData.IEntity.AttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.IEntity.CreatePlainerType*
+  commentId: Overload:TcoData.IEntity.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IEntity.CreatePlainerType
+  fullName: TcoData.IEntity.CreatePlainerType
+- uid: TcoData.PlainEntity
+  commentId: T:TcoData.PlainEntity
+  parent: TcoData
+  name: PlainEntity
+  nameWithType: PlainEntity
+  fullName: TcoData.PlainEntity
+- uid: TcoData.IEntity.FlushOnlineToShadow*
+  commentId: Overload:TcoData.IEntity.FlushOnlineToShadow
+  name: FlushOnlineToShadow
+  nameWithType: IEntity.FlushOnlineToShadow
+  fullName: TcoData.IEntity.FlushOnlineToShadow
+- uid: TcoData.IEntity.FlushPlainToOnline*
+  commentId: Overload:TcoData.IEntity.FlushPlainToOnline
+  name: FlushPlainToOnline
+  nameWithType: IEntity.FlushPlainToOnline
+  fullName: TcoData.IEntity.FlushPlainToOnline
+- uid: TcoData.IEntity.FlushOnlineToPlain*
+  commentId: Overload:TcoData.IEntity.FlushOnlineToPlain
+  name: FlushOnlineToPlain
+  nameWithType: IEntity.FlushOnlineToPlain
+  fullName: TcoData.IEntity.FlushOnlineToPlain

@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: TcOpen.Inxton.Logging
+  name: TcOpen.Inxton.Logging
+  items:
+  - uid: TcOpen.Inxton.Logging.DummyLoggerAdapter
+    name: DummyLoggerAdapter
+  - uid: TcOpen.Inxton.Logging.SerilogAdapter
+    name: SerilogAdapter

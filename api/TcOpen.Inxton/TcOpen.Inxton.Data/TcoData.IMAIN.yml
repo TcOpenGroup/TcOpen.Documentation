@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IMAIN
+  commentId: T:TcoData.IMAIN
+  id: IMAIN
+  parent: TcoData
+  children:
+  - TcoData.IMAIN.AttributeName
+  - TcoData.IMAIN.CreatePlainerType
+  - TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  - TcoData.IMAIN.FlushOnlineToShadow
+  - TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  langs:
+  - csharp
+  - vb
+  name: IMAIN
+  nameWithType: IMAIN
+  fullName: TcoData.IMAIN
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IMAIN
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 238
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is onliner interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'interface IMAIN : IVortexOnlineObject'
+    content.vb: >-
+      Interface IMAIN
+
+          Inherits IVortexOnlineObject
+  modifiers.csharp:
+  - interface
+  modifiers.vb:
+  - Interface
+- uid: TcoData.IMAIN.AttributeName
+  commentId: P:TcoData.IMAIN.AttributeName
+  id: AttributeName
+  parent: TcoData.IMAIN
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: IMAIN.AttributeName
+  fullName: TcoData.IMAIN.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 240
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string AttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AttributeName As String
+  overload: TcoData.IMAIN.AttributeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IMAIN.CreatePlainerType
+  commentId: M:TcoData.IMAIN.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IMAIN
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IMAIN.CreatePlainerType()
+  fullName: TcoData.IMAIN.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 245
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainMAIN CreatePlainerType()
+    return:
+      type: TcoData.PlainMAIN
+    content.vb: Function CreatePlainerType As PlainMAIN
+  overload: TcoData.IMAIN.CreatePlainerType*
+- uid: TcoData.IMAIN.FlushOnlineToShadow
+  commentId: M:TcoData.IMAIN.FlushOnlineToShadow
+  id: FlushOnlineToShadow
+  parent: TcoData.IMAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToShadow()
+  nameWithType: IMAIN.FlushOnlineToShadow()
+  fullName: TcoData.IMAIN.FlushOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 246
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToShadow()
+    content.vb: Sub FlushOnlineToShadow
+  overload: TcoData.IMAIN.FlushOnlineToShadow*
+- uid: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  commentId: M:TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  id: FlushPlainToOnline(TcoData.PlainMAIN)
+  parent: TcoData.IMAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushPlainToOnline(PlainMAIN)
+  nameWithType: IMAIN.FlushPlainToOnline(PlainMAIN)
+  fullName: TcoData.IMAIN.FlushPlainToOnline(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushPlainToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 247
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushPlainToOnline(PlainMAIN source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMAIN
+    content.vb: Sub FlushPlainToOnline(source As PlainMAIN)
+  overload: TcoData.IMAIN.FlushPlainToOnline*
+- uid: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  commentId: M:TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  id: FlushOnlineToPlain(TcoData.PlainMAIN)
+  parent: TcoData.IMAIN
+  langs:
+  - csharp
+  - vb
+  name: FlushOnlineToPlain(PlainMAIN)
+  nameWithType: IMAIN.FlushOnlineToPlain(PlainMAIN)
+  fullName: TcoData.IMAIN.FlushOnlineToPlain(TcoData.PlainMAIN)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushOnlineToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+    startLine: 248
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushOnlineToPlain(PlainMAIN source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMAIN
+    content.vb: Sub FlushOnlineToPlain(source As PlainMAIN)
+  overload: TcoData.IMAIN.FlushOnlineToPlain*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.IMAIN.AttributeName*
+  commentId: Overload:TcoData.IMAIN.AttributeName
+  name: AttributeName
+  nameWithType: IMAIN.AttributeName
+  fullName: TcoData.IMAIN.AttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.IMAIN.CreatePlainerType*
+  commentId: Overload:TcoData.IMAIN.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IMAIN.CreatePlainerType
+  fullName: TcoData.IMAIN.CreatePlainerType
+- uid: TcoData.PlainMAIN
+  commentId: T:TcoData.PlainMAIN
+  parent: TcoData
+  name: PlainMAIN
+  nameWithType: PlainMAIN
+  fullName: TcoData.PlainMAIN
+- uid: TcoData.IMAIN.FlushOnlineToShadow*
+  commentId: Overload:TcoData.IMAIN.FlushOnlineToShadow
+  name: FlushOnlineToShadow
+  nameWithType: IMAIN.FlushOnlineToShadow
+  fullName: TcoData.IMAIN.FlushOnlineToShadow
+- uid: TcoData.IMAIN.FlushPlainToOnline*
+  commentId: Overload:TcoData.IMAIN.FlushPlainToOnline
+  name: FlushPlainToOnline
+  nameWithType: IMAIN.FlushPlainToOnline
+  fullName: TcoData.IMAIN.FlushPlainToOnline
+- uid: TcoData.IMAIN.FlushOnlineToPlain*
+  commentId: Overload:TcoData.IMAIN.FlushOnlineToPlain
+  name: FlushOnlineToPlain
+  nameWithType: IMAIN.FlushOnlineToPlain
+  fullName: TcoData.IMAIN.FlushOnlineToPlain

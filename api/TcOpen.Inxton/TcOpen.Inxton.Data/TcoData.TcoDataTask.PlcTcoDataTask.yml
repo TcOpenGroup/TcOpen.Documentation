@@ -1,0 +1,1048 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.TcoDataTask.PlcTcoDataTask
+  commentId: T:TcoData.TcoDataTask.PlcTcoDataTask
+  id: TcoDataTask.PlcTcoDataTask
+  parent: TcoData
+  children:
+  - TcoData.TcoDataTask.PlcTcoDataTask.#ctor
+  - TcoData.TcoDataTask.PlcTcoDataTask._identifier
+  langs:
+  - csharp
+  - vb
+  name: TcoDataTask.PlcTcoDataTask
+  nameWithType: TcoDataTask.PlcTcoDataTask
+  fullName: TcoData.TcoDataTask.PlcTcoDataTask
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PlcTcoDataTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 131
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nData task is a remote task  <see cref=\"!:RemoteTask\"></see> with a paramater. 	\n"
+  remarks: Inxton is required for this feature to work
+  example: []
+  syntax:
+    content: 'protected abstract class PlcTcoDataTask : TcoRemoteTask.PlcTcoRemoteTask'
+    content.vb: >-
+      Protected MustInherit Class PlcTcoDataTask
+
+          Inherits TcoRemoteTask.PlcTcoRemoteTask
+  inheritance:
+  - System.Object
+  - TcoCore.TcoObject.PlcTcoObject
+  - TcoCore.TcoTask.PlcTcoTask
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  inheritedMembers:
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask._isInitialized
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask._hasException
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask._startSignature
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask._doneSignarure
+  - TcoCore.TcoRemoteTask.PlcTcoRemoteTask._exceptionMessage
+  - TcoCore.TcoTask.PlcTcoTask.Abort
+  - TcoCore.TcoTask.PlcTcoTask.AutoRestore
+  - TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+  - TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+  - TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+  - TcoCore.TcoTask.PlcTcoTask.Execute
+  - TcoCore.TcoTask.PlcTcoTask.Invoke
+  - TcoCore.TcoTask.PlcTcoTask.OnAbort
+  - TcoCore.TcoTask.PlcTcoTask.OnDone
+  - TcoCore.TcoTask.PlcTcoTask.OnError
+  - TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+  - TcoCore.TcoTask.PlcTcoTask.WhileError
+  - TcoCore.TcoTask.PlcTcoTask.AutoRestorable
+  - TcoCore.TcoTask.PlcTcoTask.Busy
+  - TcoCore.TcoTask.PlcTcoTask.Context
+  - TcoCore.TcoTask.PlcTcoTask.Done
+  - TcoCore.TcoTask.PlcTcoTask.ElapsedTime
+  - TcoCore.TcoTask.PlcTcoTask.Enabled
+  - TcoCore.TcoTask.PlcTcoTask.Error
+  - TcoCore.TcoTask.PlcTcoTask.Identity
+  - TcoCore.TcoTask.PlcTcoTask.Ready
+  - TcoCore.TcoTask.PlcTcoTask.State
+  - TcoCore.TcoTask.PlcTcoTask._taskState
+  - TcoCore.TcoTask.PlcTcoTask._restoreRequest
+  - TcoCore.TcoTask.PlcTcoTask._invokeRequest
+  - TcoCore.TcoTask.PlcTcoTask._abortRequest
+  - TcoCore.TcoTask.PlcTcoTask._enabled
+  - TcoCore.TcoTask.PlcTcoTask._isServiceable
+  - TcoCore.TcoTask.PlcTcoTask._elapsedTime
+  - TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  - TcoCore.TcoObject.PlcTcoObject.Messenger
+  - TcoCore.TcoObject.PlcTcoObject._Identity
+  - TcoCore.TcoObject.PlcTcoObject._messenger
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - protected
+  - abstract
+  - class
+  modifiers.vb:
+  - Protected
+  - MustInherit
+  - Class
+- uid: TcoData.TcoDataTask.PlcTcoDataTask._identifier
+  commentId: F:TcoData.TcoDataTask.PlcTcoDataTask._identifier
+  id: _identifier
+  parent: TcoData.TcoDataTask.PlcTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: _identifier
+  nameWithType: TcoDataTask.PlcTcoDataTask._identifier
+  fullName: TcoData.TcoDataTask.PlcTcoDataTask._identifier
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _identifier
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 134
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object _identifier
+    return:
+      type: System.Object
+    content.vb: Public _identifier As Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTask.PlcTcoDataTask.#ctor
+  commentId: M:TcoData.TcoDataTask.PlcTcoDataTask.#ctor
+  id: '#ctor'
+  parent: TcoData.TcoDataTask.PlcTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: PlcTcoDataTask()
+  nameWithType: TcoDataTask.PlcTcoDataTask.PlcTcoDataTask()
+  fullName: TcoData.TcoDataTask.PlcTcoDataTask.PlcTcoDataTask()
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 136
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: Prevents creating instance of this class via public constructor
+  example: []
+  syntax:
+    content: protected PlcTcoDataTask()
+    content.vb: Protected Sub New
+  overload: TcoData.TcoDataTask.PlcTcoDataTask.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TcoCore.TcoObject.PlcTcoObject
+  commentId: T:TcoCore.TcoObject.PlcTcoObject
+  parent: TcoCore
+  name: TcoObject.PlcTcoObject
+  nameWithType: TcoObject.PlcTcoObject
+  fullName: TcoCore.TcoObject.PlcTcoObject
+- uid: TcoCore.TcoTask.PlcTcoTask
+  commentId: T:TcoCore.TcoTask.PlcTcoTask
+  parent: TcoCore
+  name: TcoTask.PlcTcoTask
+  nameWithType: TcoTask.PlcTcoTask
+  fullName: TcoCore.TcoTask.PlcTcoTask
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  commentId: T:TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  parent: TcoCore
+  name: TcoRemoteTask.PlcTcoRemoteTask
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+  commentId: M:TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: Restore()
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask.Restore()
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore()
+  spec.csharp:
+  - uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+    name: Restore
+    nameWithType: TcoRemoteTask.PlcTcoRemoteTask.Restore
+    fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+    name: Restore
+    nameWithType: TcoRemoteTask.PlcTcoRemoteTask.Restore
+    fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask.Restore
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._isInitialized
+  commentId: F:TcoCore.TcoRemoteTask.PlcTcoRemoteTask._isInitialized
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: _isInitialized
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask._isInitialized
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._isInitialized
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._hasException
+  commentId: F:TcoCore.TcoRemoteTask.PlcTcoRemoteTask._hasException
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: _hasException
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask._hasException
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._hasException
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._startSignature
+  commentId: F:TcoCore.TcoRemoteTask.PlcTcoRemoteTask._startSignature
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: _startSignature
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask._startSignature
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._startSignature
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._doneSignarure
+  commentId: F:TcoCore.TcoRemoteTask.PlcTcoRemoteTask._doneSignarure
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: _doneSignarure
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask._doneSignarure
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._doneSignarure
+- uid: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._exceptionMessage
+  commentId: F:TcoCore.TcoRemoteTask.PlcTcoRemoteTask._exceptionMessage
+  parent: TcoCore.TcoRemoteTask.PlcTcoRemoteTask
+  name: _exceptionMessage
+  nameWithType: TcoRemoteTask.PlcTcoRemoteTask._exceptionMessage
+  fullName: TcoCore.TcoRemoteTask.PlcTcoRemoteTask._exceptionMessage
+- uid: TcoCore.TcoTask.PlcTcoTask.Abort
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.Abort
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Abort()
+  nameWithType: TcoTask.PlcTcoTask.Abort()
+  fullName: TcoCore.TcoTask.PlcTcoTask.Abort()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Abort
+    name: Abort
+    nameWithType: TcoTask.PlcTcoTask.Abort
+    fullName: TcoCore.TcoTask.PlcTcoTask.Abort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Abort
+    name: Abort
+    nameWithType: TcoTask.PlcTcoTask.Abort
+    fullName: TcoCore.TcoTask.PlcTcoTask.Abort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.AutoRestore
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.AutoRestore
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: AutoRestore()
+  nameWithType: TcoTask.PlcTcoTask.AutoRestore()
+  fullName: TcoCore.TcoTask.PlcTcoTask.AutoRestore()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.AutoRestore
+    name: AutoRestore
+    nameWithType: TcoTask.PlcTcoTask.AutoRestore
+    fullName: TcoCore.TcoTask.PlcTcoTask.AutoRestore
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.AutoRestore
+    name: AutoRestore
+    nameWithType: TcoTask.PlcTcoTask.AutoRestore
+    fullName: TcoCore.TcoTask.PlcTcoTask.AutoRestore
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: CheckIfAutoRestoreEnabledByParent()
+  nameWithType: TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent()
+  fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+    name: CheckIfAutoRestoreEnabledByParent
+    nameWithType: TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+    fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+    name: CheckIfAutoRestoreEnabledByParent
+    nameWithType: TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+    fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfAutoRestoreEnabledByParent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: CheckIfCalledCyclically()
+  nameWithType: TcoTask.PlcTcoTask.CheckIfCalledCyclically()
+  fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+    name: CheckIfCalledCyclically
+    nameWithType: TcoTask.PlcTcoTask.CheckIfCalledCyclically
+    fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+    name: CheckIfCalledCyclically
+    nameWithType: TcoTask.PlcTcoTask.CheckIfCalledCyclically
+    fullName: TcoCore.TcoTask.PlcTcoTask.CheckIfCalledCyclically
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: DoneWhen(Object)
+  nameWithType: TcoTask.PlcTcoTask.DoneWhen(Object)
+  fullName: TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+  nameWithType.vb: TcoTask.PlcTcoTask.DoneWhen()
+  fullName.vb: TcoCore.TcoTask.PlcTcoTask.DoneWhen()
+  name.vb: DoneWhen()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+    name: DoneWhen
+    nameWithType: TcoTask.PlcTcoTask.DoneWhen
+    fullName: TcoCore.TcoTask.PlcTcoTask.DoneWhen
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.DoneWhen(System.Object)
+    name: DoneWhen
+    nameWithType: TcoTask.PlcTcoTask.DoneWhen
+    fullName: TcoCore.TcoTask.PlcTcoTask.DoneWhen
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.Execute
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.Execute
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Execute()
+  nameWithType: TcoTask.PlcTcoTask.Execute()
+  fullName: TcoCore.TcoTask.PlcTcoTask.Execute()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Execute
+    name: Execute
+    nameWithType: TcoTask.PlcTcoTask.Execute
+    fullName: TcoCore.TcoTask.PlcTcoTask.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Execute
+    name: Execute
+    nameWithType: TcoTask.PlcTcoTask.Execute
+    fullName: TcoCore.TcoTask.PlcTcoTask.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.Invoke
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.Invoke
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Invoke()
+  nameWithType: TcoTask.PlcTcoTask.Invoke()
+  fullName: TcoCore.TcoTask.PlcTcoTask.Invoke()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Invoke
+    name: Invoke
+    nameWithType: TcoTask.PlcTcoTask.Invoke
+    fullName: TcoCore.TcoTask.PlcTcoTask.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.Invoke
+    name: Invoke
+    nameWithType: TcoTask.PlcTcoTask.Invoke
+    fullName: TcoCore.TcoTask.PlcTcoTask.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.OnAbort
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.OnAbort
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: OnAbort()
+  nameWithType: TcoTask.PlcTcoTask.OnAbort()
+  fullName: TcoCore.TcoTask.PlcTcoTask.OnAbort()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnAbort
+    name: OnAbort
+    nameWithType: TcoTask.PlcTcoTask.OnAbort
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnAbort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnAbort
+    name: OnAbort
+    nameWithType: TcoTask.PlcTcoTask.OnAbort
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnAbort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.OnDone
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.OnDone
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: OnDone()
+  nameWithType: TcoTask.PlcTcoTask.OnDone()
+  fullName: TcoCore.TcoTask.PlcTcoTask.OnDone()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnDone
+    name: OnDone
+    nameWithType: TcoTask.PlcTcoTask.OnDone
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnDone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnDone
+    name: OnDone
+    nameWithType: TcoTask.PlcTcoTask.OnDone
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnDone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.OnError
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.OnError
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: OnError()
+  nameWithType: TcoTask.PlcTcoTask.OnError()
+  fullName: TcoCore.TcoTask.PlcTcoTask.OnError()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnError
+    name: OnError
+    nameWithType: TcoTask.PlcTcoTask.OnError
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.OnError
+    name: OnError
+    nameWithType: TcoTask.PlcTcoTask.OnError
+    fullName: TcoCore.TcoTask.PlcTcoTask.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: ThrowWhen(Object)
+  nameWithType: TcoTask.PlcTcoTask.ThrowWhen(Object)
+  fullName: TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+  nameWithType.vb: TcoTask.PlcTcoTask.ThrowWhen()
+  fullName.vb: TcoCore.TcoTask.PlcTcoTask.ThrowWhen()
+  name.vb: ThrowWhen()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+    name: ThrowWhen
+    nameWithType: TcoTask.PlcTcoTask.ThrowWhen
+    fullName: TcoCore.TcoTask.PlcTcoTask.ThrowWhen
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.ThrowWhen(System.Object)
+    name: ThrowWhen
+    nameWithType: TcoTask.PlcTcoTask.ThrowWhen
+    fullName: TcoCore.TcoTask.PlcTcoTask.ThrowWhen
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.WhileError
+  commentId: M:TcoCore.TcoTask.PlcTcoTask.WhileError
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: WhileError()
+  nameWithType: TcoTask.PlcTcoTask.WhileError()
+  fullName: TcoCore.TcoTask.PlcTcoTask.WhileError()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.PlcTcoTask.WhileError
+    name: WhileError
+    nameWithType: TcoTask.PlcTcoTask.WhileError
+    fullName: TcoCore.TcoTask.PlcTcoTask.WhileError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.PlcTcoTask.WhileError
+    name: WhileError
+    nameWithType: TcoTask.PlcTcoTask.WhileError
+    fullName: TcoCore.TcoTask.PlcTcoTask.WhileError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.PlcTcoTask.AutoRestorable
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.AutoRestorable
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: AutoRestorable
+  nameWithType: TcoTask.PlcTcoTask.AutoRestorable
+  fullName: TcoCore.TcoTask.PlcTcoTask.AutoRestorable
+- uid: TcoCore.TcoTask.PlcTcoTask.Busy
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Busy
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Busy
+  nameWithType: TcoTask.PlcTcoTask.Busy
+  fullName: TcoCore.TcoTask.PlcTcoTask.Busy
+- uid: TcoCore.TcoTask.PlcTcoTask.Context
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Context
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Context
+  nameWithType: TcoTask.PlcTcoTask.Context
+  fullName: TcoCore.TcoTask.PlcTcoTask.Context
+- uid: TcoCore.TcoTask.PlcTcoTask.Done
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Done
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Done
+  nameWithType: TcoTask.PlcTcoTask.Done
+  fullName: TcoCore.TcoTask.PlcTcoTask.Done
+- uid: TcoCore.TcoTask.PlcTcoTask.ElapsedTime
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.ElapsedTime
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: ElapsedTime
+  nameWithType: TcoTask.PlcTcoTask.ElapsedTime
+  fullName: TcoCore.TcoTask.PlcTcoTask.ElapsedTime
+- uid: TcoCore.TcoTask.PlcTcoTask.Enabled
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Enabled
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Enabled
+  nameWithType: TcoTask.PlcTcoTask.Enabled
+  fullName: TcoCore.TcoTask.PlcTcoTask.Enabled
+- uid: TcoCore.TcoTask.PlcTcoTask.Error
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Error
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Error
+  nameWithType: TcoTask.PlcTcoTask.Error
+  fullName: TcoCore.TcoTask.PlcTcoTask.Error
+- uid: TcoCore.TcoTask.PlcTcoTask.Identity
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Identity
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Identity
+  nameWithType: TcoTask.PlcTcoTask.Identity
+  fullName: TcoCore.TcoTask.PlcTcoTask.Identity
+- uid: TcoCore.TcoTask.PlcTcoTask.Ready
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.Ready
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: Ready
+  nameWithType: TcoTask.PlcTcoTask.Ready
+  fullName: TcoCore.TcoTask.PlcTcoTask.Ready
+- uid: TcoCore.TcoTask.PlcTcoTask.State
+  commentId: P:TcoCore.TcoTask.PlcTcoTask.State
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: State
+  nameWithType: TcoTask.PlcTcoTask.State
+  fullName: TcoCore.TcoTask.PlcTcoTask.State
+- uid: TcoCore.TcoTask.PlcTcoTask._taskState
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._taskState
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _taskState
+  nameWithType: TcoTask.PlcTcoTask._taskState
+  fullName: TcoCore.TcoTask.PlcTcoTask._taskState
+- uid: TcoCore.TcoTask.PlcTcoTask._restoreRequest
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._restoreRequest
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _restoreRequest
+  nameWithType: TcoTask.PlcTcoTask._restoreRequest
+  fullName: TcoCore.TcoTask.PlcTcoTask._restoreRequest
+- uid: TcoCore.TcoTask.PlcTcoTask._invokeRequest
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._invokeRequest
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _invokeRequest
+  nameWithType: TcoTask.PlcTcoTask._invokeRequest
+  fullName: TcoCore.TcoTask.PlcTcoTask._invokeRequest
+- uid: TcoCore.TcoTask.PlcTcoTask._abortRequest
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._abortRequest
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _abortRequest
+  nameWithType: TcoTask.PlcTcoTask._abortRequest
+  fullName: TcoCore.TcoTask.PlcTcoTask._abortRequest
+- uid: TcoCore.TcoTask.PlcTcoTask._enabled
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._enabled
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _enabled
+  nameWithType: TcoTask.PlcTcoTask._enabled
+  fullName: TcoCore.TcoTask.PlcTcoTask._enabled
+- uid: TcoCore.TcoTask.PlcTcoTask._isServiceable
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._isServiceable
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _isServiceable
+  nameWithType: TcoTask.PlcTcoTask._isServiceable
+  fullName: TcoCore.TcoTask.PlcTcoTask._isServiceable
+- uid: TcoCore.TcoTask.PlcTcoTask._elapsedTime
+  commentId: F:TcoCore.TcoTask.PlcTcoTask._elapsedTime
+  parent: TcoCore.TcoTask.PlcTcoTask
+  name: _elapsedTime
+  nameWithType: TcoTask.PlcTcoTask._elapsedTime
+  fullName: TcoCore.TcoTask.PlcTcoTask._elapsedTime
+- uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  commentId: M:TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: EqualsTo(Object)
+  nameWithType: TcoObject.PlcTcoObject.EqualsTo(Object)
+  fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  nameWithType.vb: TcoObject.PlcTcoObject.EqualsTo()
+  fullName.vb: TcoCore.TcoObject.PlcTcoObject.EqualsTo()
+  name.vb: EqualsTo()
+  spec.csharp:
+  - uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+    name: EqualsTo
+    nameWithType: TcoObject.PlcTcoObject.EqualsTo
+    fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+    name: EqualsTo
+    nameWithType: TcoObject.PlcTcoObject.EqualsTo
+    fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoObject.PlcTcoObject.Messenger
+  commentId: P:TcoCore.TcoObject.PlcTcoObject.Messenger
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: Messenger
+  nameWithType: TcoObject.PlcTcoObject.Messenger
+  fullName: TcoCore.TcoObject.PlcTcoObject.Messenger
+- uid: TcoCore.TcoObject.PlcTcoObject._Identity
+  commentId: F:TcoCore.TcoObject.PlcTcoObject._Identity
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: _Identity
+  nameWithType: TcoObject.PlcTcoObject._Identity
+  fullName: TcoCore.TcoObject.PlcTcoObject._Identity
+- uid: TcoCore.TcoObject.PlcTcoObject._messenger
+  commentId: F:TcoCore.TcoObject.PlcTcoObject._messenger
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: _messenger
+  nameWithType: TcoObject.PlcTcoObject._messenger
+  fullName: TcoCore.TcoObject.PlcTcoObject._messenger
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.TcoDataTask.PlcTcoDataTask.#ctor*
+  commentId: Overload:TcoData.TcoDataTask.PlcTcoDataTask.#ctor
+  name: PlcTcoDataTask
+  nameWithType: TcoDataTask.PlcTcoDataTask.PlcTcoDataTask
+  fullName: TcoData.TcoDataTask.PlcTcoDataTask.PlcTcoDataTask

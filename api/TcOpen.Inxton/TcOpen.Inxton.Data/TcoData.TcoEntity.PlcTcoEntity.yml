@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.TcoEntity.PlcTcoEntity
+  commentId: T:TcoData.TcoEntity.PlcTcoEntity
+  id: TcoEntity.PlcTcoEntity
+  parent: TcoData
+  children:
+  - TcoData.TcoEntity.PlcTcoEntity.#ctor
+  - TcoData.TcoEntity.PlcTcoEntity._Created
+  - TcoData.TcoEntity.PlcTcoEntity._EntityId
+  - TcoData.TcoEntity.PlcTcoEntity._Modified
+  langs:
+  - csharp
+  - vb
+  name: TcoEntity.PlcTcoEntity
+  nameWithType: TcoEntity.PlcTcoEntity
+  fullName: TcoData.TcoEntity.PlcTcoEntity
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: PlcTcoEntity
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+    startLine: 175
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: 'protected abstract class PlcTcoEntity : TcoObject.PlcTcoObject'
+    content.vb: >-
+      Protected MustInherit Class PlcTcoEntity
+
+          Inherits TcoObject.PlcTcoObject
+  inheritance:
+  - System.Object
+  - TcoCore.TcoObject.PlcTcoObject
+  inheritedMembers:
+  - TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  - TcoCore.TcoObject.PlcTcoObject.Context
+  - TcoCore.TcoObject.PlcTcoObject.Identity
+  - TcoCore.TcoObject.PlcTcoObject.Messenger
+  - TcoCore.TcoObject.PlcTcoObject._Identity
+  - TcoCore.TcoObject.PlcTcoObject._messenger
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - protected
+  - abstract
+  - class
+  modifiers.vb:
+  - Protected
+  - MustInherit
+  - Class
+- uid: TcoData.TcoEntity.PlcTcoEntity._EntityId
+  commentId: F:TcoData.TcoEntity.PlcTcoEntity._EntityId
+  id: _EntityId
+  parent: TcoData.TcoEntity.PlcTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _EntityId
+  nameWithType: TcoEntity.PlcTcoEntity._EntityId
+  fullName: TcoData.TcoEntity.PlcTcoEntity._EntityId
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _EntityId
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+    startLine: 178
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object _EntityId
+    return:
+      type: System.Object
+    content.vb: Public _EntityId As Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoEntity.PlcTcoEntity._Created
+  commentId: F:TcoData.TcoEntity.PlcTcoEntity._Created
+  id: _Created
+  parent: TcoData.TcoEntity.PlcTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _Created
+  nameWithType: TcoEntity.PlcTcoEntity._Created
+  fullName: TcoData.TcoEntity.PlcTcoEntity._Created
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Created
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+    startLine: 179
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object _Created
+    return:
+      type: System.Object
+    content.vb: Public _Created As Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoEntity.PlcTcoEntity._Modified
+  commentId: F:TcoData.TcoEntity.PlcTcoEntity._Modified
+  id: _Modified
+  parent: TcoData.TcoEntity.PlcTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _Modified
+  nameWithType: TcoEntity.PlcTcoEntity._Modified
+  fullName: TcoData.TcoEntity.PlcTcoEntity._Modified
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _Modified
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+    startLine: 180
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object _Modified
+    return:
+      type: System.Object
+    content.vb: Public _Modified As Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoEntity.PlcTcoEntity.#ctor
+  commentId: M:TcoData.TcoEntity.PlcTcoEntity.#ctor
+  id: '#ctor'
+  parent: TcoData.TcoEntity.PlcTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: PlcTcoEntity()
+  nameWithType: TcoEntity.PlcTcoEntity.PlcTcoEntity()
+  fullName: TcoData.TcoEntity.PlcTcoEntity.PlcTcoEntity()
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+    startLine: 182
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: Prevents creating instance of this class via public constructor
+  example: []
+  syntax:
+    content: protected PlcTcoEntity()
+    content.vb: Protected Sub New
+  overload: TcoData.TcoEntity.PlcTcoEntity.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TcoCore.TcoObject.PlcTcoObject
+  commentId: T:TcoCore.TcoObject.PlcTcoObject
+  parent: TcoCore
+  name: TcoObject.PlcTcoObject
+  nameWithType: TcoObject.PlcTcoObject
+  fullName: TcoCore.TcoObject.PlcTcoObject
+- uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  commentId: M:TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: EqualsTo(Object)
+  nameWithType: TcoObject.PlcTcoObject.EqualsTo(Object)
+  fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+  nameWithType.vb: TcoObject.PlcTcoObject.EqualsTo()
+  fullName.vb: TcoCore.TcoObject.PlcTcoObject.EqualsTo()
+  name.vb: EqualsTo()
+  spec.csharp:
+  - uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+    name: EqualsTo
+    nameWithType: TcoObject.PlcTcoObject.EqualsTo
+    fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoObject.PlcTcoObject.EqualsTo(System.Object)
+    name: EqualsTo
+    nameWithType: TcoObject.PlcTcoObject.EqualsTo
+    fullName: TcoCore.TcoObject.PlcTcoObject.EqualsTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoObject.PlcTcoObject.Context
+  commentId: P:TcoCore.TcoObject.PlcTcoObject.Context
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: Context
+  nameWithType: TcoObject.PlcTcoObject.Context
+  fullName: TcoCore.TcoObject.PlcTcoObject.Context
+- uid: TcoCore.TcoObject.PlcTcoObject.Identity
+  commentId: P:TcoCore.TcoObject.PlcTcoObject.Identity
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: Identity
+  nameWithType: TcoObject.PlcTcoObject.Identity
+  fullName: TcoCore.TcoObject.PlcTcoObject.Identity
+- uid: TcoCore.TcoObject.PlcTcoObject.Messenger
+  commentId: P:TcoCore.TcoObject.PlcTcoObject.Messenger
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: Messenger
+  nameWithType: TcoObject.PlcTcoObject.Messenger
+  fullName: TcoCore.TcoObject.PlcTcoObject.Messenger
+- uid: TcoCore.TcoObject.PlcTcoObject._Identity
+  commentId: F:TcoCore.TcoObject.PlcTcoObject._Identity
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: _Identity
+  nameWithType: TcoObject.PlcTcoObject._Identity
+  fullName: TcoCore.TcoObject.PlcTcoObject._Identity
+- uid: TcoCore.TcoObject.PlcTcoObject._messenger
+  commentId: F:TcoCore.TcoObject.PlcTcoObject._messenger
+  parent: TcoCore.TcoObject.PlcTcoObject
+  name: _messenger
+  nameWithType: TcoObject.PlcTcoObject._messenger
+  fullName: TcoCore.TcoObject.PlcTcoObject._messenger
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.TcoEntity.PlcTcoEntity.#ctor*
+  commentId: Overload:TcoData.TcoEntity.PlcTcoEntity.#ctor
+  name: PlcTcoEntity
+  nameWithType: TcoEntity.PlcTcoEntity.PlcTcoEntity
+  fullName: TcoData.TcoEntity.PlcTcoEntity.PlcTcoEntity
