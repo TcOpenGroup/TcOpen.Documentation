@@ -953,6 +953,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Logging/TcOpen.Inxton.Logging.DummyLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Logging/TcOpen.Inxton.Logging.DummyLogger.html",
+          "hash": "kNOuRg6SjDdIi6nzn+JjfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Logging/TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
       "output": {
         ".html": {
@@ -6197,7 +6209,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ORH2gOGPuotW4SKxXDDvNw=="
+          "hash": "D13CFnxsQTN3Av7x+7Ktmw=="
         }
       },
       "is_incremental": false,
@@ -6224,7 +6236,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 497,
+          "total_file_count": 498,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
