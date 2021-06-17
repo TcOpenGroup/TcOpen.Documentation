@@ -5,6 +5,8 @@
 | 0.0      | April 2021 | Initial release       |
 | 0.1      | April 2021 | STRUCT members naming |
 | 0.2      | April 2021 | Component rules       |
+| 0.3      | May 2021   | Component STRUCT      |
+
 
 
 ## Introduction
@@ -199,3 +201,14 @@ Each component implements the logic required to run cyclically in the *body* of 
 ### Components methods
 
 The methods that perform actions **MUST** return ```TcoCore.ITcoTaskStatus``` (typically ```TcoCore.TcoTask```). This rule applies even to the logic that requires a single-cycle execution.
+
+### Components STRUCT:
+
+a component will consist of the following structure:
+
+- stConfig: 
+- stControl: 
+- stStatus:
+- stError: 
+- stInputs: 
+- stOutputs:
