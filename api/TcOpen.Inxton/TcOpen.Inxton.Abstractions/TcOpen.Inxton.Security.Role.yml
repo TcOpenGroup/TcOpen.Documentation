@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.Role
+  commentId: T:TcOpen.Inxton.Security.Role
+  id: Role
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.Role.#ctor(System.String,System.String)
+  - TcOpen.Inxton.Security.Role.DefaultGroup
+  - TcOpen.Inxton.Security.Role.ToString
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: Role
+  fullName: TcOpen.Inxton.Security.Role
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Role
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+    startLine: 4
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: 'public class Role : IdentityRole<string>'
+    content.vb: >-
+      Public Class Role
+          Inherits IdentityRole(Of String)
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  inheritedMembers:
+  - Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Id
+  - Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Name
+  - Microsoft.AspNetCore.Identity.IdentityRole{System.String}.NormalizedName
+  - Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ConcurrencyStamp
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.Security.Role.DefaultGroup
+  commentId: P:TcOpen.Inxton.Security.Role.DefaultGroup
+  id: DefaultGroup
+  parent: TcOpen.Inxton.Security.Role
+  langs:
+  - csharp
+  - vb
+  name: DefaultGroup
+  nameWithType: Role.DefaultGroup
+  fullName: TcOpen.Inxton.Security.Role.DefaultGroup
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: DefaultGroup
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+    startLine: 6
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public string DefaultGroup { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DefaultGroup As String
+  overload: TcOpen.Inxton.Security.Role.DefaultGroup*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcOpen.Inxton.Security.Role.#ctor(System.String,System.String)
+  commentId: M:TcOpen.Inxton.Security.Role.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: TcOpen.Inxton.Security.Role
+  langs:
+  - csharp
+  - vb
+  name: Role(String, String)
+  nameWithType: Role.Role(String, String)
+  fullName: TcOpen.Inxton.Security.Role.Role(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public Role(string Name, string DefaultGroup)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: DefaultGroup
+      type: System.String
+    content.vb: Public Sub New(Name As String, DefaultGroup As String)
+  overload: TcOpen.Inxton.Security.Role.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Security.Role.ToString
+  commentId: M:TcOpen.Inxton.Security.Role.ToString
+  id: ToString
+  parent: TcOpen.Inxton.Security.Role
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Role.ToString()
+  fullName: TcOpen.Inxton.Security.Role.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ToString
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+    startLine: 16
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ToString
+  overload: TcOpen.Inxton.Security.Role.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1
+  name: IdentityRole<String>
+  nameWithType: IdentityRole<String>
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>
+  nameWithType.vb: IdentityRole(Of String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String)
+  name.vb: IdentityRole(Of String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Id
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Id
+  parent: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1.Id
+  name: Id
+  nameWithType: IdentityRole<String>.Id
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.Id
+  nameWithType.vb: IdentityRole(Of String).Id
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).Id
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Name
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole{System.String}.Name
+  parent: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1.Name
+  name: Name
+  nameWithType: IdentityRole<String>.Name
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.Name
+  nameWithType.vb: IdentityRole(Of String).Name
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).Name
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.NormalizedName
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole{System.String}.NormalizedName
+  parent: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1.NormalizedName
+  name: NormalizedName
+  nameWithType: IdentityRole<String>.NormalizedName
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.NormalizedName
+  nameWithType.vb: IdentityRole(Of String).NormalizedName
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).NormalizedName
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ConcurrencyStamp
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ConcurrencyStamp
+  parent: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1.ConcurrencyStamp
+  name: ConcurrencyStamp
+  nameWithType: IdentityRole<String>.ConcurrencyStamp
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.ConcurrencyStamp
+  nameWithType.vb: IdentityRole(Of String).ConcurrencyStamp
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).ConcurrencyStamp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityRole`1
+  isExternal: true
+  name: IdentityRole<TKey>
+  nameWithType: IdentityRole<TKey>
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>
+  nameWithType.vb: IdentityRole(Of TKey)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey)
+  name.vb: IdentityRole(Of TKey)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1.Id
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole`1.Id
+  isExternal: true
+  name: Id
+  nameWithType: IdentityRole<TKey>.Id
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.Id
+  nameWithType.vb: IdentityRole(Of TKey).Id
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).Id
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1.Name
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole`1.Name
+  isExternal: true
+  name: Name
+  nameWithType: IdentityRole<TKey>.Name
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.Name
+  nameWithType.vb: IdentityRole(Of TKey).Name
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).Name
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1.NormalizedName
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole`1.NormalizedName
+  isExternal: true
+  name: NormalizedName
+  nameWithType: IdentityRole<TKey>.NormalizedName
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.NormalizedName
+  nameWithType.vb: IdentityRole(Of TKey).NormalizedName
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).NormalizedName
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ConcurrencyStamp
+  commentId: P:Microsoft.AspNetCore.Identity.IdentityRole`1.ConcurrencyStamp
+  isExternal: true
+  name: ConcurrencyStamp
+  nameWithType: IdentityRole<TKey>.ConcurrencyStamp
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.ConcurrencyStamp
+  nameWithType.vb: IdentityRole(Of TKey).ConcurrencyStamp
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).ConcurrencyStamp
+- uid: TcOpen.Inxton.Security.Role.DefaultGroup*
+  commentId: Overload:TcOpen.Inxton.Security.Role.DefaultGroup
+  name: DefaultGroup
+  nameWithType: Role.DefaultGroup
+  fullName: TcOpen.Inxton.Security.Role.DefaultGroup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcOpen.Inxton.Security.Role.#ctor*
+  commentId: Overload:TcOpen.Inxton.Security.Role.#ctor
+  name: Role
+  nameWithType: Role.Role
+  fullName: TcOpen.Inxton.Security.Role.Role
+- uid: Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ToString
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityRole{System.String}.ToString
+  parent: Microsoft.AspNetCore.Identity.IdentityRole{System.String}
+  definition: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+  name: ToString()
+  nameWithType: IdentityRole<String>.ToString()
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.ToString()
+  nameWithType.vb: IdentityRole(Of String).ToString()
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).ToString()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+    name: ToString
+    nameWithType: IdentityRole<String>.ToString
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole<System.String>.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+    name: ToString
+    nameWithType: IdentityRole(Of String).ToString
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole(Of System.String).ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Security.Role.ToString*
+  commentId: Overload:TcOpen.Inxton.Security.Role.ToString
+  name: ToString
+  nameWithType: Role.ToString
+  fullName: TcOpen.Inxton.Security.Role.ToString
+- uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+  isExternal: true
+  name: ToString()
+  nameWithType: IdentityRole<TKey>.ToString()
+  fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.ToString()
+  nameWithType.vb: IdentityRole(Of TKey).ToString()
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).ToString()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+    name: ToString
+    nameWithType: IdentityRole<TKey>.ToString
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole<TKey>.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole`1.ToString
+    name: ToString
+    nameWithType: IdentityRole(Of TKey).ToString
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole(Of TKey).ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

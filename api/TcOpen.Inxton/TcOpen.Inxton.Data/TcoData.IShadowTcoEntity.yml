@@ -20,12 +20,12 @@ items:
   type: Interface
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IShadowTcoEntity
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 221
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 14
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -62,12 +62,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 223
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 16
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -95,12 +95,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 228
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 21
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -128,12 +128,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 233
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 26
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -161,12 +161,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 238
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 31
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -189,12 +189,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 239
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 32
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -215,12 +215,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 240
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
+    startLine: 33
   assemblies:
   - TcoDataConnector
   namespace: TcoData

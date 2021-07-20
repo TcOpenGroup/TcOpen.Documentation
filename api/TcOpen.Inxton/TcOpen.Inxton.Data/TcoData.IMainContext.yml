@@ -20,12 +20,12 @@ items:
   type: Interface
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IMainContext
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 182
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 14
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -64,12 +64,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: fbProcessDataManger
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 184
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 16
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -97,12 +97,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: test
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 189
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 21
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -130,12 +130,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 194
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 26
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -158,12 +158,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 195
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 27
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -184,12 +184,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 196
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 28
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -213,12 +213,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 197
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/IMainContext.g.cs
+    startLine: 29
   assemblies:
   - TcoDataConnector
   namespace: TcoData

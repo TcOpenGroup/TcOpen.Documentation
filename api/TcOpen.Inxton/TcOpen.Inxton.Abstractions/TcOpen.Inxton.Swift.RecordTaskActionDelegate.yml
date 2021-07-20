@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  commentId: T:TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  id: RecordTaskActionDelegate
+  parent: TcOpen.Inxton.Swift
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: RecordTaskActionDelegate
+  nameWithType: RecordTaskActionDelegate
+  fullName: TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: RecordTaskActionDelegate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: public delegate void RecordTaskActionDelegate(ICodeProvider codeProvider, params object[] args);
+    parameters:
+    - id: codeProvider
+      type: TcOpen.Inxton.Swift.ICodeProvider
+    - id: args
+      type: System.Object[]
+    content.vb: Public Delegate Sub RecordTaskActionDelegate(codeProvider As ICodeProvider, ParamArray args As Object())
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: TcOpen.Inxton.Swift
+  commentId: N:TcOpen.Inxton.Swift
+  name: TcOpen.Inxton.Swift
+  nameWithType: TcOpen.Inxton.Swift
+  fullName: TcOpen.Inxton.Swift
+- uid: TcOpen.Inxton.Swift.ICodeProvider
+  commentId: T:TcOpen.Inxton.Swift.ICodeProvider
+  parent: TcOpen.Inxton.Swift
+  name: ICodeProvider
+  nameWithType: ICodeProvider
+  fullName: TcOpen.Inxton.Swift.ICodeProvider
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

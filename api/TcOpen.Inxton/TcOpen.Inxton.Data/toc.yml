@@ -2,18 +2,39 @@
 - uid: TcoData
   name: TcoData
   items:
+  - uid: TcoData.BrowsableObjectCreationException
+    name: BrowsableObjectCreationException
+  - uid: TcoData.DataView
+    name: DataView
+  - uid: TcoData.DataViewModel
+    name: DataViewModel
+  - uid: TcoData.DataViewModel`1
+    name: DataViewModel<T>
+    name.vb: DataViewModel(Of T)
   - uid: TcoData.Entity
     name: Entity
-  - uid: TcoData.Entity.PlcEntity
-    name: Entity.PlcEntity
   - uid: TcoData.Entry
     name: Entry
+  - uid: TcoData.fbDataExchangeRecipeSelectorView
+    name: fbDataExchangeRecipeSelectorView
+  - uid: TcoData.fbDataExchangeRecipeSelectorViewModel
+    name: fbDataExchangeRecipeSelectorViewModel
+  - uid: TcoData.FunctionAvailability
+    name: FunctionAvailability
+  - uid: TcoData.HumanizeDateConverter
+    name: HumanizeDateConverter
+  - uid: TcoData.ICrudDataObject
+    name: ICrudDataObject
   - uid: TcoData.IEntity
     name: IEntity
   - uid: TcoData.IMAIN
     name: IMAIN
   - uid: TcoData.IMainContext
     name: IMainContext
+  - uid: TcoData.IPlainCrudDataObject
+    name: IPlainCrudDataObject
+  - uid: TcoData.IPlainEntity
+    name: IPlainEntity
   - uid: TcoData.IShadowEntity
     name: IShadowEntity
   - uid: TcoData.IShadowMAIN
@@ -38,14 +59,16 @@
     name: ITcoEntity
   - uid: TcoData.MAIN
     name: MAIN
-  - uid: TcoData.MAIN.PlcMAIN
-    name: MAIN.PlcMAIN
   - uid: TcoData.MainContext
     name: MainContext
-  - uid: TcoData.MainContext.PlcMainContext
-    name: MainContext.PlcMainContext
+  - uid: TcoData.ModeConverter
+    name: ModeConverter
   - uid: TcoData.MultipleRemoteCallInitializationException
     name: MultipleRemoteCallInitializationException
+  - uid: TcoData.NullToVisibilityConverter
+    name: NullToVisibilityConverter
+  - uid: TcoData.PercentageConverter
+    name: PercentageConverter
   - uid: TcoData.PlainEntity
     name: PlainEntity
   - uid: TcoData.PlainMAIN
@@ -60,20 +83,36 @@
     name: PlainTcoDataTwinController
   - uid: TcoData.PlainTcoEntity
     name: PlainTcoEntity
+  - uid: TcoData.SelectedItemConverter
+    name: SelectedItemConverter
   - uid: TcoData.TcoDataExchange
     name: TcoDataExchange
-  - uid: TcoData.TcoDataExchange.PlcTcoDataExchange
-    name: TcoDataExchange.PlcTcoDataExchange
+  - uid: TcoData.TcoDataExchangeControlView
+    name: TcoDataExchangeControlView
+  - uid: TcoData.TcoDataExchangeControlViewModel
+    name: TcoDataExchangeControlViewModel
+  - uid: TcoData.TcoDataExchangeDisplayView
+    name: TcoDataExchangeDisplayView
+  - uid: TcoData.TcoDataExchangeDisplayViewModel
+    name: TcoDataExchangeDisplayViewModel
+  - uid: TcoData.TcoDataExchangeView
+    name: TcoDataExchangeView
+  - uid: TcoData.TcoDataExchangeViewModel
+    name: TcoDataExchangeViewModel
   - uid: TcoData.TcoDataTask
     name: TcoDataTask
-  - uid: TcoData.TcoDataTask.PlcTcoDataTask
-    name: TcoDataTask.PlcTcoDataTask
   - uid: TcoData.TcoDataTwinController
     name: TcoDataTwinController
   - uid: TcoData.TcoEntity
     name: TcoEntity
-  - uid: TcoData.TcoEntity.PlcTcoEntity
-    name: TcoEntity.PlcTcoEntity
+  - uid: TcoData.ValueChangeItem
+    name: ValueChangeItem
+  - uid: TcoData.ValueChangeTracker
+    name: ValueChangeTracker
+  - uid: TcoData.ValueItemDescriptor
+    name: ValueItemDescriptor
+  - uid: TcoData.ViewMode
+    name: ViewMode
 - uid: TcoData.Repository.Json
   name: TcoData.Repository.Json
   items:
@@ -82,12 +121,18 @@
 - uid: TcOpen.Inxton.Data
   name: TcOpen.Inxton.Data
   items:
+  - uid: TcOpen.Inxton.Data.DataBrowser
+    name: DataBrowser
+  - uid: TcOpen.Inxton.Data.DataBrowser`1
+    name: DataBrowser<T>
+    name.vb: DataBrowser(Of T)
+  - uid: TcOpen.Inxton.Data.DataBrowser`1.ImportItems
+    name: DataBrowser<T>.ImportItems
+    name.vb: DataBrowser(Of T).ImportItems
   - uid: TcOpen.Inxton.Data.DataHelpers
     name: DataHelpers
-  - uid: TcOpen.Inxton.Data.DuplicateIdException
-    name: DuplicateIdException
-  - uid: TcOpen.Inxton.Data.IdentifierValueMismatchedException
-    name: IdentifierValueMismatchedException
+  - uid: TcOpen.Inxton.Data.IDataBrowser
+    name: IDataBrowser
   - uid: TcOpen.Inxton.Data.RepositoryBase`1
     name: RepositoryBase<T>
     name.vb: RepositoryBase(Of T)
@@ -95,10 +140,6 @@
     name: RepositoryNotInitializedException
   - uid: TcOpen.Inxton.Data.RepositorySettings
     name: RepositorySettings
-  - uid: TcOpen.Inxton.Data.UnableToLocateRecordId
-    name: UnableToLocateRecordId
-  - uid: TcOpen.Inxton.Data.UnableToUpdateRecord
-    name: UnableToUpdateRecord
 - uid: TcOpen.Inxton.Data.InMemory
   name: TcOpen.Inxton.Data.InMemory
   items:
@@ -121,16 +162,16 @@
   - uid: TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
     name: JsonRepositorySettings<T>
     name.vb: JsonRepositorySettings(Of T)
-- uid: TcOpen.Inxton.MongoDb
-  name: TcOpen.Inxton.MongoDb
+- uid: TcOpen.Inxton.Data.MongoDb
+  name: TcOpen.Inxton.Data.MongoDb
   items:
-  - uid: TcOpen.Inxton.MongoDb.MongoDbCredentials
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbCredentials
     name: MongoDbCredentials
-  - uid: TcOpen.Inxton.MongoDb.MongoDbRepository`1
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
     name: MongoDbRepository<T>
     name.vb: MongoDbRepository(Of T)
-  - uid: TcOpen.Inxton.MongoDb.MongoDbRepositorySettings`1
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
     name: MongoDbRepositorySettings<T>
     name.vb: MongoDbRepositorySettings(Of T)
-  - uid: TcOpen.Inxton.MongoDb.Repository
+  - uid: TcOpen.Inxton.Data.MongoDb.Repository
     name: Repository

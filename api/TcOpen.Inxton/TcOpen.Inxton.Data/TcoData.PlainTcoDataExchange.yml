@@ -32,12 +32,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainTcoDataExchange
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 296
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 9
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -58,10 +58,6 @@ items:
   - System.ComponentModel.INotifyPropertyChanged
   - Vortex.Connector.IPlain
   inheritedMembers:
-  - TcoCore.PlainTcoObject.__Identity
-  - TcoCore.PlainTcoObject._Identity
-  - TcoCore.PlainTcoObject.__messenger
-  - TcoCore.PlainTcoObject._messenger
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToShadow(TcoCore.TcoObject)
@@ -70,6 +66,10 @@ items:
   - TcoCore.PlainTcoObject.CopyCyclicToPlain(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.IShadowTcoObject)
+  - TcoCore.PlainTcoObject.__Identity
+  - TcoCore.PlainTcoObject._Identity
+  - TcoCore.PlainTcoObject.__messenger
+  - TcoCore.PlainTcoObject._messenger
   - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -83,6 +83,270 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
+  id: CopyPlainToCyclic(TcoData.TcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToCyclic(TcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyPlainToCyclic(TcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyPlainToCyclic
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 220
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyPlainToCyclic(TcoDataExchange target)
+    parameters:
+    - id: target
+      type: TcoData.TcoDataExchange
+    content.vb: Public Sub CopyPlainToCyclic(target As TcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyPlainToCyclic*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
+  id: CopyPlainToCyclic(TcoData.ITcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToCyclic(ITcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyPlainToCyclic(ITcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyPlainToCyclic
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 229
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyPlainToCyclic(ITcoDataExchange target)
+    parameters:
+    - id: target
+      type: TcoData.ITcoDataExchange
+    content.vb: Public Sub CopyPlainToCyclic(target As ITcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyPlainToCyclic*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
+  id: CopyPlainToShadow(TcoData.TcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(TcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyPlainToShadow(TcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 234
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyPlainToShadow(TcoDataExchange target)
+    parameters:
+    - id: target
+      type: TcoData.TcoDataExchange
+    content.vb: Public Sub CopyPlainToShadow(target As TcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyPlainToShadow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
+  id: CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(IShadowTcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyPlainToShadow(IShadowTcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 243
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyPlainToShadow(IShadowTcoDataExchange target)
+    parameters:
+    - id: target
+      type: TcoData.IShadowTcoDataExchange
+    content.vb: Public Sub CopyPlainToShadow(target As IShadowTcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyPlainToShadow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
+  id: CopyCyclicToPlain(TcoData.TcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyCyclicToPlain(TcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyCyclicToPlain(TcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyCyclicToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 248
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyCyclicToPlain(TcoDataExchange source)
+    parameters:
+    - id: source
+      type: TcoData.TcoDataExchange
+    content.vb: Public Sub CopyCyclicToPlain(source As TcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyCyclicToPlain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
+  id: CopyCyclicToPlain(TcoData.ITcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyCyclicToPlain(ITcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyCyclicToPlain(ITcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyCyclicToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 257
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyCyclicToPlain(ITcoDataExchange source)
+    parameters:
+    - id: source
+      type: TcoData.ITcoDataExchange
+    content.vb: Public Sub CopyCyclicToPlain(source As ITcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyCyclicToPlain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
+  id: CopyShadowToPlain(TcoData.TcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyShadowToPlain(TcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyShadowToPlain(TcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyShadowToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 262
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyShadowToPlain(TcoDataExchange source)
+    parameters:
+    - id: source
+      type: TcoData.TcoDataExchange
+    content.vb: Public Sub CopyShadowToPlain(source As TcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyShadowToPlain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
+  commentId: M:TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
+  id: CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
+  parent: TcoData.PlainTcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: CopyShadowToPlain(IShadowTcoDataExchange)
+  nameWithType: PlainTcoDataExchange.CopyShadowToPlain(IShadowTcoDataExchange)
+  fullName: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CopyShadowToPlain
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
+    startLine: 271
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void CopyShadowToPlain(IShadowTcoDataExchange source)
+    parameters:
+    - id: source
+      type: TcoData.IShadowTcoDataExchange
+    content.vb: Public Sub CopyShadowToPlain(source As IShadowTcoDataExchange)
+  overload: TcoData.PlainTcoDataExchange.CopyShadowToPlain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: TcoData.PlainTcoDataExchange.__createTask
   commentId: F:TcoData.PlainTcoDataExchange.__createTask
   id: __createTask
@@ -96,12 +360,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 298
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 11
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -123,12 +387,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 299
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 12
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -158,12 +422,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 316
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 29
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -185,12 +449,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 317
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 30
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -220,12 +484,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 334
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 47
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -247,12 +511,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 335
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 48
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -282,12 +546,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 352
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 65
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -309,12 +573,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 353
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 66
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -331,270 +595,6 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
-  id: CopyPlainToCyclic(TcoData.TcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToCyclic(TcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyPlainToCyclic(TcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.TcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 370
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToCyclic(TcoDataExchange target)
-    parameters:
-    - id: target
-      type: TcoData.TcoDataExchange
-    content.vb: Public Sub CopyPlainToCyclic(target As TcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyPlainToCyclic*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
-  id: CopyPlainToCyclic(TcoData.ITcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToCyclic(ITcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyPlainToCyclic(ITcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyPlainToCyclic(TcoData.ITcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 379
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToCyclic(ITcoDataExchange target)
-    parameters:
-    - id: target
-      type: TcoData.ITcoDataExchange
-    content.vb: Public Sub CopyPlainToCyclic(target As ITcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyPlainToCyclic*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
-  id: CopyPlainToShadow(TcoData.TcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToShadow(TcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyPlainToShadow(TcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.TcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 384
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToShadow(TcoDataExchange target)
-    parameters:
-    - id: target
-      type: TcoData.TcoDataExchange
-    content.vb: Public Sub CopyPlainToShadow(target As TcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyPlainToShadow*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
-  id: CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToShadow(IShadowTcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyPlainToShadow(IShadowTcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyPlainToShadow(TcoData.IShadowTcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 393
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToShadow(IShadowTcoDataExchange target)
-    parameters:
-    - id: target
-      type: TcoData.IShadowTcoDataExchange
-    content.vb: Public Sub CopyPlainToShadow(target As IShadowTcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyPlainToShadow*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
-  id: CopyCyclicToPlain(TcoData.TcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyCyclicToPlain(TcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyCyclicToPlain(TcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.TcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 398
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyCyclicToPlain(TcoDataExchange source)
-    parameters:
-    - id: source
-      type: TcoData.TcoDataExchange
-    content.vb: Public Sub CopyCyclicToPlain(source As TcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyCyclicToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
-  id: CopyCyclicToPlain(TcoData.ITcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyCyclicToPlain(ITcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyCyclicToPlain(ITcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyCyclicToPlain(TcoData.ITcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 407
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyCyclicToPlain(ITcoDataExchange source)
-    parameters:
-    - id: source
-      type: TcoData.ITcoDataExchange
-    content.vb: Public Sub CopyCyclicToPlain(source As ITcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyCyclicToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
-  id: CopyShadowToPlain(TcoData.TcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyShadowToPlain(TcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyShadowToPlain(TcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.TcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 412
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyShadowToPlain(TcoDataExchange source)
-    parameters:
-    - id: source
-      type: TcoData.TcoDataExchange
-    content.vb: Public Sub CopyShadowToPlain(source As TcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyShadowToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
-  commentId: M:TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
-  id: CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
-  parent: TcoData.PlainTcoDataExchange
-  langs:
-  - csharp
-  - vb
-  name: CopyShadowToPlain(IShadowTcoDataExchange)
-  nameWithType: PlainTcoDataExchange.CopyShadowToPlain(IShadowTcoDataExchange)
-  fullName: TcoData.PlainTcoDataExchange.CopyShadowToPlain(TcoData.IShadowTcoDataExchange)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 421
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyShadowToPlain(IShadowTcoDataExchange source)
-    parameters:
-    - id: source
-      type: TcoData.IShadowTcoDataExchange
-    content.vb: Public Sub CopyShadowToPlain(source As IShadowTcoDataExchange)
-  overload: TcoData.PlainTcoDataExchange.CopyShadowToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: TcoData.PlainTcoDataExchange.PropertyChanged
   commentId: E:TcoData.PlainTcoDataExchange.PropertyChanged
   id: PropertyChanged
@@ -608,12 +608,12 @@ items:
   type: Event
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 426
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 83
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -639,12 +639,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
-    startLine: 427
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataExchange.g.cs
+    startLine: 84
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -689,30 +689,6 @@ references:
   name: IPlain
   nameWithType: IPlain
   fullName: Vortex.Connector.IPlain
-- uid: TcoCore.PlainTcoObject.__Identity
-  commentId: F:TcoCore.PlainTcoObject.__Identity
-  parent: TcoCore.PlainTcoObject
-  name: __Identity
-  nameWithType: PlainTcoObject.__Identity
-  fullName: TcoCore.PlainTcoObject.__Identity
-- uid: TcoCore.PlainTcoObject._Identity
-  commentId: P:TcoCore.PlainTcoObject._Identity
-  parent: TcoCore.PlainTcoObject
-  name: _Identity
-  nameWithType: PlainTcoObject._Identity
-  fullName: TcoCore.PlainTcoObject._Identity
-- uid: TcoCore.PlainTcoObject.__messenger
-  commentId: F:TcoCore.PlainTcoObject.__messenger
-  parent: TcoCore.PlainTcoObject
-  name: __messenger
-  nameWithType: PlainTcoObject.__messenger
-  fullName: TcoCore.PlainTcoObject.__messenger
-- uid: TcoCore.PlainTcoObject._messenger
-  commentId: P:TcoCore.PlainTcoObject._messenger
-  parent: TcoCore.PlainTcoObject
-  name: _messenger
-  nameWithType: PlainTcoObject._messenger
-  fullName: TcoCore.PlainTcoObject._messenger
 - uid: TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   commentId: M:TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   parent: TcoCore.PlainTcoObject
@@ -1001,6 +977,30 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcoCore.PlainTcoObject.__Identity
+  commentId: F:TcoCore.PlainTcoObject.__Identity
+  parent: TcoCore.PlainTcoObject
+  name: __Identity
+  nameWithType: PlainTcoObject.__Identity
+  fullName: TcoCore.PlainTcoObject.__Identity
+- uid: TcoCore.PlainTcoObject._Identity
+  commentId: P:TcoCore.PlainTcoObject._Identity
+  parent: TcoCore.PlainTcoObject
+  name: _Identity
+  nameWithType: PlainTcoObject._Identity
+  fullName: TcoCore.PlainTcoObject._Identity
+- uid: TcoCore.PlainTcoObject.__messenger
+  commentId: F:TcoCore.PlainTcoObject.__messenger
+  parent: TcoCore.PlainTcoObject
+  name: __messenger
+  nameWithType: PlainTcoObject.__messenger
+  fullName: TcoCore.PlainTcoObject.__messenger
+- uid: TcoCore.PlainTcoObject._messenger
+  commentId: P:TcoCore.PlainTcoObject._messenger
+  parent: TcoCore.PlainTcoObject
+  name: _messenger
+  nameWithType: PlainTcoObject._messenger
+  fullName: TcoCore.PlainTcoObject._messenger
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -1303,32 +1303,6 @@ references:
   name: Vortex.Connector
   nameWithType: Vortex.Connector
   fullName: Vortex.Connector
-- uid: TcoData.PlainTcoDataTask
-  commentId: T:TcoData.PlainTcoDataTask
-  parent: TcoData
-  name: PlainTcoDataTask
-  nameWithType: PlainTcoDataTask
-  fullName: TcoData.PlainTcoDataTask
-- uid: TcoData.PlainTcoDataExchange._createTask*
-  commentId: Overload:TcoData.PlainTcoDataExchange._createTask
-  name: _createTask
-  nameWithType: PlainTcoDataExchange._createTask
-  fullName: TcoData.PlainTcoDataExchange._createTask
-- uid: TcoData.PlainTcoDataExchange._readTask*
-  commentId: Overload:TcoData.PlainTcoDataExchange._readTask
-  name: _readTask
-  nameWithType: PlainTcoDataExchange._readTask
-  fullName: TcoData.PlainTcoDataExchange._readTask
-- uid: TcoData.PlainTcoDataExchange._updateTask*
-  commentId: Overload:TcoData.PlainTcoDataExchange._updateTask
-  name: _updateTask
-  nameWithType: PlainTcoDataExchange._updateTask
-  fullName: TcoData.PlainTcoDataExchange._updateTask
-- uid: TcoData.PlainTcoDataExchange._deleteTask*
-  commentId: Overload:TcoData.PlainTcoDataExchange._deleteTask
-  name: _deleteTask
-  nameWithType: PlainTcoDataExchange._deleteTask
-  fullName: TcoData.PlainTcoDataExchange._deleteTask
 - uid: TcoData.PlainTcoDataExchange.CopyPlainToCyclic*
   commentId: Overload:TcoData.PlainTcoDataExchange.CopyPlainToCyclic
   name: CopyPlainToCyclic
@@ -1367,6 +1341,32 @@ references:
   name: CopyShadowToPlain
   nameWithType: PlainTcoDataExchange.CopyShadowToPlain
   fullName: TcoData.PlainTcoDataExchange.CopyShadowToPlain
+- uid: TcoData.PlainTcoDataTask
+  commentId: T:TcoData.PlainTcoDataTask
+  parent: TcoData
+  name: PlainTcoDataTask
+  nameWithType: PlainTcoDataTask
+  fullName: TcoData.PlainTcoDataTask
+- uid: TcoData.PlainTcoDataExchange._createTask*
+  commentId: Overload:TcoData.PlainTcoDataExchange._createTask
+  name: _createTask
+  nameWithType: PlainTcoDataExchange._createTask
+  fullName: TcoData.PlainTcoDataExchange._createTask
+- uid: TcoData.PlainTcoDataExchange._readTask*
+  commentId: Overload:TcoData.PlainTcoDataExchange._readTask
+  name: _readTask
+  nameWithType: PlainTcoDataExchange._readTask
+  fullName: TcoData.PlainTcoDataExchange._readTask
+- uid: TcoData.PlainTcoDataExchange._updateTask*
+  commentId: Overload:TcoData.PlainTcoDataExchange._updateTask
+  name: _updateTask
+  nameWithType: PlainTcoDataExchange._updateTask
+  fullName: TcoData.PlainTcoDataExchange._updateTask
+- uid: TcoData.PlainTcoDataExchange._deleteTask*
+  commentId: Overload:TcoData.PlainTcoDataExchange._deleteTask
+  name: _deleteTask
+  nameWithType: PlainTcoDataExchange._deleteTask
+  fullName: TcoData.PlainTcoDataExchange._deleteTask
 - uid: System.ComponentModel.PropertyChangedEventHandler
   commentId: T:System.ComponentModel.PropertyChangedEventHandler
   parent: System.ComponentModel

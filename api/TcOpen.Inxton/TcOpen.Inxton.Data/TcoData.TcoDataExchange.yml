@@ -29,8 +29,9 @@ items:
   - TcoData.TcoDataExchange.FlushShadowToOnline
   - TcoData.TcoDataExchange.GetRepository
   - TcoData.TcoDataExchange.GetRepository``1
-  - TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository)
-  - TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository{``0})
+  - TcoData.TcoDataExchange.InitializeRemoteDataExchange
+  - TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository)
+  - TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository{``0})
   - TcoData.TcoDataExchange.LazyOnlineToShadow
   - TcoData.TcoDataExchange.LazyShadowToOnline
   - TcoData.TcoDataExchange.Onliner
@@ -58,11 +59,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoDataExchange
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 10
   assemblies:
   - TcoDataConnector
@@ -97,6 +98,7 @@ items:
   - Vortex.Connector.IVortexShadowObject
   inheritedMembers:
   - TcoCore.TcoObject._context
+  - TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
   - TcoCore.TcoObject.GetActiveMessages
   - TcoCore.TcoObject.Identity
   - TcoCore.TcoObject.MessageHandler
@@ -172,11 +174,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _onliner
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 11
   assemblies:
   - TcoDataConnector
@@ -199,11 +201,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Onliner
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 13
   assemblies:
   - TcoDataConnector
@@ -234,11 +236,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _repository
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 46
   assemblies:
   - TcoDataConnector
@@ -246,7 +248,7 @@ items:
   syntax:
     content: IRepository _repository
     return:
-      type: TcOpen.Inxton.Abstractions.Data.IRepository
+      type: TcOpen.Inxton.Data.IRepository
     content.vb: _repository As IRepository
 - uid: TcoData.TcoDataExchange.GetRepository``1
   commentId: M:TcoData.TcoDataExchange.GetRepository``1
@@ -261,11 +263,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRepository
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 48
   assemblies:
   - TcoDataConnector
@@ -278,7 +280,7 @@ items:
     typeParameters:
     - id: T
     return:
-      type: TcOpen.Inxton.Abstractions.Data.IRepository{{T}}
+      type: TcOpen.Inxton.Data.IRepository{{T}}
     content.vb: Public Function GetRepository(Of T As IBrowsableDataObject) As IRepository(Of T)
   overload: TcoData.TcoDataExchange.GetRepository*
   nameWithType.vb: TcoDataExchange.GetRepository(Of T)()
@@ -301,11 +303,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetRepository
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 51
   assemblies:
   - TcoDataConnector
@@ -313,31 +315,31 @@ items:
   syntax:
     content: public IRepository GetRepository()
     return:
-      type: TcOpen.Inxton.Abstractions.Data.IRepository
+      type: TcOpen.Inxton.Data.IRepository
     content.vb: Public Function GetRepository As IRepository
   overload: TcoData.TcoDataExchange.GetRepository*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository)
-  commentId: M:TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository)
-  id: InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository)
+- uid: TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository)
+  commentId: M:TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository)
+  id: InitializeRepository``1(TcOpen.Inxton.Data.IRepository)
   parent: TcoData.TcoDataExchange
   langs:
   - csharp
   - vb
   name: InitializeRepository<T>(IRepository)
   nameWithType: TcoDataExchange.InitializeRepository<T>(IRepository)
-  fullName: TcoData.TcoDataExchange.InitializeRepository<T>(TcOpen.Inxton.Abstractions.Data.IRepository)
+  fullName: TcoData.TcoDataExchange.InitializeRepository<T>(TcOpen.Inxton.Data.IRepository)
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: InitializeRepository
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 55
   assemblies:
   - TcoDataConnector
@@ -349,7 +351,7 @@ items:
           where T : IBrowsableDataObject
     parameters:
     - id: repository
-      type: TcOpen.Inxton.Abstractions.Data.IRepository
+      type: TcOpen.Inxton.Data.IRepository
     typeParameters:
     - id: T
     content.vb: Public Sub InitializeRepository(Of T As IBrowsableDataObject)(repository As IRepository)
@@ -359,26 +361,26 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: TcoData.TcoDataExchange.InitializeRepository(Of T)(TcOpen.Inxton.Abstractions.Data.IRepository)
+  fullName.vb: TcoData.TcoDataExchange.InitializeRepository(Of T)(TcOpen.Inxton.Data.IRepository)
   name.vb: InitializeRepository(Of T)(IRepository)
-- uid: TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository{``0})
-  commentId: M:TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository{``0})
-  id: InitializeRepository``1(TcOpen.Inxton.Abstractions.Data.IRepository{``0})
+- uid: TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository{``0})
+  commentId: M:TcoData.TcoDataExchange.InitializeRepository``1(TcOpen.Inxton.Data.IRepository{``0})
+  id: InitializeRepository``1(TcOpen.Inxton.Data.IRepository{``0})
   parent: TcoData.TcoDataExchange
   langs:
   - csharp
   - vb
   name: InitializeRepository<T>(IRepository<T>)
   nameWithType: TcoDataExchange.InitializeRepository<T>(IRepository<T>)
-  fullName: TcoData.TcoDataExchange.InitializeRepository<T>(TcOpen.Inxton.Abstractions.Data.IRepository<T>)
+  fullName: TcoData.TcoDataExchange.InitializeRepository<T>(TcOpen.Inxton.Data.IRepository<T>)
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: InitializeRepository
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
     startLine: 57
   assemblies:
   - TcoDataConnector
@@ -390,7 +392,7 @@ items:
           where T : IBrowsableDataObject
     parameters:
     - id: repository
-      type: TcOpen.Inxton.Abstractions.Data.IRepository{{T}}
+      type: TcOpen.Inxton.Data.IRepository{{T}}
     typeParameters:
     - id: T
     content.vb: Public Sub InitializeRepository(Of T As IBrowsableDataObject)(repository As IRepository(Of T))
@@ -400,8 +402,38 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: TcoData.TcoDataExchange.InitializeRepository(Of T)(TcOpen.Inxton.Abstractions.Data.IRepository(Of T))
+  fullName.vb: TcoData.TcoDataExchange.InitializeRepository(Of T)(TcOpen.Inxton.Data.IRepository(Of T))
   name.vb: InitializeRepository(Of T)(IRepository(Of T))
+- uid: TcoData.TcoDataExchange.InitializeRemoteDataExchange
+  commentId: M:TcoData.TcoDataExchange.InitializeRemoteDataExchange
+  id: InitializeRemoteDataExchange
+  parent: TcoData.TcoDataExchange
+  langs:
+  - csharp
+  - vb
+  name: InitializeRemoteDataExchange()
+  nameWithType: TcoDataExchange.InitializeRemoteDataExchange()
+  fullName: TcoData.TcoDataExchange.InitializeRemoteDataExchange()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: InitializeRemoteDataExchange
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 61
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void InitializeRemoteDataExchange()
+    content.vb: Public Sub InitializeRemoteDataExchange
+  overload: TcoData.TcoDataExchange.InitializeRemoteDataExchange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: TcoData.TcoDataExchange.Create
   commentId: M:TcoData.TcoDataExchange.Create
   id: Create
@@ -415,12 +447,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Create
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 68
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 74
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -443,12 +475,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Read
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 87
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 93
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -471,12 +503,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Update
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 102
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 108
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -499,12 +531,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Delete
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 119
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 125
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -527,12 +559,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _onlinerVortex
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 134
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 140
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -554,12 +586,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnlinerVortex
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataObject.cs
-    startLine: 135
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoDataExchange/TcoDataExchange.cs
+    startLine: 141
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -589,11 +621,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 13
   assemblies:
   - TcoDataConnector
@@ -616,11 +648,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 14
   assemblies:
   - TcoDataConnector
@@ -652,11 +684,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataExchange._createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 22
   assemblies:
   - TcoDataConnector
@@ -690,11 +722,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataExchange._createTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 30
   assemblies:
   - TcoDataConnector
@@ -727,11 +759,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 38
   assemblies:
   - TcoDataConnector
@@ -754,11 +786,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 39
   assemblies:
   - TcoDataConnector
@@ -790,11 +822,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataExchange._readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 47
   assemblies:
   - TcoDataConnector
@@ -828,11 +860,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataExchange._readTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 55
   assemblies:
   - TcoDataConnector
@@ -865,11 +897,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 63
   assemblies:
   - TcoDataConnector
@@ -892,11 +924,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 64
   assemblies:
   - TcoDataConnector
@@ -928,11 +960,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataExchange._updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 72
   assemblies:
   - TcoDataConnector
@@ -966,11 +998,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataExchange._updateTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 80
   assemblies:
   - TcoDataConnector
@@ -1003,11 +1035,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 88
   assemblies:
   - TcoDataConnector
@@ -1030,11 +1062,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 89
   assemblies:
   - TcoDataConnector
@@ -1066,11 +1098,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataExchange._deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 97
   assemblies:
   - TcoDataConnector
@@ -1104,11 +1136,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataExchange._deleteTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 105
   assemblies:
   - TcoDataConnector
@@ -1141,11 +1173,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 113
   assemblies:
   - TcoDataConnector
@@ -1171,11 +1203,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 122
   assemblies:
   - TcoDataConnector
@@ -1201,11 +1233,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 131
   assemblies:
   - TcoDataConnector
@@ -1236,11 +1268,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 142
   assemblies:
   - TcoDataConnector
@@ -1271,11 +1303,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 152
   assemblies:
   - TcoDataConnector
@@ -1304,11 +1336,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 153
   assemblies:
   - TcoDataConnector
@@ -1330,11 +1362,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 154
   assemblies:
   - TcoDataConnector
@@ -1363,11 +1395,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 155
   assemblies:
   - TcoDataConnector
@@ -1389,11 +1421,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 156
   assemblies:
   - TcoDataConnector
@@ -1424,11 +1456,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 162
   assemblies:
   - TcoDataConnector
@@ -1459,11 +1491,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 167
   assemblies:
   - TcoDataConnector
@@ -1492,11 +1524,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 173
   assemblies:
   - TcoDataConnector
@@ -1525,11 +1557,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 179
   assemblies:
   - TcoDataConnector
@@ -1560,11 +1592,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 185
   assemblies:
   - TcoDataConnector
@@ -1597,11 +1629,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataExchange.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataExchange.g.cs
     startLine: 201
   assemblies:
   - TcoDataConnector
@@ -1711,6 +1743,45 @@ references:
   name: _context
   nameWithType: TcoObject._context
   fullName: TcoCore.TcoObject._context
+- uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  commentId: M:TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  parent: TcoCore.TcoObject
+  isExternal: true
+  name: Init(IVortexObject)
+  nameWithType: TcoObject.Init(IVortexObject)
+  fullName: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  spec.csharp:
+  - uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+    name: Init
+    nameWithType: TcoObject.Init
+    fullName: TcoCore.TcoObject.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+    name: Init
+    nameWithType: TcoObject.Init
+    fullName: TcoCore.TcoObject.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: TcoCore.TcoObject.GetActiveMessages
   commentId: M:TcoCore.TcoObject.GetActiveMessages
   parent: TcoCore.TcoObject
@@ -2621,37 +2692,37 @@ references:
   name: Onliner
   nameWithType: TcoDataExchange.Onliner
   fullName: TcoData.TcoDataExchange.Onliner
-- uid: TcOpen.Inxton.Abstractions.Data.IRepository
-  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository
-  parent: TcOpen.Inxton.Abstractions.Data
+- uid: TcOpen.Inxton.Data.IRepository
+  commentId: T:TcOpen.Inxton.Data.IRepository
+  parent: TcOpen.Inxton.Data
   name: IRepository
   nameWithType: IRepository
-  fullName: TcOpen.Inxton.Abstractions.Data.IRepository
-- uid: TcOpen.Inxton.Abstractions.Data
-  commentId: N:TcOpen.Inxton.Abstractions.Data
-  name: TcOpen.Inxton.Abstractions.Data
-  nameWithType: TcOpen.Inxton.Abstractions.Data
-  fullName: TcOpen.Inxton.Abstractions.Data
+  fullName: TcOpen.Inxton.Data.IRepository
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
 - uid: TcoData.TcoDataExchange.GetRepository*
   commentId: Overload:TcoData.TcoDataExchange.GetRepository
   name: GetRepository
   nameWithType: TcoDataExchange.GetRepository
   fullName: TcoData.TcoDataExchange.GetRepository
-- uid: TcOpen.Inxton.Abstractions.Data.IRepository{{T}}
-  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository{`0}
-  parent: TcOpen.Inxton.Abstractions.Data
-  definition: TcOpen.Inxton.Abstractions.Data.IRepository`1
+- uid: TcOpen.Inxton.Data.IRepository{{T}}
+  commentId: T:TcOpen.Inxton.Data.IRepository{`0}
+  parent: TcOpen.Inxton.Data
+  definition: TcOpen.Inxton.Data.IRepository`1
   name: IRepository<T>
   nameWithType: IRepository<T>
-  fullName: TcOpen.Inxton.Abstractions.Data.IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
   nameWithType.vb: IRepository(Of T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Data.IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
   name.vb: IRepository(Of T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository
     nameWithType: IRepository
-    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
   - name: <
     nameWithType: <
     fullName: <
@@ -2662,10 +2733,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository
     nameWithType: IRepository
-    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
@@ -2675,19 +2746,19 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
-  commentId: T:TcOpen.Inxton.Abstractions.Data.IRepository`1
+- uid: TcOpen.Inxton.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Data.IRepository`1
   name: IRepository<T>
   nameWithType: IRepository<T>
-  fullName: TcOpen.Inxton.Abstractions.Data.IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
   nameWithType.vb: IRepository(Of T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Data.IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
   name.vb: IRepository(Of T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository
     nameWithType: IRepository
-    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
   - name: <
     nameWithType: <
     fullName: <
@@ -2698,10 +2769,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository
     nameWithType: IRepository
-    fullName: TcOpen.Inxton.Abstractions.Data.IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
@@ -2716,6 +2787,11 @@ references:
   name: InitializeRepository
   nameWithType: TcoDataExchange.InitializeRepository
   fullName: TcoData.TcoDataExchange.InitializeRepository
+- uid: TcoData.TcoDataExchange.InitializeRemoteDataExchange*
+  commentId: Overload:TcoData.TcoDataExchange.InitializeRemoteDataExchange
+  name: InitializeRemoteDataExchange
+  nameWithType: TcoDataExchange.InitializeRemoteDataExchange
+  fullName: TcoData.TcoDataExchange.InitializeRemoteDataExchange
 - uid: TcoData.TcoDataExchange.Create*
   commentId: Overload:TcoData.TcoDataExchange.Create
   name: Create

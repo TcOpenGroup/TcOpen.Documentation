@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  id: TcOpen.Inxton.Data
+  children:
+  - TcOpen.Inxton.Data.DateTimeProviderBase
+  - TcOpen.Inxton.Data.DateTimeProviders
+  - TcOpen.Inxton.Data.DuplicateIdException
+  - TcOpen.Inxton.Data.IBrowsableDataObject
+  - TcOpen.Inxton.Data.IdentifierValueMismatchedException
+  - TcOpen.Inxton.Data.IRepository
+  - TcOpen.Inxton.Data.IRepository`1
+  - TcOpen.Inxton.Data.StandardDateTimeProvider
+  - TcOpen.Inxton.Data.UnableToLocateRecordId
+  - TcOpen.Inxton.Data.UnableToUpdateRecord
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Data.DateTimeProviders
+  commentId: T:TcOpen.Inxton.Data.DateTimeProviders
+  name: DateTimeProviders
+  nameWithType: DateTimeProviders
+  fullName: TcOpen.Inxton.Data.DateTimeProviders
+- uid: TcOpen.Inxton.Data.StandardDateTimeProvider
+  commentId: T:TcOpen.Inxton.Data.StandardDateTimeProvider
+  name: StandardDateTimeProvider
+  nameWithType: StandardDateTimeProvider
+  fullName: TcOpen.Inxton.Data.StandardDateTimeProvider
+- uid: TcOpen.Inxton.Data.DateTimeProviderBase
+  commentId: T:TcOpen.Inxton.Data.DateTimeProviderBase
+  parent: TcOpen.Inxton.Data
+  name: DateTimeProviderBase
+  nameWithType: DateTimeProviderBase
+  fullName: TcOpen.Inxton.Data.DateTimeProviderBase
+- uid: TcOpen.Inxton.Data.DuplicateIdException
+  commentId: T:TcOpen.Inxton.Data.DuplicateIdException
+  name: DuplicateIdException
+  nameWithType: DuplicateIdException
+  fullName: TcOpen.Inxton.Data.DuplicateIdException
+- uid: TcOpen.Inxton.Data.UnableToUpdateRecord
+  commentId: T:TcOpen.Inxton.Data.UnableToUpdateRecord
+  name: UnableToUpdateRecord
+  nameWithType: UnableToUpdateRecord
+  fullName: TcOpen.Inxton.Data.UnableToUpdateRecord
+- uid: TcOpen.Inxton.Data.UnableToLocateRecordId
+  commentId: T:TcOpen.Inxton.Data.UnableToLocateRecordId
+  name: UnableToLocateRecordId
+  nameWithType: UnableToLocateRecordId
+  fullName: TcOpen.Inxton.Data.UnableToLocateRecordId
+- uid: TcOpen.Inxton.Data.IdentifierValueMismatchedException
+  commentId: T:TcOpen.Inxton.Data.IdentifierValueMismatchedException
+  name: IdentifierValueMismatchedException
+  nameWithType: IdentifierValueMismatchedException
+  fullName: TcOpen.Inxton.Data.IdentifierValueMismatchedException
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject
+  commentId: T:TcOpen.Inxton.Data.IBrowsableDataObject
+  name: IBrowsableDataObject
+  nameWithType: IBrowsableDataObject
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject
+- uid: TcOpen.Inxton.Data.IRepository
+  commentId: T:TcOpen.Inxton.Data.IRepository
+  name: IRepository
+  nameWithType: IRepository
+  fullName: TcOpen.Inxton.Data.IRepository
+- uid: TcOpen.Inxton.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data

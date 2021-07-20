@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.OnUserAuthentication
+  commentId: T:TcOpen.Inxton.Security.OnUserAuthentication
+  id: OnUserAuthentication
+  parent: TcOpen.Inxton.Security
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnUserAuthentication
+  nameWithType: OnUserAuthentication
+  fullName: TcOpen.Inxton.Security.OnUserAuthentication
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/OnUserAuthentication.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnUserAuthentication
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/OnUserAuthentication.cs
+    startLine: 6
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public delegate void OnUserAuthentication(string username);
+    parameters:
+    - id: username
+      type: System.String
+      description: ''
+    content.vb: Public Delegate Sub OnUserAuthentication(username As String)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -19,12 +19,12 @@ items:
   type: Interface
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ITcoDataTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 147
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 14
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -78,12 +78,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 149
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 16
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -111,12 +111,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 154
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 21
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -139,12 +139,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 155
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 22
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -165,12 +165,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 156
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 23
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -194,12 +194,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 157
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
+    startLine: 24
   assemblies:
   - TcoDataConnector
   namespace: TcoData

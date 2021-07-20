@@ -26,7 +26,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DummyLoggerAdapter
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 9
@@ -44,7 +44,7 @@ items:
   inheritance:
   - System.Object
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  - TcOpen.Inxton.Logging.ITcoLogger
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 11
@@ -109,7 +109,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 13
@@ -139,7 +139,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ClearLastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 18
@@ -169,7 +169,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IsLastMessageEmpty
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 23
@@ -201,7 +201,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 28
@@ -220,7 +220,7 @@ items:
     content.vb: Public Sub Debug(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Debug*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Debug(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -243,7 +243,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 33
@@ -262,7 +262,7 @@ items:
     content.vb: Public Sub Error(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Error*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Error(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -285,7 +285,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 38
@@ -304,7 +304,7 @@ items:
     content.vb: Public Sub Fatal(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Fatal*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Fatal(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -327,7 +327,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 43
@@ -346,7 +346,7 @@ items:
     content.vb: Public Sub Information(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Information*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Information(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -369,7 +369,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 48
@@ -388,7 +388,7 @@ items:
     content.vb: Public Sub Verbose(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Verbose*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Verbose(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -411,7 +411,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 53
@@ -430,7 +430,7 @@ items:
     content.vb: Public Sub Warning(Of T)(stringTemplate As String, payload As T = Nothing)
   overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.Warning*
   implements:
-  - TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,{T})
+  - TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,{T})
   nameWithType.vb: DummyLoggerAdapter.Warning(Of T)(String, T)
   modifiers.csharp:
   - public
@@ -451,12 +451,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  commentId: T:TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  parent: TcOpen.Inxton.Abstractions.Logging
+- uid: TcOpen.Inxton.Logging.ITcoLogger
+  commentId: T:TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging
   name: ITcoLogger
   nameWithType: ITcoLogger
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  fullName: TcOpen.Inxton.Logging.ITcoLogger
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -742,11 +742,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TcOpen.Inxton.Abstractions.Logging
-  commentId: N:TcOpen.Inxton.Abstractions.Logging
-  name: TcOpen.Inxton.Abstractions.Logging
-  nameWithType: TcOpen.Inxton.Abstractions.Logging
-  fullName: TcOpen.Inxton.Abstractions.Logging
 - uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage*
   commentId: Overload:TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
   name: LastMessage
@@ -855,21 +850,21 @@ references:
   name: Debug
   nameWithType: DummyLoggerAdapter.Debug
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Debug
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
   name: Debug<T>(String, T)
   nameWithType: ITcoLogger.Debug<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Debug(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Debug(Of T)(System.String, T)
   name.vb: Debug(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
     name: Debug<T>
     nameWithType: ITcoLogger.Debug<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -888,10 +883,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
     name: Debug(Of T)
     nameWithType: ITcoLogger.Debug(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -922,20 +917,20 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
   isExternal: true
   name: Debug<T>(String, T)
   nameWithType: ITcoLogger.Debug<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Debug(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Debug(Of T)(System.String, T)
   name.vb: Debug(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
     name: Debug<T>
     nameWithType: ITcoLogger.Debug<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -954,10 +949,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
     name: Debug(Of T)
     nameWithType: ITcoLogger.Debug(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Debug(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -984,21 +979,21 @@ references:
   name: Error
   nameWithType: DummyLoggerAdapter.Error
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Error
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
   name: Error<T>(String, T)
   nameWithType: ITcoLogger.Error<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Error<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Error(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Error(Of T)(System.String, T)
   name.vb: Error(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
     name: Error<T>
     nameWithType: ITcoLogger.Error<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Error<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1017,10 +1012,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
     name: Error(Of T)
     nameWithType: ITcoLogger.Error(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Error(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1038,20 +1033,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
   isExternal: true
   name: Error<T>(String, T)
   nameWithType: ITcoLogger.Error<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Error<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Error(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Error(Of T)(System.String, T)
   name.vb: Error(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
     name: Error<T>
     nameWithType: ITcoLogger.Error<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Error<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1070,10 +1065,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
     name: Error(Of T)
     nameWithType: ITcoLogger.Error(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Error(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Error(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1096,21 +1091,21 @@ references:
   name: Fatal
   nameWithType: DummyLoggerAdapter.Fatal
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Fatal
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
   name: Fatal<T>(String, T)
   nameWithType: ITcoLogger.Fatal<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Fatal(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Fatal(Of T)(System.String, T)
   name.vb: Fatal(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
     name: Fatal<T>
     nameWithType: ITcoLogger.Fatal<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1129,10 +1124,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
     name: Fatal(Of T)
     nameWithType: ITcoLogger.Fatal(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1150,20 +1145,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
   isExternal: true
   name: Fatal<T>(String, T)
   nameWithType: ITcoLogger.Fatal<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Fatal(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Fatal(Of T)(System.String, T)
   name.vb: Fatal(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
     name: Fatal<T>
     nameWithType: ITcoLogger.Fatal<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1182,10 +1177,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
     name: Fatal(Of T)
     nameWithType: ITcoLogger.Fatal(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Fatal(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1208,21 +1203,21 @@ references:
   name: Information
   nameWithType: DummyLoggerAdapter.Information
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Information
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
   name: Information<T>(String, T)
   nameWithType: ITcoLogger.Information<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Information<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Information(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Information(Of T)(System.String, T)
   name.vb: Information(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
     name: Information<T>
     nameWithType: ITcoLogger.Information<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Information<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1241,10 +1236,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
     name: Information(Of T)
     nameWithType: ITcoLogger.Information(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Information(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1262,20 +1257,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
   isExternal: true
   name: Information<T>(String, T)
   nameWithType: ITcoLogger.Information<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Information<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Information(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Information(Of T)(System.String, T)
   name.vb: Information(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
     name: Information<T>
     nameWithType: ITcoLogger.Information<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Information<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1294,10 +1289,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
     name: Information(Of T)
     nameWithType: ITcoLogger.Information(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Information(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Information(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1320,21 +1315,21 @@ references:
   name: Verbose
   nameWithType: DummyLoggerAdapter.Verbose
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Verbose
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
   name: Verbose<T>(String, T)
   nameWithType: ITcoLogger.Verbose<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Verbose(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Verbose(Of T)(System.String, T)
   name.vb: Verbose(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
     name: Verbose<T>
     nameWithType: ITcoLogger.Verbose<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1353,10 +1348,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
     name: Verbose(Of T)
     nameWithType: ITcoLogger.Verbose(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1374,20 +1369,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
   isExternal: true
   name: Verbose<T>(String, T)
   nameWithType: ITcoLogger.Verbose<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Verbose(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Verbose(Of T)(System.String, T)
   name.vb: Verbose(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
     name: Verbose<T>
     nameWithType: ITcoLogger.Verbose<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1406,10 +1401,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
     name: Verbose(Of T)
     nameWithType: ITcoLogger.Verbose(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Verbose(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1432,21 +1427,21 @@ references:
   name: Warning
   nameWithType: DummyLoggerAdapter.Warning
   fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.Warning
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,{T})
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
-  parent: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  definition: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,{T})
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
+  parent: TcOpen.Inxton.Logging.ITcoLogger
+  definition: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
   name: Warning<T>(String, T)
   nameWithType: ITcoLogger.Warning<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Warning(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Warning(Of T)(System.String, T)
   name.vb: Warning(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
     name: Warning<T>
     nameWithType: ITcoLogger.Warning<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1465,10 +1460,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
     name: Warning(Of T)
     nameWithType: ITcoLogger.Warning(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1486,20 +1481,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
   isExternal: true
   name: Warning<T>(String, T)
   nameWithType: ITcoLogger.Warning<T>(String, T)
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning<T>(System.String, T)
+  fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning<T>(System.String, T)
   nameWithType.vb: ITcoLogger.Warning(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning(Of T)(System.String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Warning(Of T)(System.String, T)
   name.vb: Warning(Of T)(String, T)
   spec.csharp:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
     name: Warning<T>
     nameWithType: ITcoLogger.Warning<T>
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning<T>
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1518,10 +1513,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning``1(System.String,``0)
+  - uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
     name: Warning(Of T)
     nameWithType: ITcoLogger.Warning(Of T)
-    fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger.Warning(Of T)
+    fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning(Of T)
   - name: (
     nameWithType: (
     fullName: (

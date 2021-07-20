@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.ValueChangeItem
+  commentId: T:TcoData.ValueChangeItem
+  id: ValueChangeItem
+  parent: TcoData
+  children:
+  - TcoData.ValueChangeItem.DateTime
+  - TcoData.ValueChangeItem.NewValue
+  - TcoData.ValueChangeItem.OldValue
+  - TcoData.ValueChangeItem.UserName
+  - TcoData.ValueChangeItem.ValueTag
+  langs:
+  - csharp
+  - vb
+  name: ValueChangeItem
+  nameWithType: ValueChangeItem
+  fullName: TcoData.ValueChangeItem
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ValueChangeItem
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 4
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public class ValueChangeItem
+    content.vb: Public Class ValueChangeItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcoData.ValueChangeItem.DateTime
+  commentId: P:TcoData.ValueChangeItem.DateTime
+  id: DateTime
+  parent: TcoData.ValueChangeItem
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: ValueChangeItem.DateTime
+  fullName: TcoData.ValueChangeItem.DateTime
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: DateTime
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 6
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public DateTime DateTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DateTime As Date
+  overload: TcoData.ValueChangeItem.DateTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.ValueChangeItem.UserName
+  commentId: P:TcoData.ValueChangeItem.UserName
+  id: UserName
+  parent: TcoData.ValueChangeItem
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: ValueChangeItem.UserName
+  fullName: TcoData.ValueChangeItem.UserName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: UserName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 7
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string UserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserName As String
+  overload: TcoData.ValueChangeItem.UserName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.ValueChangeItem.ValueTag
+  commentId: P:TcoData.ValueChangeItem.ValueTag
+  id: ValueTag
+  parent: TcoData.ValueChangeItem
+  langs:
+  - csharp
+  - vb
+  name: ValueTag
+  nameWithType: ValueChangeItem.ValueTag
+  fullName: TcoData.ValueChangeItem.ValueTag
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ValueTag
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 8
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public ValueItemDescriptor ValueTag { get; set; }
+    parameters: []
+    return:
+      type: TcoData.ValueItemDescriptor
+    content.vb: Public Property ValueTag As ValueItemDescriptor
+  overload: TcoData.ValueChangeItem.ValueTag*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.ValueChangeItem.OldValue
+  commentId: P:TcoData.ValueChangeItem.OldValue
+  id: OldValue
+  parent: TcoData.ValueChangeItem
+  langs:
+  - csharp
+  - vb
+  name: OldValue
+  nameWithType: ValueChangeItem.OldValue
+  fullName: TcoData.ValueChangeItem.OldValue
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OldValue
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 9
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object OldValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property OldValue As Object
+  overload: TcoData.ValueChangeItem.OldValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.ValueChangeItem.NewValue
+  commentId: P:TcoData.ValueChangeItem.NewValue
+  id: NewValue
+  parent: TcoData.ValueChangeItem
+  langs:
+  - csharp
+  - vb
+  name: NewValue
+  nameWithType: ValueChangeItem.NewValue
+  fullName: TcoData.ValueChangeItem.NewValue
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: NewValue
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
+    startLine: 10
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public object NewValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property NewValue As Object
+  overload: TcoData.ValueChangeItem.NewValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.ValueChangeItem.DateTime*
+  commentId: Overload:TcoData.ValueChangeItem.DateTime
+  name: DateTime
+  nameWithType: ValueChangeItem.DateTime
+  fullName: TcoData.ValueChangeItem.DateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: TcoData.ValueChangeItem.UserName*
+  commentId: Overload:TcoData.ValueChangeItem.UserName
+  name: UserName
+  nameWithType: ValueChangeItem.UserName
+  fullName: TcoData.ValueChangeItem.UserName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcoData.ValueChangeItem.ValueTag*
+  commentId: Overload:TcoData.ValueChangeItem.ValueTag
+  name: ValueTag
+  nameWithType: ValueChangeItem.ValueTag
+  fullName: TcoData.ValueChangeItem.ValueTag
+- uid: TcoData.ValueItemDescriptor
+  commentId: T:TcoData.ValueItemDescriptor
+  parent: TcoData
+  name: ValueItemDescriptor
+  nameWithType: ValueItemDescriptor
+  fullName: TcoData.ValueItemDescriptor
+- uid: TcoData.ValueChangeItem.OldValue*
+  commentId: Overload:TcoData.ValueChangeItem.OldValue
+  name: OldValue
+  nameWithType: ValueChangeItem.OldValue
+  fullName: TcoData.ValueChangeItem.OldValue
+- uid: TcoData.ValueChangeItem.NewValue*
+  commentId: Overload:TcoData.ValueChangeItem.NewValue
+  name: NewValue
+  nameWithType: ValueChangeItem.NewValue
+  fullName: TcoData.ValueChangeItem.NewValue

@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Data.IRepository`1
+  id: IRepository`1
+  parent: TcOpen.Inxton.Data
+  children:
+  - TcOpen.Inxton.Data.IRepository`1.Count
+  - TcOpen.Inxton.Data.IRepository`1.Create(System.String,`0)
+  - TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
+  - TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
+  - TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
+  - TcOpen.Inxton.Data.IRepository`1.Queryable
+  - TcOpen.Inxton.Data.IRepository`1.Read(System.String)
+  - TcOpen.Inxton.Data.IRepository`1.Update(System.String,`0)
+  langs:
+  - csharp
+  - vb
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: IRepository
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 15
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: >-
+      public interface IRepository<T>
+          where T : IBrowsableDataObject
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IRepository(Of T As IBrowsableDataObject)
+  nameWithType.vb: IRepository(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+- uid: TcOpen.Inxton.Data.IRepository`1.Count
+  commentId: P:TcOpen.Inxton.Data.IRepository`1.Count
+  id: Count
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IRepository<T>.Count
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Count
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Count
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 17
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property Count As Long
+  overload: TcOpen.Inxton.Data.IRepository`1.Count*
+  nameWithType.vb: IRepository(Of T).Count
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Count
+- uid: TcOpen.Inxton.Data.IRepository`1.Queryable
+  commentId: P:TcOpen.Inxton.Data.IRepository`1.Queryable
+  id: Queryable
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Queryable
+  nameWithType: IRepository<T>.Queryable
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Queryable
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Queryable
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 18
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: IQueryable<T> Queryable { get; }
+    parameters: []
+    return:
+      type: System.Linq.IQueryable{{T}}
+    content.vb: ReadOnly Property Queryable As IQueryable(Of T)
+  overload: TcOpen.Inxton.Data.IRepository`1.Queryable*
+  nameWithType.vb: IRepository(Of T).Queryable
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Queryable
+- uid: TcOpen.Inxton.Data.IRepository`1.Create(System.String,`0)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.Create(System.String,`0)
+  id: Create(System.String,`0)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Create(String, T)
+  nameWithType: IRepository<T>.Create(String, T)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Create(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Create
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 20
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void Create(string identifier, T data)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: data
+      type: '{T}'
+    content.vb: Sub Create(identifier As String, data As T)
+  overload: TcOpen.Inxton.Data.IRepository`1.Create*
+  nameWithType.vb: IRepository(Of T).Create(String, T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Create(System.String, T)
+- uid: TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
+  id: Delete(System.String)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(String)
+  nameWithType: IRepository<T>.Delete(String)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Delete(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Delete
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 21
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void Delete(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    content.vb: Sub Delete(identifier As String)
+  overload: TcOpen.Inxton.Data.IRepository`1.Delete*
+  nameWithType.vb: IRepository(Of T).Delete(String)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Delete(System.String)
+- uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
+  id: FilteredCount(System.String)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: FilteredCount(String)
+  nameWithType: IRepository<T>.FilteredCount(String)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.FilteredCount(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: FilteredCount
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 22
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: long FilteredCount(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function FilteredCount(id As String) As Long
+  overload: TcOpen.Inxton.Data.IRepository`1.FilteredCount*
+  nameWithType.vb: IRepository(Of T).FilteredCount(String)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount(System.String)
+- uid: TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
+  id: GetRecords(System.String,System.Int32,System.Int32)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetRecords(String, Int32, Int32)
+  nameWithType: IRepository<T>.GetRecords(String, Int32, Int32)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.GetRecords(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: GetRecords
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 23
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: IEnumerable<T> GetRecords(string identifier = "*", int limit = 100, int skip = 0)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: limit
+      type: System.Int32
+    - id: skip
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function GetRecords(identifier As String = "*", limit As Integer = 100, skip As Integer = 0) As IEnumerable(Of T)
+  overload: TcOpen.Inxton.Data.IRepository`1.GetRecords*
+  nameWithType.vb: IRepository(Of T).GetRecords(String, Int32, Int32)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).GetRecords(System.String, System.Int32, System.Int32)
+- uid: TcOpen.Inxton.Data.IRepository`1.Read(System.String)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.Read(System.String)
+  id: Read(System.String)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Read(String)
+  nameWithType: IRepository<T>.Read(String)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Read(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Read
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 24
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: T Read(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    return:
+      type: '{T}'
+    content.vb: Function Read(identifier As String) As T
+  overload: TcOpen.Inxton.Data.IRepository`1.Read*
+  nameWithType.vb: IRepository(Of T).Read(String)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Read(System.String)
+- uid: TcOpen.Inxton.Data.IRepository`1.Update(System.String,`0)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.Update(System.String,`0)
+  id: Update(System.String,`0)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(String, T)
+  nameWithType: IRepository<T>.Update(String, T)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Update(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Update
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 25
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void Update(string identifier, T data)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: data
+      type: '{T}'
+    content.vb: Sub Update(identifier As String, data As T)
+  overload: TcOpen.Inxton.Data.IRepository`1.Update*
+  nameWithType.vb: IRepository(Of T).Update(String, T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Update(System.String, T)
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: TcOpen.Inxton.Data.IRepository`1.Count*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Count
+  name: Count
+  nameWithType: IRepository<T>.Count
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Count
+  nameWithType.vb: IRepository(Of T).Count
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Data.IRepository`1.Queryable*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Queryable
+  name: Queryable
+  nameWithType: IRepository<T>.Queryable
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Queryable
+  nameWithType.vb: IRepository(Of T).Queryable
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Queryable
+- uid: System.Linq.IQueryable{{T}}
+  commentId: T:System.Linq.IQueryable{`0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: TcOpen.Inxton.Data.IRepository`1.Create*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Create
+  name: Create
+  nameWithType: IRepository<T>.Create
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Create
+  nameWithType.vb: IRepository(Of T).Create
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TcOpen.Inxton.Data.IRepository`1.Delete*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Delete
+  name: Delete
+  nameWithType: IRepository<T>.Delete
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Delete
+  nameWithType.vb: IRepository(Of T).Delete
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Delete
+- uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.FilteredCount
+  name: FilteredCount
+  nameWithType: IRepository<T>.FilteredCount
+  fullName: TcOpen.Inxton.Data.IRepository<T>.FilteredCount
+  nameWithType.vb: IRepository(Of T).FilteredCount
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount
+- uid: TcOpen.Inxton.Data.IRepository`1.GetRecords*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.GetRecords
+  name: GetRecords
+  nameWithType: IRepository<T>.GetRecords
+  fullName: TcOpen.Inxton.Data.IRepository<T>.GetRecords
+  nameWithType.vb: IRepository(Of T).GetRecords
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).GetRecords
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TcOpen.Inxton.Data.IRepository`1.Read*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Read
+  name: Read
+  nameWithType: IRepository<T>.Read
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Read
+  nameWithType.vb: IRepository(Of T).Read
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Read
+- uid: TcOpen.Inxton.Data.IRepository`1.Update*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Update
+  name: Update
+  nameWithType: IRepository<T>.Update
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Update
+  nameWithType.vb: IRepository(Of T).Update
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Update

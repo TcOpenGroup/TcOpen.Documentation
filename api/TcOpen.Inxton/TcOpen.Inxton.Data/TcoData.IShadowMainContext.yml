@@ -19,12 +19,12 @@ items:
   type: Interface
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IShadowMainContext
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 205
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 14
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -62,12 +62,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: fbProcessDataManger
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 207
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 16
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -95,12 +95,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: test
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 212
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 21
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -128,12 +128,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 217
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 26
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -156,12 +156,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 218
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 27
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -182,12 +182,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
-    startLine: 219
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMainContext.g.cs
+    startLine: 28
   assemblies:
   - TcoDataConnector
   namespace: TcoData
