@@ -15,7 +15,7 @@
 3. Include TcOpen in the project [link](../How_to_include_tcopen_in_a_project/article.md)
 
 
-4. Write your first sequence [link](../How_to_include_tcopen_in_a_project/article.md)
+4. Write your first sequence [link](../How_to_write_a_sequence/article.md)
 
 
 ## Some tips 💹

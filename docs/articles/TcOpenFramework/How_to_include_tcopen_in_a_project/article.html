@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>How to get started from scratch &#128104;&#8205;&#127891;&#128105;&#8205;&#127891; | TcOpen </title>
+    <title>How to include TcOpen in a project | TcOpen </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="How to get started from scratch &#128104;&#8205;&#127891;&#128105;&#8205;&#127891; | TcOpen ">
+    <meta name="title" content="How to include TcOpen in a project | TcOpen ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../../favicon.png">
@@ -105,14 +105,14 @@
                           <li class="">
                             <a href="../../TcOpenFramework/messaging.html" title="Messaging" class="">Messaging</a>
                           </li>
-                          <li class="active">
-                            <a href="../../TcOpenFramework/How_to_get_started_from_scratch/article.html" title="How to get started from scratch" class="active">How to get started from scratch</a>
+                          <li class="">
+                            <a href="../../TcOpenFramework/How_to_get_started_from_scratch/article.html" title="How to get started from scratch" class="">How to get started from scratch</a>
                           </li>
                           <li class="">
                             <a href="../../TcOpenFramework/How_to_write_a_sequence/article.html" title="How to write a sequence" class="">How to write a sequence</a>
                           </li>
-                          <li class="">
-                            <a href="../../TcOpenFramework/How_to_include_tcopen_in_a_project/article.html" title="How to include TcOpen in a project" class="">How to include TcOpen in a project</a>
+                          <li class="active">
+                            <a href="../../TcOpenFramework/How_to_include_tcopen_in_a_project/article.html" title="How to include TcOpen in a project" class="active">How to include TcOpen in a project</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -135,34 +135,33 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="how-to-get-started-from-scratch-">How to get started from scratch 👨‍🎓👩‍🎓</h1>
+<h1 id="how-to-include-tcopen-in-a-project">How to include TcOpen in a project</h1>
 
-<ol>
-<li><p>Make sure that you comply with the <a href="https://github.com/TcOpenGroup/TcOpen#prerequisites">requirements</a></p>
+<p>If you stumbled upon TcOpen, you probably already have all the stuff you need. You have Visual Studio and you have installed TwinCAT 3. That's pretty much everything you need.</p>
+<p>Your project looks like this. It's probably a bit more complex than this.
+<img src="assets/plc_visual_studio.png" alt="plc visual studio twincat 3">.</p>
 <ul>
-<li>Video tutorial by Tomas Kovac <a href="https://www.youtube.com/watch?v=gs15ewpTXdQ">link</a></li>
-<li>Video tutorial on how to install Visual Studio <a href="https://www.youtube.com/watch?v=1uBESL2S8Ik">link</a></li>
-<li>Installing TwinCAT by Jakob Sagatowski <a href="https://youtu.be/0iDn9E0V1iw?t=574">link</a></li>
+<li>Create a new C# project (.NET Standard 2.0 class library) in your solution and name it <code>PlcProjectConnector</code>
+<ul>
+<li>Microsoft Create a class library project tutorial <a href="https://docs.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio#create-a-class-library-project">link</a></li>
 </ul>
 </li>
-<li><p>Create a TwinCAT 3 XML XAE project</p>
+<li>Expand your newly created project, right click on <code>Dependencies</code> and select <code>Manage NuGet Packages</code>.
 <ul>
-<li>Official Beckhoff's guide <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_c/110697995.html&amp;id=">link</a></li>
-<li>Video by Jakob Sagatowski <a href="https://youtu.be/P9uUgT8EhUM?t=1113">link</a></li>
-<li>Video by Frazer Noble <a href="https://www.youtube.com/watch?v=XJ7zxRO4mWw">link</a></li>
+<li>Microsoft NuGet Package Manager  tutorial <a href="https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio#nuget-package-manager">link</a></li>
 </ul>
 </li>
-<li><p>Include TcOpen in the project <a href="../How_to_include_tcopen_in_a_project/article.html">link</a></p>
-</li>
-<li><p>Write your first sequence <a href="../How_to_write_a_sequence/article.html">link</a></p>
-</li>
-</ol>
-<h2 id="some-tips-">Some tips 💹</h2>
+<li>Click on <code>Browse</code>, search for <code>TcOpen.TcoCoreConnector</code> and click on Install</li>
+<li>If you have <a href="https://marketplace.visualstudio.com/items?itemName=Inxton.InxtonVortexBuilderExtensionPre">Inxton Builder extension</a> just click on the Inxton build icon.
 <ul>
-<li>Search for TcOpen on YouTube!</li>
-<li>Have a look at <a href="https://github.com/TcOpenGroup">TcOpenGroup</a> Github page!</li>
-<li>Have fun!</li>
+<li>If you don't have it expand <code>Dependencies</code>-&gt; <code>Packages</code> in your Solution Explorer and right click on <code>TcOpen.TcoCoreConnector</code> and select <code>Open folder in File Explorer</code>. You will get to your NuGet folder (in my case <code>C:\Users\jozef.chmelar.ml.MTS\.nuget\packages\tcopen.tcocoreconnector\0.4.2-alpha.453</code> ). There's a directory called <code>lib</code> and in it there's TwinCAT library <code>TcoCore.library</code></li>
 </ul>
+</li>
+<li>Install this library as you would a regular TwinCAT library. Tutorial by Beckhoff <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/4189333259.html&amp;id=">here</a>.</li>
+</ul>
+<p>Now that you have TcOpen in your project I recommend to read more about it <a href="../application.html">here</a>.
+Or write your first sequence! <a href="../How_to_write_a_sequence/article.html">here</a>.</p>
+<p>If you prefer a working template check out <a href="https://github.com/TcOpenGroup/TcOpen.Hammer">TcOpen.Hammer</a></p>
 </article>
           </div>
           
@@ -171,7 +170,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/blob/dev/articles/TcOpenFramework/How_to_get_started_from_scratch/article.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/blob/dev/articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -136,9 +136,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.yml",
       "output": {
@@ -778,6 +775,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.yml",
       "output": {
@@ -5769,7 +5769,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Component.html",
-          "hash": "FCgh2W8wUCIhmPu5UixVBQ=="
+          "hash": "0amYzOXaMF2u/8AsJeVwKw=="
         }
       },
       "is_incremental": false,
@@ -5781,7 +5781,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Conventions.html",
-          "hash": "Dp/NJPZDB6DMb/b3lxjWlA=="
+          "hash": "rytannMGsq8ld3Qp5i9FqQ=="
         }
       },
       "is_incremental": false,
@@ -5793,7 +5793,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Colors_wpf.html",
-          "hash": "TAw2cJ+2ObtC+csz5dM0UA=="
+          "hash": "ZI5TEeMhhp7MWUtmo2I1zA=="
         }
       },
       "is_incremental": false,
@@ -5805,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/InxtonConventions.html",
-          "hash": "Vj9qOS9PGO2TmA4No22sDg=="
+          "hash": "HxhIeTxSDOS/IIs5l5EEag=="
         }
       },
       "is_incremental": false,
@@ -5839,7 +5839,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/How_to_get_started_from_scratch/article.html",
-          "hash": "XkmfVxTTzMxfs/wEt+xchw=="
+          "hash": "kp7QkusDhnAEOeWLQUv96w=="
         }
       },
       "is_incremental": false,
@@ -5857,15 +5857,35 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.html",
+          "hash": "X4EKyis0ybrhdPa92s/GDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.md",
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.html",
-          "hash": "FgNwCgmgSwuNUuW59p4GNQ=="
+          "hash": "4wGJcVxWTQMYTOZfoA2RTw=="
         }
       },
       "is_incremental": false,
@@ -5957,7 +5977,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/application.html",
-          "hash": "+r47nT5/Jm5OBN8V9XWPkA=="
+          "hash": "VDUc+4Dw6kr1AW0sGA8f4g=="
         }
       },
       "is_incremental": false,
@@ -5969,7 +5989,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/messaging.html",
-          "hash": "bZ7KXkjfXEGY95FJAP/Wow=="
+          "hash": "fOAVLhjOyFYGsvRSe/Z6PQ=="
         }
       },
       "is_incremental": false,
@@ -5981,7 +6001,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "+uxxrlIk46F2XJOmrQV2gg=="
+          "hash": "M1QiqdHwi3fdcF7sZ/cG8Q=="
         }
       },
       "is_incremental": false,
@@ -6025,7 +6045,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 12,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
