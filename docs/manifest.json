@@ -184,6 +184,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Logging.yml",
       "output": {
@@ -448,9 +451,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcoCore.yml",
       "output": {
@@ -1522,9 +1522,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Logging/TcOpen.Inxton.Logging.yml",
       "output": {
@@ -3229,6 +3226,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoCore/TcoCore.yml",
       "output": {
@@ -5769,7 +5769,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Component.html",
-          "hash": "0amYzOXaMF2u/8AsJeVwKw=="
+          "hash": "RDE1jWxqY4T4CVn4xJC1CA=="
         }
       },
       "is_incremental": false,
@@ -5781,7 +5781,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Conventions.html",
-          "hash": "rytannMGsq8ld3Qp5i9FqQ=="
+          "hash": "HgZaFwIJOtwSD+MpFxL3Sg=="
         }
       },
       "is_incremental": false,
@@ -5793,7 +5793,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Colors_wpf.html",
-          "hash": "ZI5TEeMhhp7MWUtmo2I1zA=="
+          "hash": "VfcZV3jaV18qYpNvnQ60Pw=="
         }
       },
       "is_incremental": false,
@@ -5805,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/InxtonConventions.html",
-          "hash": "HxhIeTxSDOS/IIs5l5EEag=="
+          "hash": "fKSxloYtt2DL14O5qKgSJg=="
         }
       },
       "is_incremental": false,
@@ -5835,11 +5835,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_from_scratch/article.md",
+      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/How_to_get_started_from_scratch/article.html",
-          "hash": "kp7QkusDhnAEOeWLQUv96w=="
+          "relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.html",
+          "hash": "50Bzp5IeRgpsklkyyaQy/w=="
         }
       },
       "is_incremental": false,
@@ -5847,10 +5847,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_from_scratch/assets/plc_visual_studio.png",
+      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png",
       "output": {
         "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_get_started_from_scratch/assets/plc_visual_studio.png"
+          "relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png"
         }
       },
       "is_incremental": false,
@@ -5862,7 +5862,40 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.html",
-          "hash": "X4EKyis0ybrhdPa92s/GDA=="
+          "hash": "qV2qiFJNyJ/pW1dLiVxItw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/install_library.gif",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/install_library.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/open_dependencies.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/open_dependencies.png"
         }
       },
       "is_incremental": false,
@@ -5880,12 +5913,48 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/tcolibrary.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/tcolibrary.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.md",
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.html",
-          "hash": "4wGJcVxWTQMYTOZfoA2RTw=="
+          "hash": "pOWtcFAyAT/CFvOP4ZL4Yg=="
         }
       },
       "is_incremental": false,
@@ -5977,7 +6046,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/application.html",
-          "hash": "VDUc+4Dw6kr1AW0sGA8f4g=="
+          "hash": "H9UrIO/cZ/MTdM6so139mA=="
         }
       },
       "is_incremental": false,
@@ -5989,7 +6058,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/TcOpenFramework/messaging.html",
-          "hash": "fOAVLhjOyFYGsvRSe/Z6PQ=="
+          "hash": "wWXXBUwzmX1hriqCNHamOQ=="
         }
       },
       "is_incremental": false,
@@ -6001,7 +6070,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "M1QiqdHwi3fdcF7sZ/cG8Q=="
+          "hash": "zM+a8HX/5+Q0gumyCEJk/g=="
         }
       },
       "is_incremental": false,
