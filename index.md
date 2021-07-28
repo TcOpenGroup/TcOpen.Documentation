@@ -4,7 +4,7 @@
 
 ## What is TcOpen?
 
-Open Source TwinCAR 3.1 code by Automation Professionals for Automation Professionals.  
+Open Source TwinCAT 3.1 code by Automation Professionals for Automation Professionals.  
 
 This is intended to be a continuous development project aimed to provide standard classes to start building deployable applications.
 
@@ -17,5 +17,5 @@ Developed on [GitHub](https://github.com/TcOpenGroup/TcOpen) delivered as [NuGet
 
 ## Where are we?
 
-About the current state of the development, read more [here](https://github.com/TcOpenGroup/TcOpen/blob/initial-dev/README.md).
+About the current state of the development, read more [here](https://github.com/TcOpenGroup/TcOpen/blob/dev/README.md).
 

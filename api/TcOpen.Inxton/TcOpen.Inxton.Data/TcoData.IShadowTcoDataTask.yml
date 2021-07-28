@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IShadowTcoDataTask
+  commentId: T:TcoData.IShadowTcoDataTask
+  id: IShadowTcoDataTask
+  parent: TcoData
+  children:
+  - TcoData.IShadowTcoDataTask._identifier
+  - TcoData.IShadowTcoDataTask.CopyPlainToShadow(TcoData.PlainTcoDataTask)
+  - TcoData.IShadowTcoDataTask.CreatePlainerType
+  - TcoData.IShadowTcoDataTask.FlushShadowToOnline
+  langs:
+  - csharp
+  - vb
+  name: IShadowTcoDataTask
+  nameWithType: IShadowTcoDataTask
+  fullName: TcoData.IShadowTcoDataTask
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IShadowTcoDataTask
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 165
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is shadow interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'public interface IShadowTcoDataTask : IShadowTcoRemoteTask, IShadowTcoTask, IShadowTcoObject, IVortexShadowObject'
+    content.vb: >-
+      Public Interface IShadowTcoDataTask
+
+          Inherits IVortexShadowObject, IShadowTcoRemoteTask
+  inheritedMembers:
+  - TcoCore.IShadowTcoRemoteTask._isInitialized
+  - TcoCore.IShadowTcoRemoteTask._hasException
+  - TcoCore.IShadowTcoRemoteTask._startSignature
+  - TcoCore.IShadowTcoRemoteTask._doneSignarure
+  - TcoCore.IShadowTcoRemoteTask._exceptionMessage
+  - TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+  - TcoCore.IShadowTcoTask._taskState
+  - TcoCore.IShadowTcoTask._restoreRequest
+  - TcoCore.IShadowTcoTask._invokeRequest
+  - TcoCore.IShadowTcoTask._abortRequest
+  - TcoCore.IShadowTcoTask._enabled
+  - TcoCore.IShadowTcoTask._isServiceable
+  - TcoCore.IShadowTcoTask._elapsedTime
+  - TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+  - TcoCore.IShadowTcoObject._Identity
+  - TcoCore.IShadowTcoObject._messenger
+  - TcoCore.IShadowTcoObject.AttributeToolTip
+  - TcoCore.IShadowTcoObject.AttributeName
+  - TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.IShadowTcoDataTask._identifier
+  commentId: P:TcoData.IShadowTcoDataTask._identifier
+  id: _identifier
+  parent: TcoData.IShadowTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: _identifier
+  nameWithType: IShadowTcoDataTask._identifier
+  fullName: TcoData.IShadowTcoDataTask._identifier
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _identifier
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 167
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowString _identifier { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.ValueTypes.Shadows.IShadowString
+    content.vb: ReadOnly Property _identifier As IShadowString
+  overload: TcoData.IShadowTcoDataTask._identifier*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataTask.CreatePlainerType
+  commentId: M:TcoData.IShadowTcoDataTask.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IShadowTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IShadowTcoDataTask.CreatePlainerType()
+  fullName: TcoData.IShadowTcoDataTask.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 172
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainTcoDataTask CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataTask
+    content.vb: Function CreatePlainerType As PlainTcoDataTask
+  overload: TcoData.IShadowTcoDataTask.CreatePlainerType*
+- uid: TcoData.IShadowTcoDataTask.FlushShadowToOnline
+  commentId: M:TcoData.IShadowTcoDataTask.FlushShadowToOnline
+  id: FlushShadowToOnline
+  parent: TcoData.IShadowTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: FlushShadowToOnline()
+  nameWithType: IShadowTcoDataTask.FlushShadowToOnline()
+  fullName: TcoData.IShadowTcoDataTask.FlushShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 173
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushShadowToOnline()
+    content.vb: Sub FlushShadowToOnline
+  overload: TcoData.IShadowTcoDataTask.FlushShadowToOnline*
+- uid: TcoData.IShadowTcoDataTask.CopyPlainToShadow(TcoData.PlainTcoDataTask)
+  commentId: M:TcoData.IShadowTcoDataTask.CopyPlainToShadow(TcoData.PlainTcoDataTask)
+  id: CopyPlainToShadow(TcoData.PlainTcoDataTask)
+  parent: TcoData.IShadowTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(PlainTcoDataTask)
+  nameWithType: IShadowTcoDataTask.CopyPlainToShadow(PlainTcoDataTask)
+  fullName: TcoData.IShadowTcoDataTask.CopyPlainToShadow(TcoData.PlainTcoDataTask)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    startLine: 174
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void CopyPlainToShadow(PlainTcoDataTask source)
+    parameters:
+    - id: source
+      type: TcoData.PlainTcoDataTask
+    content.vb: Sub CopyPlainToShadow(source As PlainTcoDataTask)
+  overload: TcoData.IShadowTcoDataTask.CopyPlainToShadow*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoCore.IShadowTcoRemoteTask._isInitialized
+  commentId: P:TcoCore.IShadowTcoRemoteTask._isInitialized
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: _isInitialized
+  nameWithType: IShadowTcoRemoteTask._isInitialized
+  fullName: TcoCore.IShadowTcoRemoteTask._isInitialized
+- uid: TcoCore.IShadowTcoRemoteTask._hasException
+  commentId: P:TcoCore.IShadowTcoRemoteTask._hasException
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: _hasException
+  nameWithType: IShadowTcoRemoteTask._hasException
+  fullName: TcoCore.IShadowTcoRemoteTask._hasException
+- uid: TcoCore.IShadowTcoRemoteTask._startSignature
+  commentId: P:TcoCore.IShadowTcoRemoteTask._startSignature
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: _startSignature
+  nameWithType: IShadowTcoRemoteTask._startSignature
+  fullName: TcoCore.IShadowTcoRemoteTask._startSignature
+- uid: TcoCore.IShadowTcoRemoteTask._doneSignarure
+  commentId: P:TcoCore.IShadowTcoRemoteTask._doneSignarure
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: _doneSignarure
+  nameWithType: IShadowTcoRemoteTask._doneSignarure
+  fullName: TcoCore.IShadowTcoRemoteTask._doneSignarure
+- uid: TcoCore.IShadowTcoRemoteTask._exceptionMessage
+  commentId: P:TcoCore.IShadowTcoRemoteTask._exceptionMessage
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: _exceptionMessage
+  nameWithType: IShadowTcoRemoteTask._exceptionMessage
+  fullName: TcoCore.IShadowTcoRemoteTask._exceptionMessage
+- uid: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+  commentId: M:TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+  parent: TcoCore.IShadowTcoRemoteTask
+  name: CopyPlainToShadow(PlainTcoRemoteTask)
+  nameWithType: IShadowTcoRemoteTask.CopyPlainToShadow(PlainTcoRemoteTask)
+  fullName: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+  spec.csharp:
+  - uid: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoRemoteTask.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoRemoteTask.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoRemoteTask.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoRemoteTask
+    name: PlainTcoRemoteTask
+    nameWithType: PlainTcoRemoteTask
+    fullName: TcoCore.PlainTcoRemoteTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IShadowTcoTask._taskState
+  commentId: P:TcoCore.IShadowTcoTask._taskState
+  parent: TcoCore.IShadowTcoTask
+  name: _taskState
+  nameWithType: IShadowTcoTask._taskState
+  fullName: TcoCore.IShadowTcoTask._taskState
+- uid: TcoCore.IShadowTcoTask._restoreRequest
+  commentId: P:TcoCore.IShadowTcoTask._restoreRequest
+  parent: TcoCore.IShadowTcoTask
+  name: _restoreRequest
+  nameWithType: IShadowTcoTask._restoreRequest
+  fullName: TcoCore.IShadowTcoTask._restoreRequest
+- uid: TcoCore.IShadowTcoTask._invokeRequest
+  commentId: P:TcoCore.IShadowTcoTask._invokeRequest
+  parent: TcoCore.IShadowTcoTask
+  name: _invokeRequest
+  nameWithType: IShadowTcoTask._invokeRequest
+  fullName: TcoCore.IShadowTcoTask._invokeRequest
+- uid: TcoCore.IShadowTcoTask._abortRequest
+  commentId: P:TcoCore.IShadowTcoTask._abortRequest
+  parent: TcoCore.IShadowTcoTask
+  name: _abortRequest
+  nameWithType: IShadowTcoTask._abortRequest
+  fullName: TcoCore.IShadowTcoTask._abortRequest
+- uid: TcoCore.IShadowTcoTask._enabled
+  commentId: P:TcoCore.IShadowTcoTask._enabled
+  parent: TcoCore.IShadowTcoTask
+  name: _enabled
+  nameWithType: IShadowTcoTask._enabled
+  fullName: TcoCore.IShadowTcoTask._enabled
+- uid: TcoCore.IShadowTcoTask._isServiceable
+  commentId: P:TcoCore.IShadowTcoTask._isServiceable
+  parent: TcoCore.IShadowTcoTask
+  name: _isServiceable
+  nameWithType: IShadowTcoTask._isServiceable
+  fullName: TcoCore.IShadowTcoTask._isServiceable
+- uid: TcoCore.IShadowTcoTask._elapsedTime
+  commentId: P:TcoCore.IShadowTcoTask._elapsedTime
+  parent: TcoCore.IShadowTcoTask
+  name: _elapsedTime
+  nameWithType: IShadowTcoTask._elapsedTime
+  fullName: TcoCore.IShadowTcoTask._elapsedTime
+- uid: TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+  commentId: M:TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+  parent: TcoCore.IShadowTcoTask
+  name: CopyPlainToShadow(PlainTcoTask)
+  nameWithType: IShadowTcoTask.CopyPlainToShadow(PlainTcoTask)
+  fullName: TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+  spec.csharp:
+  - uid: TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoTask.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoTask.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IShadowTcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoTask.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoTask.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoTask
+    name: PlainTcoTask
+    nameWithType: PlainTcoTask
+    fullName: TcoCore.PlainTcoTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IShadowTcoObject._Identity
+  commentId: P:TcoCore.IShadowTcoObject._Identity
+  parent: TcoCore.IShadowTcoObject
+  name: _Identity
+  nameWithType: IShadowTcoObject._Identity
+  fullName: TcoCore.IShadowTcoObject._Identity
+- uid: TcoCore.IShadowTcoObject._messenger
+  commentId: P:TcoCore.IShadowTcoObject._messenger
+  parent: TcoCore.IShadowTcoObject
+  name: _messenger
+  nameWithType: IShadowTcoObject._messenger
+  fullName: TcoCore.IShadowTcoObject._messenger
+- uid: TcoCore.IShadowTcoObject.AttributeToolTip
+  commentId: P:TcoCore.IShadowTcoObject.AttributeToolTip
+  parent: TcoCore.IShadowTcoObject
+  name: AttributeToolTip
+  nameWithType: IShadowTcoObject.AttributeToolTip
+  fullName: TcoCore.IShadowTcoObject.AttributeToolTip
+- uid: TcoCore.IShadowTcoObject.AttributeName
+  commentId: P:TcoCore.IShadowTcoObject.AttributeName
+  parent: TcoCore.IShadowTcoObject
+  name: AttributeName
+  nameWithType: IShadowTcoObject.AttributeName
+  fullName: TcoCore.IShadowTcoObject.AttributeName
+- uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  commentId: M:TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  parent: TcoCore.IShadowTcoObject
+  name: CopyPlainToShadow(PlainTcoObject)
+  nameWithType: IShadowTcoObject.CopyPlainToShadow(PlainTcoObject)
+  fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+  spec.csharp:
+  - uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoObject.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IShadowTcoObject.CopyPlainToShadow(TcoCore.PlainTcoObject)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoObject.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoObject.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoObject
+    name: PlainTcoObject
+    nameWithType: PlainTcoObject
+    fullName: TcoCore.PlainTcoObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IShadowTcoRemoteTask
+  commentId: T:TcoCore.IShadowTcoRemoteTask
+  parent: TcoCore
+  name: IShadowTcoRemoteTask
+  nameWithType: IShadowTcoRemoteTask
+  fullName: TcoCore.IShadowTcoRemoteTask
+- uid: TcoCore.IShadowTcoTask
+  commentId: T:TcoCore.IShadowTcoTask
+  parent: TcoCore
+  name: IShadowTcoTask
+  nameWithType: IShadowTcoTask
+  fullName: TcoCore.IShadowTcoTask
+- uid: TcoCore.IShadowTcoObject
+  commentId: T:TcoCore.IShadowTcoObject
+  parent: TcoCore
+  name: IShadowTcoObject
+  nameWithType: IShadowTcoObject
+  fullName: TcoCore.IShadowTcoObject
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.IShadowTcoDataTask._identifier*
+  commentId: Overload:TcoData.IShadowTcoDataTask._identifier
+  name: _identifier
+  nameWithType: IShadowTcoDataTask._identifier
+  fullName: TcoData.IShadowTcoDataTask._identifier
+- uid: Vortex.Connector.ValueTypes.Shadows.IShadowString
+  commentId: T:Vortex.Connector.ValueTypes.Shadows.IShadowString
+  parent: Vortex.Connector.ValueTypes.Shadows
+  isExternal: true
+  name: IShadowString
+  nameWithType: IShadowString
+  fullName: Vortex.Connector.ValueTypes.Shadows.IShadowString
+- uid: Vortex.Connector.ValueTypes.Shadows
+  commentId: N:Vortex.Connector.ValueTypes.Shadows
+  isExternal: true
+  name: Vortex.Connector.ValueTypes.Shadows
+  nameWithType: Vortex.Connector.ValueTypes.Shadows
+  fullName: Vortex.Connector.ValueTypes.Shadows
+- uid: TcoData.IShadowTcoDataTask.CreatePlainerType*
+  commentId: Overload:TcoData.IShadowTcoDataTask.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IShadowTcoDataTask.CreatePlainerType
+  fullName: TcoData.IShadowTcoDataTask.CreatePlainerType
+- uid: TcoData.PlainTcoDataTask
+  commentId: T:TcoData.PlainTcoDataTask
+  parent: TcoData
+  name: PlainTcoDataTask
+  nameWithType: PlainTcoDataTask
+  fullName: TcoData.PlainTcoDataTask
+- uid: TcoData.IShadowTcoDataTask.FlushShadowToOnline*
+  commentId: Overload:TcoData.IShadowTcoDataTask.FlushShadowToOnline
+  name: FlushShadowToOnline
+  nameWithType: IShadowTcoDataTask.FlushShadowToOnline
+  fullName: TcoData.IShadowTcoDataTask.FlushShadowToOnline
+- uid: TcoData.IShadowTcoDataTask.CopyPlainToShadow*
+  commentId: Overload:TcoData.IShadowTcoDataTask.CopyPlainToShadow
+  name: CopyPlainToShadow
+  nameWithType: IShadowTcoDataTask.CopyPlainToShadow
+  fullName: TcoData.IShadowTcoDataTask.CopyPlainToShadow

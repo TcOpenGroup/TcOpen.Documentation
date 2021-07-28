@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IShadowTcoDataTwinController
+  commentId: T:TcoData.IShadowTcoDataTwinController
+  id: IShadowTcoDataTwinController
+  parent: TcoData
+  children:
+  - TcoData.IShadowTcoDataTwinController.AttributeName
+  - TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  langs:
+  - csharp
+  - vb
+  name: IShadowTcoDataTwinController
+  nameWithType: IShadowTcoDataTwinController
+  fullName: TcoData.IShadowTcoDataTwinController
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IShadowTcoDataTwinController
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 159
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public interface IShadowTcoDataTwinController
+    content.vb: Public Interface IShadowTcoDataTwinController
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcoData.IShadowTcoDataTwinController.AttributeName
+  commentId: P:TcoData.IShadowTcoDataTwinController.AttributeName
+  id: AttributeName
+  parent: TcoData.IShadowTcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: IShadowTcoDataTwinController.AttributeName
+  fullName: TcoData.IShadowTcoDataTwinController.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 161
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string AttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AttributeName As String
+  overload: TcoData.IShadowTcoDataTwinController.AttributeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  commentId: M:TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IShadowTcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IShadowTcoDataTwinController.CreatePlainerType()
+  fullName: TcoData.IShadowTcoDataTwinController.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 166
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainTcoDataTwinController CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataTwinController
+    content.vb: Function CreatePlainerType As PlainTcoDataTwinController
+  overload: TcoData.IShadowTcoDataTwinController.CreatePlainerType*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.IShadowTcoDataTwinController.AttributeName*
+  commentId: Overload:TcoData.IShadowTcoDataTwinController.AttributeName
+  name: AttributeName
+  nameWithType: IShadowTcoDataTwinController.AttributeName
+  fullName: TcoData.IShadowTcoDataTwinController.AttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.IShadowTcoDataTwinController.CreatePlainerType*
+  commentId: Overload:TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IShadowTcoDataTwinController.CreatePlainerType
+  fullName: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+- uid: TcoData.PlainTcoDataTwinController
+  commentId: T:TcoData.PlainTcoDataTwinController
+  parent: TcoData
+  name: PlainTcoDataTwinController
+  nameWithType: PlainTcoDataTwinController
+  fullName: TcoData.PlainTcoDataTwinController

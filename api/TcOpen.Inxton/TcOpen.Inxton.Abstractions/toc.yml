@@ -1,0 +1,22 @@
+### YamlMime:TableOfContent
+- uid: TcOpen.Inxton.Abstractions.Data
+  name: TcOpen.Inxton.Abstractions.Data
+  items:
+  - uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+    name: DateTimeProviderBase
+  - uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+    name: DateTimeProviders
+  - uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+    name: IBrowsableDataObject
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository
+    name: IRepository
+  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+    name: IRepository<T>
+    name.vb: IRepository(Of T)
+  - uid: TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+    name: StandardDateTimeProvider
+- uid: TcOpen.Inxton.Abstractions.Logging
+  name: TcOpen.Inxton.Abstractions.Logging
+  items:
+  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+    name: ITcoLogger

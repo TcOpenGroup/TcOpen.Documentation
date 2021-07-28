@@ -1,2 +1,4 @@
 - name: General
   href: Conventions.md
+- name: Components
+  href: Component.md  

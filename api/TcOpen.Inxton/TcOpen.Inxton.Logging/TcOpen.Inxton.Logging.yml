@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Logging
+  commentId: N:TcOpen.Inxton.Logging
+  id: TcOpen.Inxton.Logging
+  children:
+  - TcOpen.Inxton.Logging.DummyLoggerAdapter
+  - TcOpen.Inxton.Logging.SerilogAdapter
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Logging
+  nameWithType: TcOpen.Inxton.Logging
+  fullName: TcOpen.Inxton.Logging
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Logging
+references:
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter
+  commentId: T:TcOpen.Inxton.Logging.DummyLoggerAdapter
+  name: DummyLoggerAdapter
+  nameWithType: DummyLoggerAdapter
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter
+- uid: TcOpen.Inxton.Logging.SerilogAdapter
+  commentId: T:TcOpen.Inxton.Logging.SerilogAdapter
+  name: SerilogAdapter
+  nameWithType: SerilogAdapter
+  fullName: TcOpen.Inxton.Logging.SerilogAdapter

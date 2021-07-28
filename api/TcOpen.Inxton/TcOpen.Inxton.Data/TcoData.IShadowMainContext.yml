@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.IShadowMainContext
+  commentId: T:TcoData.IShadowMainContext
+  id: IShadowMainContext
+  parent: TcoData
+  children:
+  - TcoData.IShadowMainContext.CopyPlainToShadow(TcoData.PlainMainContext)
+  - TcoData.IShadowMainContext.CreatePlainerType
+  - TcoData.IShadowMainContext.fbProcessDataManger
+  - TcoData.IShadowMainContext.FlushShadowToOnline
+  - TcoData.IShadowMainContext.test
+  langs:
+  - csharp
+  - vb
+  name: IShadowMainContext
+  nameWithType: IShadowMainContext
+  fullName: TcoData.IShadowMainContext
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IShadowMainContext
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 205
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  summary: "\nThis is shadow interface for its respective class. For documentation of this type see the onliner class.\n"
+  example: []
+  syntax:
+    content: 'interface IShadowMainContext : IShadowTcoContext, IVortexShadowObject'
+    content.vb: >-
+      Interface IShadowMainContext
+
+          Inherits IVortexShadowObject, IShadowTcoContext
+  inheritedMembers:
+  - TcoCore.IShadowTcoContext._Identity
+  - TcoCore.IShadowTcoContext._startCycleCount
+  - TcoCore.IShadowTcoContext._endCycleCount
+  - TcoCore.IShadowTcoContext._messagingLevel
+  - TcoCore.IShadowTcoContext._rtc
+  - TcoCore.IShadowTcoContext._settings
+  - TcoCore.IShadowTcoContext.AttributeName
+  - TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+  modifiers.csharp:
+  - interface
+  modifiers.vb:
+  - Interface
+- uid: TcoData.IShadowMainContext.fbProcessDataManger
+  commentId: P:TcoData.IShadowMainContext.fbProcessDataManger
+  id: fbProcessDataManger
+  parent: TcoData.IShadowMainContext
+  langs:
+  - csharp
+  - vb
+  name: fbProcessDataManger
+  nameWithType: IShadowMainContext.fbProcessDataManger
+  fullName: TcoData.IShadowMainContext.fbProcessDataManger
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: fbProcessDataManger
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 207
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowTcoDataExchange fbProcessDataManger { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataExchange
+    content.vb: ReadOnly Property fbProcessDataManger As IShadowTcoDataExchange
+  overload: TcoData.IShadowMainContext.fbProcessDataManger*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowMainContext.test
+  commentId: P:TcoData.IShadowMainContext.test
+  id: test
+  parent: TcoData.IShadowMainContext
+  langs:
+  - csharp
+  - vb
+  name: test
+  nameWithType: IShadowMainContext.test
+  fullName: TcoData.IShadowMainContext.test
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: test
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 212
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: IShadowEntity test { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowEntity
+    content.vb: ReadOnly Property test As IShadowEntity
+  overload: TcoData.IShadowMainContext.test*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.IShadowMainContext.CreatePlainerType
+  commentId: M:TcoData.IShadowMainContext.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.IShadowMainContext
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: IShadowMainContext.CreatePlainerType()
+  fullName: TcoData.IShadowMainContext.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 217
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainMainContext CreatePlainerType()
+    return:
+      type: TcoData.PlainMainContext
+    content.vb: Function CreatePlainerType As PlainMainContext
+  overload: TcoData.IShadowMainContext.CreatePlainerType*
+- uid: TcoData.IShadowMainContext.FlushShadowToOnline
+  commentId: M:TcoData.IShadowMainContext.FlushShadowToOnline
+  id: FlushShadowToOnline
+  parent: TcoData.IShadowMainContext
+  langs:
+  - csharp
+  - vb
+  name: FlushShadowToOnline()
+  nameWithType: IShadowMainContext.FlushShadowToOnline()
+  fullName: TcoData.IShadowMainContext.FlushShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: FlushShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 218
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void FlushShadowToOnline()
+    content.vb: Sub FlushShadowToOnline
+  overload: TcoData.IShadowMainContext.FlushShadowToOnline*
+- uid: TcoData.IShadowMainContext.CopyPlainToShadow(TcoData.PlainMainContext)
+  commentId: M:TcoData.IShadowMainContext.CopyPlainToShadow(TcoData.PlainMainContext)
+  id: CopyPlainToShadow(TcoData.PlainMainContext)
+  parent: TcoData.IShadowMainContext
+  langs:
+  - csharp
+  - vb
+  name: CopyPlainToShadow(PlainMainContext)
+  nameWithType: IShadowMainContext.CopyPlainToShadow(PlainMainContext)
+  fullName: TcoData.IShadowMainContext.CopyPlainToShadow(TcoData.PlainMainContext)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CopyPlainToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MainContext.g.cs
+    startLine: 219
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: void CopyPlainToShadow(PlainMainContext source)
+    parameters:
+    - id: source
+      type: TcoData.PlainMainContext
+    content.vb: Sub CopyPlainToShadow(source As PlainMainContext)
+  overload: TcoData.IShadowMainContext.CopyPlainToShadow*
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoCore.IShadowTcoContext._Identity
+  commentId: P:TcoCore.IShadowTcoContext._Identity
+  parent: TcoCore.IShadowTcoContext
+  name: _Identity
+  nameWithType: IShadowTcoContext._Identity
+  fullName: TcoCore.IShadowTcoContext._Identity
+- uid: TcoCore.IShadowTcoContext._startCycleCount
+  commentId: P:TcoCore.IShadowTcoContext._startCycleCount
+  parent: TcoCore.IShadowTcoContext
+  name: _startCycleCount
+  nameWithType: IShadowTcoContext._startCycleCount
+  fullName: TcoCore.IShadowTcoContext._startCycleCount
+- uid: TcoCore.IShadowTcoContext._endCycleCount
+  commentId: P:TcoCore.IShadowTcoContext._endCycleCount
+  parent: TcoCore.IShadowTcoContext
+  name: _endCycleCount
+  nameWithType: IShadowTcoContext._endCycleCount
+  fullName: TcoCore.IShadowTcoContext._endCycleCount
+- uid: TcoCore.IShadowTcoContext._messagingLevel
+  commentId: P:TcoCore.IShadowTcoContext._messagingLevel
+  parent: TcoCore.IShadowTcoContext
+  name: _messagingLevel
+  nameWithType: IShadowTcoContext._messagingLevel
+  fullName: TcoCore.IShadowTcoContext._messagingLevel
+- uid: TcoCore.IShadowTcoContext._rtc
+  commentId: P:TcoCore.IShadowTcoContext._rtc
+  parent: TcoCore.IShadowTcoContext
+  name: _rtc
+  nameWithType: IShadowTcoContext._rtc
+  fullName: TcoCore.IShadowTcoContext._rtc
+- uid: TcoCore.IShadowTcoContext._settings
+  commentId: P:TcoCore.IShadowTcoContext._settings
+  parent: TcoCore.IShadowTcoContext
+  name: _settings
+  nameWithType: IShadowTcoContext._settings
+  fullName: TcoCore.IShadowTcoContext._settings
+- uid: TcoCore.IShadowTcoContext.AttributeName
+  commentId: P:TcoCore.IShadowTcoContext.AttributeName
+  parent: TcoCore.IShadowTcoContext
+  name: AttributeName
+  nameWithType: IShadowTcoContext.AttributeName
+  fullName: TcoCore.IShadowTcoContext.AttributeName
+- uid: TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+  commentId: M:TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+  parent: TcoCore.IShadowTcoContext
+  name: CopyPlainToShadow(PlainTcoContext)
+  nameWithType: IShadowTcoContext.CopyPlainToShadow(PlainTcoContext)
+  fullName: TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+  spec.csharp:
+  - uid: TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoContext.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoContext.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoContext
+    name: PlainTcoContext
+    nameWithType: PlainTcoContext
+    fullName: TcoCore.PlainTcoContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IShadowTcoContext.CopyPlainToShadow(TcoCore.PlainTcoContext)
+    name: CopyPlainToShadow
+    nameWithType: IShadowTcoContext.CopyPlainToShadow
+    fullName: TcoCore.IShadowTcoContext.CopyPlainToShadow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TcoCore.PlainTcoContext
+    name: PlainTcoContext
+    nameWithType: PlainTcoContext
+    fullName: TcoCore.PlainTcoContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IShadowTcoContext
+  commentId: T:TcoCore.IShadowTcoContext
+  parent: TcoCore
+  name: IShadowTcoContext
+  nameWithType: IShadowTcoContext
+  fullName: TcoCore.IShadowTcoContext
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcoData.IShadowMainContext.fbProcessDataManger*
+  commentId: Overload:TcoData.IShadowMainContext.fbProcessDataManger
+  name: fbProcessDataManger
+  nameWithType: IShadowMainContext.fbProcessDataManger
+  fullName: TcoData.IShadowMainContext.fbProcessDataManger
+- uid: TcoData.IShadowTcoDataExchange
+  commentId: T:TcoData.IShadowTcoDataExchange
+  parent: TcoData
+  name: IShadowTcoDataExchange
+  nameWithType: IShadowTcoDataExchange
+  fullName: TcoData.IShadowTcoDataExchange
+- uid: TcoData.IShadowMainContext.test*
+  commentId: Overload:TcoData.IShadowMainContext.test
+  name: test
+  nameWithType: IShadowMainContext.test
+  fullName: TcoData.IShadowMainContext.test
+- uid: TcoData.IShadowEntity
+  commentId: T:TcoData.IShadowEntity
+  parent: TcoData
+  name: IShadowEntity
+  nameWithType: IShadowEntity
+  fullName: TcoData.IShadowEntity
+- uid: TcoData.IShadowMainContext.CreatePlainerType*
+  commentId: Overload:TcoData.IShadowMainContext.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: IShadowMainContext.CreatePlainerType
+  fullName: TcoData.IShadowMainContext.CreatePlainerType
+- uid: TcoData.PlainMainContext
+  commentId: T:TcoData.PlainMainContext
+  parent: TcoData
+  name: PlainMainContext
+  nameWithType: PlainMainContext
+  fullName: TcoData.PlainMainContext
+- uid: TcoData.IShadowMainContext.FlushShadowToOnline*
+  commentId: Overload:TcoData.IShadowMainContext.FlushShadowToOnline
+  name: FlushShadowToOnline
+  nameWithType: IShadowMainContext.FlushShadowToOnline
+  fullName: TcoData.IShadowMainContext.FlushShadowToOnline
+- uid: TcoData.IShadowMainContext.CopyPlainToShadow*
+  commentId: Overload:TcoData.IShadowMainContext.CopyPlainToShadow
+  name: CopyPlainToShadow
+  nameWithType: IShadowMainContext.CopyPlainToShadow
+  fullName: TcoData.IShadowMainContext.CopyPlainToShadow

@@ -1,0 +1,1307 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.TcoDataTwinController
+  commentId: T:TcoData.TcoDataTwinController
+  id: TcoDataTwinController
+  parent: TcoData
+  children:
+  - TcoData.TcoDataTwinController.#ctor
+  - TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter)
+  - TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter,System.Object[])
+  - TcoData.TcoDataTwinController._AttributeName
+  - TcoData.TcoDataTwinController._humanReadable
+  - TcoData.TcoDataTwinController._MAIN
+  - TcoData.TcoDataTwinController._translator
+  - TcoData.TcoDataTwinController.AttributeName
+  - TcoData.TcoDataTwinController.Connector
+  - TcoData.TcoDataTwinController.CreatePlainerType
+  - TcoData.TcoDataTwinController.CreatePlainerType(TcoData.PlainTcoDataTwinController)
+  - TcoData.TcoDataTwinController.HumanReadable
+  - TcoData.TcoDataTwinController.LazyOnlineToShadow
+  - TcoData.TcoDataTwinController.LazyShadowToOnline
+  - TcoData.TcoDataTwinController.LocalizationDirectory
+  - TcoData.TcoDataTwinController.MAIN
+  - TcoData.TcoDataTwinController.Online
+  - TcoData.TcoDataTwinController.Shadow
+  - TcoData.TcoDataTwinController.Symbol
+  - TcoData.TcoDataTwinController.Translator
+  langs:
+  - csharp
+  - vb
+  name: TcoDataTwinController
+  nameWithType: TcoDataTwinController
+  fullName: TcoData.TcoDataTwinController
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: TcoDataTwinController
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 12
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: 'public class TcoDataTwinController : ITwinController, ITcoDataTwinController, IShadowTcoDataTwinController'
+    content.vb: >-
+      Public Class TcoDataTwinController
+
+          Implements ITwinController, ITcoDataTwinController, IShadowTcoDataTwinController
+  inheritance:
+  - System.Object
+  implements:
+  - Vortex.Connector.ITwinController
+  - TcoData.ITcoDataTwinController
+  - TcoData.IShadowTcoDataTwinController
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcoData.TcoDataTwinController.Symbol
+  commentId: P:TcoData.TcoDataTwinController.Symbol
+  id: Symbol
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: TcoDataTwinController.Symbol
+  fullName: TcoData.TcoDataTwinController.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Symbol
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 14
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string Symbol { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Symbol As String
+  overload: TcoData.TcoDataTwinController.Symbol*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: TcoData.TcoDataTwinController.HumanReadable
+  commentId: P:TcoData.TcoDataTwinController.HumanReadable
+  id: HumanReadable
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: HumanReadable
+  nameWithType: TcoDataTwinController.HumanReadable
+  fullName: TcoData.TcoDataTwinController.HumanReadable
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: HumanReadable
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 20
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string HumanReadable { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HumanReadable As String
+  overload: TcoData.TcoDataTwinController.HumanReadable*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: TcoData.TcoDataTwinController._humanReadable
+  commentId: F:TcoData.TcoDataTwinController._humanReadable
+  id: _humanReadable
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: _humanReadable
+  nameWithType: TcoDataTwinController._humanReadable
+  fullName: TcoData.TcoDataTwinController._humanReadable
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _humanReadable
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 33
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected string _humanReadable
+    return:
+      type: System.String
+    content.vb: Protected _humanReadable As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TcoData.TcoDataTwinController._MAIN
+  commentId: F:TcoData.TcoDataTwinController._MAIN
+  id: _MAIN
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: _MAIN
+  nameWithType: TcoDataTwinController._MAIN
+  fullName: TcoData.TcoDataTwinController._MAIN
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _MAIN
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 34
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: MAIN _MAIN
+    return:
+      type: TcoData.MAIN
+    content.vb: _MAIN As MAIN
+- uid: TcoData.TcoDataTwinController.MAIN
+  commentId: P:TcoData.TcoDataTwinController.MAIN
+  id: MAIN
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: MAIN
+  nameWithType: TcoDataTwinController.MAIN
+  fullName: TcoData.TcoDataTwinController.MAIN
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: MAIN
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 35
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      MAIN MAIN
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: TcoData.MAIN
+    content.vb: ReadOnly WriteOnly Property MAIN As MAIN
+  overload: TcoData.TcoDataTwinController.MAIN*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcoData.TcoDataTwinController.LazyOnlineToShadow
+  commentId: M:TcoData.TcoDataTwinController.LazyOnlineToShadow
+  id: LazyOnlineToShadow
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: LazyOnlineToShadow()
+  nameWithType: TcoDataTwinController.LazyOnlineToShadow()
+  fullName: TcoData.TcoDataTwinController.LazyOnlineToShadow()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LazyOnlineToShadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 43
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void LazyOnlineToShadow()
+    content.vb: Public Sub LazyOnlineToShadow
+  overload: TcoData.TcoDataTwinController.LazyOnlineToShadow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.LazyShadowToOnline
+  commentId: M:TcoData.TcoDataTwinController.LazyShadowToOnline
+  id: LazyShadowToOnline
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: LazyShadowToOnline()
+  nameWithType: TcoDataTwinController.LazyShadowToOnline()
+  fullName: TcoData.TcoDataTwinController.LazyShadowToOnline()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LazyShadowToOnline
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 47
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public void LazyShadowToOnline()
+    content.vb: Public Sub LazyShadowToOnline
+  overload: TcoData.TcoDataTwinController.LazyShadowToOnline*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.CreatePlainerType
+  commentId: M:TcoData.TcoDataTwinController.CreatePlainerType
+  id: CreatePlainerType
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType()
+  nameWithType: TcoDataTwinController.CreatePlainerType()
+  fullName: TcoData.TcoDataTwinController.CreatePlainerType()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 51
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public PlainTcoDataTwinController CreatePlainerType()
+    return:
+      type: TcoData.PlainTcoDataTwinController
+    content.vb: Public Function CreatePlainerType As PlainTcoDataTwinController
+  overload: TcoData.TcoDataTwinController.CreatePlainerType*
+  implements:
+  - TcoData.ITcoDataTwinController.CreatePlainerType
+  - TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.CreatePlainerType(TcoData.PlainTcoDataTwinController)
+  commentId: M:TcoData.TcoDataTwinController.CreatePlainerType(TcoData.PlainTcoDataTwinController)
+  id: CreatePlainerType(TcoData.PlainTcoDataTwinController)
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: CreatePlainerType(PlainTcoDataTwinController)
+  nameWithType: TcoDataTwinController.CreatePlainerType(PlainTcoDataTwinController)
+  fullName: TcoData.TcoDataTwinController.CreatePlainerType(TcoData.PlainTcoDataTwinController)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: CreatePlainerType
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 58
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: protected PlainTcoDataTwinController CreatePlainerType(PlainTcoDataTwinController cloned)
+    parameters:
+    - id: cloned
+      type: TcoData.PlainTcoDataTwinController
+    return:
+      type: TcoData.PlainTcoDataTwinController
+    content.vb: Protected Function CreatePlainerType(cloned As PlainTcoDataTwinController) As PlainTcoDataTwinController
+  overload: TcoData.TcoDataTwinController.CreatePlainerType*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TcoData.TcoDataTwinController.AttributeName
+  commentId: P:TcoData.TcoDataTwinController.AttributeName
+  id: AttributeName
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: AttributeName
+  nameWithType: TcoDataTwinController.AttributeName
+  fullName: TcoData.TcoDataTwinController.AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 64
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string AttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AttributeName As String
+  overload: TcoData.TcoDataTwinController.AttributeName*
+  implements:
+  - TcoData.ITcoDataTwinController.AttributeName
+  - TcoData.IShadowTcoDataTwinController.AttributeName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController._AttributeName
+  commentId: P:TcoData.TcoDataTwinController._AttributeName
+  id: _AttributeName
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: _AttributeName
+  nameWithType: TcoDataTwinController._AttributeName
+  fullName: TcoData.TcoDataTwinController._AttributeName
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _AttributeName
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 77
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      string _AttributeName
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly WriteOnly Property _AttributeName As String
+  overload: TcoData.TcoDataTwinController._AttributeName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcoData.TcoDataTwinController.Online
+  commentId: P:TcoData.TcoDataTwinController.Online
+  id: Online
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: Online
+  nameWithType: TcoDataTwinController.Online
+  fullName: TcoData.TcoDataTwinController.Online
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Online
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 83
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public ITcoDataTwinController Online { get; }
+    parameters: []
+    return:
+      type: TcoData.ITcoDataTwinController
+    content.vb: Public ReadOnly Property Online As ITcoDataTwinController
+  overload: TcoData.TcoDataTwinController.Online*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcoData.TcoDataTwinController.Shadow
+  commentId: P:TcoData.TcoDataTwinController.Shadow
+  id: Shadow
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: Shadow
+  nameWithType: TcoDataTwinController.Shadow
+  fullName: TcoData.TcoDataTwinController.Shadow
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Shadow
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 91
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IShadowTcoDataTwinController Shadow { get; }
+    parameters: []
+    return:
+      type: TcoData.IShadowTcoDataTwinController
+    content.vb: Public ReadOnly Property Shadow As IShadowTcoDataTwinController
+  overload: TcoData.TcoDataTwinController.Shadow*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcoData.TcoDataTwinController.Connector
+  commentId: P:TcoData.TcoDataTwinController.Connector
+  id: Connector
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: Connector
+  nameWithType: TcoDataTwinController.Connector
+  fullName: TcoData.TcoDataTwinController.Connector
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Connector
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 99
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public IConnector Connector { get; set; }
+    parameters: []
+    return:
+      type: Vortex.Connector.IConnector
+    content.vb: Public Property Connector As IConnector
+  overload: TcoData.TcoDataTwinController.Connector*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.#ctor
+  commentId: M:TcoData.TcoDataTwinController.#ctor
+  id: '#ctor'
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: TcoDataTwinController()
+  nameWithType: TcoDataTwinController.TcoDataTwinController()
+  fullName: TcoData.TcoDataTwinController.TcoDataTwinController()
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 105
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public TcoDataTwinController()
+    content.vb: Public Sub New
+  overload: TcoData.TcoDataTwinController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter,System.Object[])
+  commentId: M:TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter,System.Object[])
+  id: '#ctor(Vortex.Connector.ConnectorAdapter,System.Object[])'
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: TcoDataTwinController(ConnectorAdapter, Object[])
+  nameWithType: TcoDataTwinController.TcoDataTwinController(ConnectorAdapter, Object[])
+  fullName: TcoData.TcoDataTwinController.TcoDataTwinController(Vortex.Connector.ConnectorAdapter, System.Object[])
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 112
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public TcoDataTwinController(ConnectorAdapter adapter, object[] parameters)
+    parameters:
+    - id: adapter
+      type: Vortex.Connector.ConnectorAdapter
+    - id: parameters
+      type: System.Object[]
+    content.vb: Public Sub New(adapter As ConnectorAdapter, parameters As Object())
+  overload: TcoData.TcoDataTwinController.#ctor*
+  nameWithType.vb: TcoDataTwinController.TcoDataTwinController(ConnectorAdapter, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: TcoData.TcoDataTwinController.TcoDataTwinController(Vortex.Connector.ConnectorAdapter, System.Object())
+  name.vb: TcoDataTwinController(ConnectorAdapter, Object())
+- uid: TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter)
+  commentId: M:TcoData.TcoDataTwinController.#ctor(Vortex.Connector.ConnectorAdapter)
+  id: '#ctor(Vortex.Connector.ConnectorAdapter)'
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: TcoDataTwinController(ConnectorAdapter)
+  nameWithType: TcoDataTwinController.TcoDataTwinController(ConnectorAdapter)
+  fullName: TcoData.TcoDataTwinController.TcoDataTwinController(Vortex.Connector.ConnectorAdapter)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 118
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public TcoDataTwinController(ConnectorAdapter adapter)
+    parameters:
+    - id: adapter
+      type: Vortex.Connector.ConnectorAdapter
+    content.vb: Public Sub New(adapter As ConnectorAdapter)
+  overload: TcoData.TcoDataTwinController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.TcoDataTwinController.LocalizationDirectory
+  commentId: P:TcoData.TcoDataTwinController.LocalizationDirectory
+  id: LocalizationDirectory
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: LocalizationDirectory
+  nameWithType: TcoDataTwinController.LocalizationDirectory
+  fullName: TcoData.TcoDataTwinController.LocalizationDirectory
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LocalizationDirectory
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 124
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public static string LocalizationDirectory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property LocalizationDirectory As String
+  overload: TcoData.TcoDataTwinController.LocalizationDirectory*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TcoData.TcoDataTwinController._translator
+  commentId: P:TcoData.TcoDataTwinController._translator
+  id: _translator
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: _translator
+  nameWithType: TcoDataTwinController._translator
+  fullName: TcoData.TcoDataTwinController._translator
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: _translator
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 130
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      static ITranslator _translator
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: Vortex.Localizations.Abstractions.ITranslator
+    content.vb: Shared ReadOnly WriteOnly Property _translator As ITranslator
+  overload: TcoData.TcoDataTwinController._translator*
+  modifiers.csharp:
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Shared
+- uid: TcoData.TcoDataTwinController.Translator
+  commentId: P:TcoData.TcoDataTwinController.Translator
+  id: Translator
+  parent: TcoData.TcoDataTwinController
+  langs:
+  - csharp
+  - vb
+  name: Translator
+  nameWithType: TcoDataTwinController.Translator
+  fullName: TcoData.TcoDataTwinController.Translator
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Translator
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
+    startLine: 136
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      static ITranslator Translator
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: Vortex.Localizations.Abstractions.ITranslator
+    content.vb: Shared ReadOnly WriteOnly Property Translator As ITranslator
+  overload: TcoData.TcoDataTwinController.Translator*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Vortex.Connector.ITwinController
+  commentId: T:Vortex.Connector.ITwinController
+  parent: Vortex.Connector
+  isExternal: true
+  name: ITwinController
+  nameWithType: ITwinController
+  fullName: Vortex.Connector.ITwinController
+- uid: TcoData.ITcoDataTwinController
+  commentId: T:TcoData.ITcoDataTwinController
+  parent: TcoData
+  name: ITcoDataTwinController
+  nameWithType: ITcoDataTwinController
+  fullName: TcoData.ITcoDataTwinController
+- uid: TcoData.IShadowTcoDataTwinController
+  commentId: T:TcoData.IShadowTcoDataTwinController
+  parent: TcoData
+  name: IShadowTcoDataTwinController
+  nameWithType: IShadowTcoDataTwinController
+  fullName: TcoData.IShadowTcoDataTwinController
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector
+- uid: TcoData.TcoDataTwinController.Symbol*
+  commentId: Overload:TcoData.TcoDataTwinController.Symbol
+  name: Symbol
+  nameWithType: TcoDataTwinController.Symbol
+  fullName: TcoData.TcoDataTwinController.Symbol
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcoData.TcoDataTwinController.HumanReadable*
+  commentId: Overload:TcoData.TcoDataTwinController.HumanReadable
+  name: HumanReadable
+  nameWithType: TcoDataTwinController.HumanReadable
+  fullName: TcoData.TcoDataTwinController.HumanReadable
+- uid: TcoData.MAIN
+  commentId: T:TcoData.MAIN
+  parent: TcoData
+  name: MAIN
+  nameWithType: MAIN
+  fullName: TcoData.MAIN
+- uid: TcoData.TcoDataTwinController.MAIN*
+  commentId: Overload:TcoData.TcoDataTwinController.MAIN
+  name: MAIN
+  nameWithType: TcoDataTwinController.MAIN
+  fullName: TcoData.TcoDataTwinController.MAIN
+- uid: TcoData.TcoDataTwinController.LazyOnlineToShadow*
+  commentId: Overload:TcoData.TcoDataTwinController.LazyOnlineToShadow
+  name: LazyOnlineToShadow
+  nameWithType: TcoDataTwinController.LazyOnlineToShadow
+  fullName: TcoData.TcoDataTwinController.LazyOnlineToShadow
+- uid: TcoData.TcoDataTwinController.LazyShadowToOnline*
+  commentId: Overload:TcoData.TcoDataTwinController.LazyShadowToOnline
+  name: LazyShadowToOnline
+  nameWithType: TcoDataTwinController.LazyShadowToOnline
+  fullName: TcoData.TcoDataTwinController.LazyShadowToOnline
+- uid: TcoData.TcoDataTwinController.CreatePlainerType*
+  commentId: Overload:TcoData.TcoDataTwinController.CreatePlainerType
+  name: CreatePlainerType
+  nameWithType: TcoDataTwinController.CreatePlainerType
+  fullName: TcoData.TcoDataTwinController.CreatePlainerType
+- uid: TcoData.ITcoDataTwinController.CreatePlainerType
+  commentId: M:TcoData.ITcoDataTwinController.CreatePlainerType
+  parent: TcoData.ITcoDataTwinController
+  name: CreatePlainerType()
+  nameWithType: ITcoDataTwinController.CreatePlainerType()
+  fullName: TcoData.ITcoDataTwinController.CreatePlainerType()
+  spec.csharp:
+  - uid: TcoData.ITcoDataTwinController.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: ITcoDataTwinController.CreatePlainerType
+    fullName: TcoData.ITcoDataTwinController.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.ITcoDataTwinController.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: ITcoDataTwinController.CreatePlainerType
+    fullName: TcoData.ITcoDataTwinController.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  commentId: M:TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  parent: TcoData.IShadowTcoDataTwinController
+  name: CreatePlainerType()
+  nameWithType: IShadowTcoDataTwinController.CreatePlainerType()
+  fullName: TcoData.IShadowTcoDataTwinController.CreatePlainerType()
+  spec.csharp:
+  - uid: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IShadowTcoDataTwinController.CreatePlainerType
+    fullName: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+    name: CreatePlainerType
+    nameWithType: IShadowTcoDataTwinController.CreatePlainerType
+    fullName: TcoData.IShadowTcoDataTwinController.CreatePlainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.PlainTcoDataTwinController
+  commentId: T:TcoData.PlainTcoDataTwinController
+  parent: TcoData
+  name: PlainTcoDataTwinController
+  nameWithType: PlainTcoDataTwinController
+  fullName: TcoData.PlainTcoDataTwinController
+- uid: TcoData.TcoDataTwinController.AttributeName*
+  commentId: Overload:TcoData.TcoDataTwinController.AttributeName
+  name: AttributeName
+  nameWithType: TcoDataTwinController.AttributeName
+  fullName: TcoData.TcoDataTwinController.AttributeName
+- uid: TcoData.ITcoDataTwinController.AttributeName
+  commentId: P:TcoData.ITcoDataTwinController.AttributeName
+  parent: TcoData.ITcoDataTwinController
+  name: AttributeName
+  nameWithType: ITcoDataTwinController.AttributeName
+  fullName: TcoData.ITcoDataTwinController.AttributeName
+- uid: TcoData.IShadowTcoDataTwinController.AttributeName
+  commentId: P:TcoData.IShadowTcoDataTwinController.AttributeName
+  parent: TcoData.IShadowTcoDataTwinController
+  name: AttributeName
+  nameWithType: IShadowTcoDataTwinController.AttributeName
+  fullName: TcoData.IShadowTcoDataTwinController.AttributeName
+- uid: TcoData.TcoDataTwinController._AttributeName*
+  commentId: Overload:TcoData.TcoDataTwinController._AttributeName
+  name: _AttributeName
+  nameWithType: TcoDataTwinController._AttributeName
+  fullName: TcoData.TcoDataTwinController._AttributeName
+- uid: TcoData.TcoDataTwinController.Online*
+  commentId: Overload:TcoData.TcoDataTwinController.Online
+  name: Online
+  nameWithType: TcoDataTwinController.Online
+  fullName: TcoData.TcoDataTwinController.Online
+- uid: TcoData.TcoDataTwinController.Shadow*
+  commentId: Overload:TcoData.TcoDataTwinController.Shadow
+  name: Shadow
+  nameWithType: TcoDataTwinController.Shadow
+  fullName: TcoData.TcoDataTwinController.Shadow
+- uid: TcoData.TcoDataTwinController.Connector*
+  commentId: Overload:TcoData.TcoDataTwinController.Connector
+  name: Connector
+  nameWithType: TcoDataTwinController.Connector
+  fullName: TcoData.TcoDataTwinController.Connector
+- uid: Vortex.Connector.IConnector
+  commentId: T:Vortex.Connector.IConnector
+  parent: Vortex.Connector
+  isExternal: true
+  name: IConnector
+  nameWithType: IConnector
+  fullName: Vortex.Connector.IConnector
+- uid: TcoData.TcoDataTwinController.#ctor*
+  commentId: Overload:TcoData.TcoDataTwinController.#ctor
+  name: TcoDataTwinController
+  nameWithType: TcoDataTwinController.TcoDataTwinController
+  fullName: TcoData.TcoDataTwinController.TcoDataTwinController
+- uid: Vortex.Connector.ConnectorAdapter
+  commentId: T:Vortex.Connector.ConnectorAdapter
+  parent: Vortex.Connector
+  isExternal: true
+  name: ConnectorAdapter
+  nameWithType: ConnectorAdapter
+  fullName: Vortex.Connector.ConnectorAdapter
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: TcoData.TcoDataTwinController.LocalizationDirectory*
+  commentId: Overload:TcoData.TcoDataTwinController.LocalizationDirectory
+  name: LocalizationDirectory
+  nameWithType: TcoDataTwinController.LocalizationDirectory
+  fullName: TcoData.TcoDataTwinController.LocalizationDirectory
+- uid: TcoData.TcoDataTwinController._translator*
+  commentId: Overload:TcoData.TcoDataTwinController._translator
+  name: _translator
+  nameWithType: TcoDataTwinController._translator
+  fullName: TcoData.TcoDataTwinController._translator
+- uid: Vortex.Localizations.Abstractions.ITranslator
+  commentId: T:Vortex.Localizations.Abstractions.ITranslator
+  parent: Vortex.Localizations.Abstractions
+  isExternal: true
+  name: ITranslator
+  nameWithType: ITranslator
+  fullName: Vortex.Localizations.Abstractions.ITranslator
+- uid: Vortex.Localizations.Abstractions
+  commentId: N:Vortex.Localizations.Abstractions
+  isExternal: true
+  name: Vortex.Localizations.Abstractions
+  nameWithType: Vortex.Localizations.Abstractions
+  fullName: Vortex.Localizations.Abstractions
+- uid: TcoData.TcoDataTwinController.Translator*
+  commentId: Overload:TcoData.TcoDataTwinController.Translator
+  name: Translator
+  nameWithType: TcoDataTwinController.Translator
+  fullName: TcoData.TcoDataTwinController.Translator
