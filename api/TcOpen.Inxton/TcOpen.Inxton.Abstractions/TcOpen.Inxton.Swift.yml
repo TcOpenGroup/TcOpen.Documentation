@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Swift
+  commentId: N:TcOpen.Inxton.Swift
+  id: TcOpen.Inxton.Swift
+  children:
+  - TcOpen.Inxton.Swift.ICodeProvider
+  - TcOpen.Inxton.Swift.ICodeRecorder
+  - TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Swift
+  nameWithType: TcOpen.Inxton.Swift
+  fullName: TcOpen.Inxton.Swift
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Swift.ICodeProvider
+  commentId: T:TcOpen.Inxton.Swift.ICodeProvider
+  parent: TcOpen.Inxton.Swift
+  name: ICodeProvider
+  nameWithType: ICodeProvider
+  fullName: TcOpen.Inxton.Swift.ICodeProvider
+- uid: TcOpen.Inxton.Swift.ICodeRecorder
+  commentId: T:TcOpen.Inxton.Swift.ICodeRecorder
+  name: ICodeRecorder
+  nameWithType: ICodeRecorder
+  fullName: TcOpen.Inxton.Swift.ICodeRecorder
+- uid: TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  commentId: T:TcOpen.Inxton.Swift.RecordTaskActionDelegate
+  parent: TcOpen.Inxton.Swift
+  name: RecordTaskActionDelegate
+  nameWithType: RecordTaskActionDelegate
+  fullName: TcOpen.Inxton.Swift.RecordTaskActionDelegate
+- uid: TcOpen.Inxton.Swift
+  commentId: N:TcOpen.Inxton.Swift
+  name: TcOpen.Inxton.Swift
+  nameWithType: TcOpen.Inxton.Swift
+  fullName: TcOpen.Inxton.Swift

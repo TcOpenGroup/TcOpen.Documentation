@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.IDataBrowser
+  commentId: T:TcOpen.Inxton.Data.IDataBrowser
+  id: IDataBrowser
+  parent: TcOpen.Inxton.Data
+  children:
+  - TcOpen.Inxton.Data.IDataBrowser.AddRecord(System.Object)
+  - TcOpen.Inxton.Data.IDataBrowser.Count
+  - TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
+  - TcOpen.Inxton.Data.IDataBrowser.Delete(System.Object)
+  - TcOpen.Inxton.Data.IDataBrowser.Filter(System.String,System.Int32,System.Int32)
+  - TcOpen.Inxton.Data.IDataBrowser.FilteredCount(System.String)
+  - TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange(System.DateTime,System.DateTime)
+  - TcOpen.Inxton.Data.IDataBrowser.FindById(System.String)
+  - TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange(System.DateTime,System.DateTime)
+  - TcOpen.Inxton.Data.IDataBrowser.Records
+  - TcOpen.Inxton.Data.IDataBrowser.UpdateRecord(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IDataBrowser
+  nameWithType: IDataBrowser
+  fullName: TcOpen.Inxton.Data.IDataBrowser
+  type: Interface
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: IDataBrowser
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 355
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: public interface IDataBrowser
+    content.vb: Public Interface IDataBrowser
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Data.IDataBrowser.Records
+  commentId: P:TcOpen.Inxton.Data.IDataBrowser.Records
+  id: Records
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: Records
+  nameWithType: IDataBrowser.Records
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Records
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Records
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 357
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: IList<object> Records { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Object}
+    content.vb: ReadOnly Property Records As IList(Of Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.Records*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcOpen.Inxton.Data.IDataBrowser.Filter(System.String,System.Int32,System.Int32)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.Filter(System.String,System.Int32,System.Int32)
+  id: Filter(System.String,System.Int32,System.Int32)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: Filter(String, Int32, Int32)
+  nameWithType: IDataBrowser.Filter(String, Int32, Int32)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Filter(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Filter
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 358
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void Filter(string identifier, int limit, int skip)
+    parameters:
+    - id: identifier
+      type: System.String
+    - id: limit
+      type: System.Int32
+    - id: skip
+      type: System.Int32
+    content.vb: Sub Filter(identifier As String, limit As Integer, skip As Integer)
+  overload: TcOpen.Inxton.Data.IDataBrowser.Filter*
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindById(System.String)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.FindById(System.String)
+  id: FindById(System.String)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: FindById(String)
+  nameWithType: IDataBrowser.FindById(String)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindById(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: FindById
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 359
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: object FindById(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function FindById(id As String) As Object
+  overload: TcOpen.Inxton.Data.IDataBrowser.FindById*
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange(System.DateTime,System.DateTime)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange(System.DateTime,System.DateTime)
+  id: FindByCreatedRange(System.DateTime,System.DateTime)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: FindByCreatedRange(DateTime, DateTime)
+  nameWithType: IDataBrowser.FindByCreatedRange(DateTime, DateTime)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: FindByCreatedRange
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 360
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: IEnumerable<object> FindByCreatedRange(DateTime start, DateTime end)
+    parameters:
+    - id: start
+      type: System.DateTime
+    - id: end
+      type: System.DateTime
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Function FindByCreatedRange(start As Date, end As Date) As IEnumerable(Of Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange*
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange(System.DateTime,System.DateTime)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange(System.DateTime,System.DateTime)
+  id: FindByModifiedRange(System.DateTime,System.DateTime)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: FindByModifiedRange(DateTime, DateTime)
+  nameWithType: IDataBrowser.FindByModifiedRange(DateTime, DateTime)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: FindByModifiedRange
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 361
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: IEnumerable<object> FindByModifiedRange(DateTime start, DateTime end)
+    parameters:
+    - id: start
+      type: System.DateTime
+    - id: end
+      type: System.DateTime
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Function FindByModifiedRange(start As Date, end As Date) As IEnumerable(Of Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange*
+- uid: TcOpen.Inxton.Data.IDataBrowser.AddRecord(System.Object)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.AddRecord(System.Object)
+  id: AddRecord(System.Object)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: AddRecord(Object)
+  nameWithType: IDataBrowser.AddRecord(Object)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.AddRecord(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AddRecord
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 362
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void AddRecord(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub AddRecord(data As Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.AddRecord*
+- uid: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord(System.Object)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.UpdateRecord(System.Object)
+  id: UpdateRecord(System.Object)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: UpdateRecord(Object)
+  nameWithType: IDataBrowser.UpdateRecord(Object)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: UpdateRecord
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 363
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void UpdateRecord(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub UpdateRecord(data As Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord*
+- uid: TcOpen.Inxton.Data.IDataBrowser.Delete(System.Object)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.Delete(System.Object)
+  id: Delete(System.Object)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: Delete(Object)
+  nameWithType: IDataBrowser.Delete(Object)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Delete(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Delete
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 364
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: void Delete(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Delete(data As Object)
+  overload: TcOpen.Inxton.Data.IDataBrowser.Delete*
+- uid: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
+  id: CreateEmpty
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: CreateEmpty()
+  nameWithType: IDataBrowser.CreateEmpty()
+  fullName: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty()
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CreateEmpty
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 365
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: object CreateEmpty()
+    return:
+      type: System.Object
+    content.vb: Function CreateEmpty As Object
+  overload: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty*
+- uid: TcOpen.Inxton.Data.IDataBrowser.Count
+  commentId: P:TcOpen.Inxton.Data.IDataBrowser.Count
+  id: Count
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IDataBrowser.Count
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Count
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Count
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 366
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property Count As Long
+  overload: TcOpen.Inxton.Data.IDataBrowser.Count*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: TcOpen.Inxton.Data.IDataBrowser.FilteredCount(System.String)
+  commentId: M:TcOpen.Inxton.Data.IDataBrowser.FilteredCount(System.String)
+  id: FilteredCount(System.String)
+  parent: TcOpen.Inxton.Data.IDataBrowser
+  langs:
+  - csharp
+  - vb
+  name: FilteredCount(String)
+  nameWithType: IDataBrowser.FilteredCount(String)
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FilteredCount(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: FilteredCount
+    path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
+    startLine: 367
+  assemblies:
+  - TcOpen.Inxton.Data
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: long FilteredCount(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function FilteredCount(id As String) As Long
+  overload: TcOpen.Inxton.Data.IDataBrowser.FilteredCount*
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: TcOpen.Inxton.Data.IDataBrowser.Records*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.Records
+  name: Records
+  nameWithType: IDataBrowser.Records
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Records
+- uid: System.Collections.Generic.IList{System.Object}
+  commentId: T:System.Collections.Generic.IList{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<Object>
+  nameWithType: IList<Object>
+  fullName: System.Collections.Generic.IList<System.Object>
+  nameWithType.vb: IList(Of Object)
+  fullName.vb: System.Collections.Generic.IList(Of System.Object)
+  name.vb: IList(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TcOpen.Inxton.Data.IDataBrowser.Filter*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.Filter
+  name: Filter
+  nameWithType: IDataBrowser.Filter
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Filter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindById*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.FindById
+  name: FindById
+  nameWithType: IDataBrowser.FindById
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindById
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange
+  name: FindByCreatedRange
+  nameWithType: IDataBrowser.FindByCreatedRange
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Object>
+  nameWithType: IEnumerable<Object>
+  fullName: System.Collections.Generic.IEnumerable<System.Object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange
+  name: FindByModifiedRange
+  nameWithType: IDataBrowser.FindByModifiedRange
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange
+- uid: TcOpen.Inxton.Data.IDataBrowser.AddRecord*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.AddRecord
+  name: AddRecord
+  nameWithType: IDataBrowser.AddRecord
+  fullName: TcOpen.Inxton.Data.IDataBrowser.AddRecord
+- uid: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.UpdateRecord
+  name: UpdateRecord
+  nameWithType: IDataBrowser.UpdateRecord
+  fullName: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord
+- uid: TcOpen.Inxton.Data.IDataBrowser.Delete*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.Delete
+  name: Delete
+  nameWithType: IDataBrowser.Delete
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Delete
+- uid: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
+  name: CreateEmpty
+  nameWithType: IDataBrowser.CreateEmpty
+  fullName: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
+- uid: TcOpen.Inxton.Data.IDataBrowser.Count*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.Count
+  name: Count
+  nameWithType: IDataBrowser.Count
+  fullName: TcOpen.Inxton.Data.IDataBrowser.Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: TcOpen.Inxton.Data.IDataBrowser.FilteredCount*
+  commentId: Overload:TcOpen.Inxton.Data.IDataBrowser.FilteredCount
+  name: FilteredCount
+  nameWithType: IDataBrowser.FilteredCount
+  fullName: TcOpen.Inxton.Data.IDataBrowser.FilteredCount

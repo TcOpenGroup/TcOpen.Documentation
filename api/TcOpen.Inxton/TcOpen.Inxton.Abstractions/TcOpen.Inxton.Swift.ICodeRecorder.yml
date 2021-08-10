@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Swift.ICodeRecorder
+  commentId: T:TcOpen.Inxton.Swift.ICodeRecorder
+  id: ICodeRecorder
+  parent: TcOpen.Inxton.Swift
+  children:
+  - TcOpen.Inxton.Swift.ICodeRecorder.Record(TcOpen.Inxton.Swift.ICodeProvider,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: ICodeRecorder
+  nameWithType: ICodeRecorder
+  fullName: TcOpen.Inxton.Swift.ICodeRecorder
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeRecorder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ICodeRecorder
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeRecorder.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: public interface ICodeRecorder
+    content.vb: Public Interface ICodeRecorder
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Swift.ICodeRecorder.Record(TcOpen.Inxton.Swift.ICodeProvider,System.Object[])
+  commentId: M:TcOpen.Inxton.Swift.ICodeRecorder.Record(TcOpen.Inxton.Swift.ICodeProvider,System.Object[])
+  id: Record(TcOpen.Inxton.Swift.ICodeProvider,System.Object[])
+  parent: TcOpen.Inxton.Swift.ICodeRecorder
+  langs:
+  - csharp
+  - vb
+  name: Record(ICodeProvider, Object[])
+  nameWithType: ICodeRecorder.Record(ICodeProvider, Object[])
+  fullName: TcOpen.Inxton.Swift.ICodeRecorder.Record(TcOpen.Inxton.Swift.ICodeProvider, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeRecorder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Record
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeRecorder.cs
+    startLine: 10
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: void Record(ICodeProvider codeProvider, params object[] args)
+    parameters:
+    - id: codeProvider
+      type: TcOpen.Inxton.Swift.ICodeProvider
+    - id: args
+      type: System.Object[]
+    content.vb: Sub Record(codeProvider As ICodeProvider, ParamArray args As Object())
+  overload: TcOpen.Inxton.Swift.ICodeRecorder.Record*
+  nameWithType.vb: ICodeRecorder.Record(ICodeProvider, Object())
+  fullName.vb: TcOpen.Inxton.Swift.ICodeRecorder.Record(TcOpen.Inxton.Swift.ICodeProvider, System.Object())
+  name.vb: Record(ICodeProvider, Object())
+references:
+- uid: TcOpen.Inxton.Swift
+  commentId: N:TcOpen.Inxton.Swift
+  name: TcOpen.Inxton.Swift
+  nameWithType: TcOpen.Inxton.Swift
+  fullName: TcOpen.Inxton.Swift
+- uid: TcOpen.Inxton.Swift.ICodeRecorder.Record*
+  commentId: Overload:TcOpen.Inxton.Swift.ICodeRecorder.Record
+  name: Record
+  nameWithType: ICodeRecorder.Record
+  fullName: TcOpen.Inxton.Swift.ICodeRecorder.Record
+- uid: TcOpen.Inxton.Swift.ICodeProvider
+  commentId: T:TcOpen.Inxton.Swift.ICodeProvider
+  parent: TcOpen.Inxton.Swift
+  name: ICodeProvider
+  nameWithType: ICodeProvider
+  fullName: TcOpen.Inxton.Swift.ICodeProvider
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

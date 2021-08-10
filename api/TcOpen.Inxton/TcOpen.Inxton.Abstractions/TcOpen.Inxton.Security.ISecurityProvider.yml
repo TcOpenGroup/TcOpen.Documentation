@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.ISecurityProvider
+  commentId: T:TcOpen.Inxton.Security.ISecurityProvider
+  id: ISecurityProvider
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: ISecurityProvider
+  nameWithType: ISecurityProvider
+  fullName: TcOpen.Inxton.Security.ISecurityProvider
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ISecurityProvider
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
+    startLine: 4
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public interface ISecurityProvider
+    content.vb: Public Interface ISecurityProvider
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+  commentId: P:TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+  id: AuthenticationService
+  parent: TcOpen.Inxton.Security.ISecurityProvider
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationService
+  nameWithType: ISecurityProvider.AuthenticationService
+  fullName: TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AuthenticationService
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nGets the authentication service for this application.\n"
+  example: []
+  syntax:
+    content: IAuthenticationService AuthenticationService { get; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Security.IAuthenticationService
+    content.vb: ReadOnly Property AuthenticationService As IAuthenticationService
+  overload: TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService*
+  commentId: Overload:TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+  name: AuthenticationService
+  nameWithType: ISecurityProvider.AuthenticationService
+  fullName: TcOpen.Inxton.Security.ISecurityProvider.AuthenticationService
+- uid: TcOpen.Inxton.Security.IAuthenticationService
+  commentId: T:TcOpen.Inxton.Security.IAuthenticationService
+  parent: TcOpen.Inxton.Security
+  name: IAuthenticationService
+  nameWithType: IAuthenticationService
+  fullName: TcOpen.Inxton.Security.IAuthenticationService

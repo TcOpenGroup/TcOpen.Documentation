@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Swift.ICodeProvider
+  commentId: T:TcOpen.Inxton.Swift.ICodeProvider
+  id: ICodeProvider
+  parent: TcOpen.Inxton.Swift
+  children:
+  - TcOpen.Inxton.Swift.ICodeProvider.Code(System.Object[])
+  - TcOpen.Inxton.Swift.ICodeProvider.Origin
+  langs:
+  - csharp
+  - vb
+  name: ICodeProvider
+  nameWithType: ICodeProvider
+  fullName: TcOpen.Inxton.Swift.ICodeProvider
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ICodeProvider
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: public interface ICodeProvider
+    content.vb: Public Interface ICodeProvider
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Swift.ICodeProvider.Code(System.Object[])
+  commentId: M:TcOpen.Inxton.Swift.ICodeProvider.Code(System.Object[])
+  id: Code(System.Object[])
+  parent: TcOpen.Inxton.Swift.ICodeProvider
+  langs:
+  - csharp
+  - vb
+  name: Code(Object[])
+  nameWithType: ICodeProvider.Code(Object[])
+  fullName: TcOpen.Inxton.Swift.ICodeProvider.Code(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Code
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: string Code(params object[] args)
+    parameters:
+    - id: args
+      type: System.Object[]
+    return:
+      type: System.String
+    content.vb: Function Code(ParamArray args As Object()) As String
+  overload: TcOpen.Inxton.Swift.ICodeProvider.Code*
+  nameWithType.vb: ICodeProvider.Code(Object())
+  fullName.vb: TcOpen.Inxton.Swift.ICodeProvider.Code(System.Object())
+  name.vb: Code(Object())
+- uid: TcOpen.Inxton.Swift.ICodeProvider.Origin
+  commentId: P:TcOpen.Inxton.Swift.ICodeProvider.Origin
+  id: Origin
+  parent: TcOpen.Inxton.Swift.ICodeProvider
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: ICodeProvider.Origin
+  fullName: TcOpen.Inxton.Swift.ICodeProvider.Origin
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Origin
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
+    startLine: 13
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Swift
+  syntax:
+    content: IVortexObject Origin { get; }
+    parameters: []
+    return:
+      type: Vortex.Connector.IVortexObject
+    content.vb: ReadOnly Property Origin As IVortexObject
+  overload: TcOpen.Inxton.Swift.ICodeProvider.Origin*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Swift
+  commentId: N:TcOpen.Inxton.Swift
+  name: TcOpen.Inxton.Swift
+  nameWithType: TcOpen.Inxton.Swift
+  fullName: TcOpen.Inxton.Swift
+- uid: TcOpen.Inxton.Swift.ICodeProvider.Code*
+  commentId: Overload:TcOpen.Inxton.Swift.ICodeProvider.Code
+  name: Code
+  nameWithType: ICodeProvider.Code
+  fullName: TcOpen.Inxton.Swift.ICodeProvider.Code
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Swift.ICodeProvider.Origin*
+  commentId: Overload:TcOpen.Inxton.Swift.ICodeProvider.Origin
+  name: Origin
+  nameWithType: ICodeProvider.Origin
+  fullName: TcOpen.Inxton.Swift.ICodeProvider.Origin
+- uid: Vortex.Connector.IVortexObject
+  commentId: T:Vortex.Connector.IVortexObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexObject
+  nameWithType: IVortexObject
+  fullName: Vortex.Connector.IVortexObject
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector

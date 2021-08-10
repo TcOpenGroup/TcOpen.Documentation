@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.ISecurityManager
+  commentId: T:TcOpen.Inxton.Security.ISecurityManager
+  id: ISecurityManager
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.ISecurityManager.AvailableGroups
+  - TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+  - TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole(TcOpen.Inxton.Security.Role)
+  langs:
+  - csharp
+  - vb
+  name: ISecurityManager
+  nameWithType: ISecurityManager
+  fullName: TcOpen.Inxton.Security.ISecurityManager
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ISecurityManager
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public interface ISecurityManager
+    content.vb: Public Interface ISecurityManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Security.ISecurityManager.AvailableGroups
+  commentId: M:TcOpen.Inxton.Security.ISecurityManager.AvailableGroups
+  id: AvailableGroups
+  parent: TcOpen.Inxton.Security.ISecurityManager
+  langs:
+  - csharp
+  - vb
+  name: AvailableGroups()
+  nameWithType: ISecurityManager.AvailableGroups()
+  fullName: TcOpen.Inxton.Security.ISecurityManager.AvailableGroups()
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AvailableGroups
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+    startLine: 10
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: IEnumerable<string> AvailableGroups()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Function AvailableGroups As IEnumerable(Of String)
+  overload: TcOpen.Inxton.Security.ISecurityManager.AvailableGroups*
+- uid: TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole(TcOpen.Inxton.Security.Role)
+  commentId: M:TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole(TcOpen.Inxton.Security.Role)
+  id: GetOrCreateRole(TcOpen.Inxton.Security.Role)
+  parent: TcOpen.Inxton.Security.ISecurityManager
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateRole(Role)
+  nameWithType: ISecurityManager.GetOrCreateRole(Role)
+  fullName: TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole(TcOpen.Inxton.Security.Role)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: GetOrCreateRole
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+    startLine: 17
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nGet the existing role or add the rule if not present in the system.\n"
+  example: []
+  syntax:
+    content: Role GetOrCreateRole(Role role)
+    parameters:
+    - id: role
+      type: TcOpen.Inxton.Security.Role
+      description: Role to create or retrieve.
+    return:
+      type: TcOpen.Inxton.Security.Role
+      description: Requested role
+    content.vb: Function GetOrCreateRole(role As Role) As Role
+  overload: TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole*
+- uid: TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+  commentId: P:TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+  id: AvailableRoles
+  parent: TcOpen.Inxton.Security.ISecurityManager
+  langs:
+  - csharp
+  - vb
+  name: AvailableRoles
+  nameWithType: ISecurityManager.AvailableRoles
+  fullName: TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AvailableRoles
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
+    startLine: 19
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: IEnumerable<Role> AvailableRoles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{TcOpen.Inxton.Security.Role}
+    content.vb: ReadOnly Property AvailableRoles As IEnumerable(Of Role)
+  overload: TcOpen.Inxton.Security.ISecurityManager.AvailableRoles*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.Security.ISecurityManager.AvailableGroups*
+  commentId: Overload:TcOpen.Inxton.Security.ISecurityManager.AvailableGroups
+  name: AvailableGroups
+  nameWithType: ISecurityManager.AvailableGroups
+  fullName: TcOpen.Inxton.Security.ISecurityManager.AvailableGroups
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole*
+  commentId: Overload:TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole
+  name: GetOrCreateRole
+  nameWithType: ISecurityManager.GetOrCreateRole
+  fullName: TcOpen.Inxton.Security.ISecurityManager.GetOrCreateRole
+- uid: TcOpen.Inxton.Security.Role
+  commentId: T:TcOpen.Inxton.Security.Role
+  parent: TcOpen.Inxton.Security
+  name: Role
+  nameWithType: Role
+  fullName: TcOpen.Inxton.Security.Role
+- uid: TcOpen.Inxton.Security.ISecurityManager.AvailableRoles*
+  commentId: Overload:TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+  name: AvailableRoles
+  nameWithType: ISecurityManager.AvailableRoles
+  fullName: TcOpen.Inxton.Security.ISecurityManager.AvailableRoles
+- uid: System.Collections.Generic.IEnumerable{TcOpen.Inxton.Security.Role}
+  commentId: T:System.Collections.Generic.IEnumerable{TcOpen.Inxton.Security.Role}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Role>
+  nameWithType: IEnumerable<Role>
+  fullName: System.Collections.Generic.IEnumerable<TcOpen.Inxton.Security.Role>
+  nameWithType.vb: IEnumerable(Of Role)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TcOpen.Inxton.Security.Role)
+  name.vb: IEnumerable(Of Role)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TcOpen.Inxton.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: TcOpen.Inxton.Security.Role
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TcOpen.Inxton.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: TcOpen.Inxton.Security.Role
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -13,6 +13,8 @@ items:
   - TcoData.PlainTcoEntity._EntityId
   - TcoData.PlainTcoEntity._Modified
   - TcoData.PlainTcoEntity._recordId
+  - TcoData.PlainTcoEntity.changes
+  - TcoData.PlainTcoEntity.Changes
   - TcoData.PlainTcoEntity.CopyCyclicToPlain(TcoData.ITcoEntity)
   - TcoData.PlainTcoEntity.CopyCyclicToPlain(TcoData.TcoEntity)
   - TcoData.PlainTcoEntity.CopyPlainToCyclic(TcoData.ITcoEntity)
@@ -31,37 +33,34 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainTcoEntity
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 248
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 9
   assemblies:
   - TcoDataConnector
   namespace: TcoData
   summary: "\nThis is POCO object for its respective onliner class. For documentation of this type see the onliner class.\n"
   example: []
   syntax:
-    content: 'public class PlainTcoEntity : PlainTcoObject, INotifyPropertyChanged, IPlain, IBrowsableDataObject'
+    content: 'public class PlainTcoEntity : PlainTcoObject, INotifyPropertyChanged, IPlain, IBrowsableDataObject, IPlainCrudDataObject'
     content.vb: >-
       Public Class PlainTcoEntity
 
           Inherits PlainTcoObject
 
-          Implements INotifyPropertyChanged, IPlain, IBrowsableDataObject
+          Implements INotifyPropertyChanged, IPlain, IBrowsableDataObject, IPlainCrudDataObject
   inheritance:
   - System.Object
   - TcoCore.PlainTcoObject
   implements:
   - System.ComponentModel.INotifyPropertyChanged
   - Vortex.Connector.IPlain
-  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+  - TcOpen.Inxton.Data.IBrowsableDataObject
+  - TcoData.IPlainCrudDataObject
   inheritedMembers:
-  - TcoCore.PlainTcoObject.__Identity
-  - TcoCore.PlainTcoObject._Identity
-  - TcoCore.PlainTcoObject.__messenger
-  - TcoCore.PlainTcoObject._messenger
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToShadow(TcoCore.TcoObject)
@@ -70,6 +69,10 @@ items:
   - TcoCore.PlainTcoObject.CopyCyclicToPlain(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.IShadowTcoObject)
+  - TcoCore.PlainTcoObject.__Identity
+  - TcoCore.PlainTcoObject._Identity
+  - TcoCore.PlainTcoObject.__messenger
+  - TcoCore.PlainTcoObject._messenger
   - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -96,12 +99,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/pex/PlainTcoEntity.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _recordId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/PlainTcoEntity.cs
-    startLine: 6
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
+    startLine: 7
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -113,199 +116,71 @@ items:
     content.vb: Public Property _recordId As Object
   overload: TcoData.PlainTcoEntity._recordId*
   implements:
-  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._recordId
+  - TcOpen.Inxton.Data.IBrowsableDataObject._recordId
   modifiers.csharp:
   - public
   - get
   - set
   modifiers.vb:
   - Public
-- uid: TcoData.PlainTcoEntity.__EntityId
-  commentId: F:TcoData.PlainTcoEntity.__EntityId
-  id: __EntityId
+- uid: TcoData.PlainTcoEntity.changes
+  commentId: F:TcoData.PlainTcoEntity.changes
+  id: changes
   parent: TcoData.PlainTcoEntity
   langs:
   - csharp
   - vb
-  name: __EntityId
-  nameWithType: PlainTcoEntity.__EntityId
-  fullName: TcoData.PlainTcoEntity.__EntityId
+  name: changes
+  nameWithType: PlainTcoEntity.changes
+  fullName: TcoData.PlainTcoEntity.changes
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: __EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 250
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: changes
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
+    startLine: 9
   assemblies:
   - TcoDataConnector
   namespace: TcoData
   syntax:
-    content: string __EntityId
+    content: List<ValueChangeItem> changes
     return:
-      type: System.String
-    content.vb: __EntityId As String
-- uid: TcoData.PlainTcoEntity._EntityId
-  commentId: P:TcoData.PlainTcoEntity._EntityId
-  id: _EntityId
+      type: System.Collections.Generic.List{TcoData.ValueChangeItem}
+    content.vb: changes As List(Of ValueChangeItem)
+- uid: TcoData.PlainTcoEntity.Changes
+  commentId: P:TcoData.PlainTcoEntity.Changes
+  id: Changes
   parent: TcoData.PlainTcoEntity
   langs:
   - csharp
   - vb
-  name: _EntityId
-  nameWithType: PlainTcoEntity._EntityId
-  fullName: TcoData.PlainTcoEntity._EntityId
+  name: Changes
+  nameWithType: PlainTcoEntity.Changes
+  fullName: TcoData.PlainTcoEntity.Changes
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 251
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Changes
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/TcoEntity/PlainTcoEntity.cs
+    startLine: 10
   assemblies:
   - TcoDataConnector
   namespace: TcoData
   syntax:
-    content: public string _EntityId { get; set; }
+    content: public List<ValueChangeItem> Changes { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property _EntityId As String
-  overload: TcoData.PlainTcoEntity._EntityId*
+      type: System.Collections.Generic.List{TcoData.ValueChangeItem}
+    content.vb: Public Property Changes As List(Of ValueChangeItem)
+  overload: TcoData.PlainTcoEntity.Changes*
   implements:
-  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._EntityId
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoEntity.__Created
-  commentId: F:TcoData.PlainTcoEntity.__Created
-  id: __Created
-  parent: TcoData.PlainTcoEntity
-  langs:
-  - csharp
-  - vb
-  name: __Created
-  nameWithType: PlainTcoEntity.__Created
-  fullName: TcoData.PlainTcoEntity.__Created
-  type: Field
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: __Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 268
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: DateTime __Created
-    return:
-      type: System.DateTime
-    content.vb: __Created As Date
-- uid: TcoData.PlainTcoEntity._Created
-  commentId: P:TcoData.PlainTcoEntity._Created
-  id: _Created
-  parent: TcoData.PlainTcoEntity
-  langs:
-  - csharp
-  - vb
-  name: _Created
-  nameWithType: PlainTcoEntity._Created
-  fullName: TcoData.PlainTcoEntity._Created
-  type: Property
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 269
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public DateTime _Created { get; set; }
-    parameters: []
-    return:
-      type: System.DateTime
-    content.vb: Public Property _Created As Date
-  overload: TcoData.PlainTcoEntity._Created*
-  implements:
-  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Created
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoEntity.__Modified
-  commentId: F:TcoData.PlainTcoEntity.__Modified
-  id: __Modified
-  parent: TcoData.PlainTcoEntity
-  langs:
-  - csharp
-  - vb
-  name: __Modified
-  nameWithType: PlainTcoEntity.__Modified
-  fullName: TcoData.PlainTcoEntity.__Modified
-  type: Field
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: __Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 286
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: DateTime __Modified
-    return:
-      type: System.DateTime
-    content.vb: __Modified As Date
-- uid: TcoData.PlainTcoEntity._Modified
-  commentId: P:TcoData.PlainTcoEntity._Modified
-  id: _Modified
-  parent: TcoData.PlainTcoEntity
-  langs:
-  - csharp
-  - vb
-  name: _Modified
-  nameWithType: PlainTcoEntity._Modified
-  fullName: TcoData.PlainTcoEntity._Modified
-  type: Property
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 287
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public DateTime _Modified { get; set; }
-    parameters: []
-    return:
-      type: System.DateTime
-    content.vb: Public Property _Modified As Date
-  overload: TcoData.PlainTcoEntity._Modified*
-  implements:
-  - TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Modified
+  - TcoData.IPlainCrudDataObject.Changes
   modifiers.csharp:
   - public
   - get
@@ -325,12 +200,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 304
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 183
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -358,12 +233,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 312
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 191
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -391,12 +266,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 317
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 196
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -424,12 +299,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 325
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 204
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -457,12 +332,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 330
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 209
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -490,12 +365,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 338
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 217
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -523,12 +398,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 343
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 222
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -556,12 +431,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 351
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs
+    startLine: 230
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -574,6 +449,198 @@ items:
   overload: TcoData.PlainTcoEntity.CopyShadowToPlain*
   modifiers.csharp:
   - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoEntity.__EntityId
+  commentId: F:TcoData.PlainTcoEntity.__EntityId
+  id: __EntityId
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: __EntityId
+  nameWithType: PlainTcoEntity.__EntityId
+  fullName: TcoData.PlainTcoEntity.__EntityId
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: __EntityId
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 11
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string __EntityId
+    return:
+      type: System.String
+    content.vb: __EntityId As String
+- uid: TcoData.PlainTcoEntity._EntityId
+  commentId: P:TcoData.PlainTcoEntity._EntityId
+  id: _EntityId
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _EntityId
+  nameWithType: PlainTcoEntity._EntityId
+  fullName: TcoData.PlainTcoEntity._EntityId
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _EntityId
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 12
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string _EntityId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property _EntityId As String
+  overload: TcoData.PlainTcoEntity._EntityId*
+  implements:
+  - TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoEntity.__Created
+  commentId: F:TcoData.PlainTcoEntity.__Created
+  id: __Created
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: __Created
+  nameWithType: PlainTcoEntity.__Created
+  fullName: TcoData.PlainTcoEntity.__Created
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: __Created
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 29
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: DateTime __Created
+    return:
+      type: System.DateTime
+    content.vb: __Created As Date
+- uid: TcoData.PlainTcoEntity._Created
+  commentId: P:TcoData.PlainTcoEntity._Created
+  id: _Created
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _Created
+  nameWithType: PlainTcoEntity._Created
+  fullName: TcoData.PlainTcoEntity._Created
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _Created
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 30
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public DateTime _Created { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property _Created As Date
+  overload: TcoData.PlainTcoEntity._Created*
+  implements:
+  - TcOpen.Inxton.Data.IBrowsableDataObject._Created
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoEntity.__Modified
+  commentId: F:TcoData.PlainTcoEntity.__Modified
+  id: __Modified
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: __Modified
+  nameWithType: PlainTcoEntity.__Modified
+  fullName: TcoData.PlainTcoEntity.__Modified
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: __Modified
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 47
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: DateTime __Modified
+    return:
+      type: System.DateTime
+    content.vb: __Modified As Date
+- uid: TcoData.PlainTcoEntity._Modified
+  commentId: P:TcoData.PlainTcoEntity._Modified
+  id: _Modified
+  parent: TcoData.PlainTcoEntity
+  langs:
+  - csharp
+  - vb
+  name: _Modified
+  nameWithType: PlainTcoEntity._Modified
+  fullName: TcoData.PlainTcoEntity._Modified
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _Modified
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 48
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public DateTime _Modified { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property _Modified As Date
+  overload: TcoData.PlainTcoEntity._Modified*
+  implements:
+  - TcOpen.Inxton.Data.IBrowsableDataObject._Modified
+  modifiers.csharp:
+  - public
+  - get
+  - set
   modifiers.vb:
   - Public
 - uid: TcoData.PlainTcoEntity.PropertyChanged
@@ -589,12 +656,12 @@ items:
   type: Event
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 356
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 65
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -620,12 +687,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoEntity.g.cs
-    startLine: 357
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoEntity.g.cs
+    startLine: 66
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -670,36 +737,18 @@ references:
   name: IPlain
   nameWithType: IPlain
   fullName: Vortex.Connector.IPlain
-- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-  commentId: T:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-  parent: TcOpen.Inxton.Abstractions.Data
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject
+  commentId: T:TcOpen.Inxton.Data.IBrowsableDataObject
+  parent: TcOpen.Inxton.Data
   name: IBrowsableDataObject
   nameWithType: IBrowsableDataObject
-  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-- uid: TcoCore.PlainTcoObject.__Identity
-  commentId: F:TcoCore.PlainTcoObject.__Identity
-  parent: TcoCore.PlainTcoObject
-  name: __Identity
-  nameWithType: PlainTcoObject.__Identity
-  fullName: TcoCore.PlainTcoObject.__Identity
-- uid: TcoCore.PlainTcoObject._Identity
-  commentId: P:TcoCore.PlainTcoObject._Identity
-  parent: TcoCore.PlainTcoObject
-  name: _Identity
-  nameWithType: PlainTcoObject._Identity
-  fullName: TcoCore.PlainTcoObject._Identity
-- uid: TcoCore.PlainTcoObject.__messenger
-  commentId: F:TcoCore.PlainTcoObject.__messenger
-  parent: TcoCore.PlainTcoObject
-  name: __messenger
-  nameWithType: PlainTcoObject.__messenger
-  fullName: TcoCore.PlainTcoObject.__messenger
-- uid: TcoCore.PlainTcoObject._messenger
-  commentId: P:TcoCore.PlainTcoObject._messenger
-  parent: TcoCore.PlainTcoObject
-  name: _messenger
-  nameWithType: PlainTcoObject._messenger
-  fullName: TcoCore.PlainTcoObject._messenger
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject
+- uid: TcoData.IPlainCrudDataObject
+  commentId: T:TcoData.IPlainCrudDataObject
+  parent: TcoData
+  name: IPlainCrudDataObject
+  nameWithType: IPlainCrudDataObject
+  fullName: TcoData.IPlainCrudDataObject
 - uid: TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   commentId: M:TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   parent: TcoCore.PlainTcoObject
@@ -988,6 +1037,30 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcoCore.PlainTcoObject.__Identity
+  commentId: F:TcoCore.PlainTcoObject.__Identity
+  parent: TcoCore.PlainTcoObject
+  name: __Identity
+  nameWithType: PlainTcoObject.__Identity
+  fullName: TcoCore.PlainTcoObject.__Identity
+- uid: TcoCore.PlainTcoObject._Identity
+  commentId: P:TcoCore.PlainTcoObject._Identity
+  parent: TcoCore.PlainTcoObject
+  name: _Identity
+  nameWithType: PlainTcoObject._Identity
+  fullName: TcoCore.PlainTcoObject._Identity
+- uid: TcoCore.PlainTcoObject.__messenger
+  commentId: F:TcoCore.PlainTcoObject.__messenger
+  parent: TcoCore.PlainTcoObject
+  name: __messenger
+  nameWithType: PlainTcoObject.__messenger
+  fullName: TcoCore.PlainTcoObject.__messenger
+- uid: TcoCore.PlainTcoObject._messenger
+  commentId: P:TcoCore.PlainTcoObject._messenger
+  parent: TcoCore.PlainTcoObject
+  name: _messenger
+  nameWithType: PlainTcoObject._messenger
+  fullName: TcoCore.PlainTcoObject._messenger
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -1290,69 +1363,120 @@ references:
   name: Vortex.Connector
   nameWithType: Vortex.Connector
   fullName: Vortex.Connector
-- uid: TcOpen.Inxton.Abstractions.Data
-  commentId: N:TcOpen.Inxton.Abstractions.Data
-  name: TcOpen.Inxton.Abstractions.Data
-  nameWithType: TcOpen.Inxton.Abstractions.Data
-  fullName: TcOpen.Inxton.Abstractions.Data
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
 - uid: TcoData.PlainTcoEntity._recordId*
   commentId: Overload:TcoData.PlainTcoEntity._recordId
   name: _recordId
   nameWithType: PlainTcoEntity._recordId
   fullName: TcoData.PlainTcoEntity._recordId
-- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._recordId
-  commentId: P:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._recordId
-  parent: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject._recordId
+  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._recordId
+  parent: TcOpen.Inxton.Data.IBrowsableDataObject
   name: _recordId
   nameWithType: IBrowsableDataObject._recordId
-  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._recordId
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._recordId
+- uid: System.Collections.Generic.List{TcoData.ValueChangeItem}
+  commentId: T:System.Collections.Generic.List{TcoData.ValueChangeItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ValueChangeItem>
+  nameWithType: List<ValueChangeItem>
+  fullName: System.Collections.Generic.List<TcoData.ValueChangeItem>
+  nameWithType.vb: List(Of ValueChangeItem)
+  fullName.vb: System.Collections.Generic.List(Of TcoData.ValueChangeItem)
+  name.vb: List(Of ValueChangeItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TcoData.ValueChangeItem
+    name: ValueChangeItem
+    nameWithType: ValueChangeItem
+    fullName: TcoData.ValueChangeItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TcoData.ValueChangeItem
+    name: ValueChangeItem
+    nameWithType: ValueChangeItem
+    fullName: TcoData.ValueChangeItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: TcoData.PlainTcoEntity._EntityId*
-  commentId: Overload:TcoData.PlainTcoEntity._EntityId
-  name: _EntityId
-  nameWithType: PlainTcoEntity._EntityId
-  fullName: TcoData.PlainTcoEntity._EntityId
-- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._EntityId
-  commentId: P:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._EntityId
-  parent: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-  name: _EntityId
-  nameWithType: IBrowsableDataObject._EntityId
-  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._EntityId
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
   isExternal: true
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-- uid: TcoData.PlainTcoEntity._Created*
-  commentId: Overload:TcoData.PlainTcoEntity._Created
-  name: _Created
-  nameWithType: PlainTcoEntity._Created
-  fullName: TcoData.PlainTcoEntity._Created
-- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Created
-  commentId: P:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Created
-  parent: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-  name: _Created
-  nameWithType: IBrowsableDataObject._Created
-  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Created
-- uid: TcoData.PlainTcoEntity._Modified*
-  commentId: Overload:TcoData.PlainTcoEntity._Modified
-  name: _Modified
-  nameWithType: PlainTcoEntity._Modified
-  fullName: TcoData.PlainTcoEntity._Modified
-- uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Modified
-  commentId: P:TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Modified
-  parent: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
-  name: _Modified
-  nameWithType: IBrowsableDataObject._Modified
-  fullName: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject._Modified
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TcoData.PlainTcoEntity.Changes*
+  commentId: Overload:TcoData.PlainTcoEntity.Changes
+  name: Changes
+  nameWithType: PlainTcoEntity.Changes
+  fullName: TcoData.PlainTcoEntity.Changes
+- uid: TcoData.IPlainCrudDataObject.Changes
+  commentId: P:TcoData.IPlainCrudDataObject.Changes
+  parent: TcoData.IPlainCrudDataObject
+  name: Changes
+  nameWithType: IPlainCrudDataObject.Changes
+  fullName: TcoData.IPlainCrudDataObject.Changes
 - uid: TcoData.PlainTcoEntity.CopyPlainToCyclic*
   commentId: Overload:TcoData.PlainTcoEntity.CopyPlainToCyclic
   name: CopyPlainToCyclic
@@ -1391,6 +1515,53 @@ references:
   name: CopyShadowToPlain
   nameWithType: PlainTcoEntity.CopyShadowToPlain
   fullName: TcoData.PlainTcoEntity.CopyShadowToPlain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcoData.PlainTcoEntity._EntityId*
+  commentId: Overload:TcoData.PlainTcoEntity._EntityId
+  name: _EntityId
+  nameWithType: PlainTcoEntity._EntityId
+  fullName: TcoData.PlainTcoEntity._EntityId
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
+  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
+  parent: TcOpen.Inxton.Data.IBrowsableDataObject
+  name: _EntityId
+  nameWithType: IBrowsableDataObject._EntityId
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: TcoData.PlainTcoEntity._Created*
+  commentId: Overload:TcoData.PlainTcoEntity._Created
+  name: _Created
+  nameWithType: PlainTcoEntity._Created
+  fullName: TcoData.PlainTcoEntity._Created
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Created
+  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._Created
+  parent: TcOpen.Inxton.Data.IBrowsableDataObject
+  name: _Created
+  nameWithType: IBrowsableDataObject._Created
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Created
+- uid: TcoData.PlainTcoEntity._Modified*
+  commentId: Overload:TcoData.PlainTcoEntity._Modified
+  name: _Modified
+  nameWithType: PlainTcoEntity._Modified
+  fullName: TcoData.PlainTcoEntity._Modified
+- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Modified
+  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._Modified
+  parent: TcOpen.Inxton.Data.IBrowsableDataObject
+  name: _Modified
+  nameWithType: IBrowsableDataObject._Modified
+  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Modified
 - uid: System.ComponentModel.PropertyChangedEventHandler
   commentId: T:System.ComponentModel.PropertyChangedEventHandler
   parent: System.ComponentModel

@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Threading.Dispatcher
+  commentId: T:TcOpen.Inxton.Threading.Dispatcher
+  id: Dispatcher
+  parent: TcOpen.Inxton.Threading
+  children:
+  - TcOpen.Inxton.Threading.Dispatcher.#ctor
+  - TcOpen.Inxton.Threading.Dispatcher._dispatcher
+  - TcOpen.Inxton.Threading.Dispatcher.Get
+  - TcOpen.Inxton.Threading.Dispatcher.Invoke(System.Action)
+  - TcOpen.Inxton.Threading.Dispatcher.InvokeAsync(System.Action)
+  - TcOpen.Inxton.Threading.Dispatcher.mutex
+  - TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  langs:
+  - csharp
+  - vb
+  name: Dispatcher
+  nameWithType: Dispatcher
+  fullName: TcOpen.Inxton.Threading.Dispatcher
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Dispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nProvides access to UI dispatcher of currently running application.\n"
+  example: []
+  syntax:
+    content: 'public class Dispatcher : IDispatcher'
+    content.vb: >-
+      Public Class Dispatcher
+          Implements IDispatcher
+  inheritance:
+  - System.Object
+  implements:
+  - TcOpen.Inxton.Threading.IDispatcher
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.Threading.Dispatcher.#ctor
+  commentId: M:TcOpen.Inxton.Threading.Dispatcher.#ctor
+  id: '#ctor'
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: Dispatcher()
+  nameWithType: Dispatcher.Dispatcher()
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Dispatcher()
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 10
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  syntax:
+    content: Dispatcher()
+    content.vb: Sub New
+  overload: TcOpen.Inxton.Threading.Dispatcher.#ctor*
+- uid: TcOpen.Inxton.Threading.Dispatcher._dispatcher
+  commentId: F:TcOpen.Inxton.Threading.Dispatcher._dispatcher
+  id: _dispatcher
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: _dispatcher
+  nameWithType: Dispatcher._dispatcher
+  fullName: TcOpen.Inxton.Threading.Dispatcher._dispatcher
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _dispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 15
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  syntax:
+    content: static IDispatcher _dispatcher
+    return:
+      type: TcOpen.Inxton.Threading.IDispatcher
+    content.vb: Shared _dispatcher As IDispatcher
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+- uid: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  commentId: M:TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  id: SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: SetDispatcher(IDispatcher)
+  nameWithType: Dispatcher.SetDispatcher(IDispatcher)
+  fullName: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: SetDispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 21
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nSets the dispatcher for running application.\n"
+  example: []
+  syntax:
+    content: public static void SetDispatcher(IDispatcher dispatcher)
+    parameters:
+    - id: dispatcher
+      type: TcOpen.Inxton.Threading.IDispatcher
+      description: ''
+    content.vb: Public Shared Sub SetDispatcher(dispatcher As IDispatcher)
+  overload: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TcOpen.Inxton.Threading.Dispatcher.Invoke(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.Dispatcher.Invoke(System.Action)
+  id: Invoke(System.Action)
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Action)
+  nameWithType: Dispatcher.Invoke(Action)
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Invoke(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Invoke
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 31
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nInvokes an action on the UI dispatcher of the currently running application.\nThe appropriate dispatcher must be set at the start of the application. To set dispatcher use <xref href=\"TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)\" data-throw-if-not-resolved=\"false\"></xref> method.\n"
+  example: []
+  syntax:
+    content: public void Invoke(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: Action to run.
+    content.vb: Public Sub Invoke(action As Action)
+  overload: TcOpen.Inxton.Threading.Dispatcher.Invoke*
+  implements:
+  - TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Threading.Dispatcher.InvokeAsync(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.Dispatcher.InvokeAsync(System.Action)
+  id: InvokeAsync(System.Action)
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: InvokeAsync(Action)
+  nameWithType: Dispatcher.InvokeAsync(Action)
+  fullName: TcOpen.Inxton.Threading.Dispatcher.InvokeAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: InvokeAsync
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 41
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  syntax:
+    content: public Task InvokeAsync(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InvokeAsync(action As Action) As Task
+  overload: TcOpen.Inxton.Threading.Dispatcher.InvokeAsync*
+  implements:
+  - TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Threading.Dispatcher.mutex
+  commentId: F:TcOpen.Inxton.Threading.Dispatcher.mutex
+  id: mutex
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: mutex
+  nameWithType: Dispatcher.mutex
+  fullName: TcOpen.Inxton.Threading.Dispatcher.mutex
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: mutex
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 46
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  syntax:
+    content: static volatile object mutex
+    return:
+      type: System.Object
+    content.vb: Shared mutex As Object
+  modifiers.csharp:
+  - static
+  - volatile
+  modifiers.vb:
+  - Shared
+- uid: TcOpen.Inxton.Threading.Dispatcher.Get
+  commentId: P:TcOpen.Inxton.Threading.Dispatcher.Get
+  id: Get
+  parent: TcOpen.Inxton.Threading.Dispatcher
+  langs:
+  - csharp
+  - vb
+  name: Get
+  nameWithType: Dispatcher.Get
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Get
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Get
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
+    startLine: 51
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nGets dispatcher mediator of currently running application.\n"
+  example: []
+  syntax:
+    content: public static IDispatcher Get { get; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Threading.IDispatcher
+    content.vb: Public Shared ReadOnly Property Get As IDispatcher
+  overload: TcOpen.Inxton.Threading.Dispatcher.Get*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TcOpen.Inxton.Threading.IDispatcher
+  commentId: T:TcOpen.Inxton.Threading.IDispatcher
+  parent: TcOpen.Inxton.Threading
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: TcOpen.Inxton.Threading.IDispatcher
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Threading.Dispatcher.#ctor*
+  commentId: Overload:TcOpen.Inxton.Threading.Dispatcher.#ctor
+  name: Dispatcher
+  nameWithType: Dispatcher.Dispatcher
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Dispatcher
+- uid: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher*
+  commentId: Overload:TcOpen.Inxton.Threading.Dispatcher.SetDispatcher
+  name: SetDispatcher
+  nameWithType: Dispatcher.SetDispatcher
+  fullName: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher
+- uid: TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  commentId: M:TcOpen.Inxton.Threading.Dispatcher.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
+  isExternal: true
+- uid: TcOpen.Inxton.Threading.Dispatcher.Invoke*
+  commentId: Overload:TcOpen.Inxton.Threading.Dispatcher.Invoke
+  name: Invoke
+  nameWithType: Dispatcher.Invoke
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Invoke
+- uid: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  parent: TcOpen.Inxton.Threading.IDispatcher
+  isExternal: true
+  name: Invoke(Action)
+  nameWithType: IDispatcher.Invoke(Action)
+  fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+    name: Invoke
+    nameWithType: IDispatcher.Invoke
+    fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+    name: Invoke
+    nameWithType: IDispatcher.Invoke
+    fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: TcOpen.Inxton.Threading.Dispatcher.InvokeAsync*
+  commentId: Overload:TcOpen.Inxton.Threading.Dispatcher.InvokeAsync
+  name: InvokeAsync
+  nameWithType: Dispatcher.InvokeAsync
+  fullName: TcOpen.Inxton.Threading.Dispatcher.InvokeAsync
+- uid: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  parent: TcOpen.Inxton.Threading.IDispatcher
+  isExternal: true
+  name: InvokeAsync(Action)
+  nameWithType: IDispatcher.InvokeAsync(Action)
+  fullName: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+    name: InvokeAsync
+    nameWithType: IDispatcher.InvokeAsync
+    fullName: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+    name: InvokeAsync
+    nameWithType: IDispatcher.InvokeAsync
+    fullName: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: TcOpen.Inxton.Threading.Dispatcher.Get*
+  commentId: Overload:TcOpen.Inxton.Threading.Dispatcher.Get
+  name: Get
+  nameWithType: Dispatcher.Get
+  fullName: TcOpen.Inxton.Threading.Dispatcher.Get

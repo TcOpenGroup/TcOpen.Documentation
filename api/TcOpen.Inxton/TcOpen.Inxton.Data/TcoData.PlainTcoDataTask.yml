@@ -26,12 +26,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainTcoDataTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 182
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+    startLine: 9
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -54,6 +54,14 @@ items:
   - System.ComponentModel.INotifyPropertyChanged
   - Vortex.Connector.IPlain
   inheritedMembers:
+  - TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.TcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.ITcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyPlainToShadow(TcoCore.TcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyPlainToShadow(TcoCore.IShadowTcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyCyclicToPlain(TcoCore.TcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyCyclicToPlain(TcoCore.ITcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyShadowToPlain(TcoCore.TcoRemoteTask)
+  - TcoCore.PlainTcoRemoteTask.CopyShadowToPlain(TcoCore.IShadowTcoRemoteTask)
   - TcoCore.PlainTcoRemoteTask.__isInitialized
   - TcoCore.PlainTcoRemoteTask._isInitialized
   - TcoCore.PlainTcoRemoteTask.__hasException
@@ -64,14 +72,14 @@ items:
   - TcoCore.PlainTcoRemoteTask._doneSignarure
   - TcoCore.PlainTcoRemoteTask.__exceptionMessage
   - TcoCore.PlainTcoRemoteTask._exceptionMessage
-  - TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.TcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.ITcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyPlainToShadow(TcoCore.TcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyPlainToShadow(TcoCore.IShadowTcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyCyclicToPlain(TcoCore.TcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyCyclicToPlain(TcoCore.ITcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyShadowToPlain(TcoCore.TcoRemoteTask)
-  - TcoCore.PlainTcoRemoteTask.CopyShadowToPlain(TcoCore.IShadowTcoRemoteTask)
+  - TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.TcoTask)
+  - TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.ITcoTask)
+  - TcoCore.PlainTcoTask.CopyPlainToShadow(TcoCore.TcoTask)
+  - TcoCore.PlainTcoTask.CopyPlainToShadow(TcoCore.IShadowTcoTask)
+  - TcoCore.PlainTcoTask.CopyCyclicToPlain(TcoCore.TcoTask)
+  - TcoCore.PlainTcoTask.CopyCyclicToPlain(TcoCore.ITcoTask)
+  - TcoCore.PlainTcoTask.CopyShadowToPlain(TcoCore.TcoTask)
+  - TcoCore.PlainTcoTask.CopyShadowToPlain(TcoCore.IShadowTcoTask)
   - TcoCore.PlainTcoTask.__taskState
   - TcoCore.PlainTcoTask._taskState
   - TcoCore.PlainTcoTask.__restoreRequest
@@ -86,18 +94,6 @@ items:
   - TcoCore.PlainTcoTask._isServiceable
   - TcoCore.PlainTcoTask.__elapsedTime
   - TcoCore.PlainTcoTask._elapsedTime
-  - TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.TcoTask)
-  - TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.ITcoTask)
-  - TcoCore.PlainTcoTask.CopyPlainToShadow(TcoCore.TcoTask)
-  - TcoCore.PlainTcoTask.CopyPlainToShadow(TcoCore.IShadowTcoTask)
-  - TcoCore.PlainTcoTask.CopyCyclicToPlain(TcoCore.TcoTask)
-  - TcoCore.PlainTcoTask.CopyCyclicToPlain(TcoCore.ITcoTask)
-  - TcoCore.PlainTcoTask.CopyShadowToPlain(TcoCore.TcoTask)
-  - TcoCore.PlainTcoTask.CopyShadowToPlain(TcoCore.IShadowTcoTask)
-  - TcoCore.PlainTcoObject.__Identity
-  - TcoCore.PlainTcoObject._Identity
-  - TcoCore.PlainTcoObject.__messenger
-  - TcoCore.PlainTcoObject._messenger
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyPlainToShadow(TcoCore.TcoObject)
@@ -106,6 +102,10 @@ items:
   - TcoCore.PlainTcoObject.CopyCyclicToPlain(TcoCore.ITcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.TcoObject)
   - TcoCore.PlainTcoObject.CopyShadowToPlain(TcoCore.IShadowTcoObject)
+  - TcoCore.PlainTcoObject.__Identity
+  - TcoCore.PlainTcoObject._Identity
+  - TcoCore.PlainTcoObject.__messenger
+  - TcoCore.PlainTcoObject._messenger
   - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -119,68 +119,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: TcoData.PlainTcoDataTask.__identifier
-  commentId: F:TcoData.PlainTcoDataTask.__identifier
-  id: __identifier
-  parent: TcoData.PlainTcoDataTask
-  langs:
-  - csharp
-  - vb
-  name: __identifier
-  nameWithType: PlainTcoDataTask.__identifier
-  fullName: TcoData.PlainTcoDataTask.__identifier
-  type: Field
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: __identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 184
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: string __identifier
-    return:
-      type: System.String
-    content.vb: __identifier As String
-- uid: TcoData.PlainTcoDataTask._identifier
-  commentId: P:TcoData.PlainTcoDataTask._identifier
-  id: _identifier
-  parent: TcoData.PlainTcoDataTask
-  langs:
-  - csharp
-  - vb
-  name: _identifier
-  nameWithType: PlainTcoDataTask._identifier
-  fullName: TcoData.PlainTcoDataTask._identifier
-  type: Property
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 185
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public string _identifier { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property _identifier As String
-  overload: TcoData.PlainTcoDataTask._identifier*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: TcoData.PlainTcoDataTask.CopyPlainToCyclic(TcoData.TcoDataTask)
   commentId: M:TcoData.PlainTcoDataTask.CopyPlainToCyclic(TcoData.TcoDataTask)
   id: CopyPlainToCyclic(TcoData.TcoDataTask)
@@ -194,12 +132,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 202
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 132
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -227,12 +165,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 208
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 138
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -260,12 +198,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 213
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 143
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -293,12 +231,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 219
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 149
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -326,12 +264,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 224
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 154
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -359,12 +297,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 230
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 160
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -392,12 +330,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 235
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 165
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -425,12 +363,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 241
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
+    startLine: 171
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -443,6 +381,68 @@ items:
   overload: TcoData.PlainTcoDataTask.CopyShadowToPlain*
   modifiers.csharp:
   - public
+  modifiers.vb:
+  - Public
+- uid: TcoData.PlainTcoDataTask.__identifier
+  commentId: F:TcoData.PlainTcoDataTask.__identifier
+  id: __identifier
+  parent: TcoData.PlainTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: __identifier
+  nameWithType: PlainTcoDataTask.__identifier
+  fullName: TcoData.PlainTcoDataTask.__identifier
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: __identifier
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+    startLine: 11
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: string __identifier
+    return:
+      type: System.String
+    content.vb: __identifier As String
+- uid: TcoData.PlainTcoDataTask._identifier
+  commentId: P:TcoData.PlainTcoDataTask._identifier
+  id: _identifier
+  parent: TcoData.PlainTcoDataTask
+  langs:
+  - csharp
+  - vb
+  name: _identifier
+  nameWithType: PlainTcoDataTask._identifier
+  fullName: TcoData.PlainTcoDataTask._identifier
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _identifier
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+    startLine: 12
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public string _identifier { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property _identifier As String
+  overload: TcoData.PlainTcoDataTask._identifier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
   modifiers.vb:
   - Public
 - uid: TcoData.PlainTcoDataTask.PropertyChanged
@@ -458,12 +458,12 @@ items:
   type: Event
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 246
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+    startLine: 29
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -489,12 +489,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
-    startLine: 247
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainTcoDataTask.g.cs
+    startLine: 30
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -551,66 +551,6 @@ references:
   name: IPlain
   nameWithType: IPlain
   fullName: Vortex.Connector.IPlain
-- uid: TcoCore.PlainTcoRemoteTask.__isInitialized
-  commentId: F:TcoCore.PlainTcoRemoteTask.__isInitialized
-  parent: TcoCore.PlainTcoRemoteTask
-  name: __isInitialized
-  nameWithType: PlainTcoRemoteTask.__isInitialized
-  fullName: TcoCore.PlainTcoRemoteTask.__isInitialized
-- uid: TcoCore.PlainTcoRemoteTask._isInitialized
-  commentId: P:TcoCore.PlainTcoRemoteTask._isInitialized
-  parent: TcoCore.PlainTcoRemoteTask
-  name: _isInitialized
-  nameWithType: PlainTcoRemoteTask._isInitialized
-  fullName: TcoCore.PlainTcoRemoteTask._isInitialized
-- uid: TcoCore.PlainTcoRemoteTask.__hasException
-  commentId: F:TcoCore.PlainTcoRemoteTask.__hasException
-  parent: TcoCore.PlainTcoRemoteTask
-  name: __hasException
-  nameWithType: PlainTcoRemoteTask.__hasException
-  fullName: TcoCore.PlainTcoRemoteTask.__hasException
-- uid: TcoCore.PlainTcoRemoteTask._hasException
-  commentId: P:TcoCore.PlainTcoRemoteTask._hasException
-  parent: TcoCore.PlainTcoRemoteTask
-  name: _hasException
-  nameWithType: PlainTcoRemoteTask._hasException
-  fullName: TcoCore.PlainTcoRemoteTask._hasException
-- uid: TcoCore.PlainTcoRemoteTask.__startSignature
-  commentId: F:TcoCore.PlainTcoRemoteTask.__startSignature
-  parent: TcoCore.PlainTcoRemoteTask
-  name: __startSignature
-  nameWithType: PlainTcoRemoteTask.__startSignature
-  fullName: TcoCore.PlainTcoRemoteTask.__startSignature
-- uid: TcoCore.PlainTcoRemoteTask._startSignature
-  commentId: P:TcoCore.PlainTcoRemoteTask._startSignature
-  parent: TcoCore.PlainTcoRemoteTask
-  name: _startSignature
-  nameWithType: PlainTcoRemoteTask._startSignature
-  fullName: TcoCore.PlainTcoRemoteTask._startSignature
-- uid: TcoCore.PlainTcoRemoteTask.__doneSignarure
-  commentId: F:TcoCore.PlainTcoRemoteTask.__doneSignarure
-  parent: TcoCore.PlainTcoRemoteTask
-  name: __doneSignarure
-  nameWithType: PlainTcoRemoteTask.__doneSignarure
-  fullName: TcoCore.PlainTcoRemoteTask.__doneSignarure
-- uid: TcoCore.PlainTcoRemoteTask._doneSignarure
-  commentId: P:TcoCore.PlainTcoRemoteTask._doneSignarure
-  parent: TcoCore.PlainTcoRemoteTask
-  name: _doneSignarure
-  nameWithType: PlainTcoRemoteTask._doneSignarure
-  fullName: TcoCore.PlainTcoRemoteTask._doneSignarure
-- uid: TcoCore.PlainTcoRemoteTask.__exceptionMessage
-  commentId: F:TcoCore.PlainTcoRemoteTask.__exceptionMessage
-  parent: TcoCore.PlainTcoRemoteTask
-  name: __exceptionMessage
-  nameWithType: PlainTcoRemoteTask.__exceptionMessage
-  fullName: TcoCore.PlainTcoRemoteTask.__exceptionMessage
-- uid: TcoCore.PlainTcoRemoteTask._exceptionMessage
-  commentId: P:TcoCore.PlainTcoRemoteTask._exceptionMessage
-  parent: TcoCore.PlainTcoRemoteTask
-  name: _exceptionMessage
-  nameWithType: PlainTcoRemoteTask._exceptionMessage
-  fullName: TcoCore.PlainTcoRemoteTask._exceptionMessage
 - uid: TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.TcoRemoteTask)
   commentId: M:TcoCore.PlainTcoRemoteTask.CopyPlainToCyclic(TcoCore.TcoRemoteTask)
   parent: TcoCore.PlainTcoRemoteTask
@@ -899,90 +839,66 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.PlainTcoTask.__taskState
-  commentId: F:TcoCore.PlainTcoTask.__taskState
-  parent: TcoCore.PlainTcoTask
-  name: __taskState
-  nameWithType: PlainTcoTask.__taskState
-  fullName: TcoCore.PlainTcoTask.__taskState
-- uid: TcoCore.PlainTcoTask._taskState
-  commentId: P:TcoCore.PlainTcoTask._taskState
-  parent: TcoCore.PlainTcoTask
-  name: _taskState
-  nameWithType: PlainTcoTask._taskState
-  fullName: TcoCore.PlainTcoTask._taskState
-- uid: TcoCore.PlainTcoTask.__restoreRequest
-  commentId: F:TcoCore.PlainTcoTask.__restoreRequest
-  parent: TcoCore.PlainTcoTask
-  name: __restoreRequest
-  nameWithType: PlainTcoTask.__restoreRequest
-  fullName: TcoCore.PlainTcoTask.__restoreRequest
-- uid: TcoCore.PlainTcoTask._restoreRequest
-  commentId: P:TcoCore.PlainTcoTask._restoreRequest
-  parent: TcoCore.PlainTcoTask
-  name: _restoreRequest
-  nameWithType: PlainTcoTask._restoreRequest
-  fullName: TcoCore.PlainTcoTask._restoreRequest
-- uid: TcoCore.PlainTcoTask.__invokeRequest
-  commentId: F:TcoCore.PlainTcoTask.__invokeRequest
-  parent: TcoCore.PlainTcoTask
-  name: __invokeRequest
-  nameWithType: PlainTcoTask.__invokeRequest
-  fullName: TcoCore.PlainTcoTask.__invokeRequest
-- uid: TcoCore.PlainTcoTask._invokeRequest
-  commentId: P:TcoCore.PlainTcoTask._invokeRequest
-  parent: TcoCore.PlainTcoTask
-  name: _invokeRequest
-  nameWithType: PlainTcoTask._invokeRequest
-  fullName: TcoCore.PlainTcoTask._invokeRequest
-- uid: TcoCore.PlainTcoTask.__abortRequest
-  commentId: F:TcoCore.PlainTcoTask.__abortRequest
-  parent: TcoCore.PlainTcoTask
-  name: __abortRequest
-  nameWithType: PlainTcoTask.__abortRequest
-  fullName: TcoCore.PlainTcoTask.__abortRequest
-- uid: TcoCore.PlainTcoTask._abortRequest
-  commentId: P:TcoCore.PlainTcoTask._abortRequest
-  parent: TcoCore.PlainTcoTask
-  name: _abortRequest
-  nameWithType: PlainTcoTask._abortRequest
-  fullName: TcoCore.PlainTcoTask._abortRequest
-- uid: TcoCore.PlainTcoTask.__enabled
-  commentId: F:TcoCore.PlainTcoTask.__enabled
-  parent: TcoCore.PlainTcoTask
-  name: __enabled
-  nameWithType: PlainTcoTask.__enabled
-  fullName: TcoCore.PlainTcoTask.__enabled
-- uid: TcoCore.PlainTcoTask._enabled
-  commentId: P:TcoCore.PlainTcoTask._enabled
-  parent: TcoCore.PlainTcoTask
-  name: _enabled
-  nameWithType: PlainTcoTask._enabled
-  fullName: TcoCore.PlainTcoTask._enabled
-- uid: TcoCore.PlainTcoTask.__isServiceable
-  commentId: F:TcoCore.PlainTcoTask.__isServiceable
-  parent: TcoCore.PlainTcoTask
-  name: __isServiceable
-  nameWithType: PlainTcoTask.__isServiceable
-  fullName: TcoCore.PlainTcoTask.__isServiceable
-- uid: TcoCore.PlainTcoTask._isServiceable
-  commentId: P:TcoCore.PlainTcoTask._isServiceable
-  parent: TcoCore.PlainTcoTask
-  name: _isServiceable
-  nameWithType: PlainTcoTask._isServiceable
-  fullName: TcoCore.PlainTcoTask._isServiceable
-- uid: TcoCore.PlainTcoTask.__elapsedTime
-  commentId: F:TcoCore.PlainTcoTask.__elapsedTime
-  parent: TcoCore.PlainTcoTask
-  name: __elapsedTime
-  nameWithType: PlainTcoTask.__elapsedTime
-  fullName: TcoCore.PlainTcoTask.__elapsedTime
-- uid: TcoCore.PlainTcoTask._elapsedTime
-  commentId: P:TcoCore.PlainTcoTask._elapsedTime
-  parent: TcoCore.PlainTcoTask
-  name: _elapsedTime
-  nameWithType: PlainTcoTask._elapsedTime
-  fullName: TcoCore.PlainTcoTask._elapsedTime
+- uid: TcoCore.PlainTcoRemoteTask.__isInitialized
+  commentId: F:TcoCore.PlainTcoRemoteTask.__isInitialized
+  parent: TcoCore.PlainTcoRemoteTask
+  name: __isInitialized
+  nameWithType: PlainTcoRemoteTask.__isInitialized
+  fullName: TcoCore.PlainTcoRemoteTask.__isInitialized
+- uid: TcoCore.PlainTcoRemoteTask._isInitialized
+  commentId: P:TcoCore.PlainTcoRemoteTask._isInitialized
+  parent: TcoCore.PlainTcoRemoteTask
+  name: _isInitialized
+  nameWithType: PlainTcoRemoteTask._isInitialized
+  fullName: TcoCore.PlainTcoRemoteTask._isInitialized
+- uid: TcoCore.PlainTcoRemoteTask.__hasException
+  commentId: F:TcoCore.PlainTcoRemoteTask.__hasException
+  parent: TcoCore.PlainTcoRemoteTask
+  name: __hasException
+  nameWithType: PlainTcoRemoteTask.__hasException
+  fullName: TcoCore.PlainTcoRemoteTask.__hasException
+- uid: TcoCore.PlainTcoRemoteTask._hasException
+  commentId: P:TcoCore.PlainTcoRemoteTask._hasException
+  parent: TcoCore.PlainTcoRemoteTask
+  name: _hasException
+  nameWithType: PlainTcoRemoteTask._hasException
+  fullName: TcoCore.PlainTcoRemoteTask._hasException
+- uid: TcoCore.PlainTcoRemoteTask.__startSignature
+  commentId: F:TcoCore.PlainTcoRemoteTask.__startSignature
+  parent: TcoCore.PlainTcoRemoteTask
+  name: __startSignature
+  nameWithType: PlainTcoRemoteTask.__startSignature
+  fullName: TcoCore.PlainTcoRemoteTask.__startSignature
+- uid: TcoCore.PlainTcoRemoteTask._startSignature
+  commentId: P:TcoCore.PlainTcoRemoteTask._startSignature
+  parent: TcoCore.PlainTcoRemoteTask
+  name: _startSignature
+  nameWithType: PlainTcoRemoteTask._startSignature
+  fullName: TcoCore.PlainTcoRemoteTask._startSignature
+- uid: TcoCore.PlainTcoRemoteTask.__doneSignarure
+  commentId: F:TcoCore.PlainTcoRemoteTask.__doneSignarure
+  parent: TcoCore.PlainTcoRemoteTask
+  name: __doneSignarure
+  nameWithType: PlainTcoRemoteTask.__doneSignarure
+  fullName: TcoCore.PlainTcoRemoteTask.__doneSignarure
+- uid: TcoCore.PlainTcoRemoteTask._doneSignarure
+  commentId: P:TcoCore.PlainTcoRemoteTask._doneSignarure
+  parent: TcoCore.PlainTcoRemoteTask
+  name: _doneSignarure
+  nameWithType: PlainTcoRemoteTask._doneSignarure
+  fullName: TcoCore.PlainTcoRemoteTask._doneSignarure
+- uid: TcoCore.PlainTcoRemoteTask.__exceptionMessage
+  commentId: F:TcoCore.PlainTcoRemoteTask.__exceptionMessage
+  parent: TcoCore.PlainTcoRemoteTask
+  name: __exceptionMessage
+  nameWithType: PlainTcoRemoteTask.__exceptionMessage
+  fullName: TcoCore.PlainTcoRemoteTask.__exceptionMessage
+- uid: TcoCore.PlainTcoRemoteTask._exceptionMessage
+  commentId: P:TcoCore.PlainTcoRemoteTask._exceptionMessage
+  parent: TcoCore.PlainTcoRemoteTask
+  name: _exceptionMessage
+  nameWithType: PlainTcoRemoteTask._exceptionMessage
+  fullName: TcoCore.PlainTcoRemoteTask._exceptionMessage
 - uid: TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.TcoTask)
   commentId: M:TcoCore.PlainTcoTask.CopyPlainToCyclic(TcoCore.TcoTask)
   parent: TcoCore.PlainTcoTask
@@ -1271,30 +1187,90 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.PlainTcoObject.__Identity
-  commentId: F:TcoCore.PlainTcoObject.__Identity
-  parent: TcoCore.PlainTcoObject
-  name: __Identity
-  nameWithType: PlainTcoObject.__Identity
-  fullName: TcoCore.PlainTcoObject.__Identity
-- uid: TcoCore.PlainTcoObject._Identity
-  commentId: P:TcoCore.PlainTcoObject._Identity
-  parent: TcoCore.PlainTcoObject
-  name: _Identity
-  nameWithType: PlainTcoObject._Identity
-  fullName: TcoCore.PlainTcoObject._Identity
-- uid: TcoCore.PlainTcoObject.__messenger
-  commentId: F:TcoCore.PlainTcoObject.__messenger
-  parent: TcoCore.PlainTcoObject
-  name: __messenger
-  nameWithType: PlainTcoObject.__messenger
-  fullName: TcoCore.PlainTcoObject.__messenger
-- uid: TcoCore.PlainTcoObject._messenger
-  commentId: P:TcoCore.PlainTcoObject._messenger
-  parent: TcoCore.PlainTcoObject
-  name: _messenger
-  nameWithType: PlainTcoObject._messenger
-  fullName: TcoCore.PlainTcoObject._messenger
+- uid: TcoCore.PlainTcoTask.__taskState
+  commentId: F:TcoCore.PlainTcoTask.__taskState
+  parent: TcoCore.PlainTcoTask
+  name: __taskState
+  nameWithType: PlainTcoTask.__taskState
+  fullName: TcoCore.PlainTcoTask.__taskState
+- uid: TcoCore.PlainTcoTask._taskState
+  commentId: P:TcoCore.PlainTcoTask._taskState
+  parent: TcoCore.PlainTcoTask
+  name: _taskState
+  nameWithType: PlainTcoTask._taskState
+  fullName: TcoCore.PlainTcoTask._taskState
+- uid: TcoCore.PlainTcoTask.__restoreRequest
+  commentId: F:TcoCore.PlainTcoTask.__restoreRequest
+  parent: TcoCore.PlainTcoTask
+  name: __restoreRequest
+  nameWithType: PlainTcoTask.__restoreRequest
+  fullName: TcoCore.PlainTcoTask.__restoreRequest
+- uid: TcoCore.PlainTcoTask._restoreRequest
+  commentId: P:TcoCore.PlainTcoTask._restoreRequest
+  parent: TcoCore.PlainTcoTask
+  name: _restoreRequest
+  nameWithType: PlainTcoTask._restoreRequest
+  fullName: TcoCore.PlainTcoTask._restoreRequest
+- uid: TcoCore.PlainTcoTask.__invokeRequest
+  commentId: F:TcoCore.PlainTcoTask.__invokeRequest
+  parent: TcoCore.PlainTcoTask
+  name: __invokeRequest
+  nameWithType: PlainTcoTask.__invokeRequest
+  fullName: TcoCore.PlainTcoTask.__invokeRequest
+- uid: TcoCore.PlainTcoTask._invokeRequest
+  commentId: P:TcoCore.PlainTcoTask._invokeRequest
+  parent: TcoCore.PlainTcoTask
+  name: _invokeRequest
+  nameWithType: PlainTcoTask._invokeRequest
+  fullName: TcoCore.PlainTcoTask._invokeRequest
+- uid: TcoCore.PlainTcoTask.__abortRequest
+  commentId: F:TcoCore.PlainTcoTask.__abortRequest
+  parent: TcoCore.PlainTcoTask
+  name: __abortRequest
+  nameWithType: PlainTcoTask.__abortRequest
+  fullName: TcoCore.PlainTcoTask.__abortRequest
+- uid: TcoCore.PlainTcoTask._abortRequest
+  commentId: P:TcoCore.PlainTcoTask._abortRequest
+  parent: TcoCore.PlainTcoTask
+  name: _abortRequest
+  nameWithType: PlainTcoTask._abortRequest
+  fullName: TcoCore.PlainTcoTask._abortRequest
+- uid: TcoCore.PlainTcoTask.__enabled
+  commentId: F:TcoCore.PlainTcoTask.__enabled
+  parent: TcoCore.PlainTcoTask
+  name: __enabled
+  nameWithType: PlainTcoTask.__enabled
+  fullName: TcoCore.PlainTcoTask.__enabled
+- uid: TcoCore.PlainTcoTask._enabled
+  commentId: P:TcoCore.PlainTcoTask._enabled
+  parent: TcoCore.PlainTcoTask
+  name: _enabled
+  nameWithType: PlainTcoTask._enabled
+  fullName: TcoCore.PlainTcoTask._enabled
+- uid: TcoCore.PlainTcoTask.__isServiceable
+  commentId: F:TcoCore.PlainTcoTask.__isServiceable
+  parent: TcoCore.PlainTcoTask
+  name: __isServiceable
+  nameWithType: PlainTcoTask.__isServiceable
+  fullName: TcoCore.PlainTcoTask.__isServiceable
+- uid: TcoCore.PlainTcoTask._isServiceable
+  commentId: P:TcoCore.PlainTcoTask._isServiceable
+  parent: TcoCore.PlainTcoTask
+  name: _isServiceable
+  nameWithType: PlainTcoTask._isServiceable
+  fullName: TcoCore.PlainTcoTask._isServiceable
+- uid: TcoCore.PlainTcoTask.__elapsedTime
+  commentId: F:TcoCore.PlainTcoTask.__elapsedTime
+  parent: TcoCore.PlainTcoTask
+  name: __elapsedTime
+  nameWithType: PlainTcoTask.__elapsedTime
+  fullName: TcoCore.PlainTcoTask.__elapsedTime
+- uid: TcoCore.PlainTcoTask._elapsedTime
+  commentId: P:TcoCore.PlainTcoTask._elapsedTime
+  parent: TcoCore.PlainTcoTask
+  name: _elapsedTime
+  nameWithType: PlainTcoTask._elapsedTime
+  fullName: TcoCore.PlainTcoTask._elapsedTime
 - uid: TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   commentId: M:TcoCore.PlainTcoObject.CopyPlainToCyclic(TcoCore.TcoObject)
   parent: TcoCore.PlainTcoObject
@@ -1583,6 +1559,30 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcoCore.PlainTcoObject.__Identity
+  commentId: F:TcoCore.PlainTcoObject.__Identity
+  parent: TcoCore.PlainTcoObject
+  name: __Identity
+  nameWithType: PlainTcoObject.__Identity
+  fullName: TcoCore.PlainTcoObject.__Identity
+- uid: TcoCore.PlainTcoObject._Identity
+  commentId: P:TcoCore.PlainTcoObject._Identity
+  parent: TcoCore.PlainTcoObject
+  name: _Identity
+  nameWithType: PlainTcoObject._Identity
+  fullName: TcoCore.PlainTcoObject._Identity
+- uid: TcoCore.PlainTcoObject.__messenger
+  commentId: F:TcoCore.PlainTcoObject.__messenger
+  parent: TcoCore.PlainTcoObject
+  name: __messenger
+  nameWithType: PlainTcoObject.__messenger
+  fullName: TcoCore.PlainTcoObject.__messenger
+- uid: TcoCore.PlainTcoObject._messenger
+  commentId: P:TcoCore.PlainTcoObject._messenger
+  parent: TcoCore.PlainTcoObject
+  name: _messenger
+  nameWithType: PlainTcoObject._messenger
+  fullName: TcoCore.PlainTcoObject._messenger
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -1885,18 +1885,6 @@ references:
   name: Vortex.Connector
   nameWithType: Vortex.Connector
   fullName: Vortex.Connector
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: TcoData.PlainTcoDataTask._identifier*
-  commentId: Overload:TcoData.PlainTcoDataTask._identifier
-  name: _identifier
-  nameWithType: PlainTcoDataTask._identifier
-  fullName: TcoData.PlainTcoDataTask._identifier
 - uid: TcoData.PlainTcoDataTask.CopyPlainToCyclic*
   commentId: Overload:TcoData.PlainTcoDataTask.CopyPlainToCyclic
   name: CopyPlainToCyclic
@@ -1935,6 +1923,18 @@ references:
   name: CopyShadowToPlain
   nameWithType: PlainTcoDataTask.CopyShadowToPlain
   fullName: TcoData.PlainTcoDataTask.CopyShadowToPlain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcoData.PlainTcoDataTask._identifier*
+  commentId: Overload:TcoData.PlainTcoDataTask._identifier
+  name: _identifier
+  nameWithType: PlainTcoDataTask._identifier
+  fullName: TcoData.PlainTcoDataTask._identifier
 - uid: System.ComponentModel.PropertyChangedEventHandler
   commentId: T:System.ComponentModel.PropertyChangedEventHandler
   parent: System.ComponentModel

@@ -1,22 +1,83 @@
 ### YamlMime:TableOfContent
-- uid: TcOpen.Inxton.Abstractions.Data
-  name: TcOpen.Inxton.Abstractions.Data
+- uid: TcoCore
+  name: TcoCore
   items:
-  - uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviderBase
+  - uid: TcoCore.IsTask
+    name: IsTask
+  - uid: TcoCore.IVortexObjectExtensions
+    name: IVortexObjectExtensions
+- uid: TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  items:
+  - uid: TcOpen.Inxton.Data.DateTimeProviderBase
     name: DateTimeProviderBase
-  - uid: TcOpen.Inxton.Abstractions.Data.DateTimeProviders
+  - uid: TcOpen.Inxton.Data.DateTimeProviders
     name: DateTimeProviders
-  - uid: TcOpen.Inxton.Abstractions.Data.IBrowsableDataObject
+  - uid: TcOpen.Inxton.Data.DuplicateIdException
+    name: DuplicateIdException
+  - uid: TcOpen.Inxton.Data.IBrowsableDataObject
     name: IBrowsableDataObject
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository
+  - uid: TcOpen.Inxton.Data.IdentifierValueMismatchedException
+    name: IdentifierValueMismatchedException
+  - uid: TcOpen.Inxton.Data.IRepository
     name: IRepository
-  - uid: TcOpen.Inxton.Abstractions.Data.IRepository`1
+  - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository<T>
     name.vb: IRepository(Of T)
-  - uid: TcOpen.Inxton.Abstractions.Data.StandardDateTimeProvider
+  - uid: TcOpen.Inxton.Data.StandardDateTimeProvider
     name: StandardDateTimeProvider
-- uid: TcOpen.Inxton.Abstractions.Logging
-  name: TcOpen.Inxton.Abstractions.Logging
+  - uid: TcOpen.Inxton.Data.UnableToLocateRecordId
+    name: UnableToLocateRecordId
+  - uid: TcOpen.Inxton.Data.UnableToUpdateRecord
+    name: UnableToUpdateRecord
+- uid: TcOpen.Inxton.Input
+  name: TcOpen.Inxton.Input
   items:
-  - uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  - uid: TcOpen.Inxton.Input.RelayCommand
+    name: RelayCommand
+- uid: TcOpen.Inxton.Logging
+  name: TcOpen.Inxton.Logging
+  items:
+  - uid: TcOpen.Inxton.Logging.ITcoLogger
     name: ITcoLogger
+- uid: TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  items:
+  - uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+    name: AuthenticationServiceNotActiveException
+  - uid: TcOpen.Inxton.Security.AuthorizationRequestDelegate
+    name: AuthorizationRequestDelegate
+  - uid: TcOpen.Inxton.Security.AuthorizationTokenChangeRequestDelegate
+    name: AuthorizationTokenChangeRequestDelegate
+  - uid: TcOpen.Inxton.Security.IAuthenticationService
+    name: IAuthenticationService
+  - uid: TcOpen.Inxton.Security.IExternalAuthorization
+    name: IExternalAuthorization
+  - uid: TcOpen.Inxton.Security.ISecurityManager
+    name: ISecurityManager
+  - uid: TcOpen.Inxton.Security.ISecurityProvider
+    name: ISecurityProvider
+  - uid: TcOpen.Inxton.Security.IUser
+    name: IUser
+  - uid: TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
+    name: OnTimedLogoutRequestDelegate
+  - uid: TcOpen.Inxton.Security.OnUserAuthentication
+    name: OnUserAuthentication
+  - uid: TcOpen.Inxton.Security.Role
+    name: Role
+- uid: TcOpen.Inxton.Swift
+  name: TcOpen.Inxton.Swift
+  items:
+  - uid: TcOpen.Inxton.Swift.ICodeProvider
+    name: ICodeProvider
+  - uid: TcOpen.Inxton.Swift.ICodeRecorder
+    name: ICodeRecorder
+  - uid: TcOpen.Inxton.Swift.RecordTaskActionDelegate
+    name: RecordTaskActionDelegate
+- uid: TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  items:
+  - uid: TcOpen.Inxton.Threading.Dispatcher
+    name: Dispatcher
+  - uid: TcOpen.Inxton.Threading.IDispatcher
+    name: IDispatcher

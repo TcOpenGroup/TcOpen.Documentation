@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.App.Logging.LoggingHelpers
+  commentId: T:TcOpen.Inxton.App.Logging.LoggingHelpers
+  id: LoggingHelpers
+  parent: TcOpen.Inxton.App.Logging
+  children:
+  - TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange(Vortex.Connector.IValueTag,System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: LoggingHelpers
+  nameWithType: LoggingHelpers
+  fullName: TcOpen.Inxton.App.Logging.LoggingHelpers
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: LoggingHelpers
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton.App.Logging
+  syntax:
+    content: static class LoggingHelpers
+    content.vb: Module LoggingHelpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - static
+  - class
+  modifiers.vb:
+  - Module
+- uid: TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange(Vortex.Connector.IValueTag,System.Object,System.Object)
+  commentId: M:TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange(Vortex.Connector.IValueTag,System.Object,System.Object)
+  id: EditValueChange(Vortex.Connector.IValueTag,System.Object,System.Object)
+  parent: TcOpen.Inxton.App.Logging.LoggingHelpers
+  langs:
+  - csharp
+  - vb
+  name: EditValueChange(IValueTag, Object, Object)
+  nameWithType: LoggingHelpers.EditValueChange(IValueTag, Object, Object)
+  fullName: TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange(Vortex.Connector.IValueTag, System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: EditValueChange
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton.App.Logging
+  syntax:
+    content: static void EditValueChange(IValueTag valueTag, dynamic original, dynamic newValue)
+    parameters:
+    - id: valueTag
+      type: Vortex.Connector.IValueTag
+    - id: original
+      type: System.Object
+    - id: newValue
+      type: System.Object
+    content.vb: Shared Sub EditValueChange(valueTag As IValueTag, original As Object, newValue As Object)
+  overload: TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange*
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+references:
+- uid: TcOpen.Inxton.App.Logging
+  commentId: N:TcOpen.Inxton.App.Logging
+  name: TcOpen.Inxton.App.Logging
+  nameWithType: TcOpen.Inxton.App.Logging
+  fullName: TcOpen.Inxton.App.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange*
+  commentId: Overload:TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange
+  name: EditValueChange
+  nameWithType: LoggingHelpers.EditValueChange
+  fullName: TcOpen.Inxton.App.Logging.LoggingHelpers.EditValueChange
+- uid: Vortex.Connector.IValueTag
+  commentId: T:Vortex.Connector.IValueTag
+  parent: Vortex.Connector
+  isExternal: true
+  name: IValueTag
+  nameWithType: IValueTag
+  fullName: Vortex.Connector.IValueTag
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector

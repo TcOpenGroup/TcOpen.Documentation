@@ -6,9 +6,12 @@ items:
   parent: TcOpen.Inxton
   children:
   - TcOpen.Inxton.TcoAppBuilder.#ctor(TcOpen.Inxton.TcoAppDomain)
+  - TcOpen.Inxton.TcoAppBuilder.AuthenticationService
   - TcOpen.Inxton.TcoAppBuilder.Domain
   - TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
-  - TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  - TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
+  - TcOpen.Inxton.TcoAppBuilder.SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
+  - TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Logging.ITcoLogger)
   langs:
   - csharp
   - vb
@@ -20,10 +23,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoAppBuilder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -63,10 +66,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -94,10 +97,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Domain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -117,25 +120,25 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
-  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
-  id: SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+- uid: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Logging.ITcoLogger)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Logging.ITcoLogger)
+  id: SetUpLogger(TcOpen.Inxton.Logging.ITcoLogger)
   parent: TcOpen.Inxton.TcoAppBuilder
   langs:
   - csharp
   - vb
   name: SetUpLogger(ITcoLogger)
   nameWithType: TcoAppBuilder.SetUpLogger(ITcoLogger)
-  fullName: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Abstractions.Logging.ITcoLogger)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Logging.ITcoLogger)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetUpLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 25
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -145,7 +148,7 @@ items:
     content: public TcoAppBuilder SetUpLogger(ITcoLogger logger)
     parameters:
     - id: logger
-      type: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+      type: TcOpen.Inxton.Logging.ITcoLogger
       description: Instance of a logger.
     return:
       type: TcOpen.Inxton.TcoAppBuilder
@@ -171,10 +174,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -190,6 +193,119 @@ items:
       description: Application builder.
     content.vb: Public Function SetDispatcher(dispatcher As IDispatcher) As TcoAppBuilder
   overload: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.TcoAppBuilder.SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
+  id: SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetSecurity(IAuthenticationService)
+  nameWithType: TcoAppBuilder.SetSecurity(IAuthenticationService)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: SetSecurity
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 51
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nSets the authentication service for the application.\n"
+  example: []
+  syntax:
+    content: public TcoAppBuilder SetSecurity(IAuthenticationService authenticationService)
+    parameters:
+    - id: authenticationService
+      type: TcOpen.Inxton.Security.IAuthenticationService
+      description: Authentication service
+    return:
+      type: TcOpen.Inxton.TcoAppBuilder
+      description: AppBuilder
+    content.vb: Public Function SetSecurity(authenticationService As IAuthenticationService) As TcoAppBuilder
+  overload: TcOpen.Inxton.TcoAppBuilder.SetSecurity*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.TcoAppBuilder.AuthenticationService
+  commentId: P:TcOpen.Inxton.TcoAppBuilder.AuthenticationService
+  id: AuthenticationService
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationService
+  nameWithType: TcoAppBuilder.AuthenticationService
+  fullName: TcOpen.Inxton.TcoAppBuilder.AuthenticationService
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AuthenticationService
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 57
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  syntax:
+    content: public IAuthenticationService AuthenticationService { get; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Security.IAuthenticationService
+    content.vb: Public ReadOnly Property AuthenticationService As IAuthenticationService
+  overload: TcOpen.Inxton.TcoAppBuilder.AuthenticationService*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
+  id: SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetEditValueChangeLogging(IVortexObject)
+  nameWithType: TcoAppBuilder.SetEditValueChangeLogging(IVortexObject)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: SetEditValueChangeLogging
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 65
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  summary: "\nSets the logging for the &apos;Edit&apos; -> &apos;Online&apos; value change.\n"
+  example: []
+  syntax:
+    content: public TcoAppBuilder SetEditValueChangeLogging(IVortexObject obj)
+    parameters:
+    - id: obj
+      type: Vortex.Connector.IVortexObject
+      description: Root twin object
+    return:
+      type: TcOpen.Inxton.TcoAppBuilder
+      description: AppBuilder
+    content.vb: Public Function SetEditValueChangeLogging(obj As IVortexObject) As TcoAppBuilder
+  overload: TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -513,23 +629,23 @@ references:
   name: SetUpLogger
   nameWithType: TcoAppBuilder.SetUpLogger
   fullName: TcOpen.Inxton.TcoAppBuilder.SetUpLogger
-- uid: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  commentId: T:TcOpen.Inxton.Abstractions.Logging.ITcoLogger
-  parent: TcOpen.Inxton.Abstractions.Logging
+- uid: TcOpen.Inxton.Logging.ITcoLogger
+  commentId: T:TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging
   name: ITcoLogger
   nameWithType: ITcoLogger
-  fullName: TcOpen.Inxton.Abstractions.Logging.ITcoLogger
+  fullName: TcOpen.Inxton.Logging.ITcoLogger
 - uid: TcOpen.Inxton.TcoAppBuilder
   commentId: T:TcOpen.Inxton.TcoAppBuilder
   parent: TcOpen.Inxton
   name: TcoAppBuilder
   nameWithType: TcoAppBuilder
   fullName: TcOpen.Inxton.TcoAppBuilder
-- uid: TcOpen.Inxton.Abstractions.Logging
-  commentId: N:TcOpen.Inxton.Abstractions.Logging
-  name: TcOpen.Inxton.Abstractions.Logging
-  nameWithType: TcOpen.Inxton.Abstractions.Logging
-  fullName: TcOpen.Inxton.Abstractions.Logging
+- uid: TcOpen.Inxton.Logging
+  commentId: N:TcOpen.Inxton.Logging
+  name: TcOpen.Inxton.Logging
+  nameWithType: TcOpen.Inxton.Logging
+  fullName: TcOpen.Inxton.Logging
 - uid: TcOpen.Inxton.TcoAppBuilder.SetDispatcher*
   commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetDispatcher
   name: SetDispatcher
@@ -546,3 +662,42 @@ references:
   name: TcOpen.Inxton.Threading
   nameWithType: TcOpen.Inxton.Threading
   fullName: TcOpen.Inxton.Threading
+- uid: TcOpen.Inxton.TcoAppBuilder.SetSecurity*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetSecurity
+  name: SetSecurity
+  nameWithType: TcoAppBuilder.SetSecurity
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetSecurity
+- uid: TcOpen.Inxton.Security.IAuthenticationService
+  commentId: T:TcOpen.Inxton.Security.IAuthenticationService
+  parent: TcOpen.Inxton.Security
+  name: IAuthenticationService
+  nameWithType: IAuthenticationService
+  fullName: TcOpen.Inxton.Security.IAuthenticationService
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.TcoAppBuilder.AuthenticationService*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.AuthenticationService
+  name: AuthenticationService
+  nameWithType: TcoAppBuilder.AuthenticationService
+  fullName: TcOpen.Inxton.TcoAppBuilder.AuthenticationService
+- uid: TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging
+  name: SetEditValueChangeLogging
+  nameWithType: TcoAppBuilder.SetEditValueChangeLogging
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging
+- uid: Vortex.Connector.IVortexObject
+  commentId: T:Vortex.Connector.IVortexObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexObject
+  nameWithType: IVortexObject
+  fullName: Vortex.Connector.IVortexObject
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector

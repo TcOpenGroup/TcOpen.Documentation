@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Threading.IDispatcher
+  commentId: T:TcOpen.Inxton.Threading.IDispatcher
+  id: IDispatcher
+  parent: TcOpen.Inxton.Threading
+  children:
+  - TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  - TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: TcOpen.Inxton.Threading.IDispatcher
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: IDispatcher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nProvides access to the UI dispatcher of running application.\n"
+  example: []
+  syntax:
+    content: public interface IDispatcher
+    content.vb: Public Interface IDispatcher
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  id: Invoke(System.Action)
+  parent: TcOpen.Inxton.Threading.IDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Action)
+  nameWithType: IDispatcher.Invoke(Action)
+  fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Invoke
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+    startLine: 17
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nInvokes an action on the dispatcher of the currently running application.\n"
+  example: []
+  syntax:
+    content: void Invoke(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: Action to run
+    content.vb: Sub Invoke(action As Action)
+  overload: TcOpen.Inxton.Threading.IDispatcher.Invoke*
+- uid: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  commentId: M:TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  id: InvokeAsync(System.Action)
+  parent: TcOpen.Inxton.Threading.IDispatcher
+  langs:
+  - csharp
+  - vb
+  name: InvokeAsync(Action)
+  nameWithType: IDispatcher.InvokeAsync(Action)
+  fullName: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: InvokeAsync
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
+    startLine: 23
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Threading
+  summary: "\nInvokes an action on the dispatcher of the currently running application asynchronously.\n"
+  example: []
+  syntax:
+    content: Task InvokeAsync(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: Action to run
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InvokeAsync(action As Action) As Task
+  overload: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync*
+references:
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading
+- uid: TcOpen.Inxton.Threading.IDispatcher.Invoke*
+  commentId: Overload:TcOpen.Inxton.Threading.IDispatcher.Invoke
+  name: Invoke
+  nameWithType: IDispatcher.Invoke
+  fullName: TcOpen.Inxton.Threading.IDispatcher.Invoke
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync*
+  commentId: Overload:TcOpen.Inxton.Threading.IDispatcher.InvokeAsync
+  name: InvokeAsync
+  nameWithType: IDispatcher.InvokeAsync
+  fullName: TcOpen.Inxton.Threading.IDispatcher.InvokeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

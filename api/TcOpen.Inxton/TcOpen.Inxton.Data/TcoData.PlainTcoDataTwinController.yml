@@ -7,14 +7,6 @@ items:
   children:
   - TcoData.PlainTcoDataTwinController.#ctor
   - TcoData.PlainTcoDataTwinController._MAIN
-  - TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.ITcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.TcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.ITcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.TcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.IShadowTcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.TcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.IShadowTcoDataTwinController)
-  - TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.TcoDataTwinController)
   - TcoData.PlainTcoDataTwinController.MAIN
   - TcoData.PlainTcoDataTwinController.PropertyChanged
   langs:
@@ -28,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainTcoDataTwinController
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
     startLine: 174
@@ -77,7 +69,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _MAIN
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
     startLine: 176
@@ -104,7 +96,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MAIN
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
     startLine: 177
@@ -126,270 +118,6 @@ items:
   modifiers.csharp:
   - get
   - set
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.TcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.TcoDataTwinController)
-  id: CopyPlainToCyclic(TcoData.TcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToCyclic(TcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyPlainToCyclic(TcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.TcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 194
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToCyclic(TcoDataTwinController target)
-    parameters:
-    - id: target
-      type: TcoData.TcoDataTwinController
-    content.vb: Public Sub CopyPlainToCyclic(target As TcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.ITcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.ITcoDataTwinController)
-  id: CopyPlainToCyclic(TcoData.ITcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToCyclic(ITcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyPlainToCyclic(ITcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic(TcoData.ITcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 199
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToCyclic(ITcoDataTwinController target)
-    parameters:
-    - id: target
-      type: TcoData.ITcoDataTwinController
-    content.vb: Public Sub CopyPlainToCyclic(target As ITcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.TcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.TcoDataTwinController)
-  id: CopyPlainToShadow(TcoData.TcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToShadow(TcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyPlainToShadow(TcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.TcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 204
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToShadow(TcoDataTwinController target)
-    parameters:
-    - id: target
-      type: TcoData.TcoDataTwinController
-    content.vb: Public Sub CopyPlainToShadow(target As TcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyPlainToShadow*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.IShadowTcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.IShadowTcoDataTwinController)
-  id: CopyPlainToShadow(TcoData.IShadowTcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyPlainToShadow(IShadowTcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyPlainToShadow(IShadowTcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToShadow(TcoData.IShadowTcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 209
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyPlainToShadow(IShadowTcoDataTwinController target)
-    parameters:
-    - id: target
-      type: TcoData.IShadowTcoDataTwinController
-    content.vb: Public Sub CopyPlainToShadow(target As IShadowTcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyPlainToShadow*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.TcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.TcoDataTwinController)
-  id: CopyCyclicToPlain(TcoData.TcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyCyclicToPlain(TcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyCyclicToPlain(TcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.TcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 214
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyCyclicToPlain(TcoDataTwinController source)
-    parameters:
-    - id: source
-      type: TcoData.TcoDataTwinController
-    content.vb: Public Sub CopyCyclicToPlain(source As TcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.ITcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.ITcoDataTwinController)
-  id: CopyCyclicToPlain(TcoData.ITcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyCyclicToPlain(ITcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyCyclicToPlain(ITcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain(TcoData.ITcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 219
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyCyclicToPlain(ITcoDataTwinController source)
-    parameters:
-    - id: source
-      type: TcoData.ITcoDataTwinController
-    content.vb: Public Sub CopyCyclicToPlain(source As ITcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.TcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.TcoDataTwinController)
-  id: CopyShadowToPlain(TcoData.TcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyShadowToPlain(TcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyShadowToPlain(TcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.TcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 224
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyShadowToPlain(TcoDataTwinController source)
-    parameters:
-    - id: source
-      type: TcoData.TcoDataTwinController
-    content.vb: Public Sub CopyShadowToPlain(source As TcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyShadowToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.IShadowTcoDataTwinController)
-  commentId: M:TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.IShadowTcoDataTwinController)
-  id: CopyShadowToPlain(TcoData.IShadowTcoDataTwinController)
-  parent: TcoData.PlainTcoDataTwinController
-  langs:
-  - csharp
-  - vb
-  name: CopyShadowToPlain(IShadowTcoDataTwinController)
-  nameWithType: PlainTcoDataTwinController.CopyShadowToPlain(IShadowTcoDataTwinController)
-  fullName: TcoData.PlainTcoDataTwinController.CopyShadowToPlain(TcoData.IShadowTcoDataTwinController)
-  type: Method
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 229
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: public void CopyShadowToPlain(IShadowTcoDataTwinController source)
-    parameters:
-    - id: source
-      type: TcoData.IShadowTcoDataTwinController
-    content.vb: Public Sub CopyShadowToPlain(source As IShadowTcoDataTwinController)
-  overload: TcoData.PlainTcoDataTwinController.CopyShadowToPlain*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: TcoData.PlainTcoDataTwinController.PropertyChanged
   commentId: E:TcoData.PlainTcoDataTwinController.PropertyChanged
   id: PropertyChanged
@@ -405,10 +133,10 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 234
+    startLine: 194
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -438,10 +166,10 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoData.g.cs
-    startLine: 235
+    startLine: 195
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -788,44 +516,6 @@ references:
   name: MAIN
   nameWithType: PlainTcoDataTwinController.MAIN
   fullName: TcoData.PlainTcoDataTwinController.MAIN
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic*
-  commentId: Overload:TcoData.PlainTcoDataTwinController.CopyPlainToCyclic
-  name: CopyPlainToCyclic
-  nameWithType: PlainTcoDataTwinController.CopyPlainToCyclic
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToCyclic
-- uid: TcoData.TcoDataTwinController
-  commentId: T:TcoData.TcoDataTwinController
-  parent: TcoData
-  name: TcoDataTwinController
-  nameWithType: TcoDataTwinController
-  fullName: TcoData.TcoDataTwinController
-- uid: TcoData.ITcoDataTwinController
-  commentId: T:TcoData.ITcoDataTwinController
-  parent: TcoData
-  name: ITcoDataTwinController
-  nameWithType: ITcoDataTwinController
-  fullName: TcoData.ITcoDataTwinController
-- uid: TcoData.PlainTcoDataTwinController.CopyPlainToShadow*
-  commentId: Overload:TcoData.PlainTcoDataTwinController.CopyPlainToShadow
-  name: CopyPlainToShadow
-  nameWithType: PlainTcoDataTwinController.CopyPlainToShadow
-  fullName: TcoData.PlainTcoDataTwinController.CopyPlainToShadow
-- uid: TcoData.IShadowTcoDataTwinController
-  commentId: T:TcoData.IShadowTcoDataTwinController
-  parent: TcoData
-  name: IShadowTcoDataTwinController
-  nameWithType: IShadowTcoDataTwinController
-  fullName: TcoData.IShadowTcoDataTwinController
-- uid: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain*
-  commentId: Overload:TcoData.PlainTcoDataTwinController.CopyCyclicToPlain
-  name: CopyCyclicToPlain
-  nameWithType: PlainTcoDataTwinController.CopyCyclicToPlain
-  fullName: TcoData.PlainTcoDataTwinController.CopyCyclicToPlain
-- uid: TcoData.PlainTcoDataTwinController.CopyShadowToPlain*
-  commentId: Overload:TcoData.PlainTcoDataTwinController.CopyShadowToPlain
-  name: CopyShadowToPlain
-  nameWithType: PlainTcoDataTwinController.CopyShadowToPlain
-  fullName: TcoData.PlainTcoDataTwinController.CopyShadowToPlain
 - uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   parent: System.ComponentModel.INotifyPropertyChanged

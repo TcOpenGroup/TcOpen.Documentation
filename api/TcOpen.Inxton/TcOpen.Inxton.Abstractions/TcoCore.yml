@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoCore
+  commentId: N:TcoCore
+  id: TcoCore
+  children:
+  - TcoCore.IsTask
+  - TcoCore.IVortexObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcoCore.IsTask
+  commentId: T:TcoCore.IsTask
+  name: IsTask
+  nameWithType: IsTask
+  fullName: TcoCore.IsTask
+- uid: TcoCore.IVortexObjectExtensions
+  commentId: T:TcoCore.IVortexObjectExtensions
+  name: IVortexObjectExtensions
+  nameWithType: IVortexObjectExtensions
+  fullName: TcoCore.IVortexObjectExtensions

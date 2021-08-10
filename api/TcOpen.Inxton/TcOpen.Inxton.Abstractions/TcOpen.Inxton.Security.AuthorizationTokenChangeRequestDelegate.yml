@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.AuthorizationTokenChangeRequestDelegate
+  commentId: T:TcOpen.Inxton.Security.AuthorizationTokenChangeRequestDelegate
+  id: AuthorizationTokenChangeRequestDelegate
+  parent: TcOpen.Inxton.Security
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationTokenChangeRequestDelegate
+  nameWithType: AuthorizationTokenChangeRequestDelegate
+  fullName: TcOpen.Inxton.Security.AuthorizationTokenChangeRequestDelegate
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AuthorizationTokenChangeRequestDelegate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
+    startLine: 20
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public delegate void AuthorizationTokenChangeRequestDelegate(string token);
+    parameters:
+    - id: token
+      type: System.String
+    content.vb: Public Delegate Sub AuthorizationTokenChangeRequestDelegate(token As String)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

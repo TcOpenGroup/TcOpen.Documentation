@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  id: TcOpen.Inxton.Threading
+  children:
+  - TcOpen.Inxton.Threading.Dispatcher
+  - TcOpen.Inxton.Threading.IDispatcher
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Threading.Dispatcher
+  commentId: T:TcOpen.Inxton.Threading.Dispatcher
+  name: Dispatcher
+  nameWithType: Dispatcher
+  fullName: TcOpen.Inxton.Threading.Dispatcher
+- uid: TcOpen.Inxton.Threading.IDispatcher
+  commentId: T:TcOpen.Inxton.Threading.IDispatcher
+  parent: TcOpen.Inxton.Threading
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: TcOpen.Inxton.Threading.IDispatcher
+- uid: TcOpen.Inxton.Threading
+  commentId: N:TcOpen.Inxton.Threading
+  name: TcOpen.Inxton.Threading
+  nameWithType: TcOpen.Inxton.Threading
+  fullName: TcOpen.Inxton.Threading

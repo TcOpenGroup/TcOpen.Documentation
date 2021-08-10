@@ -19,6 +19,8 @@ items:
   - TcoData.Entity.AddKid(Vortex.Connector.IVortexElement)
   - TcoData.Entity.AddValueTag(Vortex.Connector.IValueTag)
   - TcoData.Entity.AttributeName
+  - TcoData.Entity.Changes
+  - TcoData.Entity.ChangeTracker
   - TcoData.Entity.Children
   - TcoData.Entity.Connector
   - TcoData.Entity.CopyPlainToShadow(TcoData.PlainEntity)
@@ -61,11 +63,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Entity
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 10
   assemblies:
   - TcoDataConnector
@@ -74,16 +76,17 @@ items:
     content: >-
       [TypeMetaDescriptor("{attribute addProperty Name \"\" }", "Entity", "TcoData", TypeComplexityEnum.Complex)]
 
-      public class Entity : IVortexObject, ITwinObject, IVortexElement, IEntity, IShadowEntity, IVortexOnlineObject, IVortexShadowObject
+      public class Entity : ICrudDataObject, IVortexObject, ITwinObject, IVortexElement, IEntity, IShadowEntity, IVortexOnlineObject, IVortexShadowObject
     content.vb: >-
       <TypeMetaDescriptor("{attribute addProperty Name """" }", "Entity", "TcoData", TypeComplexityEnum.Complex)>
 
       Public Class Entity
 
-          Implements IVortexObject, ITwinObject, IVortexElement, IEntity, IShadowEntity, IVortexOnlineObject, IVortexShadowObject
+          Implements ICrudDataObject, IVortexObject, ITwinObject, IVortexElement, IEntity, IShadowEntity, IVortexOnlineObject, IVortexShadowObject
   inheritance:
   - System.Object
   implements:
+  - TcoData.ICrudDataObject
   - Vortex.Connector.IVortexObject
   - Vortex.Connector.ITwinObject
   - Vortex.Connector.IVortexElement
@@ -117,6 +120,80 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: TcoData.Entity.ChangeTracker
+  commentId: P:TcoData.Entity.ChangeTracker
+  id: ChangeTracker
+  parent: TcoData.Entity
+  langs:
+  - csharp
+  - vb
+  name: ChangeTracker
+  nameWithType: Entity.ChangeTracker
+  fullName: TcoData.Entity.ChangeTracker
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/Entity/Entity.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ChangeTracker
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/Entity/Entity.cs
+    startLine: 7
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public ValueChangeTracker ChangeTracker { get; }
+    parameters: []
+    return:
+      type: TcoData.ValueChangeTracker
+    content.vb: Public ReadOnly Property ChangeTracker As ValueChangeTracker
+  overload: TcoData.Entity.ChangeTracker*
+  implements:
+  - TcoData.ICrudDataObject.ChangeTracker
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcoData.Entity.Changes
+  commentId: P:TcoData.Entity.Changes
+  id: Changes
+  parent: TcoData.Entity
+  langs:
+  - csharp
+  - vb
+  name: Changes
+  nameWithType: Entity.Changes
+  fullName: TcoData.Entity.Changes
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/pex/Entity/Entity.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Changes
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/Entity/Entity.cs
+    startLine: 18
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: public List<ValueChangeItem> Changes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{TcoData.ValueChangeItem}
+    content.vb: Public Property Changes As List(Of ValueChangeItem)
+  overload: TcoData.Entity.Changes*
+  implements:
+  - TcoData.ICrudDataObject.Changes
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: TcoData.Entity.Symbol
   commentId: P:TcoData.Entity.Symbol
   id: Symbol
@@ -130,11 +207,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Symbol
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 13
   assemblies:
   - TcoDataConnector
@@ -169,11 +246,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: HumanReadable
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 19
   assemblies:
   - TcoDataConnector
@@ -208,11 +285,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _humanReadable
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 32
   assemblies:
   - TcoDataConnector
@@ -239,11 +316,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 33
   assemblies:
   - TcoDataConnector
@@ -266,11 +343,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 34
   assemblies:
   - TcoDataConnector
@@ -296,6 +373,8 @@ items:
 
       Public ReadOnly Property _EntityId As OnlinerString
   overload: TcoData.Entity._EntityId*
+  implements:
+  - TcoData.ICrudDataObject._EntityId
   attributes:
   - type: ContainerAttribute
     ctor: ContainerAttribute.#ctor(Layout)
@@ -327,11 +406,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IEntity._EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 43
   assemblies:
   - TcoDataConnector
@@ -390,11 +469,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowEntity._EntityId
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 52
   assemblies:
   - TcoDataConnector
@@ -452,11 +531,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 61
   assemblies:
   - TcoDataConnector
@@ -479,11 +558,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 62
   assemblies:
   - TcoDataConnector
@@ -501,6 +580,8 @@ items:
 
       Public ReadOnly Property _Created As OnlinerDateTime
   overload: TcoData.Entity._Created*
+  implements:
+  - TcoData.ICrudDataObject._Created
   modifiers.csharp:
   - public
   - get
@@ -521,11 +602,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IEntity._Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 71
   assemblies:
   - TcoDataConnector
@@ -565,11 +646,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowEntity._Created
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 80
   assemblies:
   - TcoDataConnector
@@ -608,11 +689,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 89
   assemblies:
   - TcoDataConnector
@@ -635,11 +716,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 90
   assemblies:
   - TcoDataConnector
@@ -657,6 +738,8 @@ items:
 
       Public ReadOnly Property _Modified As OnlinerDateTime
   overload: TcoData.Entity._Modified*
+  implements:
+  - TcoData.ICrudDataObject._Modified
   modifiers.csharp:
   - public
   - get
@@ -677,11 +760,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IEntity._Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 99
   assemblies:
   - TcoDataConnector
@@ -721,11 +804,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowEntity._Modified
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 108
   assemblies:
   - TcoDataConnector
@@ -764,11 +847,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 117
   assemblies:
   - TcoDataConnector
@@ -794,11 +877,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 124
   assemblies:
   - TcoDataConnector
@@ -824,11 +907,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 131
   assemblies:
   - TcoDataConnector
@@ -859,11 +942,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 137
   assemblies:
   - TcoDataConnector
@@ -894,11 +977,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 142
   assemblies:
   - TcoDataConnector
@@ -927,11 +1010,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 143
   assemblies:
   - TcoDataConnector
@@ -953,11 +1036,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Children
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 144
   assemblies:
   - TcoDataConnector
@@ -990,11 +1073,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetChildren
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 150
   assemblies:
   - TcoDataConnector
@@ -1024,11 +1107,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AddChild
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 155
   assemblies:
   - TcoDataConnector
@@ -1059,11 +1142,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Kids
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 160
   assemblies:
   - TcoDataConnector
@@ -1096,11 +1179,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetKids
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 166
   assemblies:
   - TcoDataConnector
@@ -1130,11 +1213,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AddKid
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 171
   assemblies:
   - TcoDataConnector
@@ -1165,11 +1248,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 176
   assemblies:
   - TcoDataConnector
@@ -1198,11 +1281,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 177
   assemblies:
   - TcoDataConnector
@@ -1224,11 +1307,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Parent
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 178
   assemblies:
   - TcoDataConnector
@@ -1259,11 +1342,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetParent
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 184
   assemblies:
   - TcoDataConnector
@@ -1293,11 +1376,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ValueTags
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 189
   assemblies:
   - TcoDataConnector
@@ -1330,11 +1413,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetValueTags
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 195
   assemblies:
   - TcoDataConnector
@@ -1364,11 +1447,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AddValueTag
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 200
   assemblies:
   - TcoDataConnector
@@ -1399,11 +1482,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Connector
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 205
   assemblies:
   - TcoDataConnector
@@ -1434,11 +1517,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetConnector
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 211
   assemblies:
   - TcoDataConnector
@@ -1468,11 +1551,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 216
   assemblies:
   - TcoDataConnector
@@ -1503,11 +1586,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 222
   assemblies:
   - TcoDataConnector
@@ -1538,11 +1621,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 227
   assemblies:
   - TcoDataConnector
@@ -1570,11 +1653,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 233
   assemblies:
   - TcoDataConnector
@@ -1602,11 +1685,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 239
   assemblies:
   - TcoDataConnector
@@ -1637,11 +1720,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SymbolTail
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 245
   assemblies:
   - TcoDataConnector
@@ -1672,11 +1755,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetSymbolTail
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 251
   assemblies:
   - TcoDataConnector
@@ -1706,11 +1789,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AttributeName
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 256
   assemblies:
   - TcoDataConnector
@@ -1745,11 +1828,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _AttributeName
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 269
   assemblies:
   - TcoDataConnector
@@ -1782,11 +1865,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 275
   assemblies:
   - TcoDataConnector
@@ -1819,11 +1902,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Entity.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/Entity.g.cs
     startLine: 298
   assemblies:
   - TcoDataConnector
@@ -1849,6 +1932,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: TcoData.ICrudDataObject
+  commentId: T:TcoData.ICrudDataObject
+  parent: TcoData
+  name: ICrudDataObject
+  nameWithType: ICrudDataObject
+  fullName: TcoData.ICrudDataObject
 - uid: Vortex.Connector.IVortexObject
   commentId: T:Vortex.Connector.IVortexObject
   parent: Vortex.Connector
@@ -2187,6 +2276,121 @@ references:
   name: Vortex.Connector
   nameWithType: Vortex.Connector
   fullName: Vortex.Connector
+- uid: TcoData.Entity.ChangeTracker*
+  commentId: Overload:TcoData.Entity.ChangeTracker
+  name: ChangeTracker
+  nameWithType: Entity.ChangeTracker
+  fullName: TcoData.Entity.ChangeTracker
+- uid: TcoData.ICrudDataObject.ChangeTracker
+  commentId: P:TcoData.ICrudDataObject.ChangeTracker
+  parent: TcoData.ICrudDataObject
+  name: ChangeTracker
+  nameWithType: ICrudDataObject.ChangeTracker
+  fullName: TcoData.ICrudDataObject.ChangeTracker
+- uid: TcoData.ValueChangeTracker
+  commentId: T:TcoData.ValueChangeTracker
+  parent: TcoData
+  name: ValueChangeTracker
+  nameWithType: ValueChangeTracker
+  fullName: TcoData.ValueChangeTracker
+- uid: TcoData.Entity.Changes*
+  commentId: Overload:TcoData.Entity.Changes
+  name: Changes
+  nameWithType: Entity.Changes
+  fullName: TcoData.Entity.Changes
+- uid: TcoData.ICrudDataObject.Changes
+  commentId: P:TcoData.ICrudDataObject.Changes
+  parent: TcoData.ICrudDataObject
+  name: Changes
+  nameWithType: ICrudDataObject.Changes
+  fullName: TcoData.ICrudDataObject.Changes
+- uid: System.Collections.Generic.List{TcoData.ValueChangeItem}
+  commentId: T:System.Collections.Generic.List{TcoData.ValueChangeItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ValueChangeItem>
+  nameWithType: List<ValueChangeItem>
+  fullName: System.Collections.Generic.List<TcoData.ValueChangeItem>
+  nameWithType.vb: List(Of ValueChangeItem)
+  fullName.vb: System.Collections.Generic.List(Of TcoData.ValueChangeItem)
+  name.vb: List(Of ValueChangeItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TcoData.ValueChangeItem
+    name: ValueChangeItem
+    nameWithType: ValueChangeItem
+    fullName: TcoData.ValueChangeItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TcoData.ValueChangeItem
+    name: ValueChangeItem
+    nameWithType: ValueChangeItem
+    fullName: TcoData.ValueChangeItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: TcoData.Entity.Symbol*
   commentId: Overload:TcoData.Entity.Symbol
   name: Symbol
@@ -2236,6 +2440,12 @@ references:
   name: _EntityId
   nameWithType: Entity._EntityId
   fullName: TcoData.Entity._EntityId
+- uid: TcoData.ICrudDataObject._EntityId
+  commentId: P:TcoData.ICrudDataObject._EntityId
+  parent: TcoData.ICrudDataObject
+  name: _EntityId
+  nameWithType: ICrudDataObject._EntityId
+  fullName: TcoData.ICrudDataObject._EntityId
 - uid: TcoData.Entity.TcoData#IEntity#_EntityId*
   commentId: Overload:TcoData.Entity.TcoData#IEntity#_EntityId
   name: IEntity._EntityId
@@ -2300,6 +2510,12 @@ references:
   name: _Created
   nameWithType: Entity._Created
   fullName: TcoData.Entity._Created
+- uid: TcoData.ICrudDataObject._Created
+  commentId: P:TcoData.ICrudDataObject._Created
+  parent: TcoData.ICrudDataObject
+  name: _Created
+  nameWithType: ICrudDataObject._Created
+  fullName: TcoData.ICrudDataObject._Created
 - uid: TcoData.Entity.TcoData#IEntity#_Created*
   commentId: Overload:TcoData.Entity.TcoData#IEntity#_Created
   name: IEntity._Created
@@ -2345,6 +2561,12 @@ references:
   name: _Modified
   nameWithType: Entity._Modified
   fullName: TcoData.Entity._Modified
+- uid: TcoData.ICrudDataObject._Modified
+  commentId: P:TcoData.ICrudDataObject._Modified
+  parent: TcoData.ICrudDataObject
+  name: _Modified
+  nameWithType: ICrudDataObject._Modified
+  fullName: TcoData.ICrudDataObject._Modified
 - uid: TcoData.Entity.TcoData#IEntity#_Modified*
   commentId: Overload:TcoData.Entity.TcoData#IEntity#_Modified
   name: IEntity._Modified
@@ -2507,51 +2729,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: TcoData.Entity.GetChildren*
   commentId: Overload:TcoData.Entity.GetChildren
   name: GetChildren

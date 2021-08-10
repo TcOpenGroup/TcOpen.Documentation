@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.IAuthenticationService
+  commentId: T:TcOpen.Inxton.Security.IAuthenticationService
+  id: IAuthenticationService
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser(System.String,System.String)
+  - TcOpen.Inxton.Security.IAuthenticationService.CalculateHash(System.String,System.String)
+  - TcOpen.Inxton.Security.IAuthenticationService.ChangePassword(System.String,System.String,System.String,System.String)
+  - TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser
+  - TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+  - TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticated
+  - TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticating
+  - TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+  - TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateFailed
+  - TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateSuccess
+  langs:
+  - csharp
+  - vb
+  name: IAuthenticationService
+  nameWithType: IAuthenticationService
+  fullName: TcOpen.Inxton.Security.IAuthenticationService
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: IAuthenticationService
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nProvides abstraction for authentication service in a vortex application.\n"
+  example: []
+  syntax:
+    content: public interface IAuthenticationService
+    content.vb: Public Interface IAuthenticationService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser(System.String,System.String)
+  commentId: M:TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser(System.String,System.String)
+  id: AuthenticateUser(System.String,System.String)
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateUser(String, String)
+  nameWithType: IAuthenticationService.AuthenticateUser(String, String)
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AuthenticateUser
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 13
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nAttempts to authenticate the user.\n"
+  example: []
+  syntax:
+    content: IUser AuthenticateUser(string username, string password)
+    parameters:
+    - id: username
+      type: System.String
+      description: User name
+    - id: password
+      type: System.String
+      description: Password
+    return:
+      type: TcOpen.Inxton.Security.IUser
+      description: ''
+    content.vb: Function AuthenticateUser(username As String, password As String) As IUser
+  overload: TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser*
+- uid: TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser
+  commentId: M:TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser
+  id: DeAuthenticateCurrentUser
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: DeAuthenticateCurrentUser()
+  nameWithType: IAuthenticationService.DeAuthenticateCurrentUser()
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser()
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: DeAuthenticateCurrentUser
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 18
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nDe-authenticates current user.\n"
+  example: []
+  syntax:
+    content: void DeAuthenticateCurrentUser()
+    content.vb: Sub DeAuthenticateCurrentUser
+  overload: TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser*
+- uid: TcOpen.Inxton.Security.IAuthenticationService.CalculateHash(System.String,System.String)
+  commentId: M:TcOpen.Inxton.Security.IAuthenticationService.CalculateHash(System.String,System.String)
+  id: CalculateHash(System.String,System.String)
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: CalculateHash(String, String)
+  nameWithType: IAuthenticationService.CalculateHash(String, String)
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.CalculateHash(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: CalculateHash
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 26
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nCalculates hash of the password\n"
+  example: []
+  syntax:
+    content: string CalculateHash(string clearTextPassword, string salt)
+    parameters:
+    - id: clearTextPassword
+      type: System.String
+      description: Plain test password
+    - id: salt
+      type: System.String
+      description: Salt
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function CalculateHash(clearTextPassword As String, salt As String) As String
+  overload: TcOpen.Inxton.Security.IAuthenticationService.CalculateHash*
+- uid: TcOpen.Inxton.Security.IAuthenticationService.ChangePassword(System.String,System.String,System.String,System.String)
+  commentId: M:TcOpen.Inxton.Security.IAuthenticationService.ChangePassword(System.String,System.String,System.String,System.String)
+  id: ChangePassword(System.String,System.String,System.String,System.String)
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: ChangePassword(String, String, String, String)
+  nameWithType: IAuthenticationService.ChangePassword(String, String, String, String)
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.ChangePassword(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ChangePassword
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 35
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nChanges the password of given user.\n"
+  example: []
+  syntax:
+    content: void ChangePassword(string userName, string password, string newPassword1, string newPassword2)
+    parameters:
+    - id: userName
+      type: System.String
+      description: User name
+    - id: password
+      type: System.String
+      description: Old password
+    - id: newPassword1
+      type: System.String
+      description: New password
+    - id: newPassword2
+      type: System.String
+      description: New password
+    content.vb: Sub ChangePassword(userName As String, password As String, newPassword1 As String, newPassword2 As String)
+  overload: TcOpen.Inxton.Security.IAuthenticationService.ChangePassword*
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateSuccess
+  commentId: E:TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateSuccess
+  id: OnUserAuthenticateSuccess
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: OnUserAuthenticateSuccess
+  nameWithType: IAuthenticationService.OnUserAuthenticateSuccess
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateSuccess
+  type: Event
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnUserAuthenticateSuccess
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 40
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nOccurs when the uses is successfully authenticated.\n"
+  example: []
+  syntax:
+    content: event OnUserAuthentication OnUserAuthenticateSuccess
+    return:
+      type: TcOpen.Inxton.Security.OnUserAuthentication
+    content.vb: Event OnUserAuthenticateSuccess As OnUserAuthentication
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateFailed
+  commentId: E:TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateFailed
+  id: OnUserAuthenticateFailed
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: OnUserAuthenticateFailed
+  nameWithType: IAuthenticationService.OnUserAuthenticateFailed
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnUserAuthenticateFailed
+  type: Event
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnUserAuthenticateFailed
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 45
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nOccurs when user authentication fails. \n"
+  example: []
+  syntax:
+    content: event OnUserAuthentication OnUserAuthenticateFailed
+    return:
+      type: TcOpen.Inxton.Security.OnUserAuthentication
+    content.vb: Event OnUserAuthenticateFailed As OnUserAuthentication
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticating
+  commentId: E:TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticating
+  id: OnDeAuthenticating
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: OnDeAuthenticating
+  nameWithType: IAuthenticationService.OnDeAuthenticating
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticating
+  type: Event
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnDeAuthenticating
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 50
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nOccurs when current user is to be de-authenticated.\n"
+  example: []
+  syntax:
+    content: event OnUserAuthentication OnDeAuthenticating
+    return:
+      type: TcOpen.Inxton.Security.OnUserAuthentication
+    content.vb: Event OnDeAuthenticating As OnUserAuthentication
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticated
+  commentId: E:TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticated
+  id: OnDeAuthenticated
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: OnDeAuthenticated
+  nameWithType: IAuthenticationService.OnDeAuthenticated
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticated
+  type: Event
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnDeAuthenticated
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 55
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nOccurs when current user is de-authenticated.\n"
+  example: []
+  syntax:
+    content: event OnUserAuthentication OnDeAuthenticated
+    return:
+      type: TcOpen.Inxton.Security.OnUserAuthentication
+    content.vb: Event OnDeAuthenticated As OnUserAuthentication
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+  commentId: P:TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+  id: OnTimedLogoutRequest
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: OnTimedLogoutRequest
+  nameWithType: IAuthenticationService.OnTimedLogoutRequest
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnTimedLogoutRequest
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 60
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nDelegate is used to prevent/allow automatic user logout. \n"
+  example: []
+  syntax:
+    content: OnTimedLogoutRequestDelegate OnTimedLogoutRequest { get; set; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
+    content.vb: Property OnTimedLogoutRequest As OnTimedLogoutRequestDelegate
+  overload: TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+  commentId: P:TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+  id: ExternalAuthorization
+  parent: TcOpen.Inxton.Security.IAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: ExternalAuthorization
+  nameWithType: IAuthenticationService.ExternalAuthorization
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ExternalAuthorization
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
+    startLine: 65
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nGet or set external authentication device handling.\n"
+  example: []
+  syntax:
+    content: IExternalAuthorization ExternalAuthorization { get; set; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Security.IExternalAuthorization
+    content.vb: Property ExternalAuthorization As IExternalAuthorization
+  overload: TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser
+  name: AuthenticateUser
+  nameWithType: IAuthenticationService.AuthenticateUser
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.AuthenticateUser
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcOpen.Inxton.Security.IUser
+  commentId: T:TcOpen.Inxton.Security.IUser
+  parent: TcOpen.Inxton.Security
+  name: IUser
+  nameWithType: IUser
+  fullName: TcOpen.Inxton.Security.IUser
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser
+  name: DeAuthenticateCurrentUser
+  nameWithType: IAuthenticationService.DeAuthenticateCurrentUser
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser
+- uid: TcOpen.Inxton.Security.IAuthenticationService.CalculateHash*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.CalculateHash
+  name: CalculateHash
+  nameWithType: IAuthenticationService.CalculateHash
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.CalculateHash
+- uid: TcOpen.Inxton.Security.IAuthenticationService.ChangePassword*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.ChangePassword
+  name: ChangePassword
+  nameWithType: IAuthenticationService.ChangePassword
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.ChangePassword
+- uid: TcOpen.Inxton.Security.OnUserAuthentication
+  commentId: T:TcOpen.Inxton.Security.OnUserAuthentication
+  parent: TcOpen.Inxton.Security
+  name: OnUserAuthentication
+  nameWithType: OnUserAuthentication
+  fullName: TcOpen.Inxton.Security.OnUserAuthentication
+- uid: TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+  name: OnTimedLogoutRequest
+  nameWithType: IAuthenticationService.OnTimedLogoutRequest
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest
+- uid: TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
+  commentId: T:TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
+  parent: TcOpen.Inxton.Security
+  name: OnTimedLogoutRequestDelegate
+  nameWithType: OnTimedLogoutRequestDelegate
+  fullName: TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
+- uid: TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization*
+  commentId: Overload:TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+  name: ExternalAuthorization
+  nameWithType: IAuthenticationService.ExternalAuthorization
+  fullName: TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization
+- uid: TcOpen.Inxton.Security.IExternalAuthorization
+  commentId: T:TcOpen.Inxton.Security.IExternalAuthorization
+  parent: TcOpen.Inxton.Security
+  name: IExternalAuthorization
+  nameWithType: IExternalAuthorization
+  fullName: TcOpen.Inxton.Security.IExternalAuthorization

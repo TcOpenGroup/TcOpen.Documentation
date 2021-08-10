@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.ViewMode
+  commentId: T:TcoData.ViewMode
+  id: ViewMode
+  parent: TcoData
+  children:
+  - TcoData.ViewMode.Copy
+  - TcoData.ViewMode.Display
+  - TcoData.ViewMode.Edit
+  - TcoData.ViewMode.New
+  langs:
+  - csharp
+  - vb
+  name: ViewMode
+  nameWithType: ViewMode
+  fullName: TcoData.ViewMode
+  type: Enum
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ViewMode
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 568
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: public enum ViewMode
+    content.vb: Public Enum ViewMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TcoData.ViewMode.Display
+  commentId: F:TcoData.ViewMode.Display
+  id: Display
+  parent: TcoData.ViewMode
+  langs:
+  - csharp
+  - vb
+  name: Display
+  nameWithType: ViewMode.Display
+  fullName: TcoData.ViewMode.Display
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Display
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 570
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: Display = 0
+    return:
+      type: TcoData.ViewMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TcoData.ViewMode.Edit
+  commentId: F:TcoData.ViewMode.Edit
+  id: Edit
+  parent: TcoData.ViewMode
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: ViewMode.Edit
+  fullName: TcoData.ViewMode.Edit
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Edit
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 571
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: Edit = 1
+    return:
+      type: TcoData.ViewMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TcoData.ViewMode.New
+  commentId: F:TcoData.ViewMode.New
+  id: New
+  parent: TcoData.ViewMode
+  langs:
+  - csharp
+  - vb
+  name: New
+  nameWithType: ViewMode.New
+  fullName: TcoData.ViewMode.New
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: New
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 572
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: New = 2
+    return:
+      type: TcoData.ViewMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TcoData.ViewMode.Copy
+  commentId: F:TcoData.ViewMode.Copy
+  id: Copy
+  parent: TcoData.ViewMode
+  langs:
+  - csharp
+  - vb
+  name: Copy
+  nameWithType: ViewMode.Copy
+  fullName: TcoData.ViewMode.Copy
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Copy
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 573
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: Copy = 3
+    return:
+      type: TcoData.ViewMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: TcoData.ViewMode
+  commentId: T:TcoData.ViewMode
+  parent: TcoData
+  name: ViewMode
+  nameWithType: ViewMode
+  fullName: TcoData.ViewMode

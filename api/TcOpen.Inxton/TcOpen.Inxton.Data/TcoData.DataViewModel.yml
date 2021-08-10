@@ -1,0 +1,553 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcoData.DataViewModel
+  commentId: T:TcoData.DataViewModel
+  id: DataViewModel
+  parent: TcoData
+  children:
+  - TcoData.DataViewModel.Create``1(TcOpen.Inxton.Data.IRepository{``0},TcoData.TcoDataExchange)
+  langs:
+  - csharp
+  - vb
+  name: DataViewModel
+  nameWithType: DataViewModel
+  fullName: TcoData.DataViewModel
+  type: Class
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: DataViewModel
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 560
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: public class DataViewModel
+    content.vb: Public Class DataViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcoData.DataViewModel.Create``1(TcOpen.Inxton.Data.IRepository{``0},TcoData.TcoDataExchange)
+  commentId: M:TcoData.DataViewModel.Create``1(TcOpen.Inxton.Data.IRepository{``0},TcoData.TcoDataExchange)
+  id: Create``1(TcOpen.Inxton.Data.IRepository{``0},TcoData.TcoDataExchange)
+  parent: TcoData.DataViewModel
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(IRepository<T>, TcoDataExchange)
+  nameWithType: DataViewModel.Create<T>(IRepository<T>, TcoDataExchange)
+  fullName: TcoData.DataViewModel.Create<T>(TcOpen.Inxton.Data.IRepository<T>, TcoData.TcoDataExchange)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Create
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 562
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: >-
+      public static DataViewModel<T> Create<T>(IRepository<T> repository, TcoDataExchange dataExchange)
+          where T : IBrowsableDataObject, new()
+    parameters:
+    - id: repository
+      type: TcOpen.Inxton.Data.IRepository{{T}}
+    - id: dataExchange
+      type: TcoData.TcoDataExchange
+    typeParameters:
+    - id: T
+    return:
+      type: TcoData.DataViewModel{{T}}
+    content.vb: Public Shared Function Create(Of T As {IBrowsableDataObject, New})(repository As IRepository(Of T), dataExchange As TcoDataExchange) As DataViewModel(Of T)
+  overload: TcoData.DataViewModel.Create*
+  nameWithType.vb: DataViewModel.Create(Of T)(IRepository(Of T), TcoDataExchange)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: TcoData.DataViewModel.Create(Of T)(TcOpen.Inxton.Data.IRepository(Of T), TcoData.TcoDataExchange)
+  name.vb: Create(Of T)(IRepository(Of T), TcoDataExchange)
+references:
+- uid: TcoData
+  commentId: N:TcoData
+  name: TcoData
+  nameWithType: TcoData
+  fullName: TcoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcoData.DataViewModel.Create*
+  commentId: Overload:TcoData.DataViewModel.Create
+  name: Create
+  nameWithType: DataViewModel.Create
+  fullName: TcoData.DataViewModel.Create
+- uid: TcOpen.Inxton.Data.IRepository{{T}}
+  commentId: T:TcOpen.Inxton.Data.IRepository{`0}
+  parent: TcOpen.Inxton.Data
+  definition: TcOpen.Inxton.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoData.TcoDataExchange
+  commentId: T:TcoData.TcoDataExchange
+  parent: TcoData
+  name: TcoDataExchange
+  nameWithType: TcoDataExchange
+  fullName: TcoData.TcoDataExchange
+- uid: TcoData.DataViewModel{{T}}
+  commentId: T:TcoData.DataViewModel{``0}
+  parent: TcoData
+  definition: TcoData.DataViewModel`1
+  name: DataViewModel<T>
+  nameWithType: DataViewModel<T>
+  fullName: TcoData.DataViewModel<T>
+  nameWithType.vb: DataViewModel(Of T)
+  fullName.vb: TcoData.DataViewModel(Of T)
+  name.vb: DataViewModel(Of T)
+  spec.csharp:
+  - uid: TcoData.DataViewModel`1
+    name: DataViewModel
+    nameWithType: DataViewModel
+    fullName: TcoData.DataViewModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcoData.DataViewModel`1
+    name: DataViewModel
+    nameWithType: DataViewModel
+    fullName: TcoData.DataViewModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.IRepository`1
+  commentId: T:TcOpen.Inxton.Data.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: TcOpen.Inxton.Data.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TcOpen.Inxton.Data.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: TcoData.DataViewModel`1
+  commentId: T:TcoData.DataViewModel`1
+  name: DataViewModel<T>
+  nameWithType: DataViewModel<T>
+  fullName: TcoData.DataViewModel<T>
+  nameWithType.vb: DataViewModel(Of T)
+  fullName.vb: TcoData.DataViewModel(Of T)
+  name.vb: DataViewModel(Of T)
+  spec.csharp:
+  - uid: TcoData.DataViewModel`1
+    name: DataViewModel
+    nameWithType: DataViewModel
+    fullName: TcoData.DataViewModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcoData.DataViewModel`1
+    name: DataViewModel
+    nameWithType: DataViewModel
+    fullName: TcoData.DataViewModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -4,14 +4,14 @@ items:
   commentId: N:TcOpen.Inxton.Data
   id: TcOpen.Inxton.Data
   children:
+  - TcOpen.Inxton.Data.DataBrowser
+  - TcOpen.Inxton.Data.DataBrowser`1
+  - TcOpen.Inxton.Data.DataBrowser`1.ImportItems
   - TcOpen.Inxton.Data.DataHelpers
-  - TcOpen.Inxton.Data.DuplicateIdException
-  - TcOpen.Inxton.Data.IdentifierValueMismatchedException
+  - TcOpen.Inxton.Data.IDataBrowser
   - TcOpen.Inxton.Data.RepositoryBase`1
   - TcOpen.Inxton.Data.RepositoryNotInitializedException
   - TcOpen.Inxton.Data.RepositorySettings
-  - TcOpen.Inxton.Data.UnableToLocateRecordId
-  - TcOpen.Inxton.Data.UnableToUpdateRecord
   langs:
   - csharp
   - vb
@@ -22,31 +22,88 @@ items:
   assemblies:
   - TcOpen.Inxton.Data
 references:
+- uid: TcOpen.Inxton.Data.DataBrowser`1
+  commentId: T:TcOpen.Inxton.Data.DataBrowser`1
+  name: DataBrowser<T>
+  nameWithType: DataBrowser<T>
+  fullName: TcOpen.Inxton.Data.DataBrowser<T>
+  nameWithType.vb: DataBrowser(Of T)
+  fullName.vb: TcOpen.Inxton.Data.DataBrowser(Of T)
+  name.vb: DataBrowser(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.DataBrowser`1
+    name: DataBrowser
+    nameWithType: DataBrowser
+    fullName: TcOpen.Inxton.Data.DataBrowser
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.DataBrowser`1
+    name: DataBrowser
+    nameWithType: DataBrowser
+    fullName: TcOpen.Inxton.Data.DataBrowser
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.DataBrowser`1.ImportItems
+  commentId: T:TcOpen.Inxton.Data.DataBrowser`1.ImportItems
+  name: DataBrowser.ImportItems<>
+  nameWithType: DataBrowser.ImportItems<>
+  fullName: TcOpen.Inxton.Data.DataBrowser.ImportItems<>
+  nameWithType.vb: DataBrowser.ImportItems(Of )
+  fullName.vb: TcOpen.Inxton.Data.DataBrowser.ImportItems(Of )
+  name.vb: DataBrowser.ImportItems(Of )
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.DataBrowser`1.ImportItems
+    name: DataBrowser.ImportItems
+    nameWithType: DataBrowser.ImportItems
+    fullName: TcOpen.Inxton.Data.DataBrowser.ImportItems
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.DataBrowser`1.ImportItems
+    name: DataBrowser.ImportItems
+    nameWithType: DataBrowser.ImportItems
+    fullName: TcOpen.Inxton.Data.DataBrowser.ImportItems
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.DataBrowser
+  commentId: T:TcOpen.Inxton.Data.DataBrowser
+  name: DataBrowser
+  nameWithType: DataBrowser
+  fullName: TcOpen.Inxton.Data.DataBrowser
+- uid: TcOpen.Inxton.Data.IDataBrowser
+  commentId: T:TcOpen.Inxton.Data.IDataBrowser
+  parent: TcOpen.Inxton.Data
+  name: IDataBrowser
+  nameWithType: IDataBrowser
+  fullName: TcOpen.Inxton.Data.IDataBrowser
 - uid: TcOpen.Inxton.Data.DataHelpers
   commentId: T:TcOpen.Inxton.Data.DataHelpers
   name: DataHelpers
   nameWithType: DataHelpers
   fullName: TcOpen.Inxton.Data.DataHelpers
-- uid: TcOpen.Inxton.Data.DuplicateIdException
-  commentId: T:TcOpen.Inxton.Data.DuplicateIdException
-  name: DuplicateIdException
-  nameWithType: DuplicateIdException
-  fullName: TcOpen.Inxton.Data.DuplicateIdException
-- uid: TcOpen.Inxton.Data.UnableToUpdateRecord
-  commentId: T:TcOpen.Inxton.Data.UnableToUpdateRecord
-  name: UnableToUpdateRecord
-  nameWithType: UnableToUpdateRecord
-  fullName: TcOpen.Inxton.Data.UnableToUpdateRecord
-- uid: TcOpen.Inxton.Data.UnableToLocateRecordId
-  commentId: T:TcOpen.Inxton.Data.UnableToLocateRecordId
-  name: UnableToLocateRecordId
-  nameWithType: UnableToLocateRecordId
-  fullName: TcOpen.Inxton.Data.UnableToLocateRecordId
-- uid: TcOpen.Inxton.Data.IdentifierValueMismatchedException
-  commentId: T:TcOpen.Inxton.Data.IdentifierValueMismatchedException
-  name: IdentifierValueMismatchedException
-  nameWithType: IdentifierValueMismatchedException
-  fullName: TcOpen.Inxton.Data.IdentifierValueMismatchedException
 - uid: TcOpen.Inxton.Data.RepositoryBase`1
   commentId: T:TcOpen.Inxton.Data.RepositoryBase`1
   name: RepositoryBase<T>

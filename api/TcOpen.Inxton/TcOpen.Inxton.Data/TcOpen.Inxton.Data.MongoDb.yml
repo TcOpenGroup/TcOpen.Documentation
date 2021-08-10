@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.MongoDb
+  commentId: N:TcOpen.Inxton.Data.MongoDb
+  id: TcOpen.Inxton.Data.MongoDb
+  children:
+  - TcOpen.Inxton.Data.MongoDb.MongoDbCredentials
+  - TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
+  - TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
+  - TcOpen.Inxton.Data.MongoDb.Repository
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Data.MongoDb
+  nameWithType: TcOpen.Inxton.Data.MongoDb
+  fullName: TcOpen.Inxton.Data.MongoDb
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.MongoDb
+references:
+- uid: TcOpen.Inxton.Data.MongoDb.MongoDbCredentials
+  commentId: T:TcOpen.Inxton.Data.MongoDb.MongoDbCredentials
+  parent: TcOpen.Inxton.Data.MongoDb
+  name: MongoDbCredentials
+  nameWithType: MongoDbCredentials
+  fullName: TcOpen.Inxton.Data.MongoDb.MongoDbCredentials
+- uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
+  commentId: T:TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
+  name: MongoDbRepository<T>
+  nameWithType: MongoDbRepository<T>
+  fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepository<T>
+  nameWithType.vb: MongoDbRepository(Of T)
+  fullName.vb: TcOpen.Inxton.Data.MongoDb.MongoDbRepository(Of T)
+  name.vb: MongoDbRepository(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
+    name: MongoDbRepository
+    nameWithType: MongoDbRepository
+    fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepository`1
+    name: MongoDbRepository
+    nameWithType: MongoDbRepository
+    fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
+  commentId: T:TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
+  name: MongoDbRepositorySettings<T>
+  nameWithType: MongoDbRepositorySettings<T>
+  fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings<T>
+  nameWithType.vb: MongoDbRepositorySettings(Of T)
+  fullName.vb: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings(Of T)
+  name.vb: MongoDbRepositorySettings(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
+    name: MongoDbRepositorySettings
+    nameWithType: MongoDbRepositorySettings
+    fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
+    name: MongoDbRepositorySettings
+    nameWithType: MongoDbRepositorySettings
+    fullName: TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.MongoDb.Repository
+  commentId: T:TcOpen.Inxton.Data.MongoDb.Repository
+  name: Repository
+  nameWithType: Repository
+  fullName: TcOpen.Inxton.Data.MongoDb.Repository
+- uid: TcOpen.Inxton.Data.MongoDb
+  commentId: N:TcOpen.Inxton.Data.MongoDb
+  name: TcOpen.Inxton.Data.MongoDb
+  nameWithType: TcOpen.Inxton.Data.MongoDb
+  fullName: TcOpen.Inxton.Data.MongoDb

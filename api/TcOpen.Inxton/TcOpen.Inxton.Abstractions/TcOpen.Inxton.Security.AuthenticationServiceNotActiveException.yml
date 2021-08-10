@@ -1,0 +1,949 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  commentId: T:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  id: AuthenticationServiceNotActiveException
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String)
+  - TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Exception)
+  - TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type)
+  - TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException
+  nameWithType: AuthenticationServiceNotActiveException
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: AuthenticationServiceNotActiveException
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: "\nAuthentication service is not available exception.\n"
+  example: []
+  syntax:
+    content: 'public class AuthenticationServiceNotActiveException : SecurityException, ISerializable, _Exception'
+    content.vb: >-
+      Public Class AuthenticationServiceNotActiveException
+          Inherits SecurityException
+          Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  - System.SystemException
+  - System.Security.SecurityException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Security.SecurityException.ToString
+  - System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Security.SecurityException.Action
+  - System.Security.SecurityException.PermissionType
+  - System.Security.SecurityException.FirstPermissionThatFailed
+  - System.Security.SecurityException.PermissionState
+  - System.Security.SecurityException.Demanded
+  - System.Security.SecurityException.GrantedSet
+  - System.Security.SecurityException.RefusedSet
+  - System.Security.SecurityException.DenySetInstance
+  - System.Security.SecurityException.PermitOnlySetInstance
+  - System.Security.SecurityException.FailedAssemblyInfo
+  - System.Security.SecurityException.Method
+  - System.Security.SecurityException.Zone
+  - System.Security.SecurityException.Url
+  - System.Exception.GetBaseException
+  - System.Exception.InternalToString
+  - System.Exception.GetType
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException(SerializationInfo, StreamingContext)
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(SerializationInfo, StreamingContext)
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 14
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: Initializes a new instance of the <xref href="TcOpen.Inxton.Security.AuthenticationServiceNotActiveException" data-throw-if-not-resolved="false"></xref> class with serialized data.
+  example: []
+  syntax:
+    content: protected AuthenticationServiceNotActiveException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The object that holds the serialized object data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The contextual information about the source or destination.
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code data-dev-comment-type="paramref" class="paramref">info</code> is null.
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String)
+  commentId: M:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException(String)
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(String)
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 21
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: Initializes a new instance of the <xref href="TcOpen.Inxton.Security.AuthenticationServiceNotActiveException" data-throw-if-not-resolved="false"></xref> class with a specified error message.
+  example: []
+  syntax:
+    content: public AuthenticationServiceNotActiveException(string message = "Authentication service is not active. You must assign appropriate authentication service.")
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    content.vb: Public Sub New(message As String = "Authentication service is not active. You must assign appropriate authentication service.")
+  overload: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Exception)
+  commentId: M:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException(String, Exception)
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(String, Exception)
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 30
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: Initializes a new instance of the <xref href="TcOpen.Inxton.Security.AuthenticationServiceNotActiveException" data-throw-if-not-resolved="false"></xref> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  example: []
+  syntax:
+    content: public AuthenticationServiceNotActiveException(string message, Exception inner)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: inner
+      type: System.Exception
+      description: The exception that is the cause of the current exception. If the inner parameter is not null, the current exception is raised in a catch block that handles the inner exception.
+    content.vb: Public Sub New(message As String, inner As Exception)
+  overload: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type)
+  commentId: M:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type)
+  id: '#ctor(System.String,System.Type)'
+  parent: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException(String, Type)
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(String, Type)
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(System.String, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 38
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: Initializes a new instance of the <xref href="TcOpen.Inxton.Security.AuthenticationServiceNotActiveException" data-throw-if-not-resolved="false"></xref> class with a specified error message and the permission type that caused the exception to be thrown.
+  example: []
+  syntax:
+    content: public AuthenticationServiceNotActiveException(string message, Type type)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: type
+      type: System.Type
+      description: The type of the permission that caused the exception to be thrown.
+    content.vb: Public Sub New(message As String, type As Type)
+  overload: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type,System.String)
+  commentId: M:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor(System.String,System.Type,System.String)
+  id: '#ctor(System.String,System.Type,System.String)'
+  parent: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationServiceNotActiveException(String, Type, String)
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(String, Type, String)
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException(System.String, System.Type, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
+    startLine: 47
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  summary: Initializes a new instance of the <xref href="TcOpen.Inxton.Security.AuthenticationServiceNotActiveException" data-throw-if-not-resolved="false"></xref> class with a specified error message, the permission type that caused the exception to be thrown, and the permission state.
+  example: []
+  syntax:
+    content: public AuthenticationServiceNotActiveException(string message, Type type, string state)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: type
+      type: System.Type
+      description: The type of the permission that caused the exception to be thrown.
+    - id: state
+      type: System.String
+      description: The state of the permission that caused the exception to be thrown.
+    content.vb: Public Sub New(message As String, type As Type, state As String)
+  overload: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.SystemException
+  commentId: T:System.SystemException
+  parent: System
+  isExternal: true
+  name: SystemException
+  nameWithType: SystemException
+  fullName: System.SystemException
+- uid: System.Security.SecurityException
+  commentId: T:System.Security.SecurityException
+  parent: System.Security
+  isExternal: true
+  name: SecurityException
+  nameWithType: SecurityException
+  fullName: System.Security.SecurityException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Runtime.InteropServices._Exception
+  commentId: T:System.Runtime.InteropServices._Exception
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: _Exception
+  nameWithType: _Exception
+  fullName: System.Runtime.InteropServices._Exception
+- uid: System.Security.SecurityException.ToString
+  commentId: M:System.Security.SecurityException.ToString
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: ToString()
+  nameWithType: SecurityException.ToString()
+  fullName: System.Security.SecurityException.ToString()
+  spec.csharp:
+  - uid: System.Security.SecurityException.ToString
+    name: ToString
+    nameWithType: SecurityException.ToString
+    fullName: System.Security.SecurityException.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.SecurityException.ToString
+    name: ToString
+    nameWithType: SecurityException.ToString
+    fullName: System.Security.SecurityException.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: SecurityException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: SecurityException.GetObjectData
+    fullName: System.Security.SecurityException.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: SecurityException.GetObjectData
+    fullName: System.Security.SecurityException.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.SecurityException.Action
+  commentId: P:System.Security.SecurityException.Action
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: Action
+  nameWithType: SecurityException.Action
+  fullName: System.Security.SecurityException.Action
+- uid: System.Security.SecurityException.PermissionType
+  commentId: P:System.Security.SecurityException.PermissionType
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: PermissionType
+  nameWithType: SecurityException.PermissionType
+  fullName: System.Security.SecurityException.PermissionType
+- uid: System.Security.SecurityException.FirstPermissionThatFailed
+  commentId: P:System.Security.SecurityException.FirstPermissionThatFailed
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: FirstPermissionThatFailed
+  nameWithType: SecurityException.FirstPermissionThatFailed
+  fullName: System.Security.SecurityException.FirstPermissionThatFailed
+- uid: System.Security.SecurityException.PermissionState
+  commentId: P:System.Security.SecurityException.PermissionState
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: PermissionState
+  nameWithType: SecurityException.PermissionState
+  fullName: System.Security.SecurityException.PermissionState
+- uid: System.Security.SecurityException.Demanded
+  commentId: P:System.Security.SecurityException.Demanded
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: Demanded
+  nameWithType: SecurityException.Demanded
+  fullName: System.Security.SecurityException.Demanded
+- uid: System.Security.SecurityException.GrantedSet
+  commentId: P:System.Security.SecurityException.GrantedSet
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: GrantedSet
+  nameWithType: SecurityException.GrantedSet
+  fullName: System.Security.SecurityException.GrantedSet
+- uid: System.Security.SecurityException.RefusedSet
+  commentId: P:System.Security.SecurityException.RefusedSet
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: RefusedSet
+  nameWithType: SecurityException.RefusedSet
+  fullName: System.Security.SecurityException.RefusedSet
+- uid: System.Security.SecurityException.DenySetInstance
+  commentId: P:System.Security.SecurityException.DenySetInstance
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: DenySetInstance
+  nameWithType: SecurityException.DenySetInstance
+  fullName: System.Security.SecurityException.DenySetInstance
+- uid: System.Security.SecurityException.PermitOnlySetInstance
+  commentId: P:System.Security.SecurityException.PermitOnlySetInstance
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: PermitOnlySetInstance
+  nameWithType: SecurityException.PermitOnlySetInstance
+  fullName: System.Security.SecurityException.PermitOnlySetInstance
+- uid: System.Security.SecurityException.FailedAssemblyInfo
+  commentId: P:System.Security.SecurityException.FailedAssemblyInfo
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: FailedAssemblyInfo
+  nameWithType: SecurityException.FailedAssemblyInfo
+  fullName: System.Security.SecurityException.FailedAssemblyInfo
+- uid: System.Security.SecurityException.Method
+  commentId: P:System.Security.SecurityException.Method
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: Method
+  nameWithType: SecurityException.Method
+  fullName: System.Security.SecurityException.Method
+- uid: System.Security.SecurityException.Zone
+  commentId: P:System.Security.SecurityException.Zone
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: Zone
+  nameWithType: SecurityException.Zone
+  fullName: System.Security.SecurityException.Zone
+- uid: System.Security.SecurityException.Url
+  commentId: P:System.Security.SecurityException.Url
+  parent: System.Security.SecurityException
+  isExternal: true
+  name: Url
+  nameWithType: SecurityException.Url
+  fullName: System.Security.SecurityException.Url
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.InternalToString
+  commentId: M:System.Exception.InternalToString
+  parent: System.Exception
+  isExternal: true
+  name: InternalToString()
+  nameWithType: Exception.InternalToString()
+  fullName: System.Exception.InternalToString()
+  spec.csharp:
+  - uid: System.Exception.InternalToString
+    name: InternalToString
+    nameWithType: Exception.InternalToString
+    fullName: System.Exception.InternalToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.InternalToString
+    name: InternalToString
+    nameWithType: Exception.InternalToString
+    fullName: System.Exception.InternalToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Security
+  commentId: N:System.Security
+  isExternal: true
+  name: System.Security
+  nameWithType: System.Security
+  fullName: System.Security
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  commentId: T:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+  name: AuthenticationServiceNotActiveException
+  nameWithType: AuthenticationServiceNotActiveException
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor*
+  commentId: Overload:TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.#ctor
+  name: AuthenticationServiceNotActiveException
+  nameWithType: AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException
+  fullName: TcOpen.Inxton.Security.AuthenticationServiceNotActiveException.AuthenticationServiceNotActiveException
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

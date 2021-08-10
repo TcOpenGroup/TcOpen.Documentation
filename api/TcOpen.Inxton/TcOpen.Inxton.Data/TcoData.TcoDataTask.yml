@@ -33,11 +33,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoDataTask
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 17
   assemblies:
   - TcoDataConnector
@@ -49,7 +49,7 @@ items:
     content: >-
       [TypeMetaDescriptor("{attribute addProperty Name \"\" }", "TcoDataTask", "TcoData", TypeComplexityEnum.Complex)]
 
-      public class TcoDataTask : TcoRemoteTask, IVortexIdentity, IsTcoObject, ICommand, IDecorateLog, INotifyPropertyChanged, IVortexObject, ITwinObject, IVortexElement, ITcoDataTask, ITcoRemoteTask, ITcoTask, ITcoObject, IShadowTcoDataTask, IShadowTcoRemoteTask, IShadowTcoTask, IShadowTcoObject, IVortexOnlineObject, IVortexShadowObject
+      public class TcoDataTask : TcoRemoteTask, IVortexIdentity, IsTcoObject, ICommand, IDecorateLog, IsTask, INotifyPropertyChanged, IVortexObject, ITwinObject, IVortexElement, ITcoDataTask, ITcoRemoteTask, ITcoTask, ITcoObject, IShadowTcoDataTask, IShadowTcoRemoteTask, IShadowTcoTask, IShadowTcoObject, IVortexOnlineObject, IVortexShadowObject
     content.vb: >-
       <TypeMetaDescriptor("{attribute addProperty Name """" }", "TcoDataTask", "TcoData", TypeComplexityEnum.Complex)>
 
@@ -57,10 +57,7 @@ items:
 
           Inherits TcoRemoteTask
 
-          Implements IVortexIdentity, IsTcoObject, ICommand, IDecorateLog, INotifyPropertyChanged, IVortexObject, ITwinObject, IVortexElement, ITcoDataTask, ITcoRemoteTask, ITcoTask, ITcoObject, IShadowTcoDataTask, IShadowTcoRemoteTask, IShadowTcoTask, IShadowTcoObject, IVortexOnlineObject, IVortexShadowObject
-  seealso:
-  - linkId: TcoData.TcoDataTask.PlcTcoDataTask
-    commentId: T:TcoData.TcoDataTask.PlcTcoDataTask
+          Implements IVortexIdentity, IsTcoObject, ICommand, IDecorateLog, IsTask, INotifyPropertyChanged, IVortexObject, ITwinObject, IVortexElement, ITcoDataTask, ITcoRemoteTask, ITcoTask, ITcoObject, IShadowTcoDataTask, IShadowTcoRemoteTask, IShadowTcoTask, IShadowTcoObject, IVortexOnlineObject, IVortexShadowObject
   inheritance:
   - System.Object
   - TcoCore.TcoObject
@@ -71,6 +68,7 @@ items:
   - TcoCore.IsTcoObject
   - System.Windows.Input.ICommand
   - TcoCore.Logging.IDecorateLog
+  - TcoCore.IsTask
   - System.ComponentModel.INotifyPropertyChanged
   - Vortex.Connector.IVortexObject
   - Vortex.Connector.ITwinObject
@@ -86,7 +84,7 @@ items:
   - Vortex.Connector.IVortexOnlineObject
   - Vortex.Connector.IVortexShadowObject
   inheritedMembers:
-  - TcoCore.TcoRemoteTask.DefferedAction
+  - TcoCore.TcoRemoteTask.DeferredAction
   - TcoCore.TcoRemoteTask.PropertyChanged
   - TcoCore.TcoRemoteTask.Initialize(System.Action)
   - TcoCore.TcoRemoteTask.Initialize(System.Func{System.Boolean})
@@ -123,21 +121,24 @@ items:
   - TcoCore.TcoRemoteTask.FlushPlainToOnline(TcoCore.PlainTcoRemoteTask)
   - TcoCore.TcoRemoteTask.CopyPlainToShadow(TcoCore.PlainTcoRemoteTask)
   - TcoCore.TcoRemoteTask.FlushOnlineToPlain(TcoCore.PlainTcoRemoteTask)
-  - TcoCore.TcoTask.CanExecuteChanged
-  - TcoCore.TcoTask.Abort
-  - TcoCore.TcoTask.Restore
   - TcoCore.TcoTask._logPayloadDecoration
-  - TcoCore.TcoTask.LogPayloadDecoration
+  - TcoCore.TcoTask.codeProvider
+  - TcoCore.TcoTask.CanExecuteChanged
+  - TcoCore.TcoTask.AbortTask(System.Object)
+  - TcoCore.TcoTask.CanAbortTask
+  - TcoCore.TcoTask.CanRestoreTask
   - TcoCore.TcoTask.InitCommands
-  - TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+  - TcoCore.TcoTask.RestoreTask(System.Object)
   - TcoCore.TcoTask.TcoTask_CanExecuteChanged(System.Object,System.EventArgs)
   - TcoCore.TcoTask.ValidateCanExecute(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   - TcoCore.TcoTask.CanExecute(System.Object)
   - TcoCore.TcoTask.Execute(System.Object)
-  - TcoCore.TcoTask.CanAbortTask
-  - TcoCore.TcoTask.AbortTask(System.Object)
-  - TcoCore.TcoTask.CanRestoreTask
-  - TcoCore.TcoTask.RestoreTask(System.Object)
+  - TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+  - TcoCore.TcoTask.Abort
+  - TcoCore.TcoTask.CodeProvider
+  - TcoCore.TcoTask.LogPayloadDecoration
+  - TcoCore.TcoTask.Restore
+  - TcoCore.TcoTask.RecordTaskAction
   - TcoCore.TcoTask.__taskState
   - TcoCore.TcoTask._taskState
   - TcoCore.TcoTask.TcoCore#ITcoTask#_taskState
@@ -171,6 +172,7 @@ items:
   - TcoCore.TcoTask.CopyPlainToShadow(TcoCore.PlainTcoTask)
   - TcoCore.TcoTask.FlushOnlineToPlain(TcoCore.PlainTcoTask)
   - TcoCore.TcoObject._context
+  - TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
   - TcoCore.TcoObject.GetActiveMessages
   - TcoCore.TcoObject.Identity
   - TcoCore.TcoObject.MessageHandler
@@ -246,11 +248,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: __identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 20
   assemblies:
   - TcoDataConnector
@@ -273,11 +275,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 21
   assemblies:
   - TcoDataConnector
@@ -309,11 +311,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.ITcoDataTask._identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 29
   assemblies:
   - TcoDataConnector
@@ -347,11 +349,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoData.IShadowTcoDataTask._identifier
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 37
   assemblies:
   - TcoDataConnector
@@ -384,11 +386,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 45
   assemblies:
   - TcoDataConnector
@@ -414,11 +416,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LazyShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 51
   assemblies:
   - TcoDataConnector
@@ -444,11 +446,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 57
   assemblies:
   - TcoDataConnector
@@ -479,11 +481,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CreatePlainerType
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 64
   assemblies:
   - TcoDataConnector
@@ -514,11 +516,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 70
   assemblies:
   - TcoDataConnector
@@ -547,11 +549,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexPreConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 71
   assemblies:
   - TcoDataConnector
@@ -573,11 +575,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 72
   assemblies:
   - TcoDataConnector
@@ -606,11 +608,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PexConstructorParameterless
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 73
   assemblies:
   - TcoDataConnector
@@ -632,11 +634,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushPlainToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 74
   assemblies:
   - TcoDataConnector
@@ -667,11 +669,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 80
   assemblies:
   - TcoDataConnector
@@ -702,11 +704,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushShadowToOnline
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 85
   assemblies:
   - TcoDataConnector
@@ -737,11 +739,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 91
   assemblies:
   - TcoDataConnector
@@ -772,11 +774,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: FlushOnlineToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 97
   assemblies:
   - TcoDataConnector
@@ -807,11 +809,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 103
   assemblies:
   - TcoDataConnector
@@ -844,11 +846,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/TcoDataTask.g.cs
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoDataTask.g.cs
     startLine: 116
   assemblies:
   - TcoDataConnector
@@ -862,11 +864,6 @@ items:
   modifiers.vb:
   - Public
 references:
-- uid: TcoData.TcoDataTask.PlcTcoDataTask
-  commentId: T:TcoData.TcoDataTask.PlcTcoDataTask
-  name: TcoDataTask.PlcTcoDataTask
-  nameWithType: TcoDataTask.PlcTcoDataTask
-  fullName: TcoData.TcoDataTask.PlcTcoDataTask
 - uid: TcoData
   commentId: N:TcoData
   name: TcoData
@@ -923,6 +920,12 @@ references:
   name: IDecorateLog
   nameWithType: IDecorateLog
   fullName: TcoCore.Logging.IDecorateLog
+- uid: TcoCore.IsTask
+  commentId: T:TcoCore.IsTask
+  parent: TcoCore
+  name: IsTask
+  nameWithType: IsTask
+  fullName: TcoCore.IsTask
 - uid: System.ComponentModel.INotifyPropertyChanged
   commentId: T:System.ComponentModel.INotifyPropertyChanged
   parent: System.ComponentModel
@@ -1013,12 +1016,12 @@ references:
   name: IVortexShadowObject
   nameWithType: IVortexShadowObject
   fullName: Vortex.Connector.IVortexShadowObject
-- uid: TcoCore.TcoRemoteTask.DefferedAction
-  commentId: P:TcoCore.TcoRemoteTask.DefferedAction
+- uid: TcoCore.TcoRemoteTask.DeferredAction
+  commentId: P:TcoCore.TcoRemoteTask.DeferredAction
   parent: TcoCore.TcoRemoteTask
-  name: DefferedAction
-  nameWithType: TcoRemoteTask.DefferedAction
-  fullName: TcoCore.TcoRemoteTask.DefferedAction
+  name: DeferredAction
+  nameWithType: TcoRemoteTask.DeferredAction
+  fullName: TcoCore.TcoRemoteTask.DeferredAction
 - uid: TcoCore.TcoRemoteTask.PropertyChanged
   commentId: E:TcoCore.TcoRemoteTask.PropertyChanged
   parent: TcoCore.TcoRemoteTask
@@ -1650,36 +1653,119 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.TcoTask.CanExecuteChanged
-  commentId: E:TcoCore.TcoTask.CanExecuteChanged
-  parent: TcoCore.TcoTask
-  name: CanExecuteChanged
-  nameWithType: TcoTask.CanExecuteChanged
-  fullName: TcoCore.TcoTask.CanExecuteChanged
-- uid: TcoCore.TcoTask.Abort
-  commentId: P:TcoCore.TcoTask.Abort
-  parent: TcoCore.TcoTask
-  name: Abort
-  nameWithType: TcoTask.Abort
-  fullName: TcoCore.TcoTask.Abort
-- uid: TcoCore.TcoTask.Restore
-  commentId: P:TcoCore.TcoTask.Restore
-  parent: TcoCore.TcoTask
-  name: Restore
-  nameWithType: TcoTask.Restore
-  fullName: TcoCore.TcoTask.Restore
 - uid: TcoCore.TcoTask._logPayloadDecoration
   commentId: F:TcoCore.TcoTask._logPayloadDecoration
   parent: TcoCore.TcoTask
   name: _logPayloadDecoration
   nameWithType: TcoTask._logPayloadDecoration
   fullName: TcoCore.TcoTask._logPayloadDecoration
-- uid: TcoCore.TcoTask.LogPayloadDecoration
-  commentId: P:TcoCore.TcoTask.LogPayloadDecoration
+- uid: TcoCore.TcoTask.codeProvider
+  commentId: F:TcoCore.TcoTask.codeProvider
   parent: TcoCore.TcoTask
-  name: LogPayloadDecoration
-  nameWithType: TcoTask.LogPayloadDecoration
-  fullName: TcoCore.TcoTask.LogPayloadDecoration
+  name: codeProvider
+  nameWithType: TcoTask.codeProvider
+  fullName: TcoCore.TcoTask.codeProvider
+- uid: TcoCore.TcoTask.CanExecuteChanged
+  commentId: E:TcoCore.TcoTask.CanExecuteChanged
+  parent: TcoCore.TcoTask
+  name: CanExecuteChanged
+  nameWithType: TcoTask.CanExecuteChanged
+  fullName: TcoCore.TcoTask.CanExecuteChanged
+- uid: TcoCore.TcoTask.AbortTask(System.Object)
+  commentId: M:TcoCore.TcoTask.AbortTask(System.Object)
+  parent: TcoCore.TcoTask
+  isExternal: true
+  name: AbortTask(Object)
+  nameWithType: TcoTask.AbortTask(Object)
+  fullName: TcoCore.TcoTask.AbortTask(System.Object)
+  spec.csharp:
+  - uid: TcoCore.TcoTask.AbortTask(System.Object)
+    name: AbortTask
+    nameWithType: TcoTask.AbortTask
+    fullName: TcoCore.TcoTask.AbortTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.AbortTask(System.Object)
+    name: AbortTask
+    nameWithType: TcoTask.AbortTask
+    fullName: TcoCore.TcoTask.AbortTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.CanAbortTask
+  commentId: M:TcoCore.TcoTask.CanAbortTask
+  parent: TcoCore.TcoTask
+  name: CanAbortTask()
+  nameWithType: TcoTask.CanAbortTask()
+  fullName: TcoCore.TcoTask.CanAbortTask()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.CanAbortTask
+    name: CanAbortTask
+    nameWithType: TcoTask.CanAbortTask
+    fullName: TcoCore.TcoTask.CanAbortTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.CanAbortTask
+    name: CanAbortTask
+    nameWithType: TcoTask.CanAbortTask
+    fullName: TcoCore.TcoTask.CanAbortTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.TcoTask.CanRestoreTask
+  commentId: M:TcoCore.TcoTask.CanRestoreTask
+  parent: TcoCore.TcoTask
+  name: CanRestoreTask()
+  nameWithType: TcoTask.CanRestoreTask()
+  fullName: TcoCore.TcoTask.CanRestoreTask()
+  spec.csharp:
+  - uid: TcoCore.TcoTask.CanRestoreTask
+    name: CanRestoreTask
+    nameWithType: TcoTask.CanRestoreTask
+    fullName: TcoCore.TcoTask.CanRestoreTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoTask.CanRestoreTask
+    name: CanRestoreTask
+    nameWithType: TcoTask.CanRestoreTask
+    fullName: TcoCore.TcoTask.CanRestoreTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: TcoCore.TcoTask.InitCommands
   commentId: M:TcoCore.TcoTask.InitCommands
   parent: TcoCore.TcoTask
@@ -1708,57 +1794,41 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-  commentId: M:TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+- uid: TcoCore.TcoTask.RestoreTask(System.Object)
+  commentId: M:TcoCore.TcoTask.RestoreTask(System.Object)
   parent: TcoCore.TcoTask
   isExternal: true
-  name: ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
-  nameWithType: TcoTask.ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
-  fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag, Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+  name: RestoreTask(Object)
+  nameWithType: TcoTask.RestoreTask(Object)
+  fullName: TcoCore.TcoTask.RestoreTask(System.Object)
   spec.csharp:
-  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-    name: ValidateCanExecuteAbortRestore
-    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
-    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
+  - uid: TcoCore.TcoTask.RestoreTask(System.Object)
+    name: RestoreTask
+    nameWithType: TcoTask.RestoreTask
+    fullName: TcoCore.TcoTask.RestoreTask
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Vortex.Connector.IValueTag
-    name: IValueTag
-    nameWithType: IValueTag
-    fullName: Vortex.Connector.IValueTag
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    name: ValueChangedEventArgs
-    nameWithType: ValueChangedEventArgs
-    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
-    name: ValidateCanExecuteAbortRestore
-    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
-    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
+  - uid: TcoCore.TcoTask.RestoreTask(System.Object)
+    name: RestoreTask
+    nameWithType: TcoTask.RestoreTask
+    fullName: TcoCore.TcoTask.RestoreTask
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Vortex.Connector.IValueTag
-    name: IValueTag
-    nameWithType: IValueTag
-    fullName: Vortex.Connector.IValueTag
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
-    name: ValueChangedEventArgs
-    nameWithType: ValueChangedEventArgs
-    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
   - name: )
     nameWithType: )
@@ -1951,140 +2021,91 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.TcoTask.CanAbortTask
-  commentId: M:TcoCore.TcoTask.CanAbortTask
-  parent: TcoCore.TcoTask
-  name: CanAbortTask()
-  nameWithType: TcoTask.CanAbortTask()
-  fullName: TcoCore.TcoTask.CanAbortTask()
-  spec.csharp:
-  - uid: TcoCore.TcoTask.CanAbortTask
-    name: CanAbortTask
-    nameWithType: TcoTask.CanAbortTask
-    fullName: TcoCore.TcoTask.CanAbortTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: TcoCore.TcoTask.CanAbortTask
-    name: CanAbortTask
-    nameWithType: TcoTask.CanAbortTask
-    fullName: TcoCore.TcoTask.CanAbortTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: TcoCore.TcoTask.AbortTask(System.Object)
-  commentId: M:TcoCore.TcoTask.AbortTask(System.Object)
+- uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+  commentId: M:TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   parent: TcoCore.TcoTask
   isExternal: true
-  name: AbortTask(Object)
-  nameWithType: TcoTask.AbortTask(Object)
-  fullName: TcoCore.TcoTask.AbortTask(System.Object)
+  name: ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
+  nameWithType: TcoTask.ValidateCanExecuteAbortRestore(IValueTag, ValueChangedEventArgs)
+  fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag, Vortex.Connector.ValueTypes.ValueChangedEventArgs)
   spec.csharp:
-  - uid: TcoCore.TcoTask.AbortTask(System.Object)
-    name: AbortTask
-    nameWithType: TcoTask.AbortTask
-    fullName: TcoCore.TcoTask.AbortTask
+  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+    name: ValidateCanExecuteAbortRestore
+    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
+    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
+    name: ValueChangedEventArgs
+    nameWithType: ValueChangedEventArgs
+    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: TcoCore.TcoTask.AbortTask(System.Object)
-    name: AbortTask
-    nameWithType: TcoTask.AbortTask
-    fullName: TcoCore.TcoTask.AbortTask
+  - uid: TcoCore.TcoTask.ValidateCanExecuteAbortRestore(Vortex.Connector.IValueTag,Vortex.Connector.ValueTypes.ValueChangedEventArgs)
+    name: ValidateCanExecuteAbortRestore
+    nameWithType: TcoTask.ValidateCanExecuteAbortRestore
+    fullName: TcoCore.TcoTask.ValidateCanExecuteAbortRestore
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Vortex.Connector.ValueTypes.ValueChangedEventArgs
+    name: ValueChangedEventArgs
+    nameWithType: ValueChangedEventArgs
+    fullName: Vortex.Connector.ValueTypes.ValueChangedEventArgs
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: TcoCore.TcoTask.CanRestoreTask
-  commentId: M:TcoCore.TcoTask.CanRestoreTask
+- uid: TcoCore.TcoTask.Abort
+  commentId: P:TcoCore.TcoTask.Abort
   parent: TcoCore.TcoTask
-  name: CanRestoreTask()
-  nameWithType: TcoTask.CanRestoreTask()
-  fullName: TcoCore.TcoTask.CanRestoreTask()
-  spec.csharp:
-  - uid: TcoCore.TcoTask.CanRestoreTask
-    name: CanRestoreTask
-    nameWithType: TcoTask.CanRestoreTask
-    fullName: TcoCore.TcoTask.CanRestoreTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: TcoCore.TcoTask.CanRestoreTask
-    name: CanRestoreTask
-    nameWithType: TcoTask.CanRestoreTask
-    fullName: TcoCore.TcoTask.CanRestoreTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: TcoCore.TcoTask.RestoreTask(System.Object)
-  commentId: M:TcoCore.TcoTask.RestoreTask(System.Object)
+  name: Abort
+  nameWithType: TcoTask.Abort
+  fullName: TcoCore.TcoTask.Abort
+- uid: TcoCore.TcoTask.CodeProvider
+  commentId: P:TcoCore.TcoTask.CodeProvider
   parent: TcoCore.TcoTask
-  isExternal: true
-  name: RestoreTask(Object)
-  nameWithType: TcoTask.RestoreTask(Object)
-  fullName: TcoCore.TcoTask.RestoreTask(System.Object)
-  spec.csharp:
-  - uid: TcoCore.TcoTask.RestoreTask(System.Object)
-    name: RestoreTask
-    nameWithType: TcoTask.RestoreTask
-    fullName: TcoCore.TcoTask.RestoreTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: TcoCore.TcoTask.RestoreTask(System.Object)
-    name: RestoreTask
-    nameWithType: TcoTask.RestoreTask
-    fullName: TcoCore.TcoTask.RestoreTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+  name: CodeProvider
+  nameWithType: TcoTask.CodeProvider
+  fullName: TcoCore.TcoTask.CodeProvider
+- uid: TcoCore.TcoTask.LogPayloadDecoration
+  commentId: P:TcoCore.TcoTask.LogPayloadDecoration
+  parent: TcoCore.TcoTask
+  name: LogPayloadDecoration
+  nameWithType: TcoTask.LogPayloadDecoration
+  fullName: TcoCore.TcoTask.LogPayloadDecoration
+- uid: TcoCore.TcoTask.Restore
+  commentId: P:TcoCore.TcoTask.Restore
+  parent: TcoCore.TcoTask
+  name: Restore
+  nameWithType: TcoTask.Restore
+  fullName: TcoCore.TcoTask.Restore
+- uid: TcoCore.TcoTask.RecordTaskAction
+  commentId: P:TcoCore.TcoTask.RecordTaskAction
+  parent: TcoCore.TcoTask
+  name: RecordTaskAction
+  nameWithType: TcoTask.RecordTaskAction
+  fullName: TcoCore.TcoTask.RecordTaskAction
 - uid: TcoCore.TcoTask.__taskState
   commentId: F:TcoCore.TcoTask.__taskState
   parent: TcoCore.TcoTask
@@ -2431,6 +2452,45 @@ references:
   name: _context
   nameWithType: TcoObject._context
   fullName: TcoCore.TcoObject._context
+- uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  commentId: M:TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  parent: TcoCore.TcoObject
+  isExternal: true
+  name: Init(IVortexObject)
+  nameWithType: TcoObject.Init(IVortexObject)
+  fullName: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+  spec.csharp:
+  - uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+    name: Init
+    nameWithType: TcoObject.Init
+    fullName: TcoCore.TcoObject.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.TcoObject.Init(Vortex.Connector.IVortexObject)
+    name: Init
+    nameWithType: TcoObject.Init
+    fullName: TcoCore.TcoObject.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: TcoCore.TcoObject.GetActiveMessages
   commentId: M:TcoCore.TcoObject.GetActiveMessages
   parent: TcoCore.TcoObject

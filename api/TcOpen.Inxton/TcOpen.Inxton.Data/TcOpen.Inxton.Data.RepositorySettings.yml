@@ -16,7 +16,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RepositorySettings
     path: ../TcOpen/src/TcoData/src/Data/src/RepositorySettings.cs
     startLine: 2
@@ -31,7 +31,7 @@ items:
   derivedClasses:
   - TcOpen.Inxton.Data.InMemory.InMemoryRepositorySettings`1
   - TcOpen.Inxton.Data.Json.JsonRepositorySettings`1
-  - TcOpen.Inxton.MongoDb.MongoDbRepositorySettings`1
+  - TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings`1
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)

@@ -26,12 +26,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PlainMAIN
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 273
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+    startLine: 9
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -60,70 +60,6 @@ items:
   - class
   modifiers.vb:
   - Class
-- uid: TcoData.PlainMAIN._Context
-  commentId: F:TcoData.PlainMAIN._Context
-  id: _Context
-  parent: TcoData.PlainMAIN
-  langs:
-  - csharp
-  - vb
-  name: _Context
-  nameWithType: PlainMAIN._Context
-  fullName: TcoData.PlainMAIN._Context
-  type: Field
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _Context
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 275
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: PlainMainContext _Context
-    return:
-      type: TcoData.PlainMainContext
-    content.vb: _Context As PlainMainContext
-- uid: TcoData.PlainMAIN.Context
-  commentId: P:TcoData.PlainMAIN.Context
-  id: Context
-  parent: TcoData.PlainMAIN
-  langs:
-  - csharp
-  - vb
-  name: Context
-  nameWithType: PlainMAIN.Context
-  fullName: TcoData.PlainMAIN.Context
-  type: Property
-  source:
-    remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: Context
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 276
-  assemblies:
-  - TcoDataConnector
-  namespace: TcoData
-  syntax:
-    content: >-
-      PlainMainContext Context
-
-      {
-
-      }
-    parameters: []
-    return:
-      type: TcoData.PlainMainContext
-    content.vb: ReadOnly WriteOnly Property Context As PlainMainContext
-  overload: TcoData.PlainMAIN.Context*
-  modifiers.csharp:
-  - get
-  - set
 - uid: TcoData.PlainMAIN.CopyPlainToCyclic(TcoData.MAIN)
   commentId: M:TcoData.PlainMAIN.CopyPlainToCyclic(TcoData.MAIN)
   id: CopyPlainToCyclic(TcoData.MAIN)
@@ -137,12 +73,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 293
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 230
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -170,12 +106,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToCyclic
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 298
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 235
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -203,12 +139,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 303
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 240
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -236,12 +172,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyPlainToShadow
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 308
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 245
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -269,12 +205,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 313
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 250
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -302,12 +238,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyCyclicToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 318
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 255
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -335,12 +271,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 323
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 260
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -368,12 +304,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CopyShadowToPlain
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 328
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MAIN.g.cs
+    startLine: 265
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -388,6 +324,70 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: TcoData.PlainMAIN._Context
+  commentId: F:TcoData.PlainMAIN._Context
+  id: _Context
+  parent: TcoData.PlainMAIN
+  langs:
+  - csharp
+  - vb
+  name: _Context
+  nameWithType: PlainMAIN._Context
+  fullName: TcoData.PlainMAIN._Context
+  type: Field
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: _Context
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+    startLine: 11
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: PlainMainContext _Context
+    return:
+      type: TcoData.PlainMainContext
+    content.vb: _Context As PlainMainContext
+- uid: TcoData.PlainMAIN.Context
+  commentId: P:TcoData.PlainMAIN.Context
+  id: Context
+  parent: TcoData.PlainMAIN
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: PlainMAIN.Context
+  fullName: TcoData.PlainMAIN.Context
+  type: Property
+  source:
+    remote:
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Context
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+    startLine: 12
+  assemblies:
+  - TcoDataConnector
+  namespace: TcoData
+  syntax:
+    content: >-
+      PlainMainContext Context
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: TcoData.PlainMainContext
+    content.vb: ReadOnly WriteOnly Property Context As PlainMainContext
+  overload: TcoData.PlainMAIN.Context*
+  modifiers.csharp:
+  - get
+  - set
 - uid: TcoData.PlainMAIN.PropertyChanged
   commentId: E:TcoData.PlainMAIN.PropertyChanged
   id: PropertyChanged
@@ -401,12 +401,12 @@ items:
   type: Event
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: PropertyChanged
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 333
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+    startLine: 29
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -434,12 +434,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
+      path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
-    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/MAIN.g.cs
-    startLine: 334
+    path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMAIN.g.cs
+    startLine: 30
   assemblies:
   - TcoDataConnector
   namespace: TcoData
@@ -775,17 +775,6 @@ references:
   name: Vortex.Connector
   nameWithType: Vortex.Connector
   fullName: Vortex.Connector
-- uid: TcoData.PlainMainContext
-  commentId: T:TcoData.PlainMainContext
-  parent: TcoData
-  name: PlainMainContext
-  nameWithType: PlainMainContext
-  fullName: TcoData.PlainMainContext
-- uid: TcoData.PlainMAIN.Context*
-  commentId: Overload:TcoData.PlainMAIN.Context
-  name: Context
-  nameWithType: PlainMAIN.Context
-  fullName: TcoData.PlainMAIN.Context
 - uid: TcoData.PlainMAIN.CopyPlainToCyclic*
   commentId: Overload:TcoData.PlainMAIN.CopyPlainToCyclic
   name: CopyPlainToCyclic
@@ -824,6 +813,17 @@ references:
   name: CopyShadowToPlain
   nameWithType: PlainMAIN.CopyShadowToPlain
   fullName: TcoData.PlainMAIN.CopyShadowToPlain
+- uid: TcoData.PlainMainContext
+  commentId: T:TcoData.PlainMainContext
+  parent: TcoData
+  name: PlainMainContext
+  nameWithType: PlainMainContext
+  fullName: TcoData.PlainMainContext
+- uid: TcoData.PlainMAIN.Context*
+  commentId: Overload:TcoData.PlainMAIN.Context
+  name: Context
+  nameWithType: PlainMAIN.Context
+  fullName: TcoData.PlainMAIN.Context
 - uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   parent: System.ComponentModel.INotifyPropertyChanged
