@@ -69,7 +69,7 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 |------------------|------------|-----------|----------------------------------|
 | VAR_INPUT        | camelCase  | ```in```  | ```inActualPosition  : LREAL```  |
 | VAR_OUTPUT       | camelCase  | ```out``` | ```outActualPosition  : LREAL``` |
-| VAR_IN_OUT       | camelCase  | ```ino``` | ```ioActualPosition  : LREAL```  |
+| VAR_IN_OUT       | camelCase  | ```ino``` | ```inoActualPosition  : LREAL``` |
 | VAR              | camelCase  | ```_```   | ```_actualPosition  : LREAL```,  |
 | VAR_STAT         | camelCase  | ```_```   | ```_actualPosition  : LREAL```,  |
 | VAR_INST         | camelCase  | ```_```   | ```_actualPosition  : LREAL``` , |
