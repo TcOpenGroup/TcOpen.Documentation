@@ -187,6 +187,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Logging.yml",
       "output": {
@@ -451,9 +454,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcoCore.yml",
       "output": {
@@ -616,6 +616,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.InMemoryRepositorySettings-1.yml",
       "output": {
@@ -628,6 +631,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.Repository.yml",
       "output": {
@@ -640,6 +646,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.SameObjectReferenceException.yml",
       "output": {
@@ -652,6 +661,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.yml",
       "output": {
@@ -664,9 +676,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.Json.JsonRepository-1.yml",
       "output": {
@@ -679,9 +688,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.Json.JsonRepositorySettings-1.yml",
       "output": {
@@ -694,9 +700,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.Json.yml",
       "output": {
@@ -748,6 +751,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.Repository.yml",
       "output": {
@@ -760,6 +766,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.yml",
       "output": {
@@ -832,9 +841,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.BrowsableObjectCreationException.yml",
       "output": {
@@ -847,9 +853,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.DataView.yml",
       "output": {
@@ -862,9 +865,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.DataViewModel-1.yml",
       "output": {
@@ -877,9 +877,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.DataViewModel.yml",
       "output": {
@@ -916,6 +913,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.FunctionAvailability.yml",
       "output": {
@@ -928,6 +928,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.HumanizeDateConverter.yml",
       "output": {
@@ -940,6 +943,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ICrudDataObject.yml",
       "output": {
@@ -952,6 +958,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IEntity.yml",
       "output": {
@@ -964,6 +973,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IMAIN.yml",
       "output": {
@@ -1000,6 +1012,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IPlainEntity.yml",
       "output": {
@@ -1012,6 +1027,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IShadowEntity.yml",
       "output": {
@@ -1024,6 +1042,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IShadowMAIN.yml",
       "output": {
@@ -1126,6 +1147,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ITcoDataTask.yml",
       "output": {
@@ -1138,6 +1162,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ITcoDataTwinController.yml",
       "output": {
@@ -1150,6 +1177,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ITcoEntity.yml",
       "output": {
@@ -1162,6 +1192,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.MAIN.yml",
       "output": {
@@ -1174,9 +1207,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.MainContext.yml",
       "output": {
@@ -1189,9 +1219,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ModeConverter.yml",
       "output": {
@@ -1204,9 +1231,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.MultipleRemoteCallInitializationException.yml",
       "output": {
@@ -1219,9 +1243,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.NullToVisibilityConverter.yml",
       "output": {
@@ -1234,9 +1255,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.PercentageConverter.yml",
       "output": {
@@ -1249,9 +1267,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.PlainEntity.yml",
       "output": {
@@ -1264,9 +1279,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.PlainMAIN.yml",
       "output": {
@@ -1279,9 +1291,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.PlainMainContext.yml",
       "output": {
@@ -1351,6 +1360,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.Repository.Json.Repository.yml",
       "output": {
@@ -1363,6 +1375,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.Repository.Json.yml",
       "output": {
@@ -1375,6 +1390,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.SelectedItemConverter.yml",
       "output": {
@@ -1387,6 +1405,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchange.yml",
       "output": {
@@ -1444,6 +1465,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchangeDisplayViewModel.yml",
       "output": {
@@ -1456,9 +1480,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchangeView.yml",
       "output": {
@@ -1471,9 +1492,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchangeViewModel.yml",
       "output": {
@@ -1486,9 +1504,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataTask.yml",
       "output": {
@@ -1501,9 +1516,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataTwinController.yml",
       "output": {
@@ -1588,9 +1600,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.fbDataExchangeRecipeSelectorView.yml",
       "output": {
@@ -1603,9 +1612,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.fbDataExchangeRecipeSelectorViewModel.yml",
       "output": {
@@ -1626,7 +1632,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.html",
-          "hash": "lBuF2YSKmbhbG/oG6rCtPA=="
+          "hash": "54+WOyBJvKFSDR71iHvyRQ=="
         }
       },
       "is_incremental": false,
@@ -1681,9 +1687,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Logging/TcOpen.Inxton.Logging.yml",
       "output": {
@@ -3556,6 +3559,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoCore/TcoCore.yml",
       "output": {
@@ -3993,7 +3999,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcOpen.Inxton.Data.DataBrowser.html",
-          "hash": "JOTwlzIz27cJZya5XS3wqQ=="
+          "hash": "2SM0rrBzhj/4uGbR2ltXrw=="
         }
       },
       "is_incremental": false,
@@ -4036,9 +4042,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.InMemoryRepositorySettings-1.yml",
       "output": {
@@ -4051,24 +4054,18 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.Repository.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.Repository.html",
-          "hash": "apvQHD+oUk8MkwshwuQ+rQ=="
+          "hash": "TBsxIMaYybBgV1yiohUTSw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.SameObjectReferenceException.yml",
       "output": {
@@ -4081,9 +4078,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.yml",
       "output": {
@@ -4096,6 +4090,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.Json.JsonRepository-1.yml",
       "output": {
@@ -4108,6 +4105,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.Json.JsonRepositorySettings-1.yml",
       "output": {
@@ -4120,6 +4120,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.Json.yml",
       "output": {
@@ -4186,24 +4189,18 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.Repository.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.Repository.html",
-          "hash": "xy2BQ0QLL/5AigOC+myevw=="
+          "hash": "QfNhV6TKgTuope1Ggq/Z+w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.yml",
       "output": {
@@ -4264,6 +4261,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.BrowsableObjectCreationException.yml",
       "output": {
@@ -4276,6 +4276,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.DataView.yml",
       "output": {
@@ -4288,6 +4291,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.DataViewModel-1.yml",
       "output": {
@@ -4300,6 +4306,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.DataViewModel.yml",
       "output": {
@@ -4342,9 +4351,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.FunctionAvailability.yml",
       "output": {
@@ -4357,9 +4363,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.HumanizeDateConverter.yml",
       "output": {
@@ -4372,9 +4375,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ICrudDataObject.yml",
       "output": {
@@ -4387,9 +4387,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IEntity.yml",
       "output": {
@@ -4402,9 +4399,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IMAIN.yml",
       "output": {
@@ -4447,9 +4441,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IPlainEntity.yml",
       "output": {
@@ -4462,9 +4453,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IShadowEntity.yml",
       "output": {
@@ -4477,9 +4465,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IShadowMAIN.yml",
       "output": {
@@ -4564,9 +4549,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ITcoDataTask.yml",
       "output": {
@@ -4579,9 +4561,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ITcoDataTwinController.yml",
       "output": {
@@ -4594,9 +4573,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ITcoEntity.yml",
       "output": {
@@ -4609,9 +4585,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.MAIN.yml",
       "output": {
@@ -4624,6 +4597,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.MainContext.yml",
       "output": {
@@ -4636,6 +4612,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ModeConverter.yml",
       "output": {
@@ -4648,6 +4627,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.MultipleRemoteCallInitializationException.yml",
       "output": {
@@ -4660,6 +4642,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.NullToVisibilityConverter.yml",
       "output": {
@@ -4672,6 +4657,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.PercentageConverter.yml",
       "output": {
@@ -4684,6 +4672,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.PlainEntity.yml",
       "output": {
@@ -4696,6 +4687,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.PlainMAIN.yml",
       "output": {
@@ -4708,6 +4702,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.PlainMainContext.yml",
       "output": {
@@ -4771,24 +4768,18 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.Repository.Json.Repository.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcoData.Repository.Json.Repository.html",
-          "hash": "5RI8I5pRaKIcc7MkFQDVvg=="
+          "hash": "ockTDHrDKsPoIpgRFakTYQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.Repository.Json.yml",
       "output": {
@@ -4801,9 +4792,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.SelectedItemConverter.yml",
       "output": {
@@ -4816,15 +4804,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchange.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcoData.TcoDataExchange.html",
-          "hash": "LsYrPRo8Qw5tPebdFwJjAA=="
+          "hash": "JcfzB+Uxt63UUQ5udUT45g=="
         }
       },
       "is_incremental": false,
@@ -4867,9 +4852,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchangeDisplayViewModel.yml",
       "output": {
@@ -4882,6 +4864,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchangeView.yml",
       "output": {
@@ -4894,6 +4879,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchangeViewModel.yml",
       "output": {
@@ -4906,6 +4894,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataTask.yml",
       "output": {
@@ -4918,6 +4909,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataTwinController.yml",
       "output": {
@@ -4993,6 +4987,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.fbDataExchangeRecipeSelectorView.yml",
       "output": {
@@ -5005,6 +5002,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.fbDataExchangeRecipeSelectorViewModel.yml",
       "output": {
@@ -5022,7 +5022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcoData.html",
-          "hash": "A87xscdRFZ0TuSmzxRhhtw=="
+          "hash": "xcjjOAJRXFbu5RvgV1aVdg=="
         }
       },
       "is_incremental": false,
@@ -8745,7 +8745,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "S4QJcDGaqrY5MPH7NzBDEQ=="
+          "hash": "J8WZ6knyKVv6RNam7rv0Jw=="
         }
       },
       "is_incremental": false,
