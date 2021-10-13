@@ -26,10 +26,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FunctionAvailability
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 546
+    startLine: 517
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -57,10 +57,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateNewCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 548
+    startLine: 519
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -89,10 +89,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateCopyOfExistingAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 549
+    startLine: 520
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -121,10 +121,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 550
+    startLine: 521
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -153,10 +153,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CancelEditCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 551
+    startLine: 522
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -185,10 +185,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 552
+    startLine: 523
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -217,10 +217,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: EditCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 553
+    startLine: 524
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -249,10 +249,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SendToPlcCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 554
+    startLine: 525
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -281,10 +281,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LoadFromPlcCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 555
+    startLine: 526
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -313,10 +313,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ExportCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 556
+    startLine: 527
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -345,10 +345,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ImportCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 557
+    startLine: 528
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData

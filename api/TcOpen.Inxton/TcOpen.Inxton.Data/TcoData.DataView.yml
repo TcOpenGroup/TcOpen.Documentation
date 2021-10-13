@@ -34,7 +34,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataView
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 47
@@ -777,7 +777,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 12
@@ -807,7 +807,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _context
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 17
@@ -845,7 +845,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ControlDataVisibilityChanged
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 25
@@ -876,7 +876,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DisplayDataVisibilityChanged
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 33
@@ -907,7 +907,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserControl_IsVisibleChanged
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 39
@@ -938,7 +938,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Button_Click
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataView.xaml.cs
     startLine: 55
@@ -969,7 +969,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataRoot
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 52
@@ -996,7 +996,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RootContainer
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 60
@@ -1023,7 +1023,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ResizableGrid
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 68
@@ -1050,7 +1050,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GridSplitterRow
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 76
@@ -1077,7 +1077,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: dropdown
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 84
@@ -1104,7 +1104,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PerPageFilterComboBox
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 92
@@ -1131,7 +1131,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilterField
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 100
@@ -1158,7 +1158,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataGrid
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 108
@@ -1185,7 +1185,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: EditData
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 116
@@ -1212,7 +1212,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DisplayData
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 124
@@ -1239,7 +1239,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _contentLoaded
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 129
@@ -1266,7 +1266,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InitializeComponent
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/Data/DataView.g.cs
     startLine: 134

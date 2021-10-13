@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcoDataExchangeView
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
     startLine: 41
@@ -763,7 +763,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataExchange/Base/TcoDataExchangeView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataExchange/Base/TcoDataExchangeView.xaml.cs
     startLine: 22
@@ -793,7 +793,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _contentLoaded
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
     startLine: 43
@@ -820,7 +820,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InitializeComponent
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
     startLine: 48
@@ -854,7 +854,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _CreateDelegate
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataExchange/Base/TcoDataExchangeView.g.cs
     startLine: 65

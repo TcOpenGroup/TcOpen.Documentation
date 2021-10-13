@@ -106,6 +106,9 @@
                             <a href="../TcOpenFramework/messaging.html" title="Messaging" class="active">Messaging</a>
                           </li>
                           <li class="">
+                            <a href="../TcOpenFramework/logger.html" title="Logging" class="">Logging</a>
+                          </li>
+                          <li class="">
                             <a href="../TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.html" title="How to get started using TcOpen libraries" class="">How to get started using TcOpen libraries</a>
                           </li>
                           <li class="">
@@ -143,6 +146,9 @@
                                 <li class="">
                                   <a href="../Inxton/Inxton_vortex_framework_blazor/Custom_libraries.html" title="Custom libraries" class="">Custom libraries</a>
                                 </li>
+                                <li class="">
+                                  <a href="../Inxton/Inxton_vortex_framework_blazor/Security.html" title="Security" class="">Security</a>
+                                </li>
                               </ul>  </li>
                         </ul>  </li>
                   </ul>        </div>
@@ -156,7 +162,7 @@
 <h1 id="messaging">Messaging</h1>
 
 <p>Messaging system provides a simple mechanism for posting various information (state, diagnostics, etc.) to the higher-level application (e.g. HMI/SCADA).</p>
-<p>Each <a href="https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html">TcoObject</a> contains a messenger that allows reporting information about that object to a higher-level application.</p>
+<p>Each <a href="%7E%5Capi%5CTcoCore_Plc_.TcoCore.TcoObject.html">TcoObject</a> contains a messenger that allows reporting information about that object to a higher-level application.</p>
 <h2 id="usage">Usage</h2>
 <p>In order to post a message, you access <code>Messenger</code> of the object (TcoObject).</p>
 <pre><code class="lang-iecst">IF(applo13.LunarModule.OxigenTankLowLimit) THEN
@@ -165,7 +171,7 @@ END_IF;
 
 
 IF(appolo13.LunarModule.OxigenTankEmpty) THEN
-    apolo13.LunarModule.Messenger.Catastrophic('Huston we are not going to make it to them Moon.');
+    apolo13.LunarModule.Messenger.Catastrophic('Huston we are not going to make it to the Moon.');
 END_IF;   
 
 IF(appolo13.OceanSplash) THEN
@@ -215,27 +221,28 @@ END_IF;
 </tbody>
 </table>
 <h2 id="message-categories">Message categories</h2>
-<h3 id="debug">Debug</h3>
-<p>Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.</p>
-<h3 id="trace">Trace</h3>
+<h3 id="trace-verbose">Trace (Verbose)</h3>
 <p>Use when you need to track detailed information about the internal states of the program for detailed visibility. This is the lowest level of category that can be used in production for detailed observation of the PLC program.</p>
-<h3 id="info">Info</h3>
+<h3 id="debug-debug">Debug (Debug)</h3>
+<p>Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.</p>
+<h3 id="info-information">Info (Information)</h3>
 <p>Use this category when you want to report a notification that may be of interest to the user, but does not adveresly affect a process.</p>
-<h3 id="notification">Notification</h3>
+<h3 id="notification-information">Notification (Information)</h3>
 <p>Use when you want to deliver information to the user that user needs to be notified, some non essential activity is required.</p>
-<h3 id="warning">Warning</h3>
+<h3 id="warning-warning">Warning (Warning)</h3>
 <p>Use this category when you want to report to the user information about a possible problem that may adversely affect a process.
 Information in this category aims to help the user to identify a problem; the cause of such problem does not necessarily stop the process.</p>
-<h3 id="error">Error</h3>
+<h3 id="error-error">Error (Error)</h3>
 <p>Use this category when there is a failure that cannot be immediately recovered and an intervention is needed. This is typically a situation when a device fails to deliver the expected result. Do not use this category to report information about the failed process like measurement or detection.</p>
-<h3 id="programming-error">Programming error</h3>
+<h3 id="programming-error-error">Programming error (Error)</h3>
 <p>Use this category to inform about a possible programming error, defect in settings, or missing information at a level of programming or system or process settings.</p>
-<h3 id="critical">Critical</h3>
+<h3 id="critical--fatal">Critical  (Fatal)</h3>
 <p>Use this category when a critical error occurred, which is not recoverable by software (reset/restore), and a detailed inspection is required (TotalStop, Safety, etc.).</p>
-<h3 id="catastrophic">Catastrophic</h3>
+<h3 id="catastrophic-fatal">Catastrophic (Fatal)</h3>
 <p>Use this category when there is a situation when the device cannot continue operations due to irrecoverable failure.</p>
 <h2 id="how-to-access-the-message">How to access the message</h2>
 <p>When you try to read the messages from a non-inxton application, you will need to evaluate that the message is valid. The validity of the message can be determined by comparing the equality of <code>TcoObject._mime.Cycle</code> with <code>Context._startCycleCount</code>. When these two values equal, the message is valid. The equality evaluation should occur in the higher-level application, not in the PLC.</p>
+<p><a href="logger.html#tcomessenger-and-tcologger">TcoLogger integration</a></p>
 </article>
           </div>
           

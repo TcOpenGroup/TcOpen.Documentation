@@ -5,7 +5,7 @@ items:
   id: SerilogAdapter
   parent: TcOpen.Inxton.Logging
   children:
-  - TcOpen.Inxton.Logging.SerilogAdapter.#ctor
+  - TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.Events.LogEventLevel)
   - TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.LoggerConfiguration)
   - TcOpen.Inxton.Logging.SerilogAdapter._logger
   - TcOpen.Inxton.Logging.SerilogAdapter.Debug``1(System.String,``0)
@@ -25,10 +25,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SerilogAdapter
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 4
+    startLine: 6
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -71,10 +71,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -92,33 +92,36 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: TcOpen.Inxton.Logging.SerilogAdapter.#ctor
-  commentId: M:TcOpen.Inxton.Logging.SerilogAdapter.#ctor
-  id: '#ctor'
+- uid: TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.Events.LogEventLevel)
+  commentId: M:TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.Events.LogEventLevel)
+  id: '#ctor(Serilog.Events.LogEventLevel)'
   parent: TcOpen.Inxton.Logging.SerilogAdapter
   langs:
   - csharp
   - vb
-  name: SerilogAdapter()
-  nameWithType: SerilogAdapter.SerilogAdapter()
-  fullName: TcOpen.Inxton.Logging.SerilogAdapter.SerilogAdapter()
+  name: SerilogAdapter(LogEventLevel)
+  nameWithType: SerilogAdapter.SerilogAdapter(LogEventLevel)
+  fullName: TcOpen.Inxton.Logging.SerilogAdapter.SerilogAdapter(Serilog.Events.LogEventLevel)
   type: Constructor
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
   summary: "\nCreates new instance of Serilog logger with default configuration:\nWrite logs to Console (ConsoleSink)\n"
   example: []
   syntax:
-    content: public SerilogAdapter()
-    content.vb: Public Sub New
+    content: public SerilogAdapter(LogEventLevel minLevel = LogEventLevel.Information)
+    parameters:
+    - id: minLevel
+      type: Serilog.Events.LogEventLevel
+    content.vb: Public Sub New(minLevel As LogEventLevel = LogEventLevel.Information)
   overload: TcOpen.Inxton.Logging.SerilogAdapter.#ctor*
   modifiers.csharp:
   - public
@@ -139,10 +142,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _logger
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 28
+    startLine: 32
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -170,10 +173,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 31
+    startLine: 35
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -212,10 +215,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -254,10 +257,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 41
+    startLine: 45
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -296,10 +299,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 46
+    startLine: 50
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -338,10 +341,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 51
+    startLine: 55
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -380,10 +383,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogLoggerAdapter.cs
-    startLine: 56
+    startLine: 60
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -729,6 +732,19 @@ references:
   name: Serilog
   nameWithType: Serilog
   fullName: Serilog
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
 - uid: Serilog.ILogger
   commentId: T:Serilog.ILogger
   parent: Serilog

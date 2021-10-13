@@ -20,10 +20,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ViewMode
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 568
+    startLine: 539
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -51,10 +51,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Display
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 570
+    startLine: 541
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -83,10 +83,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Edit
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 571
+    startLine: 542
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -115,10 +115,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: New
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 572
+    startLine: 543
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -147,10 +147,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Copy
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 573
+    startLine: 544
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData

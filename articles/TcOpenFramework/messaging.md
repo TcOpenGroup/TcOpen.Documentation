@@ -2,7 +2,7 @@
 
 Messaging system provides a simple mechanism for posting various information (state, diagnostics, etc.) to the higher-level application (e.g. HMI/SCADA).
 
-Each [TcoObject](https://docs.tcopengroup.org/api/TcoCore/TcoCore.TcoObject.PlcTcoObject.html) contains a messenger that allows reporting information about that object to a higher-level application.
+Each [TcoObject](~\api\TcoCore\_Plc_.TcoCore.TcoObject.html) contains a messenger that allows reporting information about that object to a higher-level application.
 
 ## Usage
 
@@ -15,7 +15,7 @@ END_IF;
 
 
 IF(appolo13.LunarModule.OxigenTankEmpty) THEN
-    apolo13.LunarModule.Messenger.Catastrophic('Huston we are not going to make it to them Moon.');
+    apolo13.LunarModule.Messenger.Catastrophic('Huston we are not going to make it to the Moon.');
 END_IF;   
 
 IF(appolo13.OceanSplash) THEN
@@ -44,43 +44,45 @@ More messages in the same cycle will reflect in the counter `PerCycleCount`, whi
 
 ## Message categories
 
-### Debug
-
-Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.
-
-### Trace
+### Trace (Verbose)
 
 Use when you need to track detailed information about the internal states of the program for detailed visibility. This is the lowest level of category that can be used in production for detailed observation of the PLC program.
 
-### Info
+### Debug (Debug)
+
+Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.
+
+### Info (Information)
 
 Use this category when you want to report a notification that may be of interest to the user, but does not adveresly affect a process.
 
-### Notification
+### Notification (Information)
 
 Use when you want to deliver information to the user that user needs to be notified, some non essential activity is required.
 
-### Warning
+### Warning (Warning)
 
 Use this category when you want to report to the user information about a possible problem that may adversely affect a process.
 Information in this category aims to help the user to identify a problem; the cause of such problem does not necessarily stop the process.
 
-### Error
+### Error (Error)
 
 Use this category when there is a failure that cannot be immediately recovered and an intervention is needed. This is typically a situation when a device fails to deliver the expected result. Do not use this category to report information about the failed process like measurement or detection.
 
-### Programming error
+### Programming error (Error)
 
 Use this category to inform about a possible programming error, defect in settings, or missing information at a level of programming or system or process settings.
 
-### Critical
+### Critical  (Fatal)
 
 Use this category when a critical error occurred, which is not recoverable by software (reset/restore), and a detailed inspection is required (TotalStop, Safety, etc.).
 
-### Catastrophic
+### Catastrophic (Fatal)
 
 Use this category when there is a situation when the device cannot continue operations due to irrecoverable failure.
 
 ## How to access the message
 
 When you try to read the messages from a non-inxton application, you will need to evaluate that the message is valid. The validity of the message can be determined by comparing the equality of `TcoObject._mime.Cycle` with `Context._startCycleCount`. When these two values equal, the message is valid. The equality evaluation should occur in the higher-level application, not in the PLC.
+
+[TcoLogger integration](logger.md#tcomessenger-and-tcologger)

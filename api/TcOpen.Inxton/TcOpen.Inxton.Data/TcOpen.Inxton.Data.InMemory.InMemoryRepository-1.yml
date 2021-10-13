@@ -28,7 +28,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InMemoryRepository
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 7
@@ -41,9 +41,7 @@ items:
     - id: T
     content.vb: >-
       Public Class InMemoryRepository(Of T As IBrowsableDataObject)
-
           Inherits RepositoryBase(Of T)
-
           Implements IRepository(Of T), IRepository
   inheritance:
   - System.Object
@@ -96,7 +94,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 10
@@ -132,7 +130,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 15
@@ -164,7 +162,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _repository
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 20
@@ -197,7 +195,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Records
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 21
@@ -237,7 +235,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 26
@@ -277,7 +275,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 43
@@ -317,7 +315,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 57
@@ -357,7 +355,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 76
@@ -395,7 +393,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 81
@@ -435,7 +433,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 86
@@ -479,7 +477,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 96
@@ -519,7 +517,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/InMemoryRepository.cs
     startLine: 106

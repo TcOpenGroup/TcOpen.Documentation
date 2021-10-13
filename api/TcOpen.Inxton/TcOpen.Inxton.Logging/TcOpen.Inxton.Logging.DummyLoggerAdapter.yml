@@ -12,7 +12,10 @@ items:
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.Fatal``1(System.String,``0)
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.Information``1(System.String,``0)
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.IsLastMessageEmpty
+  - TcOpen.Inxton.Logging.DummyLoggerAdapter.lastMessage
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
+  - TcOpen.Inxton.Logging.DummyLoggerAdapter.MessageQueue
+  - TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.Verbose``1(System.String,``0)
   - TcOpen.Inxton.Logging.DummyLoggerAdapter.Warning``1(System.String,``0)
   langs:
@@ -26,10 +29,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DummyLoggerAdapter
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -59,6 +62,118 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.MessageQueue
+  commentId: F:TcOpen.Inxton.Logging.DummyLoggerAdapter.MessageQueue
+  id: MessageQueue
+  parent: TcOpen.Inxton.Logging.DummyLoggerAdapter
+  langs:
+  - csharp
+  - vb
+  name: MessageQueue
+  nameWithType: DummyLoggerAdapter.MessageQueue
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.MessageQueue
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: MessageQueue
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+    startLine: 14
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: >-
+      [Obsolete("This property is only for testing. Do not queue messages in production!")]
+
+      public ConcurrentQueue<(string message, object payload, string serverity)> MessageQueue
+    return:
+      type: System.Collections.Concurrent.ConcurrentQueue{System.ValueTuple{System.String,System.Object,System.String}}
+    content.vb: >-
+      <Obsolete("This property is only for testing. Do not queue messages in production!")>
+
+      Public MessageQueue As ConcurrentQueue(Of(message As String, payload As Object, serverity As String))
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This property is only for testing. Do not queue messages in production!
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages
+  commentId: M:TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages
+  id: QueueMessages
+  parent: TcOpen.Inxton.Logging.DummyLoggerAdapter
+  langs:
+  - csharp
+  - vb
+  name: QueueMessages()
+  nameWithType: DummyLoggerAdapter.QueueMessages()
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages()
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: QueueMessages
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+    startLine: 16
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: >-
+      [Obsolete("This method is only for testing. Do not queue messages in production!")]
+
+      public void QueueMessages()
+    content.vb: >-
+      <Obsolete("This method is only for testing. Do not queue messages in production!")>
+
+      Public Sub QueueMessages
+  overload: TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This method is only for testing. Do not queue messages in production!
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.lastMessage
+  commentId: F:TcOpen.Inxton.Logging.DummyLoggerAdapter.lastMessage
+  id: lastMessage
+  parent: TcOpen.Inxton.Logging.DummyLoggerAdapter
+  langs:
+  - csharp
+  - vb
+  name: lastMessage
+  nameWithType: DummyLoggerAdapter.lastMessage
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.lastMessage
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: lastMessage
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
+    startLine: 23
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: (string message, object payload, string serverity) lastMessage
+    return:
+      type: System.ValueTuple{System.String,System.Object,System.String}
+    content.vb: lastMessage As(message As String, payload As Object, serverity As String)
 - uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
   commentId: P:TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
   id: LastMessage
@@ -74,10 +189,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 11
+    startLine: 25
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -109,10 +224,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 13
+    startLine: 27
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -139,10 +254,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ClearLastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 18
+    startLine: 32
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -169,10 +284,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IsLastMessageEmpty
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 23
+    startLine: 37
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -201,10 +316,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 28
+    startLine: 42
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -243,10 +358,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 33
+    startLine: 47
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -285,10 +400,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 38
+    startLine: 52
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -327,10 +442,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 43
+    startLine: 57
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -369,10 +484,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 48
+    startLine: 62
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -411,10 +526,10 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
-    startLine: 53
+    startLine: 67
   assemblies:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
@@ -742,11 +857,154 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage*
-  commentId: Overload:TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
-  name: LastMessage
-  nameWithType: DummyLoggerAdapter.LastMessage
-  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
+- uid: System.Collections.Concurrent.ConcurrentQueue{System.ValueTuple{System.String,System.Object,System.String}}
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue{System.ValueTuple{System.String,System.Object,System.String}}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentQueue`1
+  name: ConcurrentQueue<ValueTuple<String, Object, String>>
+  nameWithType: ConcurrentQueue<ValueTuple<String, Object, String>>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<System.ValueTuple<System.String, System.Object, System.String>>
+  nameWithType.vb: ConcurrentQueue(Of ValueTuple(Of String, Object, String))
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of System.ValueTuple(Of System.String, System.Object, System.String))
+  name.vb: ConcurrentQueue(Of ValueTuple(Of String, Object, String))
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    nameWithType: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    nameWithType: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Concurrent.ConcurrentQueue`1
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue`1
+  isExternal: true
+  name: ConcurrentQueue<T>
+  nameWithType: ConcurrentQueue<T>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<T>
+  nameWithType.vb: ConcurrentQueue(Of T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of T)
+  name.vb: ConcurrentQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    nameWithType: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    nameWithType: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages*
+  commentId: Overload:TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages
+  name: QueueMessages
+  nameWithType: DummyLoggerAdapter.QueueMessages
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages
 - uid: System.ValueTuple{System.String,System.Object,System.String}
   commentId: T:System.ValueTuple{System.String,System.Object,System.String}
   parent: System
@@ -823,6 +1081,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage*
+  commentId: Overload:TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
+  name: LastMessage
+  nameWithType: DummyLoggerAdapter.LastMessage
+  fullName: TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage
 - uid: TcOpen.Inxton.Logging.DummyLoggerAdapter.#ctor*
   commentId: Overload:TcOpen.Inxton.Logging.DummyLoggerAdapter.#ctor
   name: DummyLoggerAdapter

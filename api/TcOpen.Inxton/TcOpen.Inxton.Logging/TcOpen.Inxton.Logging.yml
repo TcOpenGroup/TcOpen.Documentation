@@ -6,6 +6,7 @@ items:
   children:
   - TcOpen.Inxton.Logging.DummyLoggerAdapter
   - TcOpen.Inxton.Logging.SerilogAdapter
+  - TcOpen.Inxton.Logging.SerilogUserLogEnricher
   langs:
   - csharp
   - vb
@@ -26,3 +27,8 @@ references:
   name: SerilogAdapter
   nameWithType: SerilogAdapter
   fullName: TcOpen.Inxton.Logging.SerilogAdapter
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  commentId: T:TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  name: SerilogUserLogEnricher
+  nameWithType: SerilogUserLogEnricher
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher

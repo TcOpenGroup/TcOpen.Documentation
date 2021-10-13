@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  commentId: T:TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  id: SerilogUserLogEnricher
+  parent: TcOpen.Inxton.Logging
+  children:
+  - TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn(TcOpen.Inxton.Security.IUser)
+  - TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut
+  - TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggingPropertyName
+  - TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+  langs:
+  - csharp
+  - vb
+  name: SerilogUserLogEnricher
+  nameWithType: SerilogUserLogEnricher
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: SerilogUserLogEnricher
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+    startLine: 26
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: public class SerilogUserLogEnricher
+    content.vb: Public Class SerilogUserLogEnricher
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggingPropertyName
+  commentId: F:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggingPropertyName
+  id: UserLoggingPropertyName
+  parent: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  langs:
+  - csharp
+  - vb
+  name: UserLoggingPropertyName
+  nameWithType: SerilogUserLogEnricher.UserLoggingPropertyName
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggingPropertyName
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: UserLoggingPropertyName
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+    startLine: 29
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: public static readonly string UserLoggingPropertyName
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly UserLoggingPropertyName As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+  commentId: P:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+  id: UserProperty
+  parent: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  langs:
+  - csharp
+  - vb
+  name: UserProperty
+  nameWithType: SerilogUserLogEnricher.UserProperty
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: UserProperty
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+    startLine: 31
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: >-
+      IDisposable UserProperty
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.IDisposable
+    content.vb: ReadOnly WriteOnly Property UserProperty As IDisposable
+  overload: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty*
+  modifiers.csharp:
+  - get
+  - set
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn(TcOpen.Inxton.Security.IUser)
+  commentId: M:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn(TcOpen.Inxton.Security.IUser)
+  id: UserLoggedIn(TcOpen.Inxton.Security.IUser)
+  parent: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  langs:
+  - csharp
+  - vb
+  name: UserLoggedIn(IUser)
+  nameWithType: SerilogUserLogEnricher.UserLoggedIn(IUser)
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn(TcOpen.Inxton.Security.IUser)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: UserLoggedIn
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+    startLine: 33
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: public void UserLoggedIn(IUser user)
+    parameters:
+    - id: user
+      type: TcOpen.Inxton.Security.IUser
+    content.vb: Public Sub UserLoggedIn(user As IUser)
+  overload: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut
+  commentId: M:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut
+  id: UserLoggedOut
+  parent: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+  langs:
+  - csharp
+  - vb
+  name: UserLoggedOut()
+  nameWithType: SerilogUserLogEnricher.UserLoggedOut()
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut()
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: UserLoggedOut
+    path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
+    startLine: 39
+  assemblies:
+  - TcOpen.Inxton.Logging
+  namespace: TcOpen.Inxton.Logging
+  syntax:
+    content: public void UserLoggedOut()
+    content.vb: Public Sub UserLoggedOut
+  overload: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TcOpen.Inxton.Logging
+  commentId: N:TcOpen.Inxton.Logging
+  name: TcOpen.Inxton.Logging
+  nameWithType: TcOpen.Inxton.Logging
+  fullName: TcOpen.Inxton.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty*
+  commentId: Overload:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+  name: UserProperty
+  nameWithType: SerilogUserLogEnricher.UserProperty
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn*
+  commentId: Overload:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn
+  name: UserLoggedIn
+  nameWithType: SerilogUserLogEnricher.UserLoggedIn
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn
+- uid: TcOpen.Inxton.Security.IUser
+  commentId: T:TcOpen.Inxton.Security.IUser
+  parent: TcOpen.Inxton.Security
+  name: IUser
+  nameWithType: IUser
+  fullName: TcOpen.Inxton.Security.IUser
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut*
+  commentId: Overload:TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut
+  name: UserLoggedOut
+  nameWithType: SerilogUserLogEnricher.UserLoggedOut
+  fullName: TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut

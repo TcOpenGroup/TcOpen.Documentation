@@ -21,7 +21,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ValueChangeItem
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 4
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DateTime
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 6
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserName
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 7
@@ -132,7 +132,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ValueTag
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 8
@@ -167,7 +167,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OldValue
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 9
@@ -202,7 +202,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: NewValue
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueChangeItem.cs
     startLine: 10

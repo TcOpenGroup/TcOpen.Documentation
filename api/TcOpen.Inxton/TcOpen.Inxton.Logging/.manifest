@@ -8,11 +8,14 @@
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.Fatal``1(System.String,``0)": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.Information``1(System.String,``0)": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.IsLastMessageEmpty": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
+  "TcOpen.Inxton.Logging.DummyLoggerAdapter.lastMessage": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.LastMessage": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
+  "TcOpen.Inxton.Logging.DummyLoggerAdapter.MessageQueue": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
+  "TcOpen.Inxton.Logging.DummyLoggerAdapter.QueueMessages": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.Verbose``1(System.String,``0)": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.DummyLoggerAdapter.Warning``1(System.String,``0)": "TcOpen.Inxton.Logging.DummyLoggerAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
-  "TcOpen.Inxton.Logging.SerilogAdapter.#ctor": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
+  "TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.Events.LogEventLevel)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter.#ctor(Serilog.LoggerConfiguration)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter._logger": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter.Debug``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
@@ -20,5 +23,10 @@
   "TcOpen.Inxton.Logging.SerilogAdapter.Fatal``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter.Information``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
   "TcOpen.Inxton.Logging.SerilogAdapter.Verbose``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
-  "TcOpen.Inxton.Logging.SerilogAdapter.Warning``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml"
+  "TcOpen.Inxton.Logging.SerilogAdapter.Warning``1(System.String,``0)": "TcOpen.Inxton.Logging.SerilogAdapter.yml",
+  "TcOpen.Inxton.Logging.SerilogUserLogEnricher": "TcOpen.Inxton.Logging.SerilogUserLogEnricher.yml",
+  "TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedIn(TcOpen.Inxton.Security.IUser)": "TcOpen.Inxton.Logging.SerilogUserLogEnricher.yml",
+  "TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggedOut": "TcOpen.Inxton.Logging.SerilogUserLogEnricher.yml",
+  "TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserLoggingPropertyName": "TcOpen.Inxton.Logging.SerilogUserLogEnricher.yml",
+  "TcOpen.Inxton.Logging.SerilogUserLogEnricher.UserProperty": "TcOpen.Inxton.Logging.SerilogUserLogEnricher.yml"
 }

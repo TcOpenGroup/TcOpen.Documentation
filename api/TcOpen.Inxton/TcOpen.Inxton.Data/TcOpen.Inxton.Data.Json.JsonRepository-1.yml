@@ -30,7 +30,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: JsonRepository
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 9
@@ -43,9 +43,7 @@ items:
     - id: T
     content.vb: >-
       Public Class JsonRepository(Of T As IBrowsableDataObject)
-
           Inherits RepositoryBase(Of T)
-
           Implements IRepository(Of T), IRepository
   inheritance:
   - System.Object
@@ -98,7 +96,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 11
@@ -134,7 +132,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Location
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 30
@@ -171,7 +169,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 31
@@ -211,7 +209,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 48
@@ -251,7 +249,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 66
@@ -291,7 +289,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 84
@@ -329,7 +327,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 91
@@ -369,7 +367,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 96
@@ -413,7 +411,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 121
@@ -453,7 +451,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RecordExists
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 133
@@ -486,7 +484,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MakeValidFileName
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 138
@@ -519,7 +517,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Save
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 149
@@ -552,7 +550,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Load
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 160
@@ -587,7 +585,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/Json/JsonRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Repository/Json/Json/JsonRepository.cs
     startLine: 171

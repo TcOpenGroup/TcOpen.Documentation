@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IBrowsableDataObject
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 4
@@ -51,7 +51,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _recordId
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 6
@@ -83,7 +83,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _Created
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 7
@@ -115,7 +115,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _EntityId
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 8
@@ -147,7 +147,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _Modified
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
     startLine: 9

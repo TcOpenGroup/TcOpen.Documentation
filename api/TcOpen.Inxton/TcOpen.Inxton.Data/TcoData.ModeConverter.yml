@@ -19,10 +19,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ModeConverter
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 576
+    startLine: 547
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -66,10 +66,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Convert
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 578
+    startLine: 549
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -109,10 +109,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ConvertBack
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 610
+    startLine: 581
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -152,10 +152,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ProvideValue
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 615
+    startLine: 586
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData

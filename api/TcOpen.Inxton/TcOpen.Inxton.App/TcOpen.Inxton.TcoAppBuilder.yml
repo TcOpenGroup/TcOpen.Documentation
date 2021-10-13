@@ -23,7 +23,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcoAppBuilder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 12
@@ -66,7 +66,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 17
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Domain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 22
@@ -135,7 +135,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetUpLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 29
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 40
@@ -212,7 +212,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetSecurity
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 51
@@ -251,7 +251,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 57
@@ -286,7 +286,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetEditValueChangeLogging
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
     startLine: 65

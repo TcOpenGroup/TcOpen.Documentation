@@ -37,7 +37,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RepositoryBase
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 14
@@ -53,7 +53,6 @@ items:
       description: Type of data object.
     content.vb: >-
       Public MustInherit Class RepositoryBase(Of T As IBrowsableDataObject)
-
           Implements IRepository(Of T), IRepository
   inheritance:
   - System.Object
@@ -98,7 +97,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 21
@@ -141,7 +140,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ReadNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 28
@@ -184,7 +183,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 35
@@ -227,7 +226,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 41
@@ -267,7 +266,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CountNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 46
@@ -308,7 +307,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecordsNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 55
@@ -357,7 +356,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCountNvi
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 62
@@ -400,7 +399,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 67
@@ -441,7 +440,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 74
@@ -485,7 +484,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mutex
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 77
@@ -516,7 +515,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 84
@@ -559,7 +558,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 110
@@ -602,7 +601,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 123
@@ -645,7 +644,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 147
@@ -686,7 +685,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IRepository.Create
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 155
@@ -723,7 +722,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IRepository.Read
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 157
@@ -760,7 +759,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IRepository.Update
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 159
@@ -797,7 +796,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IRepository.Delete
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 161
@@ -832,7 +831,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IRepository.Count
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 163
@@ -870,7 +869,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecords
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 165
@@ -913,7 +912,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositoryBase.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcoData/src/Data/src/RepositoryBase.cs
     startLine: 180

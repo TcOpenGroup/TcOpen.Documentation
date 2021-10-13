@@ -1,6 +1,6 @@
 # Components
 
-This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it. 
+This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it.
 
 ## General rules
 
@@ -14,7 +14,7 @@ This document describes the format and practices for writing components in TcOpe
 
 #### I/O variables naming
 
-The TcOpen does not use Hungarian prefixes, with few exceptions. FB_body parameters are one of those exceptions where it is required to use prefixes to indicate the directionality of the variable. For the naming consult [Conventions](https://docs.tcopengroup.org/articles/Conventions/Conventions.html#naming).
+The TcOpen does not use Hungarian prefixes, with few exceptions. FB_body parameters are one of those exceptions where it is required to use prefixes to indicate the directionality of the variable. For the naming consult [Conventions](Conventions.md#naming).
 
 ### Structure
 

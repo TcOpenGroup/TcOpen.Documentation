@@ -192,7 +192,7 @@
           "src": "..//TcOpen//"
         }
       ],
-      "dest": "api/TcOpen.Inxton/TcOpen.Inxton.Data",
+      "dest": "api/TcoData",
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true

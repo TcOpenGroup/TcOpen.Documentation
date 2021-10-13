@@ -22,7 +22,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 5
@@ -53,7 +53,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 7
@@ -86,7 +86,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 8
@@ -117,7 +117,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 9
@@ -146,7 +146,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 10
@@ -177,7 +177,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 11
@@ -208,7 +208,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 12
