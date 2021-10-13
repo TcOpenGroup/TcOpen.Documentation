@@ -24,7 +24,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: fbDataExchangeRecipeSelectorView
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
     startLine: 43
@@ -767,7 +767,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 12
@@ -797,7 +797,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ModelObject
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 16
@@ -832,7 +832,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ModelObjectProperty
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 22
@@ -867,7 +867,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ModelObjectChanged
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 26
@@ -902,7 +902,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _context
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 36
@@ -940,7 +940,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserControl_IsVisibleChanged
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorView.xaml.cs
     startLine: 44
@@ -971,7 +971,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _contentLoaded
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
     startLine: 45
@@ -998,7 +998,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InitializeComponent
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/obj/Release/net48/Data/DataSelector/fbDataExchangeRecipeSelectorView.g.cs
     startLine: 50

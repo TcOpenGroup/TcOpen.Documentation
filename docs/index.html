@@ -74,14 +74,30 @@
 <h2 id="what-is-tcopen">What is TcOpen?</h2>
 <p>Open Source TwinCAT 3.1 code by Automation Professionals for Automation Professionals.</p>
 <p>This is intended to be a continuous development project aimed to provide standard classes to start building deployable applications.</p>
-<p>Developed on <a href="https://github.com/TcOpenGroup/TcOpen">GitHub</a> delivered as <a href="https://www.nuget.org/packages?q=TcOpenGroup">NuGet packages</a> or downloadable PLC libraries.</p>
-<h2 id="what-tcopen-offers">What TcOpen offers?</h2>
-<ol>
-<li><a href="articles/TcOpenFramework/application.html">Application framework</a></li>
-<li><a href="https://docs.tcopengroup.org/api/index.html">OOP oriented component libraries</a> (Pneumatics, Drives, Robotics, etc.)</li>
-</ol>
-<h2 id="where-are-we">Where are we?</h2>
-<p>About the current state of the development, read more <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/README.md">here</a>.</p>
+<p>Developed on <a href="https://github.com/TcOpenGroup/TcOpen">GitHub</a> delivered as <a href="https://www.nuget.org/packages?q=TcOpenGroup">NuGet packages</a>.</p>
+<h2 id="tcopen-is-a-framework">TcOpen is a framework</h2>
+<p>We believe we can do better with a framework than without one. Here are the main reasons: a framework unifies the way that we create and interpret a software solution. It can relieve the programmer of various tasks. Allowing him to focus on solving actual problems, instead of having to program the condiments (alarms, state initiating/management, coordination, etc.).</p>
+<p>A framework also helps to organise the program's structure — making it easier and faster to navigate and apply the changes for other programmers. It also helps to craft better components and ultimately deliver better applications. Without entering into technical details about how the framework is structured: we put a lot of effort and thought into making it sufficiently generic/abstract in order for it to suit as many applications as possible.</p>
+<p>We understand that imposing a framework requires more than learning the programming language. We believe the advantages of the framework make it well worth the input!</p>
+<p>We focus on these areas:</p>
+<ul>
+<li>Coordination (coordination primitives, sequences, etc.)</li>
+<li>Observability (automated alarm systems, logging, hierarchical events organisation)</li>
+<li>Hierarchical program structures</li>
+<li>Automation of monotonous tasks (I/O binding)</li>
+<li>Reusability</li>
+<li>Data-driven applications</li>
+</ul>
+<h2 id="tcopen-is-object-oriented">TcOpen is Object-Oriented</h2>
+<p>Besides the practical aspect of this project, there is yet another one, as we understand it — to bring a breath of fresh air to PLC programming; we will focus on Object-Oriented design to the maximum extent it is allowed in the TwinCAT 3 implementation of IEC-61131-3. The object-oriented approach allows for componentisation that is simply not possible with the non-oop paradigm.
+TcOpen will be written in ST-OOP. We plan to have a solid replacement for SFC in the ST implementation.</p>
+<h2 id="tcopen-compatibility">TcOpen compatibility</h2>
+<h3 id="beckhoff-hmi">Beckhoff HMI</h3>
+<p>The Inxton and MTS teams will focus on creating UI user controls for WPF, and then Blazor technology. We are committed to maintaining compatibility/cooperability with Beckhoff's HMI. The community is warmly welcomed to contribute to Beckhoff HMI components. A maintainer with solid experience is needed here.</p>
+<h3 id="codesys-systems">CoDeSys systems</h3>
+<p>There is no explicit promise of portability to other CoDeSys platforms. Still, we will seek to manage abstractions to keep the TcOpen code base adaptable to other CoDeSys systems.</p>
+<h3 id="non-codesys-systems">Non-CoDeSys systems</h3>
+<p>There is no intention to support codebase portability, nor interfacing to other non-CoDeSys platforms (Siemens, AB, and the like).</p>
 </article>
           </div>
           

@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IsTask
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
     startLine: 9
@@ -50,8 +50,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Symbol
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
     startLine: 11
@@ -83,8 +83,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: HumanReadable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
     startLine: 12
@@ -116,8 +116,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CodeProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
     startLine: 13
@@ -149,8 +149,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RecordTaskAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
     startLine: 14

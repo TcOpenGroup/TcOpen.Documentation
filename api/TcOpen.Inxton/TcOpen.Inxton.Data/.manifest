@@ -64,6 +64,7 @@
   "TcoData.DataViewModel`1.LoadFromPlc": "TcoData.DataViewModel-1.yml",
   "TcoData.DataViewModel`1.LoadFromPlcCommand": "TcoData.DataViewModel-1.yml",
   "TcoData.DataViewModel`1.LoadFromPlcCommandAvailable": "TcoData.DataViewModel-1.yml",
+  "TcoData.DataViewModel`1.LogCommand(System.String)": "TcoData.DataViewModel-1.yml",
   "TcoData.DataViewModel`1.mode": "TcoData.DataViewModel-1.yml",
   "TcoData.DataViewModel`1.Mode": "TcoData.DataViewModel-1.yml",
   "TcoData.DataViewModel`1.observableRecords": "TcoData.DataViewModel-1.yml",

@@ -27,7 +27,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IDataBrowser
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 355
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Records
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 357
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Filter
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 358
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindById
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 359
@@ -155,7 +155,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindByCreatedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 360
@@ -188,7 +188,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindByModifiedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 361
@@ -221,7 +221,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AddRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 362
@@ -250,7 +250,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 363
@@ -279,7 +279,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 364
@@ -308,7 +308,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateEmpty
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 365
@@ -336,7 +336,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 366
@@ -369,7 +369,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 367

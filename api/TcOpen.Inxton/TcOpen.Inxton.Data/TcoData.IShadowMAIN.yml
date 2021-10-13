@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IShadowMAIN
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
     startLine: 14
@@ -33,7 +33,6 @@ items:
     content: 'interface IShadowMAIN : IVortexShadowObject'
     content.vb: >-
       Interface IShadowMAIN
-
           Inherits IVortexShadowObject
   modifiers.csharp:
   - interface
@@ -54,7 +53,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AttributeName
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
     startLine: 16
@@ -87,7 +86,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
     startLine: 21
@@ -115,7 +114,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FlushShadowToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
     startLine: 22
@@ -141,7 +140,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowMAIN.g.cs
     startLine: 23

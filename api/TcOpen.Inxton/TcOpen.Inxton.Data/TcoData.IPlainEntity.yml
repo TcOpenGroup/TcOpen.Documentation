@@ -17,7 +17,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/Entity/IPlainEntity.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IPlainEntity
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/Entity/IPlainEntity.cs
     startLine: 4
@@ -48,7 +48,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/Entity/IPlainEntity.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Changes
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/Entity/IPlainEntity.cs
     startLine: 6

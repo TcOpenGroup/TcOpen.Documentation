@@ -17,7 +17,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/RepositoryExtensions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Repository
     path: ../TcOpen/src/TcoData/src/Repository/Json/RepositoryExtensions.cs
     startLine: 6
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/Json/RepositoryExtensions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Factory
     path: ../TcOpen/src/TcoData/src/Repository/Json/RepositoryExtensions.cs
     startLine: 8
@@ -69,7 +69,6 @@ items:
   syntax:
     content: >-
       public static IRepository<T> Factory<T>(JsonRepositorySettings<T> parameters)
-
           where T : IBrowsableDataObject
     parameters:
     - id: parameters

@@ -30,7 +30,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PlainMainContext
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 9
@@ -43,9 +43,7 @@ items:
     content: 'class PlainMainContext : PlainTcoContext, INotifyPropertyChanged, IPlain'
     content.vb: >-
       Class PlainMainContext
-
           Inherits PlainTcoContext
-
           Implements INotifyPropertyChanged, IPlain
   inheritance:
   - System.Object
@@ -100,7 +98,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToCyclic
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 158
@@ -133,7 +131,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToCyclic
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 165
@@ -166,7 +164,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 170
@@ -199,7 +197,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 177
@@ -232,7 +230,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyCyclicToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 182
@@ -265,7 +263,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyCyclicToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 189
@@ -298,7 +296,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyShadowToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 194
@@ -331,7 +329,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyShadowToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Onliners/MainContext.g.cs
     startLine: 201
@@ -364,7 +362,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _fbProcessDataManger
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 11
@@ -391,7 +389,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: fbProcessDataManger
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 12
@@ -426,7 +424,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _test
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 29
@@ -453,7 +451,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: test
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 30
@@ -488,7 +486,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PropertyChanged
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 47
@@ -519,7 +517,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Plain/PlainMainContext.g.cs
     startLine: 48

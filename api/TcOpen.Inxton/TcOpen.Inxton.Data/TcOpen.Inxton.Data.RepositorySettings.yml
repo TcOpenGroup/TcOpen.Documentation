@@ -16,7 +16,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/RepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RepositorySettings
     path: ../TcOpen/src/TcoData/src/Data/src/RepositorySettings.cs
     startLine: 2

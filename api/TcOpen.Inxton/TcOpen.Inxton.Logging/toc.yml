@@ -6,3 +6,5 @@
     name: DummyLoggerAdapter
   - uid: TcOpen.Inxton.Logging.SerilogAdapter
     name: SerilogAdapter
+  - uid: TcOpen.Inxton.Logging.SerilogUserLogEnricher
+    name: SerilogUserLogEnricher

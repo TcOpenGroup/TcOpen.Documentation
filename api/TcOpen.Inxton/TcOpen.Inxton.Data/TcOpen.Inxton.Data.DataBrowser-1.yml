@@ -43,7 +43,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataBrowser
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 12
@@ -56,7 +56,6 @@ items:
     - id: T
     content.vb: >-
       Public Class DataBrowser(Of T As {IBrowsableDataObject, New})
-
           Implements IDataBrowser
   inheritance:
   - System.Object
@@ -94,7 +93,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 14
@@ -130,7 +129,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Records
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 20
@@ -169,7 +168,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Repository
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 22
@@ -206,7 +205,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Filter
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 24
@@ -247,7 +246,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindById
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 33
@@ -284,7 +283,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindByCreatedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 56
@@ -323,7 +322,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindByModifiedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 57
@@ -362,7 +361,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AddRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 58
@@ -397,7 +396,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 59
@@ -432,7 +431,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 63
@@ -467,7 +466,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 64
@@ -504,7 +503,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 65
@@ -542,7 +541,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.FindById
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 69
@@ -579,7 +578,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.FindByCreatedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 73
@@ -618,7 +617,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.FindByModifiedRange
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 77
@@ -657,7 +656,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.AddRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 81
@@ -692,7 +691,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.UpdateRecord
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 85
@@ -727,7 +726,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.Delete
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 89
@@ -762,7 +761,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.Records
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 93
@@ -801,7 +800,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.Count
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 94
@@ -840,7 +839,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.CreateEmpty
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 95
@@ -874,7 +873,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcOpen.Inxton.Data.IDataBrowser.FilteredCount
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 99
@@ -910,7 +909,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecords
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 101
@@ -948,7 +947,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Export
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 106
@@ -988,7 +987,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Import
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 169
@@ -1028,7 +1027,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateDocument
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 217
@@ -1064,7 +1063,7 @@ items:
     remote:
       path: src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CastValue
     path: ../TcOpen/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs
     startLine: 266

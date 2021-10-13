@@ -21,7 +21,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ITcoDataTask
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 14
@@ -34,7 +34,6 @@ items:
     content: 'public interface ITcoDataTask : ITcoRemoteTask, ITcoTask, ITcoObject, IVortexOnlineObject'
     content.vb: >-
       Public Interface ITcoDataTask
-
           Inherits IVortexOnlineObject, ITcoRemoteTask
   inheritedMembers:
   - TcoCore.ITcoRemoteTask._isInitialized
@@ -80,7 +79,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _identifier
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 16
@@ -113,7 +112,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 21
@@ -141,7 +140,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FlushOnlineToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 22
@@ -167,7 +166,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FlushPlainToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 23
@@ -196,7 +195,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FlushOnlineToPlain
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Online/ITcoDataTask.g.cs
     startLine: 24

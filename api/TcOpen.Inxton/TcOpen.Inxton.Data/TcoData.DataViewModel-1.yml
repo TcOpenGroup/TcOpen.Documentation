@@ -42,6 +42,7 @@ items:
   - TcoData.DataViewModel`1.LoadFromPlc
   - TcoData.DataViewModel`1.LoadFromPlcCommand
   - TcoData.DataViewModel`1.LoadFromPlcCommandAvailable
+  - TcoData.DataViewModel`1.LogCommand(System.String)
   - TcoData.DataViewModel`1.mode
   - TcoData.DataViewModel`1.Mode
   - TcoData.DataViewModel`1.observableRecords
@@ -82,10 +83,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataViewModel
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -139,10 +140,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: filterByID
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -168,10 +169,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: limit
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -197,10 +198,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mode
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -226,10 +227,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: observableRecords
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -259,10 +260,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: recordIdentifier
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -288,10 +289,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: selectedRecord
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -317,10 +318,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: skip
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -346,10 +347,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PerPageFilter
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -383,10 +384,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -406,6 +407,37 @@ items:
   - Public
   fullName.vb: TcoData.DataViewModel(Of T).DataViewModel(TcOpen.Inxton.Data.IRepository(Of T), TcoData.TcoDataExchange)
   name.vb: DataViewModel(IRepository(Of T), TcoDataExchange)
+- uid: TcoData.DataViewModel`1.LogCommand(System.String)
+  commentId: M:TcoData.DataViewModel`1.LogCommand(System.String)
+  id: LogCommand(System.String)
+  parent: TcoData.DataViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: LogCommand(String)
+  nameWithType: DataViewModel<T>.LogCommand(String)
+  fullName: TcoData.DataViewModel<T>.LogCommand(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: LogCommand
+    path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
+    startLine: 75
+  assemblies:
+  - TcOpen.Inxton.Data.Wpf
+  namespace: TcoData
+  syntax:
+    content: void LogCommand(string commandName)
+    parameters:
+    - id: commandName
+      type: System.String
+    content.vb: Sub LogCommand(commandName As String)
+  overload: TcoData.DataViewModel`1.LogCommand*
+  nameWithType.vb: DataViewModel(Of T).LogCommand(String)
+  fullName.vb: TcoData.DataViewModel(Of T).LogCommand(System.String)
 - uid: TcoData.DataViewModel`1.PaginationUpEnabled(System.Object)
   commentId: M:TcoData.DataViewModel`1.PaginationUpEnabled(System.Object)
   id: PaginationUpEnabled(System.Object)
@@ -421,10 +453,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PaginationUpEnabled
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 73
+    startLine: 80
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -454,10 +486,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CancelEdit
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 75
+    startLine: 82
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -482,10 +514,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartEdit
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 81
+    startLine: 88
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -510,10 +542,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ExportData
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 86
+    startLine: 93
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -538,10 +570,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ImportData
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 108
+    startLine: 115
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -566,10 +598,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreatingNew
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 135
+    startLine: 142
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -594,10 +626,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateBrowsable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 140
+    startLine: 147
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -628,10 +660,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateCopyOfExisting
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 148
+    startLine: 155
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -656,10 +688,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateNew
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 164
+    startLine: 171
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -684,10 +716,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 182
+    startLine: 189
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -712,10 +744,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Filter
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 199
+    startLine: 206
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -740,10 +772,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindById
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 204
+    startLine: 211
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -768,10 +800,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SendToPlc
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 212
+    startLine: 219
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -796,10 +828,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreatingRecordCopy
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 224
+    startLine: 231
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -824,10 +856,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CrudDataObject
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 231
+    startLine: 238
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -864,10 +896,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 242
+    startLine: 249
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -892,10 +924,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: page
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 257
+    startLine: 264
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -932,10 +964,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FillObservableRecords
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 270
+    startLine: 277
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -960,10 +992,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LoadFromPlc
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 279
+    startLine: 286
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -988,19 +1020,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ExportCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 295
+    startLine: 302
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand ExportCommand { get; }
+    content: public ICommand ExportCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property ExportCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ExportCommand As ICommand
   overload: TcoData.DataViewModel`1.ExportCommand*
   nameWithType.vb: DataViewModel(Of T).ExportCommand
   modifiers.csharp:
@@ -1025,19 +1057,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ImportCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 296
+    startLine: 303
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand ImportCommand { get; }
+    content: public ICommand ImportCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property ImportCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ImportCommand As ICommand
   overload: TcoData.DataViewModel`1.ImportCommand*
   nameWithType.vb: DataViewModel(Of T).ImportCommand
   modifiers.csharp:
@@ -1062,19 +1094,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CancelCreateNewCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 298
+    startLine: 305
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand CancelCreateNewCommand { get; }
+    content: public ICommand CancelCreateNewCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property CancelCreateNewCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CancelCreateNewCommand As ICommand
   overload: TcoData.DataViewModel`1.CancelCreateNewCommand*
   nameWithType.vb: DataViewModel(Of T).CancelCreateNewCommand
   modifiers.csharp:
@@ -1099,19 +1131,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CancelEditCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 303
+    startLine: 307
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand CancelEditCommand { get; }
+    content: public ICommand CancelEditCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property CancelEditCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CancelEditCommand As ICommand
   overload: TcoData.DataViewModel`1.CancelEditCommand*
   nameWithType.vb: DataViewModel(Of T).CancelEditCommand
   modifiers.csharp:
@@ -1136,19 +1168,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateCopyOfExistingCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 308
+    startLine: 309
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand CreateCopyOfExistingCommand { get; }
+    content: public ICommand CreateCopyOfExistingCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property CreateCopyOfExistingCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CreateCopyOfExistingCommand As ICommand
   overload: TcoData.DataViewModel`1.CreateCopyOfExistingCommand*
   nameWithType.vb: DataViewModel(Of T).CreateCopyOfExistingCommand
   modifiers.csharp:
@@ -1173,19 +1205,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreateNewCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 313
+    startLine: 311
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand CreateNewCommand { get; }
+    content: public ICommand CreateNewCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property CreateNewCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CreateNewCommand As ICommand
   overload: TcoData.DataViewModel`1.CreateNewCommand*
   nameWithType.vb: DataViewModel(Of T).CreateNewCommand
   modifiers.csharp:
@@ -1210,10 +1242,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataBrowser
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 318
+    startLine: 313
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1247,27 +1279,27 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DataExchange
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 323
+    startLine: 315
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public TcoDataExchange DataExchange { get; set; }
+    content: public TcoDataExchange DataExchange { get; }
     parameters: []
     return:
       type: TcoData.TcoDataExchange
-    content.vb: Public Property DataExchange As TcoDataExchange
+    content.vb: Public ReadOnly Property DataExchange As TcoDataExchange
   overload: TcoData.DataViewModel`1.DataExchange*
   nameWithType.vb: DataViewModel(Of T).DataExchange
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
   fullName.vb: TcoData.DataViewModel(Of T).DataExchange
 - uid: TcoData.DataViewModel`1.DeleteCommand
   commentId: P:TcoData.DataViewModel`1.DeleteCommand
@@ -1284,19 +1316,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 328
+    startLine: 317
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand DeleteCommand { get; }
+    content: public ICommand DeleteCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property DeleteCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property DeleteCommand As ICommand
   overload: TcoData.DataViewModel`1.DeleteCommand*
   nameWithType.vb: DataViewModel(Of T).DeleteCommand
   modifiers.csharp:
@@ -1321,19 +1353,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: EditCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 333
+    startLine: 319
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand EditCommand { get; }
+    content: public ICommand EditCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property EditCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property EditCommand As ICommand
   overload: TcoData.DataViewModel`1.EditCommand*
   nameWithType.vb: DataViewModel(Of T).EditCommand
   modifiers.csharp:
@@ -1358,19 +1390,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PageUpCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 338
+    startLine: 321
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand PageUpCommand { get; }
+    content: public ICommand PageUpCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property PageUpCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property PageUpCommand As ICommand
   overload: TcoData.DataViewModel`1.PageUpCommand*
   nameWithType.vb: DataViewModel(Of T).PageUpCommand
   modifiers.csharp:
@@ -1395,19 +1427,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: PageDownCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 339
+    startLine: 322
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand PageDownCommand { get; }
+    content: public ICommand PageDownCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property PageDownCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property PageDownCommand As ICommand
   overload: TcoData.DataViewModel`1.PageDownCommand*
   nameWithType.vb: DataViewModel(Of T).PageDownCommand
   modifiers.csharp:
@@ -1432,10 +1464,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilterByID
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 341
+    startLine: 324
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1469,19 +1501,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FindByCriteriaCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 363
+    startLine: 346
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand FindByCriteriaCommand { get; }
+    content: public ICommand FindByCriteriaCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property FindByCriteriaCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property FindByCriteriaCommand As ICommand
   overload: TcoData.DataViewModel`1.FindByCriteriaCommand*
   nameWithType.vb: DataViewModel(Of T).FindByCriteriaCommand
   modifiers.csharp:
@@ -1506,10 +1538,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Mode
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 368
+    startLine: 351
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1543,10 +1575,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Limit
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 386
+    startLine: 369
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1580,10 +1612,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Skip
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 414
+    startLine: 397
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1617,10 +1649,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Pages
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 432
+    startLine: 415
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1654,10 +1686,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ObservableRecords
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 443
+    startLine: 426
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1691,10 +1723,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RecordIdentifier
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 451
+    startLine: 434
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1728,10 +1760,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: changes
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 468
+    startLine: 451
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1757,10 +1789,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Changes
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 469
+    startLine: 452
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1794,10 +1826,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SelectedRecord
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 481
+    startLine: 464
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -1831,19 +1863,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SendToPlcCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 512
+    startLine: 495
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand SendToPlcCommand { get; }
+    content: public ICommand SendToPlcCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property SendToPlcCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property SendToPlcCommand As ICommand
   overload: TcoData.DataViewModel`1.SendToPlcCommand*
   nameWithType.vb: DataViewModel(Of T).SendToPlcCommand
   modifiers.csharp:
@@ -1868,19 +1900,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LoadFromPlcCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 517
+    startLine: 497
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand LoadFromPlcCommand { get; }
+    content: public ICommand LoadFromPlcCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property LoadFromPlcCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property LoadFromPlcCommand As ICommand
   overload: TcoData.DataViewModel`1.LoadFromPlcCommand*
   nameWithType.vb: DataViewModel(Of T).LoadFromPlcCommand
   modifiers.csharp:
@@ -1905,19 +1937,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateCopyOfExisting
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 519
+    startLine: 499
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand StartCreateCopyOfExisting { get; }
+    content: public ICommand StartCreateCopyOfExisting { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property StartCreateCopyOfExisting As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property StartCreateCopyOfExisting As ICommand
   overload: TcoData.DataViewModel`1.StartCreateCopyOfExisting*
   nameWithType.vb: DataViewModel(Of T).StartCreateCopyOfExisting
   modifiers.csharp:
@@ -1942,19 +1974,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateNewCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 524
+    startLine: 501
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand StartCreateNewCommand { get; }
+    content: public ICommand StartCreateNewCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property StartCreateNewCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property StartCreateNewCommand As ICommand
   overload: TcoData.DataViewModel`1.StartCreateNewCommand*
   nameWithType.vb: DataViewModel(Of T).StartCreateNewCommand
   modifiers.csharp:
@@ -1979,19 +2011,19 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateCommand
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 529
+    startLine: 503
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
   syntax:
-    content: public RelayCommand UpdateCommand { get; }
+    content: public ICommand UpdateCommand { get; }
     parameters: []
     return:
-      type: Vortex.Presentation.Wpf.RelayCommand
-    content.vb: Public ReadOnly Property UpdateCommand As RelayCommand
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property UpdateCommand As ICommand
   overload: TcoData.DataViewModel`1.UpdateCommand*
   nameWithType.vb: DataViewModel(Of T).UpdateCommand
   modifiers.csharp:
@@ -2016,10 +2048,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateNewCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 534
+    startLine: 505
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2055,10 +2087,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StartCreateCopyOfExistingAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 535
+    startLine: 506
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2094,10 +2126,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UpdateCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 536
+    startLine: 507
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2133,10 +2165,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CancelEditCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 537
+    startLine: 508
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2172,10 +2204,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeleteCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 538
+    startLine: 509
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2211,10 +2243,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: EditCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 539
+    startLine: 510
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2250,10 +2282,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SendToPlcCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 540
+    startLine: 511
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2289,10 +2321,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LoadFromPlcCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 541
+    startLine: 512
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2328,10 +2360,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ExportCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 542
+    startLine: 513
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -2367,10 +2399,10 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ImportCommandAvailable
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/Data/DataViewModel.cs
-    startLine: 543
+    startLine: 514
   assemblies:
   - TcOpen.Inxton.Data.Wpf
   namespace: TcoData
@@ -3214,6 +3246,13 @@ references:
   name: TcOpen.Inxton.Data
   nameWithType: TcOpen.Inxton.Data
   fullName: TcOpen.Inxton.Data
+- uid: TcoData.DataViewModel`1.LogCommand*
+  commentId: Overload:TcoData.DataViewModel`1.LogCommand
+  name: LogCommand
+  nameWithType: DataViewModel<T>.LogCommand
+  fullName: TcoData.DataViewModel<T>.LogCommand
+  nameWithType.vb: DataViewModel(Of T).LogCommand
+  fullName.vb: TcoData.DataViewModel(Of T).LogCommand
 - uid: TcoData.DataViewModel`1.PaginationUpEnabled*
   commentId: Overload:TcoData.DataViewModel`1.PaginationUpEnabled
   name: PaginationUpEnabled
@@ -3441,13 +3480,19 @@ references:
   fullName: TcoData.DataViewModel<T>.ExportCommand
   nameWithType.vb: DataViewModel(Of T).ExportCommand
   fullName.vb: TcoData.DataViewModel(Of T).ExportCommand
-- uid: Vortex.Presentation.Wpf.RelayCommand
-  commentId: T:Vortex.Presentation.Wpf.RelayCommand
-  parent: Vortex.Presentation.Wpf
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
   isExternal: true
-  name: RelayCommand
-  nameWithType: RelayCommand
-  fullName: Vortex.Presentation.Wpf.RelayCommand
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
 - uid: TcoData.DataViewModel`1.ImportCommand*
   commentId: Overload:TcoData.DataViewModel`1.ImportCommand
   name: ImportCommand

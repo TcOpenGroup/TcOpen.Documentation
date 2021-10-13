@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ValueItemDescriptor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
     startLine: 4
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
     startLine: 7
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
     startLine: 12
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: HumanReadable
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
     startLine: 17
@@ -159,7 +159,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Symbol
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/pex/ChangeTracker/ValueItemDescriptor.cs
     startLine: 18

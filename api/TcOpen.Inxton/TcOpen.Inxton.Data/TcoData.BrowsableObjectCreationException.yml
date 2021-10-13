@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: BrowsableObjectCreationException
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
     startLine: 7
@@ -80,7 +80,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
     startLine: 10
@@ -112,7 +112,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
     startLine: 17
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
     startLine: 25
@@ -187,7 +187,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/BrowsableObjectCreationException.cs
     startLine: 35

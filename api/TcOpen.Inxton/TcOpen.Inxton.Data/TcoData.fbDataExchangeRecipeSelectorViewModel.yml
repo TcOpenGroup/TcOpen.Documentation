@@ -17,7 +17,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: fbDataExchangeRecipeSelectorViewModel
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorViewModel.cs
     startLine: 2
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorViewModel.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Wpf/TcoData.Wpf/Data/DataSelector/fbDataExchangeRecipeSelectorViewModel.cs
     startLine: 4

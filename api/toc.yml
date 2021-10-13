@@ -8,5 +8,13 @@
   href: TcoPneumatics/toc.yml
 - name: TcoDrivesBeckhoff
   href: TcoDrivesBeckhoff/toc.yml 
-- name: TcOpen.Inxton
-  href: TcOpen.Inxton/toc.yml   
+- name: TcoData
+  href: TcoData/toc.yml
+- name: TcOpen.Inxton.Abstractions
+  href: TcOpen.Inxton/TcOpen.Inxton.Abstractions/toc.yml   
+- name: TcOpen.Inxton.App
+  href: TcOpen.Inxton/TcOpen.Inxton.App/toc.yml
+- name: TcOpen.Inxton.Data
+  href: TcOpen.Inxton/TcOpen.Inxton.Data/toc.yml   
+- name: TcOpen.Inxton.Logging
+  href: TcOpen.Inxton/TcOpen.Inxton.Logging/toc.yml   

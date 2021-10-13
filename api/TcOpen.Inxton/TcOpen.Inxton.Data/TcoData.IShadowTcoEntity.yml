@@ -22,7 +22,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IShadowTcoEntity
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 14
@@ -35,7 +35,6 @@ items:
     content: 'public interface IShadowTcoEntity : IShadowTcoObject, IVortexShadowObject'
     content.vb: >-
       Public Interface IShadowTcoEntity
-
           Inherits IVortexShadowObject, IShadowTcoObject
   inheritedMembers:
   - TcoCore.IShadowTcoObject._Identity
@@ -64,7 +63,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _EntityId
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 16
@@ -97,7 +96,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _Created
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 21
@@ -130,7 +129,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _Modified
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 26
@@ -163,7 +162,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreatePlainerType
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 31
@@ -191,7 +190,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FlushShadowToOnline
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 32
@@ -217,7 +216,7 @@ items:
     remote:
       path: src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CopyPlainToShadow
     path: ../TcOpen/src/TcoData/src/TcoDataConnector/_generated/Shadow/IShadowTcoEntity.g.cs
     startLine: 33

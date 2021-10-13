@@ -35,7 +35,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MongoDbRepositorySettings
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 14
@@ -48,7 +48,6 @@ items:
     - id: T
     content.vb: >-
       Public Class MongoDbRepositorySettings(Of T As IBrowsableDataObject)
-
           Inherits RepositorySettings
   inheritance:
   - System.Object
@@ -85,7 +84,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _databaseName
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 16
@@ -114,7 +113,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _collectionName
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 17
@@ -143,7 +142,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 19
@@ -196,7 +195,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 28
@@ -237,7 +236,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetClient
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 36
@@ -270,7 +269,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetClient
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 51
@@ -305,7 +304,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDatabase
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 67
@@ -338,7 +337,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetCollection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 82
@@ -371,7 +370,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Clients
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 98
@@ -404,7 +403,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Databases
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 99
@@ -437,7 +436,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Collections
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 100
@@ -470,7 +469,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetContainingTypes
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 102
@@ -510,7 +509,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetupSerialisationAndMapping
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 124
@@ -542,7 +541,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Client
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 164
@@ -579,7 +578,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Database
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 165
@@ -616,7 +615,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Collection
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 166
@@ -653,7 +652,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetConnectionInfo
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 168
@@ -687,7 +686,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: WaitForMongoServerAvailability
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 173
@@ -719,7 +718,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IsPortOpen
     path: ../TcOpen/src/TcoData/src/Repository/MongoDb/Mongo/MongoDbRepositorySettings.cs
     startLine: 188

@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SameObjectReferenceException
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 5
@@ -31,9 +31,7 @@ items:
     content: 'public class SameObjectReferenceException : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class SameObjectReferenceException
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object
@@ -82,7 +80,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 7
@@ -112,7 +110,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 11
@@ -145,7 +143,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 15
@@ -180,7 +178,7 @@ items:
     remote:
       path: src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcoData/src/Repository/InMemory/InMemory/SameObjectReferenceException.cs
     startLine: 19

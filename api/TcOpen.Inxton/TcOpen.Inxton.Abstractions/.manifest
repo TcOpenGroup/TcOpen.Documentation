@@ -10,6 +10,7 @@
   "TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)": "TcoCore.IVortexObjectExtensions.yml",
   "TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})": "TcoCore.IVortexObjectExtensions.yml",
   "TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})": "TcoCore.IVortexObjectExtensions.yml",
+  "TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)": "TcoCore.IVortexObjectExtensions.yml",
   "TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)": "TcoCore.IVortexObjectExtensions.yml",
   "TcOpen.Inxton.Data": "TcOpen.Inxton.Data.yml",
   "TcOpen.Inxton.Data.DateTimeProviderBase": "TcOpen.Inxton.Data.DateTimeProviderBase.yml",

@@ -9,6 +9,7 @@ items:
   - TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
   - TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
   - TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+  - TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
   - TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
   langs:
   - csharp
@@ -20,8 +21,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IVortexObjectExtensions
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 10
@@ -65,8 +66,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetParent
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 23
@@ -122,8 +123,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 47
@@ -164,6 +165,69 @@ items:
   - Shared
   fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(Vortex.Connector.IVortexObject, System.Collections.Generic.IList(Of T))
   name.vb: GetDescendants(Of T)(IVortexObject, IList(Of T))
+- uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  id: GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  isExtensionMethod: true
+  parent: TcoCore.IVortexObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDescendants<T>(IVortexObject, Int32, IList<T>, Int32)
+  nameWithType: IVortexObjectExtensions.GetDescendants<T>(IVortexObject, Int32, IList<T>, Int32)
+  fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>(Vortex.Connector.IVortexObject, System.Int32, System.Collections.Generic.IList<T>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: GetDescendants
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
+    startLine: 80
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcoCore
+  summary: "\nGets descendant objects of given type up to given tree depth.\n"
+  remarks: "\nTake into consideration possible performance degradation due to use of reflections in this method.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<T> GetDescendants<T>(this IVortexObject obj, int depth, IList<T> children = null, int currentDepth = 0)
+          where T : class
+    parameters:
+    - id: obj
+      type: Vortex.Connector.IVortexObject
+      description: Root object
+    - id: depth
+      type: System.Int32
+      description: Depth to search for descendant objects
+    - id: children
+      type: System.Collections.Generic.IList{{T}}
+      description: '[optional] Pre-existing descendants.'
+    - id: currentDepth
+      type: System.Int32
+      description: '[optional] Current depth'
+    typeParameters:
+    - id: T
+      description: Descendant type
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Descendant of given type up to given depth.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDescendants(Of T As Class)(obj As IVortexObject, depth As Integer, children As IList(Of T) = Nothing, currentDepth As Integer = 0) As IEnumerable(Of T)
+  overload: TcoCore.IVortexObjectExtensions.GetDescendants*
+  nameWithType.vb: IVortexObjectExtensions.GetDescendants(Of T)(IVortexObject, Int32, IList(Of T), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(Vortex.Connector.IVortexObject, System.Int32, System.Collections.Generic.IList(Of T), System.Int32)
+  name.vb: GetDescendants(Of T)(IVortexObject, Int32, IList(Of T), Int32)
 - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
   commentId: M:TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
   id: GetChildren``1(Vortex.Connector.IVortexObject)
@@ -179,11 +243,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 78
+    startLine: 114
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -233,11 +297,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 84
+    startLine: 120
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -283,11 +347,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: eagle
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreatePlain
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 101
+    startLine: 137
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -812,6 +876,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: TcoCore.IVortexObjectExtensions.GetChildren*
   commentId: Overload:TcoCore.IVortexObjectExtensions.GetChildren
   name: GetChildren

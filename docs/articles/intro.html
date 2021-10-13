@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction | TcOpen </title>
+    <title>Architecture of TcOpen | TcOpen </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Introduction | TcOpen ">
+    <meta name="title" content="Architecture of TcOpen | TcOpen ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.png">
@@ -106,6 +106,9 @@
                             <a href="TcOpenFramework/messaging.html" title="Messaging" class="">Messaging</a>
                           </li>
                           <li class="">
+                            <a href="TcOpenFramework/logger.html" title="Logging" class="">Logging</a>
+                          </li>
+                          <li class="">
                             <a href="TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.html" title="How to get started using TcOpen libraries" class="">How to get started using TcOpen libraries</a>
                           </li>
                           <li class="">
@@ -153,9 +156,387 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="introduction">Introduction</h1>
+<h2 id="architecture-of-tcopen">Architecture of TcOpen</h2>
 
-<p>This project was created for automation professionals to have an open source codebase to share with one another that is based on OOP principals.  Our goal is to have a set of tested, usable base classes for deploying in real automation projects.</p>
+<ol>
+<li><a href="TcOpenFramework/application.html">Application framework</a></li>
+<li><a href="TcOpenFramework/messaging.html">Messenger</a></li>
+<li><a href="TcOpenFramework/logger.html">Logger</a></li>
+</ol>
+<h2 id="getting-started">Getting started</h2>
+<ol>
+<li><p><a href="TcOpenFramework/How_to_include_tcopen_in_a_project/article.html">Get started using TcOpen libraries</a></p>
+</li>
+<li><p><a href="TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.html">Get started using TcOpen libraries with Inxton</a></p>
+</li>
+<li><p><a href="TcOpenFramework/How_to_write_a_sequence/article.html">How to write a sequence</a></p>
+</li>
+</ol>
+<h2 id="features">Features</h2>
+<ul>
+<li><em>main</em> is released to production (x = implemented)</li>
+<li><em>dev</em> is in current development branch (x = implemented)</li>
+<li><em>IVF</em> feature requires inxton vortex framework to operate (x = implemented)</li>
+<li><em>WPF</em> feature has an UI control for WPF platform (requires IVF) (x = implemented)</li>
+<li><em>Blazor</em> feature has an UI control for Blazor platform (requires IVF) (x = implemented)</li>
+</ul>
+<h3 id="tcocore">TcoCore</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>PLC Class</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoRtc</td>
+<td>Single source of <strong>real time clock</strong> for the application</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#context">TcoContext</a></td>
+<td>Provides <strong>encapsulation</strong> for coherent unit of control</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#components">TcoComponent</a></td>
+<td>Base class from which all components should derive</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#object">TcoObject</a></td>
+<td>Base class from which all objects (FBs) in the framework should derive</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/messaging.html">TcoMessenger</a></td>
+<td>Static <strong>messaging mechanism</strong>; Messages can be read from higher level application</td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/logger.html">TcoLogger</a></td>
+<td><strong>Logs messages</strong> from the PLC program.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#task">TcoTask</a></td>
+<td>Task coordinator for synch and asynch run of arbitary code.</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoToggleTask</td>
+<td>Task coordinator for switching between two branches of logic.</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoRemoteTask</td>
+<td>Task coordinator for executing arbitrary code in .net evironment.</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoMomentaryTask</td>
+<td>Task coordinator for executing arbitrary logic while a codition is met.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#state">TcoState</a></td>
+<td>Basic state controller enhances the ST language (IF,CASE, ELSIF) coordination</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="TcOpenFramework/application.html#sequencer">TcoSequencer</a></td>
+<td>Advanced sequencing coordination primitive for step-by-step operations.</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcopen-inxton-application-specific">TcOpen Inxton application specific</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>Package</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="https://www.nuget.org/packages/Inxton.Package.Vortex.Core/">Inxton.Vortex.Package.Core</a></td>
+<td>Compiler and communication libraries</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="https://www.nuget.org/packages/Inxton.Package.Vortex.Essentials/">Inxton.Vortex.Package.Essentials</a></td>
+<td>Automated UI generation WPF</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td><a href="https://www.nuget.org/packages/Inxton.Vortex.Presentation.Controls.Blazor-experimental/">Inxton.Vortex.Blazor-experimental</a></td>
+<td>Automated UI generation Blazor</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcOpen.Inxton.Logging</td>
+<td>Logs user action and application events from inxton application</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcOpen.Inxton.Local.Security</td>
+<td>Limits user access to protected section of inxton application</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcOpen.Inxton.Swift</td>
+<td>Experimental implementation of auto programer (creates program capturing manual mode actions)</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcodata">TcoData</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>PLC Class</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoDataExchage</td>
+<td><strong>CRUD capabale</strong> from PLC code</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>InMemory repository</td>
+<td>IRepository implementation for in memory storage</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>Json repository</td>
+<td>IRepository implementation string object as Json files</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>MongoDb repository</td>
+<td>IRepository implementation for <strong>mongodb</strong> databases</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>RavenDb repository</td>
+<td>IRepository implementation for <strong>ravendb</strong> databases</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcodrivesbeckhoff">TcoDrivesBeckhoff</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>PLC Class</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoDriveSimple</td>
+<td>Simple implementation of motion tasks (absolute, relative, velo, jog...)</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcoelements">TcoElements</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>PLC Class</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoDi</td>
+<td>Simple class for managing <strong>discrete inputs</strong></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoDo</td>
+<td>Simple class for managing <strong>discrete outputs</strong></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>TcoAi</td>
+<td>Simple class for managing <strong>analogue inputs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>TcoAo</td>
+<td>Simple class for managing <strong>analogue outputs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcopnematics">TcoPnematics</h3>
+<table>
+<thead>
+<tr>
+<th>main</th>
+<th>dev</th>
+<th>PLC Class</th>
+<th>Description</th>
+<th>IVF</th>
+<th>WPF</th>
+<th>Blazor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>x</td>
+<td>TcoCylinder</td>
+<td>Simple class for managing <strong>pneumatic cyclinder</strong></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
