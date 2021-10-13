@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SerilogUserLogEnricher
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserLoggingPropertyName
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserProperty
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserLoggedIn
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserLoggedOut
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/SerilogUserLogEnricher.cs

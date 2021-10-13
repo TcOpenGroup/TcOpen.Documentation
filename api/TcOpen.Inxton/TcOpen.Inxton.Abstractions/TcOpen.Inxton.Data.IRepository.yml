@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs

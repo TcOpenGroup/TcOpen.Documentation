@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Invoke
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -202,7 +202,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InvokeAsync
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -271,7 +271,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Get
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs

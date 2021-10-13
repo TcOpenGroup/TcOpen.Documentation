@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IsTask
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Symbol
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: HumanReadable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CodeProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RecordTaskAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IsTask.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UnableToLocateRecordId
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs

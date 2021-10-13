@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IExternalAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RequestAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -80,7 +80,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RequestTokenChange
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthorizationErrorMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: WillChangeToken
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthorizationRequest
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthorizationTokenChange
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs

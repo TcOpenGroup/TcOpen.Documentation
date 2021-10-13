@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RelayCommand
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _canExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _logAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ValidateCanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RaiseCanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs

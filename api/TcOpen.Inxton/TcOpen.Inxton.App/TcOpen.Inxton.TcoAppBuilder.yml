@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcoAppBuilder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Domain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetUpLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetSecurity
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -250,7 +250,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
@@ -285,7 +285,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetEditValueChangeLogging
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs

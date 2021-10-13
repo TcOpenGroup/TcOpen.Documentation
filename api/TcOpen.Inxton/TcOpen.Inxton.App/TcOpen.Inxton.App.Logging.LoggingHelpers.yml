@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: LoggingHelpers
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: EditValueChange
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Logging/LogingHelpers.cs

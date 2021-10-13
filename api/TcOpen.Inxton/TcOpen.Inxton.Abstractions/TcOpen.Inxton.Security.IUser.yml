@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanUserChangePassword
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Email
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Level
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Roles
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
@@ -179,7 +179,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserName
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs

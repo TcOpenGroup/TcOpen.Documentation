@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ITcoLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DateTimeProviders
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DateTimeProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs

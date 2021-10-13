@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
-      branch: eagle
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RecordTaskActionDelegate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
