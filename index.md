@@ -1,6 +1,8 @@
 ![TcOpen logo](./images/logo.png)
 
-**Documentation in development...**
+# **This documentation is work in progress**
+
+# *Raw documentation can be dowloaded from [here](https://github.com/TcOpenGroup/TcOpen.Documentation/tree/dev/docs)*
 
 # TcOpen
 
