@@ -165,7 +165,7 @@
 In contrast to <a href="messaging.html">TcoMessenger</a> that statically holds current most important message the logger can capture multiple and short lived events (single PLC cycle). Actual size of circular buffer is <code>1000</code> log entries.</p>
 <h2 id="tcologger">TcoLogger</h2>
 <ul>
-<li><a href="../../api/TcoCore/_Plc_.TcoCore.TcoLogger.html">PLC API</a></li>
+<li><a href="../../api/TcoCore/PlcDocu.TcoCore.TcoLogger.html">PLC API</a></li>
 <li><a href="../../api/TcoCore/TcoCore.TcoLogger.html">TWIN API</a></li>
 </ul>
 <p><em>Logger usage in PLC code:</em></p>
@@ -195,13 +195,13 @@ PlcTcoCoreExamples.EXAMPLES_PRG._loggerContext._loggerUsage._logger.StartLogging
 </code></pre>
 <p><strong>NOTE: you can use several endpoints (sinks) to store logs. For possible sinks see the packages <a href="https://www.nuget.org/packages?q=serilog">here</a>.</strong></p>
 <h2 id="tcomessenger-and-tcologger">TcoMessenger and TcoLogger</h2>
-<p>Messenger integrates logger to capture the messages into log output. The messengers uses the logger instance of the <a href="../../api/TcoCore/_Plc_.TcoCore.TcoContext.html#_Plc__TcoCore_TcoContext_Logger">context</a>.</p>
+<p>Messenger integrates logger to capture the messages into log output. The messengers uses the logger instance of the <a href="../../api/TcoCore/PlcDocu.TcoCore.TcoContext.html#_Plc__TcoCore_TcoContext_Logger">context</a>.</p>
 <p>In default setting the message is emitted into logger only on the rising edge of the message.
 Detection of rising edge is deremined by the <em>message text, category, and context cycle</em>.</p>
 <p>For possible configurations see:</p>
 <ul>
-<li><a href="../../api/TcoCore/_Plc_.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessageDigestMethod">Message digest method</a> / <a href="../../api/TcoCore/TcoCore.eMessageDigestMethod.html">eMessageDigestMethod</a></li>
-<li><a href="../../api/TcoCore/_Plc_.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessengerLoggingMethod">Message logging method</a> / <a href="../../api/TcoCore/TcoCore.eMessengerLogMethod.html">eMessengerLogMethod</a></li>
+<li><a href="../../api/TcoCore/PlcDocu.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessageDigestMethod">Message digest method</a> / <a href="../../api/TcoCore/TcoCore.eMessageDigestMethod.html">eMessageDigestMethod</a></li>
+<li><a href="../../api/TcoCore/PlcDocu.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessengerLoggingMethod">Message logging method</a> / <a href="../../api/TcoCore/TcoCore.eMessengerLogMethod.html">eMessengerLogMethod</a></li>
 </ul>
 <p>Each messenger can have up to 20 concurrent messages in two consecutive cycles.</p>
 </article>

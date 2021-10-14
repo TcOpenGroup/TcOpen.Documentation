@@ -2,7 +2,7 @@
 
 Messaging system provides a simple mechanism for posting various information (state, diagnostics, etc.) to the higher-level application (e.g. HMI/SCADA).
 
-Each [TcoObject](~\api\TcoCore\_Plc_.TcoCore.TcoObject.html) contains a messenger that allows reporting information about that object to a higher-level application.
+Each [TcoObject](~\api\TcoCore\PlcDocu.TcoCore.TcoObject.html) contains a messenger that allows reporting information about that object to a higher-level application.
 
 ## Usage
 

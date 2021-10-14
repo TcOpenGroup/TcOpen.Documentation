@@ -30,7 +30,7 @@ The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.
 
 **(TcoContext : ITcoContext)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoContext.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoContext.html)
 
 ```TcoContext``` is an entry point for an application. It represents a station, functional unit, or a whole application. The `Main` method of the context is the **root of the call tree**.
 
@@ -97,7 +97,7 @@ _context.Run();
 
 **(TcoObject : ITcoTask)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoObject.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.html)
 
 `TcoObject` provides access to :
 - [Context](#Context)
@@ -164,7 +164,7 @@ END_IF;
 
 **(TcoTask : ITcoTask)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoTask.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoTask.html)
 
 
 ```TcoTask``` is a block for managing chunks of logic in asynchronous execution. Task controls the run of a component's function (servo movement, piston movement, barcode reader trigger, etc.).
@@ -249,7 +249,7 @@ The task may finish in an ``` Error``` state. In that case, two recovery scenari
 
 **(TcoComponent : ITcoComponent)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoComponent.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoComponent.html)
 
 The ```component``` in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.
 
@@ -331,7 +331,7 @@ The serviceable mode would be typically used in the manual mode of a unit.
 
 **(TcoState : ITcoState)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoStateBase.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoStateBase.html)
 
 
 The state controller ```TcoState``` manages states of the system.
@@ -428,7 +428,7 @@ END_IF;
 
 **(TcoSequencer : ITcoSequencer)**
 
-[API](~/api/TcoCore/_Plc_.TcoCore.TcoSequencer.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoSequencer.html)
 
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
