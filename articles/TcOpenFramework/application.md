@@ -95,7 +95,7 @@ _context.Run();
 
 ## Object
 
-**(TcoObject : ITcoTask)**
+**(TcoObject : ITcoObject)**
 
 [API](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.html)
 
