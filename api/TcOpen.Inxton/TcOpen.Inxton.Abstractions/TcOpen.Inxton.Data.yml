@@ -4,6 +4,7 @@ items:
   commentId: N:TcOpen.Inxton.Data
   id: TcOpen.Inxton.Data
   children:
+  - TcOpen.Inxton.Data.DataItemValidation
   - TcOpen.Inxton.Data.DateTimeProviderBase
   - TcOpen.Inxton.Data.DateTimeProviders
   - TcOpen.Inxton.Data.DuplicateIdException
@@ -11,9 +12,12 @@ items:
   - TcOpen.Inxton.Data.IdentifierValueMismatchedException
   - TcOpen.Inxton.Data.IRepository
   - TcOpen.Inxton.Data.IRepository`1
+  - TcOpen.Inxton.Data.OnCreateDelegate`1
+  - TcOpen.Inxton.Data.OnUpdateDelegate`1
   - TcOpen.Inxton.Data.StandardDateTimeProvider
   - TcOpen.Inxton.Data.UnableToLocateRecordId
   - TcOpen.Inxton.Data.UnableToUpdateRecord
+  - TcOpen.Inxton.Data.ValidateDataDelegate`1
   langs:
   - csharp
   - vb
@@ -24,6 +28,11 @@ items:
   assemblies:
   - TcOpen.Inxton.Abstractions
 references:
+- uid: TcOpen.Inxton.Data.DataItemValidation
+  commentId: T:TcOpen.Inxton.Data.DataItemValidation
+  name: DataItemValidation
+  nameWithType: DataItemValidation
+  fullName: TcOpen.Inxton.Data.DataItemValidation
 - uid: TcOpen.Inxton.Data.DateTimeProviders
   commentId: T:TcOpen.Inxton.Data.DateTimeProviders
   name: DateTimeProviders
@@ -65,6 +74,114 @@ references:
   name: IBrowsableDataObject
   nameWithType: IBrowsableDataObject
   fullName: TcOpen.Inxton.Data.IBrowsableDataObject
+- uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateDelegate`1
+  name: OnCreateDelegate<T>
+  nameWithType: OnCreateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateDelegate<T>
+  nameWithType.vb: OnCreateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnCreateDelegate(Of T)
+  name.vb: OnCreateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnUpdateDelegate`1
+  name: OnUpdateDelegate<T>
+  nameWithType: OnUpdateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnUpdateDelegate<T>
+  nameWithType.vb: OnUpdateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnUpdateDelegate(Of T)
+  name.vb: OnUpdateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+  commentId: T:TcOpen.Inxton.Data.ValidateDataDelegate`1
+  name: ValidateDataDelegate<T>
+  nameWithType: ValidateDataDelegate<T>
+  fullName: TcOpen.Inxton.Data.ValidateDataDelegate<T>
+  nameWithType.vb: ValidateDataDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.ValidateDataDelegate(Of T)
+  name.vb: ValidateDataDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: TcOpen.Inxton.Data.IRepository
   commentId: T:TcOpen.Inxton.Data.IRepository
   name: IRepository

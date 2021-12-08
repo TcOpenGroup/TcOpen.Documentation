@@ -1,29 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: TcOpen.Inxton.Logging.ITcoLogger
-  commentId: T:TcOpen.Inxton.Logging.ITcoLogger
-  id: ITcoLogger
+- uid: TcOpen.Inxton.Logging.ILogger
+  commentId: T:TcOpen.Inxton.Logging.ILogger
+  id: ILogger
   parent: TcOpen.Inxton.Logging
   children:
-  - TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
-  - TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
-  - TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
-  - TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
-  - TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
-  - TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Debug``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Error``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Fatal``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Information``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Verbose``1(System.String,``0)
+  - TcOpen.Inxton.Logging.ILogger.Warning``1(System.String,``0)
   langs:
   - csharp
   - vb
-  name: ITcoLogger
-  nameWithType: ITcoLogger
-  fullName: TcOpen.Inxton.Logging.ITcoLogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: TcOpen.Inxton.Logging.ILogger
   type: Interface
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: ITcoLogger
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: ILogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 5
   assemblies:
@@ -32,30 +32,30 @@ items:
   summary: "\nProvides abstraction for arbitrary logger implementation.\n"
   example: []
   syntax:
-    content: public interface ITcoLogger
-    content.vb: Public Interface ITcoLogger
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
   modifiers.csharp:
   - public
   - interface
   modifiers.vb:
   - Public
   - Interface
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Debug``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Debug``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Debug``1(System.String,``0)
   id: Debug``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Debug<T>(String, T)
-  nameWithType: ITcoLogger.Debug<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug<T>(System.String, T)
+  nameWithType: ILogger.Debug<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Debug<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 13
@@ -77,26 +77,26 @@ items:
     - id: T
       description: ''
     content.vb: Sub Debug(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Debug*
-  nameWithType.vb: ITcoLogger.Debug(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Debug(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Debug*
+  nameWithType.vb: ILogger.Debug(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Debug(Of T)(System.String, T)
   name.vb: Debug(Of T)(String, T)
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Verbose``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Verbose``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Verbose``1(System.String,``0)
   id: Verbose``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Verbose<T>(String, T)
-  nameWithType: ITcoLogger.Verbose<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose<T>(System.String, T)
+  nameWithType: ILogger.Verbose<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Verbose<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 22
@@ -118,26 +118,26 @@ items:
     - id: T
       description: ''
     content.vb: Sub Verbose(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Verbose*
-  nameWithType.vb: ITcoLogger.Verbose(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Verbose(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Verbose*
+  nameWithType.vb: ILogger.Verbose(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Verbose(Of T)(System.String, T)
   name.vb: Verbose(Of T)(String, T)
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Information``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Information``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Information``1(System.String,``0)
   id: Information``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Information<T>(String, T)
-  nameWithType: ITcoLogger.Information<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Information<T>(System.String, T)
+  nameWithType: ILogger.Information<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Information<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 31
@@ -159,26 +159,26 @@ items:
     - id: T
       description: ''
     content.vb: Sub Information(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Information*
-  nameWithType.vb: ITcoLogger.Information(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Information(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Information*
+  nameWithType.vb: ILogger.Information(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Information(Of T)(System.String, T)
   name.vb: Information(Of T)(String, T)
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Warning``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Warning``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Warning``1(System.String,``0)
   id: Warning``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Warning<T>(String, T)
-  nameWithType: ITcoLogger.Warning<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning<T>(System.String, T)
+  nameWithType: ILogger.Warning<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Warning<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 40
@@ -200,26 +200,26 @@ items:
     - id: T
       description: ''
     content.vb: Sub Warning(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Warning*
-  nameWithType.vb: ITcoLogger.Warning(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Warning(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Warning*
+  nameWithType.vb: ILogger.Warning(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Warning(Of T)(System.String, T)
   name.vb: Warning(Of T)(String, T)
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Error``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Error``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Error``1(System.String,``0)
   id: Error``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Error<T>(String, T)
-  nameWithType: ITcoLogger.Error<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Error<T>(System.String, T)
+  nameWithType: ILogger.Error<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Error<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 48
@@ -241,26 +241,26 @@ items:
     - id: T
       description: ''
     content.vb: Sub Error(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Error*
-  nameWithType.vb: ITcoLogger.Error(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Error(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Error*
+  nameWithType.vb: ILogger.Error(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Error(Of T)(System.String, T)
   name.vb: Error(Of T)(String, T)
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
-  commentId: M:TcOpen.Inxton.Logging.ITcoLogger.Fatal``1(System.String,``0)
+- uid: TcOpen.Inxton.Logging.ILogger.Fatal``1(System.String,``0)
+  commentId: M:TcOpen.Inxton.Logging.ILogger.Fatal``1(System.String,``0)
   id: Fatal``1(System.String,``0)
-  parent: TcOpen.Inxton.Logging.ITcoLogger
+  parent: TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
   name: Fatal<T>(String, T)
-  nameWithType: ITcoLogger.Fatal<T>(String, T)
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal<T>(System.String, T)
+  nameWithType: ILogger.Fatal<T>(String, T)
+  fullName: TcOpen.Inxton.Logging.ILogger.Fatal<T>(System.String, T)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 56
@@ -282,9 +282,9 @@ items:
     - id: T
       description: ''
     content.vb: Sub Fatal(Of T)(stringTemplate As String, payload As T = Nothing)
-  overload: TcOpen.Inxton.Logging.ITcoLogger.Fatal*
-  nameWithType.vb: ITcoLogger.Fatal(Of T)(String, T)
-  fullName.vb: TcOpen.Inxton.Logging.ITcoLogger.Fatal(Of T)(System.String, T)
+  overload: TcOpen.Inxton.Logging.ILogger.Fatal*
+  nameWithType.vb: ILogger.Fatal(Of T)(String, T)
+  fullName.vb: TcOpen.Inxton.Logging.ILogger.Fatal(Of T)(System.String, T)
   name.vb: Fatal(Of T)(String, T)
 references:
 - uid: TcOpen.Inxton.Logging
@@ -292,11 +292,11 @@ references:
   name: TcOpen.Inxton.Logging
   nameWithType: TcOpen.Inxton.Logging
   fullName: TcOpen.Inxton.Logging
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Debug*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Debug
+- uid: TcOpen.Inxton.Logging.ILogger.Debug*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Debug
   name: Debug
-  nameWithType: ITcoLogger.Debug
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Debug
+  nameWithType: ILogger.Debug
+  fullName: TcOpen.Inxton.Logging.ILogger.Debug
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -320,28 +320,28 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Verbose*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Verbose
+- uid: TcOpen.Inxton.Logging.ILogger.Verbose*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Verbose
   name: Verbose
-  nameWithType: ITcoLogger.Verbose
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Verbose
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Information*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Information
+  nameWithType: ILogger.Verbose
+  fullName: TcOpen.Inxton.Logging.ILogger.Verbose
+- uid: TcOpen.Inxton.Logging.ILogger.Information*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Information
   name: Information
-  nameWithType: ITcoLogger.Information
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Information
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Warning*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Warning
+  nameWithType: ILogger.Information
+  fullName: TcOpen.Inxton.Logging.ILogger.Information
+- uid: TcOpen.Inxton.Logging.ILogger.Warning*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Warning
   name: Warning
-  nameWithType: ITcoLogger.Warning
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Warning
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Error*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Error
+  nameWithType: ILogger.Warning
+  fullName: TcOpen.Inxton.Logging.ILogger.Warning
+- uid: TcOpen.Inxton.Logging.ILogger.Error*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Error
   name: Error
-  nameWithType: ITcoLogger.Error
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Error
-- uid: TcOpen.Inxton.Logging.ITcoLogger.Fatal*
-  commentId: Overload:TcOpen.Inxton.Logging.ITcoLogger.Fatal
+  nameWithType: ILogger.Error
+  fullName: TcOpen.Inxton.Logging.ILogger.Error
+- uid: TcOpen.Inxton.Logging.ILogger.Fatal*
+  commentId: Overload:TcOpen.Inxton.Logging.ILogger.Fatal
   name: Fatal
-  nameWithType: ITcoLogger.Fatal
-  fullName: TcOpen.Inxton.Logging.ITcoLogger.Fatal
+  nameWithType: ILogger.Fatal
+  fullName: TcOpen.Inxton.Logging.ILogger.Fatal

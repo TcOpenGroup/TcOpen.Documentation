@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateDelegate`1
+  id: OnCreateDelegate`1
+  parent: TcOpen.Inxton.Data
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnCreateDelegate<T>
+  nameWithType: OnCreateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateDelegate<T>
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnCreateDelegate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: public delegate void OnCreateDelegate<T>(string id, T data);
+    parameters:
+    - id: id
+      type: System.String
+    - id: data
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Delegate Sub OnCreateDelegate(Of T)(id As String, data As T)
+  nameWithType.vb: OnCreateDelegate(Of T)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: TcOpen.Inxton.Data.OnCreateDelegate(Of T)
+  name.vb: OnCreateDelegate(Of T)
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

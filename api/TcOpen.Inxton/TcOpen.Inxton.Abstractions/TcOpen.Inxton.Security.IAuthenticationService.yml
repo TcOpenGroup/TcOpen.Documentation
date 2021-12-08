@@ -26,7 +26,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IAuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 5
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AuthenticateUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 13
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DeAuthenticateCurrentUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 18
@@ -125,7 +125,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CalculateHash
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 26
@@ -163,7 +163,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ChangePassword
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 35
@@ -204,7 +204,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnUserAuthenticateSuccess
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 40
@@ -233,7 +233,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnUserAuthenticateFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 45
@@ -262,7 +262,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnDeAuthenticating
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 50
@@ -291,7 +291,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnDeAuthenticated
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 55
@@ -320,7 +320,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: OnTimedLogoutRequest
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 60
@@ -354,7 +354,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ExternalAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 65
