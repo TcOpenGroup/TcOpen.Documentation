@@ -45,7 +45,7 @@ TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to th
 | Block type     | Notation   | Prefix   | Example                  |
 |----------------|------------|----------|--------------------------|
 | FB/CLASS name  | PascalCase | NoPrefix | ```Cyclinder```          |
-| ENUM type name | PascalCase | NoPrefix | ```MachineState.Start``` |
+| ENUM type name | PascalCase | ```e```  | ```eMachineState.Start``` |
 | INTERFACE name | PascalCase | ```I```  | ```ICyclinder```         |
 | FUNCTION name  | PascalCase | NoPrefix | ```Add()```              |
 | STRUCT name    | PascalCase | NoPrefix | ```Data```               |
