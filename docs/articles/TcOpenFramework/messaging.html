@@ -162,7 +162,7 @@
 <h1 id="messaging">Messaging</h1>
 
 <p>Messaging system provides a simple mechanism for posting various information (state, diagnostics, etc.) to the higher-level application (e.g. HMI/SCADA).</p>
-<p>Each <a href="%7E%5Capi%5CTcoCore%5CPlcDocu.TcoCore.TcoObject.html">TcoObject</a> contains a messenger that allows reporting information about that object to a higher-level application.</p>
+<p>Each <a href="../../api/TcoCore/PlcDocu.TcoCore.TcoObject.html">TcoObject</a> contains a messenger that allows reporting information about that object to a higher-level application.</p>
 <h2 id="usage">Usage</h2>
 <p>In order to post a message, you access <code>Messenger</code> of the object (TcoObject).</p>
 <pre><code class="lang-iecst">IF(applo13.LunarModule.OxigenTankLowLimit) THEN
@@ -181,6 +181,39 @@ END_IF;
 <h2 id="prioritisation">Prioritisation</h2>
 <p>Each object has a single instance of a message holder. This instance is located in <code>TcoObject.Messenger._mime</code>. When there are more messages posted in the same cycle, the messenger will prioritize the one with the highest severity.</p>
 <p>More messages in the same cycle will reflect in the counter <code>PerCycleCount</code>, which will be greater than <code>1</code>.</p>
+<h2 id="message-persistency---pinned-messages">Message persistency - Pinned messages</h2>
+<p>We can persist static messages using the <code>Pin</code> method. The persisting message will be active in the diagnostics (alarm) view until acknowledged by the user. <strong>Pinned message is not able to accept other incoming messages</strong> until acknowledged. Incoming messages are be discarded for the alarm view; such messages will be, however, logged by the context logger when implemented.</p>
+<p>You can query the <em>pin</em> status of a messenger via <code>Pinned</code> property. <code>Pinned</code> property returns <code>true</code> when the message is <em>pinned</em> (active and/or unacknowledged).</p>
+<h4 id="usage-1">Usage</h4>
+<pre><code class="lang-iec">IF(NOT _message.OnCondition(ar[0]).Error('This is an error').Pinned) THEN
+    _startActuator := TRUE;
+END_IF;
+</code></pre>
+<h3 id="creating-unique-pinned-messages">Creating unique pinned messages</h3>
+<p>If you want to pin a message unequivocally, you should create a separate variable of <code>TcoMessenger</code> and activate persistency on that instance of the messenger.</p>
+<h4 id="usage-2">Usage</h4>
+<pre><code>// These vars must be instance members of a block (not temp members of a method or function).
+VAR
+    someMessenger : TcoCore.TcoMessenger(THIS^);
+END_VAR
+someMessenger.Error('This is an error that we want presist').Pin();
+</code></pre>
+<h2 id="conditional-message">Conditional message</h2>
+<p>Message can be conditionally activated using the <code>OnCondition</code> method.</p>
+<h4 id="usage-3">Usage</h4>
+<pre><code>someMessenger.OnContition(hasErrorCondition).Error('This is an error that we want presist');
+
+someOtherMessenger.OnContition(hasErrorCondition).Error('This is an error that we want presist').Pin();
+</code></pre>
+<h2 id="fluent-message-content-composition">Fluent message content composition</h2>
+<p>Messenger allows for fluent composition of the messages. The fluent interface is accessible via <code>Build()</code> method. You can append text or a value to the message.
+The message will be posted via <code>As()</code> method and consequent qualification of the message (e.g. <code>AsDebug()</code>).</p>
+<blockquote>
+<p><strong>IMPORTANT</strong>: When you compose a message text with a changing value(s), the context logger (when activated) will log each change as a new log entry. This behavior might be desirable in specific scenarios; however, be aware that message buffer overruns may occur, and the log storage space may come under stress.</p>
+</blockquote>
+<h3 id="usage-4">Usage</h3>
+<pre><code class="lang-iec">Messenger.OnCondition(temperature &gt; 100.0).Build().Append('Water temperature is boiling: ').AppendAny(temperature).As().AsInfo();
+</code></pre>
 <h2 id="message-structure">Message structure</h2>
 <table>
 <thead>
@@ -218,30 +251,16 @@ END_IF;
 <td>PerCycleCount</td>
 <td>Counter of messages posted in the same context cycle</td>
 </tr>
+<tr>
+<td>Pinned</td>
+<td>Indicates that the message is persistent</td>
+</tr>
 </tbody>
 </table>
 <h2 id="message-categories">Message categories</h2>
-<h3 id="trace-verbose">Trace (Verbose)</h3>
-<p>Use when you need to track detailed information about the internal states of the program for detailed visibility. This is the lowest level of category that can be used in production for detailed observation of the PLC program.</p>
-<h3 id="debug-debug">Debug (Debug)</h3>
-<p>Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.</p>
-<h3 id="info-information">Info (Information)</h3>
-<p>Use this category when you want to report a notification that may be of interest to the user, but does not adveresly affect a process.</p>
-<h3 id="notification-information">Notification (Information)</h3>
-<p>Use when you want to deliver information to the user that user needs to be notified, some non essential activity is required.</p>
-<h3 id="warning-warning">Warning (Warning)</h3>
-<p>Use this category when you want to report to the user information about a possible problem that may adversely affect a process.
-Information in this category aims to help the user to identify a problem; the cause of such problem does not necessarily stop the process.</p>
-<h3 id="error-error">Error (Error)</h3>
-<p>Use this category when there is a failure that cannot be immediately recovered and an intervention is needed. This is typically a situation when a device fails to deliver the expected result. Do not use this category to report information about the failed process like measurement or detection.</p>
-<h3 id="programming-error-error">Programming error (Error)</h3>
-<p>Use this category to inform about a possible programming error, defect in settings, or missing information at a level of programming or system or process settings.</p>
-<h3 id="critical--fatal">Critical  (Fatal)</h3>
-<p>Use this category when a critical error occurred, which is not recoverable by software (reset/restore), and a detailed inspection is required (TotalStop, Safety, etc.).</p>
-<h3 id="catastrophic-fatal">Catastrophic (Fatal)</h3>
-<p>Use this category when there is a situation when the device cannot continue operations due to irrecoverable failure.</p>
+<p><a href="../../api/TcoCore/TcoCore.eMessageCategory.html">Message categories</a></p>
 <h2 id="how-to-access-the-message">How to access the message</h2>
-<p>When you try to read the messages from a non-inxton application, you will need to evaluate that the message is valid. The validity of the message can be determined by comparing the equality of <code>TcoObject._mime.Cycle</code> with <code>Context._startCycleCount</code>. When these two values equal, the message is valid. The equality evaluation should occur in the higher-level application, not in the PLC.</p>
+<p>When you try to read the messages from a non-inxton application, you will need to evaluate whether the message is valid. The validity of the message can be determined by comparing the equality of <code>._mime.Cycle</code> with <code>Context._startCycleCount</code>. When these two values equal, the message is valid. The validity of persisted messages is given by the value <code>true</code> of <code>_mime._persists</code> variable. The equality evaluation should occur in the higher-level application, not in the PLC.</p>
 <p><a href="logger.html#tcomessenger-and-tcologger">TcoLogger integration</a></p>
 </article>
           </div>
