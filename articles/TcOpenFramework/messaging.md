@@ -29,6 +29,56 @@ Each object has a single instance of a message holder. This instance is located 
 
 More messages in the same cycle will reflect in the counter `PerCycleCount`, which will be greater than `1`.
 
+## Message persistency - Pinned messages
+
+We can persist static messages using the `Pin` method. The persisting message will be active in the diagnostics (alarm) view until acknowledged by the user. **Pinned message is not able to accept other incoming messages** until acknowledged. Incoming messages are be discarded for the alarm view; such messages will be, however, logged by the context logger when implemented.
+
+You can query the *pin* status of a messenger via `Pinned` property. `Pinned` property returns `true` when the message is *pinned* (active and/or unacknowledged).
+
+#### Usage
+~~~iec
+IF(NOT _message.OnCondition(ar[0]).Error('This is an error').Pinned) THEN
+    _startActuator := TRUE;
+END_IF;
+~~~
+
+### Creating unique pinned messages
+
+If you want to pin a message unequivocally, you should create a separate variable of `TcoMessenger` and activate persistency on that instance of the messenger.
+
+#### Usage
+~~~
+// These vars must be instance members of a block (not temp members of a method or function).
+VAR
+    someMessenger : TcoCore.TcoMessenger(THIS^);
+END_VAR
+someMessenger.Error('This is an error that we want presist').Pin();
+~~~
+
+## Conditional message
+
+Message can be conditionally activated using the `OnCondition` method.
+
+#### Usage
+~~~
+someMessenger.OnContition(hasErrorCondition).Error('This is an error that we want presist');
+
+someOtherMessenger.OnContition(hasErrorCondition).Error('This is an error that we want presist').Pin();
+~~~
+
+## Fluent message content composition
+
+Messenger allows for fluent composition of the messages. The fluent interface is accessible via `Build()` method. You can append text or a value to the message.
+The message will be posted via `As()` method and consequent qualification of the message (e.g. `AsDebug()`). 
+
+> **IMPORTANT**: When you compose a message text with a changing value(s), the context logger (when activated) will log each change as a new log entry. This behavior might be desirable in specific scenarios; however, be aware that message buffer overruns may occur, and the log storage space may come under stress.
+
+### Usage
+
+~~~iec
+Messenger.OnCondition(temperature > 100.0).Build().Append('Water temperature is boiling: ').AppendAny(temperature).As().AsInfo();
+~~~
+
 ## Message structure
 
 | Item          | Description                                              |
@@ -40,49 +90,16 @@ More messages in the same cycle will reflect in the counter `PerCycleCount`, whi
 | Category      | Message category indicating the severity of the message. |
 | Cycle         | Context cycle in which the message was posted.           |
 | PerCycleCount | Counter of messages posted in the same context cycle     |
+| Pinned        | Indicates that the message is persistent                 |
 
 
 ## Message categories
 
-### Trace (Verbose)
+[Message categories](~\api\TcoCore\TcoCore.eMessageCategory.html)
 
-Use when you need to track detailed information about the internal states of the program for detailed visibility. This is the lowest level of category that can be used in production for detailed observation of the PLC program.
-
-### Debug (Debug)
-
-Debug category message to be used for debugging purposes only. Use when you need to report debug information for you as a programmer.
-
-### Info (Information)
-
-Use this category when you want to report a notification that may be of interest to the user, but does not adveresly affect a process.
-
-### Notification (Information)
-
-Use when you want to deliver information to the user that user needs to be notified, some non essential activity is required.
-
-### Warning (Warning)
-
-Use this category when you want to report to the user information about a possible problem that may adversely affect a process.
-Information in this category aims to help the user to identify a problem; the cause of such problem does not necessarily stop the process.
-
-### Error (Error)
-
-Use this category when there is a failure that cannot be immediately recovered and an intervention is needed. This is typically a situation when a device fails to deliver the expected result. Do not use this category to report information about the failed process like measurement or detection.
-
-### Programming error (Error)
-
-Use this category to inform about a possible programming error, defect in settings, or missing information at a level of programming or system or process settings.
-
-### Critical  (Fatal)
-
-Use this category when a critical error occurred, which is not recoverable by software (reset/restore), and a detailed inspection is required (TotalStop, Safety, etc.).
-
-### Catastrophic (Fatal)
-
-Use this category when there is a situation when the device cannot continue operations due to irrecoverable failure.
 
 ## How to access the message
 
-When you try to read the messages from a non-inxton application, you will need to evaluate that the message is valid. The validity of the message can be determined by comparing the equality of `TcoObject._mime.Cycle` with `Context._startCycleCount`. When these two values equal, the message is valid. The equality evaluation should occur in the higher-level application, not in the PLC.
+When you try to read the messages from a non-inxton application, you will need to evaluate whether the message is valid. The validity of the message can be determined by comparing the equality of `._mime.Cycle` with `Context._startCycleCount`. When these two values equal, the message is valid. The validity of persisted messages is given by the value `true` of `_mime._persists` variable. The equality evaluation should occur in the higher-level application, not in the PLC.
 
 [TcoLogger integration](logger.md#tcomessenger-and-tcologger)
