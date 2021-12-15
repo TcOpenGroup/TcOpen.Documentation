@@ -23,7 +23,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 8
@@ -36,6 +36,7 @@ items:
     content: 'public class Dispatcher : IDispatcher'
     content.vb: >-
       Public Class Dispatcher
+
           Implements IDispatcher
   inheritance:
   - System.Object
@@ -70,7 +71,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 10
@@ -96,7 +97,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 15
@@ -127,7 +128,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 21
@@ -165,7 +166,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Invoke
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 31
@@ -203,7 +204,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InvokeAsync
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 41
@@ -240,7 +241,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 46
@@ -272,7 +273,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Get
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 51

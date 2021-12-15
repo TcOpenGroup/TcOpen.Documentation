@@ -19,7 +19,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Role
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 4
@@ -30,6 +30,7 @@ items:
     content: 'public class Role : IdentityRole<string>'
     content.vb: >-
       Public Class Role
+
           Inherits IdentityRole(Of String)
   inheritance:
   - System.Object
@@ -66,7 +67,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DefaultGroup
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 6
@@ -101,7 +102,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 8
@@ -136,7 +137,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ToString
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 16
