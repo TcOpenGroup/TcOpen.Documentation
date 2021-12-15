@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.DataItemValidation
+  commentId: T:TcOpen.Inxton.Data.DataItemValidation
+  id: DataItemValidation
+  parent: TcOpen.Inxton.Data
+  children:
+  - TcOpen.Inxton.Data.DataItemValidation.#ctor(System.String,System.Boolean)
+  - TcOpen.Inxton.Data.DataItemValidation.Error
+  - TcOpen.Inxton.Data.DataItemValidation.Failed
+  langs:
+  - csharp
+  - vb
+  name: DataItemValidation
+  nameWithType: DataItemValidation
+  fullName: TcOpen.Inxton.Data.DataItemValidation
+  type: Class
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: DataItemValidation
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  summary: "\nProvides basic information about the validation state.\n"
+  example: []
+  syntax:
+    content: public class DataItemValidation
+    content.vb: Public Class DataItemValidation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TcOpen.Inxton.Data.DataItemValidation.#ctor(System.String,System.Boolean)
+  commentId: M:TcOpen.Inxton.Data.DataItemValidation.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: TcOpen.Inxton.Data.DataItemValidation
+  langs:
+  - csharp
+  - vb
+  name: DataItemValidation(String, Boolean)
+  nameWithType: DataItemValidation.DataItemValidation(String, Boolean)
+  fullName: TcOpen.Inxton.Data.DataItemValidation.DataItemValidation(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+    startLine: 12
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  summary: "\nCreates new instance of <xref href=\"TcOpen.Inxton.Data.DataItemValidation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public DataItemValidation(string error, bool failed)
+    parameters:
+    - id: error
+      type: System.String
+      description: Error message providing details about failed validation.
+    - id: failed
+      type: System.Boolean
+      description: Indicates that the valiation failed.
+    content.vb: Public Sub New(error As String, failed As Boolean)
+  overload: TcOpen.Inxton.Data.DataItemValidation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.Data.DataItemValidation.Failed
+  commentId: P:TcOpen.Inxton.Data.DataItemValidation.Failed
+  id: Failed
+  parent: TcOpen.Inxton.Data.DataItemValidation
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: DataItemValidation.Failed
+  fullName: TcOpen.Inxton.Data.DataItemValidation.Failed
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Failed
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+    startLine: 21
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  summary: "\nGets failed when the validation failed.\n"
+  example: []
+  syntax:
+    content: public bool Failed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Failed As Boolean
+  overload: TcOpen.Inxton.Data.DataItemValidation.Failed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcOpen.Inxton.Data.DataItemValidation.Error
+  commentId: P:TcOpen.Inxton.Data.DataItemValidation.Error
+  id: Error
+  parent: TcOpen.Inxton.Data.DataItemValidation
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: DataItemValidation.Error
+  fullName: TcOpen.Inxton.Data.DataItemValidation.Error
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Error
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DataItemValidation.cs
+    startLine: 26
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  summary: "\nGet validation error description.\n"
+  example: []
+  syntax:
+    content: public string Error { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Error As String
+  overload: TcOpen.Inxton.Data.DataItemValidation.Error*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TcOpen.Inxton.Data.DataItemValidation
+  commentId: T:TcOpen.Inxton.Data.DataItemValidation
+  name: DataItemValidation
+  nameWithType: DataItemValidation
+  fullName: TcOpen.Inxton.Data.DataItemValidation
+- uid: TcOpen.Inxton.Data.DataItemValidation.#ctor*
+  commentId: Overload:TcOpen.Inxton.Data.DataItemValidation.#ctor
+  name: DataItemValidation
+  nameWithType: DataItemValidation.DataItemValidation
+  fullName: TcOpen.Inxton.Data.DataItemValidation.DataItemValidation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TcOpen.Inxton.Data.DataItemValidation.Failed*
+  commentId: Overload:TcOpen.Inxton.Data.DataItemValidation.Failed
+  name: Failed
+  nameWithType: DataItemValidation.Failed
+  fullName: TcOpen.Inxton.Data.DataItemValidation.Failed
+- uid: TcOpen.Inxton.Data.DataItemValidation.Error*
+  commentId: Overload:TcOpen.Inxton.Data.DataItemValidation.Error
+  name: Error
+  nameWithType: DataItemValidation.Error
+  fullName: TcOpen.Inxton.Data.DataItemValidation.Error

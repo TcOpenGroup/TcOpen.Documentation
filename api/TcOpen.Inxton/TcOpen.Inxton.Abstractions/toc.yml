@@ -6,9 +6,16 @@
     name: IsTask
   - uid: TcoCore.IVortexObjectExtensions
     name: IVortexObjectExtensions
+- uid: TcOpen.Inxton.Abstractions.Input
+  name: TcOpen.Inxton.Abstractions.Input
+  items:
+  - uid: TcOpen.Inxton.Abstractions.Input.ITcoCommand
+    name: ITcoCommand
 - uid: TcOpen.Inxton.Data
   name: TcOpen.Inxton.Data
   items:
+  - uid: TcOpen.Inxton.Data.DataItemValidation
+    name: DataItemValidation
   - uid: TcOpen.Inxton.Data.DateTimeProviderBase
     name: DateTimeProviderBase
   - uid: TcOpen.Inxton.Data.DateTimeProviders
@@ -24,12 +31,21 @@
   - uid: TcOpen.Inxton.Data.IRepository`1
     name: IRepository<T>
     name.vb: IRepository(Of T)
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate<T>
+    name.vb: OnCreateDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate<T>
+    name.vb: OnUpdateDelegate(Of T)
   - uid: TcOpen.Inxton.Data.StandardDateTimeProvider
     name: StandardDateTimeProvider
   - uid: TcOpen.Inxton.Data.UnableToLocateRecordId
     name: UnableToLocateRecordId
   - uid: TcOpen.Inxton.Data.UnableToUpdateRecord
     name: UnableToUpdateRecord
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate<T>
+    name.vb: ValidateDataDelegate(Of T)
 - uid: TcOpen.Inxton.Input
   name: TcOpen.Inxton.Input
   items:
@@ -38,8 +54,8 @@
 - uid: TcOpen.Inxton.Logging
   name: TcOpen.Inxton.Logging
   items:
-  - uid: TcOpen.Inxton.Logging.ITcoLogger
-    name: ITcoLogger
+  - uid: TcOpen.Inxton.Logging.ILogger
+    name: ILogger
 - uid: TcOpen.Inxton.Security
   name: TcOpen.Inxton.Security
   items:

@@ -8,8 +8,12 @@ items:
   - TcOpen.Inxton.Data.IRepository`1.Count
   - TcOpen.Inxton.Data.IRepository`1.Create(System.String,`0)
   - TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
+  - TcOpen.Inxton.Data.IRepository`1.Exists(System.String)
   - TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
   - TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
+  - TcOpen.Inxton.Data.IRepository`1.OnCreate
+  - TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation
+  - TcOpen.Inxton.Data.IRepository`1.OnUpdate
   - TcOpen.Inxton.Data.IRepository`1.Queryable
   - TcOpen.Inxton.Data.IRepository`1.Read(System.String)
   - TcOpen.Inxton.Data.IRepository`1.Update(System.String,`0)
@@ -27,7 +31,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 15
+    startLine: 20
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -65,7 +69,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -100,7 +104,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 18
+    startLine: 23
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -135,7 +139,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 20
+    startLine: 24
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -168,7 +172,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 21
+    startLine: 25
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -181,6 +185,39 @@ items:
   overload: TcOpen.Inxton.Data.IRepository`1.Delete*
   nameWithType.vb: IRepository(Of T).Delete(String)
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Delete(System.String)
+- uid: TcOpen.Inxton.Data.IRepository`1.Exists(System.String)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.Exists(System.String)
+  id: Exists(System.String)
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Exists(String)
+  nameWithType: IRepository<T>.Exists(String)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Exists(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Exists
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 26
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: bool Exists(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Exists(identifier As String) As Boolean
+  overload: TcOpen.Inxton.Data.IRepository`1.Exists*
+  nameWithType.vb: IRepository(Of T).Exists(String)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Exists(System.String)
 - uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
   commentId: M:TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
   id: FilteredCount(System.String)
@@ -199,7 +236,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 22
+    startLine: 27
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -232,7 +269,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecords
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 23
+    startLine: 28
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -269,7 +306,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 24
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -302,7 +339,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 25
+    startLine: 30
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -317,6 +354,108 @@ items:
   overload: TcOpen.Inxton.Data.IRepository`1.Update*
   nameWithType.vb: IRepository(Of T).Update(String, T)
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Update(System.String, T)
+- uid: TcOpen.Inxton.Data.IRepository`1.OnCreate
+  commentId: P:TcOpen.Inxton.Data.IRepository`1.OnCreate
+  id: OnCreate
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: OnCreate
+  nameWithType: IRepository<T>.OnCreate
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnCreate
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: OnCreate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 31
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: OnCreateDelegate<T> OnCreate { get; set; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Data.OnCreateDelegate{{T}}
+    content.vb: Property OnCreate As OnCreateDelegate(Of T)
+  overload: TcOpen.Inxton.Data.IRepository`1.OnCreate*
+  nameWithType.vb: IRepository(Of T).OnCreate
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnCreate
+- uid: TcOpen.Inxton.Data.IRepository`1.OnUpdate
+  commentId: P:TcOpen.Inxton.Data.IRepository`1.OnUpdate
+  id: OnUpdate
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: OnUpdate
+  nameWithType: IRepository<T>.OnUpdate
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnUpdate
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: OnUpdate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 32
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: OnUpdateDelegate<T> OnUpdate { get; set; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Data.OnUpdateDelegate{{T}}
+    content.vb: Property OnUpdate As OnUpdateDelegate(Of T)
+  overload: TcOpen.Inxton.Data.IRepository`1.OnUpdate*
+  nameWithType.vb: IRepository(Of T).OnUpdate
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnUpdate
+- uid: TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation
+  commentId: P:TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation
+  id: OnRecordUpdateValidation
+  parent: TcOpen.Inxton.Data.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: OnRecordUpdateValidation
+  nameWithType: IRepository<T>.OnRecordUpdateValidation
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnRecordUpdateValidation
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: OnRecordUpdateValidation
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 33
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: ValidateDataDelegate<T> OnRecordUpdateValidation { get; set; }
+    parameters: []
+    return:
+      type: TcOpen.Inxton.Data.ValidateDataDelegate{{T}}
+    content.vb: Property OnRecordUpdateValidation As ValidateDataDelegate(Of T)
+  overload: TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation*
+  nameWithType.vb: IRepository(Of T).OnRecordUpdateValidation
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnRecordUpdateValidation
 references:
 - uid: TcOpen.Inxton.Data
   commentId: N:TcOpen.Inxton.Data
@@ -466,6 +605,20 @@ references:
   fullName: TcOpen.Inxton.Data.IRepository<T>.Delete
   nameWithType.vb: IRepository(Of T).Delete
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Delete
+- uid: TcOpen.Inxton.Data.IRepository`1.Exists*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.Exists
+  name: Exists
+  nameWithType: IRepository<T>.Exists
+  fullName: TcOpen.Inxton.Data.IRepository<T>.Exists
+  nameWithType.vb: IRepository(Of T).Exists
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount*
   commentId: Overload:TcOpen.Inxton.Data.IRepository`1.FilteredCount
   name: FilteredCount
@@ -586,3 +739,246 @@ references:
   fullName: TcOpen.Inxton.Data.IRepository<T>.Update
   nameWithType.vb: IRepository(Of T).Update
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Update
+- uid: TcOpen.Inxton.Data.IRepository`1.OnCreate*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.OnCreate
+  name: OnCreate
+  nameWithType: IRepository<T>.OnCreate
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnCreate
+  nameWithType.vb: IRepository(Of T).OnCreate
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnCreate
+- uid: TcOpen.Inxton.Data.OnCreateDelegate{{T}}
+  commentId: T:TcOpen.Inxton.Data.OnCreateDelegate{`0}
+  parent: TcOpen.Inxton.Data
+  definition: TcOpen.Inxton.Data.OnCreateDelegate`1
+  name: OnCreateDelegate<T>
+  nameWithType: OnCreateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateDelegate<T>
+  nameWithType.vb: OnCreateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnCreateDelegate(Of T)
+  name.vb: OnCreateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateDelegate`1
+  name: OnCreateDelegate<T>
+  nameWithType: OnCreateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateDelegate<T>
+  nameWithType.vb: OnCreateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnCreateDelegate(Of T)
+  name.vb: OnCreateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
+    name: OnCreateDelegate
+    nameWithType: OnCreateDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.IRepository`1.OnUpdate*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.OnUpdate
+  name: OnUpdate
+  nameWithType: IRepository<T>.OnUpdate
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnUpdate
+  nameWithType.vb: IRepository(Of T).OnUpdate
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnUpdate
+- uid: TcOpen.Inxton.Data.OnUpdateDelegate{{T}}
+  commentId: T:TcOpen.Inxton.Data.OnUpdateDelegate{`0}
+  parent: TcOpen.Inxton.Data
+  definition: TcOpen.Inxton.Data.OnUpdateDelegate`1
+  name: OnUpdateDelegate<T>
+  nameWithType: OnUpdateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnUpdateDelegate<T>
+  nameWithType.vb: OnUpdateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnUpdateDelegate(Of T)
+  name.vb: OnUpdateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnUpdateDelegate`1
+  name: OnUpdateDelegate<T>
+  nameWithType: OnUpdateDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnUpdateDelegate<T>
+  nameWithType.vb: OnUpdateDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnUpdateDelegate(Of T)
+  name.vb: OnUpdateDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
+    name: OnUpdateDelegate
+    nameWithType: OnUpdateDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository`1.OnRecordUpdateValidation
+  name: OnRecordUpdateValidation
+  nameWithType: IRepository<T>.OnRecordUpdateValidation
+  fullName: TcOpen.Inxton.Data.IRepository<T>.OnRecordUpdateValidation
+  nameWithType.vb: IRepository(Of T).OnRecordUpdateValidation
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).OnRecordUpdateValidation
+- uid: TcOpen.Inxton.Data.ValidateDataDelegate{{T}}
+  commentId: T:TcOpen.Inxton.Data.ValidateDataDelegate{`0}
+  parent: TcOpen.Inxton.Data
+  definition: TcOpen.Inxton.Data.ValidateDataDelegate`1
+  name: ValidateDataDelegate<T>
+  nameWithType: ValidateDataDelegate<T>
+  fullName: TcOpen.Inxton.Data.ValidateDataDelegate<T>
+  nameWithType.vb: ValidateDataDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.ValidateDataDelegate(Of T)
+  name.vb: ValidateDataDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+  commentId: T:TcOpen.Inxton.Data.ValidateDataDelegate`1
+  name: ValidateDataDelegate<T>
+  nameWithType: ValidateDataDelegate<T>
+  fullName: TcOpen.Inxton.Data.ValidateDataDelegate<T>
+  nameWithType.vb: ValidateDataDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.ValidateDataDelegate(Of T)
+  name.vb: ValidateDataDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
+    name: ValidateDataDelegate
+    nameWithType: ValidateDataDelegate
+    fullName: TcOpen.Inxton.Data.ValidateDataDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -5,9 +5,7 @@ items:
   id: IBrowsableDataObject
   parent: TcOpen.Inxton.Data
   children:
-  - TcOpen.Inxton.Data.IBrowsableDataObject._Created
   - TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
-  - TcOpen.Inxton.Data.IBrowsableDataObject._Modified
   - TcOpen.Inxton.Data.IBrowsableDataObject._recordId
   langs:
   - csharp
@@ -68,38 +66,6 @@ items:
   modifiers.csharp:
   - get
   - set
-- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Created
-  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._Created
-  id: _Created
-  parent: TcOpen.Inxton.Data.IBrowsableDataObject
-  langs:
-  - csharp
-  - vb
-  name: _Created
-  nameWithType: IBrowsableDataObject._Created
-  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Created
-  type: Property
-  source:
-    remote:
-      path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _Created
-    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-    startLine: 7
-  assemblies:
-  - TcOpen.Inxton.Abstractions
-  namespace: TcOpen.Inxton.Data
-  syntax:
-    content: DateTime _Created { get; set; }
-    parameters: []
-    return:
-      type: System.DateTime
-    content.vb: Property _Created As Date
-  overload: TcOpen.Inxton.Data.IBrowsableDataObject._Created*
-  modifiers.csharp:
-  - get
-  - set
 - uid: TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
   commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
   id: _EntityId
@@ -132,38 +98,6 @@ items:
   modifiers.csharp:
   - get
   - set
-- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Modified
-  commentId: P:TcOpen.Inxton.Data.IBrowsableDataObject._Modified
-  id: _Modified
-  parent: TcOpen.Inxton.Data.IBrowsableDataObject
-  langs:
-  - csharp
-  - vb
-  name: _Modified
-  nameWithType: IBrowsableDataObject._Modified
-  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Modified
-  type: Property
-  source:
-    remote:
-      path: src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
-    id: _Modified
-    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IBrowsableDataObject.cs
-    startLine: 9
-  assemblies:
-  - TcOpen.Inxton.Abstractions
-  namespace: TcOpen.Inxton.Data
-  syntax:
-    content: DateTime _Modified { get; set; }
-    parameters: []
-    return:
-      type: System.DateTime
-    content.vb: Property _Modified As Date
-  overload: TcOpen.Inxton.Data.IBrowsableDataObject._Modified*
-  modifiers.csharp:
-  - get
-  - set
 references:
 - uid: TcOpen.Inxton.Data
   commentId: N:TcOpen.Inxton.Data
@@ -188,18 +122,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Created*
-  commentId: Overload:TcOpen.Inxton.Data.IBrowsableDataObject._Created
-  name: _Created
-  nameWithType: IBrowsableDataObject._Created
-  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Created
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
 - uid: TcOpen.Inxton.Data.IBrowsableDataObject._EntityId*
   commentId: Overload:TcOpen.Inxton.Data.IBrowsableDataObject._EntityId
   name: _EntityId
@@ -212,8 +134,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: TcOpen.Inxton.Data.IBrowsableDataObject._Modified*
-  commentId: Overload:TcOpen.Inxton.Data.IBrowsableDataObject._Modified
-  name: _Modified
-  nameWithType: IBrowsableDataObject._Modified
-  fullName: TcOpen.Inxton.Data.IBrowsableDataObject._Modified

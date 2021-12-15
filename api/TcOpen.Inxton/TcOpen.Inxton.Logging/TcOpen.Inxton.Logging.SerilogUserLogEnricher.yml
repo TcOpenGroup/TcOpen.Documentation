@@ -104,12 +104,7 @@ items:
   - TcOpen.Inxton.Logging
   namespace: TcOpen.Inxton.Logging
   syntax:
-    content: >-
-      IDisposable UserProperty
-
-      {
-
-      }
+    content: IDisposable UserProperty { }
     parameters: []
     return:
       type: System.IDisposable

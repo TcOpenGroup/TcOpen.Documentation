@@ -8,6 +8,7 @@ items:
   - TcOpen.Inxton.Data.IRepository.Count
   - TcOpen.Inxton.Data.IRepository.Create(System.String,System.Object)
   - TcOpen.Inxton.Data.IRepository.Delete(System.String)
+  - TcOpen.Inxton.Data.IRepository.Exists(System.String)
   - TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
   - TcOpen.Inxton.Data.IRepository.Read(System.String)
   - TcOpen.Inxton.Data.IRepository.Update(System.String,System.Object)
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -56,7 +57,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -89,7 +90,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -120,7 +121,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -131,6 +132,37 @@ items:
       type: System.String
     content.vb: Sub Delete(identifier As String)
   overload: TcOpen.Inxton.Data.IRepository.Delete*
+- uid: TcOpen.Inxton.Data.IRepository.Exists(System.String)
+  commentId: M:TcOpen.Inxton.Data.IRepository.Exists(System.String)
+  id: Exists(System.String)
+  parent: TcOpen.Inxton.Data.IRepository
+  langs:
+  - csharp
+  - vb
+  name: Exists(String)
+  nameWithType: IRepository.Exists(String)
+  fullName: TcOpen.Inxton.Data.IRepository.Exists(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Exists
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 14
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: bool Exists(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Exists(identifier As String) As Boolean
+  overload: TcOpen.Inxton.Data.IRepository.Exists*
 - uid: TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
   commentId: M:TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
   id: FilteredCount(System.String)
@@ -149,7 +181,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -180,7 +212,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -211,7 +243,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 12
+    startLine: 17
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -272,6 +304,18 @@ references:
   name: Delete
   nameWithType: IRepository.Delete
   fullName: TcOpen.Inxton.Data.IRepository.Delete
+- uid: TcOpen.Inxton.Data.IRepository.Exists*
+  commentId: Overload:TcOpen.Inxton.Data.IRepository.Exists
+  name: Exists
+  nameWithType: IRepository.Exists
+  fullName: TcOpen.Inxton.Data.IRepository.Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: TcOpen.Inxton.Data.IRepository.FilteredCount*
   commentId: Overload:TcOpen.Inxton.Data.IRepository.FilteredCount
   name: FilteredCount

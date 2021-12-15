@@ -4,7 +4,7 @@ items:
   commentId: N:TcOpen.Inxton.Logging
   id: TcOpen.Inxton.Logging
   children:
-  - TcOpen.Inxton.Logging.ITcoLogger
+  - TcOpen.Inxton.Logging.ILogger
   langs:
   - csharp
   - vb
@@ -15,8 +15,8 @@ items:
   assemblies:
   - TcOpen.Inxton.Abstractions
 references:
-- uid: TcOpen.Inxton.Logging.ITcoLogger
-  commentId: T:TcOpen.Inxton.Logging.ITcoLogger
-  name: ITcoLogger
-  nameWithType: ITcoLogger
-  fullName: TcOpen.Inxton.Logging.ITcoLogger
+- uid: TcOpen.Inxton.Logging.ILogger
+  commentId: T:TcOpen.Inxton.Logging.ILogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: TcOpen.Inxton.Logging.ILogger
