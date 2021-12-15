@@ -6,6 +6,11 @@
 
 # TcOpen
 
+## Quick links
+
+### [ARTICLES](~/articles/intro.md)
+### [API](~/api/index.md)
+
 ## What is TcOpen?
 
 Open Source TwinCAT 3.1 code by Automation Professionals for Automation Professionals.  

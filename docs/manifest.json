@@ -538,6 +538,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.DataBrowser-1.yml",
       "output": {
@@ -550,6 +553,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.DataBrowser.yml",
       "output": {
@@ -586,6 +592,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.InMemoryRepository-1.yml",
       "output": {
@@ -598,6 +607,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.InMemoryRepositorySettings-1.yml",
       "output": {
@@ -640,9 +652,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.InMemory.yml",
       "output": {
@@ -655,6 +664,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.Json.JsonRepository-1.yml",
       "output": {
@@ -667,6 +679,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.Json.JsonRepositorySettings-1.yml",
       "output": {
@@ -703,9 +718,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.MongoDbRepository-1.yml",
       "output": {
@@ -718,9 +730,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings-1.yml",
       "output": {
@@ -748,18 +757,24 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.MongoDb.html",
-          "hash": "S75rEJC8jTCIwFb0YtcujQ=="
+          "hash": "Yfp091Utfa83OQs2LrKmGQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.RepositoryBase-1.yml",
       "output": {
@@ -772,6 +787,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.RepositoryNotInitializedException.yml",
       "output": {
@@ -801,13 +819,16 @@
       "output": {
         ".html": {
           "relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcOpen.Inxton.Data.html",
-          "hash": "Vn+oJEBtsxsheerVSSL2xA=="
+          "hash": "+jS2x8+XfP8KYC+6IIkuFw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.BrowsableObjectCreationException.yml",
       "output": {
@@ -832,9 +853,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.DataViewModel-1.yml",
       "output": {
@@ -847,9 +865,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.DataViewModel.yml",
       "output": {
@@ -874,9 +889,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.Entry.yml",
       "output": {
@@ -904,6 +916,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.HumanizeDateConverter.yml",
       "output": {
@@ -916,9 +931,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ICrudDataObject.yml",
       "output": {
@@ -943,9 +955,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IMAIN.yml",
       "output": {
@@ -1060,6 +1069,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IShadowTcoDataTwinController.yml",
       "output": {
@@ -1072,6 +1084,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.IShadowTcoEntity.yml",
       "output": {
@@ -1123,6 +1138,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ITcoEntity.yml",
       "output": {
@@ -1147,9 +1165,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.MainContext.yml",
       "output": {
@@ -1162,9 +1177,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ModeConverter.yml",
       "output": {
@@ -1192,6 +1204,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.NullToVisibilityConverter.yml",
       "output": {
@@ -1354,9 +1369,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchange.yml",
       "output": {
@@ -1369,6 +1381,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchangeControlView.yml",
       "output": {
@@ -1381,9 +1396,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataExchangeControlViewModel.yml",
       "output": {
@@ -1462,9 +1474,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.TcoDataTwinController.yml",
       "output": {
@@ -1489,9 +1498,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ValueChangeItem.yml",
       "output": {
@@ -1519,9 +1525,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ValueItemDescriptor.yml",
       "output": {
@@ -1534,6 +1537,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.ViewMode.yml",
       "output": {
@@ -1570,12 +1576,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcOpen.Inxton/TcOpen.Inxton.Data/TcoData.html",
-          "hash": "SbiduWK1ERWAKF59d+Db3A=="
+          "hash": "l5q5EjIyo1ML0mFyNuQQTw=="
         }
       },
       "is_incremental": false,
@@ -4024,9 +4033,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.DataBrowser-1.yml",
       "output": {
@@ -4039,9 +4045,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.DataBrowser.yml",
       "output": {
@@ -4084,9 +4087,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.InMemoryRepository-1.yml",
       "output": {
@@ -4099,9 +4099,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.InMemoryRepositorySettings-1.yml",
       "output": {
@@ -4138,6 +4135,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.InMemory.yml",
       "output": {
@@ -4150,9 +4150,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.Json.JsonRepository-1.yml",
       "output": {
@@ -4165,9 +4162,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.Json.JsonRepositorySettings-1.yml",
       "output": {
@@ -4222,6 +4216,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.MongoDbRepository-1.yml",
       "output": {
@@ -4234,6 +4231,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.MongoDbRepositorySettings-1.yml",
       "output": {
@@ -4258,24 +4258,18 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcOpen.Inxton.Data.MongoDb.html",
-          "hash": "QLZ5TEMou1EQ5o4u9SRR4g=="
+          "hash": "xSgI1eYcUJHdtdqzXc9tFQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.RepositoryBase-1.yml",
       "output": {
@@ -4288,9 +4282,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcOpen.Inxton.Data.RepositoryNotInitializedException.yml",
       "output": {
@@ -4326,16 +4317,13 @@
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcOpen.Inxton.Data.html",
-          "hash": "5k1bAmXfXntcygVKZmkLyg=="
+          "hash": "z1gKKVqJU17wIEAGjOuq+w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.BrowsableObjectCreationException.yml",
       "output": {
@@ -4363,6 +4351,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.DataViewModel-1.yml",
       "output": {
@@ -4375,6 +4366,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.DataViewModel.yml",
       "output": {
@@ -4387,6 +4381,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.Entry.yml",
       "output": {
@@ -4411,9 +4408,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.HumanizeDateConverter.yml",
       "output": {
@@ -4426,6 +4420,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ICrudDataObject.yml",
       "output": {
@@ -4438,6 +4435,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IMAIN.yml",
       "output": {
@@ -4531,9 +4531,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IShadowTcoDataTwinController.yml",
       "output": {
@@ -4546,9 +4543,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.IShadowTcoEntity.yml",
       "output": {
@@ -4615,9 +4609,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ITcoEntity.yml",
       "output": {
@@ -4657,6 +4648,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.MainContext.yml",
       "output": {
@@ -4669,6 +4663,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ModeConverter.yml",
       "output": {
@@ -4693,9 +4690,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.NullToVisibilityConverter.yml",
       "output": {
@@ -4852,6 +4846,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchange.yml",
       "output": {
@@ -4864,9 +4861,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchangeControlView.yml",
       "output": {
@@ -4879,6 +4873,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataExchangeControlViewModel.yml",
       "output": {
@@ -4984,6 +4981,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.TcoDataTwinController.yml",
       "output": {
@@ -5023,6 +5023,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ValueChangeItem.yml",
       "output": {
@@ -5047,6 +5050,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ValueItemDescriptor.yml",
       "output": {
@@ -5059,9 +5065,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.ViewMode.yml",
       "output": {
@@ -5074,15 +5077,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/TcoData/TcoData.yml",
       "output": {
         ".html": {
           "relative_path": "api/TcoData/TcoData.html",
-          "hash": "NUIsT3/+iOlGBgdNS3cEjg=="
+          "hash": "oEwQGBOgIunG2FvzIiCpjQ=="
         }
       },
       "is_incremental": false,
@@ -8181,7 +8181,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Component.html",
-          "hash": "qwsqYdFjPnscRVheh2VyXg=="
+          "hash": "3u19wryikQE/OgNGA5+X5A=="
         }
       },
       "is_incremental": false,
@@ -8193,7 +8193,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Conventions/Conventions.html",
-          "hash": "HOKdxt4TOpqKC4CyMJ14WQ=="
+          "hash": "Xo+rfiUMLKRs71tWkLIgPg=="
         }
       },
       "is_incremental": false,
@@ -8205,7 +8205,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Colors_wpf.html",
-          "hash": "ygg11dD4M7/235TiWkmvKw=="
+          "hash": "OrYx3KHlMZ36E7quiVr5+Q=="
         }
       },
       "is_incremental": false,
@@ -8217,7 +8217,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/InxtonConventions.html",
-          "hash": "+FfeiFlltSCh3ZSDMcdS8w=="
+          "hash": "wzPlSWY3tieXeQ0zevAjeA=="
         }
       },
       "is_incremental": false,
@@ -8229,7 +8229,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Inxton_vortex_framework_blazor/Custom_libraries.html",
-          "hash": "i4wE15gSYJABtZM3A7kUgg=="
+          "hash": "6IHzz/etqQrqgpMR/erGVw=="
         }
       },
       "is_incremental": false,
@@ -8241,7 +8241,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Inxton_vortex_framework_blazor/Inxton_vortex_framework_blazor.html",
-          "hash": "xn4/c+T++yzQJdJWHds8Bg=="
+          "hash": "k5WSU5lIzQG/srOREjd6gA=="
         }
       },
       "is_incremental": false,
@@ -8253,7 +8253,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Inxton_vortex_framework_blazor/Layouts.html",
-          "hash": "7HJ9rH5kh+cG4jcBIlnhhg=="
+          "hash": "c3djCF/cmD2XVR0nJjgP1A=="
         }
       },
       "is_incremental": false,
@@ -8265,7 +8265,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Inxton_vortex_framework_blazor/Renderablecontentcontrol.html",
-          "hash": "7pmzMpptA0OBMDLh/B6BGg=="
+          "hash": "rvs8l/OlWAYLAzxEAwcoIA=="
         }
       },
       "is_incremental": false,
@@ -8280,7 +8280,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Inxton/Inxton_vortex_framework_blazor/Security.html",
-          "hash": "PfU5LP2YSpLLd8a3Z1U2aw=="
+          "hash": "QJYR5YczfiXOAGCGkKXyDw=="
         }
       },
       "is_incremental": false,
@@ -8419,134 +8419,15 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/Context001.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/Context001.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/Context003.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/Context003.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.md",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/Introduction.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/article.html",
-          "hash": "6PklENS2yfFVF00MjSxVWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/article.html",
-          "hash": "CogTFNH9GboFVYQFU5CJ+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/install_library.gif",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/install_library.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/open_dependencies.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/open_dependencies.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/tcolibrary.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/How_to_include_tcopen_in_a_project/assets/tcolibrary.png"
+          "relative_path": "articles/TcOpenFramework/TcoCore/Introduction.html",
+          "hash": "xc29QTl5v9nkwMoOw/tVKA=="
         }
       },
       "is_incremental": false,
@@ -8557,88 +8438,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.md",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoComponent.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/How_to_write_a_sequence/article.html",
-          "hash": "SA5xU7aOS7By49RbY8zb1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TaskDiagram001.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TaskDiagram001.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TaskDiagram003.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TaskDiagram003.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TaskDiagram003_simple.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TaskDiagram003_simple.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TcOpenApplicationOverview.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TcOpenApplicationOverview.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TcoComponent-serviceable.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TcoComponent-serviceable.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TcoComponent.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TcoComponent.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "articles/TcOpenFramework/TcoSequecer-simple-transitions.png",
-      "output": {
-        "resource": {
-          "relative_path": "articles/TcOpenFramework/TcoSequecer-simple-transitions.png"
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoComponent.html",
+          "hash": "/eDYRq/QxQadZz3mtuSysw=="
         }
       },
       "is_incremental": false,
@@ -8649,11 +8453,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/application.md",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoContext.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/application.html",
-          "hash": "CLWw7gpo+dqcXEdOOjrs5w=="
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoContext.html",
+          "hash": "Pkt0o7aSWqCAKiSHINt7KQ=="
         }
       },
       "is_incremental": false,
@@ -8664,11 +8468,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/logger.md",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoLogger.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/logger.html",
-          "hash": "wI6tibz5D1JtUt4UGnk0IA=="
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoLogger.html",
+          "hash": "d+XFc4VutsjZ2/i2hiGNhA=="
         }
       },
       "is_incremental": false,
@@ -8679,11 +8483,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "articles/TcOpenFramework/messaging.md",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoMessenger.md",
       "output": {
         ".html": {
-          "relative_path": "articles/TcOpenFramework/messaging.html",
-          "hash": "u2o96stGZEhTM3mOX4EvLQ=="
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoMessenger.html",
+          "hash": "0wkU6zRJNCBSELbVoov6ug=="
         }
       },
       "is_incremental": false,
@@ -8693,12 +8497,298 @@
       "log_codes": [
         "InvalidFileLink"
       ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoObject.html",
+          "hash": "sbs3UHFl5HCTkRrSOQXqjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoSequencer.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoSequencer.html",
+          "hash": "bDOUlVy4lC8Ev1DA60+UGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoState.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoState.html",
+          "hash": "9DzHwXEAQcfObK176vM6HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/TcoTask.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/TcoTask.html",
+          "hash": "rPvqBlXgd9tyxaZAytND3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/Context001.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/Context001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/Context003.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/Context003.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram001.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram003.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram003.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram003_simple.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TaskDiagram003_simple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TcOpenApplicationOverview.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TcOpenApplicationOverview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoComponent-serviceable.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoComponent-serviceable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoComponent.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoComponent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoSequecer-simple-transitions.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/TcoCore/assets/TcoSequecer-simple-transitions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_get_started_using_tcopen_libraries/article.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_get_started_using_tcopen_libraries/article.html",
+          "hash": "2dsRRB/QyBE16CKkjYbm7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_get_started_using_tcopen_libraries/assets/plc_visual_studio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/article.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/article.html",
+          "hash": "OOzGPwVZA/hHb9oz84QjHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/add-reference-context-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/install_library.gif",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/install_library.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/open_dependencies.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/open_dependencies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/plc_visual_studio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/qs_use-02-managenugetpackages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/qs_use-03-newtonsoftjson.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/tcolibrary.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_include_tcopen_in_a_project/assets/tcolibrary.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/TcOpenFramework/howtos/How_to_write_a_sequence/article.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TcOpenFramework/howtos/How_to_write_a_sequence/article.html",
+          "hash": "EI46KjuWzLUBN3Xe+And2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "skpB5R+rJ1WZhYCZYH5sww=="
+          "hash": "lh87dMSht19lMQvXcz4fWQ=="
         }
       },
       "is_incremental": false,
@@ -8721,7 +8811,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "t1g1EHGDHev9mSiu7GYf3g=="
+          "hash": "/KC6cZ4A/T1zMgnQbDn6nQ=="
         }
       },
       "is_incremental": false,
@@ -8742,7 +8832,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 25,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
