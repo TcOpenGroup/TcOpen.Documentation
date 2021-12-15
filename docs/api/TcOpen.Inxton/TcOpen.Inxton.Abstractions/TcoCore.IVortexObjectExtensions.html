@@ -2106,6 +2106,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetChildren&lt;T&gt;(this IVortexObject obj)
+
     where T : IVortexObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2174,6 +2175,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetChildren&lt;T&gt;(this IVortexObject obj, IEnumerable&lt;object&gt; excluding)
+
     where T : IVortexObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2243,6 +2245,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetDescendants&lt;T&gt;(this IVortexObject obj, IList&lt;T&gt; children = null)
+
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2318,6 +2321,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetDescendants&lt;T&gt;(this IVortexObject obj, int depth, IList&lt;T&gt; children = null, int currentDepth = 0)
+
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2407,6 +2411,7 @@ type. When the root object <span class="xref">Vortex.Connector.IConnector</span>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T GetParent&lt;T&gt;(this IVortexObject obj, T parent = null)
+
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

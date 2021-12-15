@@ -38,6 +38,7 @@ items:
   syntax:
     content: >-
       public interface IRepository<T>
+
           where T : IBrowsableDataObject
     typeParameters:
     - id: T

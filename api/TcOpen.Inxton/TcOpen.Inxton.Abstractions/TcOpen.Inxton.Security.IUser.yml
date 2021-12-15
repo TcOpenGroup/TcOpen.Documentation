@@ -21,7 +21,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 4
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanUserChangePassword
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 6
@@ -84,7 +84,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Email
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 7
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Level
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 8
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Roles
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 9
@@ -180,7 +180,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserName
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 10

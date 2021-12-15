@@ -17,7 +17,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DuplicateIdException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 4
@@ -28,7 +28,9 @@ items:
     content: 'public class DuplicateIdException : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class DuplicateIdException
+
           Inherits Exception
+
           Implements ISerializable, _Exception
   inheritance:
   - System.Object
@@ -77,7 +79,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 6
