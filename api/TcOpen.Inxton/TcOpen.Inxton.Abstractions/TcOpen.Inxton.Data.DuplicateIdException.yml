@@ -17,7 +17,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DuplicateIdException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 4
@@ -77,7 +77,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 6
