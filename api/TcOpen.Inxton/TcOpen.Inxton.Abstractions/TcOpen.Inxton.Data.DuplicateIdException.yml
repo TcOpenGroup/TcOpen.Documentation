@@ -28,9 +28,7 @@ items:
     content: 'public class DuplicateIdException : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class DuplicateIdException
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object

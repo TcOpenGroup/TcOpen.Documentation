@@ -34,9 +34,7 @@ items:
     content: 'public class AuthenticationServiceNotActiveException : SecurityException, ISerializable, _Exception'
     content.vb: >-
       Public Class AuthenticationServiceNotActiveException
-
           Inherits SecurityException
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object

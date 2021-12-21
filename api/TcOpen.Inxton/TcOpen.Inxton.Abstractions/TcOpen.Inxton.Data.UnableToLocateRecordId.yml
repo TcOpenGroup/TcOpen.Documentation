@@ -28,9 +28,7 @@ items:
     content: 'public class UnableToLocateRecordId : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class UnableToLocateRecordId
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object

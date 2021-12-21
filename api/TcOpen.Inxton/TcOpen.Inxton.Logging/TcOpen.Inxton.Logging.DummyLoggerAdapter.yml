@@ -42,7 +42,6 @@ items:
     content: 'public class DummyLoggerAdapter : ILogger'
     content.vb: >-
       Public Class DummyLoggerAdapter
-
           Implements ILogger
   inheritance:
   - System.Object

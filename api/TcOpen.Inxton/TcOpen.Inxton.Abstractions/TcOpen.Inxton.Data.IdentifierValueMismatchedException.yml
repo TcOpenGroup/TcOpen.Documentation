@@ -33,9 +33,7 @@ items:
     content: 'public class IdentifierValueMismatchedException : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class IdentifierValueMismatchedException
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object

@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -1998,7 +1995,19 @@
   
   <h1 id="PlcDocu_TcoData_TcoDataExchange" data-uid="PlcDocu.TcoData.TcoDataExchange" class="text-break">Class TcoDataExchange
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a mechanism to exchange data between PLC and an arbitrary data repository.
+TcoDataExchange support Create, Read, Update, Delete (CRUD) operations and some additional
+functions.
+TcoDataExchange <strong>operates by convention on data member named <code>_data</code></strong> declared in the function block.
+The <code>_data</code> member must be of type that extends <code>TcoData.TcoEntity</code>.	
+TcoDataEchange must be then inizialized in the higher level application where the repository
+and remote data exchange is configured.		
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -2054,6 +2063,35 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class TcoDataExchange : TcoObject</code></pre>
   </div>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-pas" name="Declarations">// Function block for data maipulation must extend from TcoData.TcoDataExchange.
+FUNCTION_BLOCK TcoDataManager EXTENDS TcoData.TcoDataExchange
+VAR
+    // This is the structure that contains the actual data we will work with. The `STRUCT` must extend `TcoData.TcoEntity`
+    _data : SandboxData;
+END_VAR
+</code></pre><pre><code class="lang-pas" name="SuperCall">
+// IMPLEMENTATION BODY OF FUNCTION BLOCK
+
+// IMPORTANT: SUPER CALL HERE IS REQUIRED TO CALL THE DATA MANAGER TASKS!!!
+SUPER^();
+
+</code></pre><pre><code class="lang-pas" name="Data">
+// DATA STRUCTURE ELIGIBLE FOR USE WITH TcoDataExchange.
+TYPE
+    SandboxData EXTENDS TcoData.TcoEntity :
+    STRUCT
+        sampleData : SampleDataStructure;
+        someInteger : INT;
+        someString : STRING;
+    END_STRUCT
+END_TYPE
+</code></pre><pre><code class="lang-csharp" name="Main">repository = new MongoDbRepository&lt;PlainSandboxData&gt;
+    (new MongoDbRepositorySettings&lt;PlainSandboxData&gt;(&quot;mongodb://localhost:27017&quot;, &quot;MyExampleDatabase&quot;, &quot;MyExampleCollection&quot;));
+
+Entry.TcoDataTests.MAIN.sandbox.DataManager.InitializeRepository(repository);
+Entry.TcoDataTests.MAIN.sandbox.DataManager.InitializeRemoteDataExchange();
+</code></pre>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
@@ -2061,7 +2099,7 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__ctor.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L16">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L248">View Source</a>
   </span>
   <a id="PlcDocu_TcoData_TcoDataExchange__ctor_" data-uid="PlcDocu.TcoData.TcoDataExchange.#ctor*"></a>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__ctor" data-uid="PlcDocu.TcoData.TcoDataExchange.#ctor">TcoDataExchange()</h4>
@@ -2079,10 +2117,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__createOrUpdateTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._createOrUpdateTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L14">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L246">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__createOrUpdateTask" data-uid="PlcDocu.TcoData.TcoDataExchange._createOrUpdateTask">_createOrUpdateTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>creates inexisting or updates existing</code> record in the repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2108,10 +2147,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__createTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._createTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L9">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L216">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__createTask" data-uid="PlcDocu.TcoData.TcoDataExchange._createTask">_createTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>creates</code> the entry into repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2137,10 +2177,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__deleteTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._deleteTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L12">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L234">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__deleteTask" data-uid="PlcDocu.TcoData.TcoDataExchange._deleteTask">_deleteTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>deletes</code> record from the repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2166,10 +2207,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__idExistsTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._idExistsTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L13">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L240">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__idExistsTask" data-uid="PlcDocu.TcoData.TcoDataExchange._idExistsTask">_idExistsTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>check for existence</code> of a record with an <code>id</code> in the repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2195,10 +2237,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__readTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._readTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L10">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L222">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__readTask" data-uid="PlcDocu.TcoData.TcoDataExchange._readTask">_readTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>reads</code> the entry from repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2224,10 +2267,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange__updateTask.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange._updateTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L11">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L228">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataExchange__updateTask" data-uid="PlcDocu.TcoData.TcoDataExchange._updateTask">_updateTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance of task that <code>updates</code> record in the repository.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2248,6 +2292,421 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_Create_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.Create(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L55">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_Create_" data-uid="PlcDocu.TcoData.TcoDataExchange.Create*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_Create_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.Create(System.Object)">Create(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates new entry in the Repository from <code>_data</code> member of this <code>TcoDataExchange</code>.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic Create(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry to be created in the repository.
+</summary>			
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type ITcoTaskStatus; Twin type: <see cref="!:ITcoTaskStatus"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_Create_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main">// Will create new entry into repository with data contained in the `_data` 
+IF(DataManager.Create(recordId_1).Done) THEN
+    DataManager.Messenger.Build().Append('Record ').Append(recordId_1).Append(' created.').As().AsInfo();
+END_IF;
+</code></pre>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_CreateOrUpdate_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.CreateOrUpdate(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L85">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_CreateOrUpdate_" data-uid="PlcDocu.TcoData.TcoDataExchange.CreateOrUpdate*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_CreateOrUpdate_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.CreateOrUpdate(System.Object)">CreateOrUpdate(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates or updates new entry in the Repository from <code>_data</code> member of this <code>TcoDataExchange</code>.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic CreateOrUpdate(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry to be created or updated in the repository.
+</summary>			
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type ITcoTaskStatus; Twin type: <see cref="!:ITcoTaskStatus"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_CreateOrUpdate_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main"></code></pre>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_Delete_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.Delete(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L115">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_Delete_" data-uid="PlcDocu.TcoData.TcoDataExchange.Delete*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_Delete_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.Delete(System.Object)">Delete(Object)</h4>
+  <div class="markdown level1 summary"><p>Deletes an item from the repository.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic Delete(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry to be deleted from the repository.
+</summary>			
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type ITcoTaskStatus; Twin type: <see cref="!:ITcoTaskStatus"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_Delete_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main">IF(DataManager.Delete(recordId_1).Done) THEN
+    DataManager.Messenger.Build().Append('Record ').Append(recordId_1).Append(' deleted.').As().AsInfo();
+END_IF;		
+</code></pre>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_Exists_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.Exists(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L145">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_Exists_" data-uid="PlcDocu.TcoData.TcoDataExchange.Exists*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_Exists_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.Exists(System.Object)">Exists(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines if the entry with given <code>Identifier</code> exists in the repository.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic Exists(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry for which the existence is to be checked.
+</summary>								
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type TcoExistsTask; Twin type: <a class="xref" href="PlcDocu.TcoData.TcoExistsTask.html">TcoExistsTask</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_Exists_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main">IF(DataManager.Exists(recordId_2).Done) THEN
+    DataManager.Messenger.Clear();
+    IF(DataManager.Exists(recordId_2).Exists) THEN
+        DataManager.Messenger.Build().Append('Record ').Append(recordId_2).Append(' exists.').As().AsInfo();
+    ELSE	
+        DataManager.Messenger.Build().Append('Record ').Append(recordId_2).Append(' does not exists.').As().AsInfo();	
+    END_IF
+END_IF		
+</code></pre>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_Read_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.Read(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L175">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_Read_" data-uid="PlcDocu.TcoData.TcoDataExchange.Read*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_Read_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.Read(System.Object)">Read(Object)</h4>
+  <div class="markdown level1 summary"><p>Reads data from the repository and stores it into <code>_data</code> member of this instance of <code>TcoDataExchange</code>.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic Read(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry to be retrieved from the repoository.
+</summary>								
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type ITcoTaskStatus; Twin type: <see cref="!:ITcoTaskStatus"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_Read_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main">IF(DataManager.Read(recordId_1).Done) THEN
+    DataManager.Messenger.Build()
+                         .Append('Record ')
+                         .Append(recordId_1)
+                         .Append(' read.')								 
+                         .AppendAny(DataManager.Data.sampleData.SampleInt)
+                         .Append(';')
+                         .Append(DataManager.Data.sampleData.SampleString)
+                         .Append(';')
+                         .AppendAny(DataManager.Data.sampleData.SampleNestedStructure.SampleLREAL)
+                         .As().AsInfo();						
+END_IF;	
+</code></pre>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange_Update_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange.Update(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L205">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataExchange_Update_" data-uid="PlcDocu.TcoData.TcoDataExchange.Update*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataExchange_Update_System_Object_" data-uid="PlcDocu.TcoData.TcoDataExchange.Update(System.Object)">Update(Object)</h4>
+  <div class="markdown level1 summary"><p>Updates data in the repository from <code>_data</code> member of this instance of <code>TcoDataExchange</code>.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic Update(dynamic Identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">Identifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	Identifier of the data entry to be updated.
+</summary>								
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type ITcoTaskStatus; Twin type: <see cref="!:ITcoTaskStatus"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataExchange_Update_System_Object__examples">Examples</h5>
+  <pre><code class="lang-pas" name="Main">
+    DataManager.Data.sampleData.SampleInt := 33;
+    DataManager.Data.sampleData.SampleString := 'Max';
+    DataManager.Data.sampleData.SampleNestedStructure.SampleLREAL := 1;
+    IF(DataManager.Update(recordId_1).Done) THEN
+        DataManager.Messenger.Build().Append('Record ').Append(recordId_1).Append(' updated.').As().AsInfo();
+    END_IF;
+
+</code></pre>
 </article>
           </div>
           
@@ -2259,7 +2718,7 @@
                     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataExchange.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataExchange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataExchange.g.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

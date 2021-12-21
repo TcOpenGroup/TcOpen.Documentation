@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -2000,18 +1997,18 @@
   </h1>
   <div class="markdown level0 summary"><p>Root construction container, provides context information for <code>TcoObjects</code> declared within its scope.
 This function block is <code>abstract</code> and cannot be instantiated.
-Use <see cref="!:TcoContext.PlcTcoContext.Run()"></see> to run this context, <code>Run</code> method must be called only once per PLC Task cycle.
+Use <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_Run">Run()</a> to run this context, <code>Run</code> method must be called only once per PLC Task cycle.
 Several 'TcoContext' instances can be declared and called inside one TwinCAT PlcTask, but only once per PLC cycle.
 The instance should not be accessed from several Twincat PlcTasks.
-Default implemenation of the 'TcoContext' allows its child members access properties <see cref="!:TcoContext.PlcTcoContext.StartCycleCount()"></see>
-and <see cref="!:TcoContext.PlcTcoContext.EndCycleCount()"></see>, messenger settings, rtc and other information related to the context of the running logic.</p>
+Default implemenation of the 'TcoContext' allows its child members access properties <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_StartCycleCount">StartCycleCount</a>
+and <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_EndCycleCount">EndCycleCount</a>, messenger settings, rtc and other information related to the context of the running logic.</p>
 <div class="TIP"><h5>tip</h5><p>
 	 A <code>TcoContext</code> can contain objects, components and PLC logic of one independent station of the machine, 
 	 while the another one can cover the same for another station.			
 </p></div>
 <remarks>			
 <div class="TIP"><h5>tip</h5><p>
-	TwinCAT PlcTask and <see cref="!:TcoTask.PlcTcoTask()"></see> refer to two different concepts. 
+	TwinCAT PlcTask and <a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask__ctor">TcoTask()</a> refer to two different concepts. 
 </p></div>
 </remarks>
 </div>
@@ -2176,7 +2173,7 @@ _isDifferentIndentity :=
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoContext__ctor.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoContext.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoContext.g.cs/#L282">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoContext.g.cs/#L283">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext__ctor_" data-uid="PlcDocu.TcoCore.TcoContext.#ctor*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext__ctor" data-uid="PlcDocu.TcoCore.TcoContext.#ctor">TcoContext()</h4>
@@ -2395,6 +2392,35 @@ it allows to identify the context in SCADA like applications.</p>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoContext__timeSychnMessenger.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoContext._timeSychnMessenger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoContext.g.cs/#L281">View Source</a>
+  </span>
+  <h4 id="PlcDocu_TcoCore_TcoContext__timeSychnMessenger" data-uid="PlcDocu.TcoCore.TcoContext._timeSychnMessenger">_timeSychnMessenger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TcoMessenger _timeSychnMessenger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PlcDocu.TcoCore.TcoMessenger.html">TcoMessenger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -2406,7 +2432,7 @@ it allows to identify the context in SCADA like applications.</p>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_Context_" data-uid="PlcDocu.TcoCore.TcoContext.Context*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_Context" data-uid="PlcDocu.TcoCore.TcoContext.Context">Context</h4>
-  <div class="markdown level1 summary"><p>Returns reference to this instance of the <see cref="!:TcoContext.PlcTcoContext()"></see>.</p>
+  <div class="markdown level1 summary"><p>Returns reference to this instance of the <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext__ctor">TcoContext()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2439,7 +2465,7 @@ public dynamic Context { get; }</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_EndCycleCount_" data-uid="PlcDocu.TcoCore.TcoContext.EndCycleCount*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_EndCycleCount" data-uid="PlcDocu.TcoCore.TcoContext.EndCycleCount">EndCycleCount</h4>
-  <div class="markdown level1 summary"><p>Gets the value of the counter incrememented by '1' at the end of each execution of this <see cref="!:TcoContext.PlcTcoContext()"></see>.</p>
+  <div class="markdown level1 summary"><p>Gets the value of the counter incrememented by '1' at the end of each execution of this <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext__ctor">TcoContext()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2472,7 +2498,7 @@ public dynamic EndCycleCount { get; }</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_Identity_" data-uid="PlcDocu.TcoCore.TcoContext.Identity*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_Identity" data-uid="PlcDocu.TcoCore.TcoContext.Identity">Identity</h4>
-  <div class="markdown level1 summary"><p>Returns the identity of this <see cref="!:TcoContext.PlcTcoContext()"></see>.
+  <div class="markdown level1 summary"><p>Returns the identity of this <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext__ctor">TcoContext()</a>.
 This value is assigned when instantiated and cannot be changed at runtime.
 This member is used in the higher level applications.</p>
 </div>
@@ -2540,7 +2566,7 @@ public dynamic Logger { get; }</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_StartCycleCount_" data-uid="PlcDocu.TcoCore.TcoContext.StartCycleCount*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_StartCycleCount" data-uid="PlcDocu.TcoCore.TcoContext.StartCycleCount">StartCycleCount</h4>
-  <div class="markdown level1 summary"><p>Gets number of executions of this context. Value of this property is incremented by '1' at the beginning of the <see cref="!:TcoContext.PlcTcoContext()"></see>.</p>
+  <div class="markdown level1 summary"><p>Gets number of executions of this context. Value of this property is incremented by '1' at the beginning of the <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext__ctor">TcoContext()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2575,7 +2601,7 @@ public dynamic StartCycleCount { get; }</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_Close_" data-uid="PlcDocu.TcoCore.TcoContext.Close*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_Close" data-uid="PlcDocu.TcoCore.TcoContext.Close">Close()</h4>
-  <div class="markdown level1 summary"><p>This method is called implicitly at the entry point of this context (<see cref="!:TcoContext.PlcTcoContext.Run()"></see>).
+  <div class="markdown level1 summary"><p>This method is called implicitly at the entry point of this context (<a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_Run">Run()</a>).
 <remarks><p>
 <div class="IMPORTANT"><h5>important</h5><p>
 	Do not call this method explicitly!
@@ -2656,7 +2682,7 @@ protected void OnExit()</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoContext_Open_" data-uid="PlcDocu.TcoCore.TcoContext.Open*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_Open" data-uid="PlcDocu.TcoCore.TcoContext.Open">Open()</h4>
-  <div class="markdown level1 summary"><p>This method is called implicitly at the entry point of this context (<see cref="!:TcoContext.PlcTcoContext.Run()"></see>).
+  <div class="markdown level1 summary"><p>This method is called implicitly at the entry point of this context (<a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_Run">Run()</a>).
 <remarks><p>
 <div class="IMPORTANT"><h5>important</h5><p>
 	Do not call this method explicitly.
@@ -2762,7 +2788,7 @@ public dynamic RtcSynchronize(dynamic inDoSynch, dynamic inSyncAmsId, dynamic in
   <a id="PlcDocu_TcoCore_TcoContext_Run_" data-uid="PlcDocu.TcoCore.TcoContext.Run*"></a>
   <h4 id="PlcDocu_TcoCore_TcoContext_Run" data-uid="PlcDocu.TcoCore.TcoContext.Run">Run()</h4>
   <div class="markdown level1 summary"><p>
-	This method executes of this context. It provided correct order of execution order of inner methods. Any logic of this context must be called within <see cref="!:TcoContext.PlcTcoContext.Main()"></see>
+	This method executes of this context. It provided correct order of execution order of inner methods. Any logic of this context must be called within <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_Main">Main()</a>
 	method. This method is final, so it cannot be overriden. The <code>InstanceName.Run()</code> needs to be called cyclically.
 </p>
 </div>

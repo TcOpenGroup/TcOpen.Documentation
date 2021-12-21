@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -1998,7 +1995,7 @@
   
   <h1 id="PlcDocu_TcoData_TcoDataTask" data-uid="PlcDocu.TcoData.TcoDataTask" class="text-break">Class TcoDataTask
   </h1>
-  <div class="markdown level0 summary"><p>Data task is a remote task  <see cref="!:RemoteTask"></see> with a paramater.</p>
+  <div class="markdown level0 summary"><p>Data task is a remote task  <see cref="!:PlcDocu.TcoCore.RemoteTask"></see> with a paramater.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -2167,7 +2164,7 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataTask__ctor.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataTask.g.cs/#L18">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataTask.g.cs/#L46">View Source</a>
   </span>
   <a id="PlcDocu_TcoData_TcoDataTask__ctor_" data-uid="PlcDocu.TcoData.TcoDataTask.#ctor*"></a>
   <h4 id="PlcDocu_TcoData_TcoDataTask__ctor" data-uid="PlcDocu.TcoData.TcoDataTask.#ctor">TcoDataTask()</h4>
@@ -2185,10 +2182,11 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataTask__identifier.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataTask._identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataTask.g.cs/#L16">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataTask.g.cs/#L44">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoDataTask__identifier" data-uid="PlcDocu.TcoData.TcoDataTask._identifier">_identifier</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The Identifier, ID  of an entity on which a CRUD operation should be executed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2209,6 +2207,67 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoDataTask_WithId_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoDataTask.WithId(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoDataTask.g.cs/#L33">View Source</a>
+  </span>
+  <a id="PlcDocu_TcoData_TcoDataTask_WithId_" data-uid="PlcDocu.TcoData.TcoDataTask.WithId*"></a>
+  <h4 id="PlcDocu_TcoData_TcoDataTask_WithId_System_Object_" data-uid="PlcDocu.TcoData.TcoDataTask.WithId(System.Object)">WithId(Object)</h4>
+  <div class="markdown level1 summary"><p>Executes CRUD operation on data entry with given identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreReflection]
+public dynamic WithId(dynamic inIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">inIdentifier</span></td>
+        <td><p>Plc type : STRING [VAR_INPUT]; Twin type : <span class="xref">Vortex.Connector.ValueTypes.OnlinerString</span></p>
+<p>
+<summary>
+	The Identifier, ID  of an entity on which a CRUD operation should be executed. 	
+</summary>						
+</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Plc type TcoDataTask; Twin type: <a class="xref" href="PlcDocu.TcoData.TcoDataTask.html">TcoDataTask</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PlcDocu_TcoData_TcoDataTask_WithId_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Inxton is required for this feature to work</p>
+</div>
 </article>
           </div>
           

@@ -36,7 +36,6 @@ items:
     content: 'public class SerilogAdapter : ILogger'
     content.vb: >-
       Public Class SerilogAdapter
-
           Implements ILogger
   inheritance:
   - System.Object

@@ -30,7 +30,6 @@ items:
     content: 'public class Role : IdentityRole<string>'
     content.vb: >-
       Public Class Role
-
           Inherits IdentityRole(Of String)
   inheritance:
   - System.Object

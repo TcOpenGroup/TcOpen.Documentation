@@ -28,7 +28,6 @@ items:
     content: 'public class StandardDateTimeProvider : DateTimeProviderBase'
     content.vb: >-
       Public Class StandardDateTimeProvider
-
           Inherits DateTimeProviderBase
   inheritance:
   - System.Object

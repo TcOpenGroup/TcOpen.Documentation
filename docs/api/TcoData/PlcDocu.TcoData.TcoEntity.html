@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -1998,7 +1995,13 @@
   
   <h1 id="PlcDocu_TcoData_TcoEntity" data-uid="PlcDocu.TcoData.TcoEntity" class="text-break">Class TcoEntity
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base strucure of any data entity used in TcoDataExchange.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -2035,6 +2038,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class TcoEntity</code></pre>
   </div>
+  <h5 id="PlcDocu_TcoData_TcoEntity_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-pas" name="Declarations">
+// DATA STRUCTURE ELIGIBLE FOR USE WITH TcoDataExchange.
+TYPE
+    SandboxData EXTENDS TcoData.TcoEntity :
+    STRUCT
+        sampleData : SampleDataStructure;
+        someInteger : INT;
+        someString : STRING;
+    END_STRUCT
+END_TYPE
+</code></pre>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
@@ -2042,7 +2057,7 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoEntity__ctor.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoEntity.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L11">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L24">View Source</a>
   </span>
   <a id="PlcDocu_TcoData_TcoEntity__ctor_" data-uid="PlcDocu.TcoData.TcoEntity.#ctor*"></a>
   <h4 id="PlcDocu_TcoData_TcoEntity__ctor" data-uid="PlcDocu.TcoData.TcoEntity.#ctor">TcoEntity()</h4>
@@ -2060,7 +2075,7 @@
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoEntity__EntityId.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoEntity._EntityId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L9">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L22">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoData_TcoEntity__EntityId" data-uid="PlcDocu.TcoData.TcoEntity._EntityId">_EntityId</h4>
   <div class="markdown level1 summary"></div>
@@ -2095,7 +2110,7 @@
                     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoData_TcoEntity.md&amp;value=---%0Auid%3A%20PlcDocu.TcoData.TcoEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/PlcDocumentation/PlcDocuTcoEntity.g.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

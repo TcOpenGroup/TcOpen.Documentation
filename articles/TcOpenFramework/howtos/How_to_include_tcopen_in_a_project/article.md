@@ -48,8 +48,8 @@ Right click on PLC project:
 
 
 ## Done!
-Now that you have TcOpen in your project I recommend to read more about it [here](../application.md).
-Or write your first sequence! [here](../How_to_write_a_sequence/article.md).
+Now that you have TcOpen in your project I recommend to read more about it [here](~/articles/TcOpenFramework/TcoCore/Introduction.md).
+Or write your first sequence! [here](~/articles/TcOpenFramework/howtos/How_to_write_a_sequence/article.md).
 
 
 If you prefer a working template check out [TcOpen.Hammer](https://github.com/TcOpenGroup/TcOpen.Hammer)

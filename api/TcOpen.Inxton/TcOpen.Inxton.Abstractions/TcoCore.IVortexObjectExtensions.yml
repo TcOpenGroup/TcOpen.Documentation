@@ -80,7 +80,6 @@ items:
   syntax:
     content: >-
       public static T GetParent<T>(this IVortexObject obj, T parent = null)
-
           where T : class
     parameters:
     - id: obj
@@ -138,7 +137,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetDescendants<T>(this IVortexObject obj, IList<T> children = null)
-
           where T : class
     parameters:
     - id: obj
@@ -196,7 +194,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetDescendants<T>(this IVortexObject obj, int depth, IList<T> children = null, int currentDepth = 0)
-
           where T : class
     parameters:
     - id: obj
@@ -260,7 +257,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetChildren<T>(this IVortexObject obj)
-
           where T : IVortexObject
     parameters:
     - id: obj
@@ -312,7 +308,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetChildren<T>(this IVortexObject obj, IEnumerable<object> excluding)
-
           where T : IVortexObject
     parameters:
     - id: obj

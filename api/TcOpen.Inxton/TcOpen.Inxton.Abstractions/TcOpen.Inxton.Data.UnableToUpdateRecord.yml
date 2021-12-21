@@ -28,9 +28,7 @@ items:
     content: 'public class UnableToUpdateRecord : Exception, ISerializable, _Exception'
     content.vb: >-
       Public Class UnableToUpdateRecord
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object

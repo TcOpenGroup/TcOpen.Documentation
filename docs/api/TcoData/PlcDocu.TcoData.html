@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -2007,12 +2004,30 @@
       <h4><a class="xref" href="PlcDocu.TcoData.MainContext.html">MainContext</a></h4>
       <section></section>
       <h4><a class="xref" href="PlcDocu.TcoData.TcoDataExchange.html">TcoDataExchange</a></h4>
-      <section></section>
+      <section><p>Provides a mechanism to exchange data between PLC and an arbitrary data repository.
+TcoDataExchange support Create, Read, Update, Delete (CRUD) operations and some additional
+functions.
+TcoDataExchange <strong>operates by convention on data member named <code>_data</code></strong> declared in the function block.
+The <code>_data</code> member must be of type that extends <code>TcoData.TcoEntity</code>.	
+TcoDataEchange must be then inizialized in the higher level application where the repository
+and remote data exchange is configured.		
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</section>
       <h4><a class="xref" href="PlcDocu.TcoData.TcoDataTask.html">TcoDataTask</a></h4>
-      <section><p>Data task is a remote task  <see cref="!:RemoteTask"></see> with a paramater.</p>
+      <section><p>Data task is a remote task  <see cref="!:PlcDocu.TcoCore.RemoteTask"></see> with a paramater.</p>
 </section>
       <h4><a class="xref" href="PlcDocu.TcoData.TcoEntity.html">TcoEntity</a></h4>
-      <section></section>
+      <section><p>Base strucure of any data entity used in TcoDataExchange.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</section>
       <h4><a class="xref" href="PlcDocu.TcoData.TcoExistsTask.html">TcoExistsTask</a></h4>
       <section></section>
 </article>

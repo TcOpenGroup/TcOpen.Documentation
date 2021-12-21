@@ -2,7 +2,7 @@
 
 **(TcoSequencer : ITcoSequencer)**
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoSequencer.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoSequencer.yml)
 
 
 The sequencer provides more advanced coordination of PLC logic. As the name suggests, the logic is organized in sequence. The steps run in the order in which they are written in the program.
@@ -123,7 +123,7 @@ IF Step(800,
 END_IF;
 ~~~
 
-![](TcoSequecer-simple-transitions.png)
+![](assets/TcoSequecer-simple-transitions.png)
 
 #### Requesting step
 

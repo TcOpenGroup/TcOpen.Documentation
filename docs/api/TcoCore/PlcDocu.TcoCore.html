@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -2036,18 +2033,18 @@ Usage as follows :</p>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoContext.html">TcoContext</a></h4>
       <section><p>Root construction container, provides context information for <code>TcoObjects</code> declared within its scope.
 This function block is <code>abstract</code> and cannot be instantiated.
-Use <see cref="!:TcoContext.PlcTcoContext.Run()"></see> to run this context, <code>Run</code> method must be called only once per PLC Task cycle.
+Use <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_Run">Run()</a> to run this context, <code>Run</code> method must be called only once per PLC Task cycle.
 Several 'TcoContext' instances can be declared and called inside one TwinCAT PlcTask, but only once per PLC cycle.
 The instance should not be accessed from several Twincat PlcTasks.
-Default implemenation of the 'TcoContext' allows its child members access properties <see cref="!:TcoContext.PlcTcoContext.StartCycleCount()"></see>
-and <see cref="!:TcoContext.PlcTcoContext.EndCycleCount()"></see>, messenger settings, rtc and other information related to the context of the running logic.</p>
+Default implemenation of the 'TcoContext' allows its child members access properties <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_StartCycleCount">StartCycleCount</a>
+and <a class="xref" href="PlcDocu.TcoCore.TcoContext.html#PlcDocu_TcoCore_TcoContext_EndCycleCount">EndCycleCount</a>, messenger settings, rtc and other information related to the context of the running logic.</p>
 <div class="TIP"><h5>tip</h5><p>
 	 A <code>TcoContext</code> can contain objects, components and PLC logic of one independent station of the machine, 
 	 while the another one can cover the same for another station.			
 </p></div>
 <remarks>			
 <div class="TIP"><h5>tip</h5><p>
-	TwinCAT PlcTask and <see cref="!:TcoTask.PlcTcoTask()"></see> refer to two different concepts. 
+	TwinCAT PlcTask and <a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask__ctor">TcoTask()</a> refer to two different concepts. 
 </p></div>
 </remarks>
 </section>
@@ -2083,7 +2080,7 @@ and <see cref="!:TcoContext.PlcTcoContext.EndCycleCount()"></see>, messenger set
 	Messenger can send the data to context logger. There is a maximum limit of 10 different messages per messenger in 2 consecutive context cycles.
 	The messages that exceed this limit won&apos;t be logged when `OnEventRisen` logging is set. 
     Take this behaviour into account when designing your system.				
-</p></div>
+</p></div>					
 </remarks>			 
 </section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoMessengerEnv.html">TcoMessengerEnv</a></h4>
@@ -2091,7 +2088,7 @@ and <see cref="!:TcoContext.PlcTcoContext.EndCycleCount()"></see>, messenger set
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoMomentaryTask.html">TcoMomentaryTask</a></h4>
       <section><p>Provides basic momentary on function.</p>
 <p>
-	To get the actual state of the momentary task, <see cref="!:TcoMomentaryTask.PlcTcoMomentaryTask.IsOn()"></see>, <see cref="!:TcoMomentaryTask.PlcTcoMomentaryTask.IsOff()"></see> and <see cref="!:TcoMomentaryTask.PlcTcoMomentaryTask.State()"></see> properties are available.
+	To get the actual state of the momentary task, <see cref="!:PlcDocu.TcoCore.TcoMomentaryTask.IsOn()"></see>, <see cref="!:PlcDocu.TcoCore.TcoMomentaryTask.IsOff()"></see> and <a class="xref" href="PlcDocu.TcoCore.TcoMomentaryTask.html#PlcDocu_TcoCore_TcoMomentaryTask_State">State</a> properties are available.
 </p>
 </section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoObject.html">TcoObject</a></h4>
@@ -2100,6 +2097,11 @@ This function block is abstract and must be implemented in a derived block.
 <code>TcoObject</code>, must be constructed via <code>FB_init(ITcoObject)</code> method at instantiation.
 <code>TcoObjects</code> that belong to same <code>TcoContext</code> share the same context.
 This is typically achieved by constructing the object with <code>FB_init(THIS^)</code>, where <code>THIS^</code> is of <code>ITcoObject</code> (note that ITcoContext also implements ITcoObject).</p>
+<div class="WARNING"><h5>warning</h5><p>
+	Whenever it is required to pass function block parameters of a block type that derives from `TcoObject` it should be passed as **reference**. 
+	This means either via appropriate interface or as `REFERENCE TO` in VAR_INPUT and VAR_OUTPUT sections or as VAR_IN_OUT. 
+	Be aware the VAR_INPUT and VAR_OUTPUT create a copy of the variable.			
+</p></div>        			
 <p>
 <example>
 <div class="NOTE"><h5>Example</h5><p>
@@ -2194,7 +2196,7 @@ When this task is invoked a C# method will be called. To initiliaze <pre><code>R
       <section></section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoStateBase.html">TcoStateBase</a></h4>
       <section><p>Provides basic state controller. It could be implemented using <code>IF</code>, <code>IF</code> <code>ELSIF</code> or <code>CASE</code> statement. The transition to the different state needs to be perfromed by calling
-<see cref="!:TcoState.PlcTcoState.ChangeState(Object)"></see> method. This method ensures also calling the <see cref="!:TcoState.PlcTcoState.OnStateChange(Object,Object)"></see> every time that state is changed. The
+<see cref="!:PlcDocu.TcoCore.TcoStateBase.ChangeState(Object)"></see> method. This method ensures also calling the <a class="xref" href="PlcDocu.TcoCore.TcoStateBase.html#PlcDocu_TcoCore_TcoStateBase_OnStateChange_System_Object_System_Object_">OnStateChange(Object, Object)</a> every time that state is changed. The
 <code>OnStateChange()</code>could be overloaded and some custom code that needs to be executed on each change of the state could be placed here. The TcoState could be used like this:</p>
 <p>
 <example>
@@ -2244,24 +2246,32 @@ When this task is invoked a C# method will be called. To initiliaze <pre><code>R
 </p></div>
 </example>
 <p>
-	See <see cref="!:TcoState.PlcTcoState.RestoreObject(Object)"></see> for more details.
+	See <see cref="!:PlcDocu.TcoCore.TcoState.RestoreObject(Object)"></see> for more details.
 </p>
 </p>			
 </section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoStateExtendible.html">TcoStateExtendible</a></h4>
       <section></section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoTask.html">TcoTask</a></h4>
-      <section><p>Provides basic task execution. Task could be started by calling the <see cref="!:TcoTask.PlcTcoTask.Invoke()"></see> method. The  <see cref="!:TcoTask.PlcTcoTask.Execute()"></see> method returns true, until the task reaches the Done state.</p>
+      <section><p>Provides basic task execution. Task is started by calling the <a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Invoke">Invoke()</a> method.
+The  <a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Execute">Execute()</a> method returns true, until the task is <code>Done</code>.</p>
 <p>
-	To get the actual state of the task, <see cref="!:TcoTask.PlcTcoTask.Ready()"></see>, <see cref="!:TcoTask.PlcTcoTask.Busy()"></see>, <see cref="!:TcoTask.PlcTcoTask.Error()"></see> and <see cref="!:TcoTask.PlcTcoTask.Done()"></see> properties are available.
+	To get the actual state of the task, 
+<a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Ready">Ready</a>, 
+<a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Busy">Busy</a>, 
+<a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Error">Error</a> 
+and <a class="xref" href="PlcDocu.TcoCore.TcoTask.html#PlcDocu_TcoCore_TcoTask_Done">Done</a> properties are available.
 </p>
 </section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoTaskResult.html">TcoTaskResult</a></h4>
       <section></section>
       <h4><a class="xref" href="PlcDocu.TcoCore.TcoToggleTask.html">TcoToggleTask</a></h4>
-      <section><p>Provides basic toggling between two states. It could be triggered by calling the <see cref="!:TcoToggleTask.PlcTcoToggleTask.Toggle()"></see> method.</p>
+      <section><p>Provides basic toggling between two states. The states are triggered by calling the <a class="xref" href="PlcDocu.TcoCore.TcoToggleTask.html#PlcDocu_TcoCore_TcoToggleTask_Toggle">Toggle()</a> method.</p>
 <p>
-	To get the actual state of the toggle task, <see cref="!:TcoToggleTask.PlcTcoToggleTask.IsOn()"></see>, <see cref="!:TcoToggleTask.PlcTcoToggleTask.IsOff()"></see> and <see cref="!:TcoToggleTask.PlcTcoToggleTask.State()"></see> properties are available.
+	To get the actual state of the toggle task, 
+<see cref="!:PlcDocu.TcoCore.TcoToggleTask.IsOn"></see>, 
+<see cref="!:PlcDocu.TcoCore.coToggleTask.IsOff"></see> 
+and <a class="xref" href="PlcDocu.TcoCore.TcoToggleTask.html#PlcDocu_TcoCore_TcoToggleTask_State">State</a> properties are available.
 </p>
 </section>
 </article>

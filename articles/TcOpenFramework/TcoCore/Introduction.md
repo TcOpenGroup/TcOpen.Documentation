@@ -12,29 +12,29 @@ The following diagram shows schematics of a simple TcOpen application. The stati
 
 ![TcOpenApplicationOverview.png](assets/TcOpenApplicationOverview.png)
 
-The blocks of an TcOpen application require to be nested into a root block called [Context]((#Context)) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```AppContext``` block.
+The blocks of an TcOpen application require to be nested into a root block called [Context](TcoContext.md) that derives from ```TcoContext``` or implements ```ITcoContext``` interface. In our case, it is ```AppContext``` block.
 
-The next level is ```Station001``` that derives from [TcoObject](#Object) (about TcoObject later). It suffices to say the ```TcoObject``` is the base block of each other block in the TcOpen framework.
+The next level is ```Station001``` that derives from [TcoObject](TcoObject.md) (about TcoObject later). It suffices to say the ```TcoObject``` is the base block of each other block in the TcOpen framework.
 
-The [components](#Components) (drive, pistons) are encapsulated into a single structure, ```Station001_Components``` (HorizontalDrive, VerticalPiston, Gripper) and it that also derives from ```TcoObject```.
+The [components](TcoComponent.md) (drive, pistons) are encapsulated into a single structure, ```Station001_Components``` (HorizontalDrive, VerticalPiston, Gripper) and it that also derives from ```TcoObject```.
 
-Besides components, the station contains two [Sequences](#Sequencer), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities in automatic mode.
+Besides components, the station contains two [Sequences](TcoSequencer.md), ```Station001_GroundMode``` that brings the manipulator to the ground state (home positioning), and ```Station001_AutomatMode``` that performs the manipulator's activities in automatic mode.
 
-The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from [TcoTask](#Task) within which the actions are running. The [TcoTask](#Task)  work with two methods in tandem: ```Invoke``` fires the execution (in our case, this occurs in the sequences) and ```Execute``` with an implementation in the components block, that run the required action.
+The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.). All tasks are or derive from [TcoTask](TcoTask.md) within which the actions are running. The [TcoTask](TcoTask.md)  work with two methods in tandem: ```Invoke``` fires the execution (in our case, this occurs in the sequences) and ```Execute``` with an implementation in the components block, that run the required action.
 
 # TcoCore library
 
 ```TcoCore``` library contains basic classes for building TcOpen applications (components, tasks management, coordination primitives). The default **namespace** for this library is ```TcoCore```. All types in this library have ```Tco``` prefix for classes and ```ITco``` and for interfaces.
 
 
-- [TcoContext](TcoContext.html)
-- [TcoObject](TcoObject.html)
-- [TcoTask](TcoTask.html)
-- [TcoComponent](TcoComponent.html)
-- [TcoState](TcoState.html)
-- [TcoSequencer](TcoSequencer.html)
-- [TcoMessenger](TcoMessenger.html)
-- [TcoLogger](TcoLogger.html)
+- [TcoContext](TcoContext.md)
+- [TcoObject](TcoObject.md)
+- [TcoTask](TcoTask.md)
+- [TcoComponent](TcoComponent.md)
+- [TcoState](TcoState.md)
+- [TcoSequencer](TcoSequencer.md)
+- [TcoMessenger](TcoMessenger.md)
+- [TcoLogger](TcoLogger.md)
 
 
 

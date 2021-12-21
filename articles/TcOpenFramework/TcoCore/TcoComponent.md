@@ -2,7 +2,7 @@
 
 **(TcoComponent : ITcoComponent)**
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoComponent.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoComponent.yml)
 
 The ```component``` in TcOpen is a Function Block/class that controls a physical (Robot, Piston, Drive) or virtual (Operator, Warehouse) component.
 

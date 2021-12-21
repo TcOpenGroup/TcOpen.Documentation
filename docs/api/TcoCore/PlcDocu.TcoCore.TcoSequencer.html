@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -2297,7 +2294,7 @@
   </table>
   <h5 id="PlcDocu_TcoCore_TcoSequencer__sequencerErrorId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-	See <see cref="!:eSequencerError"></see> for detailed description.
+	See <see cref="!:TcoCore.eSequencerError"></see> for detailed description.
 </p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -2332,7 +2329,7 @@
   </table>
   <h5 id="PlcDocu_TcoCore_TcoSequencer__sequencerHasError_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-	See <see cref="!:TcoSequencer.PlcTcoSequencer._sequencerErrorId"></see> for detailed description.
+	See <a class="xref" href="PlcDocu.TcoCore.TcoSequencer.html#PlcDocu_TcoCore_TcoSequencer__sequencerErrorId">_sequencerErrorId</a> for detailed description.
 </p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -2695,7 +2692,7 @@ void IsStepIdUnique(dynamic inStepID)</code></pre>
   </span>
   <a id="PlcDocu_TcoCore_TcoSequencer_Main_" data-uid="PlcDocu.TcoCore.TcoSequencer.Main*"></a>
   <h4 id="PlcDocu_TcoCore_TcoSequencer_Main" data-uid="PlcDocu.TcoCore.TcoSequencer.Main">Main()</h4>
-  <div class="markdown level1 summary"><p>Main method of the sequener. Custom code needs to be placed here. The sequencer is executed by call of InstanceName.Run() method.
+  <div class="markdown level1 summary"><p>Main method of the sequener. Custom code needs to be placed here. The sequencer is executed by call of <strong>Instance.Run()</strong> method.
 This method is abstract, and it must be overridden in derived block.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2872,7 +2869,7 @@ When the order of the requested step is lower than the order of the currently fi
 the requested step is started in the next context cycle.
 If the requested step is not found even in the next context cycle, the sequencer enters error state <code>StepWithRequestedIdDoesNotExists</code>.</p>
 <p>
-	See <see cref="!:eSequencerError"></see> for detailed description.
+	See <see cref="!:TcoCore.eSequencerError"></see> for detailed description.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2967,7 +2964,7 @@ public dynamic Restore()</code></pre>
   <h4 id="PlcDocu_TcoCore_TcoSequencer_Run" data-uid="PlcDocu.TcoCore.TcoSequencer.Run">Run()</h4>
   <div class="markdown level1 summary"><p>
 	Ensures calling the Open(), Main() and Close() methods in the desired order.
-	This method is final, so it cannot be overloaded. The InstanceName.Run() needs to be called cyclically inside the appropriate context.
+	This method is final, so it cannot be overloaded. The **Instance.Run()** needs to be called cyclically inside the appropriate context.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
