@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -36,7 +36,6 @@ items:
     content: 'public class Dispatcher : IDispatcher'
     content.vb: >-
       Public Class Dispatcher
-
           Implements IDispatcher
   inheritance:
   - System.Object
@@ -70,7 +69,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -96,7 +95,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -127,7 +126,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -165,7 +164,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Invoke
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -203,7 +202,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InvokeAsync
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -240,7 +239,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
@@ -272,7 +271,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Get
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs

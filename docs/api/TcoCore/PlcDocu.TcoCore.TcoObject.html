@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -2003,6 +2000,11 @@ This function block is abstract and must be implemented in a derived block.
 <code>TcoObject</code>, must be constructed via <code>FB_init(ITcoObject)</code> method at instantiation.
 <code>TcoObjects</code> that belong to same <code>TcoContext</code> share the same context.
 This is typically achieved by constructing the object with <code>FB_init(THIS^)</code>, where <code>THIS^</code> is of <code>ITcoObject</code> (note that ITcoContext also implements ITcoObject).</p>
+<div class="WARNING"><h5>warning</h5><p>
+	Whenever it is required to pass function block parameters of a block type that derives from `TcoObject` it should be passed as **reference**. 
+	This means either via appropriate interface or as `REFERENCE TO` in VAR_INPUT and VAR_OUTPUT sections or as VAR_IN_OUT. 
+	Be aware the VAR_INPUT and VAR_OUTPUT create a copy of the variable.			
+</p></div>        			
 <p>
 <example>
 <div class="NOTE"><h5>Example</h5><p>
@@ -2112,7 +2114,7 @@ This is typically achieved by constructing the object with <code>FB_init(THIS^)<
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject__ctor.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L172">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L177">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoObject__ctor_" data-uid="PlcDocu.TcoCore.TcoObject.#ctor*"></a>
   <h4 id="PlcDocu_TcoCore_TcoObject__ctor" data-uid="PlcDocu.TcoCore.TcoObject.#ctor">TcoObject()</h4>
@@ -2130,7 +2132,7 @@ This is typically achieved by constructing the object with <code>FB_init(THIS^)<
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject__Identity.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject._Identity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L169">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L174">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoCore_TcoObject__Identity" data-uid="PlcDocu.TcoCore.TcoObject._Identity">_Identity</h4>
   <div class="markdown level1 summary"></div>
@@ -2159,7 +2161,7 @@ This is typically achieved by constructing the object with <code>FB_init(THIS^)<
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject__messenger.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject._messenger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L170">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L175">View Source</a>
   </span>
   <h4 id="PlcDocu_TcoCore_TcoObject__messenger" data-uid="PlcDocu.TcoCore.TcoObject._messenger">_messenger</h4>
   <div class="markdown level1 summary"></div>
@@ -2190,7 +2192,7 @@ This is typically achieved by constructing the object with <code>FB_init(THIS^)<
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject_Context.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L125">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L130">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoObject_Context_" data-uid="PlcDocu.TcoCore.TcoObject.Context*"></a>
   <h4 id="PlcDocu_TcoCore_TcoObject_Context" data-uid="PlcDocu.TcoCore.TcoObject.Context">Context</h4>
@@ -2223,11 +2225,11 @@ public dynamic Context { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject_Identity.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject.Identity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L143">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L148">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoObject_Identity_" data-uid="PlcDocu.TcoCore.TcoObject.Identity*"></a>
   <h4 id="PlcDocu_TcoCore_TcoObject_Identity" data-uid="PlcDocu.TcoCore.TcoObject.Identity">Identity</h4>
-  <div class="markdown level1 summary"><p>Gets the identity of this <see cref="!:TcoObject.PlcTcoObject()"></see>.
+  <div class="markdown level1 summary"><p>Gets the identity of this <a class="xref" href="PlcDocu.TcoCore.TcoObject.html#PlcDocu_TcoCore_TcoObject__ctor">TcoObject()</a>.
 This value is assigned after download by calling the implicit method <code>FB_init()</code> and cannot be changed during runtime.
 This variable is used in the higher level applications.</p>
 </div>
@@ -2258,12 +2260,12 @@ public dynamic Identity { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject_Messenger.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject.Messenger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L160">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L165">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoObject_Messenger_" data-uid="PlcDocu.TcoCore.TcoObject.Messenger*"></a>
   <h4 id="PlcDocu_TcoCore_TcoObject_Messenger" data-uid="PlcDocu.TcoCore.TcoObject.Messenger">Messenger</h4>
   <div class="markdown level1 summary"><p>Gets messenger of this object.
-See <see cref="!:TcoMessenger.PlcTcoMessenger()"></see> for more details.</p>
+See <a class="xref" href="PlcDocu.TcoCore.TcoMessenger.html#PlcDocu_TcoCore_TcoMessenger__ctor">TcoMessenger()</a> for more details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2294,7 +2296,7 @@ public dynamic Messenger { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject_EqualsTo_System_Object_.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject.EqualsTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L112">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L117">View Source</a>
   </span>
   <a id="PlcDocu_TcoCore_TcoObject_EqualsTo_" data-uid="PlcDocu.TcoCore.TcoObject.EqualsTo*"></a>
   <h4 id="PlcDocu_TcoCore_TcoObject_EqualsTo_System_Object_" data-uid="PlcDocu.TcoCore.TcoObject.EqualsTo(System.Object)">EqualsTo(Object)</h4>
@@ -2367,7 +2369,7 @@ public dynamic EqualsTo(dynamic Object)</code></pre>
                     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=PlcDocu_TcoCore_TcoObject.md&amp;value=---%0Auid%3A%20PlcDocu.TcoCore.TcoObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L75" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoCore/src/TcoCoreConnector/_generated/PlcDocumentation/PlcDocuTcoObject.g.cs/#L80" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

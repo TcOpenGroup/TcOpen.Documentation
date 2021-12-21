@@ -2,13 +2,13 @@
 
 **(TcoObject : ITcoObject)**
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.yml)
 
 `TcoObject` provides access to :
 - [Context](TcoContext.md)
 - Reference to the parent object
 - [Identity] (unique identifier across application)
-- Access to a [*messaging system*](~/api/TcoCore/PlcDocu.TcoCore.TcoMessenger.html)
+- Access to a [*messaging system*](~/api/TcoCore/PlcDocu.TcoCore.TcoMessenger.yml)
 - and other useful functions. (e.g. RTC)
 
 Each block in ```TcOpen``` framework should derive from ```TcoObject```. 
@@ -33,7 +33,7 @@ where ```THIS^``` is of ```ITcoObject```.
 
 ### Messenger
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoMessenger.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoMessenger.yml)
 
 Any ```TcoObject``` can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).
 

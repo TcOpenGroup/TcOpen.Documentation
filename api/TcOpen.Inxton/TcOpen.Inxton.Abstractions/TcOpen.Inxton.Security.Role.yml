@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Role
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
@@ -30,7 +30,6 @@ items:
     content: 'public class Role : IdentityRole<string>'
     content.vb: >-
       Public Class Role
-
           Inherits IdentityRole(Of String)
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DefaultGroup
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
@@ -101,7 +100,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
@@ -136,7 +135,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ToString
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs

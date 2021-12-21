@@ -2,7 +2,7 @@
 
 Messaging system provides a simple mechanism for posting various information (state, diagnostics, etc.) to the higher-level application (e.g. HMI/SCADA).
 
-Each [TcoObject](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.html) contains a messenger that allows reporting information about that object to a higher-level application.
+Each [TcoObject](~/api/TcoCore/PlcDocu.TcoCore.TcoObject.yml) contains a messenger that allows reporting information about that object to a higher-level application.
 
 ## Usage
 
@@ -95,11 +95,11 @@ Messenger.OnCondition(temperature > 100.0).Build().Append('Water temperature is 
 
 ## Message categories
 
-[Message categories](~/api/TcoCore/TcoCore.eMessageCategory.html)
+[Message categories](~/api/TcoCore/TcoCore.eMessageCategory.yml)
 
 
 ## How to access the message
 
 When you try to read the messages from a non-inxton application, you will need to evaluate whether the message is valid. The validity of the message can be determined by comparing the equality of `._mime.Cycle` with `Context._startCycleCount`. When these two values equal, the message is valid. The validity of persisted messages is given by the value `true` of `_mime._persists` variable. The equality evaluation should occur in the higher-level application, not in the PLC.
 
-[TcoLogger integration](logger.md#tcomessenger-and-tcologger)
+[TcoLogger integration](TcoLogger.md#tcomessenger-and-tcologger)

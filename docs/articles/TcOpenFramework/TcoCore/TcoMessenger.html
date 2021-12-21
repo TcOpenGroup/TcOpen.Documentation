@@ -128,6 +128,15 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
+                            <a class="">TcoData</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../TcOpenFramework/TcoData/Introduction.html" title="Introduction" class="">Introduction</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
                             <a class="">Howto(s)</a>
                               
                               <ul class="nav level3">
@@ -285,7 +294,7 @@ The message will be posted via <code>As()</code> method and consequent qualifica
 <p><a href="../../../api/TcoCore/TcoCore.eMessageCategory.html">Message categories</a></p>
 <h2 id="how-to-access-the-message">How to access the message</h2>
 <p>When you try to read the messages from a non-inxton application, you will need to evaluate whether the message is valid. The validity of the message can be determined by comparing the equality of <code>._mime.Cycle</code> with <code>Context._startCycleCount</code>. When these two values equal, the message is valid. The validity of persisted messages is given by the value <code>true</code> of <code>_mime._persists</code> variable. The equality evaluation should occur in the higher-level application, not in the PLC.</p>
-<p><a href="logger.md#tcomessenger-and-tcologger">TcoLogger integration</a></p>
+<p><a href="TcoLogger.html#tcomessenger-and-tcologger">TcoLogger integration</a></p>
 </article>
           </div>
           

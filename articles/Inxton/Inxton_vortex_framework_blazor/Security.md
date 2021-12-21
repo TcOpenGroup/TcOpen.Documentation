@@ -54,9 +54,9 @@ This pages contains basic implementation of login and register views. Now we are
 
 UserManagement component serves for managing users. It is available only if user is logged on with administrator rights. 
 
-Bellow is example view of UserManagement component:
+<!--Bellow is example view of UserManagement component:
 
-![alt text](assets/usermanagement.png "UserManagement component")
+![alt text](assets/usermanagement.png "UserManagement component")-->
 
 When user is logged in with administrator rights, it is possible to modify all available users. Administrator can delete users or change roles.
 

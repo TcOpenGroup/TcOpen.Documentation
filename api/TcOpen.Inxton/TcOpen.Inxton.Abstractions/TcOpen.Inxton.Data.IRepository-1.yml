@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -38,7 +38,6 @@ items:
   syntax:
     content: >-
       public interface IRepository<T>
-
           where T : IBrowsableDataObject
     typeParameters:
     - id: T
@@ -66,7 +65,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -101,7 +100,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -136,7 +135,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -169,7 +168,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -200,7 +199,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Exists
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -233,7 +232,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -266,7 +265,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecords
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -303,7 +302,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -336,7 +335,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -369,7 +368,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnCreate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -403,7 +402,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUpdate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
@@ -437,7 +436,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnRecordUpdateValidation
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs

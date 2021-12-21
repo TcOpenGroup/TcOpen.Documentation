@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationServiceNotActiveException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
@@ -34,9 +34,7 @@ items:
     content: 'public class AuthenticationServiceNotActiveException : SecurityException, ISerializable, _Exception'
     content.vb: >-
       Public Class AuthenticationServiceNotActiveException
-
           Inherits SecurityException
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object
@@ -99,7 +97,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
@@ -142,7 +140,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
@@ -178,7 +176,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
@@ -217,7 +215,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
@@ -256,7 +254,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs

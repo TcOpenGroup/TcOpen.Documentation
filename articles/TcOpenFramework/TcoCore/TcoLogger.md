@@ -1,12 +1,12 @@
 # Logging
 
 Logger collects event logs from the controller.
-In contrast to [TcoMessenger](messaging.md) that statically holds current most important message the logger can capture multiple and short lived events (single PLC cycle). Actual size of circular buffer is `1000` log entries.
+In contrast to [TcoMessenger](TcoMessenger.md) that statically holds current most important message the logger can capture multiple and short lived events (single PLC cycle). Actual size of circular buffer is `1000` log entries.
 
 ## TcoLogger
 
-- [PLC API](~/api/TcoCore/PlcDocu.TcoCore.TcoLogger.html)
-- [TWIN API](~/api/TcoCore/TcoCore.TcoLogger.html)
+- [PLC API](~/api/TcoCore/PlcDocu.TcoCore.TcoLogger.yml)
+- [TWIN API](~/api/TcoCore/TcoCore.TcoLogger.yml)
 
 *Logger usage in PLC code:*
 
@@ -43,14 +43,14 @@ PlcTcoCoreExamples.EXAMPLES_PRG._loggerContext._loggerUsage._logger.StartLogging
 
 ## TcoMessenger and TcoLogger
 
-Messenger integrates logger to capture the messages into log output. The messengers uses the logger instance of the [context](~/api/TcoCore/PlcDocu.TcoCore.TcoContext.html#_Plc__TcoCore_TcoContext_Logger). 
+Messenger integrates logger to capture the messages into log output. The messengers uses the logger instance of the [context](~/api/TcoCore/PlcDocu.TcoCore.TcoContext.yml#PlcDocu_TcoCore_TcoContext_Logger). 
 
 In default setting the message is emitted into logger only on the rising edge of the message.
 Detection of rising edge is deremined by the *message text, category, and context cycle*.
 
 For possible configurations see: 
 
-- [Message digest method](~/api/TcoCore/PlcDocu.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessageDigestMethod) / [eMessageDigestMethod](~/api/TcoCore/TcoCore.eMessageDigestMethod.html)
-- [Message logging method](~/api/TcoCore/PlcDocu.TcoCore.TcoMessengerSettings.html#_Plc__TcoCore_TcoMessengerSettings_MessengerLoggingMethod) / [eMessengerLogMethod](~/api/TcoCore/TcoCore.eMessengerLogMethod.html)
+- [Message digest method](~/api/TcoCore/PlcDocu.TcoCore.TcoMessengerEnv.yml#PlcDocu_TcoCore_TcoMessengerEnv_MessageDigestMethod) / [eMessageDigestMethod](~/api/TcoCore/TcoCore.eMessageDigestMethod.yml)
+- [Message logging method](~/api/TcoCore/PlcDocu.TcoCore.TcoMessengerEnv.yml#PlcDocu_TcoCore_TcoMessengerEnv_MessengerLoggingMethod) / [eMessengerLogMethod](~/api/TcoCore/TcoCore.eMessengerLogMethod.yml)
 
 Each messenger can have up to 20 concurrent messages in two consecutive cycles.

@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/OnTimedLogoutRequestDelegate.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnTimedLogoutRequestDelegate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/OnTimedLogoutRequestDelegate.cs

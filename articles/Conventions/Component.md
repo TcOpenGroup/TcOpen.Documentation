@@ -67,7 +67,7 @@ Each component must inherit from `TcoCore.TcoComponent`, which is an abstract bl
 ## Example implementation
 
 ### Pneumatic cyclinder
-![example-cyclinder-structure](example_cyclinder.PNG)
+<!--![example-cyclinder-structure](example_cyclinder.PNG)-->
 
 ~~~iecst
 // Each component must be extended by TcoCore.TcoComponent.

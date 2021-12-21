@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ISecurityProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs

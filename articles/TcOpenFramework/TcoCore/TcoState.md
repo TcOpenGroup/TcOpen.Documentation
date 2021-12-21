@@ -2,7 +2,7 @@
 
 **(TcoState : ITcoState)**
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoStateBase.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoStateBase.yml)
 
 
 The state controller ```TcoState``` manages states of the system.

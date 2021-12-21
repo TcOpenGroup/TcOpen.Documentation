@@ -2,7 +2,7 @@
 
 **(TcoTask : ITcoTask)**
 
-[API](~/api/TcoCore/PlcDocu.TcoCore.TcoTask.html)
+[API](~/api/TcoCore/PlcDocu.TcoCore.TcoTask.yml)
 
 
 ```TcoTask``` is a block for managing chunks of logic in asynchronous execution. Task controls the run of a component's function (servo movement, piston movement, barcode reader trigger, etc.).

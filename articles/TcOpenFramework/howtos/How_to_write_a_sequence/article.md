@@ -1,8 +1,9 @@
 # How to write a sequence
 
-You need to have TcoCore installed. If you don't here's how to do it [link](../How_to_get_started_from_scratch/article.md)
+You need to have TcoCore installed. If you don't here's how to do it [link](../How_to_get_started_using_tcopen_libraries/article.md)
 
-I recommend to read more about it [here](../application.md) in `Sequencer` section.
+I recommend to read more about it [here](~/articles/TcOpenFramework/TcoCore/TcoSequencer.md).
+                                           
 
 > [!Video https://youtube.com/embed/JoQUKgtXUBM]
 

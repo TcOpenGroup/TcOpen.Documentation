@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: StandardDateTimeProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
@@ -28,7 +28,6 @@ items:
     content: 'public class StandardDateTimeProvider : DateTimeProviderBase'
     content.vb: >-
       Public Class StandardDateTimeProvider
-
           Inherits DateTimeProviderBase
   inheritance:
   - System.Object
@@ -61,7 +60,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Now
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/DateTimeProviders.cs

@@ -1963,9 +1963,6 @@
                               </ul>  </li>
                         </ul>  </li>
                     <li class="">
-                      <a class="">TcOpen.Inxton.Data</a>
-                    </li>
-                    <li class="">
                       <span class="expand-stub"></span>
                       <a class="">TcOpen.Inxton.Logging</a>
                         
@@ -1998,7 +1995,13 @@
   
   <h1 id="TcoData_TcoEntity" data-uid="TcoData.TcoEntity" class="text-break">Class TcoEntity
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base strucure of any data entity used in TcoDataExchange.
+<remarks><p>
+<div class="NOTE"><h5>information</h5><p>
+Inxton is required for this feature to work.
+</p></div>	
+</remarks>	 	
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -2047,6 +2050,18 @@
     <pre><code class="lang-csharp hljs">[TypeMetaDescriptor(&quot;{attribute addProperty Name \&quot;\&quot; }&quot;, &quot;TcoEntity&quot;, &quot;TcoData&quot;, TypeComplexityEnum.Complex)]
 public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexElement, ITcoEntity, IShadowTcoEntity, IVortexOnlineObject, IVortexShadowObject</code></pre>
   </div>
+  <h5 id="TcoData_TcoEntity_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-pas" name="Declarations">
+// DATA STRUCTURE ELIGIBLE FOR USE WITH TcoDataExchange.
+TYPE
+    SandboxData EXTENDS TcoData.TcoEntity :
+    STRUCT
+        sampleData : SampleDataStructure;
+        someInteger : INT;
+        someString : STRING;
+    END_STRUCT
+END_TYPE
+</code></pre>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
@@ -2054,7 +2069,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity__ctor.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L235">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L248">View Source</a>
   </span>
   <a id="TcoData_TcoEntity__ctor_" data-uid="TcoData.TcoEntity.#ctor*"></a>
   <h4 id="TcoData_TcoEntity__ctor" data-uid="TcoData.TcoEntity.#ctor">TcoEntity()</h4>
@@ -2069,7 +2084,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity__ctor_Vortex_Connector_IVortexObject_System_String_System_String_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.%23ctor(Vortex.Connector.IVortexObject%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L216">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L229">View Source</a>
   </span>
   <a id="TcoData_TcoEntity__ctor_" data-uid="TcoData.TcoEntity.#ctor*"></a>
   <h4 id="TcoData_TcoEntity__ctor_Vortex_Connector_IVortexObject_System_String_System_String_" data-uid="TcoData.TcoEntity.#ctor(Vortex.Connector.IVortexObject,System.String,System.String)">TcoEntity(IVortexObject, String, String)</h4>
@@ -2113,7 +2128,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity___EntityId.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.__EntityId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L34">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L47">View Source</a>
   </span>
   <h4 id="TcoData_TcoEntity___EntityId" data-uid="TcoData.TcoEntity.__EntityId">__EntityId</h4>
   <div class="markdown level1 summary"></div>
@@ -2142,7 +2157,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity__humanReadable.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity._humanReadable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L33">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L46">View Source</a>
   </span>
   <h4 id="TcoData_TcoEntity__humanReadable" data-uid="TcoData.TcoEntity._humanReadable">_humanReadable</h4>
   <div class="markdown level1 summary"></div>
@@ -2173,7 +2188,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity__AttributeName.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity._AttributeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L210">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L223">View Source</a>
   </span>
   <a id="TcoData_TcoEntity__AttributeName_" data-uid="TcoData.TcoEntity._AttributeName*"></a>
   <h4 id="TcoData_TcoEntity__AttributeName" data-uid="TcoData.TcoEntity._AttributeName">_AttributeName</h4>
@@ -2203,7 +2218,7 @@ public class TcoEntity : ICrudDataObject, IVortexObject, ITwinObject, IVortexEle
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity__EntityId.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity._EntityId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L35">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L48">View Source</a>
   </span>
   <a id="TcoData_TcoEntity__EntityId_" data-uid="TcoData.TcoEntity._EntityId*"></a>
   <h4 id="TcoData_TcoEntity__EntityId" data-uid="TcoData.TcoEntity._EntityId">_EntityId</h4>
@@ -2236,7 +2251,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_AttributeName.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.AttributeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L197">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L210">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_AttributeName_" data-uid="TcoData.TcoEntity.AttributeName*"></a>
   <h4 id="TcoData_TcoEntity_AttributeName" data-uid="TcoData.TcoEntity.AttributeName">AttributeName</h4>
@@ -2266,7 +2281,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Changes.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Changes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/pex/TcoEntity/TcoEntity.cs/#L20">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/pex/TcoEntity/TcoEntity.cs/#L20">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Changes_" data-uid="TcoData.TcoEntity.Changes*"></a>
   <h4 id="TcoData_TcoEntity_Changes" data-uid="TcoData.TcoEntity.Changes">Changes</h4>
@@ -2296,7 +2311,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_ChangeTracker.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.ChangeTracker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/pex/TcoEntity/TcoEntity.cs/#L8">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/pex/TcoEntity/TcoEntity.cs/#L8">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_ChangeTracker_" data-uid="TcoData.TcoEntity.ChangeTracker*"></a>
   <h4 id="TcoData_TcoEntity_ChangeTracker" data-uid="TcoData.TcoEntity.ChangeTracker">ChangeTracker</h4>
@@ -2326,7 +2341,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Children.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Children%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L85">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L98">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Children_" data-uid="TcoData.TcoEntity.Children*"></a>
   <h4 id="TcoData_TcoEntity_Children" data-uid="TcoData.TcoEntity.Children">Children</h4>
@@ -2356,7 +2371,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Connector.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Connector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L146">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L159">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Connector_" data-uid="TcoData.TcoEntity.Connector*"></a>
   <h4 id="TcoData_TcoEntity_Connector" data-uid="TcoData.TcoEntity.Connector">Connector</h4>
@@ -2386,7 +2401,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_HumanReadable.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.HumanReadable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L20">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L33">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_HumanReadable_" data-uid="TcoData.TcoEntity.HumanReadable*"></a>
   <h4 id="TcoData_TcoEntity_HumanReadable" data-uid="TcoData.TcoEntity.HumanReadable">HumanReadable</h4>
@@ -2416,7 +2431,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Kids.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Kids%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L101">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L114">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Kids_" data-uid="TcoData.TcoEntity.Kids*"></a>
   <h4 id="TcoData_TcoEntity_Kids" data-uid="TcoData.TcoEntity.Kids">Kids</h4>
@@ -2446,7 +2461,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Parent.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L119">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L132">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Parent_" data-uid="TcoData.TcoEntity.Parent*"></a>
   <h4 id="TcoData_TcoEntity_Parent" data-uid="TcoData.TcoEntity.Parent">Parent</h4>
@@ -2476,7 +2491,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_Symbol.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.Symbol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L14">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L27">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_Symbol_" data-uid="TcoData.TcoEntity.Symbol*"></a>
   <h4 id="TcoData_TcoEntity_Symbol" data-uid="TcoData.TcoEntity.Symbol">Symbol</h4>
@@ -2506,7 +2521,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_SymbolTail.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.SymbolTail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L186">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L199">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_SymbolTail_" data-uid="TcoData.TcoEntity.SymbolTail*"></a>
   <h4 id="TcoData_TcoEntity_SymbolTail" data-uid="TcoData.TcoEntity.SymbolTail">SymbolTail</h4>
@@ -2536,7 +2551,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_ValueTags.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.ValueTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L130">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L143">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_ValueTags_" data-uid="TcoData.TcoEntity.ValueTags*"></a>
   <h4 id="TcoData_TcoEntity_ValueTags" data-uid="TcoData.TcoEntity.ValueTags">ValueTags</h4>
@@ -2568,7 +2583,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_AddChild_Vortex_Connector_IVortexObject_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.AddChild(Vortex.Connector.IVortexObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L96">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L109">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_AddChild_" data-uid="TcoData.TcoEntity.AddChild*"></a>
   <h4 id="TcoData_TcoEntity_AddChild_Vortex_Connector_IVortexObject_" data-uid="TcoData.TcoEntity.AddChild(Vortex.Connector.IVortexObject)">AddChild(IVortexObject)</h4>
@@ -2600,7 +2615,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_AddKid_Vortex_Connector_IVortexElement_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.AddKid(Vortex.Connector.IVortexElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L112">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L125">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_AddKid_" data-uid="TcoData.TcoEntity.AddKid*"></a>
   <h4 id="TcoData_TcoEntity_AddKid_Vortex_Connector_IVortexElement_" data-uid="TcoData.TcoEntity.AddKid(Vortex.Connector.IVortexElement)">AddKid(IVortexElement)</h4>
@@ -2632,7 +2647,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_AddValueTag_Vortex_Connector_IValueTag_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.AddValueTag(Vortex.Connector.IValueTag)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L141">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L154">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_AddValueTag_" data-uid="TcoData.TcoEntity.AddValueTag*"></a>
   <h4 id="TcoData_TcoEntity_AddValueTag_Vortex_Connector_IValueTag_" data-uid="TcoData.TcoEntity.AddValueTag(Vortex.Connector.IValueTag)">AddValueTag(IValueTag)</h4>
@@ -2664,7 +2679,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_CopyPlainToShadow_TcoData_PlainTcoEntity_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.CopyPlainToShadow(TcoData.PlainTcoEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L163">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L176">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_CopyPlainToShadow_" data-uid="TcoData.TcoEntity.CopyPlainToShadow*"></a>
   <h4 id="TcoData_TcoEntity_CopyPlainToShadow_TcoData_PlainTcoEntity_" data-uid="TcoData.TcoEntity.CopyPlainToShadow(TcoData.PlainTcoEntity)">CopyPlainToShadow(PlainTcoEntity)</h4>
@@ -2696,7 +2711,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_CreatePlainerType.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.CreatePlainerType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L72">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L85">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_CreatePlainerType_" data-uid="TcoData.TcoEntity.CreatePlainerType*"></a>
   <h4 id="TcoData_TcoEntity_CreatePlainerType" data-uid="TcoData.TcoEntity.CreatePlainerType">CreatePlainerType()</h4>
@@ -2726,7 +2741,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_CreatePlainerType_TcoData_PlainTcoEntity_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.CreatePlainerType(TcoData.PlainTcoEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L78">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L91">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_CreatePlainerType_" data-uid="TcoData.TcoEntity.CreatePlainerType*"></a>
   <h4 id="TcoData_TcoEntity_CreatePlainerType_TcoData_PlainTcoEntity_" data-uid="TcoData.TcoEntity.CreatePlainerType(TcoData.PlainTcoEntity)">CreatePlainerType(PlainTcoEntity)</h4>
@@ -2773,7 +2788,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_FlushOnlineToPlain_TcoData_PlainTcoEntity_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.FlushOnlineToPlain(TcoData.PlainTcoEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L180">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L193">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_FlushOnlineToPlain_" data-uid="TcoData.TcoEntity.FlushOnlineToPlain*"></a>
   <h4 id="TcoData_TcoEntity_FlushOnlineToPlain_TcoData_PlainTcoEntity_" data-uid="TcoData.TcoEntity.FlushOnlineToPlain(TcoData.PlainTcoEntity)">FlushOnlineToPlain(PlainTcoEntity)</h4>
@@ -2805,7 +2820,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_FlushOnlineToShadow.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.FlushOnlineToShadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L174">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L187">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_FlushOnlineToShadow_" data-uid="TcoData.TcoEntity.FlushOnlineToShadow*"></a>
   <h4 id="TcoData_TcoEntity_FlushOnlineToShadow" data-uid="TcoData.TcoEntity.FlushOnlineToShadow">FlushOnlineToShadow()</h4>
@@ -2820,7 +2835,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_FlushPlainToOnline_TcoData_PlainTcoEntity_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.FlushPlainToOnline(TcoData.PlainTcoEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L157">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L170">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_FlushPlainToOnline_" data-uid="TcoData.TcoEntity.FlushPlainToOnline*"></a>
   <h4 id="TcoData_TcoEntity_FlushPlainToOnline_TcoData_PlainTcoEntity_" data-uid="TcoData.TcoEntity.FlushPlainToOnline(TcoData.PlainTcoEntity)">FlushPlainToOnline(PlainTcoEntity)</h4>
@@ -2852,7 +2867,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_FlushShadowToOnline.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.FlushShadowToOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L168">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L181">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_FlushShadowToOnline_" data-uid="TcoData.TcoEntity.FlushShadowToOnline*"></a>
   <h4 id="TcoData_TcoEntity_FlushShadowToOnline" data-uid="TcoData.TcoEntity.FlushShadowToOnline">FlushShadowToOnline()</h4>
@@ -2867,7 +2882,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetChildren.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L91">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L104">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetChildren_" data-uid="TcoData.TcoEntity.GetChildren*"></a>
   <h4 id="TcoData_TcoEntity_GetChildren" data-uid="TcoData.TcoEntity.GetChildren">GetChildren()</h4>
@@ -2897,7 +2912,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetConnector.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetConnector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L152">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L165">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetConnector_" data-uid="TcoData.TcoEntity.GetConnector*"></a>
   <h4 id="TcoData_TcoEntity_GetConnector" data-uid="TcoData.TcoEntity.GetConnector">GetConnector()</h4>
@@ -2927,7 +2942,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetKids.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetKids%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L107">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L120">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetKids_" data-uid="TcoData.TcoEntity.GetKids*"></a>
   <h4 id="TcoData_TcoEntity_GetKids" data-uid="TcoData.TcoEntity.GetKids">GetKids()</h4>
@@ -2957,7 +2972,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetParent.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L125">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L138">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetParent_" data-uid="TcoData.TcoEntity.GetParent*"></a>
   <h4 id="TcoData_TcoEntity_GetParent" data-uid="TcoData.TcoEntity.GetParent">GetParent()</h4>
@@ -2987,7 +3002,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetSymbolTail.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetSymbolTail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L192">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L205">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetSymbolTail_" data-uid="TcoData.TcoEntity.GetSymbolTail*"></a>
   <h4 id="TcoData_TcoEntity_GetSymbolTail" data-uid="TcoData.TcoEntity.GetSymbolTail">GetSymbolTail()</h4>
@@ -3017,7 +3032,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_GetValueTags.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.GetValueTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L136">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L149">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_GetValueTags_" data-uid="TcoData.TcoEntity.GetValueTags*"></a>
   <h4 id="TcoData_TcoEntity_GetValueTags" data-uid="TcoData.TcoEntity.GetValueTags">GetValueTags()</h4>
@@ -3047,7 +3062,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_LazyOnlineToShadow.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.LazyOnlineToShadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L62">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L75">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_LazyOnlineToShadow_" data-uid="TcoData.TcoEntity.LazyOnlineToShadow*"></a>
   <h4 id="TcoData_TcoEntity_LazyOnlineToShadow" data-uid="TcoData.TcoEntity.LazyOnlineToShadow">LazyOnlineToShadow()</h4>
@@ -3062,7 +3077,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_LazyShadowToOnline.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.LazyShadowToOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L67">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L80">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_LazyShadowToOnline_" data-uid="TcoData.TcoEntity.LazyShadowToOnline*"></a>
   <h4 id="TcoData_TcoEntity_LazyShadowToOnline" data-uid="TcoData.TcoEntity.LazyShadowToOnline">LazyShadowToOnline()</h4>
@@ -3077,7 +3092,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_PexConstructor_Vortex_Connector_IVortexObject_System_String_System_String_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.PexConstructor(Vortex.Connector.IVortexObject%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L117">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L130">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_PexConstructor_" data-uid="TcoData.TcoEntity.PexConstructor*"></a>
   <h4 id="TcoData_TcoEntity_PexConstructor_Vortex_Connector_IVortexObject_System_String_System_String_" data-uid="TcoData.TcoEntity.PexConstructor(Vortex.Connector.IVortexObject,System.String,System.String)">PexConstructor(IVortexObject, String, String)</h4>
@@ -3119,7 +3134,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_PexConstructorParameterless.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.PexConstructorParameterless%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L118">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L131">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_PexConstructorParameterless_" data-uid="TcoData.TcoEntity.PexConstructorParameterless*"></a>
   <h4 id="TcoData_TcoEntity_PexConstructorParameterless" data-uid="TcoData.TcoEntity.PexConstructorParameterless">PexConstructorParameterless()</h4>
@@ -3134,7 +3149,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_PexPreConstructor_Vortex_Connector_IVortexObject_System_String_System_String_.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.PexPreConstructor(Vortex.Connector.IVortexObject%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L83">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L96">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_PexPreConstructor_" data-uid="TcoData.TcoEntity.PexPreConstructor*"></a>
   <h4 id="TcoData_TcoEntity_PexPreConstructor_Vortex_Connector_IVortexObject_System_String_System_String_" data-uid="TcoData.TcoEntity.PexPreConstructor(Vortex.Connector.IVortexObject,System.String,System.String)">PexPreConstructor(IVortexObject, String, String)</h4>
@@ -3176,7 +3191,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_PexPreConstructorParameterless.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.PexPreConstructorParameterless%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L84">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L97">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_PexPreConstructorParameterless_" data-uid="TcoData.TcoEntity.PexPreConstructorParameterless*"></a>
   <h4 id="TcoData_TcoEntity_PexPreConstructorParameterless" data-uid="TcoData.TcoEntity.PexPreConstructorParameterless">PexPreConstructorParameterless()</h4>
@@ -3193,7 +3208,7 @@ public OnlinerString _EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_TcoData_IShadowTcoEntity__EntityId.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.TcoData%23IShadowTcoEntity%23_EntityId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L53">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L66">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_TcoData_IShadowTcoEntity__EntityId_" data-uid="TcoData.TcoEntity.TcoData#IShadowTcoEntity#_EntityId*"></a>
   <h4 id="TcoData_TcoEntity_TcoData_IShadowTcoEntity__EntityId" data-uid="TcoData.TcoEntity.TcoData#IShadowTcoEntity#_EntityId">IShadowTcoEntity._EntityId</h4>
@@ -3226,7 +3241,7 @@ IShadowString IShadowTcoEntity._EntityId { get; }</code></pre>
     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity_TcoData_ITcoEntity__EntityId.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity.TcoData%23ITcoEntity%23_EntityId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L44">View Source</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L57">View Source</a>
   </span>
   <a id="TcoData_TcoEntity_TcoData_ITcoEntity__EntityId_" data-uid="TcoData.TcoEntity.TcoData#ITcoEntity#_EntityId*"></a>
   <h4 id="TcoData_TcoEntity_TcoData_ITcoEntity__EntityId" data-uid="TcoData.TcoEntity.TcoData#ITcoEntity#_EntityId">ITcoEntity._EntityId</h4>
@@ -3290,7 +3305,7 @@ IOnlineString ITcoEntity._EntityId { get; }</code></pre>
                     <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcoData_TcoEntity.md&amp;value=---%0Auid%3A%20TcoData.TcoEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TcOpenGroup/TcOpen/blob/295-Add_in-code_documentation_to_TcoData/src/TcoData/src/TcoDataConnector/_generated/Onliners/TcoEntity.g.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

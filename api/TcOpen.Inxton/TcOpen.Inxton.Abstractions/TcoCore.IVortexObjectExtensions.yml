@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IVortexObjectExtensions
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetParent
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -80,7 +80,6 @@ items:
   syntax:
     content: >-
       public static T GetParent<T>(this IVortexObject obj, T parent = null)
-
           where T : class
     parameters:
     - id: obj
@@ -124,7 +123,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -138,7 +137,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetDescendants<T>(this IVortexObject obj, IList<T> children = null)
-
           where T : class
     parameters:
     - id: obj
@@ -182,7 +180,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -196,7 +194,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetDescendants<T>(this IVortexObject obj, int depth, IList<T> children = null, int currentDepth = 0)
-
           where T : class
     parameters:
     - id: obj
@@ -246,7 +243,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -260,7 +257,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetChildren<T>(this IVortexObject obj)
-
           where T : IVortexObject
     parameters:
     - id: obj
@@ -301,7 +297,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
@@ -312,7 +308,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<T> GetChildren<T>(this IVortexObject obj, IEnumerable<object> excluding)
-
           where T : IVortexObject
     parameters:
     - id: obj
@@ -352,7 +347,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CreatePlain
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs

@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RelayCommand
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -38,7 +38,6 @@ items:
     content: 'public class RelayCommand : ICommand'
     content.vb: >-
       Public Class RelayCommand
-
           Implements ICommand
   inheritance:
   - System.Object
@@ -72,7 +71,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -103,7 +102,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _canExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -134,7 +133,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _logAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -165,7 +164,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -205,7 +204,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ValidateCanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -240,7 +239,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -277,7 +276,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: RaiseCanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -307,7 +306,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
@@ -342,7 +341,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: dev
+      branch: 295-Add_in-code_documentation_to_TcoData
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
