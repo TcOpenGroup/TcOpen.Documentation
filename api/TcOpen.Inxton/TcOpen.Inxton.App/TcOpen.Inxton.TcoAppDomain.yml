@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: TcoAppDomain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: _current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -196,7 +196,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Logger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -233,7 +233,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Builder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
@@ -307,7 +307,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs

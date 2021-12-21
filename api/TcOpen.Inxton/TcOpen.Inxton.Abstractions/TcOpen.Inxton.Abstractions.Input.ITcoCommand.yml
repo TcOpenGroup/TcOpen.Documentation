@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ITcoCommand
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs
@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs
@@ -79,7 +79,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/ITcoCommand.cs

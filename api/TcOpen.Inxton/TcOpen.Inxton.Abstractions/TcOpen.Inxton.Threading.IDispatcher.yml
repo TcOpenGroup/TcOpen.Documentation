@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Invoke
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: InvokeAsync
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/IDispatcher.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IdentifierValueMismatchedException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs

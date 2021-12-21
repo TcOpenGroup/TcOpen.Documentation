@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/OnUserAuthentication.cs
-      branch: 295-Add_in-code_documentation_to_TcoData
+      branch: dev
       repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUserAuthentication
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/OnUserAuthentication.cs
