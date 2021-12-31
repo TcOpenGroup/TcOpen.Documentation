@@ -29,7 +29,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DummyLoggerAdapter
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 10
@@ -76,7 +76,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MessageQueue
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 14
@@ -119,7 +119,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: QueueMessages
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 16
@@ -161,7 +161,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: lastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 23
@@ -188,7 +188,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: LastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 25
@@ -223,7 +223,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 27
@@ -253,7 +253,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ClearLastMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 32
@@ -283,7 +283,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IsLastMessageEmpty
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 37
@@ -315,7 +315,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 42
@@ -357,7 +357,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 47
@@ -399,7 +399,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 52
@@ -441,7 +441,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 57
@@ -483,7 +483,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 62
@@ -525,7 +525,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Logging/TcoOpen.Inxton.Logging/DummyLoggerAdapter.cs
     startLine: 67

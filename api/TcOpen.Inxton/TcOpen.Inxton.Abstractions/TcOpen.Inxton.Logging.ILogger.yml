@@ -22,7 +22,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ILogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 5
@@ -55,7 +55,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Debug
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 13
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Verbose
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 22
@@ -137,7 +137,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Information
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 31
@@ -178,7 +178,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Warning
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 40
@@ -219,7 +219,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Error
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 48
@@ -260,7 +260,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Fatal
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Logging/ILogger.cs
     startLine: 56
