@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Sinks
+  commentId: N:Serilog.Sinks
+  id: Serilog.Sinks
+  children:
+  - Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  - Serilog.Sinks.MQTTSink
+  langs:
+  - csharp
+  - vb
+  name: Serilog.Sinks
+  nameWithType: Serilog.Sinks
+  fullName: Serilog.Sinks
+  type: Namespace
+  assemblies:
+  - Serilog.Sinks.MQTT
+references:
+- uid: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  commentId: T:Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  name: MQTTLoggerConfigurationExtensions
+  nameWithType: MQTTLoggerConfigurationExtensions
+  fullName: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+- uid: Serilog.Sinks.MQTTSink
+  commentId: T:Serilog.Sinks.MQTTSink
+  name: MQTTSink
+  nameWithType: MQTTSink
+  fullName: Serilog.Sinks.MQTTSink

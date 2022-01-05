@@ -19,7 +19,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ISecurityManager
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 8
@@ -50,7 +50,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AvailableGroups
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 10
@@ -78,7 +78,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetOrCreateRole
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 17
@@ -113,7 +113,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AvailableRoles
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 19

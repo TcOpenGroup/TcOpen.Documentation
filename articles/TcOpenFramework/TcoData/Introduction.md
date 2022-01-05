@@ -136,7 +136,7 @@ END_IF;
 Let's now change the repository type; what if we have too much data and need a more robust solution? 
 
 ~~~C#
-var repository = new MongoDBRepository(new MongoDbRepositorySettings<PlainMyDataForExchange>("","",""));
+var repository = new MongoDBRepository(new MongoDbRepositorySettings<PlainMyDataForExchange>("mongodb://localhost:27017","MyDatabase","MyCollection"));
 ~~~
 
 

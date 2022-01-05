@@ -20,7 +20,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IdentifierValueMismatchedException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
     startLine: 9
@@ -82,7 +82,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
     startLine: 11
@@ -112,7 +112,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
     startLine: 17
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
     startLine: 25
@@ -187,7 +187,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/IdentifierValueMismactchedException.cs
     startLine: 35

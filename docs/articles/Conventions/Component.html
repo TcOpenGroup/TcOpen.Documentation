@@ -117,6 +117,12 @@
                                   <a href="../TcOpenFramework/TcoCore/TcoTask.html" title="TcoTask" class="">TcoTask</a>
                                 </li>
                                 <li class="">
+                                  <a href="../TcOpenFramework/TcoCore/TcoState.html" title="TcoState" class="">TcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcOpenFramework/TcoCore/TcoSequencer.html" title="TcoSequencer" class="">TcoSequencer</a>
+                                </li>
+                                <li class="">
                                   <a href="../TcOpenFramework/TcoCore/TcoComponent.html" title="TcoComponent" class="">TcoComponent</a>
                                 </li>
                                 <li class="">
@@ -194,6 +200,27 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="components">Components</h1>
 
+<table>
+<thead>
+<tr>
+<th>REVISION</th>
+<th>DATE</th>
+<th>NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0</td>
+<td>April 2021</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>0.0</td>
+<td>Jan 2021</td>
+<td>Components library naming</td>
+</tr>
+</tbody>
+</table>
 <p>This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it.</p>
 <h2 id="general-rules">General rules</h2>
 <h3 id="io-variables">I/O variables</h3>
@@ -211,7 +238,8 @@
 <li>Config structure can contain arbitrary data relative to the configuration of the component (timeouts, parameters, etc.).</li>
 <li>Config type must be STRUCT.</li>
 <li>Config data structure must be named in the following format <code>{ComponentName}Config</code> (e.g. <code>TcoCylinderConfig</code>)</li>
-<li>Config structure must be accessible via <code>Config</code> property that returns <code>REFERENCE TO {ComponentName}Config</code>.  - The backing field of the Config property must be named <code>_config</code> (for easy identification in the higher-level applications).</li>
+<li>Config structure must be accessible via <code>Config</code> property that returns <code>REFERENCE TO {ComponentName}Config</code>.</li>
+<li>The backing field of the Config property must be named <code>_config</code> (for easy identification in the higher-level applications).</li>
 <li>Config structure can contain multiple nested and complex structures when it is necessary to organize better the information. Nested structures must be STRUCTs and must be named in the following format <code>{ComponentName}Config{Specifier}</code>.</li>
 <li>Wherever possible the data must be initialized to default values (e.g., timeouts, speeds etc.). The default settings should not prevent the component from functioning unless there is a specific requirement to provide parameters relative to the component model or a particular hardware configuration (drive model, gearing ratio, etc.).</li>
 <li>Each data member of the Config structure must be documented in the code, with an example. Whenever possible, a link to more detailed documentation must also be provided in the in-code documentation.</li>
@@ -247,6 +275,44 @@ All state-related members must be placed into <code>States</code> folder of the 
 <li><p><code>ServiceMode()</code> method is required to be implemented. It can contain arbitrary logic that will be executed while the component is in a serviceable state.</p>
 </li>
 </ul>
+<h2 id="components-naming-conventions">Components naming conventions</h2>
+<p>The components for particular components are placed into appropriate library. Library name reflects the name of the manufacturer and the class of the product. POUs that belongs to a specific component reflect the product name and products' version information.</p>
+<table>
+<thead>
+<tr>
+<th>UNIT NAME</th>
+<th>PATTER</th>
+<th>NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Library</td>
+<td><code>Tco{Manufacturer}[{Class}]</code>]</td>
+<td><code>TcoAbbRobotics</code></td>
+</tr>
+<tr>
+<td>FB</td>
+<td><code>Tco{Model}_v_{ModelVersion}</code></td>
+<td><code>TcoOmnicore_v_1_0_0</code></td>
+</tr>
+<tr>
+<td>STRUCT Config</td>
+<td><code>Tco{Model}_Config_v_{ModelVersion}</code></td>
+<td><code>TcoOmnicore_Config_v_1_0_0</code></td>
+</tr>
+<tr>
+<td>STRUCT Status</td>
+<td><code>Tco{Model}_Status_v_{ModelVersion}</code></td>
+<td><code>TcoOmnicore_Status_v_1_0_0</code></td>
+</tr>
+<tr>
+<td>FB/STRUCT other</td>
+<td><code>Tco{Model}_{DescriptiveName}_v_{ModelVersion}</code></td>
+<td><code>TcoOmnicore_Aux_v_1_0_0</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="example-implementation">Example implementation</h2>
 <h3 id="pneumatic-cyclinder">Pneumatic cyclinder</h3>
 <!--![example-cyclinder-structure](example_cyclinder.PNG)-->
