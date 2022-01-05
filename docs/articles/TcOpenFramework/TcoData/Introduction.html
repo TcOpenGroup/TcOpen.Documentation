@@ -117,6 +117,12 @@
                                   <a href="../../TcOpenFramework/TcoCore/TcoTask.html" title="TcoTask" class="">TcoTask</a>
                                 </li>
                                 <li class="">
+                                  <a href="../../TcOpenFramework/TcoCore/TcoState.html" title="TcoState" class="">TcoState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../TcOpenFramework/TcoCore/TcoSequencer.html" title="TcoSequencer" class="">TcoSequencer</a>
+                                </li>
+                                <li class="">
                                   <a href="../../TcOpenFramework/TcoCore/TcoComponent.html" title="TcoComponent" class="">TcoComponent</a>
                                 </li>
                                 <li class="">
@@ -290,7 +296,7 @@ IF(_delete) THEN
 END_IF;
 </code></pre>
 <p>Let's now change the repository type; what if we have too much data and need a more robust solution?</p>
-<pre><code class="lang-C#">var repository = new MongoDBRepository(new MongoDbRepositorySettings&lt;PlainMyDataForExchange&gt;(&quot;&quot;,&quot;&quot;,&quot;&quot;));
+<pre><code class="lang-C#">var repository = new MongoDBRepository(new MongoDbRepositorySettings&lt;PlainMyDataForExchange&gt;(&quot;mongodb://localhost:27017&quot;,&quot;MyDatabase&quot;,&quot;MyCollection&quot;));
 </code></pre>
 <h2 id="remarks">Remarks</h2>
 <p>If you have more than one .NET program in your automation application (e.g., more HMIs), make sure you do not initialize the data exchange in multiple places.</p>

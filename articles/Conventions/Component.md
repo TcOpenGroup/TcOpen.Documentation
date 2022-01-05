@@ -1,6 +1,12 @@
 # Components
 
+| REVISION | DATE       | NOTES                     |
+|----------|------------|---------------------------|
+| 0.0      | April 2021 | Initial release           |
+| 0.0      | Jan 2021   | Components library naming |
+
 This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it.
+
 
 ## General rules
 
@@ -23,7 +29,8 @@ The TcOpen does not use Hungarian prefixes, with few exceptions. FB_body paramet
 - Config structure can contain arbitrary data relative to the configuration of the component (timeouts, parameters, etc.).
 - Config type must be STRUCT.
 - Config data structure must be named in the following format `{ComponentName}Config` (e.g. `TcoCylinderConfig`)
-- Config structure must be accessible via `Config` property that returns `REFERENCE TO {ComponentName}Config`.  - The backing field of the Config property must be named `_config` (for easy identification in the higher-level applications).
+- Config structure must be accessible via `Config` property that returns `REFERENCE TO {ComponentName}Config`.  
+- The backing field of the Config property must be named `_config` (for easy identification in the higher-level applications).
 - Config structure can contain multiple nested and complex structures when it is necessary to organize better the information. Nested structures must be STRUCTs and must be named in the following format `{ComponentName}Config{Specifier}`.
 - Wherever possible the data must be initialized to default values (e.g., timeouts, speeds etc.). The default settings should not prevent the component from functioning unless there is a specific requirement to provide parameters relative to the component model or a particular hardware configuration (drive model, gearing ratio, etc.).  
 - Each data member of the Config structure must be documented in the code, with an example. Whenever possible, a link to more detailed documentation must also be provided in the in-code documentation.
@@ -63,6 +70,20 @@ Each component must inherit from `TcoCore.TcoComponent`, which is an abstract bl
 - `Restore()` must contain logic that will bring the component's internal states into the initial state. Restore method does not mean getting the component into physical ground position/state; it serves purely the purpose of having the component ready for operations from the programatic perspective.
 
 - `ServiceMode()` method is required to be implemented. It can contain arbitrary logic that will be executed while the component is in a serviceable state.
+
+## Components naming conventions
+
+The components for particular components are placed into appropriate library. Library name reflects the name of the manufacturer and the class of the product. POUs that belongs to a specific component reflect the product name and products' version information.
+
+
+| UNIT NAME       | PATTER                                          | NOTES                        |
+|-----------------|-------------------------------------------------|------------------------------|
+| Library         | `Tco{Manufacturer}[{Class}]`]                   | `TcoAbbRobotics`             |
+| FB              | `Tco{Model}_v_{ModelVersion}`                   | `TcoOmnicore_v_1_0_0`        |
+| STRUCT Config   | `Tco{Model}_Config_v_{ModelVersion}`            | `TcoOmnicore_Config_v_1_0_0` |
+| STRUCT Status   | `Tco{Model}_Status_v_{ModelVersion}`            | `TcoOmnicore_Status_v_1_0_0` |
+| FB/STRUCT other | `Tco{Model}_{DescriptiveName}_v_{ModelVersion}` | `TcoOmnicore_Aux_v_1_0_0`    |
+
 
 ## Example implementation
 

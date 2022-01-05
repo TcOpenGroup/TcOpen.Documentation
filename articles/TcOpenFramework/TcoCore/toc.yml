@@ -6,6 +6,10 @@
   href: TcoObject.md
 - name: TcoTask
   href: TcoTask.md
+- name: TcoState
+  href: TcoState.md  
+- name: TcoSequencer
+  href: TcoSequencer.md
 - name: TcoComponent
   href: TcoComponent.md
 - name: TcoMessenger

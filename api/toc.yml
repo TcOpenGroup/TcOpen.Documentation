@@ -16,3 +16,5 @@
   href: TcOpen.Inxton/TcOpen.Inxton.App/toc.yml
 - name: TcOpen.Inxton.Logging
   href: TcOpen.Inxton/TcOpen.Inxton.Logging/toc.yml   
+- name: Serilog.Sinks.MQTT
+  href: Serilog.Sinks.MQTT/toc.yml   

@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  commentId: T:Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  id: MQTTLoggerConfigurationExtensions
+  parent: Serilog.Sinks
+  children:
+  - Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT(Serilog.Configuration.LoggerSinkConfiguration,MQTTnet.Client.Options.IMqttClientOptions,System.String,MQTTnet.Protocol.MqttQualityOfServiceLevel,Serilog.Events.LogEventLevel,Serilog.Formatting.ITextFormatter)
+  langs:
+  - csharp
+  - vb
+  name: MQTTLoggerConfigurationExtensions
+  nameWithType: MQTTLoggerConfigurationExtensions
+  fullName: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: MQTTLoggerConfigurationExtensions
+    path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
+    startLine: 7
+  assemblies:
+  - Serilog.Sinks.MQTT
+  namespace: Serilog.Sinks
+  syntax:
+    content: public static class MQTTLoggerConfigurationExtensions
+    content.vb: Public Module MQTTLoggerConfigurationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT(Serilog.Configuration.LoggerSinkConfiguration,MQTTnet.Client.Options.IMqttClientOptions,System.String,MQTTnet.Protocol.MqttQualityOfServiceLevel,Serilog.Events.LogEventLevel,Serilog.Formatting.ITextFormatter)
+  commentId: M:Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT(Serilog.Configuration.LoggerSinkConfiguration,MQTTnet.Client.Options.IMqttClientOptions,System.String,MQTTnet.Protocol.MqttQualityOfServiceLevel,Serilog.Events.LogEventLevel,Serilog.Formatting.ITextFormatter)
+  id: MQTT(Serilog.Configuration.LoggerSinkConfiguration,MQTTnet.Client.Options.IMqttClientOptions,System.String,MQTTnet.Protocol.MqttQualityOfServiceLevel,Serilog.Events.LogEventLevel,Serilog.Formatting.ITextFormatter)
+  isExtensionMethod: true
+  parent: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: MQTT(LoggerSinkConfiguration, IMqttClientOptions, String, MqttQualityOfServiceLevel, LogEventLevel, ITextFormatter)
+  nameWithType: MQTTLoggerConfigurationExtensions.MQTT(LoggerSinkConfiguration, IMqttClientOptions, String, MqttQualityOfServiceLevel, LogEventLevel, ITextFormatter)
+  fullName: Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT(Serilog.Configuration.LoggerSinkConfiguration, MQTTnet.Client.Options.IMqttClientOptions, System.String, MQTTnet.Protocol.MqttQualityOfServiceLevel, Serilog.Events.LogEventLevel, Serilog.Formatting.ITextFormatter)
+  type: Method
+  source:
+    remote:
+      path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: MQTT
+    path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
+    startLine: 19
+  assemblies:
+  - Serilog.Sinks.MQTT
+  namespace: Serilog.Sinks
+  summary: "\nCreates logger configuration for MQTT.\n"
+  example: []
+  syntax:
+    content: public static LoggerConfiguration MQTT(this LoggerSinkConfiguration sinkConfiguration, IMqttClientOptions clientOptions, string topic, MqttQualityOfServiceLevel qoS = MqttQualityOfServiceLevel.AtMostOnce, LogEventLevel restrictedToMinimumLevel = LogEventLevel.Information, ITextFormatter formatter = null)
+    parameters:
+    - id: sinkConfiguration
+      type: Serilog.Configuration.LoggerSinkConfiguration
+      description: Sink configuration
+    - id: clientOptions
+      type: MQTTnet.Client.Options.IMqttClientOptions
+      description: MQTT client options
+    - id: topic
+      type: System.String
+      description: MQTT topic under which the logs are to be published.
+    - id: qoS
+      type: MQTTnet.Protocol.MqttQualityOfServiceLevel
+      description: Quality of service level. <xref href="MQTTnet.Protocol.MqttQualityOfServiceLevel" data-throw-if-not-resolved="false"></xref>
+    - id: restrictedToMinimumLevel
+      type: Serilog.Events.LogEventLevel
+      description: Restricted min level.
+    - id: formatter
+      type: Serilog.Formatting.ITextFormatter
+      description: Custom formatter.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MQTT(sinkConfiguration As LoggerSinkConfiguration, clientOptions As IMqttClientOptions, topic As String, qoS As MqttQualityOfServiceLevel = MqttQualityOfServiceLevel.AtMostOnce, restrictedToMinimumLevel As LogEventLevel = LogEventLevel.Information, formatter As ITextFormatter = Nothing) As LoggerConfiguration
+  overload: Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Serilog.Sinks
+  commentId: N:Serilog.Sinks
+  name: Serilog.Sinks
+  nameWithType: Serilog.Sinks
+  fullName: Serilog.Sinks
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MQTTnet.Protocol.MqttQualityOfServiceLevel
+  commentId: T:MQTTnet.Protocol.MqttQualityOfServiceLevel
+  parent: MQTTnet.Protocol
+  isExternal: true
+  name: MqttQualityOfServiceLevel
+  nameWithType: MqttQualityOfServiceLevel
+  fullName: MQTTnet.Protocol.MqttQualityOfServiceLevel
+- uid: Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT*
+  commentId: Overload:Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT
+  name: MQTT
+  nameWithType: MQTTLoggerConfigurationExtensions.MQTT
+  fullName: Serilog.Sinks.MQTTLoggerConfigurationExtensions.MQTT
+- uid: Serilog.Configuration.LoggerSinkConfiguration
+  commentId: T:Serilog.Configuration.LoggerSinkConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  name: LoggerSinkConfiguration
+  nameWithType: LoggerSinkConfiguration
+  fullName: Serilog.Configuration.LoggerSinkConfiguration
+- uid: MQTTnet.Client.Options.IMqttClientOptions
+  commentId: T:MQTTnet.Client.Options.IMqttClientOptions
+  parent: MQTTnet.Client.Options
+  isExternal: true
+  name: IMqttClientOptions
+  nameWithType: IMqttClientOptions
+  fullName: MQTTnet.Client.Options.IMqttClientOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: Serilog.Formatting.ITextFormatter
+  commentId: T:Serilog.Formatting.ITextFormatter
+  parent: Serilog.Formatting
+  isExternal: true
+  name: ITextFormatter
+  nameWithType: ITextFormatter
+  fullName: Serilog.Formatting.ITextFormatter
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  parent: Serilog
+  isExternal: true
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+- uid: MQTTnet.Protocol
+  commentId: N:MQTTnet.Protocol
+  isExternal: true
+  name: MQTTnet.Protocol
+  nameWithType: MQTTnet.Protocol
+  fullName: MQTTnet.Protocol
+- uid: Serilog.Configuration
+  commentId: N:Serilog.Configuration
+  isExternal: true
+  name: Serilog.Configuration
+  nameWithType: Serilog.Configuration
+  fullName: Serilog.Configuration
+- uid: MQTTnet.Client.Options
+  commentId: N:MQTTnet.Client.Options
+  isExternal: true
+  name: MQTTnet.Client.Options
+  nameWithType: MQTTnet.Client.Options
+  fullName: MQTTnet.Client.Options
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+- uid: Serilog.Formatting
+  commentId: N:Serilog.Formatting
+  isExternal: true
+  name: Serilog.Formatting
+  nameWithType: Serilog.Formatting
+  fullName: Serilog.Formatting
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog

@@ -156,7 +156,8 @@
       "src": [
         {
           "files": [
-            "src//TcOpen.Inxton//src//Logging//TcoOpen.Inxton.Logging//TcOpen.Inxton.Logging.csproj"            
+            "src//TcOpen.Inxton//src//Logging//TcoOpen.Inxton.Logging//TcOpen.Inxton.Logging.csproj",
+            "src//Serilog.Sinks.MQTT//src//Serilog.Sinks.MQTT//Serilog.Sinks.MQTT.csproj"            
           ],
           "exclude": [
             "**/bin/**",
@@ -196,8 +197,7 @@
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
-    }
-
+    }  
   ],
   "build": {
     "content": [

@@ -1,4 +1,11 @@
 ### YamlMime:TableOfContent
+- uid: Serilog.Sinks
+  name: Serilog.Sinks
+  items:
+  - uid: Serilog.Sinks.MQTTLoggerConfigurationExtensions
+    name: MQTTLoggerConfigurationExtensions
+  - uid: Serilog.Sinks.MQTTSink
+    name: MQTTSink
 - uid: TcOpen.Inxton.Logging
   name: TcOpen.Inxton.Logging
   items:

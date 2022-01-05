@@ -23,20 +23,20 @@
 
 ### TcoCore
 
-| main | dev | PLC Class                                                   | Description                                                                        | IVF | WPF | Blazor |
-|------|-----|-------------------------------------------------------------|------------------------------------------------------------------------------------|-----|-----|--------|
-|      | x   | TcoRtc                                                      | Single source of **real time clock** for the application                           |     |     |        |
-|      | x   | [TcoContext](TcOpenFramework/TcoCore/TcoContext.md)      | Provides **encapsulation** for coherent unit of control                            |     |     |        |
+| main | dev | PLC Class                                               | Description                                                                        | IVF | WPF | Blazor |
+|------|-----|---------------------------------------------------------|------------------------------------------------------------------------------------|-----|-----|--------|
+|      | x   | TcoRtc                                                  | Single source of **real time clock** for the application                           |     |     |        |
+|      | x   | [TcoContext](TcOpenFramework/TcoCore/TcoContext.md)     | Provides **encapsulation** for coherent unit of control                            |     |     |        |
 |      | x   | [TcoComponent](TcOpenFramework/TcoCore/TcoComponent.md) | Base class from which all components should derive                                 |     |     |        |
-|      | x   | [TcoObject](TcOpenFramework/TcoCore/TcoObject.md)        | Base class from which all objects (FBs) in the framework should derive             |     |     |        |
-|      | x   | [TcoMessenger](TcOpenFramework/TcoCore/TcoMessenger.md)              | Static **messaging mechanism**; Messages can be read from higher level application |     | x   |        |
-|      | x   | [TcoLogger](TcOpenFramework/TcoCore/TcoLogger.md)                    | **Logs messages** from the PLC program.                                            |     |     |        |
-|      | x   | [TcoTask](TcOpenFramework/TcoCore/TcoTask.md)            | Task coordinator for synch and asynch run of arbitary code.                        |     | x   | x      |
-|      | x   | TcoToggleTask                                               | Task coordinator for switching between two branches of logic.                      |     | x   | x      |
-|      | x   | TcoRemoteTask                                               | Task coordinator for executing arbitrary code in .net evironment.                  | x   | x   | x      |
-|      | x   | TcoMomentaryTask                                            | Task coordinator for executing arbitrary logic while a codition is met.            |     |     |        |
-|      | x   | [TcoState](TcOpenFramework/TcoCore/TcoState.md)          | Basic state controller enhances the ST language (IF,CASE, ELSIF) coordination      |     |     |        |
-|      | x   | [TcoSequencer](TcOpenFramework/TcoCore/TcoSequencer.md)  | Advanced sequencing coordination primitive for step-by-step operations.            |     | x   | x      |
+|      | x   | [TcoObject](TcOpenFramework/TcoCore/TcoObject.md)       | Base class from which all objects (FBs) in the framework should derive             |     |     |        |
+|      | x   | [TcoMessenger](TcOpenFramework/TcoCore/TcoMessenger.md) | Static **messaging mechanism**; Messages can be read from higher level application |     | x   |        |
+|      | x   | [TcoLogger](TcOpenFramework/TcoCore/TcoLogger.md)       | **Logs messages** from the PLC program.                                            |     |     |        |
+|      | x   | [TcoTask](TcOpenFramework/TcoCore/TcoTask.md)           | Task coordinator for synch and asynch run of arbitary code.                        |     | x   | x      |
+|      | x   | TcoToggleTask                                           | Task coordinator for switching between two branches of logic.                      |     | x   | x      |
+|      | x   | TcoRemoteTask                                           | Task coordinator for executing arbitrary code in .net evironment.                  | x   | x   | x      |
+|      | x   | TcoMomentaryTask                                        | Task coordinator for executing arbitrary logic while a codition is met.            |     |     |        |
+|      | x   | [TcoState](TcOpenFramework/TcoCore/TcoState.md)         | Basic state controller enhances the ST language (IF,CASE, ELSIF) coordination      |     |     |        |
+|      | x   | [TcoSequencer](TcOpenFramework/TcoCore/TcoSequencer.md) | Advanced sequencing coordination primitive for step-by-step operations.            |     | x   | x      |
 
 
 ### TcOpen Inxton application specific
