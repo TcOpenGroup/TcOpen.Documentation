@@ -114,7 +114,7 @@ IF(_create) THEN
 END_IF;
 
 IF(_read) THEN
-    IF(_myDataExchanger.Delete(_id).Done) THEN
+    IF(_myDataExchanger.Read(_id).Done) THEN
         _read := FALSE;
     END_IF;
 END_IF;
