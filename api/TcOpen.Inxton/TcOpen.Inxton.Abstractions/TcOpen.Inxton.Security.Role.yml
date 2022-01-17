@@ -19,7 +19,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Role
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 4
@@ -66,7 +66,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DefaultGroup
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 6
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 8
@@ -136,7 +136,7 @@ items:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ToString
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 16

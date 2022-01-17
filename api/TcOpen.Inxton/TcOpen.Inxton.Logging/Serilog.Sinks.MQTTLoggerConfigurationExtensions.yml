@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MQTTLoggerConfigurationExtensions
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
     startLine: 7
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MQTT
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
     startLine: 19

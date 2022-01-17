@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MQTTSink
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 13
@@ -37,7 +37,6 @@ items:
     content: 'public class MQTTSink : ILogEventSink, IDisposable'
     content.vb: >-
       Public Class MQTTSink
-
           Implements ILogEventSink, IDisposable
   inheritance:
   - System.Object
@@ -73,7 +72,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MqttClient
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 15
@@ -106,7 +105,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Formatter
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 16
@@ -139,7 +138,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: MqttClientOptions
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 17
@@ -172,7 +171,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 26
@@ -217,7 +216,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Topic
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 41
@@ -254,7 +253,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: QoS
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 43
@@ -289,7 +288,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Emit
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 49
@@ -328,7 +327,7 @@ items:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
       branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Dispose
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 65
