@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.OnReadFailedDelegate
+  commentId: T:TcOpen.Inxton.Data.OnReadFailedDelegate
+  id: OnReadFailedDelegate
+  parent: TcOpen.Inxton.Data
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnReadFailedDelegate
+  nameWithType: OnReadFailedDelegate
+  fullName: TcOpen.Inxton.Data.OnReadFailedDelegate
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnReadFailedDelegate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 17
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: public delegate void OnReadFailedDelegate(string id, Exception ex);
+    parameters:
+    - id: id
+      type: System.String
+    - id: ex
+      type: System.Exception
+    content.vb: Public Delegate Sub OnReadFailedDelegate(id As String, ex As Exception)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

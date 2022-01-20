@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+  id: OnCreateFailedDelegate`1
+  parent: TcOpen.Inxton.Data
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnCreateFailedDelegate<T>
+  nameWithType: OnCreateFailedDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateFailedDelegate<T>
+  type: Delegate
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: OnCreateFailedDelegate
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
+    startLine: 16
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: public delegate void OnCreateFailedDelegate<T>(string id, T data, Exception ex);
+    parameters:
+    - id: id
+      type: System.String
+    - id: data
+      type: '{T}'
+    - id: ex
+      type: System.Exception
+    typeParameters:
+    - id: T
+    content.vb: Public Delegate Sub OnCreateFailedDelegate(Of T)(id As String, data As T, ex As Exception)
+  nameWithType.vb: OnCreateFailedDelegate(Of T)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: TcOpen.Inxton.Data.OnCreateFailedDelegate(Of T)
+  name.vb: OnCreateFailedDelegate(Of T)
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

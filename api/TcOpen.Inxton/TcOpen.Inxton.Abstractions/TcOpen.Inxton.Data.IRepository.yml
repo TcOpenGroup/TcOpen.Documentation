@@ -26,7 +26,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 9
+    startLine: 23
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -57,7 +57,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 11
+    startLine: 25
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 12
+    startLine: 26
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -121,7 +121,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 13
+    startLine: 27
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Exists
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 14
+    startLine: 28
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -181,7 +181,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 15
+    startLine: 29
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -212,7 +212,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 16
+    startLine: 30
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
@@ -243,7 +243,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 17
+    startLine: 31
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data

@@ -34,9 +34,34 @@
   - uid: TcOpen.Inxton.Data.OnCreateDelegate`1
     name: OnCreateDelegate<T>
     name.vb: OnCreateDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+    name: OnCreateDoneDelegate<T>
+    name.vb: OnCreateDoneDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+    name: OnCreateFailedDelegate<T>
+    name.vb: OnCreateFailedDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnDeleteDelegate
+    name: OnDeleteDelegate
+  - uid: TcOpen.Inxton.Data.OnDeleteDoneDelegate
+    name: OnDeleteDoneDelegate
+  - uid: TcOpen.Inxton.Data.OnDeleteFailedDelegate
+    name: OnDeleteFailedDelegate
+  - uid: TcOpen.Inxton.Data.OnReadDelegate
+    name: OnReadDelegate
+  - uid: TcOpen.Inxton.Data.OnReadDoneDelegate`1
+    name: OnReadDoneDelegate<T>
+    name.vb: OnReadDoneDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnReadFailedDelegate
+    name: OnReadFailedDelegate
   - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
     name: OnUpdateDelegate<T>
     name.vb: OnUpdateDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+    name: OnUpdateDoneDelegate<T>
+    name.vb: OnUpdateDoneDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+    name: OnUpdateFailedDelegate<T>
+    name.vb: OnUpdateFailedDelegate(Of T)
   - uid: TcOpen.Inxton.Data.StandardDateTimeProvider
     name: StandardDateTimeProvider
   - uid: TcOpen.Inxton.Data.UnableToLocateRecordId

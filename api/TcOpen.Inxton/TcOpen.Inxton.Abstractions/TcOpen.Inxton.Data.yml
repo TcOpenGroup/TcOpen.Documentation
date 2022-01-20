@@ -13,7 +13,17 @@ items:
   - TcOpen.Inxton.Data.IRepository
   - TcOpen.Inxton.Data.IRepository`1
   - TcOpen.Inxton.Data.OnCreateDelegate`1
+  - TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+  - TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+  - TcOpen.Inxton.Data.OnDeleteDelegate
+  - TcOpen.Inxton.Data.OnDeleteDoneDelegate
+  - TcOpen.Inxton.Data.OnDeleteFailedDelegate
+  - TcOpen.Inxton.Data.OnReadDelegate
+  - TcOpen.Inxton.Data.OnReadDoneDelegate`1
+  - TcOpen.Inxton.Data.OnReadFailedDelegate
   - TcOpen.Inxton.Data.OnUpdateDelegate`1
+  - TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+  - TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
   - TcOpen.Inxton.Data.StandardDateTimeProvider
   - TcOpen.Inxton.Data.UnableToLocateRecordId
   - TcOpen.Inxton.Data.UnableToUpdateRecord
@@ -110,6 +120,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcOpen.Inxton.Data.OnReadDelegate
+  commentId: T:TcOpen.Inxton.Data.OnReadDelegate
+  parent: TcOpen.Inxton.Data
+  name: OnReadDelegate
+  nameWithType: OnReadDelegate
+  fullName: TcOpen.Inxton.Data.OnReadDelegate
 - uid: TcOpen.Inxton.Data.OnUpdateDelegate`1
   commentId: T:TcOpen.Inxton.Data.OnUpdateDelegate`1
   name: OnUpdateDelegate<T>
@@ -146,6 +162,210 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcOpen.Inxton.Data.OnDeleteDelegate
+  commentId: T:TcOpen.Inxton.Data.OnDeleteDelegate
+  parent: TcOpen.Inxton.Data
+  name: OnDeleteDelegate
+  nameWithType: OnDeleteDelegate
+  fullName: TcOpen.Inxton.Data.OnDeleteDelegate
+- uid: TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+  name: OnCreateDoneDelegate<T>
+  nameWithType: OnCreateDoneDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateDoneDelegate<T>
+  nameWithType.vb: OnCreateDoneDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnCreateDoneDelegate(Of T)
+  name.vb: OnCreateDoneDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+    name: OnCreateDoneDelegate
+    nameWithType: OnCreateDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDoneDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnCreateDoneDelegate`1
+    name: OnCreateDoneDelegate
+    nameWithType: OnCreateDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateDoneDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnReadDoneDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnReadDoneDelegate`1
+  name: OnReadDoneDelegate<T>
+  nameWithType: OnReadDoneDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnReadDoneDelegate<T>
+  nameWithType.vb: OnReadDoneDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnReadDoneDelegate(Of T)
+  name.vb: OnReadDoneDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnReadDoneDelegate`1
+    name: OnReadDoneDelegate
+    nameWithType: OnReadDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnReadDoneDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnReadDoneDelegate`1
+    name: OnReadDoneDelegate
+    nameWithType: OnReadDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnReadDoneDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+  name: OnUpdateDoneDelegate<T>
+  nameWithType: OnUpdateDoneDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnUpdateDoneDelegate<T>
+  nameWithType.vb: OnUpdateDoneDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnUpdateDoneDelegate(Of T)
+  name.vb: OnUpdateDoneDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+    name: OnUpdateDoneDelegate
+    nameWithType: OnUpdateDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDoneDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
+    name: OnUpdateDoneDelegate
+    nameWithType: OnUpdateDoneDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateDoneDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnDeleteDoneDelegate
+  commentId: T:TcOpen.Inxton.Data.OnDeleteDoneDelegate
+  parent: TcOpen.Inxton.Data
+  name: OnDeleteDoneDelegate
+  nameWithType: OnDeleteDoneDelegate
+  fullName: TcOpen.Inxton.Data.OnDeleteDoneDelegate
+- uid: TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+  name: OnCreateFailedDelegate<T>
+  nameWithType: OnCreateFailedDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnCreateFailedDelegate<T>
+  nameWithType.vb: OnCreateFailedDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnCreateFailedDelegate(Of T)
+  name.vb: OnCreateFailedDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+    name: OnCreateFailedDelegate
+    nameWithType: OnCreateFailedDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateFailedDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnCreateFailedDelegate`1
+    name: OnCreateFailedDelegate
+    nameWithType: OnCreateFailedDelegate
+    fullName: TcOpen.Inxton.Data.OnCreateFailedDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnReadFailedDelegate
+  commentId: T:TcOpen.Inxton.Data.OnReadFailedDelegate
+  parent: TcOpen.Inxton.Data
+  name: OnReadFailedDelegate
+  nameWithType: OnReadFailedDelegate
+  fullName: TcOpen.Inxton.Data.OnReadFailedDelegate
+- uid: TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+  commentId: T:TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+  name: OnUpdateFailedDelegate<T>
+  nameWithType: OnUpdateFailedDelegate<T>
+  fullName: TcOpen.Inxton.Data.OnUpdateFailedDelegate<T>
+  nameWithType.vb: OnUpdateFailedDelegate(Of T)
+  fullName.vb: TcOpen.Inxton.Data.OnUpdateFailedDelegate(Of T)
+  name.vb: OnUpdateFailedDelegate(Of T)
+  spec.csharp:
+  - uid: TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+    name: OnUpdateFailedDelegate
+    nameWithType: OnUpdateFailedDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateFailedDelegate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+    name: OnUpdateFailedDelegate
+    nameWithType: OnUpdateFailedDelegate
+    fullName: TcOpen.Inxton.Data.OnUpdateFailedDelegate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcOpen.Inxton.Data.OnDeleteFailedDelegate
+  commentId: T:TcOpen.Inxton.Data.OnDeleteFailedDelegate
+  parent: TcOpen.Inxton.Data
+  name: OnDeleteFailedDelegate
+  nameWithType: OnDeleteFailedDelegate
+  fullName: TcOpen.Inxton.Data.OnDeleteFailedDelegate
 - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
   commentId: T:TcOpen.Inxton.Data.ValidateDataDelegate`1
   name: ValidateDataDelegate<T>

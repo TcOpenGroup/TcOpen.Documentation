@@ -19,7 +19,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: OnCreateDelegate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
