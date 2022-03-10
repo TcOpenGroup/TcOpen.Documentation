@@ -22,8 +22,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IVortexObjectExtensions
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 10
@@ -67,8 +67,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetParent
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 23
@@ -124,8 +124,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 47
@@ -181,8 +181,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 80
@@ -244,8 +244,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 114
@@ -298,8 +298,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 120
@@ -348,8 +348,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetPlainFromOnline
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 137
@@ -399,8 +399,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetPlainFromOnline
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 154

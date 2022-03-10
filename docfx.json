@@ -197,6 +197,27 @@
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
+    },
+    {
+      "src": [
+        {
+          "files": [                        
+            "src//TcoInspectors//src//TcoInspectorsConnector//TcoInspectorsConnector.csproj",
+            "src//TcoInspectors//src//Wpf//TcOpen.Inxton.TcoInspectors.Wpf//TcOpen.Inxton.TcoInspectors.Wpf.csproj"            
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "*.Properties",
+            "*.Resx"
+          ],
+          "src": "..//TcOpen//"
+        }
+      ],
+      "dest": "api/TcoInspectors",
+      "filter": "filters/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true
     }  
   ],
   "build": {

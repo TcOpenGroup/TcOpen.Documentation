@@ -35,6 +35,7 @@ The components (Drive, Piston) have a set of tasks (MoveHome, MoveAbsolute, etc.
 - [TcoSequencer](TcoSequencer.md)
 - [TcoMessenger](TcoMessenger.md)
 - [TcoLogger](TcoLogger.md)
+- [TcoDialogs](TcoDialogs.md)
 
 
 

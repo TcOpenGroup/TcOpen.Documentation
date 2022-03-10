@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ICodeProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
     startLine: 9
@@ -48,8 +48,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Code
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
     startLine: 11
@@ -82,8 +82,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Origin
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/ICodeProvider.cs
     startLine: 13

@@ -25,8 +25,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IAuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 5
@@ -58,8 +58,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticateUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 13
@@ -96,8 +96,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DeAuthenticateCurrentUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 18
@@ -124,8 +124,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CalculateHash
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 26
@@ -162,8 +162,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ChangePassword
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 35
@@ -203,8 +203,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUserAuthenticateSuccess
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 40
@@ -232,8 +232,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUserAuthenticateFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 45
@@ -261,8 +261,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnDeAuthenticating
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 50
@@ -290,8 +290,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnDeAuthenticated
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 55
@@ -319,8 +319,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnTimedLogoutRequest
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 60
@@ -353,8 +353,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ExternalAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IAuthenticationService.cs
     startLine: 65

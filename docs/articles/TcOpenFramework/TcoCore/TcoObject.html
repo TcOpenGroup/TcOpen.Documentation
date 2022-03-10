@@ -143,6 +143,15 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
+                            <a class="">TcoInspectors</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../TcOpenFramework/TcoInspectors/Introduction.html" title="Introduction" class="">Introduction</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
                             <a class="">Howto(s)</a>
                               
                               <ul class="nav level3">
@@ -217,12 +226,30 @@
 <blockquote>
 <p>As a rule, all objects should be constructed as follows:</p>
 </blockquote>
-<pre><code>VAR
-    _drive : Drive(THIS^);
+<p><strong>FB_init when object is in another FUNCTION_BLOCK</strong></p>
+<pre><code>FUNCTION_BLOCK myFunctionBlock : EXTENDS TcoCore.TcoObject
+VAR
+    myObject : MyTcoObject(THIS^);
+    
 END_VAR    
 </code></pre>
 <p>where <code>THIS^</code> is of <code>ITcoObject</code>.</p>
-<hr>
+<p><strong>FB_init when object is in another STRUCTURE</strong></p>
+<pre><code>TYPE
+    MyStructure EXTENDS TcoCore.TcoStruct :
+    STRUCT
+        // Before not possible         
+        // Now
+        myObject : MyTcoObject(THISSTRUCT);
+    END_STRUCT
+END_TYPE
+</code></pre>
+<p>where data structure must be initialized within an function block of <code>TcoObject</code> type in the following way:</p>
+<pre><code>Data : ExampleInspectorsStruct := (Parent := THIS^);
+</code></pre>
+<blockquote>
+<p><strong>IMPORTANT!!!</strong> The compiler will not warn you missing parent assignment in structure declaration. Missing parent assignment may result in invalid pointer/reference exceptions.</p>
+</blockquote>
 <h3 id="messenger">Messenger</h3>
 <p><a href="../../../api/TcoCore/PlcDocu.TcoCore.TcoMessenger.html">API</a></p>
 <p>Any <code>TcoObject</code> can post messages of different severity ulterior use in higher-level applications (HMI/SCADA).</p>

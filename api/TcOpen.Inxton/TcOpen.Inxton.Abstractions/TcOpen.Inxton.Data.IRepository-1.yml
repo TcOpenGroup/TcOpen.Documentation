@@ -37,8 +37,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IRepository
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 34
@@ -75,8 +75,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Count
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 36
@@ -110,8 +110,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Queryable
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 37
@@ -145,8 +145,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Create
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 38
@@ -178,8 +178,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Delete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 39
@@ -209,8 +209,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Exists
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 40
@@ -242,8 +242,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: FilteredCount
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 41
@@ -275,8 +275,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: GetRecords
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 42
@@ -312,8 +312,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Read
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 43
@@ -345,8 +345,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Update
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 44
@@ -378,8 +378,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnCreate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 45
@@ -412,8 +412,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnRead
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 46
@@ -446,8 +446,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUpdate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 47
@@ -480,8 +480,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnDelete
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 48
@@ -514,8 +514,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnCreateDone
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 49
@@ -548,8 +548,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnReadDone
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 50
@@ -582,8 +582,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUpdateDone
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 51
@@ -616,8 +616,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnDeleteDone
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 52
@@ -650,8 +650,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnCreateFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 53
@@ -684,8 +684,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnReadFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 54
@@ -718,8 +718,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnUpdateFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 55
@@ -752,8 +752,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnDeleteFailed
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 56
@@ -786,8 +786,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: OnRecordUpdateValidation
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/IRepository.cs
     startLine: 57

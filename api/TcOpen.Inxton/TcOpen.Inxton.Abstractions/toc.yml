@@ -71,6 +71,11 @@
   - uid: TcOpen.Inxton.Data.ValidateDataDelegate`1
     name: ValidateDataDelegate<T>
     name.vb: ValidateDataDelegate(Of T)
+- uid: TcOpen.Inxton.Dialogs
+  name: TcOpen.Inxton.Dialogs
+  items:
+  - uid: TcOpen.Inxton.Dialogs.IsDialog
+    name: IsDialog
 - uid: TcOpen.Inxton.Input
   name: TcOpen.Inxton.Input
   items:
@@ -96,6 +101,8 @@
     name: IExternalAuthorization
   - uid: TcOpen.Inxton.Security.ISecurityManager
     name: ISecurityManager
+  - uid: TcOpen.Inxton.Security.ISecurityManagerUserInfo
+    name: ISecurityManagerUserInfo
   - uid: TcOpen.Inxton.Security.ISecurityProvider
     name: ISecurityProvider
   - uid: TcOpen.Inxton.Security.IUser

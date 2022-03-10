@@ -10,6 +10,8 @@
   href: TcoDrivesBeckhoff/toc.yml 
 - name: TcoData
   href: TcoData/toc.yml
+- name: TcoInspectors
+  href: TcoInspectors/toc.yml  
 - name: TcOpen.Inxton.Abstractions
   href: TcOpen.Inxton/TcOpen.Inxton.Abstractions/toc.yml   
 - name: TcOpen.Inxton.App

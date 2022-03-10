@@ -21,15 +21,38 @@ If we stretch our imagination, we can think of ```TcoObject``` as ```object``` i
 
 > As a rule, all objects should be constructed as follows:
 
+**FB_init when object is in another FUNCTION_BLOCK**
+
 ~~~
+FUNCTION_BLOCK myFunctionBlock : EXTENDS TcoCore.TcoObject
 VAR
-    _drive : Drive(THIS^);
+    myObject : MyTcoObject(THIS^);
+    
 END_VAR    
 ~~~
 
 where ```THIS^``` is of ```ITcoObject```.
 
----------------------------
+**FB_init when object is in another STRUCTURE**
+
+~~~
+TYPE
+    MyStructure EXTENDS TcoCore.TcoStruct :
+    STRUCT
+        // Before not possible         
+        // Now
+        myObject : MyTcoObject(THISSTRUCT);
+    END_STRUCT
+END_TYPE
+~~~
+
+where data structure must be initialized within an function block of `TcoObject` type in the following way:
+
+~~~
+Data : ExampleInspectorsStruct := (Parent := THIS^);
+~~~
+
+> **IMPORTANT!!!** The compiler will not warn you missing parent assignment in structure declaration. Missing parent assignment may result in invalid pointer/reference exceptions.
 
 ### Messenger
 

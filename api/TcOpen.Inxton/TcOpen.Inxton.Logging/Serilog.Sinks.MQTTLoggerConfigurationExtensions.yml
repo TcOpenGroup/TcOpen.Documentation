@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MQTTLoggerConfigurationExtensions
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
     startLine: 7
@@ -59,8 +59,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MQTT
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTLoggerConfigurationExtensions.cs
     startLine: 19
