@@ -23,8 +23,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MQTTSink
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 13
@@ -71,8 +71,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MqttClient
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 15
@@ -104,8 +104,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Formatter
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 16
@@ -137,8 +137,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: MqttClientOptions
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 17
@@ -170,8 +170,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 26
@@ -215,8 +215,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Topic
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 41
@@ -252,8 +252,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: QoS
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 43
@@ -287,8 +287,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Emit
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 49
@@ -326,8 +326,8 @@ items:
   source:
     remote:
       path: src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Dispose
     path: ../TcOpen/src/Serilog.Sinks.MQTT/src/Serilog.Sinks.MQTT/MQTTSink.cs
     startLine: 65

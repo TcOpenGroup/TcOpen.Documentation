@@ -20,8 +20,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: IUser
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 4
@@ -51,8 +51,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: CanUserChangePassword
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 6
@@ -83,8 +83,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Email
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 7
@@ -115,8 +115,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Level
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 8
@@ -147,8 +147,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Roles
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 9
@@ -179,8 +179,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: UserName
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IUser.cs
     startLine: 10

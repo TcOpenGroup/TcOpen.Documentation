@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ISecurityProvider
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
     startLine: 4
@@ -47,8 +47,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityProvider.cs
     startLine: 9

@@ -37,6 +37,7 @@
 |      | x   | TcoMomentaryTask                                        | Task coordinator for executing arbitrary logic while a codition is met.            |     |     |        |
 |      | x   | [TcoState](TcOpenFramework/TcoCore/TcoState.md)         | Basic state controller enhances the ST language (IF,CASE, ELSIF) coordination      |     |     |        |
 |      | x   | [TcoSequencer](TcOpenFramework/TcoCore/TcoSequencer.md) | Advanced sequencing coordination primitive for step-by-step operations.            |     | x   | x      |
+|      | x   | [TcoDialog](TcOpenFramework/TcoCore/TcoDialogs.md) | Interaction with the user from the PLC via dialog window.            |     | x   | x      |
 
 
 ### TcOpen Inxton application specific
@@ -60,6 +61,16 @@
 |      | x   | Json repository     | IRepository implementation string object as Json files | x   |     |        |
 |      | x   | MongoDb repository  | IRepository implementation for **mongodb** databases   | x   |     |        |
 |      |     | RavenDb repository  | IRepository implementation for **ravendb** databases   | x   |     |        |
+
+### TcoInspectors
+
+| main | dev | PLC Class                                                     | Description                         | IVF | WPF | Blazor |
+|------|-----|---------------------------------------------------------------|-------------------------------------|-----|-----|--------|
+|      | x   | [TcoInspector](TcOpenFramework/TcoInspectors/Introduction.md) | Base class for inspector            |     | x   |        |
+|      | x   | TcoDigitalInspector                                           | Inspection of descret values        |     | x   |        |
+|      | x   | TcoAnalogueInspector                                          | Inspection of continuous values     |     | x   |        |
+|      | x   | TcoDataInspector                                              | Inspection of alphanumerical values |     | x   |        |
+
 
 ### TcoDrivesBeckhoff
 

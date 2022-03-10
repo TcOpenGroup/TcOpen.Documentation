@@ -18,8 +18,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: Role
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 4
@@ -65,8 +65,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: DefaultGroup
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 6
@@ -100,8 +100,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 8
@@ -135,8 +135,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: ToString
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
     startLine: 16

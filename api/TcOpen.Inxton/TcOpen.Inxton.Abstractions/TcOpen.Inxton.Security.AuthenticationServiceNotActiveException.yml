@@ -20,8 +20,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: AuthenticationServiceNotActiveException
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 8
@@ -97,8 +97,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 14
@@ -140,8 +140,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 21
@@ -176,8 +176,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 30
@@ -215,8 +215,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 38
@@ -254,8 +254,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
-      branch: dev
-      repo: https://github.com/TcOpenGroup/TcOpen
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/AuthenticationServiceNotActiveException.cs
     startLine: 47

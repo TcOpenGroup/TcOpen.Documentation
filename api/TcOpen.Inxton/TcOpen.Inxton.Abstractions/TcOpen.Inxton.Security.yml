@@ -10,6 +10,7 @@ items:
   - TcOpen.Inxton.Security.IAuthenticationService
   - TcOpen.Inxton.Security.IExternalAuthorization
   - TcOpen.Inxton.Security.ISecurityManager
+  - TcOpen.Inxton.Security.ISecurityManagerUserInfo
   - TcOpen.Inxton.Security.ISecurityProvider
   - TcOpen.Inxton.Security.IUser
   - TcOpen.Inxton.Security.OnTimedLogoutRequestDelegate
@@ -59,6 +60,11 @@ references:
   name: ISecurityManager
   nameWithType: ISecurityManager
   fullName: TcOpen.Inxton.Security.ISecurityManager
+- uid: TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  commentId: T:TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  name: ISecurityManagerUserInfo
+  nameWithType: ISecurityManagerUserInfo
+  fullName: TcOpen.Inxton.Security.ISecurityManagerUserInfo
 - uid: TcOpen.Inxton.Security.ISecurityProvider
   commentId: T:TcOpen.Inxton.Security.ISecurityProvider
   name: ISecurityProvider

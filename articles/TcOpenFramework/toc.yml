@@ -2,6 +2,8 @@
   href: TcoCore\toc.yml
 - name: TcoData
   href: TcoData\toc.yml  
+- name: TcoInspectors
+  href: TcoInspectors\toc.yml   
 - name: Howto(s)
   href: howtos\toc.yml
 

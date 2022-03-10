@@ -1,0 +1,1253 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Dialogs.IsDialog
+  commentId: T:TcOpen.Inxton.Dialogs.IsDialog
+  id: IsDialog
+  parent: TcOpen.Inxton.Dialogs
+  children:
+  - TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: IsDialog
+  nameWithType: IsDialog
+  fullName: TcOpen.Inxton.Dialogs.IsDialog
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: IsDialog
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Dialogs
+  syntax:
+    content: 'public interface IsDialog : IVortexObject, ITwinObject, IVortexElement'
+    content.vb: >-
+      Public Interface IsDialog
+          Inherits IVortexObject
+  inheritedMembers:
+  - Vortex.Connector.IVortexObject.GetChildren
+  - Vortex.Connector.IVortexObject.GetKids
+  - Vortex.Connector.IVortexObject.GetValueTags
+  - Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  - Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  - Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  - Vortex.Connector.IVortexObject.GetConnector
+  - Vortex.Connector.IVortexElement.GetParent
+  - Vortex.Connector.IVortexElement.GetSymbolTail
+  - Vortex.Connector.IVortexElement.Symbol
+  - Vortex.Connector.IVortexElement.AttributeName
+  - Vortex.Connector.IVortexElement.HumanReadable
+  extensionMethods:
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetParent``1({T})
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Collections.Generic.IList{{T}})
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Int32,System.Collections.Generic.IList{{T}},System.Int32)
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetChildren``1
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetChildren``1(System.Collections.Generic.IEnumerable{System.Object})
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1
+  - Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
+  commentId: M:TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
+  id: Initialize(System.Action)
+  parent: TcOpen.Inxton.Dialogs.IsDialog
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Action)
+  nameWithType: IsDialog.Initialize(Action)
+  fullName: TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: Initialize
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Dialogs
+  syntax:
+    content: void Initialize(Action dialogAction)
+    parameters:
+    - id: dialogAction
+      type: System.Action
+    content.vb: Sub Initialize(dialogAction As Action)
+  overload: TcOpen.Inxton.Dialogs.IsDialog.Initialize*
+references:
+- uid: TcOpen.Inxton.Dialogs
+  commentId: N:TcOpen.Inxton.Dialogs
+  name: TcOpen.Inxton.Dialogs
+  nameWithType: TcOpen.Inxton.Dialogs
+  fullName: TcOpen.Inxton.Dialogs
+- uid: Vortex.Connector.IVortexObject.GetChildren
+  commentId: M:Vortex.Connector.IVortexObject.GetChildren
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetChildren()
+  nameWithType: IVortexObject.GetChildren()
+  fullName: Vortex.Connector.IVortexObject.GetChildren()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetChildren
+    name: GetChildren
+    nameWithType: IVortexObject.GetChildren
+    fullName: Vortex.Connector.IVortexObject.GetChildren
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetChildren
+    name: GetChildren
+    nameWithType: IVortexObject.GetChildren
+    fullName: Vortex.Connector.IVortexObject.GetChildren
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.GetKids
+  commentId: M:Vortex.Connector.IVortexObject.GetKids
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetKids()
+  nameWithType: IVortexObject.GetKids()
+  fullName: Vortex.Connector.IVortexObject.GetKids()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetKids
+    name: GetKids
+    nameWithType: IVortexObject.GetKids
+    fullName: Vortex.Connector.IVortexObject.GetKids
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetKids
+    name: GetKids
+    nameWithType: IVortexObject.GetKids
+    fullName: Vortex.Connector.IVortexObject.GetKids
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.GetValueTags
+  commentId: M:Vortex.Connector.IVortexObject.GetValueTags
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetValueTags()
+  nameWithType: IVortexObject.GetValueTags()
+  fullName: Vortex.Connector.IVortexObject.GetValueTags()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetValueTags
+    name: GetValueTags
+    nameWithType: IVortexObject.GetValueTags
+    fullName: Vortex.Connector.IVortexObject.GetValueTags
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetValueTags
+    name: GetValueTags
+    nameWithType: IVortexObject.GetValueTags
+    fullName: Vortex.Connector.IVortexObject.GetValueTags
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  commentId: M:Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddChild(IVortexObject)
+  nameWithType: IVortexObject.AddChild(IVortexObject)
+  fullName: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+    name: AddChild
+    nameWithType: IVortexObject.AddChild
+    fullName: Vortex.Connector.IVortexObject.AddChild
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddChild(Vortex.Connector.IVortexObject)
+    name: AddChild
+    nameWithType: IVortexObject.AddChild
+    fullName: Vortex.Connector.IVortexObject.AddChild
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  commentId: M:Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddValueTag(IValueTag)
+  nameWithType: IVortexObject.AddValueTag(IValueTag)
+  fullName: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+    name: AddValueTag
+    nameWithType: IVortexObject.AddValueTag
+    fullName: Vortex.Connector.IVortexObject.AddValueTag
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddValueTag(Vortex.Connector.IValueTag)
+    name: AddValueTag
+    nameWithType: IVortexObject.AddValueTag
+    fullName: Vortex.Connector.IVortexObject.AddValueTag
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IValueTag
+    name: IValueTag
+    nameWithType: IValueTag
+    fullName: Vortex.Connector.IValueTag
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  commentId: M:Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: AddKid(IVortexElement)
+  nameWithType: IVortexObject.AddKid(IVortexElement)
+  fullName: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+    name: AddKid
+    nameWithType: IVortexObject.AddKid
+    fullName: Vortex.Connector.IVortexObject.AddKid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.AddKid(Vortex.Connector.IVortexElement)
+    name: AddKid
+    nameWithType: IVortexObject.AddKid
+    fullName: Vortex.Connector.IVortexObject.AddKid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexElement
+    name: IVortexElement
+    nameWithType: IVortexElement
+    fullName: Vortex.Connector.IVortexElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.GetConnector
+  commentId: M:Vortex.Connector.IVortexObject.GetConnector
+  parent: Vortex.Connector.IVortexObject
+  isExternal: true
+  name: GetConnector()
+  nameWithType: IVortexObject.GetConnector()
+  fullName: Vortex.Connector.IVortexObject.GetConnector()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexObject.GetConnector
+    name: GetConnector
+    nameWithType: IVortexObject.GetConnector
+    fullName: Vortex.Connector.IVortexObject.GetConnector
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexObject.GetConnector
+    name: GetConnector
+    nameWithType: IVortexObject.GetConnector
+    fullName: Vortex.Connector.IVortexObject.GetConnector
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexElement.GetParent
+  commentId: M:Vortex.Connector.IVortexElement.GetParent
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: GetParent()
+  nameWithType: IVortexElement.GetParent()
+  fullName: Vortex.Connector.IVortexElement.GetParent()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexElement.GetParent
+    name: GetParent
+    nameWithType: IVortexElement.GetParent
+    fullName: Vortex.Connector.IVortexElement.GetParent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexElement.GetParent
+    name: GetParent
+    nameWithType: IVortexElement.GetParent
+    fullName: Vortex.Connector.IVortexElement.GetParent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexElement.GetSymbolTail
+  commentId: M:Vortex.Connector.IVortexElement.GetSymbolTail
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: GetSymbolTail()
+  nameWithType: IVortexElement.GetSymbolTail()
+  fullName: Vortex.Connector.IVortexElement.GetSymbolTail()
+  spec.csharp:
+  - uid: Vortex.Connector.IVortexElement.GetSymbolTail
+    name: GetSymbolTail
+    nameWithType: IVortexElement.GetSymbolTail
+    fullName: Vortex.Connector.IVortexElement.GetSymbolTail
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Vortex.Connector.IVortexElement.GetSymbolTail
+    name: GetSymbolTail
+    nameWithType: IVortexElement.GetSymbolTail
+    fullName: Vortex.Connector.IVortexElement.GetSymbolTail
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexElement.Symbol
+  commentId: P:Vortex.Connector.IVortexElement.Symbol
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: Symbol
+  nameWithType: IVortexElement.Symbol
+  fullName: Vortex.Connector.IVortexElement.Symbol
+- uid: Vortex.Connector.IVortexElement.AttributeName
+  commentId: P:Vortex.Connector.IVortexElement.AttributeName
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: AttributeName
+  nameWithType: IVortexElement.AttributeName
+  fullName: Vortex.Connector.IVortexElement.AttributeName
+- uid: Vortex.Connector.IVortexElement.HumanReadable
+  commentId: P:Vortex.Connector.IVortexElement.HumanReadable
+  parent: Vortex.Connector.IVortexElement
+  isExternal: true
+  name: HumanReadable
+  nameWithType: IVortexElement.HumanReadable
+  fullName: Vortex.Connector.IVortexElement.HumanReadable
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetParent``1({T})
+  commentId: M:TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+  name: GetParent<T>(T)
+  nameWithType: IVortexObjectExtensions.GetParent<T>(T)
+  fullName: TcoCore.IVortexObjectExtensions.GetParent<T>(T)
+  nameWithType.vb: IVortexObjectExtensions.GetParent(Of T)(T)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetParent(Of T)(T)
+  name.vb: GetParent(Of T)(T)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetParent``1(``0)
+    name: GetParent<T>
+    nameWithType: IVortexObjectExtensions.GetParent<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetParent<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetParent``1(``0)
+    name: GetParent(Of T)
+    nameWithType: IVortexObjectExtensions.GetParent(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetParent(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Collections.Generic.IList{{T}})
+  commentId: M:TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+  name: GetDescendants<T>(IList<T>)
+  nameWithType: IVortexObjectExtensions.GetDescendants<T>(IList<T>)
+  fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>(System.Collections.Generic.IList<T>)
+  nameWithType.vb: IVortexObjectExtensions.GetDescendants(Of T)(IList(Of T))
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(System.Collections.Generic.IList(Of T))
+  name.vb: GetDescendants(Of T)(IList(Of T))
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Collections.Generic.IList{``0})
+    name: GetDescendants<T>
+    nameWithType: IVortexObjectExtensions.GetDescendants<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Collections.Generic.IList{``0})
+    name: GetDescendants(Of T)
+    nameWithType: IVortexObjectExtensions.GetDescendants(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Int32,System.Collections.Generic.IList{{T}},System.Int32)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  name: GetDescendants<T>(Int32, IList<T>, Int32)
+  nameWithType: IVortexObjectExtensions.GetDescendants<T>(Int32, IList<T>, Int32)
+  fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>(System.Int32, System.Collections.Generic.IList<T>, System.Int32)
+  nameWithType.vb: IVortexObjectExtensions.GetDescendants(Of T)(Int32, IList(Of T), Int32)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(System.Int32, System.Collections.Generic.IList(Of T), System.Int32)
+  name.vb: GetDescendants(Of T)(Int32, IList(Of T), Int32)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+    name: GetDescendants<T>
+    nameWithType: IVortexObjectExtensions.GetDescendants<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+    name: GetDescendants(Of T)
+    nameWithType: IVortexObjectExtensions.GetDescendants(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetChildren``1
+  commentId: M:TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+  name: GetChildren<T>()
+  nameWithType: IVortexObjectExtensions.GetChildren<T>()
+  fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>()
+  nameWithType.vb: IVortexObjectExtensions.GetChildren(Of T)()
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetChildren(Of T)()
+  name.vb: GetChildren(Of T)()
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1
+    name: GetChildren<T>
+    nameWithType: IVortexObjectExtensions.GetChildren<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1
+    name: GetChildren(Of T)
+    nameWithType: IVortexObjectExtensions.GetChildren(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetChildren``1(System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+  name: GetChildren<T>(IEnumerable<Object>)
+  nameWithType: IVortexObjectExtensions.GetChildren<T>(IEnumerable<Object>)
+  fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>(System.Collections.Generic.IEnumerable<System.Object>)
+  nameWithType.vb: IVortexObjectExtensions.GetChildren(Of T)(IEnumerable(Of Object))
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetChildren(Of T)(System.Collections.Generic.IEnumerable(Of System.Object))
+  name.vb: GetChildren(Of T)(IEnumerable(Of Object))
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(System.Collections.Generic.IEnumerable{System.Object})
+    name: GetChildren<T>
+    nameWithType: IVortexObjectExtensions.GetChildren<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(System.Collections.Generic.IEnumerable{System.Object})
+    name: GetChildren(Of T)
+    nameWithType: IVortexObjectExtensions.GetChildren(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1
+  commentId: M:TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+  name: GetPlainFromOnline<T>()
+  nameWithType: IVortexObjectExtensions.GetPlainFromOnline<T>()
+  fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline<T>()
+  nameWithType.vb: IVortexObjectExtensions.GetPlainFromOnline(Of T)()
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Of T)()
+  name.vb: GetPlainFromOnline(Of T)()
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1
+    name: GetPlainFromOnline<T>
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1
+    name: GetPlainFromOnline(Of T)
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject.TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  commentId: M:TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+  parent: TcoCore.IVortexObjectExtensions
+  definition: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+  name: GetPlainFromOnline()
+  nameWithType: IVortexObjectExtensions.GetPlainFromOnline()
+  fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline()
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+    name: GetPlainFromOnline
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+    name: GetPlainFromOnline
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector.IVortexObject
+  commentId: T:Vortex.Connector.IVortexObject
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexObject
+  nameWithType: IVortexObject
+  fullName: Vortex.Connector.IVortexObject
+- uid: Vortex.Connector.IVortexElement
+  commentId: T:Vortex.Connector.IVortexElement
+  parent: Vortex.Connector
+  isExternal: true
+  name: IVortexElement
+  nameWithType: IVortexElement
+  fullName: Vortex.Connector.IVortexElement
+- uid: TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+  isExternal: true
+  name: GetParent<T>(IVortexObject, T)
+  nameWithType: IVortexObjectExtensions.GetParent<T>(IVortexObject, T)
+  fullName: TcoCore.IVortexObjectExtensions.GetParent<T>(Vortex.Connector.IVortexObject, T)
+  nameWithType.vb: IVortexObjectExtensions.GetParent(Of T)(IVortexObject, T)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetParent(Of T)(Vortex.Connector.IVortexObject, T)
+  name.vb: GetParent(Of T)(IVortexObject, T)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+    name: GetParent<T>
+    nameWithType: IVortexObjectExtensions.GetParent<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetParent<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetParent``1(Vortex.Connector.IVortexObject,``0)
+    name: GetParent(Of T)
+    nameWithType: IVortexObjectExtensions.GetParent(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetParent(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions
+  commentId: T:TcoCore.IVortexObjectExtensions
+  parent: TcoCore
+  name: IVortexObjectExtensions
+  nameWithType: IVortexObjectExtensions
+  fullName: TcoCore.IVortexObjectExtensions
+- uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+  commentId: M:TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+  isExternal: true
+  name: GetDescendants<T>(IVortexObject, IList<T>)
+  nameWithType: IVortexObjectExtensions.GetDescendants<T>(IVortexObject, IList<T>)
+  fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>(Vortex.Connector.IVortexObject, System.Collections.Generic.IList<T>)
+  nameWithType.vb: IVortexObjectExtensions.GetDescendants(Of T)(IVortexObject, IList(Of T))
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(Vortex.Connector.IVortexObject, System.Collections.Generic.IList(Of T))
+  name.vb: GetDescendants(Of T)(IVortexObject, IList(Of T))
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+    name: GetDescendants<T>
+    nameWithType: IVortexObjectExtensions.GetDescendants<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IList{``0})
+    name: GetDescendants(Of T)
+    nameWithType: IVortexObjectExtensions.GetDescendants(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+  isExternal: true
+  name: GetDescendants<T>(IVortexObject, Int32, IList<T>, Int32)
+  nameWithType: IVortexObjectExtensions.GetDescendants<T>(IVortexObject, Int32, IList<T>, Int32)
+  fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>(Vortex.Connector.IVortexObject, System.Int32, System.Collections.Generic.IList<T>, System.Int32)
+  nameWithType.vb: IVortexObjectExtensions.GetDescendants(Of T)(IVortexObject, Int32, IList(Of T), Int32)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)(Vortex.Connector.IVortexObject, System.Int32, System.Collections.Generic.IList(Of T), System.Int32)
+  name.vb: GetDescendants(Of T)(IVortexObject, Int32, IList(Of T), Int32)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+    name: GetDescendants<T>
+    nameWithType: IVortexObjectExtensions.GetDescendants<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetDescendants``1(Vortex.Connector.IVortexObject,System.Int32,System.Collections.Generic.IList{``0},System.Int32)
+    name: GetDescendants(Of T)
+    nameWithType: IVortexObjectExtensions.GetDescendants(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetDescendants(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+  isExternal: true
+  name: GetChildren<T>(IVortexObject)
+  nameWithType: IVortexObjectExtensions.GetChildren<T>(IVortexObject)
+  fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>(Vortex.Connector.IVortexObject)
+  nameWithType.vb: IVortexObjectExtensions.GetChildren(Of T)(IVortexObject)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetChildren(Of T)(Vortex.Connector.IVortexObject)
+  name.vb: GetChildren(Of T)(IVortexObject)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+    name: GetChildren<T>
+    nameWithType: IVortexObjectExtensions.GetChildren<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject)
+    name: GetChildren(Of T)
+    nameWithType: IVortexObjectExtensions.GetChildren(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+  isExternal: true
+  name: GetChildren<T>(IVortexObject, IEnumerable<Object>)
+  nameWithType: IVortexObjectExtensions.GetChildren<T>(IVortexObject, IEnumerable<Object>)
+  fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>(Vortex.Connector.IVortexObject, System.Collections.Generic.IEnumerable<System.Object>)
+  nameWithType.vb: IVortexObjectExtensions.GetChildren(Of T)(IVortexObject, IEnumerable(Of Object))
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetChildren(Of T)(Vortex.Connector.IVortexObject, System.Collections.Generic.IEnumerable(Of System.Object))
+  name.vb: GetChildren(Of T)(IVortexObject, IEnumerable(Of Object))
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+    name: GetChildren<T>
+    nameWithType: IVortexObjectExtensions.GetChildren<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetChildren``1(Vortex.Connector.IVortexObject,System.Collections.Generic.IEnumerable{System.Object})
+    name: GetChildren(Of T)
+    nameWithType: IVortexObjectExtensions.GetChildren(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetChildren(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+  isExternal: true
+  name: GetPlainFromOnline<T>(IVortexObject)
+  nameWithType: IVortexObjectExtensions.GetPlainFromOnline<T>(IVortexObject)
+  fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline<T>(Vortex.Connector.IVortexObject)
+  nameWithType.vb: IVortexObjectExtensions.GetPlainFromOnline(Of T)(IVortexObject)
+  fullName.vb: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Of T)(Vortex.Connector.IVortexObject)
+  name.vb: GetPlainFromOnline(Of T)(IVortexObject)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+    name: GetPlainFromOnline<T>
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline<T>
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline``1(Vortex.Connector.IVortexObject)
+    name: GetPlainFromOnline(Of T)
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline(Of T)
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+  commentId: M:TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+  isExternal: true
+  name: GetPlainFromOnline(IVortexObject)
+  nameWithType: IVortexObjectExtensions.GetPlainFromOnline(IVortexObject)
+  fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+  spec.csharp:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+    name: GetPlainFromOnline
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TcoCore.IVortexObjectExtensions.GetPlainFromOnline(Vortex.Connector.IVortexObject)
+    name: GetPlainFromOnline
+    nameWithType: IVortexObjectExtensions.GetPlainFromOnline
+    fullName: TcoCore.IVortexObjectExtensions.GetPlainFromOnline
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Vortex.Connector.IVortexObject
+    name: IVortexObject
+    nameWithType: IVortexObject
+    fullName: Vortex.Connector.IVortexObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Vortex.Connector
+  commentId: N:Vortex.Connector
+  isExternal: true
+  name: Vortex.Connector
+  nameWithType: Vortex.Connector
+  fullName: Vortex.Connector
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore
+- uid: TcOpen.Inxton.Dialogs.IsDialog.Initialize*
+  commentId: Overload:TcOpen.Inxton.Dialogs.IsDialog.Initialize
+  name: Initialize
+  nameWithType: IsDialog.Initialize
+  fullName: TcOpen.Inxton.Dialogs.IsDialog.Initialize
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Dialogs
+  commentId: N:TcOpen.Inxton.Dialogs
+  id: TcOpen.Inxton.Dialogs
+  children:
+  - TcOpen.Inxton.Dialogs.IsDialog
+  langs:
+  - csharp
+  - vb
+  name: TcOpen.Inxton.Dialogs
+  nameWithType: TcOpen.Inxton.Dialogs
+  fullName: TcOpen.Inxton.Dialogs
+  type: Namespace
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+references:
+- uid: TcOpen.Inxton.Dialogs.IsDialog
+  commentId: T:TcOpen.Inxton.Dialogs.IsDialog
+  name: IsDialog
+  nameWithType: IsDialog
+  fullName: TcOpen.Inxton.Dialogs.IsDialog

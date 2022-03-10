@@ -23,6 +23,12 @@ references:
   fullName: TcoCore.IsTask
 - uid: TcoCore.IVortexObjectExtensions
   commentId: T:TcoCore.IVortexObjectExtensions
+  parent: TcoCore
   name: IVortexObjectExtensions
   nameWithType: IVortexObjectExtensions
   fullName: TcoCore.IVortexObjectExtensions
+- uid: TcoCore
+  commentId: N:TcoCore
+  name: TcoCore
+  nameWithType: TcoCore
+  fullName: TcoCore

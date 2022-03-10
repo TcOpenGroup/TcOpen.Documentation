@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  commentId: T:TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  id: ISecurityManagerUserInfo
+  parent: TcOpen.Inxton.Security
+  children:
+  - TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+  langs:
+  - csharp
+  - vb
+  name: ISecurityManagerUserInfo
+  nameWithType: ISecurityManagerUserInfo
+  fullName: TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  type: Interface
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManagerUserInfo.cs
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: ISecurityManagerUserInfo
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManagerUserInfo.cs
+    startLine: 2
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public interface ISecurityManagerUserInfo
+    content.vb: Public Interface ISecurityManagerUserInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+  commentId: P:TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+  id: UserName
+  parent: TcOpen.Inxton.Security.ISecurityManagerUserInfo
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: ISecurityManagerUserInfo.UserName
+  fullName: TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManagerUserInfo.cs
+      branch: 325-Create_signal_and_data_inspectors_former_checkers
+      repo: https://github.com/TcOpenGroup/TcOpen.git
+    id: UserName
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManagerUserInfo.cs
+    startLine: 4
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: string UserName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property UserName As String
+  overload: TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: TcOpen.Inxton.Security
+  commentId: N:TcOpen.Inxton.Security
+  name: TcOpen.Inxton.Security
+  nameWithType: TcOpen.Inxton.Security
+  fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName*
+  commentId: Overload:TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+  name: UserName
+  nameWithType: ISecurityManagerUserInfo.UserName
+  fullName: TcOpen.Inxton.Security.ISecurityManagerUserInfo.UserName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
