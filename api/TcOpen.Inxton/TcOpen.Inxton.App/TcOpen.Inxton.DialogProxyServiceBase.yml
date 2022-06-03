@@ -1,31 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
-  commentId: T:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+- uid: TcOpen.Inxton.DialogProxyServiceBase
+  commentId: T:TcOpen.Inxton.DialogProxyServiceBase
   id: DialogProxyServiceBase
-  parent: TcOpen.Inxton.App.Dialogs
+  parent: TcOpen.Inxton
   children:
-  - TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
-  - TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
-  - TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+  - TcOpen.Inxton.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+  - TcOpen.Inxton.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
+  - TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
   langs:
   - csharp
   - vb
   name: DialogProxyServiceBase
   nameWithType: DialogProxyServiceBase
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+  fullName: TcOpen.Inxton.DialogProxyServiceBase
   type: Class
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: DialogProxyServiceBase
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
     startLine: 12
   assemblies:
   - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton.App.Dialogs
+  namespace: TcOpen.Inxton
   syntax:
     content: public abstract class DialogProxyServiceBase
     content.vb: Public MustInherit Class DialogProxyServiceBase
@@ -47,103 +47,103 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
-  commentId: M:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+- uid: TcOpen.Inxton.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+  commentId: M:TcOpen.Inxton.DialogProxyServiceBase.#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
   id: '#ctor(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})'
-  parent: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+  parent: TcOpen.Inxton.DialogProxyServiceBase
   langs:
   - csharp
   - vb
   name: DialogProxyServiceBase(IEnumerable<IVortexObject>)
   nameWithType: DialogProxyServiceBase.DialogProxyServiceBase(IEnumerable<IVortexObject>)
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.DialogProxyServiceBase(System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexObject>)
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.DialogProxyServiceBase(System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexObject>)
   type: Constructor
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
     startLine: 14
   assemblies:
   - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton.App.Dialogs
+  namespace: TcOpen.Inxton
   syntax:
     content: protected DialogProxyServiceBase(IEnumerable<IVortexObject> observedObjects)
     parameters:
     - id: observedObjects
       type: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
     content.vb: Protected Sub New(observedObjects As IEnumerable(Of IVortexObject))
-  overload: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor*
+  overload: TcOpen.Inxton.DialogProxyServiceBase.#ctor*
   nameWithType.vb: DialogProxyServiceBase.DialogProxyServiceBase(IEnumerable(Of IVortexObject))
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-  fullName.vb: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.DialogProxyServiceBase(System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexObject))
+  fullName.vb: TcOpen.Inxton.DialogProxyServiceBase.DialogProxyServiceBase(System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexObject))
   name.vb: DialogProxyServiceBase(IEnumerable(Of IVortexObject))
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
-  commentId: M:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+- uid: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
+  commentId: M:TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
   id: UpdateDialogs(System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject})
-  parent: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+  parent: TcOpen.Inxton.DialogProxyServiceBase
   langs:
   - csharp
   - vb
   name: UpdateDialogs(IEnumerable<IVortexObject>)
   nameWithType: DialogProxyServiceBase.UpdateDialogs(IEnumerable<IVortexObject>)
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexObject>)
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable<Vortex.Connector.IVortexObject>)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UpdateDialogs
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
     startLine: 18
   assemblies:
   - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton.App.Dialogs
+  namespace: TcOpen.Inxton
   syntax:
     content: void UpdateDialogs(IEnumerable<IVortexObject> observedObjects)
     parameters:
     - id: observedObjects
       type: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
     content.vb: Sub UpdateDialogs(observedObjects As IEnumerable(Of IVortexObject))
-  overload: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs*
+  overload: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs*
   nameWithType.vb: DialogProxyServiceBase.UpdateDialogs(IEnumerable(Of IVortexObject))
-  fullName.vb: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexObject))
+  fullName.vb: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs(System.Collections.Generic.IEnumerable(Of Vortex.Connector.IVortexObject))
   name.vb: UpdateDialogs(IEnumerable(Of IVortexObject))
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
-  commentId: M:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
+- uid: TcOpen.Inxton.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
+  commentId: M:TcOpen.Inxton.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
   id: Queue(TcOpen.Inxton.Dialogs.IsDialog)
-  parent: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+  parent: TcOpen.Inxton.DialogProxyServiceBase
   langs:
   - csharp
   - vb
   name: Queue(IsDialog)
   nameWithType: DialogProxyServiceBase.Queue(IsDialog)
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.Queue(TcOpen.Inxton.Dialogs.IsDialog)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Queue
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Dialogs/DialogProxyService.cs
     startLine: 30
   assemblies:
   - TcOpen.Inxton.App
-  namespace: TcOpen.Inxton.App.Dialogs
+  namespace: TcOpen.Inxton
   syntax:
     content: protected abstract void Queue(IsDialog dialog)
     parameters:
     - id: dialog
       type: TcOpen.Inxton.Dialogs.IsDialog
     content.vb: Protected MustOverride Sub Queue(dialog As IsDialog)
-  overload: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue*
+  overload: TcOpen.Inxton.DialogProxyServiceBase.Queue*
   modifiers.csharp:
   - protected
   - abstract
@@ -151,11 +151,11 @@ items:
   - Protected
   - MustOverride
 references:
-- uid: TcOpen.Inxton.App.Dialogs
-  commentId: N:TcOpen.Inxton.App.Dialogs
-  name: TcOpen.Inxton.App.Dialogs
-  nameWithType: TcOpen.Inxton.App.Dialogs
-  fullName: TcOpen.Inxton.App.Dialogs
+- uid: TcOpen.Inxton
+  commentId: N:TcOpen.Inxton
+  name: TcOpen.Inxton
+  nameWithType: TcOpen.Inxton
+  fullName: TcOpen.Inxton
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -448,11 +448,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor*
-  commentId: Overload:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.#ctor
+- uid: TcOpen.Inxton.DialogProxyServiceBase.#ctor*
+  commentId: Overload:TcOpen.Inxton.DialogProxyServiceBase.#ctor
   name: DialogProxyServiceBase
   nameWithType: DialogProxyServiceBase.DialogProxyServiceBase
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.DialogProxyServiceBase
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.DialogProxyServiceBase
 - uid: System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
   commentId: T:System.Collections.Generic.IEnumerable{Vortex.Connector.IVortexObject}
   parent: System.Collections.Generic
@@ -542,16 +542,16 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs*
-  commentId: Overload:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs
+- uid: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs*
+  commentId: Overload:TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs
   name: UpdateDialogs
   nameWithType: DialogProxyServiceBase.UpdateDialogs
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.UpdateDialogs
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue*
-  commentId: Overload:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.UpdateDialogs
+- uid: TcOpen.Inxton.DialogProxyServiceBase.Queue*
+  commentId: Overload:TcOpen.Inxton.DialogProxyServiceBase.Queue
   name: Queue
   nameWithType: DialogProxyServiceBase.Queue
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase.Queue
+  fullName: TcOpen.Inxton.DialogProxyServiceBase.Queue
 - uid: TcOpen.Inxton.Dialogs.IsDialog
   commentId: T:TcOpen.Inxton.Dialogs.IsDialog
   parent: TcOpen.Inxton.Dialogs

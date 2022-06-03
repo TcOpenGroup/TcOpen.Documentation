@@ -9,7 +9,8 @@ items:
   - TcOpen.Inxton.TcoAppBuilder.Domain
   - TcOpen.Inxton.TcoAppBuilder.SetDispatcher(TcOpen.Inxton.Threading.IDispatcher)
   - TcOpen.Inxton.TcoAppBuilder.SetEditValueChangeLogging(Vortex.Connector.IVortexObject)
-  - TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase)
+  - TcOpen.Inxton.TcoAppBuilder.SetLogin(System.Action)
+  - TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.DialogProxyServiceBase)
   - TcOpen.Inxton.TcoAppBuilder.SetSecurity(TcOpen.Inxton.Security.IAuthenticationService)
   - TcOpen.Inxton.TcoAppBuilder.SetUpLogger(TcOpen.Inxton.Logging.ILogger)
   langs:
@@ -22,11 +23,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoAppBuilder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -65,11 +66,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -96,11 +97,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Domain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -129,11 +130,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetUpLogger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -168,11 +169,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -206,11 +207,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetSecurity
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -245,11 +246,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetEditValueChangeLogging
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -270,25 +271,25 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase)
-  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase)
-  id: SetPlcDialogs(TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase)
+- uid: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.DialogProxyServiceBase)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.DialogProxyServiceBase)
+  id: SetPlcDialogs(TcOpen.Inxton.DialogProxyServiceBase)
   parent: TcOpen.Inxton.TcoAppBuilder
   langs:
   - csharp
   - vb
   name: SetPlcDialogs(DialogProxyServiceBase)
   nameWithType: TcoAppBuilder.SetPlcDialogs(DialogProxyServiceBase)
-  fullName: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs(TcOpen.Inxton.DialogProxyServiceBase)
   type: Method
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetPlcDialogs
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - TcOpen.Inxton.App
   namespace: TcOpen.Inxton
@@ -296,11 +297,46 @@ items:
     content: public TcoAppBuilder SetPlcDialogs(DialogProxyServiceBase dialogProxy)
     parameters:
     - id: dialogProxy
-      type: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
+      type: TcOpen.Inxton.DialogProxyServiceBase
     return:
       type: TcOpen.Inxton.TcoAppBuilder
     content.vb: Public Function SetPlcDialogs(dialogProxy As DialogProxyServiceBase) As TcoAppBuilder
   overload: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TcOpen.Inxton.TcoAppBuilder.SetLogin(System.Action)
+  commentId: M:TcOpen.Inxton.TcoAppBuilder.SetLogin(System.Action)
+  id: SetLogin(System.Action)
+  parent: TcOpen.Inxton.TcoAppBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLogin(Action)
+  nameWithType: TcoAppBuilder.SetLogin(Action)
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetLogin(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: SetLogin
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Application/TcoAppBuilder.cs
+    startLine: 82
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  syntax:
+    content: public TcoAppBuilder SetLogin(Action loginAction)
+    parameters:
+    - id: loginAction
+      type: System.Action
+    return:
+      type: TcOpen.Inxton.TcoAppBuilder
+    content.vb: Public Function SetLogin(loginAction As Action) As TcoAppBuilder
+  overload: TcOpen.Inxton.TcoAppBuilder.SetLogin*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -696,14 +732,21 @@ references:
   name: SetPlcDialogs
   nameWithType: TcoAppBuilder.SetPlcDialogs
   fullName: TcOpen.Inxton.TcoAppBuilder.SetPlcDialogs
-- uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
-  commentId: T:TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
-  parent: TcOpen.Inxton.App.Dialogs
+- uid: TcOpen.Inxton.DialogProxyServiceBase
+  commentId: T:TcOpen.Inxton.DialogProxyServiceBase
+  parent: TcOpen.Inxton
   name: DialogProxyServiceBase
   nameWithType: DialogProxyServiceBase
-  fullName: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
-- uid: TcOpen.Inxton.App.Dialogs
-  commentId: N:TcOpen.Inxton.App.Dialogs
-  name: TcOpen.Inxton.App.Dialogs
-  nameWithType: TcOpen.Inxton.App.Dialogs
-  fullName: TcOpen.Inxton.App.Dialogs
+  fullName: TcOpen.Inxton.DialogProxyServiceBase
+- uid: TcOpen.Inxton.TcoAppBuilder.SetLogin*
+  commentId: Overload:TcOpen.Inxton.TcoAppBuilder.SetLogin
+  name: SetLogin
+  nameWithType: TcoAppBuilder.SetLogin
+  fullName: TcOpen.Inxton.TcoAppBuilder.SetLogin
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

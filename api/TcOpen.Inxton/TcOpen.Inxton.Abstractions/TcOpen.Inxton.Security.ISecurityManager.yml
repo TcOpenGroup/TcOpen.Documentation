@@ -18,8 +18,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ISecurityManager
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 8
@@ -49,8 +49,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AvailableGroups
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 10
@@ -77,8 +77,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetOrCreateRole
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 17
@@ -112,8 +112,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AvailableRoles
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/ISecurityManager.cs
     startLine: 19

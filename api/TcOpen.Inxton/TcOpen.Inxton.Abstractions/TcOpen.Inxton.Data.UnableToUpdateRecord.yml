@@ -16,8 +16,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: UnableToUpdateRecord
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 9
@@ -76,8 +76,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/Exceptions/CrudExceptions.cs
     startLine: 11

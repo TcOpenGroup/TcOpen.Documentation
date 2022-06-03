@@ -124,6 +124,7 @@
   "TcOpen.Inxton.Security.IAuthenticationService.ChangePassword(System.String,System.String,System.String,System.String)": "TcOpen.Inxton.Security.IAuthenticationService.yml",
   "TcOpen.Inxton.Security.IAuthenticationService.DeAuthenticateCurrentUser": "TcOpen.Inxton.Security.IAuthenticationService.yml",
   "TcOpen.Inxton.Security.IAuthenticationService.ExternalAuthorization": "TcOpen.Inxton.Security.IAuthenticationService.yml",
+  "TcOpen.Inxton.Security.IAuthenticationService.HasAuthorization(System.String,System.Action)": "TcOpen.Inxton.Security.IAuthenticationService.yml",
   "TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticated": "TcOpen.Inxton.Security.IAuthenticationService.yml",
   "TcOpen.Inxton.Security.IAuthenticationService.OnDeAuthenticating": "TcOpen.Inxton.Security.IAuthenticationService.yml",
   "TcOpen.Inxton.Security.IAuthenticationService.OnTimedLogoutRequest": "TcOpen.Inxton.Security.IAuthenticationService.yml",

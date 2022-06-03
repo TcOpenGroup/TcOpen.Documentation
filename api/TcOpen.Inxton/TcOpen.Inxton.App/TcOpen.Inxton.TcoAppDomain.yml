@@ -12,6 +12,7 @@ items:
   - TcOpen.Inxton.TcoAppDomain.Current
   - TcOpen.Inxton.TcoAppDomain.Dispatcher
   - TcOpen.Inxton.TcoAppDomain.Logger
+  - TcOpen.Inxton.TcoAppDomain.LoginAction
   - TcOpen.Inxton.TcoAppDomain.mutex
   langs:
   - csharp
@@ -23,8 +24,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: TcoAppDomain
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 14
@@ -66,8 +67,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 19
@@ -94,8 +95,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 24
@@ -126,8 +127,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 25
@@ -157,8 +158,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Current
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 30
@@ -196,8 +197,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Logger
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 53
@@ -233,8 +234,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 58
@@ -270,8 +271,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Builder
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 64
@@ -307,8 +308,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AuthenticationService
     path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
     startLine: 66
@@ -322,6 +323,41 @@ items:
       type: TcOpen.Inxton.Security.IAuthenticationService
     content.vb: Public ReadOnly Property AuthenticationService As IAuthenticationService
   overload: TcOpen.Inxton.TcoAppDomain.AuthenticationService*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: TcOpen.Inxton.TcoAppDomain.LoginAction
+  commentId: P:TcOpen.Inxton.TcoAppDomain.LoginAction
+  id: LoginAction
+  parent: TcOpen.Inxton.TcoAppDomain
+  langs:
+  - csharp
+  - vb
+  name: LoginAction
+  nameWithType: TcoAppDomain.LoginAction
+  fullName: TcOpen.Inxton.TcoAppDomain.LoginAction
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: LoginAction
+    path: ../TcOpen/src/TcOpen.Inxton/src/Application/Context/TcoAppDomain.cs
+    startLine: 68
+  assemblies:
+  - TcOpen.Inxton.App
+  namespace: TcOpen.Inxton
+  syntax:
+    content: public Action LoginAction { get; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public ReadOnly Property LoginAction As Action
+  overload: TcOpen.Inxton.TcoAppDomain.LoginAction*
   modifiers.csharp:
   - public
   - get
@@ -701,3 +737,15 @@ references:
   name: TcOpen.Inxton.Security
   nameWithType: TcOpen.Inxton.Security
   fullName: TcOpen.Inxton.Security
+- uid: TcOpen.Inxton.TcoAppDomain.LoginAction*
+  commentId: Overload:TcOpen.Inxton.TcoAppDomain.LoginAction
+  name: LoginAction
+  nameWithType: TcoAppDomain.LoginAction
+  fullName: TcOpen.Inxton.TcoAppDomain.LoginAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

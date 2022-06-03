@@ -22,8 +22,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IVortexObjectExtensions
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 10
@@ -67,8 +67,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetParent
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
     startLine: 23
@@ -124,11 +124,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -181,11 +181,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetDescendants
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -244,11 +244,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 114
+    startLine: 116
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -256,9 +256,7 @@ items:
   remarks: "\nTake into consideration possible performance degradation due to use of reflections in this method.\n"
   example: []
   syntax:
-    content: >-
-      public static IEnumerable<T> GetChildren<T>(this IVortexObject obj)
-          where T : IVortexObject
+    content: public static IEnumerable<T> GetChildren<T>(this IVortexObject obj)
     parameters:
     - id: obj
       type: Vortex.Connector.IVortexObject
@@ -272,7 +270,7 @@ items:
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function GetChildren(Of T As IVortexObject)(obj As IVortexObject) As IEnumerable(Of T)
+      Public Shared Function GetChildren(Of T)(obj As IVortexObject) As IEnumerable(Of T)
   overload: TcoCore.IVortexObjectExtensions.GetChildren*
   nameWithType.vb: IVortexObjectExtensions.GetChildren(Of T)(IVortexObject)
   modifiers.csharp:
@@ -298,11 +296,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetChildren
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 120
+    startLine: 122
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -348,11 +346,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetPlainFromOnline
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 137
+    startLine: 139
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore
@@ -399,11 +397,11 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: GetPlainFromOnline
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/TcoCore/IVortexObjectExtensions.cs
-    startLine: 154
+    startLine: 156
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcoCore

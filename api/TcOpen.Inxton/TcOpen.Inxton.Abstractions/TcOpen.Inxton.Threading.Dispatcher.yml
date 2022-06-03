@@ -22,8 +22,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 8
@@ -69,8 +69,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 10
@@ -95,8 +95,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _dispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 15
@@ -126,8 +126,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: SetDispatcher
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 21
@@ -164,8 +164,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Invoke
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 31
@@ -202,8 +202,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: InvokeAsync
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 41
@@ -239,8 +239,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: mutex
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 46
@@ -271,8 +271,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Get
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Threading/Dispatcher.cs
     startLine: 51

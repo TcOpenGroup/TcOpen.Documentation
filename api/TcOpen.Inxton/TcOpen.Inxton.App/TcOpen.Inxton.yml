@@ -4,6 +4,7 @@ items:
   commentId: N:TcOpen.Inxton
   id: TcOpen.Inxton
   children:
+  - TcOpen.Inxton.DialogProxyServiceBase
   - TcOpen.Inxton.TcoAppBuilder
   - TcOpen.Inxton.TcoAppDomain
   langs:
@@ -28,6 +29,12 @@ references:
   name: TcoAppDomain
   nameWithType: TcoAppDomain
   fullName: TcOpen.Inxton.TcoAppDomain
+- uid: TcOpen.Inxton.DialogProxyServiceBase
+  commentId: T:TcOpen.Inxton.DialogProxyServiceBase
+  parent: TcOpen.Inxton
+  name: DialogProxyServiceBase
+  nameWithType: DialogProxyServiceBase
+  fullName: TcOpen.Inxton.DialogProxyServiceBase
 - uid: TcOpen.Inxton
   commentId: N:TcOpen.Inxton
   name: TcOpen.Inxton

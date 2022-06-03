@@ -2,15 +2,12 @@
 - uid: TcOpen.Inxton
   name: TcOpen.Inxton
   items:
+  - uid: TcOpen.Inxton.DialogProxyServiceBase
+    name: DialogProxyServiceBase
   - uid: TcOpen.Inxton.TcoAppBuilder
     name: TcoAppBuilder
   - uid: TcOpen.Inxton.TcoAppDomain
     name: TcoAppDomain
-- uid: TcOpen.Inxton.App.Dialogs
-  name: TcOpen.Inxton.App.Dialogs
-  items:
-  - uid: TcOpen.Inxton.App.Dialogs.DialogProxyServiceBase
-    name: DialogProxyServiceBase
 - uid: TcOpen.Inxton.App.Logging
   name: TcOpen.Inxton.App.Logging
   items:

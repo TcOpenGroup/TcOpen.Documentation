@@ -15,8 +15,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RecordTaskActionDelegate
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Swift/RecordTaskActionDelegate.cs
     startLine: 5

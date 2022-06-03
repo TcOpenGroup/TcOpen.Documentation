@@ -24,8 +24,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RelayCommand
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 12
@@ -71,8 +71,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 14
@@ -102,8 +102,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _canExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 16
@@ -133,8 +133,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: _logAction
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 18
@@ -164,8 +164,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: .ctor
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 20
@@ -204,8 +204,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: ValidateCanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 27
@@ -239,8 +239,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 35
@@ -276,8 +276,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RaiseCanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 40
@@ -306,8 +306,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 45
@@ -315,11 +315,11 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Input
   syntax:
-    content: public void Execute(object parameter)
+    content: public void Execute(object parameter = null)
     parameters:
     - id: parameter
       type: System.Object
-    content.vb: Public Sub Execute(parameter As Object)
+    content.vb: Public Sub Execute(parameter As Object = Nothing)
   overload: TcOpen.Inxton.Input.RelayCommand.Execute*
   implements:
   - System.Windows.Input.ICommand.Execute(System.Object)
@@ -341,8 +341,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
     startLine: 54

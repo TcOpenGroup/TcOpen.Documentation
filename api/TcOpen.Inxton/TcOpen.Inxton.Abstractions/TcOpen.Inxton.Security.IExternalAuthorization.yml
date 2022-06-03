@@ -21,8 +21,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: IExternalAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 8
@@ -52,8 +52,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RequestAuthorization
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 10
@@ -80,8 +80,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: RequestTokenChange
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 11
@@ -106,8 +106,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AuthorizationErrorMessage
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 13
@@ -139,8 +139,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: WillChangeToken
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 14
@@ -171,8 +171,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AuthorizationRequest
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 15
@@ -198,8 +198,8 @@ items:
   source:
     remote:
       path: src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
-      branch: 325-Create_signal_and_data_inspectors_former_checkers
-      repo: https://github.com/TcOpenGroup/TcOpen.git
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
     id: AuthorizationTokenChange
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/IExternalAuthorization.cs
     startLine: 16
