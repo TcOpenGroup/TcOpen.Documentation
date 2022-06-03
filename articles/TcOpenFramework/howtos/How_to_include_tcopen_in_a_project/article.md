@@ -5,7 +5,7 @@ As a TwinCAT 3 developer, you already have everything you need.
 Your project looks like this. It's probably a bit more complex than this.
 ![plc visual studio twincat 3](assets/plc_visual_studio.png).
 
-### 1. Create a new C# **class library** project  (.NET Standard 2.0) in your solution and name it `PlcProjectConnector`
+### 1. Create a new C# **class library** project  (.NET4.8, .NET5, NET6 when supported) in your solution and name it `PlcProjectConnector`
 
 - Right-click on the solution in Solution Explorer and select Add > New Project.
 
@@ -13,7 +13,7 @@ Your project looks like this. It's probably a bit more complex than this.
 
 - On the Configure your new project page, enter `PlcProjectConnector` in the Project name box, and then choose Next.
 
-- On the Additional information page, select .NET Standard 2.0, and then choose Create.
+- On the Additional information page, select .NET4.8 or .NET5 (or NET6 when supported), and then choose Create.
 
 > [!Video https://www.youtube.com/embed/Y3Y2_4CYFyw]
 
