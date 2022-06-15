@@ -80,12 +80,12 @@
 
 ### TcoElements
 
-| main | dev | PLC Class | Description                                    | IVF | WPF | Blazor |
-|------|-----|-----------|------------------------------------------------|-----|-----|--------|
-|      | x   | TcoDi     | Simple class for managing **discrete inputs**  |     | x   | x      |
-|      | x   | TcoDo     | Simple class for managing **discrete outputs** |     | x   | x      |
-|      |     | TcoAi     | Simple class for managing **analogue inputs**  |     |     |        |
-|      |     | TcoAo     | Simple class for managing **analogue outputs** |     |     |        |
+| main | dev | PLC Class |                                          Description                                          | IVF | WPF | Blazor |
+| ---- | --- | --------- | --------------------------------------------------------------------------------------------- | --- | --- | ------ |
+|      | x   | TcoDi     | Simple class for managing [discrete inputs](~/api/TcoElements/PlcDocu.TcoElements.TcoDi.yml)  |     | x   | x      |
+|      | x   | TcoDo     | Simple class for managing [discrete outputs](~/api/TcoElements/PlcDocu.TcoElements.TcoDo.yml) |     | x   | x      |
+|      | x   | TcoAi     | Simple class for managing [analogue inputs](~/api/TcoElements/PlcDocu.TcoElements.TcoAi.yml)  |     | x   |        |
+|      | x   | TcoAo     | Simple class for managing [analogue outputs](~/api/TcoElements/PlcDocu.TcoElements.TcoAo.yml) |     | x   |        |
 
 ### TcoPnematics
 

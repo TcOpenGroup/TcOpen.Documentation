@@ -26,8 +26,8 @@
       "src": [
         {
           "files": [
-            "src//TcoIoBeckhoff//src//TcoIoBeckhoffConnector//TcoIoBeckhoffConnector.csproj",
-            "src//TcoIoBeckhoff//src//TcoIoBeckhoff.Wpf//TcoIoBeckhoff.Wpf.csproj"
+            "src//TcoIo//src//TcoIoConnector//TcoIoConnector.csproj",
+            "src//TcoIo//src//TcoIo.Wpf//TcoIo.Wpf.csproj"
           ],
           "exclude": [
             "**/bin/**",
@@ -38,7 +38,7 @@
           "src": "..//TcOpen//"
         }
       ],
-      "dest": "api/TcoIoBeckhoff",
+      "dest": "api/TcoIo",
       "filter": "filters/filterConfig.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": true
