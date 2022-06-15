@@ -8,8 +8,8 @@ items:
   - TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationErrorMessage
   - TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationRequest
   - TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationTokenChange
-  - TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization
-  - TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange
+  - TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization(System.String)
+  - TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange(System.String)
   - TcOpen.Inxton.Security.IExternalAuthorization.WillChangeToken
   langs:
   - csharp
@@ -38,16 +38,16 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization
-  commentId: M:TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization
-  id: RequestAuthorization
+- uid: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization(System.String)
+  commentId: M:TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization(System.String)
+  id: RequestAuthorization(System.String)
   parent: TcOpen.Inxton.Security.IExternalAuthorization
   langs:
   - csharp
   - vb
-  name: RequestAuthorization()
-  nameWithType: IExternalAuthorization.RequestAuthorization()
-  fullName: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization()
+  name: RequestAuthorization(String)
+  nameWithType: IExternalAuthorization.RequestAuthorization(String)
+  fullName: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization(System.String)
   type: Method
   source:
     remote:
@@ -61,21 +61,24 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Security
   syntax:
-    content: IUser RequestAuthorization()
+    content: IUser RequestAuthorization(string token)
+    parameters:
+    - id: token
+      type: System.String
     return:
       type: TcOpen.Inxton.Security.IUser
-    content.vb: Function RequestAuthorization As IUser
+    content.vb: Function RequestAuthorization(token As String) As IUser
   overload: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization*
-- uid: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange
-  commentId: M:TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange
-  id: RequestTokenChange
+- uid: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange(System.String)
+  commentId: M:TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange(System.String)
+  id: RequestTokenChange(System.String)
   parent: TcOpen.Inxton.Security.IExternalAuthorization
   langs:
   - csharp
   - vb
-  name: RequestTokenChange()
-  nameWithType: IExternalAuthorization.RequestTokenChange()
-  fullName: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange()
+  name: RequestTokenChange(String)
+  nameWithType: IExternalAuthorization.RequestTokenChange(String)
+  fullName: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange(System.String)
   type: Method
   source:
     remote:
@@ -89,8 +92,11 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Security
   syntax:
-    content: void RequestTokenChange()
-    content.vb: Sub RequestTokenChange
+    content: void RequestTokenChange(string token)
+    parameters:
+    - id: token
+      type: System.String
+    content.vb: Sub RequestTokenChange(token As String)
   overload: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange*
 - uid: TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationErrorMessage
   commentId: P:TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationErrorMessage
@@ -222,12 +228,25 @@ references:
   name: RequestAuthorization
   nameWithType: IExternalAuthorization.RequestAuthorization
   fullName: TcOpen.Inxton.Security.IExternalAuthorization.RequestAuthorization
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: TcOpen.Inxton.Security.IUser
   commentId: T:TcOpen.Inxton.Security.IUser
   parent: TcOpen.Inxton.Security
   name: IUser
   nameWithType: IUser
   fullName: TcOpen.Inxton.Security.IUser
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange*
   commentId: Overload:TcOpen.Inxton.Security.IExternalAuthorization.RequestTokenChange
   name: RequestTokenChange
@@ -238,19 +257,6 @@ references:
   name: AuthorizationErrorMessage
   nameWithType: IExternalAuthorization.AuthorizationErrorMessage
   fullName: TcOpen.Inxton.Security.IExternalAuthorization.AuthorizationErrorMessage
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: TcOpen.Inxton.Security.IExternalAuthorization.WillChangeToken*
   commentId: Overload:TcOpen.Inxton.Security.IExternalAuthorization.WillChangeToken
   name: WillChangeToken
