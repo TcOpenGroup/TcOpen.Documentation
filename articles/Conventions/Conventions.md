@@ -124,9 +124,9 @@ Class (FB) member variables should begin with underscore ```_``` followed the va
 
 ~~~ iecst
     VAR
-        _Trigger : BOOL;
-        _Counter : INT;
-        _AnalogStatus : AnalogStatus;
+        _trigger : BOOL;
+        _counter : INT;
+        _analogStatus : AnalogStatus;
     END_VAR
 ~~~
 
