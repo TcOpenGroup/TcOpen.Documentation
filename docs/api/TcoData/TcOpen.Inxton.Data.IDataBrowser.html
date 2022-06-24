@@ -2519,6 +2519,9 @@
                                   <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.DuplicateIdException.html" title="DuplicateIdException" class="">DuplicateIdException</a>
                                 </li>
                                 <li class="">
+                                  <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.eSearchMode.html" title="eSearchMode" class="">eSearchMode</a>
+                                </li>
+                                <li class="">
                                   <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.IBrowsableDataObject.html" title="IBrowsableDataObject" class="">IBrowsableDataObject</a>
                                 </li>
                                 <li class="">
@@ -2565,6 +2568,9 @@
                                 </li>
                                 <li class="">
                                   <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.OnUpdateFailedDelegate-1.html" title="OnUpdateFailedDelegate&lt;T&gt;" class="">OnUpdateFailedDelegate&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.SearchOptions.html" title="SearchOptions" class="">SearchOptions</a>
                                 </li>
                                 <li class="">
                                   <a href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.StandardDateTimeProvider.html" title="StandardDateTimeProvider" class="">StandardDateTimeProvider</a>
@@ -2922,18 +2928,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcOpen_Inxton_Data_IDataBrowser_Filter_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20TcOpen.Inxton.Data.IDataBrowser.Filter(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TcOpenGroup/TcOpen.Documentation/new/dev/apiSpec/new?filename=TcOpen_Inxton_Data_IDataBrowser_Filter_System_String_System_Int32_System_Int32_TcOpen_Inxton_Data_eSearchMode_.md&amp;value=---%0Auid%3A%20TcOpen.Inxton.Data.IDataBrowser.Filter(System.String%2CSystem.Int32%2CSystem.Int32%2CTcOpen.Inxton.Data.eSearchMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/TcOpenGroup/TcOpen/blob/dev/src/TcoData/src/Data/src/DataBrowsers/DataBrowser.cs/#L366">View Source</a>
   </span>
   <a id="TcOpen_Inxton_Data_IDataBrowser_Filter_" data-uid="TcOpen.Inxton.Data.IDataBrowser.Filter*"></a>
-  <h4 id="TcOpen_Inxton_Data_IDataBrowser_Filter_System_String_System_Int32_System_Int32_" data-uid="TcOpen.Inxton.Data.IDataBrowser.Filter(System.String,System.Int32,System.Int32)">Filter(String, Int32, Int32)</h4>
+  <h4 id="TcOpen_Inxton_Data_IDataBrowser_Filter_System_String_System_Int32_System_Int32_TcOpen_Inxton_Data_eSearchMode_" data-uid="TcOpen.Inxton.Data.IDataBrowser.Filter(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)">Filter(String, Int32, Int32, eSearchMode)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Filter(string identifier, int limit, int skip)</code></pre>
+    <pre><code class="lang-csharp hljs">void Filter(string identifier, int limit, int skip, eSearchMode searchMode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2958,6 +2964,11 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../TcOpen.Inxton/TcOpen.Inxton.Abstractions/TcOpen.Inxton.Data.eSearchMode.html">eSearchMode</a></td>
+        <td><span class="parametername">searchMode</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  id: eSearchMode
+  parent: TcOpen.Inxton.Data
+  children:
+  - TcOpen.Inxton.Data.eSearchMode.Contains
+  - TcOpen.Inxton.Data.eSearchMode.Exact
+  - TcOpen.Inxton.Data.eSearchMode.StartsWith
+  langs:
+  - csharp
+  - vb
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode
+  type: Enum
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: eSearchMode
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+    startLine: 5
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: public enum eSearchMode
+    content.vb: Public Enum eSearchMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TcOpen.Inxton.Data.eSearchMode.Exact
+  commentId: F:TcOpen.Inxton.Data.eSearchMode.Exact
+  id: Exact
+  parent: TcOpen.Inxton.Data.eSearchMode
+  langs:
+  - csharp
+  - vb
+  name: Exact
+  nameWithType: eSearchMode.Exact
+  fullName: TcOpen.Inxton.Data.eSearchMode.Exact
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Exact
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+    startLine: 7
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: Exact = 0
+    return:
+      type: TcOpen.Inxton.Data.eSearchMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TcOpen.Inxton.Data.eSearchMode.StartsWith
+  commentId: F:TcOpen.Inxton.Data.eSearchMode.StartsWith
+  id: StartsWith
+  parent: TcOpen.Inxton.Data.eSearchMode
+  langs:
+  - csharp
+  - vb
+  name: StartsWith
+  nameWithType: eSearchMode.StartsWith
+  fullName: TcOpen.Inxton.Data.eSearchMode.StartsWith
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: StartsWith
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+    startLine: 8
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: StartsWith = 1
+    return:
+      type: TcOpen.Inxton.Data.eSearchMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TcOpen.Inxton.Data.eSearchMode.Contains
+  commentId: F:TcOpen.Inxton.Data.eSearchMode.Contains
+  id: Contains
+  parent: TcOpen.Inxton.Data.eSearchMode
+  langs:
+  - csharp
+  - vb
+  name: Contains
+  nameWithType: eSearchMode.Contains
+  fullName: TcOpen.Inxton.Data.eSearchMode.Contains
+  type: Field
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: Contains
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Data/SearchOptions.cs
+    startLine: 9
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Data
+  syntax:
+    content: Contains = 2
+    return:
+      type: TcOpen.Inxton.Data.eSearchMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TcOpen.Inxton.Data
+  commentId: N:TcOpen.Inxton.Data
+  name: TcOpen.Inxton.Data
+  nameWithType: TcOpen.Inxton.Data
+  fullName: TcOpen.Inxton.Data
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  parent: TcOpen.Inxton.Data
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode

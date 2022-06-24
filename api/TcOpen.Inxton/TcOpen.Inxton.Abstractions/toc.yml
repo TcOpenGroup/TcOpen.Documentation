@@ -22,6 +22,8 @@
     name: DateTimeProviders
   - uid: TcOpen.Inxton.Data.DuplicateIdException
     name: DuplicateIdException
+  - uid: TcOpen.Inxton.Data.eSearchMode
+    name: eSearchMode
   - uid: TcOpen.Inxton.Data.IBrowsableDataObject
     name: IBrowsableDataObject
   - uid: TcOpen.Inxton.Data.IdentifierValueMismatchedException
@@ -62,6 +64,8 @@
   - uid: TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
     name: OnUpdateFailedDelegate<T>
     name.vb: OnUpdateFailedDelegate(Of T)
+  - uid: TcOpen.Inxton.Data.SearchOptions
+    name: SearchOptions
   - uid: TcOpen.Inxton.Data.StandardDateTimeProvider
     name: StandardDateTimeProvider
   - uid: TcOpen.Inxton.Data.UnableToLocateRecordId

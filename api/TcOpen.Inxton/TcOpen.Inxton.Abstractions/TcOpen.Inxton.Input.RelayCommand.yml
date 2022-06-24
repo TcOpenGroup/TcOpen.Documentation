@@ -243,7 +243,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Input
@@ -280,10 +280,12 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: RaiseCanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-    startLine: 40
+    startLine: 45
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Input
+  summary: "\nRaiseCanExecuteChanged method should be called when using .net 5.0 or greater.\n"
+  example: []
   syntax:
     content: public void RaiseCanExecuteChanged()
     content.vb: Public Sub RaiseCanExecuteChanged
@@ -310,7 +312,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Execute
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-    startLine: 45
+    startLine: 52
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Input
@@ -345,7 +347,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: CanExecuteChanged
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Input/RelayCommand.cs
-    startLine: 54
+    startLine: 62
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Input

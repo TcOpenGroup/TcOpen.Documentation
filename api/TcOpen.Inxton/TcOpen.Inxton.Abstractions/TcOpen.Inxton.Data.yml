@@ -8,6 +8,7 @@ items:
   - TcOpen.Inxton.Data.DateTimeProviderBase
   - TcOpen.Inxton.Data.DateTimeProviders
   - TcOpen.Inxton.Data.DuplicateIdException
+  - TcOpen.Inxton.Data.eSearchMode
   - TcOpen.Inxton.Data.IBrowsableDataObject
   - TcOpen.Inxton.Data.IdentifierValueMismatchedException
   - TcOpen.Inxton.Data.IRepository
@@ -24,6 +25,7 @@ items:
   - TcOpen.Inxton.Data.OnUpdateDelegate`1
   - TcOpen.Inxton.Data.OnUpdateDoneDelegate`1
   - TcOpen.Inxton.Data.OnUpdateFailedDelegate`1
+  - TcOpen.Inxton.Data.SearchOptions
   - TcOpen.Inxton.Data.StandardDateTimeProvider
   - TcOpen.Inxton.Data.UnableToLocateRecordId
   - TcOpen.Inxton.Data.UnableToUpdateRecord
@@ -443,6 +445,17 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  parent: TcOpen.Inxton.Data
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode
+- uid: TcOpen.Inxton.Data.SearchOptions
+  commentId: T:TcOpen.Inxton.Data.SearchOptions
+  name: SearchOptions
+  nameWithType: SearchOptions
+  fullName: TcOpen.Inxton.Data.SearchOptions
 - uid: TcOpen.Inxton.Data
   commentId: N:TcOpen.Inxton.Data
   name: TcOpen.Inxton.Data

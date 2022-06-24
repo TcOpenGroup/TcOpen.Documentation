@@ -10,7 +10,7 @@ items:
   - TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
   - TcOpen.Inxton.Data.IRepository`1.Exists(System.String)
   - TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
-  - TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
+  - TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
   - TcOpen.Inxton.Data.IRepository`1.OnCreate
   - TcOpen.Inxton.Data.IRepository`1.OnCreateDone
   - TcOpen.Inxton.Data.IRepository`1.OnCreateFailed
@@ -261,16 +261,16 @@ items:
   overload: TcOpen.Inxton.Data.IRepository`1.FilteredCount*
   nameWithType.vb: IRepository(Of T).FilteredCount(String)
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount(System.String)
-- uid: TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
-  commentId: M:TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32)
-  id: GetRecords(System.String,System.Int32,System.Int32)
+- uid: TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
+  id: GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
   parent: TcOpen.Inxton.Data.IRepository`1
   langs:
   - csharp
   - vb
-  name: GetRecords(String, Int32, Int32)
-  nameWithType: IRepository<T>.GetRecords(String, Int32, Int32)
-  fullName: TcOpen.Inxton.Data.IRepository<T>.GetRecords(System.String, System.Int32, System.Int32)
+  name: GetRecords(String, Int32, Int32, eSearchMode)
+  nameWithType: IRepository<T>.GetRecords(String, Int32, Int32, eSearchMode)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.GetRecords(System.String, System.Int32, System.Int32, TcOpen.Inxton.Data.eSearchMode)
   type: Method
   source:
     remote:
@@ -284,7 +284,7 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
   syntax:
-    content: IEnumerable<T> GetRecords(string identifier = "*", int limit = 100, int skip = 0)
+    content: IEnumerable<T> GetRecords(string identifier = "*", int limit = 100, int skip = 0, eSearchMode searchMode = eSearchMode.Exact)
     parameters:
     - id: identifier
       type: System.String
@@ -292,12 +292,14 @@ items:
       type: System.Int32
     - id: skip
       type: System.Int32
+    - id: searchMode
+      type: TcOpen.Inxton.Data.eSearchMode
     return:
       type: System.Collections.Generic.IEnumerable{{T}}
-    content.vb: Function GetRecords(identifier As String = "*", limit As Integer = 100, skip As Integer = 0) As IEnumerable(Of T)
+    content.vb: Function GetRecords(identifier As String = "*", limit As Integer = 100, skip As Integer = 0, searchMode As eSearchMode = eSearchMode.Exact) As IEnumerable(Of T)
   overload: TcOpen.Inxton.Data.IRepository`1.GetRecords*
-  nameWithType.vb: IRepository(Of T).GetRecords(String, Int32, Int32)
-  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).GetRecords(System.String, System.Int32, System.Int32)
+  nameWithType.vb: IRepository(Of T).GetRecords(String, Int32, Int32, eSearchMode)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).GetRecords(System.String, System.Int32, System.Int32, TcOpen.Inxton.Data.eSearchMode)
 - uid: TcOpen.Inxton.Data.IRepository`1.Read(System.String)
   commentId: M:TcOpen.Inxton.Data.IRepository`1.Read(System.String)
   id: Read(System.String)
@@ -990,6 +992,12 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  parent: TcOpen.Inxton.Data
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode
 - uid: System.Collections.Generic.IEnumerable{{T}}
   commentId: T:System.Collections.Generic.IEnumerable{`0}
   parent: System.Collections.Generic
