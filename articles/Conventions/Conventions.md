@@ -28,10 +28,9 @@ For this document are terms
 - ```Function block``` and ```class``` **interchangeable**. 
 - ``` Type``` is the common name for any ```FB```, ```STRUCT```, ```UNION```.
 
-### A General note on naming
+### A general note on naming
 
-Names should be self-describing, readable considered in calling context. In general, no use of prefixes is encouraged except for those outlined in this document (to inform/warn about some property like a pointer, reference, IN_OUT reference),
-or to aid to CoDeSys IntelliSense to narrow the scope of search.
+Names should be self-describing, readable considered in calling context. Use of prefixes is discouraged, except for those outlined in this document. For example to inform/warn about some property like a pointer, reference, IN_OUT reference, or to aid to CoDeSys IntelliSense to narrow the scope of search.
 
 ### General note on the use of PLC-Language
 
@@ -120,14 +119,14 @@ GVLs, PRGs should not be accessible from outside the library and should use the 
 
 ## Member Variables
 
-Class (FB) member variables should begin with underscore ```_``` followed the variable name.
+Class (FB) member variables should begin with underscore ```_```, followed by the variable name.
 
 ~~~ iecst
-    VAR
-        _trigger : BOOL;
-        _counter : INT;
-        _analogStatus : AnalogStatus;
-    END_VAR
+VAR
+    _trigger : BOOL;
+    _counter : INT;
+    _analogStatus : AnalogStatus;
+END_VAR
 ~~~
 
 ### Constants
@@ -163,19 +162,19 @@ END_VAR
 Methods names should clearly state the intent. Method name should not have any prefix. The methods should be used to perform some action (Movement, Measurement, Trigger etc.). For obtaining or setting values, prefer properties.
 
 ```Pascal
-    piston.MoveToWork();
-    laser.Measure();
-    dmcReader.Trigger();
+piston.MoveToWork();
+laser.Measure();
+dmcReader.Trigger();
 ```
 
-### Properties
+## Properties
 
-Property name should clearly describe intent. Properties should not start with any prefix. 
+Property names should clearly describe intent. Properties should not start with any prefix. 
 
 ## Function Block parameter transfer
 
-Whenever a parameter transfer is required during the construction of a class, use the ```FB_Init``` method, the data passed at the object construction should be immutable and must not be changed at runtime.
-For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task. 
+Whenever a parameter transfer is required during the construction of a class, use the ```FB_init``` method, the data passed at the object construction should be immutable and must not be changed at runtime.
+For a cyclical update of parameters, use ```VAR_INPUT/OUTPUT/IN_OUT```. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task. 
 
 ## Static classes
 
