@@ -2,13 +2,18 @@
 
 | REVISION | DATE       | NOTES                     |
 |----------|------------|---------------------------|
-| 0.0      | April 2021 | Initial release           |
-| 0.0      | Jan 2021   | Components library naming |
+| 0.0      | April 2021 | Initial release             |
+| 0.0      | Jan 2021   | Components library naming   |
+| 0.1      | Oct 2022   | Component abstraction rules |
 
 This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it.
 
 
 ## General rules
+
+### Abstractions
+
+Each component should implement basic contract interface defined in the `TcoAbstractions` library (e.g. `TcoAbbRobot` should implenent `ITcoRobot`, `TcoCongexReader` should impement `ITcoReader`)
 
 ### I/O variables
 
