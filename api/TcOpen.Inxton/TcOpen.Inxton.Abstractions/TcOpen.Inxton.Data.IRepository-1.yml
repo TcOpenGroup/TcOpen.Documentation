@@ -9,7 +9,7 @@ items:
   - TcOpen.Inxton.Data.IRepository`1.Create(System.String,`0)
   - TcOpen.Inxton.Data.IRepository`1.Delete(System.String)
   - TcOpen.Inxton.Data.IRepository`1.Exists(System.String)
-  - TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
+  - TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
   - TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
   - TcOpen.Inxton.Data.IRepository`1.OnCreate
   - TcOpen.Inxton.Data.IRepository`1.OnCreateDone
@@ -228,16 +228,16 @@ items:
   overload: TcOpen.Inxton.Data.IRepository`1.Exists*
   nameWithType.vb: IRepository(Of T).Exists(String)
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).Exists(System.String)
-- uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
-  commentId: M:TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String)
-  id: FilteredCount(System.String)
+- uid: TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
+  commentId: M:TcOpen.Inxton.Data.IRepository`1.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
+  id: FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
   parent: TcOpen.Inxton.Data.IRepository`1
   langs:
   - csharp
   - vb
-  name: FilteredCount(String)
-  nameWithType: IRepository<T>.FilteredCount(String)
-  fullName: TcOpen.Inxton.Data.IRepository<T>.FilteredCount(System.String)
+  name: FilteredCount(String, eSearchMode)
+  nameWithType: IRepository<T>.FilteredCount(String, eSearchMode)
+  fullName: TcOpen.Inxton.Data.IRepository<T>.FilteredCount(System.String, TcOpen.Inxton.Data.eSearchMode)
   type: Method
   source:
     remote:
@@ -251,16 +251,18 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
   syntax:
-    content: long FilteredCount(string id)
+    content: long FilteredCount(string id, eSearchMode searchMode = eSearchMode.Exact)
     parameters:
     - id: id
       type: System.String
+    - id: searchMode
+      type: TcOpen.Inxton.Data.eSearchMode
     return:
       type: System.Int64
-    content.vb: Function FilteredCount(id As String) As Long
+    content.vb: Function FilteredCount(id As String, searchMode As eSearchMode = eSearchMode.Exact) As Long
   overload: TcOpen.Inxton.Data.IRepository`1.FilteredCount*
-  nameWithType.vb: IRepository(Of T).FilteredCount(String)
-  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount(System.String)
+  nameWithType.vb: IRepository(Of T).FilteredCount(String, eSearchMode)
+  fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount(System.String, TcOpen.Inxton.Data.eSearchMode)
 - uid: TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
   commentId: M:TcOpen.Inxton.Data.IRepository`1.GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
   id: GetRecords(System.String,System.Int32,System.Int32,TcOpen.Inxton.Data.eSearchMode)
@@ -978,6 +980,12 @@ references:
   fullName: TcOpen.Inxton.Data.IRepository<T>.FilteredCount
   nameWithType.vb: IRepository(Of T).FilteredCount
   fullName.vb: TcOpen.Inxton.Data.IRepository(Of T).FilteredCount
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  parent: TcOpen.Inxton.Data
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode
 - uid: TcOpen.Inxton.Data.IRepository`1.GetRecords*
   commentId: Overload:TcOpen.Inxton.Data.IRepository`1.GetRecords
   name: GetRecords
@@ -992,12 +1000,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: TcOpen.Inxton.Data.eSearchMode
-  commentId: T:TcOpen.Inxton.Data.eSearchMode
-  parent: TcOpen.Inxton.Data
-  name: eSearchMode
-  nameWithType: eSearchMode
-  fullName: TcOpen.Inxton.Data.eSearchMode
 - uid: System.Collections.Generic.IEnumerable{{T}}
   commentId: T:System.Collections.Generic.IEnumerable{`0}
   parent: System.Collections.Generic

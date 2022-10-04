@@ -231,10 +231,17 @@
 <td>Jan 2021</td>
 <td>Components library naming</td>
 </tr>
+<tr>
+<td>0.1</td>
+<td>Oct 2022</td>
+<td>Component abstraction rules</td>
+</tr>
 </tbody>
 </table>
 <p>This document describes the format and practices for writing components in TcOpen. These are universal rules to observe. Each rule knows exception when there is a reasonable argument behind it.</p>
 <h2 id="general-rules">General rules</h2>
+<h3 id="abstractions">Abstractions</h3>
+<p>Each component should implement basic contract interface defined in the <code>TcoAbstractions</code> library (e.g. <code>TcoAbbRobot</code> should implenent <code>ITcoRobot</code>, <code>TcoCongexReader</code> should impement <code>ITcoReader</code>)</p>
 <h3 id="io-variables">I/O variables</h3>
 <ul>
 <li>Components must not contain I/O (%I*, %Q*) variables directly.</li>

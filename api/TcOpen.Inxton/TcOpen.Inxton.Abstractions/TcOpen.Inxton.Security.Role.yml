@@ -5,6 +5,7 @@ items:
   id: Role
   parent: TcOpen.Inxton.Security
   children:
+  - TcOpen.Inxton.Security.Role.#ctor(System.String)
   - TcOpen.Inxton.Security.Role.#ctor(System.String,System.String)
   - TcOpen.Inxton.Security.Role.DefaultGroup
   - TcOpen.Inxton.Security.Role.ToString
@@ -121,6 +122,39 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: TcOpen.Inxton.Security.Role.#ctor(System.String)
+  commentId: M:TcOpen.Inxton.Security.Role.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: TcOpen.Inxton.Security.Role
+  langs:
+  - csharp
+  - vb
+  name: Role(String)
+  nameWithType: Role.Role(String)
+  fullName: TcOpen.Inxton.Security.Role.Role(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: .ctor
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
+    startLine: 16
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Security
+  syntax:
+    content: public Role(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Public Sub New(Name As String)
+  overload: TcOpen.Inxton.Security.Role.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: TcOpen.Inxton.Security.Role.ToString
   commentId: M:TcOpen.Inxton.Security.Role.ToString
   id: ToString
@@ -139,7 +173,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: ToString
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Security/Role.cs
-    startLine: 16
+    startLine: 23
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Security

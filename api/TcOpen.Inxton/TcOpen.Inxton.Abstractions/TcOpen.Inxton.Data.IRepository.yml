@@ -9,7 +9,7 @@ items:
   - TcOpen.Inxton.Data.IRepository.Create(System.String,System.Object)
   - TcOpen.Inxton.Data.IRepository.Delete(System.String)
   - TcOpen.Inxton.Data.IRepository.Exists(System.String)
-  - TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
+  - TcOpen.Inxton.Data.IRepository.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
   - TcOpen.Inxton.Data.IRepository.Read(System.String)
   - TcOpen.Inxton.Data.IRepository.Update(System.String,System.Object)
   langs:
@@ -163,16 +163,16 @@ items:
       type: System.Boolean
     content.vb: Function Exists(identifier As String) As Boolean
   overload: TcOpen.Inxton.Data.IRepository.Exists*
-- uid: TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
-  commentId: M:TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
-  id: FilteredCount(System.String)
+- uid: TcOpen.Inxton.Data.IRepository.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
+  commentId: M:TcOpen.Inxton.Data.IRepository.FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
+  id: FilteredCount(System.String,TcOpen.Inxton.Data.eSearchMode)
   parent: TcOpen.Inxton.Data.IRepository
   langs:
   - csharp
   - vb
-  name: FilteredCount(String)
-  nameWithType: IRepository.FilteredCount(String)
-  fullName: TcOpen.Inxton.Data.IRepository.FilteredCount(System.String)
+  name: FilteredCount(String, eSearchMode)
+  nameWithType: IRepository.FilteredCount(String, eSearchMode)
+  fullName: TcOpen.Inxton.Data.IRepository.FilteredCount(System.String, TcOpen.Inxton.Data.eSearchMode)
   type: Method
   source:
     remote:
@@ -186,13 +186,15 @@ items:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Data
   syntax:
-    content: long FilteredCount(string id)
+    content: long FilteredCount(string id, eSearchMode searchMode = eSearchMode.Exact)
     parameters:
     - id: id
       type: System.String
+    - id: searchMode
+      type: TcOpen.Inxton.Data.eSearchMode
     return:
       type: System.Int64
-    content.vb: Function FilteredCount(id As String) As Long
+    content.vb: Function FilteredCount(id As String, searchMode As eSearchMode = eSearchMode.Exact) As Long
   overload: TcOpen.Inxton.Data.IRepository.FilteredCount*
 - uid: TcOpen.Inxton.Data.IRepository.Read(System.String)
   commentId: M:TcOpen.Inxton.Data.IRepository.Read(System.String)
@@ -321,6 +323,12 @@ references:
   name: FilteredCount
   nameWithType: IRepository.FilteredCount
   fullName: TcOpen.Inxton.Data.IRepository.FilteredCount
+- uid: TcOpen.Inxton.Data.eSearchMode
+  commentId: T:TcOpen.Inxton.Data.eSearchMode
+  parent: TcOpen.Inxton.Data
+  name: eSearchMode
+  nameWithType: eSearchMode
+  fullName: TcOpen.Inxton.Data.eSearchMode
 - uid: TcOpen.Inxton.Data.IRepository.Read*
   commentId: Overload:TcOpen.Inxton.Data.IRepository.Read
   name: Read

@@ -255,9 +255,8 @@
 <li><code>Function block</code> and <code>class</code> <strong>interchangeable</strong>.</li>
 <li><code> Type</code> is the common name for any <code>FB</code>, <code>STRUCT</code>, <code>UNION</code>.</li>
 </ul>
-<h3 id="a-general-note-on-naming">A General note on naming</h3>
-<p>Names should be self-describing, readable considered in calling context. In general, no use of prefixes is encouraged except for those outlined in this document (to inform/warn about some property like a pointer, reference, IN_OUT reference),
-or to aid to CoDeSys IntelliSense to narrow the scope of search.</p>
+<h3 id="a-general-note-on-naming">A general note on naming</h3>
+<p>Names should be self-describing, readable considered in calling context. Use of prefixes is discouraged, except for those outlined in this document. For example to inform/warn about some property like a pointer, reference, IN_OUT reference, or to aid to CoDeSys IntelliSense to narrow the scope of search.</p>
 <h3 id="general-note-on-the-use-of-plc-language">General note on the use of PLC-Language</h3>
 <p>TcOpen uses exclusively IEC 61131-3 Structured Test (ST), strongly leaning to the OOP paradigm.</p>
 <h2 id="naming">Naming</h2>
@@ -506,12 +505,12 @@ or to aid to CoDeSys IntelliSense to narrow the scope of search.</p>
 GVLs, PRGs, and Parameter lists must specify <code>{attribute 'qualified_only'}</code> to ensure access is fully scoped in the code. <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007201784510091.html&amp;id=8098035924341237087">Beckhoff Infosys Doc here</a>.</p>
 <p>GVLs, PRGs should not be accessible from outside the library and should use the <code>INTERNAL</code> access modifier.</p>
 <h2 id="member-variables">Member Variables</h2>
-<p>Class (FB) member variables should begin with underscore <code>_</code> followed the variable name.</p>
-<pre><code class="lang-iecst">    VAR
-        _trigger : BOOL;
-        _counter : INT;
-        _analogStatus : AnalogStatus;
-    END_VAR
+<p>Class (FB) member variables should begin with underscore <code>_</code>, followed by the variable name.</p>
+<pre><code class="lang-iecst">VAR
+    _trigger : BOOL;
+    _counter : INT;
+    _analogStatus : AnalogStatus;
+END_VAR
 </code></pre>
 <h3 id="constants">Constants</h3>
 <p>Use constants instead of magic numbers. Constants should be all caps.</p>
@@ -532,15 +531,15 @@ END_VAR
 </code></pre>
 <h2 id="methods">Methods</h2>
 <p>Methods names should clearly state the intent. Method name should not have any prefix. The methods should be used to perform some action (Movement, Measurement, Trigger etc.). For obtaining or setting values, prefer properties.</p>
-<pre><code class="lang-Pascal">    piston.MoveToWork();
-    laser.Measure();
-    dmcReader.Trigger();
+<pre><code class="lang-Pascal">piston.MoveToWork();
+laser.Measure();
+dmcReader.Trigger();
 </code></pre>
-<h3 id="properties">Properties</h3>
-<p>Property name should clearly describe intent. Properties should not start with any prefix.</p>
+<h2 id="properties">Properties</h2>
+<p>Property names should clearly describe intent. Properties should not start with any prefix.</p>
 <h2 id="function-block-parameter-transfer">Function Block parameter transfer</h2>
-<p>Whenever a parameter transfer is required during the construction of a class, use the <code>FB_Init</code> method, the data passed at the object construction should be immutable and must not be changed at runtime.
-For a cyclical update of parameters, use VAR_INPUT/OUTPUT/IN_OUT. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task.</p>
+<p>Whenever a parameter transfer is required during the construction of a class, use the <code>FB_init</code> method, the data passed at the object construction should be immutable and must not be changed at runtime.
+For a cyclical update of parameters, use <code>VAR_INPUT/OUTPUT/IN_OUT</code>. Cyclical logic is required to be placed in the body of the function block. The FB's body must be called in an appropriate place to be preferably executed in each cycle of the PLC task.</p>
 <h2 id="static-classes">Static classes</h2>
 <p>For static-like behavior, use <code>PROGRAM</code>.</p>
 <h2 id="component">Component</h2>

@@ -5,6 +5,7 @@ items:
   id: IsDialog
   parent: TcOpen.Inxton.Dialogs
   children:
+  - TcOpen.Inxton.Dialogs.IsDialog.DialogId
   - TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
   langs:
   - csharp
@@ -56,6 +57,38 @@ items:
   modifiers.vb:
   - Public
   - Interface
+- uid: TcOpen.Inxton.Dialogs.IsDialog.DialogId
+  commentId: P:TcOpen.Inxton.Dialogs.IsDialog.DialogId
+  id: DialogId
+  parent: TcOpen.Inxton.Dialogs.IsDialog
+  langs:
+  - csharp
+  - vb
+  name: DialogId
+  nameWithType: IsDialog.DialogId
+  fullName: TcOpen.Inxton.Dialogs.IsDialog.DialogId
+  type: Property
+  source:
+    remote:
+      path: src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+      branch: dev
+      repo: https://github.com/TcOpenGroup/TcOpen
+    id: DialogId
+    path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
+    startLine: 11
+  assemblies:
+  - TcOpen.Inxton.Abstractions
+  namespace: TcOpen.Inxton.Dialogs
+  syntax:
+    content: string DialogId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property DialogId As String
+  overload: TcOpen.Inxton.Dialogs.IsDialog.DialogId*
+  modifiers.csharp:
+  - get
+  - set
 - uid: TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
   commentId: M:TcOpen.Inxton.Dialogs.IsDialog.Initialize(System.Action)
   id: Initialize(System.Action)
@@ -74,7 +107,7 @@ items:
       repo: https://github.com/TcOpenGroup/TcOpen
     id: Initialize
     path: ../TcOpen/src/TcOpen.Inxton/src/Abstractions/Dialogs/IsDialog.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - TcOpen.Inxton.Abstractions
   namespace: TcOpen.Inxton.Dialogs
@@ -1233,6 +1266,24 @@ references:
   name: TcoCore
   nameWithType: TcoCore
   fullName: TcoCore
+- uid: TcOpen.Inxton.Dialogs.IsDialog.DialogId*
+  commentId: Overload:TcOpen.Inxton.Dialogs.IsDialog.DialogId
+  name: DialogId
+  nameWithType: IsDialog.DialogId
+  fullName: TcOpen.Inxton.Dialogs.IsDialog.DialogId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: TcOpen.Inxton.Dialogs.IsDialog.Initialize*
   commentId: Overload:TcOpen.Inxton.Dialogs.IsDialog.Initialize
   name: Initialize
@@ -1245,9 +1296,3 @@ references:
   name: Action
   nameWithType: Action
   fullName: System.Action
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
