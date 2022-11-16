@@ -66,6 +66,7 @@ The coordinator must be passed to the inspector by `WithCoordinator(coordinator)
 
 
 ### Single inspector with `Dialog` in case of failure
+[Dialog](~/articles/TcOpenFramework/TcoCore/TcoDialogs.yml)
 
 <img width="622" alt="image" src="https://user-images.githubusercontent.com/61538034/156205362-9e21f32f-5d3a-4790-9f28-b9ecd3fb346c.png">
 
